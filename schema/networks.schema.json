@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Suv4o/charge-line-data/schema/networks.schema.json",
+  "title": "Charge Line charging networks and typical prices",
+  "description": "Australian fast-charging networks, how to recognise their sites, and a typical price per kWh. Networks price each site differently; these are a guide. Property order is the canonical order in networks.json.",
+  "type": "object",
+  "required": ["schemaVersion", "updated", "currency", "other", "networks"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "updated": { "type": "string", "format": "date", "description": "The day the data last changed (YYYY-MM-DD)." },
+    "currency": { "const": "AUD" },
+    "other": {
+      "type": "object",
+      "description": "Prices for a site whose network isn't listed.",
+      "required": ["fastPerKWh", "slowPerKWh", "source"],
+      "additionalProperties": false,
+      "properties": {
+        "fastPerKWh": { "type": "number", "minimum": 0.05, "maximum": 2 },
+        "slowPerKWh": { "type": "number", "minimum": 0.05, "maximum": 2 },
+        "source": { "type": "string", "minLength": 10 }
+      }
+    },
+    "networks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "match", "typicalPerKWh", "basis", "siteReading", "source", "checked"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z][A-Za-z0-9]*$", "description": "Never renamed or removed. The seven networks the app has always known keep the app's names." },
+          "name": { "type": "string", "minLength": 1, "description": "As drivers know it." },
+          "match": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "description": "Lower-case text found in a site's operator or name in OpenStreetMap or Open Charge Map.",
+            "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9 &'().-]*$" }
+          },
+          "typicalPerKWh": { "type": ["number", "null"], "minimum": 0.05, "maximum": 2, "description": "Typical A$ per kWh at its fast chargers; null until a source gives one." },
+          "teslaPerKWh": { "type": "number", "minimum": 0.05, "maximum": 2, "description": "Tesla Supercharger only: the price for Tesla drivers." },
+          "freeKWhPerDay": { "type": "number", "minimum": 0, "maximum": 100, "description": "Free energy each day at its fast chargers, before the price applies." },
+          "basis": { "enum": ["published", "survey", "estimate", "none"], "description": "published: the network's own page; survey: news or a survey of sites; estimate: worked out from listings; none: no price yet." },
+          "siteReading": { "enum": ["allowed", "forbidden", "blocked", "unchecked"], "description": "Whether an agent may read the network's own website: its terms allow it, forbid it, the site refuses automated readers, or nobody has checked." },
+          "source": { "type": "string", "minLength": 10 },
+          "sourceUrl": { "type": "string", "pattern": "^https://" },
+          "checked": { "type": "string", "format": "date" }
+        }
+      }
+    }
+  }
+}

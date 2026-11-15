@@ -1,0 +1,30 @@
+# Checks the data on every pull request and on main. Deterministic: no AI. Branch protection makes it required,
+# so nothing reaches main unless it passes and the owner merges.
+name: validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+      - name: Test the validator
+        run: node --test 'scripts/*.test.mjs'
+      - name: Validate the data (every id on main kept)
+        run: node scripts/validate.mjs --base-ref "origin/${BASE_REF}"
+        env:
+          BASE_REF: ${{ github.base_ref || 'main' }}
