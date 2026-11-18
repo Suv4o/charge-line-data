@@ -2,7 +2,7 @@
 description: Keeps the EV catalogue current. Re-checks the makes checked longest ago, and looks for EVs and brands new to Australia.
 on:
   schedule:
-    - cron: "0 3 1,15 * *"          # fortnightly: the 1st and 15th, 3 am in Melbourne
+    - cron: "0 3 1 * *"             # monthly: the 1st, 3 am in Melbourne
       timezone: Australia/Melbourne
   workflow_dispatch:
     inputs:
@@ -29,8 +29,8 @@ engine:
     workspace-id: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
 timeout-minutes: 30
 max-turns: 80
-max-ai-credits: 300                 # US$3 hard stop per run
-max-daily-ai-credits: 600
+max-ai-credits: 1000                # US$10 hard stop per run (raised so an Opus run can finish; tuned after the model choice)
+max-daily-ai-credits: 2000
 max-turn-cache-misses: 10          # gh-aw's default of 5 stopped an Opus run; the credit caps still bound the cost
 imports:
   - shared/rules.md
@@ -141,7 +141,7 @@ where a figure looks out of date. Take the makes in `vehicles.json` whose date i
 - **Changed figures** for cars still on sale: battery, WLTP range, DC or AC charging power, the fast-charge claim.
   Change a figure only when the maker or the Green Vehicle Guide states it for the Australian car.
 
-Then set the make's date in `checked-makes.json` to today. Every make is re-checked about every two months.
+Then set the make's date in `checked-makes.json` to today. Every make is re-checked about every four months.
 
 ## 3. Look for EVs and brands new to Australia
 
