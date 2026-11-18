@@ -4,15 +4,15 @@
     "model": "E07",
     "firstSeen": "2026-11-18",
     "lastSeen": "2026-11-18",
-    "status": "on-sale",
+    "status": "added",
     "evidence": [
       {
         "url": "https://www.deepal.com.au/vehicles/deepal/e07/",
         "date": "2026-11-18",
-        "quote": "89.98kWh NMC battery; 240 kW max DC; 550 km (RWD) / 510 km (AWD) WLTP; test drives available now"
+        "quote": "Test drives are available now at your local retailer. 89.98kWh NMC battery; 550 km RWD / 510 km AWD; 240kW"
       }
     ],
-    "note": "Maker page shows price only as placeholder 'From XX,XXX RDP'. Add once an Australian price is found."
+    "note": "Proposed in PR on 2026-11-18 as deepal-e07-rwd-2025 and deepal-e07-awd-2025."
   },
   {
     "make": "MG",
@@ -24,9 +24,10 @@
       {
         "url": "https://www.mgmotor.com.au/vehicles/mgu9-ev",
         "date": "2026-11-18",
-        "quote": "Available Now; 430km WLTP Range; 115kW peak DC"
+        "quote": "Available Now; Up to 430km; 115kW peak DC; 20-80% in 42 minutes"
       }
-    ]
+    ],
+    "note": "Proposed in PR on 2026-11-18 as mg-u9-2026. An earlier run marked it added but no PR reached main."
   },
   {
     "make": "Xpeng",
@@ -36,51 +37,89 @@
     "status": "added",
     "evidence": [
       {
-        "url": "https://thedriven.io/2026/07/21/xpeng-launches-x9-luxury-people-mover-in-australia-priced-from-89900/",
+        "url": "https://www.xpeng.com/au/news/019fa2860f529f8481378a02820600b3",
         "date": "2026-07-21",
-        "quote": "from $89,900 plus on-road costs; 542 kW peak DC; orders open"
+        "quote": "Orders are now open through authorised XPENG dealers across Australia"
       }
-    ]
+    ],
+    "note": "Proposed in PR on 2026-11-18 as xpeng-x9-sr-2026 and xpeng-x9-performance-2026."
   },
   {
     "make": "Leapmotor",
     "model": "B05",
     "firstSeen": "2026-11-18",
     "lastSeen": "2026-11-18",
-    "status": "added",
+    "status": "on-sale",
     "evidence": [
       {
         "url": "https://thedriven.io/2026/07/02/new-leapmotor-b05-electric-hatchback-to-land-in-australia-from-35990-driveway/",
         "date": "2026-07-02",
-        "quote": "$35,990 drive-away; dealerships due to receive the car in late August"
+        "quote": "starts from $35,990 for the Style ... and $39,990 for the Design LR; fast charging up to 174kW"
+      }
+    ],
+    "note": "Design LR proposed 2026-11-18 as leapmotor-b05-design-2026. Style NOT added: peak DC unclear (174 vs 156 kW). leapmotor.net/au fails TLS in sandbox."
+  },
+  {
+    "make": "Chery",
+    "model": "E5",
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "status": "on-sale",
+    "evidence": [
+      {
+        "url": "https://www.greenvehicleguide.gov.au/",
+        "date": "2026-11-18",
+        "quote": "Chery E5 listed in Top CO2 performing vehicles"
+      }
+    ],
+    "note": "Renamed Omoda E5 (existing id omoda-e5-2024). MY26 reportedly 58.9 kWh and 130 or 155 kW DC; sources disagree. Chery AU site unreachable. Issue raised."
+  },
+  {
+    "make": "HQ (Hongqi)",
+    "model": "E-HS9",
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "status": "announced",
+    "evidence": [
+      {
+        "url": "https://thedriven.io/2026/11/12/chinese-luxury-ev-brand-hongqi-launches-in-australia-with-massive-six-seat-electric-suv/",
+        "date": "2026-11-12",
+        "quote": "Hongqi has launched in Australia with a massive six-seat electric SUV"
+      },
+      {
+        "url": "https://carsauce.com/news/2027-hongqi-hq-e-hs9-australia-price-specs-launch",
+        "date": "2026-11",
+        "quote": "indicative price below $150,000 before on-roads; 120 kWh, 548 km WLTP, 140 kW DC, 10-80% 48 min; deliveries from January 2027"
+      }
+    ],
+    "note": "Price only indicative, pre-orders. Add when maker confirms final price or deliveries start."
+  },
+  {
+    "make": "Avatr",
+    "model": "07L / 06T",
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "status": "announced",
+    "evidence": [
+      {
+        "url": "https://thedriven.io/2026/11/13/avatrs-australian-website-goes-live-with-07l-electric-suv-and-06t-wagon/",
+        "date": "2026-11-13",
+        "quote": "Avatr is taking expressions of interest in Australia for its 07L electric SUV and 06T wagon, with the SUV due to arrive first in early 2027"
       }
     ]
   },
   {
-    "make": "Chery",
-    "model": "unknown",
+    "make": "Denza",
+    "model": "Z9 GT",
     "firstSeen": "2026-11-18",
     "lastSeen": "2026-11-18",
     "status": "announced",
-    "evidence": [],
-    "note": "Owner lead, not yet researched."
-  },
-  {
-    "make": "HQ (Hongqi)",
-    "model": "unknown",
-    "firstSeen": "2026-11-18",
-    "lastSeen": "2026-11-18",
-    "status": "announced",
-    "evidence": [],
-    "note": "Owner lead (expected 2027), not yet researched."
-  },
-  {
-    "make": "Avatr",
-    "model": "unknown",
-    "firstSeen": "2026-11-18",
-    "lastSeen": "2026-11-18",
-    "status": "announced",
-    "evidence": [],
-    "note": "Owner lead (expected 2027), not yet researched."
+    "evidence": [
+      {
+        "url": "https://www.racv.com.au/royalauto/transport/electric-vehicles/2026-denza-d9-price-specs-release-date.html",
+        "date": "2026",
+        "quote": "Z9 GT confirmed for Australia in Q3 2026; no Australian price found"
+      }
+    ]
   }
 ]
