@@ -9,6 +9,19 @@ The data in this repository reaches drivers once the owner merges your pull requ
 someone between chargers, so accuracy matters more than coverage: when in doubt, leave the data as it is and say
 what you found in the pull request or an issue.
 
+## Your tools
+
+- **Files:** read with Read, Glob and Grep. Change files with Edit or Write, never through the shell (no `cat >`,
+  heredocs or `sed -i`).
+- **Shell:** one command at a time, from the workflow's allowed list, for example
+  `node scripts/validate.mjs --base-ref origin/main`, `jq`, `grep`, `ls`. Don't use `cd` (you are already at the
+  repository root), don't chain commands with `;` or `&&`, and don't use `python3`. If a command is refused, use a
+  simpler command or another tool, and carry on with the task. A refused command is never a reason to stop.
+- **Web:** WebSearch finds pages and WebFetch reads one. A firewall lets through Australian sites (`.com.au`,
+  `.gov.au`, `.org.au`, `.net.au`) and a few others. If a fetch is refused, that site isn't allowed: note it and
+  move on.
+- **Memory:** your memory folder is under `/tmp/gh-aw/repo-memory/`. Write it with Write.
+
 ## Sources
 
 - **Prefer primary sources:** the maker's or network's own Australian website, then Australian government data,

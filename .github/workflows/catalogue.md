@@ -13,6 +13,7 @@ permissions:
 engine:
   id: claude
   model: claude-sonnet-5-5
+  args: ["--settings", "{\"skipWebFetchPreflight\": true}"]   # Claude's own domain check can't leave the sandbox; the firewall decides
   auth:
     type: github-oidc
     provider: anthropic
@@ -62,8 +63,30 @@ tools:
 network:
   allowed:
     - defaults
-    - rover.infrastructure.gov.au
-    - greenvehicleguide.gov.au
+    - "*.com.au"
+    - "*.gov.au"
+    - "*.org.au"
+    - "*.net.au"
+    - thedriven.io
+    - openchargemap.org
+    - openchargemap.io
+    - byd.com
+    - kia.com
+    - hyundai.com
+    - genesis.com
+    - polestar.com
+    - porsche.com
+    - volvocars.com
+    - smart.com
+    - xpeng.com
+    - lotuscars.com
+    - cadillacanz.com
+    - gwmanz.com
+    - denza.com
+    - zeekr.com
+    - leapmotor.com
+    - avatr.com
+  blocked: [carexpert.com.au, carsguide.com.au, chasingcars.com.au, whichcar.com.au, drive.com.au, ancap.com.au, evcentral.com.au, ev-database.org, tesla.com, bp.com, chargefox.com, jolt.com.au, joltcharge.com, exploren.com.au]
   hosted-web:
     blocked: [carexpert.com.au, carsguide.com.au, chasingcars.com.au, whichcar.com.au, drive.com.au, ancap.com.au, evcentral.com.au, ev-database.org, tesla.com, bp.com, chargefox.com, jolt.com.au, joltcharge.com, exploren.com.au]
     max-uses: 40
@@ -91,7 +114,7 @@ jobs: re-check some makes, and find cars that are new to Australia.
 
 ## 1. Read your memory
 
-Your memory folder is `/tmp/gh-aw/repo-memory-catalogue/`. It keeps two files between runs; create them if they
+Your memory folder is `/tmp/gh-aw/repo-memory/catalogue/`. It keeps two files between runs; create them if they
 are missing:
 
 - `checked-makes.json`: `{ "Make": "YYYY-MM-DD", … }`, the day each make was last re-checked.

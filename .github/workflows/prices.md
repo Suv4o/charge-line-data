@@ -13,6 +13,7 @@ permissions:
 engine:
   id: claude
   model: claude-sonnet-5-5
+  args: ["--settings", "{\"skipWebFetchPreflight\": true}"]   # Claude's own domain check can't leave the sandbox; the firewall decides
   auth:
     type: github-oidc
     provider: anthropic
@@ -65,6 +66,14 @@ tools:
 network:
   allowed:
     - defaults
+    - "*.com.au"
+    - "*.gov.au"
+    - "*.org.au"
+    - "*.net.au"
+    - thedriven.io
+    - openchargemap.org
+    - openchargemap.io
+  blocked: [carexpert.com.au, carsguide.com.au, chasingcars.com.au, whichcar.com.au, drive.com.au, ancap.com.au, evcentral.com.au, ev-database.org, tesla.com, bp.com, chargefox.com, jolt.com.au, joltcharge.com, exploren.com.au]
   hosted-web:
     blocked: [carexpert.com.au, carsguide.com.au, chasingcars.com.au, whichcar.com.au, drive.com.au, ancap.com.au, evcentral.com.au, ev-database.org, tesla.com, bp.com, chargefox.com, jolt.com.au, joltcharge.com, exploren.com.au]
     max-uses: 30
@@ -97,7 +106,7 @@ app. This run has two jobs: find networks new to Australia, and keep the typical
 
 ## 1. Read your memory
 
-Your memory folder is `/tmp/gh-aw/repo-memory-prices/`. Keep one file, `operators.json`, created if missing. It's
+Your memory folder is `/tmp/gh-aw/repo-memory/prices/`. Keep one file, `operators.json`, created if missing. It's
 a list of `{ "operator", "fastSites", "firstSeen", "lastSeen", "decision", "notes" }`. `decision` is one of:
 
 - `added`: you added it as a network;
