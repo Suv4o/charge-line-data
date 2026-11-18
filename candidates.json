@@ -1,0 +1,86 @@
+[
+  {
+    "make": "Deepal",
+    "model": "E07",
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "status": "on-sale",
+    "evidence": [
+      {
+        "url": "https://www.deepal.com.au/vehicles/deepal/e07/",
+        "date": "2026-11-18",
+        "quote": "89.98kWh NMC battery; 240 kW max DC; 550 km (RWD) / 510 km (AWD) WLTP; test drives available now"
+      }
+    ],
+    "note": "Maker page shows price only as placeholder 'From XX,XXX RDP'. Add once an Australian price is found."
+  },
+  {
+    "make": "MG",
+    "model": "MGU9 EV",
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "status": "added",
+    "evidence": [
+      {
+        "url": "https://www.mgmotor.com.au/vehicles/mgu9-ev",
+        "date": "2026-11-18",
+        "quote": "Available Now; 430km WLTP Range; 115kW peak DC"
+      }
+    ]
+  },
+  {
+    "make": "Xpeng",
+    "model": "X9",
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "status": "added",
+    "evidence": [
+      {
+        "url": "https://thedriven.io/2026/07/21/xpeng-launches-x9-luxury-people-mover-in-australia-priced-from-89900/",
+        "date": "2026-07-21",
+        "quote": "from $89,900 plus on-road costs; 542 kW peak DC; orders open"
+      }
+    ]
+  },
+  {
+    "make": "Leapmotor",
+    "model": "B05",
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "status": "added",
+    "evidence": [
+      {
+        "url": "https://thedriven.io/2026/07/02/new-leapmotor-b05-electric-hatchback-to-land-in-australia-from-35990-driveway/",
+        "date": "2026-07-02",
+        "quote": "$35,990 drive-away; dealerships due to receive the car in late August"
+      }
+    ]
+  },
+  {
+    "make": "Chery",
+    "model": "unknown",
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "status": "announced",
+    "evidence": [],
+    "note": "Owner lead, not yet researched."
+  },
+  {
+    "make": "HQ (Hongqi)",
+    "model": "unknown",
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "status": "announced",
+    "evidence": [],
+    "note": "Owner lead (expected 2027), not yet researched."
+  },
+  {
+    "make": "Avatr",
+    "model": "unknown",
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "status": "announced",
+    "evidence": [],
+    "note": "Owner lead (expected 2027), not yet researched."
+  }
+]
