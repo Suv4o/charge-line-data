@@ -36,7 +36,7 @@ the typical price here.
 
 | Workflow | When | What it does | May change |
 | --- | --- | --- | --- |
-| [`catalogue.md`](.github/workflows/catalogue.md) | 1st and 15th of each month | Re-checks the 12 makes checked longest ago, and looks for EVs and brands new to Australia: The Driven's feed, BITRE's register entries, ROVER's type approvals, the Green Vehicle Guide, makers' sites | `vehicles.json` |
+| [`catalogue.md`](.github/workflows/catalogue.md) | 1st of each month | Re-checks the 12 makes checked longest ago, and looks for EVs and brands new to Australia: The Driven's feed, BITRE's register entries, ROVER's type approvals, the Green Vehicle Guide, makers' sites | `vehicles.json` |
 | [`prices.md`](.github/workflows/prices.md) | 8th of each month | Finds operators with three or more fast sites that no network matches, decides whether each is a new network, and checks typical prices against sources it may read | `networks.json` |
 | [`validate.yml`](.github/workflows/validate.yml) | Every pull request | Plain GitHub Actions, no AI: tests and runs the validator | — |
 
@@ -56,7 +56,8 @@ GitHub Actions runs.
     Cars, WhichCar, Drive, ANCAP, EV Central, EVDB, tesla.com, bp.com, Chargefox, Jolt, Exploren).
 - **Polite downloads.** The Driven's feed and BITRE's spreadsheet are fetched by a plain script before the agent
   starts, 10 seconds apart as The Driven asks. They're not fetched by the AI.
-- **Spending caps.** US$3 a run and US$6 a day per workflow, plus a monthly limit on the Claude account.
+- **Spending caps.** A hard limit per run and per day for each workflow (set in its frontmatter), plus a monthly
+  limit on the Claude account.
 - **No API key.** Claude signs in with GitHub's short-lived OIDC token (Anthropic Workload Identity Federation). It
   is trusted only for this repository's `main` branch.
 - **Memory without noise.** What each agent has checked, and cars it has seen but not added yet, live on
