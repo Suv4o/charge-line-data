@@ -4,32 +4,24 @@
     "fastSites": 49,
     "firstSeen": "2026-11-18",
     "lastSeen": "2026-11-18",
-    "decision": "alias",
-    "notes": "Runs QESH; yurika.com.au says charge via Chargefox app. Added to chargefox match."
+    "decision": "pending",
+    "notes": "yurika.com.au fetched OK 2026-11-18: Energy Queensland company, links to QESH FAQs, but states no role or price. Search summary suggests QESH is paid via the Chargefox app (possible roaming under chargefox) and ChargeTariff (third party) lists ~$0.30 DC; unconfirmed, so not added. Next: read the QESH FAQ page on yurika.com.au or qld.gov.au."
   },
   {
     "operator": "Queensland Electric Super Highway",
     "fastSites": 6,
     "firstSeen": "2026-11-18",
     "lastSeen": "2026-11-18",
-    "decision": "alias",
-    "notes": "Same as Yurika; chargefox match."
+    "decision": "pending",
+    "notes": "Probably the same network as Yurika. Unconfirmed."
   },
   {
     "operator": "Exploren",
     "fastSites": 33,
     "firstSeen": "2026-11-18",
     "lastSeen": "2026-11-18",
-    "decision": "added",
-    "notes": "Added as exploren, forbidden, no price. Engie text added to its match (Exploren acquired Engie DC network 2025)."
-  },
-  {
-    "operator": "Engie",
-    "fastSites": 5,
-    "firstSeen": "2026-11-18",
-    "lastSeen": "2026-11-18",
-    "decision": "alias",
-    "notes": "Now Exploren."
+    "decision": "pending",
+    "notes": "Exploren is a banned source. Not researched."
   },
   {
     "operator": "Charging the Regions",
@@ -37,62 +29,70 @@
     "firstSeen": "2026-11-18",
     "lastSeen": "2026-11-18",
     "decision": "pending",
-    "notes": "Seems a council-funded program/study; sites run via Chargefox or Evie per council. Needs per-site evidence before adding to a match."
+    "notes": "Not researched."
   },
   {
     "operator": "RAA",
     "fastSites": 13,
     "firstSeen": "2026-11-18",
     "lastSeen": "2026-11-18",
-    "decision": "roaming",
-    "notes": "RAA Charge paid via Chargefox app (raa.com.au). Added 'raa' to chargefox match. DC ~0.66-0.78 per RAA."
+    "decision": "pending",
+    "notes": "Not researched."
   },
   {
     "operator": "Electric Highway Tasmania",
     "fastSites": 6,
     "firstSeen": "2026-11-18",
     "lastSeen": "2026-11-18",
-    "decision": "roaming",
-    "notes": "Chargefox billing per search results; added to chargefox match. Prices 50-75c from forum post (not used)."
+    "decision": "pending",
+    "notes": "Not researched."
+  },
+  {
+    "operator": "Engie",
+    "fastSites": 5,
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "decision": "pending",
+    "notes": "Not researched."
   },
   {
     "operator": "Woolworths",
     "fastSites": 4,
     "firstSeen": "2026-11-18",
     "lastSeen": "2026-11-18",
-    "decision": "site-owner",
-    "notes": "Supermarket host; not researched in depth."
+    "decision": "pending",
+    "notes": "Probably a site owner. Not researched."
   },
   {
     "operator": "WA EV Network (AU)",
     "fastSites": 4,
     "firstSeen": "2026-11-18",
     "lastSeen": "2026-11-18",
-    "decision": "added",
-    "notes": "Added as waEvNetwork (Horizon Power), DC 0.60."
-  },
-  {
-    "operator": "EV Highway (Horizon Power)",
-    "fastSites": 3,
-    "firstSeen": "2026-11-18",
-    "lastSeen": "2026-11-18",
-    "decision": "alias",
-    "notes": "Same as WA EV Network; 'horizon power' in match."
+    "decision": "pending",
+    "notes": "Not researched."
   },
   {
     "operator": "WeVolt (AU)",
     "fastSites": 4,
     "firstSeen": "2026-11-18",
     "lastSeen": "2026-11-18",
-    "decision": "added",
-    "notes": "Added as wevolt, no price."
+    "decision": "pending",
+    "notes": "Not researched."
   },
   {
     "operator": "Electrona",
     "fastSites": 4,
     "firstSeen": "2026-11-18",
     "lastSeen": "2026-11-18",
-    "decision": "added",
-    "notes": "Added as electrona, no price; card reader at charger."
+    "decision": "pending",
+    "notes": "Not researched."
+  },
+  {
+    "operator": "EV Highway (Horizon Power)",
+    "fastSites": 3,
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "decision": "pending",
+    "notes": "Not researched."
   }
 ]
