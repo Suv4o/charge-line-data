@@ -118,8 +118,9 @@ a list of `{ "operator", "fastSites", "firstSeen", "lastSeen", "decision", "note
 ## 2. New networks
 
 `/tmp/gh-aw/agent/sources/new-operators.json` lists operators in Charge Line's public charger file with three or
-more fast sites (50 kW or more) that no network in `networks.json` matches. For each one not already decided in
-your memory:
+more fast sites (50 kW or more) that no network in `networks.json` matches. Work through **every** one not
+already decided in your memory, largest first, in this run. Spend a few searches and fetches on each, not more.
+For each one:
 
 1. **Find out what it is,** from the operator's own website (when its terms allow automated reading), Open Charge
    Map, government pages or The Driven:
@@ -138,6 +139,14 @@ your memory:
 3. **Another name for a listed network,** or **sites run through another network's app:** add the operator's
    lower-case text to that network's `match`.
 4. **A site owner:** record it in memory only.
+
+**Deciding what an operator is** needs reasonable evidence, not a primary source: a government page, the
+operator's or a network's own site, The Driven, or several search results that agree. Sites paid through
+Chargefox's app, for example, mean the operator's text joins Chargefox's `match`. **A price** still needs a
+source that states it.
+
+**A network whose own site is blocked** (its terms forbid automated reading, like Exploren's) can still be added
+from other sources, with `siteReading` `forbidden`.
 
 ## 3. Typical prices
 

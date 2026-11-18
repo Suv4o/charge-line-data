@@ -17,10 +17,17 @@ what you found in the pull request or an issue.
   `node scripts/validate.mjs --base-ref origin/main`, `jq`, `grep`, `ls`. Don't use `cd` (you are already at the
   repository root), don't chain commands with `;` or `&&`, and don't use `python3`. If a command is refused, use a
   simpler command or another tool, and carry on with the task. A refused command is never a reason to stop.
-- **Web:** WebSearch finds pages and WebFetch reads one. A firewall lets through Australian sites (`.com.au`,
+- **Web:** WebSearch finds pages and WebFetch reads one. Don't pass `allowed_domains` or `blocked_domains` to
+  WebSearch: the workflow already sets which sites are blocked, and the two can't be combined. A firewall lets through Australian sites (`.com.au`,
   `.gov.au`, `.org.au`, `.net.au`) and a few others. If a fetch is refused, that site isn't allowed: note it and
   move on.
 - **Memory:** your memory folder is under `/tmp/gh-aw/repo-memory/`. Write it with Write.
+
+## Finish the job
+
+Do every step of the instructions in one run. Keep each check brief so there's room for all of them. If you
+still run short, say exactly what's left, in the pull request or the no-change message, so the next run can pick
+it up.
 
 ## Sources
 

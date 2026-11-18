@@ -125,7 +125,8 @@ are missing:
 
 ## 2. Re-check up to 12 makes
 
-Take the makes in `vehicles.json` whose date in `checked-makes.json` is oldest (a make with no date first), up to
+Do this every run, before step 3. Keep each make brief: its Australian model range page, and one spec page only
+where a figure looks out of date. Take the makes in `vehicles.json` whose date in `checked-makes.json` is oldest (a make with no date first), up to
 12. For each one, on the maker's Australian website and the Green Vehicle Guide (greenvehicleguide.gov.au):
 
 - **Missing cars:** a model or variant on sale in Australia now that isn't in the file.
@@ -165,7 +166,10 @@ and range extenders are not EVs: mark them `not-an-ev` and never add them.
 **A new entry:**
 
 - **Fields:** follows the existing entries.
-- **`id`:** `make-model-variant-year` in lower case with hyphens, like the others.
+- **`id`:** `make-model-variant-year` in lower case with hyphens, like the others. Name a drivetrain (`awd`,
+  `rwd`) only when the source does.
+- **`body`:** `car` (hatch, sedan, wagon), `suv`, `van` (people movers, such as the Xpeng X9 or Kia Carnival)
+  or `ute`.
 - **Placement:**
   - A known make: next to its make's other cars (by model, cars on sale first, newest first).
   - A new make: in alphabetical order after Tesla and BYD.
