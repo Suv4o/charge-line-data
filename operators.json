@@ -5,7 +5,7 @@
     "firstSeen": "2026-11-18",
     "lastSeen": "2026-11-18",
     "decision": "pending",
-    "notes": "Search snippets suggest it runs the Queensland Electric Super Highway (QESH), so 'Queensland Electric Super Highway' is probably an alias. Only third-party listings (Plugroo) gave prices, about $0.55 for DC. No primary source read: yurika.com.au could not be fetched."
+    "notes": "yurika.com.au fetched OK 2026-11-18: Energy Queensland company, links to QESH FAQs, but states no role or price. Search summary suggests QESH is paid via the Chargefox app (possible roaming under chargefox) and ChargeTariff (third party) lists ~$0.30 DC; unconfirmed, so not added. Next: read the QESH FAQ page on yurika.com.au or qld.gov.au."
   },
   {
     "operator": "Queensland Electric Super Highway",
