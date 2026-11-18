@@ -1,0 +1,98 @@
+[
+  {
+    "operator": "Yurika",
+    "fastSites": 49,
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "decision": "pending",
+    "notes": "Search snippets suggest it runs the Queensland Electric Super Highway (QESH), so 'Queensland Electric Super Highway' is probably an alias. Only third-party listings (Plugroo) gave prices, about $0.55 for DC. No primary source read: yurika.com.au could not be fetched."
+  },
+  {
+    "operator": "Queensland Electric Super Highway",
+    "fastSites": 6,
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "decision": "pending",
+    "notes": "Probably the same network as Yurika. Unconfirmed."
+  },
+  {
+    "operator": "Exploren",
+    "fastSites": 33,
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "decision": "pending",
+    "notes": "Exploren is a banned source. Not researched."
+  },
+  {
+    "operator": "Charging the Regions",
+    "fastSites": 25,
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "decision": "pending",
+    "notes": "Not researched."
+  },
+  {
+    "operator": "RAA",
+    "fastSites": 13,
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "decision": "pending",
+    "notes": "Not researched."
+  },
+  {
+    "operator": "Electric Highway Tasmania",
+    "fastSites": 6,
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "decision": "pending",
+    "notes": "Not researched."
+  },
+  {
+    "operator": "Engie",
+    "fastSites": 5,
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "decision": "pending",
+    "notes": "Not researched."
+  },
+  {
+    "operator": "Woolworths",
+    "fastSites": 4,
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "decision": "pending",
+    "notes": "Probably a site owner. Not researched."
+  },
+  {
+    "operator": "WA EV Network (AU)",
+    "fastSites": 4,
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "decision": "pending",
+    "notes": "Not researched."
+  },
+  {
+    "operator": "WeVolt (AU)",
+    "fastSites": 4,
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "decision": "pending",
+    "notes": "Not researched."
+  },
+  {
+    "operator": "Electrona",
+    "fastSites": 4,
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "decision": "pending",
+    "notes": "Not researched."
+  },
+  {
+    "operator": "EV Highway (Horizon Power)",
+    "fastSites": 3,
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "decision": "pending",
+    "notes": "Not researched."
+  }
+]
