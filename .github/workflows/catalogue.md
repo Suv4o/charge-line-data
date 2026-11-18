@@ -5,6 +5,12 @@ on:
     - cron: "0 3 1,15 * *"          # fortnightly: the 1st and 15th, 3 am in Melbourne
       timezone: Australia/Melbourne
   workflow_dispatch:
+    inputs:
+      model:
+        description: "Claude model for this run (scheduled runs use Sonnet 5.5)"
+        type: choice
+        options: [claude-sonnet-5-5, claude-opus-5-5]
+        default: claude-sonnet-5-5
 permissions:
   contents: read
   issues: read
@@ -12,7 +18,7 @@ permissions:
   id-token: write                   # Anthropic Workload Identity Federation: no API key stored anywhere
 engine:
   id: claude
-  model: claude-sonnet-5-5
+  model: ${{ inputs.model || 'claude-sonnet-5-5' }}
   args: ["--settings", "{\"skipWebFetchPreflight\": true}"]   # Claude's own domain check can't leave the sandbox; the firewall decides
   auth:
     type: github-oidc
