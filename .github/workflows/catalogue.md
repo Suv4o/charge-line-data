@@ -31,6 +31,7 @@ timeout-minutes: 30
 max-turns: 80
 max-ai-credits: 300                 # US$3 hard stop per run
 max-daily-ai-credits: 600
+max-turn-cache-misses: 10          # gh-aw's default of 5 stopped an Opus run; the credit caps still bound the cost
 imports:
   - shared/rules.md
 steps:
