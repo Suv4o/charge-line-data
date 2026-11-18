@@ -12,7 +12,7 @@
         "quote": "89.98kWh NMC battery; 240 kW max DC; 550 km (RWD) / 510 km (AWD) WLTP; test drives available now"
       }
     ],
-    "note": "Maker page shows price only as placeholder 'From XX,XXX RDP'. Add once an Australian price is found."
+    "note": "Maker page shows price only as placeholder 'From XX,XXX RDP'; no explicit on-sale/order statement. Add once an Australian price is found (AC 7 kW, 30-80% 15 min)."
   },
   {
     "make": "MG",
@@ -38,7 +38,7 @@
       {
         "url": "https://thedriven.io/2026/07/21/xpeng-launches-x9-luxury-people-mover-in-australia-priced-from-89900/",
         "date": "2026-07-21",
-        "quote": "from $89,900 plus on-road costs; 542 kW peak DC; orders open"
+        "quote": "2WD $89,900, AWD $109,900 plus on-road costs; up to 542 kW"
       }
     ]
   },
@@ -52,35 +52,53 @@
       {
         "url": "https://thedriven.io/2026/07/02/new-leapmotor-b05-electric-hatchback-to-land-in-australia-from-35990-driveway/",
         "date": "2026-07-02",
-        "quote": "$35,990 drive-away; dealerships due to receive the car in late August"
+        "quote": "$35,990 drive-away Style; $39,990 Design LR; up to 174kW"
       }
-    ]
+    ],
+    "note": "leapmotor.com.au is a parked domain; no maker page found. Price from The Driven launch report."
   },
   {
     "make": "Chery",
-    "model": "unknown",
+    "model": "E5",
     "firstSeen": "2026-11-18",
     "lastSeen": "2026-11-18",
-    "status": "announced",
-    "evidence": [],
-    "note": "Owner lead, not yet researched."
+    "status": "on-sale",
+    "evidence": [
+      {
+        "url": "https://www.cherysouthland.com.au/models/e5",
+        "date": "2026-11-18",
+        "quote": "E5 Ultimate; $2,000 cashback; LFP battery with blade cell design"
+      }
+    ],
+    "note": "Search results (zecar, carsales; not primary) say 61.1 kWh, 430 km WLTP, 80 kW DC, from $36,990. Need maker spec sheet (chery.com.au fails TLS) or Green Vehicle Guide (vehicleDisplayId=36958) for WLTP/DC."
   },
   {
     "make": "HQ (Hongqi)",
-    "model": "unknown",
+    "model": "E-HS9",
     "firstSeen": "2026-11-18",
     "lastSeen": "2026-11-18",
     "status": "announced",
-    "evidence": [],
-    "note": "Owner lead (expected 2027), not yet researched."
+    "evidence": [
+      {
+        "url": "https://thedriven.io/2026/11/12/chinese-luxury-ev-brand-hongqi-launches-in-australia-with-massive-six-seat-electric-suv/",
+        "date": "2026-11-12",
+        "quote": "below $150,000 before on-road costs; deliveries from January 18, 2027; 120 kWh, 548 km, 140 kW"
+      }
+    ],
+    "note": "Final price not confirmed; E-HS4 due to be unveiled December. Add when maker confirms price/orders."
   },
   {
     "make": "Avatr",
-    "model": "unknown",
+    "model": "07L / 06T",
     "firstSeen": "2026-11-18",
     "lastSeen": "2026-11-18",
     "status": "announced",
-    "evidence": [],
-    "note": "Owner lead (expected 2027), not yet researched."
+    "evidence": [
+      {
+        "url": "https://thedriven.io/2026/11/13/avatrs-australian-website-goes-live-with-07l-electric-suv-and-06t-wagon/",
+        "date": "2026-11-13",
+        "quote": "taking expressions of interest in Australia; SUV due to arrive first in early 2027"
+      }
+    ]
   }
 ]
