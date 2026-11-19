@@ -1,0 +1,230 @@
+﻿2026-11-19T11:55:32.6141300Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-19T11:55:32.6141537Z with:
+2026-11-19T11:55:32.6143239Z   github-token: ***
+2026-11-19T11:55:32.6143975Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit, process.env.GH_AW_GITHUB_TOKEN_SOURCE);
+const { main } = require(path.join(actionsDir, 'process_safe_outputs.cjs'));
+await main();
+
+2026-11-19T11:55:32.6144735Z   debug: false
+2026-11-19T11:55:32.6144873Z   user-agent: actions/github-script
+2026-11-19T11:55:32.6145045Z   result-encoding: json
+2026-11-19T11:55:32.6145187Z   retries: 0
+2026-11-19T11:55:32.6145334Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-19T11:55:32.6145510Z env:
+2026-11-19T11:55:32.6145837Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:55:32.6146002Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:55:32.6146178Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-19T11:55:32.6146647Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517220484,github.run_id=44517220484,gh-aw.engine.id=claude
+2026-11-19T11:55:32.6147112Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:55:32.6147269Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:55:32.6147424Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:55:32.6147596Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:55:32.6147782Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:55:32.6147934Z   GH_AW_AGENT_AIC: 317.19688
+2026-11-19T11:55:32.6148083Z   GH_AW_AIC: 317.19688
+2026-11-19T11:55:32.6148225Z   GH_AW_AMBIENT_CONTEXT: 2833
+2026-11-19T11:55:32.6148408Z   GH_AW_CALLER_WORKFLOW_ID: Suv4o/charge-line-data/catalogue
+2026-11-19T11:55:32.6148620Z   GH_AW_DETECTION_CONCLUSION: success
+2026-11-19T11:55:32.6148785Z   GH_AW_DETECTION_REASON: 
+2026-11-19T11:55:32.6148942Z   GH_AW_DETECTION_THREAT_KINDS: 
+2026-11-19T11:55:32.6149104Z   GH_AW_ENGINE_ID: claude
+2026-11-19T11:55:32.6149258Z   GH_AW_ENGINE_MODEL: claude-opus-5-5
+2026-11-19T11:55:32.6149436Z   GH_AW_OBJECT_PACK_FETCH_DEPTHS: 
+2026-11-19T11:55:32.6149598Z   GH_AW_OBJECT_PACK_MAX_BYTES: 
+2026-11-19T11:55:32.6149763Z   GH_AW_OBJECT_PACK_MAX_OBJECTS: 
+2026-11-19T11:55:32.6149925Z   GH_AW_OBJECT_PACK_TIMEOUT_MS: 
+2026-11-19T11:55:32.6150091Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:55:32.6150250Z   GH_AW_RUN_DETECTION: true
+2026-11-19T11:55:32.6150405Z   GH_AW_THREAT_DETECTION_AIC: 36.12328
+2026-11-19T11:55:32.6150575Z   GH_AW_WORKFLOW_ID: catalogue
+2026-11-19T11:55:32.6150753Z   GH_AW_WORKFLOW_NAME: Keep the EV catalogue current
+2026-11-19T11:55:32.6151076Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Suv4o/charge-line-data/blob/main/.github/workflows/catalogue.md
+2026-11-19T11:55:32.6151414Z   GITHUB_AW_OTEL_TRACE_ID: 19af99b8ca6a314c08bd9b7019d79d19
+2026-11-19T11:55:32.6151632Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8cc2e0d6949db6fd
+2026-11-19T11:55:32.6151827Z   GITHUB_AW_OTEL_JOB_START_MS: 1795089329825
+2026-11-19T11:55:32.6152004Z   GH_HOST: github.com
+2026-11-19T11:55:32.6152144Z   GH_AW_JOB_CHECK_RUN_ID: 135542802506
+2026-11-19T11:55:32.6152338Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-11-19T11:55:32.6152716Z   GH_AW_COMMENT_ID: 
+2026-11-19T11:55:32.6154328Z   GH_AW_MENTIONS_GITHUB_TOKEN: ***
+2026-11-19T11:55:32.6159370Z   GH_AW_ALLOWED_DOMAINS: *.com.au,*.gov.au,*.net.au,*.org.au,archive.ubuntu.com,avatr.com,azure.archive.ubuntu.com,byd.com,cadillacanz.com,cdn.playwright.dev,crl.geotrust.com,crl.globalsign.com,crl.identrust.com,crl.sectigo.com,crl.thawte.com,crl.usertrust.com,crl.verisign.com,crl3.digicert.com,crl4.digicert.com,crls.ssl.com,denza.com,genesis.com,gwmanz.com,hyundai.com,json-schema.org,json.schemastore.org,keyserver.ubuntu.com,kia.com,leapmotor.com,lotuscars.com,ocsp.digicert.com,ocsp.geotrust.com,ocsp.globalsign.com,ocsp.identrust.com,ocsp.sectigo.com,ocsp.ssl.com,ocsp.thawte.com,ocsp.usertrust.com,ocsp.verisign.com,openchargemap.io,openchargemap.org,playwright.download.prss.microsoft.com,polestar.com,porsche.com,s.symcb.com,s.symcd.com,security.ubuntu.com,smart.com,thedriven.io,ts-crl.ws.symantec.com,ts-ocsp.ws.symantec.com,volvocars.com,xpeng.com,zeekr.com
+2026-11-19T11:55:32.6164379Z   GITHUB_SERVER_URL: https://github.com
+2026-11-19T11:55:32.6164569Z   GITHUB_API_URL: https://api.github.com
+2026-11-19T11:55:32.6166927Z   GH_AW_SAFE_OUTPUTS_HANDLER_CONFIG: {"create_issue":{"labels":["agent","catalogue"],"max":2,"max_issue_artifact_size":1048576,"max_issue_artifacts":10,"title_prefix":"[catalogue] "},"create_pull_request":{"allowed_files":["vehicles.json"],"draft":false,"if_no_changes":"ignore","labels":["agent","catalogue"],"max":1,"max_patch_files":100,"max_patch_size":4096,"protect_top_level_dot_folders":true,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS","DESIGN.md","README.md","CONTRIBUTING.md","SECURITY.md","CODE_OF_CONDUCT.md","CLAUDE.md","AGENTS.md"],"protected_files_policy":"request-review","reviewers":["Suv4o"],"title_prefix":"[catalogue] "},"create_report_incomplete_issue":{},"noop":{"max":2,"report-as-issue":"false"},"report_incomplete":{},"report_missing_data":{},"report_missing_tool":{}}
+2026-11-19T11:55:32.6169423Z   GH_AW_CI_TRIGGER_TOKEN: ***
+2026-11-19T11:55:32.6169591Z   GH_AW_GITHUB_TOKEN_SOURCE: github_actions
+2026-11-19T11:55:32.6169773Z ##[endgroup]
+2026-11-19T11:55:32.7166046Z Safe Output Handler Manager starting...
+2026-11-19T11:55:32.7172425Z Loaded config from GH_AW_SAFE_OUTPUTS_HANDLER_CONFIG: {"create_issue":{"labels":["agent","catalogue"],"max":2,"max_issue_artifact_size":1048576,"max_issue_artifacts":10,"title_prefix":"[catalogue] "},"create_pull_request":{"allowed_files":["vehicles.json"],"draft":false,"if_no_changes":"ignore","labels":["agent","catalogue"],"max":1,"max_patch_files":100,"max_patch_size":4096,"protect_top_level_dot_folders":true,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS","DESIGN.md","README.md","CONTRIBUTING.md","SECURITY.md","CODE_OF_CONDUCT.md","CLAUDE.md","AGENTS.md"],"protected_files_policy":"request-review","reviewers":["Suv4o"],"title_prefix":"[catalogue] "},"create_report_incomplete_issue":{},"noop":{"max":2,"report-as-issue":"false"},"report_incomplete":{},"report_missing_data":{},"report_missing_tool":{}}
+2026-11-19T11:55:32.7175647Z Agent output content length: 7836
+2026-11-19T11:55:32.7176091Z Found 3 message(s) in agent output
+2026-11-19T11:55:32.7177572Z Loading and initializing safe output handlers based on configuration...
+2026-11-19T11:55:32.7218807Z Found 1 unique mentions in text
+2026-11-19T11:55:33.0652603Z Cached 1 recent collaborators for optimistic resolution
+2026-11-19T11:55:33.0653062Z Resolved 0 mentions via individual API calls
+2026-11-19T11:55:33.0653363Z Total allowed mentions: 1
+2026-11-19T11:55:33.0653626Z [OUTPUT COLLECTOR] Allowed mentions: Suv4o
+2026-11-19T11:55:33.0656472Z Default target repo: Suv4o/charge-line-data
+2026-11-19T11:55:33.0656786Z Default labels: agent, catalogue
+2026-11-19T11:55:33.0657048Z Title prefix: [catalogue] 
+2026-11-19T11:55:33.0657273Z Max count: 2
+2026-11-19T11:55:33.0658375Z ✓ Loaded and initialized handler for: create_issue
+2026-11-19T11:55:33.0731918Z Found 1 unique mentions in text
+2026-11-19T11:55:33.0732283Z Cached 1 recent collaborators for optimistic resolution
+2026-11-19T11:55:33.0732638Z Resolved 0 mentions via individual API calls
+2026-11-19T11:55:33.0732961Z Total allowed mentions: 1
+2026-11-19T11:55:33.0733225Z [OUTPUT COLLECTOR] Allowed mentions: Suv4o
+2026-11-19T11:55:33.0736109Z Base branch: (dynamic - resolved per target repo)
+2026-11-19T11:55:33.0736446Z Default target repo: Suv4o/charge-line-data
+2026-11-19T11:55:33.0736742Z Default labels: agent, catalogue
+2026-11-19T11:55:33.0737032Z Configured reviewers: Suv4o
+2026-11-19T11:55:33.0737281Z Title prefix: [catalogue] 
+2026-11-19T11:55:33.0737519Z Draft default: false
+2026-11-19T11:55:33.0737746Z If no changes: ignore
+2026-11-19T11:55:33.0737966Z Allow empty: false
+2026-11-19T11:55:33.0738182Z Auto-merge: false
+2026-11-19T11:55:33.0738392Z Signed commits: true
+2026-11-19T11:55:33.0738612Z Max count: 1
+2026-11-19T11:55:33.0738831Z Max patch size: 4096 KB
+2026-11-19T11:55:33.0739052Z Max patch files: 100
+2026-11-19T11:55:33.0739492Z ✓ Loaded and initialized handler for: create_pull_request
+2026-11-19T11:55:33.0742796Z Max count: unlimited
+2026-11-19T11:55:33.0743124Z ✓ Loaded and initialized handler for: report_missing_tool
+2026-11-19T11:55:33.0743590Z Max count: unlimited
+2026-11-19T11:55:33.0743905Z ✓ Loaded and initialized handler for: report_missing_data
+2026-11-19T11:55:33.0744635Z Max count: 2
+2026-11-19T11:55:33.0744889Z ✓ Loaded and initialized handler for: noop
+2026-11-19T11:55:33.0745166Z Max count: unlimited
+2026-11-19T11:55:33.0745487Z ✓ Loaded and initialized handler for: report_incomplete
+2026-11-19T11:55:33.0749864Z Title prefix: [incomplete]
+2026-11-19T11:55:33.0750114Z Default labels: agentic-workflows
+2026-11-19T11:55:33.0750365Z Max count: 1
+2026-11-19T11:55:33.0750737Z ✓ Loaded and initialized handler for: create_report_incomplete_issue
+2026-11-19T11:55:33.0752735Z Loaded 7 handler(s)
+2026-11-19T11:55:33.3227039Z ℹ️ Rate-limit headroom: 4940/5000 requests remaining (98%) [safe_outputs_pre_check]
+2026-11-19T11:55:33.3244353Z Collected 0 missing tool(s), 0 missing data item(s), 1 noop message(s), and 0 incomplete signal(s)
+2026-11-19T11:55:33.3246233Z Processing 3 message(s) in order of appearance...
+2026-11-19T11:55:33.3258847Z Processing message 1/3: create_pull_request
+2026-11-19T11:55:33.3298304Z Processing create_pull_request: title=Add the Deepal E07, Mitsubishi ASX VR-e LS, MG U9 EV and Xpeng X9, bodyLength=5093
+2026-11-19T11:55:33.3309365Z Patch file path: /tmp/gh-aw/aw-suv4o-charge-line-data-catalogue-2026-11-19-new-evs.patch
+2026-11-19T11:55:33.3310194Z Bundle file path: /tmp/gh-aw/aw-suv4o-charge-line-data-catalogue-2026-11-19-new-evs.bundle
+2026-11-19T11:55:33.3311439Z Target repository: Suv4o/charge-line-data
+2026-11-19T11:55:33.5979188Z Base branch for Suv4o/charge-line-data: main
+2026-11-19T11:55:33.5981834Z Apply transport mode: bundle (bundle file present: true)
+2026-11-19T11:55:33.5986355Z Patch size: 14 KB (maximum allowed: 4096 KB)
+2026-11-19T11:55:33.5986596Z Patch size validation passed
+2026-11-19T11:55:33.5990643Z Patch content validation passed
+2026-11-19T11:55:33.6197260Z Using branch name from JSONL with added salt: catalogue/2026-11-19-new-evs-0cc93d7f6a350466
+2026-11-19T11:55:33.6198471Z Branch name sanitized: "catalogue/2026-11-19-new-evs" -> "catalogue/2026-11-19-new-evs-0cc93d7f6a350466"
+2026-11-19T11:55:33.6306222Z Creating pull request with title: [catalogue] Add the Deepal E07, Mitsubishi ASX VR-e LS, MG U9 EV and Xpeng X9
+2026-11-19T11:55:33.6306780Z Labels: ["agent","catalogue"]
+2026-11-19T11:55:33.6307029Z Draft: false
+2026-11-19T11:55:33.6307236Z Body length: 6048
+2026-11-19T11:55:33.6307558Z Generated branch name: catalogue/2026-11-19-new-evs-0cc93d7f6a350466
+2026-11-19T11:55:33.6307908Z Base branch: main
+2026-11-19T11:55:33.6308121Z Fetching base branch: main
+2026-11-19T11:55:33.6326100Z [command]/usr/bin/git rev-parse --is-shallow-repository
+2026-11-19T11:55:33.6369771Z true
+2026-11-19T11:55:33.6391269Z [command]/usr/bin/git show-ref --verify --quiet refs/remotes/origin/main
+2026-11-19T11:55:33.6434188Z [command]/usr/bin/git fetch origin main
+2026-11-19T11:55:33.8484444Z From https://github.com/Suv4o/charge-line-data
+2026-11-19T11:55:33.8484852Z  * branch            main       -> FETCH_HEAD
+2026-11-19T11:55:33.8515796Z Applying changes from bundle: /tmp/gh-aw/aw-suv4o-charge-line-data-catalogue-2026-11-19-new-evs.bundle
+2026-11-19T11:55:33.8624605Z Bundle prerequisite commits already present locally; no fetch required
+2026-11-19T11:55:33.8625386Z Applying bundle /tmp/gh-aw/aw-suv4o-charge-line-data-catalogue-2026-11-19-new-evs.bundle to refs/heads/catalogue/2026-11-19-new-evs-0cc93d7f6a350466 using temp ref refs/bundles/create-pr-catalogue-2026-11-19-new-evs-0cc93d7f6a350466-ed6ee776 from refs/heads/catalogue/2026-11-19-new-evs
+2026-11-19T11:55:33.8817389Z Imported local bundle to refs/bundles/create-pr-catalogue-2026-11-19-new-evs-0cc93d7f6a350466-ed6ee776
+2026-11-19T11:55:33.8823439Z [command]/usr/bin/git update-ref refs/heads/catalogue/2026-11-19-new-evs-0cc93d7f6a350466 refs/bundles/create-pr-catalogue-2026-11-19-new-evs-0cc93d7f6a350466-ed6ee776
+2026-11-19T11:55:33.8856035Z Created local branch catalogue/2026-11-19-new-evs-0cc93d7f6a350466 from bundle
+2026-11-19T11:55:33.8962259Z Checked out branch catalogue/2026-11-19-new-evs-0cc93d7f6a350466 from bundle
+2026-11-19T11:55:33.8967653Z [command]/usr/bin/git update-ref -d refs/bundles/create-pr-catalogue-2026-11-19-new-evs-0cc93d7f6a350466-ed6ee776
+2026-11-19T11:55:33.9009009Z [command]/usr/bin/git ls-remote --heads origin catalogue/2026-11-19-new-evs-0cc93d7f6a350466
+2026-11-19T11:55:34.3947491Z pushSignedCommits: replaying 1 commit(s) via GraphQL createCommitOnBranch (branch: catalogue/2026-11-19-new-evs-0cc93d7f6a350466, repo: Suv4o/charge-line-data)
+2026-11-19T11:55:34.4031800Z pushSignedCommits: processing commit 1/1 sha=28faae71e2339dce67b957d88ff0f86b608d370d
+2026-11-19T11:55:34.6324042Z pushSignedCommits: branch catalogue/2026-11-19-new-evs-0cc93d7f6a350466 not yet on the remote, resolving parent OID for first commit
+2026-11-19T11:55:34.6327482Z pushSignedCommits: using baseRef OID for initial branch creation: 5c02988e404353ec4ce1a012f048a04af7b8a5e0
+2026-11-19T11:55:34.6328850Z pushSignedCommits: creating remote branch catalogue/2026-11-19-new-evs-0cc93d7f6a350466 at parent OID 5c02988e404353ec4ce1a012f048a04af7b8a5e0
+2026-11-19T11:55:35.3242185Z pushSignedCommits: remote branch catalogue/2026-11-19-new-evs-0cc93d7f6a350466 created successfully
+2026-11-19T11:55:35.3287916Z pushSignedCommits: commit message headline: "Add Deepal E07, Mitsubishi ASX VR-e LS, MG U9 EV and Xpeng X9"
+2026-11-19T11:55:35.3288471Z pushSignedCommits: file changes: 1 addition(s), 0 deletion(s)
+2026-11-19T11:55:35.3289041Z pushSignedCommits: calling createCommitOnBranch mutation (expectedHeadOid=5c02988e404353ec4ce1a012f048a04af7b8a5e0)
+2026-11-19T11:55:36.5913332Z pushSignedCommits: signed commit created: 14e30293e6ddb6f7aeb571d34cf6cbadd641071a
+2026-11-19T11:55:36.5913948Z pushSignedCommits: all 1 commit(s) pushed as signed commits
+2026-11-19T11:55:36.5914307Z Changes pushed to branch (from bundle)
+2026-11-19T11:55:36.5920906Z [command]/usr/bin/git rev-list --count origin/main..HEAD
+2026-11-19T11:55:36.5956801Z 1
+2026-11-19T11:55:36.5960187Z 1 new commit(s) on branch relative to origin/main
+2026-11-19T11:55:37.5681312Z Created pull request #17: https://github.com/Suv4o/charge-line-data/pull/17
+2026-11-19T11:55:38.4815319Z Added labels to pull request: ["agent","catalogue"]
+2026-11-19T11:55:38.4815908Z Requesting reviewers for pull request #17: reviewers=["Suv4o"], team_reviewers=[]
+2026-11-19T11:55:39.2494082Z Requested reviewers for pull request #17: reviewers=["Suv4o"], team_reviewers=[]
+2026-11-19T11:55:39.2512057Z No activation comment to update (GH_AW_COMMENT_ID not set)
+2026-11-19T11:55:39.2523387Z Extra empty commit token detected - pushing empty commit to trigger CI events
+2026-11-19T11:55:39.2523960Z Cycle check: analyzing up to 60 recent commits on catalogue/2026-11-19-new-evs-0cc93d7f6a350466
+2026-11-19T11:55:39.2572088Z Cycle check details: analyzed 2 commit(s), ignored 0 merge commit(s), counted 0 empty non-merge commit(s)
+2026-11-19T11:55:39.2572445Z Cycle check passed: 0 empty commit(s) in last 60 (limit: 30)
+2026-11-19T11:55:39.2572843Z Overriding git extraheader for CI trigger push to Suv4o/charge-line-data on branch catalogue/2026-11-19-new-evs-0cc93d7f6a350466
+2026-11-19T11:55:39.2608156Z git_auth_helpers: read 1 existing extraheader value(s) for https://github.com
+2026-11-19T11:55:39.2608839Z git_auth_helpers: overriding http.https://github.com/.extraheader with CI trigger token
+2026-11-19T11:55:39.2832413Z ##[warning]git_auth_helpers: skipping includeIf-referenced config file outside safe temp directories: /github/runner_temp/git-credentials-e52f3125-75f5-40be-a135-a41d8cb6858d.config
+2026-11-19T11:55:39.2855296Z ##[warning]git_auth_helpers: skipping includeIf-referenced config file outside safe temp directories: /github/runner_temp/git-credentials-e52f3125-75f5-40be-a135-a41d8cb6858d.config
+2026-11-19T11:55:39.3017081Z git_auth_helpers: extraheader override applied
+2026-11-19T11:55:39.3017531Z Fetching and syncing with remote branch catalogue/2026-11-19-new-evs-0cc93d7f6a350466
+2026-11-19T11:55:39.3022644Z [command]/usr/bin/git fetch https://github.com/Suv4o/charge-line-data.git catalogue/2026-11-19-new-evs-0cc93d7f6a350466
+2026-11-19T11:55:39.6511324Z From https://github.com/Suv4o/charge-line-data
+2026-11-19T11:55:39.6511856Z  * branch            catalogue/2026-11-19-new-evs-0cc93d7f6a350466 -> FETCH_HEAD
+2026-11-19T11:55:39.6522874Z [command]/usr/bin/git reset --hard FETCH_HEAD
+2026-11-19T11:55:39.6568707Z HEAD is now at 14e3029 Add Deepal E07, Mitsubishi ASX VR-e LS, MG U9 EV and Xpeng X9
+2026-11-19T11:55:39.6571622Z Synced local branch with remote catalogue/2026-11-19-new-evs-0cc93d7f6a350466
+2026-11-19T11:55:39.6612820Z HEAD OID for GraphQL mutation: 14e30293e6ddb6f7aeb571d34cf6cbadd641071a
+2026-11-19T11:55:39.6613231Z Attempting to create verified empty commit via GitHub API (createCommitOnBranch)
+2026-11-19T11:55:40.8080839Z Verified empty commit created via GitHub API (oid=303b9c53041a243c3ac926e8108d6af82912cd8b)
+2026-11-19T11:55:40.8087739Z [command]/usr/bin/git fetch https://github.com/Suv4o/charge-line-data.git catalogue/2026-11-19-new-evs-0cc93d7f6a350466
+2026-11-19T11:55:41.0858279Z From https://github.com/Suv4o/charge-line-data
+2026-11-19T11:55:41.0858651Z  * branch            catalogue/2026-11-19-new-evs-0cc93d7f6a350466 -> FETCH_HEAD
+2026-11-19T11:55:41.0869209Z [command]/usr/bin/git reset --hard FETCH_HEAD
+2026-11-19T11:55:41.0911935Z HEAD is now at 303b9c5 ci: trigger checks
+2026-11-19T11:55:41.0914956Z Updated local branch to API-created commit 303b9c53041a243c3ac926e8108d6af82912cd8b
+2026-11-19T11:55:41.0915483Z Extra empty commit pushed to catalogue/2026-11-19-new-evs-0cc93d7f6a350466 successfully
+2026-11-19T11:55:41.0920755Z [command]/usr/bin/git remote remove ci-trigger
+2026-11-19T11:55:41.0947593Z error: No such remote: 'ci-trigger'
+2026-11-19T11:55:41.0950407Z Restoring previous git auth configuration
+2026-11-19T11:55:41.1161399Z ##[warning]git_auth_helpers: skipping includeIf-referenced config file outside safe temp directories: /github/runner_temp/git-credentials-e52f3125-75f5-40be-a135-a41d8cb6858d.config
+2026-11-19T11:55:41.1194337Z ##[warning]git_auth_helpers: skipping includeIf-referenced config file outside safe temp directories: /github/runner_temp/git-credentials-e52f3125-75f5-40be-a135-a41d8cb6858d.config
+2026-11-19T11:55:41.1258647Z git_auth_helpers: restoring 1 previous extraheader value(s) for http.https://github.com/.extraheader
+2026-11-19T11:55:41.1293515Z git_auth_helpers: extraheader restored
+2026-11-19T11:55:41.1293879Z Extra empty commit pushed - CI checks should start shortly
+2026-11-19T11:55:41.1300790Z Registered temporary ID: aw_59UqApai -> Suv4o/charge-line-data#17
+2026-11-19T11:55:41.1304494Z 📝 Manifest: logged create_pull_request → https://github.com/Suv4o/charge-line-data/pull/17
+2026-11-19T11:55:41.1307726Z ✓ Message 1 (create_pull_request) completed successfully
+2026-11-19T11:55:41.1308086Z Processing message 2/3: create_issue
+2026-11-19T11:55:41.1317676Z Processing create_issue: title=Omoda E5 is now sold as the Chery E5: DC figure may be out of date, bodyLength=1679, temporaryId=aw_tjX7Ebw0, repo=Suv4o/charge-line-data
+2026-11-19T11:55:41.1550952Z Creating issue in Suv4o/charge-line-data with title: [catalogue] Omoda E5 is now sold as the Chery E5: DC figure may be out of date
+2026-11-19T11:55:41.1551398Z Labels: agent, catalogue
+2026-11-19T11:55:41.1551554Z Body length: 2653
+2026-11-19T11:55:41.5196015Z Created issue Suv4o/charge-line-data#18: https://github.com/Suv4o/charge-line-data/issues/18
+2026-11-19T11:55:41.5196822Z Stored temporary ID mapping: aw_tjX7Ebw0 -> Suv4o/charge-line-data#18
+2026-11-19T11:55:41.5197416Z Registered temporary ID: aw_tjX7Ebw0 -> Suv4o/charge-line-data#18
+2026-11-19T11:55:41.5198234Z 📝 Manifest: logged create_issue → https://github.com/Suv4o/charge-line-data/issues/18
+2026-11-19T11:55:41.5199165Z ✓ Message 2 (create_issue) completed successfully
+2026-11-19T11:55:41.5211621Z Processing message 3/3: noop
+2026-11-19T11:55:41.5213968Z ✓ Recorded noop message: Run complete. PR proposed: adds the Deepal E07 (RWD and AWD Performance), Mitsubishi ASX VR-e LS (new make), MG U9 EV and Xpeng X9 (FWD and AWD); validate.mjs passes. Issue opened: the Chery E5 (renamed Omoda E5) DC figure (80 vs 130 kW), plus the Leapmotor B05 left as a candidate. Memory saved: BYD, Alfa Romeo and Deepal re-checked. Still to do: re-check Abarth, Audi, BMW, Cadillac, Cupra, Denza, Fiat, Ford and GAC (their sites blocked automated fetches), and check ROVER (table didn't render), BITRE (download timed out) and the Green Vehicle Guide.
+2026-11-19T11:55:41.5215976Z ✓ Message 3 (noop) completed successfully
+2026-11-19T11:55:41.5216469Z Stored 0 missing tool(s), 0 missing data item(s), 1 noop message(s), and 0 incomplete signal(s) for footer generation
+2026-11-19T11:55:41.5218248Z 📝 Safe output summaries written to step summary
+2026-11-19T11:55:41.5219011Z 
+2026-11-19T11:55:41.5219136Z === Processing Summary ===
+2026-11-19T11:55:41.5219385Z Total messages: 3
+2026-11-19T11:55:41.5219596Z Status: success
+2026-11-19T11:55:41.5219806Z Successful: 3
+2026-11-19T11:55:41.5220007Z Failed: 0
+2026-11-19T11:55:41.5220192Z Temporary IDs registered: 2
+2026-11-19T11:55:41.5220430Z Synthetic updates: 0
+2026-11-19T11:55:41.5221039Z Wrote temporary ID map to file for artifact upload
+2026-11-19T11:55:41.5228334Z Exported created_issue_number: 18
+2026-11-19T11:55:41.5228770Z Exported created_issue_url: https://github.com/Suv4o/charge-line-data/issues/18
+2026-11-19T11:55:41.5229187Z Exported created_pr_number: 17
+2026-11-19T11:55:41.5229542Z Exported created_pr_url: https://github.com/Suv4o/charge-line-data/pull/17
+2026-11-19T11:55:41.5229937Z Safe Output Handler Manager completed

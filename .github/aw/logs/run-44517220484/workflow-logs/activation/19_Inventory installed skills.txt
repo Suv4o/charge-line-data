@@ -1,0 +1,33 @@
+﻿2026-11-19T11:42:50.1782110Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-19T11:42:50.1783940Z with:
+2026-11-19T11:42:50.1787831Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'skill_inventory.cjs'));
+await main();
+
+2026-11-19T11:42:50.1799830Z   github-token: ***
+2026-11-19T11:42:50.1800708Z   debug: false
+2026-11-19T11:42:50.1801565Z   user-agent: actions/github-script
+2026-11-19T11:42:50.1802583Z   result-encoding: json
+2026-11-19T11:42:50.1803656Z   retries: 0
+2026-11-19T11:42:50.1804564Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-19T11:42:50.1805650Z env:
+2026-11-19T11:42:50.1806435Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:42:50.1807426Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:42:50.1808419Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-19T11:42:50.1811193Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517220484,github.run_id=44517220484,gh-aw.engine.id=claude
+2026-11-19T11:42:50.1814154Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:42:50.1815124Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:42:50.1816052Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:42:50.1817087Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:42:50.1818233Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:42:50.1819214Z   GH_AW_MAX_DAILY_AI_CREDITS: 1200
+2026-11-19T11:42:50.1820206Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:42:50.1821297Z   GITHUB_AW_OTEL_TRACE_ID: 19af99b8ca6a314c08bd9b7019d79d19
+2026-11-19T11:42:50.1822587Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8bb092f1684db251
+2026-11-19T11:42:50.1823978Z   GITHUB_AW_OTEL_JOB_START_MS: 1795088564228
+2026-11-19T11:42:50.1825192Z   GH_AW_SKILL_DIR: .claude/skills
+2026-11-19T11:42:50.1826270Z ##[endgroup]
+2026-11-19T11:42:50.3774529Z Inventoried 0 skills; 0 conflict(s)

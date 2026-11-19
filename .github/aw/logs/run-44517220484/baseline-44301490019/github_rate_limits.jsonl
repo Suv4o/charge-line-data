@@ -1,0 +1,5 @@
+{"timestamp":"2026-11-18T12:11:19.611Z","source":"response_headers","operation":"repos.getContent","credentialSource":"unknown","resource":"core","limit":5000,"remaining":4997,"used":3,"reset":"2026-11-18T12:59:58.000Z"}
+{"timestamp":"2026-11-18T12:11:22.992Z","source":"response_headers","operation":"repos.getContent","credentialSource":"unknown","resource":"core","limit":5000,"remaining":4996,"used":4,"reset":"2026-11-18T12:59:58.000Z"}
+{"timestamp":"2026-11-18T12:11:23.384Z","source":"response_headers","operation":"repos.getContent","credentialSource":"unknown","resource":"core","limit":5000,"remaining":4995,"used":5,"reset":"2026-11-18T12:59:58.000Z"}
+{"timestamp":"2026-11-18T12:11:23.559Z","source":"response_headers","operation":"repos.getContent","credentialSource":"unknown","resource":"core","limit":5000,"remaining":4994,"used":6,"reset":"2026-11-18T12:59:58.000Z"}
+{"timestamp":"2026-11-18T12:11:23.742Z","source":"response_headers","operation":"repos.getContent","credentialSource":"unknown","resource":"core","limit":5000,"remaining":4993,"used":7,"reset":"2026-11-18T12:59:58.000Z"}

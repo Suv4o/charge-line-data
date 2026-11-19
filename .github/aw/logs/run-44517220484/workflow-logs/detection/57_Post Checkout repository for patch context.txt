@@ -1,0 +1,15 @@
+﻿2026-11-19T11:55:16.2651726Z Post job cleanup.
+2026-11-19T11:55:16.3589087Z [command]/usr/bin/git version
+2026-11-19T11:55:16.3639014Z git version 2.56.1
+2026-11-19T11:55:16.3681905Z Temporarily overriding HOME='/home/runner/work/_temp/4620a595-066b-4a64-85a1-80b5fb02efd0' before making global git config changes
+2026-11-19T11:55:16.3684172Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T11:55:16.3689148Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/charge-line-data/charge-line-data
+2026-11-19T11:55:16.3732157Z Removing SSH command configuration
+2026-11-19T11:55:16.3744845Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T11:55:16.3798562Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T11:55:16.4163026Z Removing HTTP extra header
+2026-11-19T11:55:16.4164314Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T11:55:16.4189737Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T11:55:16.4490220Z Removing includeIf entries pointing to credentials config files
+2026-11-19T11:55:16.4499155Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T11:55:16.4539473Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url

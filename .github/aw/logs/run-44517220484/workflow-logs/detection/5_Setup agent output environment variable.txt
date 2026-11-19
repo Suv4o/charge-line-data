@@ -1,0 +1,73 @@
+﻿2026-11-19T11:54:00.8725741Z ##[group]Run mkdir -p /tmp/gh-aw/
+2026-11-19T11:54:00.8726159Z [36;1mmkdir -p /tmp/gh-aw/[0m
+2026-11-19T11:54:00.8726471Z [36;1mfind "/tmp/gh-aw/" -type f -print[0m
+2026-11-19T11:54:00.8726848Z [36;1mif [ -f "/tmp/gh-aw/agent_output.json" ]; then[0m
+2026-11-19T11:54:00.8727305Z [36;1m  echo "GH_AW_AGENT_OUTPUT=/tmp/gh-aw/agent_output.json" >> "$GITHUB_OUTPUT"[0m
+2026-11-19T11:54:00.8727712Z [36;1mfi[0m
+2026-11-19T11:54:00.8765736Z shell: /usr/bin/bash -e {0}
+2026-11-19T11:54:00.8766019Z env:
+2026-11-19T11:54:00.8766242Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:54:00.8766522Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:54:00.8766800Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-19T11:54:00.8767643Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517220484,github.run_id=44517220484,gh-aw.engine.id=claude
+2026-11-19T11:54:00.8768493Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:54:00.8768767Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:54:00.8769066Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:54:00.8769351Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:54:00.8769668Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:54:00.8769920Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:54:00.8770227Z   GITHUB_AW_OTEL_TRACE_ID: 19af99b8ca6a314c08bd9b7019d79d19
+2026-11-19T11:54:00.8770598Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: de96b3e46567a2b0
+2026-11-19T11:54:00.8770923Z   GITHUB_AW_OTEL_JOB_START_MS: 1795089237765
+2026-11-19T11:54:00.8771210Z ##[endgroup]
+2026-11-19T11:54:00.8894285Z /tmp/gh-aw/agent-session.jsonl
+2026-11-19T11:54:00.8894867Z /tmp/gh-aw/agent_execution_exit_code.txt
+2026-11-19T11:54:00.8895417Z /tmp/gh-aw/aw-prompts/system.txt
+2026-11-19T11:54:00.8895947Z /tmp/gh-aw/aw-prompts/prompt-import-tree.json
+2026-11-19T11:54:00.8896308Z /tmp/gh-aw/aw-prompts/prompt.txt
+2026-11-19T11:54:00.8896642Z /tmp/gh-aw/aw-prompts/prompt-literal-values.json
+2026-11-19T11:54:00.8897005Z /tmp/gh-aw/aw-prompts/prompt-template.txt
+2026-11-19T11:54:00.8897412Z /tmp/gh-aw/aw-prompts/user.txt
+2026-11-19T11:54:00.8897723Z /tmp/gh-aw/claude-debug.log
+2026-11-19T11:54:00.8897991Z /tmp/gh-aw/aw_info.json
+2026-11-19T11:54:00.8898249Z /tmp/gh-aw/github_rate_limits.jsonl
+2026-11-19T11:54:00.8899007Z /tmp/gh-aw/awf-config.json
+2026-11-19T11:54:00.8899489Z /tmp/gh-aw/mcp-logs/observed-url-domains.json
+2026-11-19T11:54:00.8899988Z /tmp/gh-aw/mcp-logs/github.log
+2026-11-19T11:54:00.8900444Z /tmp/gh-aw/mcp-logs/safeoutputs.log
+2026-11-19T11:54:00.8900887Z /tmp/gh-aw/mcp-logs/rpc-messages.jsonl
+2026-11-19T11:54:00.8901201Z /tmp/gh-aw/mcp-logs/configuration.jsonl
+2026-11-19T11:54:00.8901504Z /tmp/gh-aw/mcp-logs/gateway.md
+2026-11-19T11:54:00.8901983Z /tmp/gh-aw/mcp-logs/mcp-gateway.log
+2026-11-19T11:54:00.8902571Z /tmp/gh-aw/mcp-logs/tools.json
+2026-11-19T11:54:00.8902836Z /tmp/gh-aw/models.json
+2026-11-19T11:54:00.8903089Z /tmp/gh-aw/skill_inventory.json
+2026-11-19T11:54:00.8903511Z /tmp/gh-aw/aw-suv4o-charge-line-data-catalogue-2026-11-19-new-evs.bundle
+2026-11-19T11:54:00.8903961Z /tmp/gh-aw/base/snapshot.tar
+2026-11-19T11:54:00.8904225Z /tmp/gh-aw/pre-agent-audit.txt
+2026-11-19T11:54:00.8904496Z /tmp/gh-aw/safeoutputs.jsonl
+2026-11-19T11:54:00.8904756Z /tmp/gh-aw/agent_output.json
+2026-11-19T11:54:00.8905155Z /tmp/gh-aw/aw-suv4o-charge-line-data-catalogue-2026-11-19-new-evs.patch
+2026-11-19T11:54:00.8905554Z /tmp/gh-aw/otel.jsonl
+2026-11-19T11:54:00.8905794Z /tmp/gh-aw/agent_execution.json
+2026-11-19T11:54:00.8906052Z /tmp/gh-aw/agent/harness_retry.json
+2026-11-19T11:54:00.8906340Z /tmp/gh-aw/agent/model-resolution.json
+2026-11-19T11:54:00.8906624Z /tmp/gh-aw/agent-errors.jsonl
+2026-11-19T11:54:00.8906885Z /tmp/gh-aw/agent-stdio.log
+2026-11-19T11:54:00.8907131Z /tmp/gh-aw/agent_usage.json
+2026-11-19T11:54:00.8907408Z /tmp/gh-aw/sandbox/firewall/awf-reflect.json
+2026-11-19T11:54:00.8907755Z /tmp/gh-aw/sandbox/firewall/audit/sensitive-paths.json
+2026-11-19T11:54:00.8908137Z /tmp/gh-aw/sandbox/firewall/audit/policy-manifest.json
+2026-11-19T11:54:00.8908761Z /tmp/gh-aw/sandbox/firewall/audit/image-manifest.json
+2026-11-19T11:54:00.8909111Z /tmp/gh-aw/sandbox/firewall/audit/squid.conf
+2026-11-19T11:54:00.8909486Z /tmp/gh-aw/sandbox/firewall/audit/docker-compose.redacted.yml
+2026-11-19T11:54:00.8909900Z /tmp/gh-aw/sandbox/firewall/audit/awf-resolved-config.json
+2026-11-19T11:54:00.8910254Z /tmp/gh-aw/sandbox/firewall/logs/cache.log
+2026-11-19T11:54:00.8910650Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/harness-observation.json
+2026-11-19T11:54:00.8911112Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/models.json
+2026-11-19T11:54:00.8911567Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/agent-runtime/started-at-ms
+2026-11-19T11:54:00.8912242Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/otel.jsonl
+2026-11-19T11:54:00.8912731Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-19T11:54:00.8913211Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-19T11:54:00.8913587Z /tmp/gh-aw/sandbox/firewall/logs/audit.jsonl
+2026-11-19T11:54:00.8913908Z /tmp/gh-aw/sandbox/firewall/logs/access.log

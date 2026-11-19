@@ -1,0 +1,1332 @@
+2026-11-18T12:15:02.955Z [DEBUG] MDM settings load completed in 0ms
+2026-11-18T12:15:02.962Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /etc/claude-code/managed-settings.json
+2026-11-18T12:15:02.963Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /home/runner/work/charge-line-data/charge-line-data/.claude/settings.json
+2026-11-18T12:15:02.964Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /home/runner/work/charge-line-data/charge-line-data/.claude/settings.local.json
+2026-11-18T12:15:02.964Z [DEBUG] Cleared CA certificates cache
+2026-11-18T12:15:02.967Z [DEBUG] [init] configureGlobalMTLS starting
+2026-11-18T12:15:02.967Z [DEBUG] [init] configureGlobalMTLS complete
+2026-11-18T12:15:02.967Z [DEBUG] [init] configureGlobalAgents starting
+2026-11-18T12:15:02.967Z [DEBUG] CA certs: stores=bundled,system, extraCertsPath=/run/awf-lib/trust/ca-certificates.crt
+2026-11-18T12:15:02.967Z [DEBUG] CA certs: Loaded 118 bundled root certificates
+2026-11-18T12:15:02.975Z [DEBUG] CA certs: Loaded 121 system CA certificates
+2026-11-18T12:15:02.979Z [DEBUG] CA certs: Dropped blocked certificate 40f6af0346a99aa1cd1d555a4e9cce62c7f9634603ee406615833dc8c8d00367 from bundled
+2026-11-18T12:15:02.985Z [DEBUG] CA certs: Dropped blocked certificate 40f6af0346a99aa1cd1d555a4e9cce62c7f9634603ee406615833dc8c8d00367 from system
+2026-11-18T12:15:02.986Z [DEBUG] CA certs: Dropped blocked certificate 125609aa301da0a249b97a8239cb6a34216f44dcac9f3954b14292f2e8c8608f from system
+2026-11-18T12:15:02.986Z [DEBUG] CA certs: Dropped blocked certificate bc4d809b15189d78db3e1d8cf4f9726a795da1643ca5f1358e1ddb0edc0d7eb3 from system
+2026-11-18T12:15:02.991Z [DEBUG] CA certs: Dropped blocked certificate 40f6af0346a99aa1cd1d555a4e9cce62c7f9634603ee406615833dc8c8d00367 from NODE_EXTRA_CA_CERTS
+2026-11-18T12:15:02.992Z [DEBUG] CA certs: Dropped blocked certificate 125609aa301da0a249b97a8239cb6a34216f44dcac9f3954b14292f2e8c8608f from NODE_EXTRA_CA_CERTS
+2026-11-18T12:15:02.992Z [DEBUG] CA certs: Dropped blocked certificate bc4d809b15189d78db3e1d8cf4f9726a795da1643ca5f1358e1ddb0edc0d7eb3 from NODE_EXTRA_CA_CERTS
+2026-11-18T12:15:03.001Z [DEBUG] CA certs: Appended extra certificates from NODE_EXTRA_CA_CERTS (/run/awf-lib/trust/ca-certificates.crt)
+2026-11-18T12:15:03.015Z [DEBUG] mTLS: Creating HTTPS agent with custom certificates
+2026-11-18T12:15:03.021Z [DEBUG] [init] configureGlobalAgents complete
+2026-11-18T12:15:03.023Z [DEBUG] Git remote URL: null
+2026-11-18T12:15:03.023Z [DEBUG] No git remote URL found
+2026-11-18T12:15:03.024Z [DEBUG] Error log sink initialized
+2026-11-18T12:15:03.028Z [DEBUG] Preserving file permissions: 100666
+2026-11-18T12:15:03.028Z [DEBUG] Writing to temp file: /home/runner/.claude.json.tmp.1913.7c2d0c494115
+2026-11-18T12:15:03.028Z [DEBUG] Applied original permissions to temp file
+2026-11-18T12:15:03.030Z [DEBUG] Temp file written successfully, size: 136 bytes
+2026-11-18T12:15:03.030Z [DEBUG] Renaming /home/runner/.claude.json.tmp.1913.7c2d0c494115 to /home/runner/.claude.json
+2026-11-18T12:15:03.036Z [DEBUG] File /home/runner/.claude.json written atomically
+2026-11-18T12:15:03.037Z [DEBUG] Preserving file permissions: 100666
+2026-11-18T12:15:03.037Z [DEBUG] Writing to temp file: /home/runner/.claude.json.tmp.1913.ac9ee531d8c2
+2026-11-18T12:15:03.037Z [DEBUG] Applied original permissions to temp file
+2026-11-18T12:15:03.038Z [DEBUG] Temp file written successfully, size: 219 bytes
+2026-11-18T12:15:03.038Z [DEBUG] Renaming /home/runner/.claude.json.tmp.1913.ac9ee531d8c2 to /home/runner/.claude.json
+2026-11-18T12:15:03.038Z [DEBUG] File /home/runner/.claude.json written atomically
+2026-11-18T12:15:03.039Z [DEBUG] Preserving file permissions: 100666
+2026-11-18T12:15:03.039Z [DEBUG] Writing to temp file: /home/runner/.claude.json.tmp.1913.c216bdb7e794
+2026-11-18T12:15:03.039Z [DEBUG] Applied original permissions to temp file
+2026-11-18T12:15:03.040Z [DEBUG] Temp file written successfully, size: 255 bytes
+2026-11-18T12:15:03.040Z [DEBUG] Renaming /home/runner/.claude.json.tmp.1913.c216bdb7e794 to /home/runner/.claude.json
+2026-11-18T12:15:03.040Z [DEBUG] File /home/runner/.claude.json written atomically
+2026-11-18T12:15:03.041Z [DEBUG] Preserving file permissions: 100666
+2026-11-18T12:15:03.041Z [DEBUG] Writing to temp file: /home/runner/.claude.json.tmp.1913.fd8c6feeacd6
+2026-11-18T12:15:03.041Z [DEBUG] Applied original permissions to temp file
+2026-11-18T12:15:03.041Z [DEBUG] Temp file written successfully, size: 294 bytes
+2026-11-18T12:15:03.041Z [DEBUG] Renaming /home/runner/.claude.json.tmp.1913.fd8c6feeacd6 to /home/runner/.claude.json
+2026-11-18T12:15:03.041Z [DEBUG] File /home/runner/.claude.json written atomically
+2026-11-18T12:15:03.043Z [DEBUG] Preserving file permissions: 100666
+2026-11-18T12:15:03.043Z [DEBUG] Writing to temp file: /home/runner/.claude.json.tmp.1913.0a25fda7c849
+2026-11-18T12:15:03.043Z [DEBUG] Applied original permissions to temp file
+2026-11-18T12:15:03.044Z [DEBUG] Temp file written successfully, size: 321 bytes
+2026-11-18T12:15:03.044Z [DEBUG] Renaming /home/runner/.claude.json.tmp.1913.0a25fda7c849 to /home/runner/.claude.json
+2026-11-18T12:15:03.044Z [DEBUG] File /home/runner/.claude.json written atomically
+2026-11-18T12:15:03.045Z [DEBUG] Preserving file permissions: 100666
+2026-11-18T12:15:03.045Z [DEBUG] Writing to temp file: /home/runner/.claude.json.tmp.1913.dfff48431049
+2026-11-18T12:15:03.045Z [DEBUG] Applied original permissions to temp file
+2026-11-18T12:15:03.046Z [DEBUG] Temp file written successfully, size: 369 bytes
+2026-11-18T12:15:03.046Z [DEBUG] Renaming /home/runner/.claude.json.tmp.1913.dfff48431049 to /home/runner/.claude.json
+2026-11-18T12:15:03.046Z [DEBUG] File /home/runner/.claude.json written atomically
+2026-11-18T12:15:03.046Z [DEBUG] Preserving file permissions: 100666
+2026-11-18T12:15:03.046Z [DEBUG] Writing to temp file: /home/runner/.claude.json.tmp.1913.0b345d5a428b
+2026-11-18T12:15:03.047Z [DEBUG] Applied original permissions to temp file
+2026-11-18T12:15:03.047Z [DEBUG] Temp file written successfully, size: 395 bytes
+2026-11-18T12:15:03.047Z [DEBUG] Renaming /home/runner/.claude.json.tmp.1913.0b345d5a428b to /home/runner/.claude.json
+2026-11-18T12:15:03.047Z [DEBUG] File /home/runner/.claude.json written atomically
+2026-11-18T12:15:03.063Z [DEBUG] --mcp-config provenance: undeclared
+2026-11-18T12:15:03.063Z [DEBUG] [Claude in Chrome] Disabled: OAuth token has no scope accepted by /api/oauth/validate (needs user:profile, user:office, or user:ccr_inference; env-var and setup-token sessions default to user:inference only)
+2026-11-18T12:15:03.071Z [DEBUG] [ToolSearch:optimistic] mode=tst, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-11-18T12:15:03.072Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-11-18T12:15:03.076Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2026-11-18T12:15:03.077Z [DEBUG] [STARTUP] Running setup()...
+2026-11-18T12:15:03.081Z [DEBUG] Loading skills from: managed=/etc/claude-code/.claude/skills, user=/home/runner/.claude/skills, project=[/home/runner/work/charge-line-data/charge-line-data/.claude/skills]
+2026-11-18T12:15:03.082Z [DEBUG] Failed to stat directory /etc/claude-code/.claude/agents: ENOENT: no such file or directory, stat '/etc/claude-code/.claude/agents'
+2026-11-18T12:15:03.082Z [DEBUG] Failed to stat directory /home/runner/.claude/agents: ENOENT: no such file or directory, stat '/home/runner/.claude/agents'
+2026-11-18T12:15:03.082Z [DEBUG] Failed to stat directory /etc/claude-code/.claude/commands: ENOENT: no such file or directory, stat '/etc/claude-code/.claude/commands'
+2026-11-18T12:15:03.082Z [DEBUG] Failed to stat directory /home/runner/.claude/commands: ENOENT: no such file or directory, stat '/home/runner/.claude/commands'
+2026-11-18T12:15:03.085Z [DEBUG] Loaded 1 unique skills (1 unconditional, 0 conditional, managed: 0, user: 0, project: 1, additional: 0, legacy commands: 0)
+2026-11-18T12:15:03.087Z [DEBUG] Git remote URL: https://github.com/Suv4o/charge-line-data.git
+2026-11-18T12:15:03.087Z [DEBUG] Parsed repository: github.com/Suv4o/charge-line-data from URL: https://github.com/Suv4o/charge-line-data.git
+2026-11-18T12:15:03.088Z [DEBUG] Found 3 plugins (3 enabled, 0 disabled)
+2026-11-18T12:15:03.089Z [DEBUG] getPluginSkills: Processing 3 enabled plugins
+2026-11-18T12:15:03.089Z [DEBUG] Checking plugin cc-plugin-agents-md: skillsPath=none, skillsPaths=0 paths
+2026-11-18T12:15:03.089Z [DEBUG] Checking plugin cc-plugin-privacy: skillsPath=none, skillsPaths=0 paths
+2026-11-18T12:15:03.089Z [DEBUG] Checking plugin cc-plugin-plugin-authoring: skillsPath=none, skillsPaths=0 paths
+2026-11-18T12:15:03.089Z [DEBUG] Total plugin workflows loaded: 0
+2026-11-18T12:15:03.090Z [DEBUG] Total plugin commands loaded: 0
+2026-11-18T12:15:03.090Z [DEBUG] Total plugin skills loaded: 0 (0 duplicate/user-owned entries skipped)
+2026-11-18T12:15:03.090Z [DEBUG] Total plugin agents loaded: 0
+2026-11-18T12:15:03.091Z [WARN] [uds-messaging] sockets directory /run/user/1001/cc-socks refused (EACCES: permission denied, mkdir '/run/user'); trying the per-uid fallback /tmp/cc-socks-1001
+2026-11-18T12:15:03.093Z [INFO] [uds-messaging] Listening: /tmp/cc-socks-1001/1913.sock
+2026-11-18T12:15:03.095Z [DEBUG] [uds-messaging] Inject messages (auth line optional here): { echo '{"type":"auth","token":"[REDACTED]"$CLAUDE_CODE_MESSAGING_TOKEN"'"}'; echo '{"type":"user","message":{"role":"user","content":"hello"}}'; } | socat - UNIX-CONNECT:/tmp/cc-socks-1001/1913.sock
+2026-11-18T12:15:03.097Z [DEBUG] [uds-messaging] Connect when the data is ready (e.g. out=$(cmd); printf '%s\n' "$out" | nc -N -U "$CLAUDE_CODE_MESSAGING_SOCKET" — or the socat form above): a connection that sends no complete line within 30000 ms is closed
+2026-11-18T12:15:03.098Z [DEBUG] Error log sink initialized
+2026-11-18T12:15:03.103Z [DEBUG] cc-plugin-sec-default@builtin not seated: no managed settings and not a Team or Enterprise organization (none)
+2026-11-18T12:15:03.104Z [DEBUG] [STARTUP] setup() completed in 27ms
+2026-11-18T12:15:03.105Z [DEBUG] Cleared mTLS configuration cache
+2026-11-18T12:15:03.105Z [DEBUG] Cleared proxy agent cache
+2026-11-18T12:15:03.113Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-11-18T12:15:03.120Z [DEBUG] getSkills returning: 1 skill dir commands, 0 plugin skills, 31 bundled skills, 1 builtin plugin skills
+2026-11-18T12:15:03.125Z [DEBUG] [STARTUP] Commands and agents loaded in 12ms
+2026-11-18T12:15:03.127Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-11-18T12:15:03.127Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-11-18T12:15:03.127Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-11-18T12:15:03.127Z [DEBUG] Starting background startup prefetches
+2026-11-18T12:15:03.127Z [DEBUG] [Bootstrap] Skipped: no usable OAuth, WIF, or API key
+2026-11-18T12:15:03.128Z [DEBUG] [STARTUP] MCP configs resolved in 1ms (awaited at +56ms)
+2026-11-18T12:15:03.128Z [DEBUG] Artifacts MCP server not added: managed_or_strict_mcp_config (strict_mcp_config)
+2026-11-18T12:15:03.131Z [DEBUG] Total LSP servers loaded: 0
+2026-11-18T12:15:03.132Z [DEBUG] Cleared mTLS configuration cache
+2026-11-18T12:15:03.132Z [DEBUG] Cleared proxy agent cache
+2026-11-18T12:15:03.133Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-11-18T12:15:03.133Z [DEBUG] LSP manager initialized with 0 servers
+2026-11-18T12:15:03.134Z [DEBUG] LSP server manager initialized successfully
+2026-11-18T12:15:03.134Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-11-18T12:15:03.134Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-11-18T12:15:03.137Z [DEBUG] [MCP] --mcp-config servers running fully async (nonblocking)
+2026-11-18T12:15:03.137Z [DEBUG] [MCP] claude.ai connectors running fully async (nonblocking)
+2026-11-18T12:15:03.137Z [DEBUG] [auto-mode] verifyAutoModeGateAccess: enabledState=enabled disabledBySettings=false model=claude-opus-5-5 modelSupported=true disableFastModeBreakerFires=false carouselAvailable=true canEnterAuto=true
+2026-11-18T12:15:03.137Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-11-18T12:15:03.137Z [DEBUG] [3P telemetry] isTelemetryEnabled=false (CLAUDE_CODE_ENABLE_TELEMETRY=undefined)
+2026-11-18T12:15:03.138Z [DEBUG] [servedCatalog] off (not_first_party)
+2026-11-18T12:15:03.154Z [DEBUG] [3P telemetry] Event dropped (no event logger initialized): plugin_loaded
+2026-11-18T12:15:03.158Z [DEBUG] plugin cc-plugin-agents-md: no pluginConfigs["agents-md@builtin" or "cc-plugin-agents-md@builtin"].options in user, --settings or managed settings (project settings are not read); every option is its default
+2026-11-18T12:15:03.159Z [DEBUG] hooks native host made (for the plugins the binary carries)
+2026-11-18T12:15:03.160Z [DEBUG] hooks module cc-plugin-agents-md@builtin loaded (native, environment 1, tier builtin); events: session.start,prompt.context,command.run,session.compact,prompt.submit,turn.start,turn.complete,agent.spawn,tool.call,prompt.mention
+2026-11-18T12:15:03.161Z [DEBUG] hooks module cc-plugin-plugin-authoring@builtin loaded (native, environment 2, tier builtin); events: skill.prompt,tool.check,tool.call
+2026-11-18T12:15:03.161Z [DEBUG] hooks module cc-plugin-privacy@builtin loaded (native, environment 3, tier builtin); events: tool.check
+2026-11-18T12:15:03.162Z [DEBUG] engine.create: no plugin-provided interfaces; $ built for cc-plugin-agents-md,cc-plugin-plugin-authoring,cc-plugin-privacy
+2026-11-18T12:15:03.162Z [DEBUG] plugin.register: cc-plugin-agents-md (builtin, cc-plugin-agents-md@builtin), judged by core alone: admitted
+2026-11-18T12:15:03.162Z [DEBUG] plugin.register: cc-plugin-plugin-authoring (builtin, cc-plugin-plugin-authoring@builtin), judged by core alone: admitted
+2026-11-18T12:15:03.162Z [DEBUG] plugin.register: cc-plugin-privacy (builtin, cc-plugin-privacy@builtin), judged by core alone: admitted
+2026-11-18T12:15:03.165Z [DEBUG] Registered 0 hooks from 3 plugins
+2026-11-18T12:15:03.167Z [DEBUG] settings.read: the engine's merge was raised (the loaded plugins changed) in 0.9 ms; 0 keys answered otherwise than the files.
+2026-11-18T12:15:03.167Z [DEBUG] settings.read: the engine's merge is not raised again (the loaded plugins changed): neither the loaded plugins nor the settings changed.
+2026-11-18T12:15:03.179Z [DEBUG] [ScheduledTasks] scheduler start() — enabled=false, hasTasks=false
+2026-11-18T12:15:03.180Z [DEBUG] session.start: raised (surface none, not interactive)
+2026-11-18T12:15:03.182Z [DEBUG] [claudeai-mcp] Disabled: API-key auth precedence active
+2026-11-18T12:15:03.186Z [DEBUG] hooks module cc-plugin-agents-md@builtin session.start settled in 4.7ms (native link, next() included)
+2026-11-18T12:15:03.189Z [DEBUG] installPluginsForHeadless: starting
+2026-11-18T12:15:03.189Z [DEBUG] installPluginsForHeadless: no marketplaces declared
+2026-11-18T12:15:03.189Z [DEBUG] memory index backfill: ENOENT: no such file or directory, scandir '/home/runner/.claude/projects/-home-runner-work-charge-line-data-charge-line-data/memory/'
+2026-11-18T12:15:03.199Z [DEBUG] [sessionRegistry] sweep declined by isRegistrySweepPermitted() — dead records are left in place (neither counted nor deleted)
+2026-11-18T12:15:03.201Z [DEBUG] Watching for changes in skill/command directories: /home/runner/work/charge-line-data/charge-line-data/.claude/skills...
+2026-11-18T12:15:03.202Z [DEBUG] mcp runtime arm: v2 (source: default)
+2026-11-18T12:15:03.211Z [DEBUG] Watching for changes in setting files /home/runner/.claude/settings.json, /home/runner/work/charge-line-data/charge-line-data/.claude/settings.json, /home/runner/work/charge-line-data/charge-line-data/.claude/settings.local.json...
+2026-11-18T12:15:03.212Z [DEBUG] Preserving file permissions: 100666
+2026-11-18T12:15:03.212Z [DEBUG] Writing to temp file: /home/runner/.claude.json.tmp.1913.cc3f57de0256
+2026-11-18T12:15:03.214Z [DEBUG] MCP server "github": Initializing HTTP transport to http://awmg-mcpg:8080/mcp/github
+2026-11-18T12:15:03.215Z [DEBUG] MCP server "github": Node version: v26.12.1, Platform: linux
+2026-11-18T12:15:03.215Z [DEBUG] MCP server "github": Environment: {"NODE_OPTIONS":"--require=/run/awf-lib/trust/node-trust.cjs","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"http://172.30.0.10:3128","HTTPS_PROXY":"http://172.30.0.10:3128","NO_PROXY":"localhost,127.0.0.1,::1,0.0.0.0,172.30.0.10,172.30.0.20,awmg-mcpg,172.30.0.30,api-proxy"}
+2026-11-18T12:15:03.216Z [DEBUG] MCP server "safeoutputs": Initializing HTTP transport to http://awmg-mcpg:8080/mcp/safeoutputs
+2026-11-18T12:15:03.216Z [DEBUG] MCP server "safeoutputs": Node version: v26.12.1, Platform: linux
+2026-11-18T12:15:03.216Z [DEBUG] MCP server "safeoutputs": Environment: {"NODE_OPTIONS":"--require=/run/awf-lib/trust/node-trust.cjs","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"http://172.30.0.10:3128","HTTPS_PROXY":"http://172.30.0.10:3128","NO_PROXY":"localhost,127.0.0.1,::1,0.0.0.0,172.30.0.10,172.30.0.20,awmg-mcpg,172.30.0.30,api-proxy"}
+2026-11-18T12:15:03.217Z [DEBUG] MCP server "github": HTTP transport options: {"url":"http://awmg-mcpg:8080/mcp/github","headers":{"User-Agent":"claude-code/2.1.317 (sdk-cli)","Accept-Encoding":"identity","Authorization":"[REDACTED]"},"hasAuthProvider":false,"timeoutMs":120000}
+2026-11-18T12:15:03.217Z [DEBUG] MCP server "github": HTTP transport created successfully
+2026-11-18T12:15:03.218Z [DEBUG] MCP server "safeoutputs": HTTP transport options: {"url":"http://awmg-mcpg:8080/mcp/safeoutputs","headers":{"User-Agent":"claude-code/2.1.317 (sdk-cli)","Accept-Encoding":"identity","Authorization":"[REDACTED]"},"hasAuthProvider":false,"timeoutMs":120000}
+2026-11-18T12:15:03.218Z [DEBUG] MCP server "safeoutputs": HTTP transport created successfully
+2026-11-18T12:15:03.218Z [DEBUG] MCP server "github": Starting connection with timeout of 120000ms
+2026-11-18T12:15:03.219Z [DEBUG] MCP server "github": Testing basic HTTP connectivity to http://awmg-mcpg:8080/mcp/github
+2026-11-18T12:15:03.219Z [DEBUG] MCP server "github": Parsed URL: host=awmg-mcpg, port=8080, protocol=http:
+2026-11-18T12:15:03.219Z [DEBUG] MCP server "safeoutputs": Starting connection with timeout of 120000ms
+2026-11-18T12:15:03.219Z [DEBUG] MCP server "safeoutputs": Testing basic HTTP connectivity to http://awmg-mcpg:8080/mcp/safeoutputs
+2026-11-18T12:15:03.219Z [DEBUG] MCP server "safeoutputs": Parsed URL: host=awmg-mcpg, port=8080, protocol=http:
+2026-11-18T12:15:03.224Z [DEBUG] Applied original permissions to temp file
+2026-11-18T12:15:03.226Z [DEBUG] Temp file written successfully, size: 475 bytes
+2026-11-18T12:15:03.226Z [DEBUG] Renaming /home/runner/.claude.json.tmp.1913.cc3f57de0256 to /home/runner/.claude.json
+2026-11-18T12:15:03.226Z [DEBUG] File /home/runner/.claude.json written atomically
+2026-11-18T12:15:03.226Z [DEBUG] $.fs.ancestors (cc-plugin-agents-md): CLAUDE.md, .claude/CLAUDE.md, CLAUDE.local.md found 0 of 5 directories
+2026-11-18T12:15:03.237Z [DEBUG] $.fs.ancestors (cc-plugin-agents-md): AGENTS.md, .claude/AGENTS.md found 0 of 5 directories
+2026-11-18T12:15:03.239Z [DEBUG] hooks module cc-plugin-agents-md@builtin prompt.context settled in 44.1ms (native link, next() included)
+2026-11-18T12:15:03.239Z [DEBUG] Preserving file permissions: 100666
+2026-11-18T12:15:03.239Z [DEBUG] Writing to temp file: /home/runner/.claude.json.tmp.1913.23af12a112b8
+2026-11-18T12:15:03.240Z [DEBUG] Applied original permissions to temp file
+2026-11-18T12:15:03.242Z [DEBUG] $.store.set (cc-plugin-agents-md@builtin): usage-rows-queued
+2026-11-18T12:15:03.242Z [DEBUG] Temp file written successfully, size: 902 bytes
+2026-11-18T12:15:03.242Z [DEBUG] Renaming /home/runner/.claude.json.tmp.1913.23af12a112b8 to /home/runner/.claude.json
+2026-11-18T12:15:03.243Z [DEBUG] File /home/runner/.claude.json written atomically
+2026-11-18T12:15:03.245Z [DEBUG] MCP server "github": Successfully connected (transport: http) in 31ms
+2026-11-18T12:15:03.246Z [DEBUG] MCP server "github": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"awmg-github","version":"v0.5.6"},"protocolEra":"legacy","negotiatedProtocolVersion":"2025-11-25"}
+2026-11-18T12:15:03.246Z [DEBUG] [MCP] Server "github" connected with subscribe=false
+2026-11-18T12:15:03.247Z [DEBUG] MCP server "safeoutputs": Successfully connected (transport: http) in 33ms
+2026-11-18T12:15:03.247Z [DEBUG] MCP server "safeoutputs": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"awmg-safeoutputs","version":"v0.5.6"},"protocolEra":"legacy","negotiatedProtocolVersion":"2025-11-25"}
+2026-11-18T12:15:03.247Z [DEBUG] [MCP] Server "safeoutputs" connected with subscribe=false
+2026-11-18T12:15:03.283Z [DEBUG] Failed to stat directory /home/runner/.claude/output-styles: ENOENT: no such file or directory, stat '/home/runner/.claude/output-styles'
+2026-11-18T12:15:03.283Z [DEBUG] Failed to stat directory /etc/claude-code/.claude/output-styles: ENOENT: no such file or directory, stat '/etc/claude-code/.claude/output-styles'
+2026-11-18T12:15:03.284Z [DEBUG] Total plugin output styles loaded: 0
+2026-11-18T12:15:03.285Z [DEBUG] act_dont_rederive_arm_active source=growthbook
+2026-11-18T12:15:03.299Z [DEBUG] $.fs.ancestors (cc-plugin-agents-md): AGENTS.md, .claude/AGENTS.md found 0 of 1 directories
+2026-11-18T12:15:03.299Z [DEBUG] $.fs.ancestors (cc-plugin-agents-md): CLAUDE.md, .claude/CLAUDE.md, CLAUDE.local.md found 0 of 1 directories
+2026-11-18T12:15:03.300Z [DEBUG] hooks module cc-plugin-agents-md@builtin prompt.mention settled in 6.2ms (native link, next() included)
+2026-11-18T12:15:03.303Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:15:03.303Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:15:03.305Z [DEBUG] Sending 14 skills via attachment (initial)
+2026-11-18T12:15:03.305Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:15:03.323Z [DEBUG] [session-notices] advertise=false mode=dontAsk flag=false(disabled) pollChannel=false ownEventsOnly=false remote=false remoteEnv=false nonInteractive=true
+2026-11-18T12:15:03.326Z [DEBUG] [engine] turn 1 start
+2026-11-18T12:15:03.329Z [DEBUG] hooks module cc-plugin-agents-md@builtin turn.start settled in 3.3ms (native link, next() included)
+2026-11-18T12:15:03.329Z [DEBUG] hooks module cc-plugin-agents-md@builtin prompt.submit settled in 15.3ms (native link, next() included)
+2026-11-18T12:15:03.331Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:15:03.350Z [DEBUG] Dynamic tool loading: 0/49 deferred tools included
+2026-11-18T12:15:03.353Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:15:03.360Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:15:03.362Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:15:03.564Z [DEBUG] [fs.watch probe] verdict: delivers
+2026-11-18T12:15:03.985Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:15:03.985Z [DEBUG] [API:timing] first byte after 628ms
+2026-11-18T12:15:04.978Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 11.1ms (native link, next() included)
+2026-11-18T12:15:04.980Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_015qHpvuZ5d3eqgyaX3sRR6H permissionDecisionMs=14
+2026-11-18T12:15:04.983Z [DEBUG] Creating shell snapshot for bash (/bin/bash)
+2026-11-18T12:15:04.983Z [DEBUG] Looking for shell config file: /home/runner/.bashrc
+2026-11-18T12:15:04.988Z [DEBUG] Shell config file not found: /home/runner/.bashrc, creating snapshot with Claude Code defaults only
+2026-11-18T12:15:04.988Z [DEBUG] Snapshots directory: /home/runner/.claude/shell-snapshots
+2026-11-18T12:15:04.989Z [DEBUG] Creating snapshot at: /home/runner/.claude/shell-snapshots/snapshot-bash-1795004104988-xnxobr.sh
+2026-11-18T12:15:04.989Z [DEBUG] Execution timeout: 10000ms
+2026-11-18T12:15:04.991Z [DEBUG] Spawn-env probe captured 222 keys
+2026-11-18T12:15:04.996Z [DEBUG] Shell snapshot created successfully (2903 bytes)
+2026-11-18T12:15:04.997Z [DEBUG] No session environment scripts found
+2026-11-18T12:15:04.997Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:15:05.011Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_015qHpvuZ5d3eqgyaX3sRR6H outcome=ok durationMs=31
+2026-11-18T12:15:05.019Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:15:05.019Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:15:05.020Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:15:05.021Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:15:05.024Z [DEBUG] Dynamic tool loading: 0/49 deferred tools included
+2026-11-18T12:15:05.026Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:15:05.029Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:15:05.030Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:15:05.736Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:15:05.736Z [DEBUG] [API:timing] first byte after 709ms
+2026-11-18T12:15:06.199Z [INFO] [Stall] tool_dispatch_start tool=Read toolUseId=toolu_01KNfZ4btx1NNFYoo5rj3BFn permissionDecisionMs=7
+2026-11-18T12:15:06.201Z [INFO] [Stall] tool_dispatch_end tool=Read toolUseId=toolu_01KNfZ4btx1NNFYoo5rj3BFn outcome=ok durationMs=2
+2026-11-18T12:15:06.203Z [DEBUG] hooks module cc-plugin-agents-md@builtin tool.call settled in 12.2ms (native link, next() included)
+2026-11-18T12:15:06.592Z [INFO] [Stall] tool_dispatch_start tool=Read toolUseId=toolu_01NwcMK5upXHRqox1d34ctxS permissionDecisionMs=5
+2026-11-18T12:15:06.593Z [INFO] [Stall] tool_dispatch_end tool=Read toolUseId=toolu_01NwcMK5upXHRqox1d34ctxS outcome=ok durationMs=1
+2026-11-18T12:15:06.595Z [DEBUG] hooks module cc-plugin-agents-md@builtin tool.call settled in 8.5ms (native link, next() included)
+2026-11-18T12:15:07.343Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 5.4ms (native link, next() included)
+2026-11-18T12:15:07.345Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_017SBwk6TJKzq2b6cumoqMv3 permissionDecisionMs=7
+2026-11-18T12:15:07.347Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:15:07.359Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_017SBwk6TJKzq2b6cumoqMv3 outcome=ok durationMs=14
+2026-11-18T12:15:07.364Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:15:07.364Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:15:07.364Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:15:07.366Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:15:07.370Z [DEBUG] Dynamic tool loading: 0/49 deferred tools included
+2026-11-18T12:15:07.372Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:15:07.375Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:15:07.376Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:15:08.065Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:15:08.065Z [DEBUG] [API:timing] first byte after 692ms
+2026-11-18T12:15:08.155Z [DEBUG] settings.read: the engine's merge is not raised again (a retention sweep starts): neither the loaded plugins nor the settings changed.
+2026-11-18T12:15:09.905Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 3.5ms (native link, next() included)
+2026-11-18T12:15:09.906Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_01CYTP52ZLbrYLdew87c49gk permissionDecisionMs=5
+2026-11-18T12:15:09.908Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:15:09.916Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_01CYTP52ZLbrYLdew87c49gk outcome=ok durationMs=10
+2026-11-18T12:15:10.704Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 3.4ms (native link, next() included)
+2026-11-18T12:15:10.705Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_01RUFdKESjyMw3Ybfg1NagDf permissionDecisionMs=5
+2026-11-18T12:15:10.707Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:15:10.718Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_01RUFdKESjyMw3Ybfg1NagDf outcome=ok durationMs=13
+2026-11-18T12:15:10.723Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:15:10.723Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:15:10.724Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:15:10.725Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:15:10.729Z [DEBUG] Dynamic tool loading: 0/49 deferred tools included
+2026-11-18T12:15:10.731Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:15:10.734Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:15:10.735Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:15:11.244Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:15:11.245Z [DEBUG] [API:timing] first byte after 512ms
+2026-11-18T12:15:12.487Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 2.5ms (native link, next() included)
+2026-11-18T12:15:12.488Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_015SAExworCdABkay5LrsZ6Z permissionDecisionMs=3
+2026-11-18T12:15:12.489Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:15:12.497Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_015SAExworCdABkay5LrsZ6Z outcome=ok durationMs=8
+2026-11-18T12:15:13.452Z [INFO] [Stall] tool_dispatch_start tool=ToolSearch toolUseId=toolu_01BJXBsJzztSj3dNttEct8Hq permissionDecisionMs=1
+2026-11-18T12:15:13.453Z [DEBUG] ToolSearchTool: cache invalidated - deferred tools changed
+2026-11-18T12:15:13.453Z [DEBUG] ToolSearchTool: selected mcp__github__list_pull_requests, WebFetch, WebSearch, mcp__safeoutputs__create_pull_request, mcp__safeoutputs__noop, mcp__safeoutputs__create_issue, mcp__safeoutputs__push_repo_memory
+2026-11-18T12:15:13.453Z [INFO] [Stall] tool_dispatch_end tool=ToolSearch toolUseId=toolu_01BJXBsJzztSj3dNttEct8Hq outcome=ok durationMs=1
+2026-11-18T12:15:13.460Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:15:13.460Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:15:13.460Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:15:13.461Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:15:13.464Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:15:13.466Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:15:13.468Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:15:13.472Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:15:13.474Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:15:14.455Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:15:14.455Z [DEBUG] [API:timing] first byte after 985ms
+2026-11-18T12:15:15.404Z [INFO] [Stall] tool_dispatch_start tool=mcp_tool toolUseId=toolu_01E2R7uSpcG1w8Y8wFanTNbw permissionDecisionMs=1
+2026-11-18T12:15:15.405Z [DEBUG] MCP server "github": Calling MCP tool: list_pull_requests
+2026-11-18T12:15:18.001Z [DEBUG] MCP server "github": Tool 'list_pull_requests' completed successfully in 2s
+2026-11-18T12:15:18.002Z [INFO] [Stall] tool_dispatch_end tool=mcp_tool toolUseId=toolu_01E2R7uSpcG1w8Y8wFanTNbw outcome=ok durationMs=2598
+2026-11-18T12:15:18.008Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:15:18.008Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:15:18.008Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:15:18.009Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:15:18.012Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:15:18.013Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:15:18.016Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:15:18.020Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:15:18.021Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:15:18.938Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:15:18.938Z [DEBUG] [API:timing] first byte after 921ms
+2026-11-18T12:15:24.494Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 5.0ms (native link, next() included)
+2026-11-18T12:15:24.495Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_01FheMxexnzewj2E6XEVb7ZA permissionDecisionMs=7
+2026-11-18T12:15:24.498Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:15:24.507Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_01FheMxexnzewj2E6XEVb7ZA outcome=ok durationMs=12
+2026-11-18T12:15:24.512Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:15:24.512Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:15:24.512Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:15:24.514Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:15:24.516Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:15:24.517Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:15:24.519Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:15:24.522Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:15:24.523Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:15:25.404Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:15:25.404Z [DEBUG] [API:timing] first byte after 884ms
+2026-11-18T12:15:27.687Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 5.6ms (native link, next() included)
+2026-11-18T12:15:27.688Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_01LqMaLwaBiey1bEkYKutxmp permissionDecisionMs=7
+2026-11-18T12:15:27.691Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:15:27.698Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_01LqMaLwaBiey1bEkYKutxmp outcome=ok durationMs=10
+2026-11-18T12:15:27.703Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:15:27.703Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:15:27.703Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:15:27.704Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:15:27.707Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:15:27.709Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:15:27.711Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:15:27.714Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:15:27.715Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:15:28.387Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:15:28.387Z [DEBUG] [API:timing] first byte after 675ms
+2026-11-18T12:15:29.565Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 5.1ms (native link, next() included)
+2026-11-18T12:15:29.567Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_019Zq9YzxsB1ATiedex3mTyH permissionDecisionMs=6
+2026-11-18T12:15:29.569Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:15:29.576Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_019Zq9YzxsB1ATiedex3mTyH outcome=ok durationMs=9
+2026-11-18T12:15:29.581Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:15:29.581Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:15:29.581Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:15:29.582Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:15:29.584Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:15:29.585Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:15:29.588Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:15:29.592Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:15:29.593Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:15:30.148Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:15:30.148Z [DEBUG] [API:timing] first byte after 559ms
+2026-11-18T12:15:31.106Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 3.9ms (native link, next() included)
+2026-11-18T12:15:31.107Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_014kGaW4ABxtPjMuS2jEZfGD permissionDecisionMs=6
+2026-11-18T12:15:31.109Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:15:31.117Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_014kGaW4ABxtPjMuS2jEZfGD outcome=ok durationMs=9
+2026-11-18T12:15:31.121Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:15:31.121Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:15:31.122Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:15:31.123Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:15:31.125Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:15:31.126Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:15:31.128Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:15:31.132Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:15:31.133Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:15:31.664Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:15:31.665Z [DEBUG] [API:timing] first byte after 535ms
+2026-11-18T12:15:34.702Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 1.3ms (native link, next() included)
+2026-11-18T12:15:34.703Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01QZkBbibwLyi4hHsAhc2Cdn permissionDecisionMs=3
+2026-11-18T12:15:34.705Z [DEBUG] CA certs: Building the list for hosts that aren't ours
+2026-11-18T12:15:34.705Z [DEBUG] CA certs: stores=bundled,system, extraCertsPath=/run/awf-lib/trust/ca-certificates.crt
+2026-11-18T12:15:34.705Z [DEBUG] CA certs: Loaded 118 bundled root certificates
+2026-11-18T12:15:34.708Z [DEBUG] CA certs: Loaded 121 system CA certificates
+2026-11-18T12:15:34.713Z [DEBUG] CA certs: Re-encoded certificate 40f6af0346a99aa1cd1d555a4e9cce62c7f9634603ee406615833dc8c8d00367 from bundled: the list for hosts that aren't ours trusts it, and its original text could stop that list from loading
+2026-11-18T12:15:34.718Z [DEBUG] CA certs: Re-encoded certificate 40f6af0346a99aa1cd1d555a4e9cce62c7f9634603ee406615833dc8c8d00367 from system: the list for hosts that aren't ours trusts it, and its original text could stop that list from loading
+2026-11-18T12:15:34.719Z [DEBUG] CA certs: Dropped blocked certificate 125609aa301da0a249b97a8239cb6a34216f44dcac9f3954b14292f2e8c8608f from system
+2026-11-18T12:15:34.719Z [DEBUG] CA certs: Dropped blocked certificate bc4d809b15189d78db3e1d8cf4f9726a795da1643ca5f1358e1ddb0edc0d7eb3 from system
+2026-11-18T12:15:34.725Z [DEBUG] CA certs: Re-encoded certificate 40f6af0346a99aa1cd1d555a4e9cce62c7f9634603ee406615833dc8c8d00367 from NODE_EXTRA_CA_CERTS: the list for hosts that aren't ours trusts it, and its original text could stop that list from loading
+2026-11-18T12:15:34.726Z [DEBUG] CA certs: Dropped blocked certificate 125609aa301da0a249b97a8239cb6a34216f44dcac9f3954b14292f2e8c8608f from NODE_EXTRA_CA_CERTS
+2026-11-18T12:15:34.726Z [DEBUG] CA certs: Dropped blocked certificate bc4d809b15189d78db3e1d8cf4f9726a795da1643ca5f1358e1ddb0edc0d7eb3 from NODE_EXTRA_CA_CERTS
+2026-11-18T12:15:34.736Z [DEBUG] CA certs: Appended extra certificates from NODE_EXTRA_CA_CERTS (/run/awf-lib/trust/ca-certificates.crt)
+2026-11-18T12:15:35.760Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.9ms (native link, next() included)
+2026-11-18T12:15:35.761Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_012BnpqX8VBPtvfRQzCfVuFu permissionDecisionMs=1
+2026-11-18T12:15:36.704Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.9ms (native link, next() included)
+2026-11-18T12:15:36.704Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_014jnr5y6USP2wKKTP8tKEbZ permissionDecisionMs=2
+2026-11-18T12:15:37.039Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.24a; cc_entrypoint=sdk-cli;
+2026-11-18T12:15:37.041Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:15:37.041Z [DEBUG] [API REQUEST] /v1/messages source=web_fetch_apply
+2026-11-18T12:15:37.559Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.24a; cc_entrypoint=sdk-cli;
+2026-11-18T12:15:37.565Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 1.3ms (native link, next() included)
+2026-11-18T12:15:37.566Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01UEa6RWy1hLgvM5QCL6rJcf permissionDecisionMs=3
+2026-11-18T12:15:37.571Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:15:37.572Z [DEBUG] [API REQUEST] /v1/messages source=web_fetch_apply
+2026-11-18T12:15:37.633Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.24a; cc_entrypoint=sdk-cli;
+2026-11-18T12:15:37.634Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:15:37.635Z [DEBUG] [API REQUEST] /v1/messages source=web_fetch_apply
+2026-11-18T12:15:37.957Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:15:37.957Z [DEBUG] [API:timing] first byte after 917ms
+2026-11-18T12:15:37.966Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01UEa6RWy1hLgvM5QCL6rJcf outcome=ok durationMs=400
+2026-11-18T12:15:38.406Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:15:38.406Z [DEBUG] [API:timing] first byte after 835ms
+2026-11-18T12:15:38.526Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:15:38.526Z [DEBUG] [API:timing] first byte after 892ms
+2026-11-18T12:15:39.484Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_014jnr5y6USP2wKKTP8tKEbZ outcome=ok durationMs=2780
+2026-11-18T12:15:44.718Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01QZkBbibwLyi4hHsAhc2Cdn outcome=ok durationMs=10015
+2026-11-18T12:15:45.689Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_012BnpqX8VBPtvfRQzCfVuFu outcome=ok durationMs=9928
+2026-11-18T12:15:45.693Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:15:45.693Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:15:45.694Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:15:45.695Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:15:45.697Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:15:45.698Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:15:45.701Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:15:45.706Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:15:45.707Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:15:46.554Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:15:46.554Z [DEBUG] [API:timing] first byte after 851ms
+2026-11-18T12:15:48.639Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.7ms (native link, next() included)
+2026-11-18T12:15:48.640Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_014kW7zbRTas3TLW3weDCCcY permissionDecisionMs=2
+2026-11-18T12:15:48.997Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_014kW7zbRTas3TLW3weDCCcY outcome=ok durationMs=356
+2026-11-18T12:15:49.177Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.7ms (native link, next() included)
+2026-11-18T12:15:49.177Z [INFO] [Stall] tool_dispatch_start tool=WebSearch toolUseId=toolu_01BwSEGGaXk4ZPeN8MynUdVQ permissionDecisionMs=2
+2026-11-18T12:15:49.179Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.5b3; cc_entrypoint=sdk-cli;
+2026-11-18T12:15:49.181Z [DEBUG] tool_choice {type:'tool', name:'web_search'} demoted to auto: extended thinking is active
+2026-11-18T12:15:49.181Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:15:49.181Z [DEBUG] [API REQUEST] /v1/messages source=web_search_tool
+2026-11-18T12:15:49.469Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.7ms (native link, next() included)
+2026-11-18T12:15:49.471Z [INFO] [Stall] tool_dispatch_start tool=WebSearch toolUseId=toolu_014SZFdxnXSPyWEcCk8d9zHc permissionDecisionMs=2
+2026-11-18T12:15:49.473Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.5b3; cc_entrypoint=sdk-cli;
+2026-11-18T12:15:49.475Z [DEBUG] tool_choice {type:'tool', name:'web_search'} demoted to auto: extended thinking is active
+2026-11-18T12:15:49.475Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:15:49.476Z [DEBUG] [API REQUEST] /v1/messages source=web_search_tool
+2026-11-18T12:15:49.710Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:15:49.710Z [DEBUG] [API:timing] first byte after 530ms
+2026-11-18T12:15:49.977Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:15:49.977Z [DEBUG] [API:timing] first byte after 502ms
+2026-11-18T12:16:00.378Z [INFO] [Stall] tool_dispatch_end tool=WebSearch toolUseId=toolu_014SZFdxnXSPyWEcCk8d9zHc outcome=ok durationMs=10907
+2026-11-18T12:16:00.925Z [INFO] [Stall] tool_dispatch_end tool=WebSearch toolUseId=toolu_01BwSEGGaXk4ZPeN8MynUdVQ outcome=ok durationMs=11748
+2026-11-18T12:16:00.929Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:16:00.929Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:16:00.930Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:16:00.931Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:16:00.933Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:16:00.934Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:16:00.936Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:16:00.940Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:16:00.941Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:16:01.538Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:16:01.538Z [DEBUG] [API:timing] first byte after 600ms
+2026-11-18T12:16:03.184Z [DEBUG] [skills] idle — switching poll interval to 30000ms
+2026-11-18T12:16:04.990Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 1.4ms (native link, next() included)
+2026-11-18T12:16:04.990Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01RTBRg9HDr8AvwbiiqkssqX permissionDecisionMs=2
+2026-11-18T12:16:05.390Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01RTBRg9HDr8AvwbiiqkssqX outcome=ok durationMs=400
+2026-11-18T12:16:05.575Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 1.8ms (native link, next() included)
+2026-11-18T12:16:05.576Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_019q4tLQJv262TvACQMnwFCp permissionDecisionMs=4
+2026-11-18T12:16:05.737Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_019q4tLQJv262TvACQMnwFCp outcome=ok durationMs=161
+2026-11-18T12:16:05.742Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:16:05.742Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:16:05.742Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:16:05.743Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:16:05.745Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:16:05.745Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:16:05.748Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:16:05.752Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:16:05.753Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:16:06.661Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:16:06.661Z [DEBUG] [API:timing] first byte after 911ms
+2026-11-18T12:16:07.706Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.9ms (native link, next() included)
+2026-11-18T12:16:07.706Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01PQNZgbHMeJ6gj9mWr1kDLa permissionDecisionMs=2
+2026-11-18T12:16:07.951Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.24a; cc_entrypoint=sdk-cli;
+2026-11-18T12:16:07.952Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:16:07.952Z [DEBUG] [API REQUEST] /v1/messages source=web_fetch_apply
+2026-11-18T12:16:08.148Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.7ms (native link, next() included)
+2026-11-18T12:16:08.149Z [INFO] [Stall] tool_dispatch_start tool=WebSearch toolUseId=toolu_01XgBJa2UezpmpM3hJ3ZFEnU permissionDecisionMs=2
+2026-11-18T12:16:08.151Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.5b3; cc_entrypoint=sdk-cli;
+2026-11-18T12:16:08.152Z [DEBUG] tool_choice {type:'tool', name:'web_search'} demoted to auto: extended thinking is active
+2026-11-18T12:16:08.152Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:16:08.153Z [DEBUG] [API REQUEST] /v1/messages source=web_search_tool
+2026-11-18T12:16:08.651Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:16:08.651Z [DEBUG] [API:timing] first byte after 499ms
+2026-11-18T12:16:08.921Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:16:08.921Z [DEBUG] [API:timing] first byte after 970ms
+2026-11-18T12:16:12.101Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01PQNZgbHMeJ6gj9mWr1kDLa outcome=ok durationMs=4395
+2026-11-18T12:16:21.465Z [INFO] [Stall] tool_dispatch_end tool=WebSearch toolUseId=toolu_01XgBJa2UezpmpM3hJ3ZFEnU outcome=ok durationMs=13316
+2026-11-18T12:16:21.469Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:16:21.469Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:16:21.470Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:16:21.471Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:16:21.473Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:16:21.474Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:16:21.476Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:16:21.480Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:16:21.481Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:16:22.441Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:16:22.441Z [DEBUG] [API:timing] first byte after 963ms
+2026-11-18T12:16:23.733Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.8ms (native link, next() included)
+2026-11-18T12:16:23.733Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_018thafo543WwBgKmeEdcW1x permissionDecisionMs=2
+2026-11-18T12:16:23.875Z [WARN] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_018thafo543WwBgKmeEdcW1x outcome=error durationMs=142
+2026-11-18T12:16:23.876Z [DEBUG] WebFetch tool error (142ms): code=tool_expected_error type=Error:DEPTH_ZERO_SELF_SIGNED_CERT errorChars=23
+2026-11-18T12:16:24.784Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 1.4ms (native link, next() included)
+2026-11-18T12:16:24.785Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01U75EJZ6r2Gc7Qs1c1ZdiW5 permissionDecisionMs=2
+2026-11-18T12:16:25.057Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.24a; cc_entrypoint=sdk-cli;
+2026-11-18T12:16:25.058Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:16:25.059Z [DEBUG] [API REQUEST] /v1/messages source=web_fetch_apply
+2026-11-18T12:16:26.122Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:16:26.122Z [DEBUG] [API:timing] first byte after 1064ms
+2026-11-18T12:16:31.091Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01U75EJZ6r2Gc7Qs1c1ZdiW5 outcome=ok durationMs=6307
+2026-11-18T12:16:31.096Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:16:31.096Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:16:31.096Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:16:31.097Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:16:31.099Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:16:31.100Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:16:31.102Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:16:31.106Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:16:31.107Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:16:31.858Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:16:31.858Z [DEBUG] [API:timing] first byte after 755ms
+2026-11-18T12:16:35.935Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 1.2ms (native link, next() included)
+2026-11-18T12:16:35.936Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01Kb4tmV381BsAETewVwDz5j permissionDecisionMs=2
+2026-11-18T12:16:36.336Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.24a; cc_entrypoint=sdk-cli;
+2026-11-18T12:16:36.337Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:16:36.337Z [DEBUG] [API REQUEST] /v1/messages source=web_fetch_apply
+2026-11-18T12:16:37.211Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:16:37.211Z [DEBUG] [API:timing] first byte after 874ms
+2026-11-18T12:16:50.200Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01Kb4tmV381BsAETewVwDz5j outcome=ok durationMs=14264
+2026-11-18T12:16:50.204Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:16:50.204Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:16:50.204Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:16:50.206Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:16:50.208Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:16:50.209Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:16:50.212Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:16:50.216Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:16:50.217Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:16:50.973Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:16:50.973Z [DEBUG] [API:timing] first byte after 760ms
+2026-11-18T12:16:55.194Z [INFO] [Stall] tool_dispatch_start tool=Skill toolUseId=toolu_01PtcTVHJmcEJguu6QsVBPJr permissionDecisionMs=4
+2026-11-18T12:16:55.202Z [DEBUG] takeApprovedPathsForWrite: no check-time stash for toolUseId=toolu_01PtcTVHJmcEJguu6QsVBPJr; using fresh resolution
+2026-11-18T12:16:55.207Z [DEBUG] $.fs.ancestors (cc-plugin-agents-md): AGENTS.md, .claude/AGENTS.md found 0 of 1 directories
+2026-11-18T12:16:55.207Z [DEBUG] $.fs.ancestors (cc-plugin-agents-md): CLAUDE.md, .claude/CLAUDE.md, CLAUDE.local.md found 0 of 1 directories
+2026-11-18T12:16:55.207Z [DEBUG] hooks module cc-plugin-agents-md@builtin prompt.mention settled in 6.3ms (native link, next() included)
+2026-11-18T12:16:55.209Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:16:55.209Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:16:55.210Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:16:55.210Z [DEBUG] Preserving file permissions: 100666
+2026-11-18T12:16:55.210Z [DEBUG] Writing to temp file: /home/runner/.claude.json.tmp.1913.0831addefab1
+2026-11-18T12:16:55.211Z [DEBUG] Applied original permissions to temp file
+2026-11-18T12:16:55.211Z [DEBUG] Temp file written successfully, size: 1012 bytes
+2026-11-18T12:16:55.212Z [DEBUG] Renaming /home/runner/.claude.json.tmp.1913.0831addefab1 to /home/runner/.claude.json
+2026-11-18T12:16:55.212Z [DEBUG] File /home/runner/.claude.json written atomically
+2026-11-18T12:16:55.213Z [DEBUG] SkillTool returning 2 newMessages for skill playwright-cli
+2026-11-18T12:16:55.213Z [INFO] [Stall] tool_dispatch_end tool=Skill toolUseId=toolu_01PtcTVHJmcEJguu6QsVBPJr outcome=ok durationMs=19
+2026-11-18T12:16:55.219Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:16:55.219Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:16:55.219Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:16:55.220Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:16:55.222Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:16:55.223Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:16:55.226Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:16:55.230Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:16:55.232Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:16:56.414Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:16:56.414Z [DEBUG] [API:timing] first byte after 1186ms
+2026-11-18T12:16:57.212Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 2.3ms (native link, next() included)
+2026-11-18T12:16:57.213Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_01LqCfhpfC9FENdxz5WYVuK3 permissionDecisionMs=4
+2026-11-18T12:16:57.215Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:17:02.297Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_01LqCfhpfC9FENdxz5WYVuK3 outcome=ok durationMs=5084
+2026-11-18T12:17:02.301Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:17:02.301Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:17:02.302Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:17:02.302Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:17:02.304Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:17:02.305Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:17:02.307Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:17:02.311Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:17:02.315Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:17:03.278Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:17:03.278Z [DEBUG] [API:timing] first byte after 969ms
+2026-11-18T12:17:03.838Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 2.6ms (native link, next() included)
+2026-11-18T12:17:03.839Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_014YfczyKgN8GArHoCsqMwfV permissionDecisionMs=4
+2026-11-18T12:17:03.842Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:17:04.824Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_014YfczyKgN8GArHoCsqMwfV outcome=ok durationMs=985
+2026-11-18T12:17:04.829Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:17:04.829Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:17:04.829Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:17:04.830Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:17:04.833Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:17:04.833Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:17:04.838Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:17:04.842Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:17:04.843Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:17:05.831Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:17:05.831Z [DEBUG] [API:timing] first byte after 991ms
+2026-11-18T12:17:06.820Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 2.1ms (native link, next() included)
+2026-11-18T12:17:06.821Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_01F4DiuQNfXPb5gUzsWjR6JW permissionDecisionMs=4
+2026-11-18T12:17:06.824Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:17:07.327Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_01F4DiuQNfXPb5gUzsWjR6JW outcome=ok durationMs=506
+2026-11-18T12:17:07.332Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:17:07.332Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:17:07.333Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:17:07.334Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:17:07.336Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:17:07.336Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:17:07.339Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:17:07.342Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:17:07.344Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:17:08.006Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:17:08.006Z [DEBUG] [API:timing] first byte after 666ms
+2026-11-18T12:17:09.013Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 2.0ms (native link, next() included)
+2026-11-18T12:17:09.014Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_01PyhL5GoTqkrRDu1145wWqQ permissionDecisionMs=3
+2026-11-18T12:17:09.015Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:17:10.053Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_01PyhL5GoTqkrRDu1145wWqQ outcome=ok durationMs=1039
+2026-11-18T12:17:10.057Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:17:10.057Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:17:10.058Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:17:10.059Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:17:10.060Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:17:10.061Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:17:10.064Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:17:10.067Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:17:10.068Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:17:10.815Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:17:10.815Z [DEBUG] [API:timing] first byte after 750ms
+2026-11-18T12:17:11.522Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 2.4ms (native link, next() included)
+2026-11-18T12:17:11.523Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_01FMT4AVoN7MG5jCeFTE3LTW permissionDecisionMs=4
+2026-11-18T12:17:11.525Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:17:11.987Z [WARN] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_01FMT4AVoN7MG5jCeFTE3LTW outcome=error durationMs=464
+2026-11-18T12:17:11.987Z [DEBUG] Bash tool error (464ms): code=tool_shell_error type=ShellError errorChars=20
+2026-11-18T12:17:11.991Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:17:11.991Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:17:11.991Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:17:11.993Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:17:11.994Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:17:11.995Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:17:11.998Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:17:12.001Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:17:12.002Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:17:12.569Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:17:12.569Z [DEBUG] [API:timing] first byte after 570ms
+2026-11-18T12:17:13.170Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 2.5ms (native link, next() included)
+2026-11-18T12:17:13.171Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_01PZaJaW1keSoxxtqcko3Kcy permissionDecisionMs=4
+2026-11-18T12:17:13.173Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:17:14.138Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_01PZaJaW1keSoxxtqcko3Kcy outcome=ok durationMs=967
+2026-11-18T12:17:14.142Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:17:14.142Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:17:14.143Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:17:14.144Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:17:14.146Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:17:14.146Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:17:14.150Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:17:14.155Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:17:14.156Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:17:14.715Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:17:14.715Z [DEBUG] [API:timing] first byte after 563ms
+2026-11-18T12:17:15.214Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 2.1ms (native link, next() included)
+2026-11-18T12:17:15.215Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_01CJA96h9nynS8oakWg3rnaG permissionDecisionMs=4
+2026-11-18T12:17:15.217Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:17:16.229Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_01CJA96h9nynS8oakWg3rnaG outcome=ok durationMs=1014
+2026-11-18T12:17:16.233Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:17:16.233Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:17:16.234Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:17:16.235Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:17:16.237Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:17:16.238Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:17:16.240Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:17:16.244Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:17:16.245Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:17:16.753Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:17:16.753Z [DEBUG] [API:timing] first byte after 511ms
+2026-11-18T12:17:17.546Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 1.9ms (native link, next() included)
+2026-11-18T12:17:17.546Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_01Jetf9uyYjVJLXw2uirucUo permissionDecisionMs=3
+2026-11-18T12:17:17.548Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:17:19.008Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_01Jetf9uyYjVJLXw2uirucUo outcome=ok durationMs=1462
+2026-11-18T12:17:19.012Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:17:19.012Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:17:19.013Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:17:19.013Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:17:19.015Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:17:19.015Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:17:19.018Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:17:19.021Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:17:19.023Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:17:19.615Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:17:19.615Z [DEBUG] [API:timing] first byte after 597ms
+2026-11-18T12:17:20.742Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 2.9ms (native link, next() included)
+2026-11-18T12:17:20.743Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_01NCbqXVyVAgqF7NCer78Yzx permissionDecisionMs=5
+2026-11-18T12:17:20.747Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:17:20.754Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_01NCbqXVyVAgqF7NCer78Yzx outcome=ok durationMs=11
+2026-11-18T12:17:20.758Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:17:20.758Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:17:20.758Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:17:20.759Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:17:20.761Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:17:20.762Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:17:20.764Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:17:20.777Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:17:20.778Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:17:21.361Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:17:21.361Z [DEBUG] [API:timing] first byte after 587ms
+2026-11-18T12:17:22.657Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 1.7ms (native link, next() included)
+2026-11-18T12:17:22.658Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_01BG63KRbvEJeMJ8eRfRCj2X permissionDecisionMs=3
+2026-11-18T12:17:22.661Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:17:23.200Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_01BG63KRbvEJeMJ8eRfRCj2X outcome=ok durationMs=542
+2026-11-18T12:17:23.204Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:17:23.204Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:17:23.204Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:17:23.205Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:17:23.207Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:17:23.208Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:17:23.210Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:17:23.215Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:17:23.216Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:17:23.947Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:17:23.947Z [DEBUG] [API:timing] first byte after 736ms
+2026-11-18T12:17:26.472Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.7ms (native link, next() included)
+2026-11-18T12:17:26.473Z [INFO] [Stall] tool_dispatch_start tool=WebSearch toolUseId=toolu_01T57c6PzKD3g84hJLiRAWTa permissionDecisionMs=2
+2026-11-18T12:17:26.474Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.5b3; cc_entrypoint=sdk-cli;
+2026-11-18T12:17:26.475Z [DEBUG] tool_choice {type:'tool', name:'web_search'} demoted to auto: extended thinking is active
+2026-11-18T12:17:26.476Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:17:26.476Z [DEBUG] [API REQUEST] /v1/messages source=web_search_tool
+2026-11-18T12:17:27.027Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 1.6ms (native link, next() included)
+2026-11-18T12:17:27.027Z [INFO] [Stall] tool_dispatch_start tool=WebSearch toolUseId=toolu_01PdSDabdtBhZq1PN95D4VTa permissionDecisionMs=2
+2026-11-18T12:17:27.028Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.5b3; cc_entrypoint=sdk-cli;
+2026-11-18T12:17:27.031Z [DEBUG] tool_choice {type:'tool', name:'web_search'} demoted to auto: extended thinking is active
+2026-11-18T12:17:27.031Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:17:27.032Z [DEBUG] [API REQUEST] /v1/messages source=web_search_tool
+2026-11-18T12:17:27.084Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:17:27.084Z [DEBUG] [API:timing] first byte after 609ms
+2026-11-18T12:17:27.808Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:17:27.808Z [DEBUG] [API:timing] first byte after 777ms
+2026-11-18T12:17:35.563Z [INFO] [Stall] tool_dispatch_end tool=WebSearch toolUseId=toolu_01T57c6PzKD3g84hJLiRAWTa outcome=ok durationMs=9090
+2026-11-18T12:17:37.825Z [INFO] [Stall] tool_dispatch_end tool=WebSearch toolUseId=toolu_01PdSDabdtBhZq1PN95D4VTa outcome=ok durationMs=10797
+2026-11-18T12:17:37.830Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:17:37.830Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:17:37.831Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:17:37.832Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:17:37.834Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:17:37.835Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:17:37.838Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:17:37.842Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:17:37.843Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:17:38.915Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:17:38.915Z [DEBUG] [API:timing] first byte after 1075ms
+2026-11-18T12:17:42.683Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.9ms (native link, next() included)
+2026-11-18T12:17:42.683Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01HSZhNQ5r6WabpchdhrLwd6 permissionDecisionMs=2
+2026-11-18T12:17:43.500Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 1.4ms (native link, next() included)
+2026-11-18T12:17:43.501Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01YBNEWcgdMbh1iqJMnfGqhB permissionDecisionMs=2
+2026-11-18T12:17:43.684Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.24a; cc_entrypoint=sdk-cli;
+2026-11-18T12:17:43.685Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:17:43.685Z [DEBUG] [API REQUEST] /v1/messages source=web_fetch_apply
+2026-11-18T12:17:44.543Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:17:44.543Z [DEBUG] [API:timing] first byte after 858ms
+2026-11-18T12:17:44.776Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.24a; cc_entrypoint=sdk-cli;
+2026-11-18T12:17:44.777Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:17:44.778Z [DEBUG] [API REQUEST] /v1/messages source=web_fetch_apply
+2026-11-18T12:17:45.682Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:17:45.682Z [DEBUG] [API:timing] first byte after 905ms
+2026-11-18T12:17:49.621Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01YBNEWcgdMbh1iqJMnfGqhB outcome=ok durationMs=6120
+2026-11-18T12:17:50.776Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01HSZhNQ5r6WabpchdhrLwd6 outcome=ok durationMs=8093
+2026-11-18T12:17:50.780Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:17:50.780Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:17:50.780Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:17:50.781Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:17:50.783Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:17:50.784Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:17:50.787Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:17:50.790Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:17:50.791Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:17:51.651Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:17:51.651Z [DEBUG] [API:timing] first byte after 863ms
+2026-11-18T12:18:00.570Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 1.6ms (native link, next() included)
+2026-11-18T12:18:00.571Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01B1nQ3SBpVqGHmerE3BMmYh permissionDecisionMs=3
+2026-11-18T12:18:00.573Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.24a; cc_entrypoint=sdk-cli;
+2026-11-18T12:18:00.574Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:18:00.575Z [DEBUG] [API REQUEST] /v1/messages source=web_fetch_apply
+2026-11-18T12:18:01.579Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:18:01.579Z [DEBUG] [API:timing] first byte after 1005ms
+2026-11-18T12:18:10.814Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01B1nQ3SBpVqGHmerE3BMmYh outcome=ok durationMs=10243
+2026-11-18T12:18:10.820Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:18:10.820Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:18:10.820Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:18:10.821Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:18:10.823Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:18:10.823Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:18:10.826Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:18:10.830Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:18:10.831Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:18:11.500Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:18:11.500Z [DEBUG] [API:timing] first byte after 673ms
+2026-11-18T12:18:16.977Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.8ms (native link, next() included)
+2026-11-18T12:18:16.978Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01L8zBeWBQvNX2E4GV1qkR1C permissionDecisionMs=1
+2026-11-18T12:18:17.817Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.7ms (native link, next() included)
+2026-11-18T12:18:17.818Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_016YRd8fwGsT3ifMzbJ75E6Y permissionDecisionMs=1
+2026-11-18T12:18:17.927Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_016YRd8fwGsT3ifMzbJ75E6Y outcome=ok durationMs=109
+2026-11-18T12:18:17.962Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.24a; cc_entrypoint=sdk-cli;
+2026-11-18T12:18:17.963Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:18:17.964Z [DEBUG] [API REQUEST] /v1/messages source=web_fetch_apply
+2026-11-18T12:18:18.917Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.7ms (native link, next() included)
+2026-11-18T12:18:18.918Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01PYaqwAaaq4zkeeFx7vaExo permissionDecisionMs=1
+2026-11-18T12:18:18.944Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:18:18.944Z [DEBUG] [API:timing] first byte after 981ms
+2026-11-18T12:18:19.581Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 1.2ms (native link, next() included)
+2026-11-18T12:18:19.582Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01FQXMxGgnxB5h8Jz2bUWyyB permissionDecisionMs=2
+2026-11-18T12:18:23.327Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01L8zBeWBQvNX2E4GV1qkR1C outcome=ok durationMs=6349
+2026-11-18T12:19:19.164Z [WARN] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01PYaqwAaaq4zkeeFx7vaExo outcome=error durationMs=60246
+2026-11-18T12:19:19.165Z [DEBUG] WebFetch tool error (60246ms): code=tool_expected_error type=Error:ECONNABORTED errorChars=27
+2026-11-18T12:19:20.940Z [WARN] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01FQXMxGgnxB5h8Jz2bUWyyB outcome=error durationMs=61359
+2026-11-18T12:19:20.940Z [DEBUG] WebFetch tool error (61359ms): code=tool_expected_error type=Error:ERR_SOCKET_CLOSED errorChars=16
+2026-11-18T12:19:20.944Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:19:20.944Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:19:20.944Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:19:20.945Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:19:20.947Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:19:20.947Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:19:20.950Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:19:20.954Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:19:20.955Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:19:21.756Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:19:21.756Z [DEBUG] [API:timing] first byte after 804ms
+2026-11-18T12:19:24.935Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.8ms (native link, next() included)
+2026-11-18T12:19:24.935Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01VCN15oyzSpi9Vu16FsT6ju permissionDecisionMs=1
+2026-11-18T12:19:25.935Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.7ms (native link, next() included)
+2026-11-18T12:19:25.935Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01KCqJenV94KALjhoWyumr2A permissionDecisionMs=1
+2026-11-18T12:19:26.199Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01KCqJenV94KALjhoWyumr2A outcome=ok durationMs=264
+2026-11-18T12:19:26.733Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.24a; cc_entrypoint=sdk-cli;
+2026-11-18T12:19:26.734Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:19:26.735Z [DEBUG] [API REQUEST] /v1/messages source=web_fetch_apply
+2026-11-18T12:19:26.738Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.6ms (native link, next() included)
+2026-11-18T12:19:26.738Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01FJnLbdBXRAEEixrJBeDhFJ permissionDecisionMs=1
+2026-11-18T12:19:26.987Z [WARN] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01FJnLbdBXRAEEixrJBeDhFJ outcome=error durationMs=249
+2026-11-18T12:19:26.987Z [DEBUG] WebFetch tool error (249ms): code=tool_expected_error type=Error:ERR_SSL_WRONG_VERSION_NUMBER errorChars=65
+2026-11-18T12:19:27.541Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.9ms (native link, next() included)
+2026-11-18T12:19:27.542Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_019ChQwFZwHKisZ8Ny4rEUSH permissionDecisionMs=1
+2026-11-18T12:19:27.670Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:19:27.670Z [DEBUG] [API:timing] first byte after 936ms
+2026-11-18T12:19:27.721Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_019ChQwFZwHKisZ8Ny4rEUSH outcome=ok durationMs=180
+2026-11-18T12:19:35.154Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01VCN15oyzSpi9Vu16FsT6ju outcome=ok durationMs=10219
+2026-11-18T12:19:35.159Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:19:35.159Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:19:35.159Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:19:35.160Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:19:35.162Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:19:35.162Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:19:35.165Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:19:35.169Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:19:35.170Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:19:35.642Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:19:35.642Z [DEBUG] [API:timing] first byte after 476ms
+2026-11-18T12:19:37.533Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.8ms (native link, next() included)
+2026-11-18T12:19:37.533Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01Mxjga5aLbqomyoLXYCPZ6B permissionDecisionMs=1
+2026-11-18T12:19:37.700Z [WARN] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01Mxjga5aLbqomyoLXYCPZ6B outcome=error durationMs=167
+2026-11-18T12:19:37.710Z [DEBUG] WebFetch tool error (167ms): code=tool_expected_error type=Error:DEPTH_ZERO_SELF_SIGNED_CERT errorChars=23
+2026-11-18T12:19:38.479Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.8ms (native link, next() included)
+2026-11-18T12:19:38.479Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01C3EhDKEevcTSzXZ35aneDf permissionDecisionMs=1
+2026-11-18T12:19:39.248Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.24a; cc_entrypoint=sdk-cli;
+2026-11-18T12:19:39.249Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:19:39.249Z [DEBUG] [API REQUEST] /v1/messages source=web_fetch_apply
+2026-11-18T12:19:39.290Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.8ms (native link, next() included)
+2026-11-18T12:19:39.290Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01N353Y5UqXzZVzoeh8P6uwg permissionDecisionMs=1
+2026-11-18T12:19:39.656Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.24a; cc_entrypoint=sdk-cli;
+2026-11-18T12:19:39.658Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:19:39.658Z [DEBUG] [API REQUEST] /v1/messages source=web_fetch_apply
+2026-11-18T12:19:40.087Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.7ms (native link, next() included)
+2026-11-18T12:19:40.088Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01RBfREiNyxkY33gSkq8AzkB permissionDecisionMs=1
+2026-11-18T12:19:40.175Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:19:40.175Z [DEBUG] [API:timing] first byte after 927ms
+2026-11-18T12:19:40.364Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01RBfREiNyxkY33gSkq8AzkB outcome=ok durationMs=277
+2026-11-18T12:19:40.614Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:19:40.615Z [DEBUG] [API:timing] first byte after 957ms
+2026-11-18T12:19:43.075Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01N353Y5UqXzZVzoeh8P6uwg outcome=ok durationMs=3785
+2026-11-18T12:19:45.553Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01C3EhDKEevcTSzXZ35aneDf outcome=ok durationMs=7074
+2026-11-18T12:19:45.558Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:19:45.558Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:19:45.558Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:19:45.559Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:19:45.561Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:19:45.562Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:19:45.564Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:19:45.568Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:19:45.569Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:19:46.282Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:19:46.282Z [DEBUG] [API:timing] first byte after 717ms
+2026-11-18T12:19:47.678Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.8ms (native link, next() included)
+2026-11-18T12:19:47.679Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01Nc74eZyeVnycwciaEFjpFS permissionDecisionMs=2
+2026-11-18T12:19:47.791Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.24a; cc_entrypoint=sdk-cli;
+2026-11-18T12:19:47.792Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:19:47.793Z [DEBUG] [API REQUEST] /v1/messages source=web_fetch_apply
+2026-11-18T12:19:48.197Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.7ms (native link, next() included)
+2026-11-18T12:19:48.198Z [INFO] [Stall] tool_dispatch_start tool=WebSearch toolUseId=toolu_01QjPgje7V1njYxrzsx3sQ6v permissionDecisionMs=1
+2026-11-18T12:19:48.199Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.5b3; cc_entrypoint=sdk-cli;
+2026-11-18T12:19:48.201Z [DEBUG] tool_choice {type:'tool', name:'web_search'} demoted to auto: extended thinking is active
+2026-11-18T12:19:48.201Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:19:48.201Z [DEBUG] [API REQUEST] /v1/messages source=web_search_tool
+2026-11-18T12:19:48.611Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:19:48.611Z [DEBUG] [API:timing] first byte after 819ms
+2026-11-18T12:19:48.802Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:19:48.802Z [DEBUG] [API:timing] first byte after 601ms
+2026-11-18T12:19:52.893Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01Nc74eZyeVnycwciaEFjpFS outcome=ok durationMs=5214
+2026-11-18T12:19:57.316Z [INFO] [Stall] tool_dispatch_end tool=WebSearch toolUseId=toolu_01QjPgje7V1njYxrzsx3sQ6v outcome=ok durationMs=9118
+2026-11-18T12:19:57.321Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:19:57.321Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:19:57.321Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:19:57.322Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:19:57.323Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:19:57.324Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:19:57.326Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:19:57.330Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:19:57.331Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:19:58.027Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:19:58.027Z [DEBUG] [API:timing] first byte after 700ms
+2026-11-18T12:20:01.005Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.7ms (native link, next() included)
+2026-11-18T12:20:01.005Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_017nh8GLHiS6pZASpQuezR7g permissionDecisionMs=1
+2026-11-18T12:20:01.121Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_017nh8GLHiS6pZASpQuezR7g outcome=ok durationMs=116
+2026-11-18T12:20:02.014Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 1.7ms (native link, next() included)
+2026-11-18T12:20:02.015Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01GJKdGGRZcDQA6XkCcTvbdy permissionDecisionMs=3
+2026-11-18T12:20:03.503Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.24a; cc_entrypoint=sdk-cli;
+2026-11-18T12:20:03.504Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:20:03.505Z [DEBUG] [API REQUEST] /v1/messages source=web_fetch_apply
+2026-11-18T12:20:04.396Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:20:04.397Z [DEBUG] [API:timing] first byte after 893ms
+2026-11-18T12:20:08.718Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01GJKdGGRZcDQA6XkCcTvbdy outcome=ok durationMs=6702
+2026-11-18T12:20:08.722Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:20:08.722Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:20:08.722Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:20:08.723Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:20:08.725Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:20:08.726Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:20:08.729Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:20:08.733Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:20:08.734Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:20:09.405Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:20:09.405Z [DEBUG] [API:timing] first byte after 674ms
+2026-11-18T12:20:11.538Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.8ms (native link, next() included)
+2026-11-18T12:20:11.539Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01HrdvMTN5sAkHcx444gYcUz permissionDecisionMs=2
+2026-11-18T12:20:12.520Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.24a; cc_entrypoint=sdk-cli;
+2026-11-18T12:20:12.521Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:20:12.521Z [DEBUG] [API REQUEST] /v1/messages source=web_fetch_apply
+2026-11-18T12:20:13.332Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:20:13.332Z [DEBUG] [API:timing] first byte after 811ms
+2026-11-18T12:20:17.096Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01HrdvMTN5sAkHcx444gYcUz outcome=ok durationMs=5557
+2026-11-18T12:20:17.100Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:20:17.100Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:20:17.101Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:20:17.102Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:20:17.104Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:20:17.105Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:20:17.110Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:20:17.114Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:20:17.116Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:20:17.639Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:20:17.639Z [DEBUG] [API:timing] first byte after 528ms
+2026-11-18T12:20:19.046Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.7ms (native link, next() included)
+2026-11-18T12:20:19.048Z [INFO] [Stall] tool_dispatch_start tool=WebSearch toolUseId=toolu_01NpeFpuepQxNY3sapVt3bDb permissionDecisionMs=2
+2026-11-18T12:20:19.050Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.5b3; cc_entrypoint=sdk-cli;
+2026-11-18T12:20:19.051Z [DEBUG] tool_choice {type:'tool', name:'web_search'} demoted to auto: extended thinking is active
+2026-11-18T12:20:19.051Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:20:19.052Z [DEBUG] [API REQUEST] /v1/messages source=web_search_tool
+2026-11-18T12:20:19.577Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:20:19.577Z [DEBUG] [API:timing] first byte after 526ms
+2026-11-18T12:20:29.247Z [INFO] [Stall] tool_dispatch_end tool=WebSearch toolUseId=toolu_01NpeFpuepQxNY3sapVt3bDb outcome=ok durationMs=10199
+2026-11-18T12:20:29.251Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:20:29.251Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:20:29.252Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:20:29.253Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:20:29.255Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:20:29.256Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:20:29.259Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:20:29.263Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:20:29.264Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:20:29.911Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:20:29.911Z [DEBUG] [API:timing] first byte after 650ms
+2026-11-18T12:20:31.651Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 1.4ms (native link, next() included)
+2026-11-18T12:20:31.652Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01QhZGRucY9LM22wUh52wFMF permissionDecisionMs=3
+2026-11-18T12:20:32.172Z [WARN] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01QhZGRucY9LM22wUh52wFMF outcome=error durationMs=520
+2026-11-18T12:20:32.172Z [DEBUG] WebFetch tool error (520ms): code=tool_expected_error type=Error:ERR_TLS_CERT_ALTNAME_INVALID errorChars=159
+2026-11-18T12:20:32.175Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:20:32.175Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:20:32.176Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:20:32.177Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:20:32.179Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:20:32.179Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:20:32.183Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:20:32.188Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:20:32.189Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:20:32.961Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:20:32.961Z [DEBUG] [API:timing] first byte after 776ms
+2026-11-18T12:20:33.354Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.6ms (native link, next() included)
+2026-11-18T12:20:33.355Z [INFO] [Stall] tool_dispatch_start tool=WebSearch toolUseId=toolu_01RG88HkB7uZA913ymdVLFtf permissionDecisionMs=2
+2026-11-18T12:20:33.357Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.5b3; cc_entrypoint=sdk-cli;
+2026-11-18T12:20:33.358Z [DEBUG] tool_choice {type:'tool', name:'web_search'} demoted to auto: extended thinking is active
+2026-11-18T12:20:33.358Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:20:33.359Z [DEBUG] [API REQUEST] /v1/messages source=web_search_tool
+2026-11-18T12:20:34.044Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:20:34.044Z [DEBUG] [API:timing] first byte after 686ms
+2026-11-18T12:20:44.507Z [INFO] [Stall] tool_dispatch_end tool=WebSearch toolUseId=toolu_01RG88HkB7uZA913ymdVLFtf outcome=ok durationMs=11152
+2026-11-18T12:20:44.512Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:20:44.512Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:20:44.512Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:20:44.513Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:20:44.515Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:20:44.515Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:20:44.518Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:20:44.522Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:20:44.523Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:20:45.413Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:20:45.413Z [DEBUG] [API:timing] first byte after 893ms
+2026-11-18T12:20:47.151Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 3.0ms (native link, next() included)
+2026-11-18T12:20:47.153Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_01LdwAofqJjjMnTSAyvhB1yA permissionDecisionMs=4
+2026-11-18T12:20:47.155Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:20:47.165Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_01LdwAofqJjjMnTSAyvhB1yA outcome=ok durationMs=12
+2026-11-18T12:20:47.169Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:20:47.169Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:20:47.170Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:20:47.170Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:20:47.172Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:20:47.172Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:20:47.175Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:20:47.178Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:20:47.179Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:20:47.861Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:20:47.861Z [DEBUG] [API:timing] first byte after 685ms
+2026-11-18T12:20:53.839Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.8ms (native link, next() included)
+2026-11-18T12:20:53.839Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01PCkzEp9CNeRsz6Mt5b7BRZ permissionDecisionMs=1
+2026-11-18T12:20:54.039Z [INFO] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01PCkzEp9CNeRsz6Mt5b7BRZ outcome=ok durationMs=200
+2026-11-18T12:20:54.840Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.8ms (native link, next() included)
+2026-11-18T12:20:54.841Z [INFO] [Stall] tool_dispatch_start tool=WebFetch toolUseId=toolu_01MbK3FNJszELMY8bPMhaaAc permissionDecisionMs=1
+2026-11-18T12:20:55.403Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 0.5ms (native link, next() included)
+2026-11-18T12:20:55.404Z [INFO] [Stall] tool_dispatch_start tool=WebSearch toolUseId=toolu_01BZb5aMBBhJekS2WP7Cder9 permissionDecisionMs=1
+2026-11-18T12:20:55.405Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.5b3; cc_entrypoint=sdk-cli;
+2026-11-18T12:20:55.407Z [DEBUG] tool_choice {type:'tool', name:'web_search'} demoted to auto: extended thinking is active
+2026-11-18T12:20:55.407Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:20:55.408Z [DEBUG] [API REQUEST] /v1/messages source=web_search_tool
+2026-11-18T12:20:55.950Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:20:55.950Z [DEBUG] [API:timing] first byte after 543ms
+2026-11-18T12:21:03.335Z [DEBUG] MCP server "safeoutputs": HTTP connection dropped after 360s uptime
+2026-11-18T12:21:03.335Z [DEBUG] MCP server "safeoutputs": Connection error: SSE stream disconnected: TimeoutError: The operation timed out.
+2026-11-18T12:21:03.335Z [DEBUG] MCP server "safeoutputs": Terminal connection error 1/3
+2026-11-18T12:21:03.336Z [DEBUG] MCP server "github": HTTP connection dropped after 360s uptime
+2026-11-18T12:21:03.336Z [DEBUG] MCP server "github": Connection error: SSE stream disconnected: TimeoutError: The operation timed out.
+2026-11-18T12:21:03.336Z [DEBUG] MCP server "github": Terminal connection error 1/3
+2026-11-18T12:21:07.755Z [INFO] [Stall] tool_dispatch_end tool=WebSearch toolUseId=toolu_01BZb5aMBBhJekS2WP7Cder9 outcome=ok durationMs=12352
+2026-11-18T12:21:55.090Z [WARN] [Stall] tool_dispatch_end tool=WebFetch toolUseId=toolu_01MbK3FNJszELMY8bPMhaaAc outcome=error durationMs=60250
+2026-11-18T12:21:55.090Z [DEBUG] WebFetch tool error (60250ms): code=tool_expected_error type=Error:ECONNABORTED errorChars=27
+2026-11-18T12:21:55.095Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:21:55.095Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:21:55.095Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:21:55.096Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:21:55.097Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:21:55.098Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:21:55.100Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:21:55.105Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:21:55.106Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:21:55.965Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:21:55.965Z [DEBUG] [API:timing] first byte after 863ms
+2026-11-18T12:21:58.542Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 2.5ms (native link, next() included)
+2026-11-18T12:21:58.543Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_016NJyCyUFYTFub79QfMRsdy permissionDecisionMs=3
+2026-11-18T12:21:58.545Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:21:58.555Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_016NJyCyUFYTFub79QfMRsdy outcome=ok durationMs=12
+2026-11-18T12:21:58.559Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:21:58.559Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:21:58.560Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:21:58.561Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:21:58.563Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:21:58.563Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:21:58.566Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:21:58.570Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:21:58.571Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:21:59.136Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:21:59.136Z [DEBUG] [API:timing] first byte after 568ms
+2026-11-18T12:22:15.631Z [INFO] [Stall] tool_dispatch_start tool=Grep toolUseId=toolu_01GosdKkToN4s87h5b8fapaq permissionDecisionMs=6
+2026-11-18T12:22:15.639Z [DEBUG] Ripgrep first use test: PASSED (mode=embedded, path=/opt/hostedtoolcache/node/24.22.2/x64/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe)
+2026-11-18T12:22:15.643Z [INFO] [Stall] tool_dispatch_end tool=Grep toolUseId=toolu_01GosdKkToN4s87h5b8fapaq outcome=ok durationMs=12
+2026-11-18T12:22:15.648Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:22:15.648Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:22:15.648Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:22:15.649Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:22:15.651Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:22:15.652Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:22:15.656Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:22:15.660Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:22:15.662Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:22:16.493Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:22:16.493Z [DEBUG] [API:timing] first byte after 835ms
+2026-11-18T12:22:20.666Z [INFO] [Stall] tool_dispatch_start tool=Edit toolUseId=toolu_01SZv282yFRhGkZSPipx7Ngm permissionDecisionMs=2
+2026-11-18T12:22:20.671Z [DEBUG] Preserving file permissions: 100644
+2026-11-18T12:22:20.671Z [DEBUG] Writing to temp file: /proc/self/fd/16/vehicles.json.tmp.1913.ee904ef65018
+2026-11-18T12:22:20.671Z [DEBUG] Applied original permissions to temp file
+2026-11-18T12:22:20.672Z [DEBUG] Temp file written successfully, size: 94087 bytes
+2026-11-18T12:22:20.672Z [DEBUG] Renaming /proc/self/fd/16/vehicles.json.tmp.1913.ee904ef65018 to /proc/self/fd/16/vehicles.json
+2026-11-18T12:22:20.672Z [DEBUG] File /proc/self/fd/16/vehicles.json written atomically
+2026-11-18T12:22:20.673Z [INFO] [Stall] tool_dispatch_end tool=Edit toolUseId=toolu_01SZv282yFRhGkZSPipx7Ngm outcome=ok durationMs=7
+2026-11-18T12:22:22.936Z [INFO] [Stall] tool_dispatch_start tool=Edit toolUseId=toolu_015WptVicKDq6TTaqM7eWYvz permissionDecisionMs=4
+2026-11-18T12:22:22.938Z [DEBUG] Preserving file permissions: 100644
+2026-11-18T12:22:22.938Z [DEBUG] Writing to temp file: /proc/self/fd/16/vehicles.json.tmp.1913.f0f4bc2c79d1
+2026-11-18T12:22:22.939Z [DEBUG] Applied original permissions to temp file
+2026-11-18T12:22:22.939Z [DEBUG] Temp file written successfully, size: 94162 bytes
+2026-11-18T12:22:22.939Z [DEBUG] Renaming /proc/self/fd/16/vehicles.json.tmp.1913.f0f4bc2c79d1 to /proc/self/fd/16/vehicles.json
+2026-11-18T12:22:22.939Z [DEBUG] File /proc/self/fd/16/vehicles.json written atomically
+2026-11-18T12:22:22.940Z [INFO] [Stall] tool_dispatch_end tool=Edit toolUseId=toolu_015WptVicKDq6TTaqM7eWYvz outcome=ok durationMs=4
+2026-11-18T12:22:26.190Z [INFO] [Stall] tool_dispatch_start tool=Edit toolUseId=toolu_01GWAkVejoJmXPqsaEZEQ5kX permissionDecisionMs=4
+2026-11-18T12:22:26.195Z [DEBUG] Preserving file permissions: 100644
+2026-11-18T12:22:26.195Z [DEBUG] Writing to temp file: /proc/self/fd/16/vehicles.json.tmp.1913.ff75fa2a7d1f
+2026-11-18T12:22:26.195Z [DEBUG] Applied original permissions to temp file
+2026-11-18T12:22:26.196Z [DEBUG] Temp file written successfully, size: 94258 bytes
+2026-11-18T12:22:26.196Z [DEBUG] Renaming /proc/self/fd/16/vehicles.json.tmp.1913.ff75fa2a7d1f to /proc/self/fd/16/vehicles.json
+2026-11-18T12:22:26.196Z [DEBUG] File /proc/self/fd/16/vehicles.json written atomically
+2026-11-18T12:22:26.196Z [INFO] [Stall] tool_dispatch_end tool=Edit toolUseId=toolu_01GWAkVejoJmXPqsaEZEQ5kX outcome=ok durationMs=6
+2026-11-18T12:22:29.994Z [INFO] [Stall] tool_dispatch_start tool=Edit toolUseId=toolu_01KB36jBRELkUFFxcsAxNLvw permissionDecisionMs=4
+2026-11-18T12:22:29.996Z [DEBUG] Preserving file permissions: 100644
+2026-11-18T12:22:29.996Z [DEBUG] Writing to temp file: /proc/self/fd/16/vehicles.json.tmp.1913.0a1d6af4c9fd
+2026-11-18T12:22:29.996Z [DEBUG] Applied original permissions to temp file
+2026-11-18T12:22:29.997Z [DEBUG] Temp file written successfully, size: 95082 bytes
+2026-11-18T12:22:29.997Z [DEBUG] Renaming /proc/self/fd/16/vehicles.json.tmp.1913.0a1d6af4c9fd to /proc/self/fd/16/vehicles.json
+2026-11-18T12:22:29.997Z [DEBUG] File /proc/self/fd/16/vehicles.json written atomically
+2026-11-18T12:22:29.997Z [INFO] [Stall] tool_dispatch_end tool=Edit toolUseId=toolu_01KB36jBRELkUFFxcsAxNLvw outcome=ok durationMs=3
+2026-11-18T12:22:32.592Z [INFO] [Stall] tool_dispatch_start tool=Edit toolUseId=toolu_01V24QAnbeL991eHCEfzWnU2 permissionDecisionMs=4
+2026-11-18T12:22:32.594Z [DEBUG] Preserving file permissions: 100644
+2026-11-18T12:22:32.594Z [DEBUG] Writing to temp file: /proc/self/fd/16/vehicles.json.tmp.1913.539b0d5421b9
+2026-11-18T12:22:32.594Z [DEBUG] Applied original permissions to temp file
+2026-11-18T12:22:32.595Z [DEBUG] Temp file written successfully, size: 95531 bytes
+2026-11-18T12:22:32.595Z [DEBUG] Renaming /proc/self/fd/16/vehicles.json.tmp.1913.539b0d5421b9 to /proc/self/fd/16/vehicles.json
+2026-11-18T12:22:32.595Z [DEBUG] File /proc/self/fd/16/vehicles.json written atomically
+2026-11-18T12:22:32.596Z [INFO] [Stall] tool_dispatch_end tool=Edit toolUseId=toolu_01V24QAnbeL991eHCEfzWnU2 outcome=ok durationMs=4
+2026-11-18T12:22:35.002Z [INFO] [Stall] tool_dispatch_start tool=Edit toolUseId=toolu_01QrUctqGfSKdDRV8udQwqJA permissionDecisionMs=4
+2026-11-18T12:22:35.004Z [DEBUG] Preserving file permissions: 100644
+2026-11-18T12:22:35.004Z [DEBUG] Writing to temp file: /proc/self/fd/16/vehicles.json.tmp.1913.26ee3b130e74
+2026-11-18T12:22:35.004Z [DEBUG] Applied original permissions to temp file
+2026-11-18T12:22:35.005Z [DEBUG] Temp file written successfully, size: 95950 bytes
+2026-11-18T12:22:35.005Z [DEBUG] Renaming /proc/self/fd/16/vehicles.json.tmp.1913.26ee3b130e74 to /proc/self/fd/16/vehicles.json
+2026-11-18T12:22:35.005Z [DEBUG] File /proc/self/fd/16/vehicles.json written atomically
+2026-11-18T12:22:35.006Z [INFO] [Stall] tool_dispatch_end tool=Edit toolUseId=toolu_01QrUctqGfSKdDRV8udQwqJA outcome=ok durationMs=3
+2026-11-18T12:22:35.010Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:22:35.010Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:22:35.011Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:22:35.015Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:22:35.018Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:22:35.018Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:22:35.021Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:22:35.025Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:22:35.027Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:22:36.166Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:22:36.166Z [DEBUG] [API:timing] first byte after 1143ms
+2026-11-18T12:22:36.877Z [INFO] [Stall] tool_dispatch_start tool=Grep toolUseId=toolu_0164TTHCem2QkxowJLpT5Hxf permissionDecisionMs=5
+2026-11-18T12:22:36.889Z [INFO] [Stall] tool_dispatch_end tool=Grep toolUseId=toolu_0164TTHCem2QkxowJLpT5Hxf outcome=ok durationMs=12
+2026-11-18T12:22:36.896Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:22:36.896Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:22:36.896Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:22:36.897Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:22:36.899Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:22:36.900Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:22:36.907Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:22:36.913Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:22:36.915Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:22:37.495Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:22:37.495Z [DEBUG] [API:timing] first byte after 586ms
+2026-11-18T12:22:42.345Z [INFO] [Stall] tool_dispatch_start tool=Edit toolUseId=toolu_01LmFu7bqWqWEhaPQAPFSYfA permissionDecisionMs=4
+2026-11-18T12:22:42.349Z [DEBUG] Preserving file permissions: 100644
+2026-11-18T12:22:42.349Z [DEBUG] Writing to temp file: /proc/self/fd/16/vehicles.json.tmp.1913.2bec7053a5d9
+2026-11-18T12:22:42.350Z [DEBUG] Applied original permissions to temp file
+2026-11-18T12:22:42.350Z [DEBUG] Temp file written successfully, size: 96854 bytes
+2026-11-18T12:22:42.350Z [DEBUG] Renaming /proc/self/fd/16/vehicles.json.tmp.1913.2bec7053a5d9 to /proc/self/fd/16/vehicles.json
+2026-11-18T12:22:42.350Z [DEBUG] File /proc/self/fd/16/vehicles.json written atomically
+2026-11-18T12:22:42.351Z [INFO] [Stall] tool_dispatch_end tool=Edit toolUseId=toolu_01LmFu7bqWqWEhaPQAPFSYfA outcome=ok durationMs=6
+2026-11-18T12:22:43.306Z [INFO] [Stall] tool_dispatch_start tool=Edit toolUseId=toolu_01BLvrtf2kDGAAYistCzE9MH permissionDecisionMs=5
+2026-11-18T12:22:43.308Z [DEBUG] Preserving file permissions: 100644
+2026-11-18T12:22:43.308Z [DEBUG] Writing to temp file: /proc/self/fd/16/vehicles.json.tmp.1913.b9fea13267a6
+2026-11-18T12:22:43.308Z [DEBUG] Applied original permissions to temp file
+2026-11-18T12:22:43.309Z [DEBUG] Temp file written successfully, size: 96854 bytes
+2026-11-18T12:22:43.309Z [DEBUG] Renaming /proc/self/fd/16/vehicles.json.tmp.1913.b9fea13267a6 to /proc/self/fd/16/vehicles.json
+2026-11-18T12:22:43.309Z [DEBUG] File /proc/self/fd/16/vehicles.json written atomically
+2026-11-18T12:22:43.309Z [INFO] [Stall] tool_dispatch_end tool=Edit toolUseId=toolu_01BLvrtf2kDGAAYistCzE9MH outcome=ok durationMs=3
+2026-11-18T12:22:43.314Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:22:43.314Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:22:43.315Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:22:43.319Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:22:43.321Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:22:43.322Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:22:43.326Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:22:43.330Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:22:43.331Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:22:43.909Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:22:43.909Z [DEBUG] [API:timing] first byte after 582ms
+2026-11-18T12:22:44.742Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 1.3ms (native link, next() included)
+2026-11-18T12:22:44.743Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_01YZ89fkC9oYeXdtvPxyYecC permissionDecisionMs=2
+2026-11-18T12:22:44.744Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:22:44.861Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_01YZ89fkC9oYeXdtvPxyYecC outcome=ok durationMs=118
+2026-11-18T12:22:45.101Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 1.7ms (native link, next() included)
+2026-11-18T12:22:45.101Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_014xeu3SQ4vqj1WfkLipzfSW permissionDecisionMs=3
+2026-11-18T12:22:45.104Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:22:45.250Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_014xeu3SQ4vqj1WfkLipzfSW outcome=ok durationMs=149
+2026-11-18T12:22:45.255Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:22:45.255Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:22:45.256Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:22:45.257Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:22:45.259Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:22:45.260Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:22:45.263Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:22:45.267Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:22:45.268Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:22:46.302Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:22:46.302Z [DEBUG] [API:timing] first byte after 1038ms
+2026-11-18T12:22:48.180Z [INFO] [Stall] tool_dispatch_start tool=Write toolUseId=toolu_01H7S5fFNgQuzrncybF9fRXd permissionDecisionMs=3
+2026-11-18T12:22:48.183Z [DEBUG] Preserving file permissions: 100644
+2026-11-18T12:22:48.184Z [DEBUG] Writing to temp file: /proc/self/fd/16/checked-makes.json.tmp.1913.ea14e554c836
+2026-11-18T12:22:48.184Z [DEBUG] Applied original permissions to temp file
+2026-11-18T12:22:48.185Z [DEBUG] Temp file written successfully, size: 157 bytes
+2026-11-18T12:22:48.185Z [DEBUG] Renaming /proc/self/fd/16/checked-makes.json.tmp.1913.ea14e554c836 to /proc/self/fd/16/checked-makes.json
+2026-11-18T12:22:48.185Z [DEBUG] File /proc/self/fd/16/checked-makes.json written atomically
+2026-11-18T12:22:48.185Z [INFO] [Stall] tool_dispatch_end tool=Write toolUseId=toolu_01H7S5fFNgQuzrncybF9fRXd outcome=ok durationMs=5
+2026-11-18T12:23:02.550Z [INFO] [Stall] tool_dispatch_start tool=Write toolUseId=toolu_015hGYZqRcUfwER2doKHmM4H permissionDecisionMs=4
+2026-11-18T12:23:02.551Z [DEBUG] Preserving file permissions: 100644
+2026-11-18T12:23:02.551Z [DEBUG] Writing to temp file: /proc/self/fd/16/candidates.json.tmp.1913.b073cd5f7fd3
+2026-11-18T12:23:02.551Z [DEBUG] Applied original permissions to temp file
+2026-11-18T12:23:02.552Z [DEBUG] Temp file written successfully, size: 4279 bytes
+2026-11-18T12:23:02.552Z [DEBUG] Renaming /proc/self/fd/16/candidates.json.tmp.1913.b073cd5f7fd3 to /proc/self/fd/16/candidates.json
+2026-11-18T12:23:02.552Z [DEBUG] File /proc/self/fd/16/candidates.json written atomically
+2026-11-18T12:23:02.553Z [INFO] [Stall] tool_dispatch_end tool=Write toolUseId=toolu_015hGYZqRcUfwER2doKHmM4H outcome=ok durationMs=3
+2026-11-18T12:23:02.557Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:23:02.557Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:23:02.558Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:23:02.559Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:23:02.561Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:23:02.562Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:23:02.565Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:23:02.570Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:23:02.572Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:23:03.545Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:23:03.545Z [DEBUG] [API:timing] first byte after 978ms
+2026-11-18T12:23:03.954Z [INFO] [Stall] tool_dispatch_start tool=mcp_tool toolUseId=toolu_01H7UkVxwH36X7BQNbWBJHu7 permissionDecisionMs=0
+2026-11-18T12:23:03.955Z [DEBUG] MCP server "safeoutputs": Calling MCP tool: push_repo_memory
+2026-11-18T12:23:04.298Z [DEBUG] MCP server "safeoutputs": Tool 'push_repo_memory' completed successfully in 342ms
+2026-11-18T12:23:04.298Z [INFO] [Stall] tool_dispatch_end tool=mcp_tool toolUseId=toolu_01H7UkVxwH36X7BQNbWBJHu7 outcome=ok durationMs=344
+2026-11-18T12:23:04.635Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 1.8ms (native link, next() included)
+2026-11-18T12:23:04.635Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_01VvvJqJvS7NETJU6qgmUmhn permissionDecisionMs=3
+2026-11-18T12:23:04.639Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:23:04.648Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_01VvvJqJvS7NETJU6qgmUmhn outcome=ok durationMs=13
+2026-11-18T12:23:04.653Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:23:04.653Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:23:04.653Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:23:04.655Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:23:04.657Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:23:04.658Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:23:04.662Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:23:04.667Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:23:04.668Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:23:05.571Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:23:05.572Z [DEBUG] [API:timing] first byte after 908ms
+2026-11-18T12:23:06.017Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 1.7ms (native link, next() included)
+2026-11-18T12:23:06.017Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_01LeST9F4rtMFoVgp52KEiRo permissionDecisionMs=3
+2026-11-18T12:23:06.021Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:23:06.041Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_01LeST9F4rtMFoVgp52KEiRo outcome=ok durationMs=24
+2026-11-18T12:23:06.045Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:23:06.045Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:23:06.045Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:23:06.046Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:23:06.049Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:23:06.050Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:23:06.054Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:23:06.057Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:23:06.059Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:23:06.858Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:23:06.858Z [DEBUG] [API:timing] first byte after 803ms
+2026-11-18T12:23:08.011Z [DEBUG] hooks module cc-plugin-privacy@builtin tool.check settled in 3.0ms (native link, next() included)
+2026-11-18T12:23:08.012Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_019SRLwep67kGmTMAH7t9GD6 permissionDecisionMs=5
+2026-11-18T12:23:08.014Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-11-18T12:23:08.026Z [INFO] [Stall] tool_dispatch_end tool=Bash toolUseId=toolu_019SRLwep67kGmTMAH7t9GD6 outcome=ok durationMs=14
+2026-11-18T12:23:08.030Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:23:08.030Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:23:08.030Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:23:08.031Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:23:08.033Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:23:08.033Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:23:08.037Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:23:08.043Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:23:08.045Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:23:09.015Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:23:09.015Z [DEBUG] [API:timing] first byte after 975ms
+2026-11-18T12:23:24.904Z [WARN] [Stall] stream_idle_partial lastChunkAgeMs=14999 bytesTotal=4688 idleDeadlineMs=300000
+2026-11-18T12:23:27.509Z [INFO] [Stall] tool_dispatch_start tool=mcp_tool toolUseId=toolu_01TeJpMnCg7a9xBEnfuvxWz5 permissionDecisionMs=1
+2026-11-18T12:23:27.510Z [DEBUG] MCP server "safeoutputs": Calling MCP tool: create_pull_request
+2026-11-18T12:23:27.596Z [DEBUG] MCP server "safeoutputs": Tool 'create_pull_request' completed successfully in 87ms
+2026-11-18T12:23:27.597Z [INFO] [Stall] tool_dispatch_end tool=mcp_tool toolUseId=toolu_01TeJpMnCg7a9xBEnfuvxWz5 outcome=ok durationMs=88
+2026-11-18T12:23:27.601Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:23:27.601Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:23:27.601Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:23:27.602Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:23:27.604Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:23:27.605Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:23:27.608Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:23:27.611Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:23:27.613Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:23:28.417Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:23:28.417Z [DEBUG] [API:timing] first byte after 808ms
+2026-11-18T12:23:34.351Z [INFO] [Stall] tool_dispatch_start tool=mcp_tool toolUseId=toolu_013mbcExU9Uq7ri1Mykixaie permissionDecisionMs=1
+2026-11-18T12:23:34.352Z [DEBUG] MCP server "safeoutputs": Calling MCP tool: create_issue
+2026-11-18T12:23:34.373Z [DEBUG] MCP server "safeoutputs": Tool 'create_issue' completed successfully in 21ms
+2026-11-18T12:23:34.373Z [INFO] [Stall] tool_dispatch_end tool=mcp_tool toolUseId=toolu_013mbcExU9Uq7ri1Mykixaie outcome=ok durationMs=22
+2026-11-18T12:23:34.377Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:23:34.377Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:23:34.377Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:23:34.379Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:23:34.380Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:23:34.381Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:23:34.384Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:23:34.387Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:23:34.389Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:23:35.464Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:23:35.464Z [DEBUG] [API:timing] first byte after 1079ms
+2026-11-18T12:23:37.513Z [INFO] [Stall] tool_dispatch_start tool=mcp_tool toolUseId=toolu_01FpS4akGAEd1FeGTZtpGufK permissionDecisionMs=1
+2026-11-18T12:23:37.514Z [DEBUG] MCP server "safeoutputs": Calling MCP tool: noop
+2026-11-18T12:23:37.527Z [DEBUG] MCP server "safeoutputs": Tool 'noop' completed successfully in 13ms
+2026-11-18T12:23:37.527Z [INFO] [Stall] tool_dispatch_end tool=mcp_tool toolUseId=toolu_01FpS4akGAEd1FeGTZtpGufK outcome=ok durationMs=14
+2026-11-18T12:23:37.531Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-18T12:23:37.531Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-18T12:23:37.531Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-18T12:23:37.532Z [DEBUG] autocompact: tokens=[REDACTED] level=ok effectiveWindow=980000
+2026-11-18T12:23:37.533Z [DEBUG] Dynamic tool loading: found 7 discovered tools in message history
+2026-11-18T12:23:37.534Z [DEBUG] Dynamic tool loading: 7/49 deferred tools included
+2026-11-18T12:23:37.537Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.317.ca3; cc_entrypoint=sdk-cli;
+2026-11-18T12:23:37.540Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-18T12:23:37.541Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-18T12:23:38.162Z [DEBUG] Stream started - received first chunk
+2026-11-18T12:23:38.162Z [DEBUG] [API:timing] first byte after 624ms
+2026-11-18T12:23:40.677Z [DEBUG] plugin directory search failed (http): self signed certificate
+2026-11-18T12:23:40.678Z [WARN] Plugin autoupdate: failed to refresh marketplace anthropic-plugin-directory: Anthropic Directory is unavailable: it could not be reached; check your network connection
+2026-11-18T12:23:40.678Z [DEBUG] Plugin autoupdate: checking installed plugins
+2026-11-18T12:23:48.777Z [DEBUG] [engine] turn 1 end (turns=91 usage in=260701 out=47770 cost=$3.5647 api=451328ms stop=end_turn resultLen=3074)
+2026-11-18T12:23:48.783Z [DEBUG] hooks module cc-plugin-agents-md@builtin turn.complete settled in 0.3ms (native link, next() included)
+2026-11-18T12:23:48.787Z [DEBUG] MCP server "github": HTTP connection closed after 525s (with errors)
+2026-11-18T12:23:48.787Z [DEBUG] MCP server "github": Cleared connection cache for reconnection
+2026-11-18T12:23:48.788Z [DEBUG] MCP server "safeoutputs": HTTP connection closed after 525s (with errors)
+2026-11-18T12:23:48.788Z [DEBUG] MCP server "safeoutputs": Cleared connection cache for reconnection
+2026-11-18T12:23:48.790Z [DEBUG] [uds-messaging] Shutting down
+2026-11-18T12:23:48.791Z [DEBUG] LSP server manager shut down successfully
+2026-11-18T12:23:48.792Z [DEBUG] Cleaned up session snapshot: /home/runner/.claude/shell-snapshots/snapshot-bash-1795004104988-xnxobr.sh

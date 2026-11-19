@@ -1,0 +1,35 @@
+﻿2026-11-19T11:50:10.6492438Z ##[group]Run actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
+2026-11-19T11:50:10.6541620Z with:
+2026-11-19T11:50:10.6542112Z   name: repo-memory-prices
+2026-11-19T11:50:10.6542760Z   path: /tmp/gh-aw/repo-memory/prices
+2026-11-19T11:50:10.6543373Z   merge-multiple: false
+2026-11-19T11:50:10.6543896Z   repository: Suv4o/charge-line-data
+2026-11-19T11:50:10.6544459Z   run-id: 44517227475
+2026-11-19T11:50:10.6544940Z   skip-decompress: false
+2026-11-19T11:50:10.6545453Z   digest-mismatch: error
+2026-11-19T11:50:10.6546248Z env:
+2026-11-19T11:50:10.6546755Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:50:10.6547345Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:50:10.6547902Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-19T11:50:10.6549644Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517227475,github.run_id=44517227475,gh-aw.engine.id=claude
+2026-11-19T11:50:10.6551495Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:50:10.6552163Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:50:10.6552723Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:50:10.6553339Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:50:10.6554522Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:50:10.6555100Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:50:10.6556020Z   GITHUB_AW_OTEL_TRACE_ID: 85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:50:10.6556828Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b636f1583cc75f3b
+2026-11-19T11:50:10.6557548Z   GITHUB_AW_OTEL_JOB_START_MS: 1795089007437
+2026-11-19T11:50:10.6570217Z ##[endgroup]
+2026-11-19T11:50:11.0012692Z Downloading single artifact
+2026-11-19T11:50:11.2761153Z Preparing to download the following artifacts:
+2026-11-19T11:50:11.2766830Z - repo-memory-prices (ID: 14526312483, Size: 1153, Expected Digest: sha256:7f6c9cd789ec155db40b41ce0031c0e06af26a991b102ffdd2a215982abe6219)
+2026-11-19T11:50:11.7338992Z Redirecting to blob download url: https://productionresultssa8.blob.core.windows.net/actions-results/a8cf3b62-61ad-4c42-8dba-b021b6948f3a/workflow-job-run-0e1bacf0-e463-5bfa-8ba5-af169bfdafc1/artifacts/daaa4c9afe2927c9145a6e20d3517a617fab2c71455d1d4cd6bf69277487c726.zip
+2026-11-19T11:50:11.7347727Z Starting download of artifact to: /tmp/gh-aw/repo-memory/prices
+2026-11-19T11:50:11.9543207Z (node:2595) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-11-19T11:50:11.9548859Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-19T11:50:11.9676340Z SHA256 digest of downloaded artifact is 7f6c9cd789ec155db40b41ce0031c0e06af26a991b102ffdd2a215982abe6219
+2026-11-19T11:50:11.9683989Z Artifact download completed successfully.
+2026-11-19T11:50:11.9689994Z Total of 1 artifact(s) downloaded
+2026-11-19T11:50:11.9698881Z Download artifact has finished successfully

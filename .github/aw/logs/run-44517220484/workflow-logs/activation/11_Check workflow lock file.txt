@@ -1,0 +1,48 @@
+﻿2026-11-19T11:42:47.4609787Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-19T11:42:47.4610601Z with:
+2026-11-19T11:42:47.4612592Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'check_workflow_timestamp_api.cjs'));
+await main();
+
+2026-11-19T11:42:47.4618375Z   github-token: ***
+2026-11-19T11:42:47.4618812Z   debug: false
+2026-11-19T11:42:47.4619240Z   user-agent: actions/github-script
+2026-11-19T11:42:47.4619760Z   result-encoding: json
+2026-11-19T11:42:47.4620193Z   retries: 0
+2026-11-19T11:42:47.4620642Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-19T11:42:47.4621192Z env:
+2026-11-19T11:42:47.4621587Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:42:47.4622111Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:42:47.4622609Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-19T11:42:47.4624260Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517220484,github.run_id=44517220484,gh-aw.engine.id=claude
+2026-11-19T11:42:47.4625766Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:42:47.4626251Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:42:47.4626724Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:42:47.4627239Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:42:47.4627818Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:42:47.4628307Z   GH_AW_MAX_DAILY_AI_CREDITS: 1200
+2026-11-19T11:42:47.4628807Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:42:47.4629356Z   GITHUB_AW_OTEL_TRACE_ID: 19af99b8ca6a314c08bd9b7019d79d19
+2026-11-19T11:42:47.4630023Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8bb092f1684db251
+2026-11-19T11:42:47.4630619Z   GITHUB_AW_OTEL_JOB_START_MS: 1795088564228
+2026-11-19T11:42:47.4631413Z   GH_AW_WORKFLOW_FILE: catalogue.lock.yml
+2026-11-19T11:42:47.4632320Z   GH_AW_CONTEXT_WORKFLOW_REF: Suv4o/charge-line-data/.github/workflows/catalogue.lock.yml@refs/heads/main
+2026-11-19T11:42:47.4633194Z ##[endgroup]
+2026-11-19T11:42:47.5854874Z Checking for stale lock file using frontmatter hash:
+2026-11-19T11:42:47.5869882Z   Source: .github/workflows/catalogue.md
+2026-11-19T11:42:47.5874275Z   Lock file: .github/workflows/catalogue.lock.yml
+2026-11-19T11:42:47.5878273Z Using immutable workflow revision from GITHUB_WORKFLOW_SHA: 5c02988e404353ec4ce1a012f048a04af7b8a5e0
+2026-11-19T11:42:47.5880745Z Env workflow ref already identifies this workflow, skipping referenced_workflows API lookup
+2026-11-19T11:42:47.5884183Z GITHUB_WORKFLOW_REF: Suv4o/charge-line-data/.github/workflows/catalogue.lock.yml@refs/heads/main
+2026-11-19T11:42:47.5887488Z GH_AW_CONTEXT_WORKFLOW_REF: Suv4o/charge-line-data/.github/workflows/catalogue.lock.yml@refs/heads/main (available as env fallback)
+2026-11-19T11:42:47.5889951Z GITHUB_REPOSITORY: Suv4o/charge-line-data
+2026-11-19T11:42:47.5891698Z Resolved source repo: Suv4o/charge-line-data @ 5c02988e404353ec4ce1a012f048a04af7b8a5e0
+2026-11-19T11:42:47.5896062Z Same-repo invocation: checking out Suv4o/charge-line-data @ 5c02988e404353ec4ce1a012f048a04af7b8a5e0
+2026-11-19T11:42:48.3329415Z Frontmatter hash comparison:
+2026-11-19T11:42:48.3333287Z   Lock file hash:    9f7be114e70b80c5cb59e4e45ee3904e57fd04c9bc162d6dc198f7133c168aba
+2026-11-19T11:42:48.3340886Z   Recomputed hash:   9f7be114e70b80c5cb59e4e45ee3904e57fd04c9bc162d6dc198f7133c168aba
+2026-11-19T11:42:48.3344148Z   Status: ✅ Hashes match
+2026-11-19T11:42:48.3346252Z ✅ Lock file is up to date (hashes match)

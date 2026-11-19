@@ -1,0 +1,33 @@
+﻿2026-11-19T11:42:44.8241678Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-19T11:42:44.8242499Z with:
+2026-11-19T11:42:44.8248042Z   github-token: ***
+2026-11-19T11:42:44.8250762Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'restore_aic_scan_cache.cjs'));
+await main();
+
+2026-11-19T11:42:44.8253257Z   debug: false
+2026-11-19T11:42:44.8253939Z   user-agent: actions/github-script
+2026-11-19T11:42:44.8254475Z   result-encoding: json
+2026-11-19T11:42:44.8254916Z   retries: 0
+2026-11-19T11:42:44.8255365Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-19T11:42:44.8255916Z env:
+2026-11-19T11:42:44.8256328Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:42:44.8256833Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:42:44.8257330Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-19T11:42:44.8258756Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517220484,github.run_id=44517220484,gh-aw.engine.id=claude
+2026-11-19T11:42:44.8260157Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:42:44.8260661Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:42:44.8261129Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:42:44.8262169Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:42:44.8262831Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:42:44.8263334Z   GH_AW_MAX_DAILY_AI_CREDITS: 1200
+2026-11-19T11:42:44.8264039Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:42:44.8264623Z   GITHUB_AW_OTEL_TRACE_ID: 19af99b8ca6a314c08bd9b7019d79d19
+2026-11-19T11:42:44.8265295Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8bb092f1684db251
+2026-11-19T11:42:44.8265896Z   GITHUB_AW_OTEL_JOB_START_MS: 1795088564228
+2026-11-19T11:42:44.8266707Z   GH_AW_HAS_SLASH_COMMAND: false
+2026-11-19T11:42:44.8267237Z   GH_AW_HAS_LABEL_COMMAND: false
+2026-11-19T11:42:44.8267739Z ##[endgroup]

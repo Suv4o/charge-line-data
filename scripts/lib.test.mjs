@@ -87,8 +87,9 @@ test("a network's price and basis agree", () => {
 
 test("two networks can't claim the same match text", () => {
   const doc = structuredClone(JSON.parse(readRepoFile("networks.json")));
-  doc.networks.push({ id: "other", name: "Other", match: ["evie"], typicalPerKWh: null, basis: "none", siteReading: "unchecked", source: "Seen in the charger file", checked: "2026-11-15" });
-  assert.ok(validate("networks", { doc, now }).some((e) => e.includes('"evie" matches both')));
+  const taken = doc.networks[0].match[0];
+  doc.networks.push({ id: "other", name: "Other", match: [taken], typicalPerKWh: null, basis: "none", siteReading: "unchecked", source: "Seen in the charger file", checked: "2026-11-15" });
+  assert.ok(validate("networks", { doc, now }).some((e) => e.includes(`"${taken}" matches both`)));
 });
 
 test("unlisted operators with three or more fast sites are candidates", () => {
@@ -102,7 +103,8 @@ test("unlisted operators with three or more fast sites are candidates", () => {
       site("(Unknown Operator)"), site("(Unknown Operator)"), site("(Unknown Operator)"),
     ],
   };
-  const networks = JSON.parse(readRepoFile("networks.json"));
+  // A fixed list, not the repo's networks.json: the agents add operators to that file over time.
+  const networks = { networks: [{ id: "evie", match: ["evie"] }] };
   assert.deepEqual(unlistedOperators(file, networks).map((c) => [c.operator, c.fastSites]), [["Yurika", 3]]);
 });
 

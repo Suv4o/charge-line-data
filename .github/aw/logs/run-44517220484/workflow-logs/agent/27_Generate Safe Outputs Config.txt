@@ -1,0 +1,55 @@
+﻿2026-11-19T11:45:16.1727227Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-19T11:45:16.1727469Z with:
+2026-11-19T11:45:16.1728176Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'create_files.cjs'));
+await main();
+
+2026-11-19T11:45:16.1730202Z   github-token: ***
+2026-11-19T11:45:16.1730329Z   debug: false
+2026-11-19T11:45:16.1730455Z   user-agent: actions/github-script
+2026-11-19T11:45:16.1730609Z   result-encoding: json
+2026-11-19T11:45:16.1730733Z   retries: 0
+2026-11-19T11:45:16.1730874Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-19T11:45:16.1731039Z env:
+2026-11-19T11:45:16.1731159Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:45:16.1731304Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:45:16.1731452Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-19T11:45:16.1731899Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517220484,github.run_id=44517220484,gh-aw.engine.id=claude
+2026-11-19T11:45:16.1732330Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:45:16.1732476Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:45:16.1732616Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:45:16.1732772Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:45:16.1732940Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:45:16.1733081Z   DEFAULT_BRANCH: main
+2026-11-19T11:45:16.1733212Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-11-19T11:45:16.1733349Z   GH_AW_ASSETS_BRANCH: 
+2026-11-19T11:45:16.1733492Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-11-19T11:45:16.1733656Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-11-19T11:45:16.1733831Z   GH_AW_OBJECT_PACK_FETCH_DEPTHS: 
+2026-11-19T11:45:16.1733979Z   GH_AW_OBJECT_PACK_MAX_BYTES: 
+2026-11-19T11:45:16.1734122Z   GH_AW_OBJECT_PACK_MAX_OBJECTS: 
+2026-11-19T11:45:16.1734288Z   GH_AW_OBJECT_PACK_TIMEOUT_MS: 
+2026-11-19T11:45:16.1734430Z   GH_AW_PR_HEAD_BASE_BRANCH: 
+2026-11-19T11:45:16.1734716Z   GH_AW_PR_HEAD_BASE_PR_NUMBER: 
+2026-11-19T11:45:16.1734878Z   GH_AW_PR_HEAD_BASE_REF: 
+2026-11-19T11:45:16.1735014Z   GH_AW_PR_HEAD_BASE_REPO: 
+2026-11-19T11:45:16.1735154Z   GH_AW_PR_HEAD_BASE_SHA: 
+2026-11-19T11:45:16.1735283Z   GH_AW_PR_HEAD_REPO: 
+2026-11-19T11:45:16.1735409Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:45:16.1735538Z   GH_AW_TARGET_REPO_SLUG: 
+2026-11-19T11:45:16.1735680Z   GH_AW_WORKFLOW_ID_SANITIZED: catalogue
+2026-11-19T11:45:16.1735845Z   PLAYWRIGHT_MCP_SANDBOX: false
+2026-11-19T11:45:16.1736018Z   GITHUB_AW_OTEL_TRACE_ID: 19af99b8ca6a314c08bd9b7019d79d19
+2026-11-19T11:45:16.1736214Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: a0901920f6619dd8
+2026-11-19T11:45:16.1736390Z   GITHUB_AW_OTEL_JOB_START_MS: 1795088584512
+2026-11-19T11:45:16.1736566Z   GH_AW_RUNTIME_TMP_DIR: /tmp/gh-aw-runtime-To83eS
+2026-11-19T11:45:16.1736740Z   GH_AW_RUNTIME_TMP_ID: 66305:8283413:1001
+2026-11-19T11:45:16.1736901Z   TMPDIR: /tmp/gh-aw-runtime-To83eS
+2026-11-19T11:45:16.1737076Z   GH_AW_FILE_ROOT: /home/runner/work/_temp/gh-aw
+2026-11-19T11:45:16.1737347Z   GH_AW_FILE_CONFIG: {"files":[{"path":"safeoutputs/config.json","content_env":"GH_AW_SAFE_OUTPUTS_CONFIG"}]}
+2026-11-19T11:45:16.1739901Z   GH_AW_SAFE_OUTPUTS_CONFIG: {"create_issue":{"labels":["agent","catalogue"],"max":2,"max_issue_artifact_size":1048576,"max_issue_artifacts":10,"title_prefix":"[catalogue] "},"create_pull_request":{"allowed_files":["vehicles.json"],"draft":false,"if_no_changes":"ignore","labels":["agent","catalogue"],"max":1,"max_patch_files":100,"max_patch_size":4096,"protect_top_level_dot_folders":true,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS","DESIGN.md","README.md","CONTRIBUTING.md","SECURITY.md","CODE_OF_CONDUCT.md","CLAUDE.md","AGENTS.md"],"protected_files_policy":"request-review","reviewers":["Suv4o"],"title_prefix":"[catalogue] "},"create_report_incomplete_issue":{},"noop":{"max":2,"report-as-issue":"false"},"push_repo_memory":{"memories":[{"allowed_extensions":[".json"],"dir":"/tmp/gh-aw/repo-memory/catalogue","file_glob":"*.json","format_json":true,"id":"catalogue","max_file_count":100,"max_file_size":102400,"max_patch_size":51200}]},"report_incomplete":{},"report_missing_data":{},"report_missing_tool":{}}
+2026-11-19T11:45:16.1742613Z ##[endgroup]
+2026-11-19T11:45:16.2389044Z Created 1 generated file(s) under /home/runner/work/_temp/gh-aw

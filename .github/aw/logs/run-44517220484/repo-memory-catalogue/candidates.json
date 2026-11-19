@@ -1,0 +1,170 @@
+[
+  {
+    "make": "Deepal",
+    "model": "E07",
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "added",
+    "evidence": [
+      {
+        "url": "https://www.deepal.com.au/vehicles/deepal/e07/",
+        "date": "2026-11-19",
+        "quote": "DC Charge Time 30%-80%: 15 minutes"
+      }
+    ]
+  },
+  {
+    "make": "Deepal",
+    "model": "S05",
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "announced",
+    "evidence": [
+      {
+        "url": "https://www.deepal.com.au/vehicles/deepal/s05/",
+        "date": "2026-11-19",
+        "quote": "Register-interest page, model option labelled \"S05 All-Electric\"; no price or specs yet."
+      }
+    ]
+  },
+  {
+    "make": "Mitsubishi",
+    "model": "ASX VR-e LS",
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "added",
+    "evidence": [
+      {
+        "url": "https://www.goauto.com.au/new-models/mitsubishi/asx/vre/2026-11-19/101115.html",
+        "date": "2026-11-19",
+        "quote": "134kW CCS2 DC charging that allows 10 to 80 per cent recharges in approximately half an hour."
+      }
+    ]
+  },
+  {
+    "make": "Mitsubishi",
+    "model": "ASX VR-e Aspire, Exceed, GSR",
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "on-sale",
+    "evidence": [
+      {
+        "url": "https://thedriven.io/2026/11/19/mitsubishi-asx-vr-e-electric-suv-to-launch-from-45990-drive-away/",
+        "date": "2026-11-19",
+        "quote": "Aspire packs 398 km, and the Exceed variant delivers 380 km. GSR 328 km. DC power stated only for LS; needs maker spec sheet."
+      }
+    ]
+  },
+  {
+    "make": "MG",
+    "model": "U9 EV",
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "added",
+    "evidence": [
+      {
+        "url": "https://www.mgmotor.com.au/vehicles/mgu9-ev",
+        "date": "2026-11-19",
+        "quote": "Up to 430km WLTP range; 115kW peak DC; 20-80% DC charging in just 42 minutes"
+      }
+    ]
+  },
+  {
+    "make": "Xpeng",
+    "model": "X9",
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "added",
+    "evidence": [
+      {
+        "url": "https://thedriven.io/2026/07/21/xpeng-launches-x9-luxury-people-mover-in-australia-priced-from-89900/",
+        "date": "2026-07-21",
+        "quote": "Both offer DC charging at up to 542kW, allowing a 10 to 80% charge in as little as 12 minutes."
+      }
+    ]
+  },
+  {
+    "make": "Leapmotor",
+    "model": "B05",
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "on-sale",
+    "evidence": [
+      {
+        "url": "https://www.racv.com.au/royalauto/transport/electric-vehicles/2026-leapmotor-b05-price-specs-release-date.html",
+        "date": "2026",
+        "quote": "Style 56.2 kWh, 401 km WLTP; Design LR 67.1 kWh, 482 km WLTP. Style DC 156 vs 174 kW disputed; leapmotor.net/en-au cert error."
+      }
+    ]
+  },
+  {
+    "make": "Chery",
+    "model": "E5",
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "on-sale",
+    "evidence": [
+      {
+        "url": "https://thebeep.com.au/car-news/chery-e5-my26-price-specs-australia/",
+        "date": "2026",
+        "quote": "Renamed Omoda E5 (omoda-e5-2024 in file). MY26 reported 30-80 per cent in around 30 minutes at up to 130kW; file has 80 kW."
+      }
+    ]
+  },
+  {
+    "make": "Hongqi",
+    "model": "E-HS9",
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "announced",
+    "evidence": [
+      {
+        "url": "https://thedriven.io/2026/11/12/chinese-luxury-ev-brand-hongqi-launches-in-australia-with-massive-six-seat-electric-suv/",
+        "date": "2026-11-12",
+        "quote": "Hongqi has launched in Australia with a massive six-seat electric SUV. Final pricing TBA; deliveries from 18 January 2027."
+      }
+    ]
+  },
+  {
+    "make": "Avatr",
+    "model": "07L",
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "announced",
+    "evidence": [
+      {
+        "url": "https://thedriven.io/2026/11/13/avatrs-australian-website-goes-live-with-07l-electric-suv-and-06t-wagon/",
+        "date": "2026-11-13",
+        "quote": "Avatr is taking expressions of interest in Australia for its 07L electric SUV and 06T wagon"
+      }
+    ]
+  },
+  {
+    "make": "Avatr",
+    "model": "06T",
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "announced",
+    "evidence": [
+      {
+        "url": "https://thedriven.io/2026/11/13/avatrs-australian-website-goes-live-with-07l-electric-suv-and-06t-wagon/",
+        "date": "2026-11-13",
+        "quote": "with the SUV due to arrive first in early 2027."
+      }
+    ]
+  },
+  {
+    "make": "BYD",
+    "model": "Atto 2 DM-i",
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "not-an-ev",
+    "evidence": [
+      {
+        "url": "https://www.bydautomotive.com.au/",
+        "date": "2026-11-19",
+        "quote": "Teased as \"Be the first to meet the new\" Atto 2 DM-i; DM-i is BYD's plug-in hybrid naming."
+      }
+    ]
+  }
+]

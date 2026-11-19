@@ -1,0 +1,54 @@
+﻿2026-11-19T11:55:14.1935133Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-11-19T11:55:14.1935577Z with:
+2026-11-19T11:55:14.1935788Z   name: detection
+2026-11-19T11:55:14.1937116Z   path: /tmp/gh-aw/threat-detection/detection_result.json
+/tmp/gh-aw/threat-detection/execution.json
+/tmp/gh-aw/threat-detection/detection_usage.json
+/tmp/gh-aw/threat-detection/detection_usage.jsonl
+/tmp/gh-aw/threat-detection/detection_harness_retry.json
+/tmp/gh-aw/threat-detection/sandbox/firewall/logs/
+/tmp/gh-aw/threat-detection/sandbox/firewall/audit/
+
+2026-11-19T11:55:14.1938530Z   if-no-files-found: ignore
+2026-11-19T11:55:14.1938792Z   retention-days: 0
+2026-11-19T11:55:14.1939021Z   compression-level: 6
+2026-11-19T11:55:14.1939263Z   overwrite: false
+2026-11-19T11:55:14.1939497Z   include-hidden-files: false
+2026-11-19T11:55:14.1939750Z   archive: true
+2026-11-19T11:55:14.1939966Z env:
+2026-11-19T11:55:14.1940172Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:55:14.1940594Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:55:14.1941105Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-19T11:55:14.1942446Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517220484,github.run_id=44517220484,gh-aw.engine.id=claude
+2026-11-19T11:55:14.1943300Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:55:14.1943569Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:55:14.1943822Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:55:14.1944106Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:55:14.1944427Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:55:14.1944688Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:55:14.1944992Z   GITHUB_AW_OTEL_TRACE_ID: 19af99b8ca6a314c08bd9b7019d79d19
+2026-11-19T11:55:14.1945370Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: de96b3e46567a2b0
+2026-11-19T11:55:14.1945689Z   GITHUB_AW_OTEL_JOB_START_MS: 1795089237765
+2026-11-19T11:55:14.1946022Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-11-19T11:55:14.1946370Z   GH_AW_RUNTIME_TMP_DIR: /tmp/gh-aw-runtime-HlJhoR
+2026-11-19T11:55:14.1946698Z   GH_AW_RUNTIME_TMP_ID: 2049:8554983:1001
+2026-11-19T11:55:14.1946993Z   TMPDIR: /tmp/gh-aw-runtime-HlJhoR
+2026-11-19T11:55:14.1947418Z   AWF_TOKEN_USAGE_LOG: /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-19T11:55:14.1947878Z   GH_AW_PRIMARY_MODEL: claude-opus-5-5
+2026-11-19T11:55:14.1948151Z   GH_AW_AIC: 36.12328
+2026-11-19T11:55:14.1948381Z   GH_AW_AMBIENT_CONTEXT: 5743
+2026-11-19T11:55:14.1948630Z ##[endgroup]
+2026-11-19T11:55:14.3513641Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-19T11:55:14.3517715Z The least common ancestor is /tmp/gh-aw/threat-detection. This will be the root directory of the artifact
+2026-11-19T11:55:14.3519092Z With the provided path, there will be 19 files uploaded
+2026-11-19T11:55:14.3523154Z Artifact name is valid!
+2026-11-19T11:55:14.3524009Z Root directory input is valid!
+2026-11-19T11:55:14.7232619Z Uploading artifact: detection.zip
+2026-11-19T11:55:14.7272241Z Beginning upload of artifact content to blob storage
+2026-11-19T11:55:15.1570446Z Uploaded bytes 20488
+2026-11-19T11:55:15.2350061Z Finished uploading artifact content to blob storage!
+2026-11-19T11:55:15.2351362Z SHA256 digest of uploaded artifact is 4a6881b514b855c1da0a67f062de17f81129c25ac16d5bf72ead4a783fac4e27
+2026-11-19T11:55:15.2352218Z Finalizing artifact upload
+2026-11-19T11:55:16.0756744Z Artifact detection successfully finalized. Artifact ID 14527620873
+2026-11-19T11:55:16.0757695Z Artifact detection has been successfully uploaded! Final size is 20488 bytes. Artifact ID is 14527620873
+2026-11-19T11:55:16.0761186Z Artifact download URL: https://github.com/Suv4o/charge-line-data/actions/runs/44517220484/artifacts/14527620873

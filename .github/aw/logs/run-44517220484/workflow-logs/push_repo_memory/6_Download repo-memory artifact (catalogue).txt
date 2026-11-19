@@ -1,0 +1,35 @@
+﻿2026-11-19T11:55:59.3516661Z ##[group]Run actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
+2026-11-19T11:55:59.3517646Z with:
+2026-11-19T11:55:59.3518127Z   name: repo-memory-catalogue
+2026-11-19T11:55:59.3518740Z   path: /tmp/gh-aw/repo-memory/catalogue
+2026-11-19T11:55:59.3519407Z   merge-multiple: false
+2026-11-19T11:55:59.3519960Z   repository: Suv4o/charge-line-data
+2026-11-19T11:55:59.3520546Z   run-id: 44517220484
+2026-11-19T11:55:59.3521377Z   skip-decompress: false
+2026-11-19T11:55:59.3521951Z   digest-mismatch: error
+2026-11-19T11:55:59.3522470Z env:
+2026-11-19T11:55:59.3522929Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:55:59.3523515Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:55:59.3524083Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-19T11:55:59.3525652Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517220484,github.run_id=44517220484,gh-aw.engine.id=claude
+2026-11-19T11:55:59.3527239Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:55:59.3527845Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:55:59.3528386Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:55:59.3528990Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:55:59.3529652Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:55:59.3530403Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:55:59.3531263Z   GITHUB_AW_OTEL_TRACE_ID: 19af99b8ca6a314c08bd9b7019d79d19
+2026-11-19T11:55:59.3532047Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 6787f31ac3c3b450
+2026-11-19T11:55:59.3532748Z   GITHUB_AW_OTEL_JOB_START_MS: 1795089357106
+2026-11-19T11:55:59.3533351Z ##[endgroup]
+2026-11-19T11:55:59.6046312Z Downloading single artifact
+2026-11-19T11:55:59.7640243Z Preparing to download the following artifacts:
+2026-11-19T11:55:59.7645112Z - repo-memory-catalogue (ID: 14527900180, Size: 1663, Expected Digest: sha256:940683e21635b7bcbdb9d0dcaebf465cad6c1be27252b352ae41bcf21cd98846)
+2026-11-19T11:56:00.0360741Z Redirecting to blob download url: https://productionresultssa5.blob.core.windows.net/actions-results/c16ebdc8-5f8a-4e8f-aea6-cbdd9271f2cc/workflow-job-run-ea2bfdaf-bd56-5a6f-acfe-4d897b5e8b34/artifacts/c4e311b510ea499164a4cd919e425cd62babd0f26035af9d322ee03c47dba9c6.zip
+2026-11-19T11:56:00.0366469Z Starting download of artifact to: /tmp/gh-aw/repo-memory/catalogue
+2026-11-19T11:56:00.1928694Z (node:2613) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-11-19T11:56:00.1930841Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-19T11:56:00.1995667Z SHA256 digest of downloaded artifact is 940683e21635b7bcbdb9d0dcaebf465cad6c1be27252b352ae41bcf21cd98846
+2026-11-19T11:56:00.2000251Z Artifact download completed successfully.
+2026-11-19T11:56:00.2004168Z Total of 1 artifact(s) downloaded
+2026-11-19T11:56:00.2012268Z Download artifact has finished successfully

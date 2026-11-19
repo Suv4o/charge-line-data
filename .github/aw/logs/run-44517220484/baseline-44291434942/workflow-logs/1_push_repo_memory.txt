@@ -1,0 +1,404 @@
+﻿2026-11-18T11:17:27.7543884Z Current runner version: '2.338.2'
+2026-11-18T11:17:27.7570899Z ##[group]Runner Image Provisioner
+2026-11-18T11:17:27.7571870Z Hosted Compute Agent
+2026-11-18T11:17:27.7572434Z Version: 20261103.629
+2026-11-18T11:17:27.7573069Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+2026-11-18T11:17:27.7573785Z Build Date: 2026-11-03T17:26:59Z
+2026-11-18T11:17:27.7574439Z Worker ID: {c567fe34-08d3-4663-88cc-a6ba0e785bbf}
+2026-11-18T11:17:27.7575143Z Region: westus3
+2026-11-18T11:17:27.7575655Z Cloud: Azure
+2026-11-18T11:17:27.7576157Z ##[endgroup]
+2026-11-18T11:17:27.7577592Z ##[group]VM Image
+2026-11-18T11:17:27.7578201Z - OS: Linux (x64)
+2026-11-18T11:17:27.7578812Z - Source: Docker
+2026-11-18T11:17:27.7579346Z - Name: ubuntu:24.04
+2026-11-18T11:17:27.7579875Z - Version: 20261111.52.1
+2026-11-18T11:17:27.7580877Z ##[endgroup]
+2026-11-18T11:17:27.7581938Z ##[group]GITHUB_TOKEN Permissions
+2026-11-18T11:17:27.7584011Z Contents: write
+2026-11-18T11:17:27.7584623Z Metadata: read
+2026-11-18T11:17:27.7585364Z ##[endgroup]
+2026-11-18T11:17:27.7587474Z Secret source: Actions
+2026-11-18T11:17:27.7588583Z Cache mode: write
+2026-11-18T11:17:27.7589240Z Prepare workflow directory
+2026-11-18T11:17:27.8315486Z Prepare all required actions
+2026-11-18T11:17:27.8378495Z Getting action download info
+2026-11-18T11:17:28.3178681Z Download action repository 'github/gh-aw-actions@53d0749e19424a918acd82b4d140264ce48f2f14' (SHA:53d0749e19424a918acd82b4d140264ce48f2f14)
+2026-11-18T11:17:30.1775085Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-18T11:17:30.2158425Z Download action repository 'actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333' (SHA:9000827ccba6bdab643e8b6fd33ac0654aef8333)
+2026-11-18T11:17:30.8077351Z Download action repository 'actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3' (SHA:3a2844b7e9c422d3c10d287c895573f7108da1b3)
+2026-11-18T11:17:31.4766557Z Complete job name: push_repo_memory
+2026-11-18T11:17:31.5476311Z ##[group]Run github/gh-aw-actions/setup@53d0749e19424a918acd82b4d140264ce48f2f14
+2026-11-18T11:17:31.5477630Z with:
+2026-11-18T11:17:31.5478234Z   destination: /home/runner/work/_temp/gh-aw/actions
+2026-11-18T11:17:31.5478943Z   job-name: push_repo_memory
+2026-11-18T11:17:31.5479584Z   trace-id: de63c434a51c21db345fe19e1f23f358
+2026-11-18T11:17:31.5480702Z   parent-span-id: fbe0e3be632cd612
+2026-11-18T11:17:31.5481377Z   safe-output-artifact-client: false
+2026-11-18T11:17:31.5482303Z env:
+2026-11-18T11:17:31.5482802Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:17:31.5483472Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:17:31.5484062Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-18T11:17:31.5485563Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291434942,github.run_id=44291434942,gh-aw.engine.id=claude
+2026-11-18T11:17:31.5487127Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:17:31.5487764Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:17:31.5488380Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:17:31.5489009Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:17:31.5489706Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:17:31.5490600Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:17:31.5491261Z   GH_AW_SETUP_WORKFLOW_NAME: Keep the EV catalogue current
+2026-11-18T11:17:31.5492387Z   GH_AW_CURRENT_WORKFLOW_REF: Suv4o/charge-line-data/.github/workflows/catalogue.lock.yml@refs/heads/main
+2026-11-18T11:17:31.5493366Z   GH_AW_INFO_VERSION: 2.1.317
+2026-11-18T11:17:31.5493957Z   GH_AW_INFO_AWF_VERSION: v0.29.11
+2026-11-18T11:17:31.5494554Z   GH_AW_INFO_ENGINE_ID: claude
+2026-11-18T11:17:31.5495122Z   GH_AW_SETUP_AW_CONTEXT: 
+2026-11-18T11:17:31.5495681Z ##[endgroup]
+2026-11-18T11:17:36.9481207Z Successfully copied 795 files to /home/runner/work/_temp/gh-aw/actions
+2026-11-18T11:17:36.9513014Z ##[group]Runtime TLS inventory (not a trust-store attestation)
+2026-11-18T11:17:37.6807120Z curl 8.5.0 (x86_64-pc-linux-gnu) libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.10
+2026-11-18T11:17:37.7121699Z Node v24.22.3; OpenSSL 3.5.9
+2026-11-18T11:17:37.7252632Z Go: unavailable; binary build-toolchain inspection unavailable
+2026-11-18T11:17:37.7262494Z Python/certifi: not inspected by shell setup; record each client's interpreter, TLS backend and selected CA bundle separately.
+2026-11-18T11:17:37.7273644Z Container, proxy and MCP trust stores require separate image/vendor evidence.
+2026-11-18T11:17:37.7276530Z Browser updates and successful HTTPS connections do not attest CA distrust.
+2026-11-18T11:17:37.7278784Z ##[endgroup]
+2026-11-18T11:17:38.0646738Z Successfully copied 119 mcp-scripts files to /home/runner/work/_temp/gh-aw/mcp-scripts
+2026-11-18T11:17:38.2934257Z Successfully copied 183 safe-outputs files to /home/runner/work/_temp/gh-aw/safeoutputs
+2026-11-18T11:17:38.8279221Z [info] [otlp] INPUT_TRACE_ID=de63c434a51c21db345fe19e1f23f358 (will reuse activation trace)
+2026-11-18T11:17:38.8286183Z [info] [otlp] INPUT_PARENT_SPAN_ID=fbe0e3be632cd612 (will parent setup span)
+2026-11-18T11:17:38.8298195Z [info] [otlp] no OTLP endpoints have usable credentials, skipping setup span
+2026-11-18T11:17:38.8418210Z [info] [otlp] resolved trace-id=de63c434a51c21db345fe19e1f23f358
+2026-11-18T11:17:38.8439783Z [info] [otlp] trace-id=de63c434a51c21db345fe19e1f23f358 written to GITHUB_OUTPUT
+2026-11-18T11:17:38.8456667Z [info] [otlp] span-id=d812dd8e2be4c7ee written to GITHUB_OUTPUT
+2026-11-18T11:17:38.8467344Z [info] [otlp] parent-span-id=fbe0e3be632cd612 written to GITHUB_OUTPUT
+2026-11-18T11:17:38.8476799Z [info] [otlp] GITHUB_AW_OTEL_TRACE_ID written to GITHUB_ENV
+2026-11-18T11:17:38.8499872Z [info] [otlp] GITHUB_AW_OTEL_PARENT_SPAN_ID written to GITHUB_ENV
+2026-11-18T11:17:38.8583372Z [info] [otlp] GITHUB_AW_OTEL_JOB_START_MS written to GITHUB_ENV
+2026-11-18T11:17:38.9239556Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+2026-11-18T11:17:38.9242878Z with:
+2026-11-18T11:17:38.9244187Z   persist-credentials: false
+2026-11-18T11:17:38.9244763Z   sparse-checkout: .
+2026-11-18T11:17:38.9245303Z   repository: Suv4o/charge-line-data
+2026-11-18T11:17:38.9253530Z   token: ***
+2026-11-18T11:17:38.9255123Z   ssh-strict: true
+2026-11-18T11:17:38.9256078Z   ssh-user: git
+2026-11-18T11:17:38.9256586Z   clean: true
+2026-11-18T11:17:38.9257093Z   sparse-checkout-cone-mode: true
+2026-11-18T11:17:38.9258098Z   fetch-depth: 1
+2026-11-18T11:17:38.9260511Z   fetch-tags: false
+2026-11-18T11:17:38.9261160Z   show-progress: true
+2026-11-18T11:17:38.9261655Z   lfs: false
+2026-11-18T11:17:38.9262220Z   submodules: false
+2026-11-18T11:17:38.9262721Z   set-safe-directory: true
+2026-11-18T11:17:38.9263758Z   allow-unsafe-pr-checkout: false
+2026-11-18T11:17:38.9264888Z env:
+2026-11-18T11:17:38.9268474Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:17:38.9269156Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:17:38.9269758Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-18T11:17:38.9277332Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291434942,github.run_id=44291434942,gh-aw.engine.id=claude
+2026-11-18T11:17:38.9280735Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:17:38.9281524Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:17:38.9282072Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:17:38.9282659Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:17:38.9283310Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:17:38.9283877Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:17:38.9285526Z   GITHUB_AW_OTEL_TRACE_ID: de63c434a51c21db345fe19e1f23f358
+2026-11-18T11:17:38.9286316Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: d812dd8e2be4c7ee
+2026-11-18T11:17:38.9286992Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000658858
+2026-11-18T11:17:38.9289941Z ##[endgroup]
+2026-11-18T11:17:39.2660193Z Syncing repository: Suv4o/charge-line-data
+2026-11-18T11:17:39.2665563Z ##[group]Getting Git version info
+2026-11-18T11:17:39.2666470Z Working directory is '/home/runner/work/charge-line-data/charge-line-data'
+2026-11-18T11:17:39.2667742Z [command]/usr/bin/git version
+2026-11-18T11:17:39.2943414Z git version 2.56.1
+2026-11-18T11:17:39.2984293Z ##[endgroup]
+2026-11-18T11:17:39.3011840Z Temporarily overriding HOME='/home/runner/work/_temp/39d9c6dc-26a9-4cc8-890f-d401c46c46da' before making global git config changes
+2026-11-18T11:17:39.3015194Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-18T11:17:39.3025931Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/charge-line-data/charge-line-data
+2026-11-18T11:17:39.3086193Z Deleting the contents of '/home/runner/work/charge-line-data/charge-line-data'
+2026-11-18T11:17:39.3101333Z ##[group]Determining repository object format
+2026-11-18T11:17:39.3108816Z ##[endgroup]
+2026-11-18T11:17:39.3113043Z ##[group]Initializing the repository
+2026-11-18T11:17:39.3123584Z [command]/usr/bin/git init /home/runner/work/charge-line-data/charge-line-data
+2026-11-18T11:17:39.3395538Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-18T11:17:39.3401683Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-18T11:17:39.3407461Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-18T11:17:39.3411838Z hint: call:
+2026-11-18T11:17:39.3415226Z hint:
+2026-11-18T11:17:39.3420954Z hint: 	git config --global init.defaultBranch <name>
+2026-11-18T11:17:39.3425144Z hint:
+2026-11-18T11:17:39.3429718Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-18T11:17:39.3433466Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-18T11:17:39.3436534Z hint:
+2026-11-18T11:17:39.3439170Z hint: 	git branch -m <name>
+2026-11-18T11:17:39.3441971Z hint:
+2026-11-18T11:17:39.3444691Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-18T11:17:39.3469471Z Initialized empty Git repository in /home/runner/work/charge-line-data/charge-line-data/.git/
+2026-11-18T11:17:39.3495589Z [command]/usr/bin/git remote add origin https://github.com/Suv4o/charge-line-data
+2026-11-18T11:17:39.3588150Z ##[endgroup]
+2026-11-18T11:17:39.3589205Z ##[group]Disabling automatic garbage collection
+2026-11-18T11:17:39.3596123Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-18T11:17:39.3633868Z ##[endgroup]
+2026-11-18T11:17:39.3635310Z ##[group]Setting up auth
+2026-11-18T11:17:39.3642578Z Removing SSH command configuration
+2026-11-18T11:17:39.3652002Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-18T11:17:39.3699361Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-18T11:17:39.4326134Z Removing HTTP extra header
+2026-11-18T11:17:39.4336524Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-18T11:17:39.4402609Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-18T11:17:39.4738392Z Removing includeIf entries pointing to credentials config files
+2026-11-18T11:17:39.4756940Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-18T11:17:39.4823907Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-18T11:17:39.5241775Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-aac90b0c-b83d-44d8-8894-616229c3572a.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-18T11:17:39.5279778Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git.path /home/runner/work/_temp/git-credentials-aac90b0c-b83d-44d8-8894-616229c3572a.config
+2026-11-18T11:17:39.5311552Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-aac90b0c-b83d-44d8-8894-616229c3572a.config
+2026-11-18T11:17:39.5432129Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-aac90b0c-b83d-44d8-8894-616229c3572a.config
+2026-11-18T11:17:39.5479308Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-aac90b0c-b83d-44d8-8894-616229c3572a.config
+2026-11-18T11:17:39.5512853Z ##[endgroup]
+2026-11-18T11:17:39.5515149Z ##[group]Fetching the repository
+2026-11-18T11:17:39.5520774Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --filter=blob:none --depth=1 origin +18eb3dfb3c2b60267d25e7db772574388cb706c0:refs/remotes/origin/main
+2026-11-18T11:17:40.0453747Z From https://github.com/Suv4o/charge-line-data
+2026-11-18T11:17:40.0454860Z  * [new ref]         18eb3dfb3c2b60267d25e7db772574388cb706c0 -> origin/main
+2026-11-18T11:17:40.0475350Z [command]/usr/bin/git branch --list --remote origin/main
+2026-11-18T11:17:40.0498443Z   origin/main
+2026-11-18T11:17:40.0513124Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-11-18T11:17:40.0747824Z 18eb3dfb3c2b60267d25e7db772574388cb706c0
+2026-11-18T11:17:40.0776596Z ##[endgroup]
+2026-11-18T11:17:40.0821799Z ##[group]Determining the checkout info
+2026-11-18T11:17:40.0822939Z ##[endgroup]
+2026-11-18T11:17:40.0823737Z ##[group]Setting up sparse checkout
+2026-11-18T11:17:40.0825674Z [command]/usr/bin/git sparse-checkout set .
+2026-11-18T11:17:40.0898055Z ##[endgroup]
+2026-11-18T11:17:40.0898882Z ##[group]Checking out the ref
+2026-11-18T11:17:40.0902736Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-18T11:17:40.5840146Z Switched to a new branch 'main'
+2026-11-18T11:17:40.5858302Z branch 'main' set up to track 'origin/main'.
+2026-11-18T11:17:40.5875438Z ##[endgroup]
+2026-11-18T11:17:40.5934239Z [command]/usr/bin/git log -1 --format=%H
+2026-11-18T11:17:40.5957926Z 18eb3dfb3c2b60267d25e7db772574388cb706c0
+2026-11-18T11:17:40.5972962Z ##[group]Removing auth
+2026-11-18T11:17:40.5973753Z Removing SSH command configuration
+2026-11-18T11:17:40.5989862Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-18T11:17:40.6023546Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-18T11:17:40.6218789Z Removing HTTP extra header
+2026-11-18T11:17:40.6225442Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-18T11:17:40.6258628Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-18T11:17:40.6474911Z Removing includeIf entries pointing to credentials config files
+2026-11-18T11:17:40.6486805Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-18T11:17:40.6528393Z includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git.path
+2026-11-18T11:17:40.6536447Z includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git/worktrees/*.path
+2026-11-18T11:17:40.6537521Z includeif.gitdir:/github/workspace/.git.path
+2026-11-18T11:17:40.6538299Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-18T11:17:40.6557100Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git.path
+2026-11-18T11:17:40.6585929Z /home/runner/work/_temp/git-credentials-aac90b0c-b83d-44d8-8894-616229c3572a.config
+2026-11-18T11:17:40.6612783Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-aac90b0c\-b83d\-44d8\-8894\-616229c3572a\.config
+2026-11-18T11:17:40.6656295Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git/worktrees/*.path
+2026-11-18T11:17:40.6681456Z /home/runner/work/_temp/git-credentials-aac90b0c-b83d-44d8-8894-616229c3572a.config
+2026-11-18T11:17:40.6697232Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-aac90b0c\-b83d\-44d8\-8894\-616229c3572a\.config
+2026-11-18T11:17:40.6800910Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-18T11:17:40.6839722Z /github/runner_temp/git-credentials-aac90b0c-b83d-44d8-8894-616229c3572a.config
+2026-11-18T11:17:40.6859711Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-aac90b0c\-b83d\-44d8\-8894\-616229c3572a\.config
+2026-11-18T11:17:40.6976818Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-18T11:17:40.7015973Z /github/runner_temp/git-credentials-aac90b0c-b83d-44d8-8894-616229c3572a.config
+2026-11-18T11:17:40.7050672Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-aac90b0c\-b83d\-44d8\-8894\-616229c3572a\.config
+2026-11-18T11:17:40.7112970Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-18T11:17:40.7424665Z Removing credentials config '/home/runner/work/_temp/git-credentials-aac90b0c-b83d-44d8-8894-616229c3572a.config'
+2026-11-18T11:17:40.7449221Z ##[endgroup]
+2026-11-18T11:17:40.7711529Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/configure_git_credentials.sh"
+2026-11-18T11:17:40.7712801Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/configure_git_credentials.sh"[0m
+2026-11-18T11:17:40.7722984Z shell: /usr/bin/bash -e {0}
+2026-11-18T11:17:40.7723552Z env:
+2026-11-18T11:17:40.7724022Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:17:40.7724585Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:17:40.7725142Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-18T11:17:40.7726670Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291434942,github.run_id=44291434942,gh-aw.engine.id=claude
+2026-11-18T11:17:40.7728212Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:17:40.7729565Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:17:40.7730109Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:17:40.7731022Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:17:40.7731719Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:17:40.7732275Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:17:40.7732878Z   GITHUB_AW_OTEL_TRACE_ID: de63c434a51c21db345fe19e1f23f358
+2026-11-18T11:17:40.7733621Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: d812dd8e2be4c7ee
+2026-11-18T11:17:40.7734280Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000658858
+2026-11-18T11:17:40.7734926Z   GH_AW_GIT_REPOSITORY: Suv4o/charge-line-data
+2026-11-18T11:17:40.7735566Z   GITHUB_SERVER_URL: https://github.com
+2026-11-18T11:17:40.7750582Z   GITHUB_TOKEN: ***
+2026-11-18T11:17:40.7751135Z ##[endgroup]
+2026-11-18T11:17:40.8156372Z Git checkout identity verified before credential configuration
+2026-11-18T11:17:40.8267894Z Git checkout identity verified after credential configuration
+2026-11-18T11:17:40.8272736Z Git configured with standard GitHub Actions identity
+2026-11-18T11:17:40.8467298Z ##[group]Run actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
+2026-11-18T11:17:40.8468775Z with:
+2026-11-18T11:17:40.8469234Z   name: safe-outputs-items
+2026-11-18T11:17:40.8470013Z   path: /tmp/gh-aw/safe-outputs-items
+2026-11-18T11:17:40.8472315Z   merge-multiple: false
+2026-11-18T11:17:40.8472962Z   repository: Suv4o/charge-line-data
+2026-11-18T11:17:40.8473521Z   run-id: 44291434942
+2026-11-18T11:17:40.8474004Z   skip-decompress: false
+2026-11-18T11:17:40.8474911Z   digest-mismatch: error
+2026-11-18T11:17:40.8476316Z env:
+2026-11-18T11:17:40.8476824Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:17:40.8477389Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:17:40.8477948Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-18T11:17:40.8480938Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291434942,github.run_id=44291434942,gh-aw.engine.id=claude
+2026-11-18T11:17:40.8482608Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:17:40.8484495Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:17:40.8485082Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:17:40.8485664Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:17:40.8486326Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:17:40.8486962Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:17:40.8487571Z   GITHUB_AW_OTEL_TRACE_ID: de63c434a51c21db345fe19e1f23f358
+2026-11-18T11:17:40.8488315Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: d812dd8e2be4c7ee
+2026-11-18T11:17:40.8488993Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000658858
+2026-11-18T11:17:40.8491037Z ##[endgroup]
+2026-11-18T11:17:41.1125563Z Downloading single artifact
+2026-11-18T11:17:41.3820711Z ##[error]Unable to download artifact(s): Artifact not found for name: safe-outputs-items
+        Please ensure that your artifact is not expired and the artifact was uploaded using a compatible version of toolkit/upload-artifact.
+        For more information, visit the GitHub Artifacts FAQ: https://github.com/actions/toolkit/blob/main/packages/artifact/docs/faq.md
+2026-11-18T11:17:41.4033489Z ##[group]Run actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
+2026-11-18T11:17:41.4034396Z with:
+2026-11-18T11:17:41.4034887Z   name: repo-memory-catalogue
+2026-11-18T11:17:41.4035476Z   path: /tmp/gh-aw/repo-memory/catalogue
+2026-11-18T11:17:41.4036083Z   merge-multiple: false
+2026-11-18T11:17:41.4036605Z   repository: Suv4o/charge-line-data
+2026-11-18T11:17:41.4037170Z   run-id: 44291434942
+2026-11-18T11:17:41.4037651Z   skip-decompress: false
+2026-11-18T11:17:41.4038155Z   digest-mismatch: error
+2026-11-18T11:17:41.4038629Z env:
+2026-11-18T11:17:41.4039064Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:17:41.4039612Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:17:41.4040184Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-18T11:17:41.4042051Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291434942,github.run_id=44291434942,gh-aw.engine.id=claude
+2026-11-18T11:17:41.4043646Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:17:41.4044188Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:17:41.4044715Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:17:41.4045305Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:17:41.4045940Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:17:41.4046473Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:17:41.4047096Z   GITHUB_AW_OTEL_TRACE_ID: de63c434a51c21db345fe19e1f23f358
+2026-11-18T11:17:41.4047847Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: d812dd8e2be4c7ee
+2026-11-18T11:17:41.4048519Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000658858
+2026-11-18T11:17:41.4078372Z ##[endgroup]
+2026-11-18T11:17:41.6017999Z Downloading single artifact
+2026-11-18T11:17:41.8292937Z Preparing to download the following artifacts:
+2026-11-18T11:17:41.8297124Z - repo-memory-catalogue (ID: 14421812783, Size: 1459, Expected Digest: sha256:87d3781f12b4b636ef80987d3d77999aa3cf96a5a2106c0d4e24063fb6201475)
+2026-11-18T11:17:42.2893863Z Redirecting to blob download url: https://productionresultssa11.blob.core.windows.net/actions-results/bc02a7ff-4e0e-4387-ac76-dc5e621bf97b/workflow-job-run-ef2abb41-bc1f-5903-8a04-cb251909c59f/artifacts/c4e311b510ea499164a4cd919e425cd62babd0f26035af9d322ee03c47dba9c6.zip
+2026-11-18T11:17:42.2915997Z Starting download of artifact to: /tmp/gh-aw/repo-memory/catalogue
+2026-11-18T11:17:42.5200660Z (node:2596) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-11-18T11:17:42.5202737Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-18T11:17:42.5266164Z SHA256 digest of downloaded artifact is 87d3781f12b4b636ef80987d3d77999aa3cf96a5a2106c0d4e24063fb6201475
+2026-11-18T11:17:42.5270961Z Artifact download completed successfully.
+2026-11-18T11:17:42.5274326Z Total of 1 artifact(s) downloaded
+2026-11-18T11:17:42.5337380Z Download artifact has finished successfully
+2026-11-18T11:17:42.5524939Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-18T11:17:42.5525811Z with:
+2026-11-18T11:17:42.5527932Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'push_repo_memory.cjs'));
+await main();
+
+2026-11-18T11:17:42.5534246Z   github-token: ***
+2026-11-18T11:17:42.5534758Z   debug: false
+2026-11-18T11:17:42.5535252Z   user-agent: actions/github-script
+2026-11-18T11:17:42.5535841Z   result-encoding: json
+2026-11-18T11:17:42.5536343Z   retries: 0
+2026-11-18T11:17:42.5536854Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-18T11:17:42.5537478Z env:
+2026-11-18T11:17:42.5537930Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:17:42.5538493Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:17:42.5539095Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-18T11:17:42.5540883Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291434942,github.run_id=44291434942,gh-aw.engine.id=claude
+2026-11-18T11:17:42.5542467Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:17:42.5543022Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:17:42.5543565Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:17:42.5544165Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:17:42.5544826Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:17:42.5545381Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:17:42.5546013Z   GITHUB_AW_OTEL_TRACE_ID: de63c434a51c21db345fe19e1f23f358
+2026-11-18T11:17:42.5546760Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: d812dd8e2be4c7ee
+2026-11-18T11:17:42.5547430Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000658858
+2026-11-18T11:17:42.5552631Z   GH_TOKEN: ***
+2026-11-18T11:17:42.5553158Z   GITHUB_RUN_ID: 44291434942
+2026-11-18T11:17:42.5553736Z   GITHUB_SERVER_URL: https://github.com
+2026-11-18T11:17:42.5554587Z   GH_AW_TEMPORARY_ID_MAP_FILE: /tmp/gh-aw/safe-outputs-items/temporary-id-map.json
+2026-11-18T11:17:42.5555496Z   ARTIFACT_DIR: /tmp/gh-aw/repo-memory/catalogue
+2026-11-18T11:17:42.5556184Z   MEMORY_ID: catalogue
+2026-11-18T11:17:42.5556705Z   TARGET_REPO: Suv4o/charge-line-data
+2026-11-18T11:17:42.5557301Z   BRANCH_NAME: memory/catalogue
+2026-11-18T11:17:42.5557848Z   MAX_FILE_SIZE: 102400
+2026-11-18T11:17:42.5558349Z   MAX_FILE_COUNT: 100
+2026-11-18T11:17:42.5558839Z   MAX_PATCH_SIZE: 51200
+2026-11-18T11:17:42.5559357Z   ALLOWED_EXTENSIONS: [".json"]
+2026-11-18T11:17:42.5559910Z   FILE_GLOB_FILTER: *.json
+2026-11-18T11:17:42.5560626Z   FORMAT_JSON: true
+2026-11-18T11:17:42.5561107Z ##[endgroup]
+2026-11-18T11:17:42.7004519Z Environment configuration:
+2026-11-18T11:17:42.7011033Z   MEMORY_ID: catalogue
+2026-11-18T11:17:42.7014280Z   MAX_FILE_SIZE: 102400
+2026-11-18T11:17:42.7019489Z   MAX_FILE_COUNT: 100
+2026-11-18T11:17:42.7022960Z   MAX_PATCH_SIZE: 51200
+2026-11-18T11:17:42.7025990Z   ALLOWED_EXTENSIONS: [".json"]
+2026-11-18T11:17:42.7028877Z   FILE_GLOB_FILTER: "*.json"
+2026-11-18T11:17:42.7032487Z   FILE_GLOB_FILTER length: 6
+2026-11-18T11:17:42.7035986Z   FORMAT_JSON: true
+2026-11-18T11:17:42.7041521Z   TEMPORARY_ID_MAPPINGS: 0
+2026-11-18T11:17:42.7048061Z Working in repository: /home/runner/work/charge-line-data/charge-line-data
+2026-11-18T11:17:42.7051981Z Checking out branch: memory/catalogue...
+2026-11-18T11:17:43.1972981Z Checked out existing branch: memory/catalogue
+2026-11-18T11:17:43.2002578Z Captured baseRef for signed commit push: f71b4b2f4299a76cf0b7cbd0971ba338a2cb581b
+2026-11-18T11:17:43.2003915Z Destination directory: /home/runner/work/charge-line-data/charge-line-data
+2026-11-18T11:17:43.2014173Z File glob filter enabled with 1 pattern(s):
+2026-11-18T11:17:43.2015375Z   [1] "*.json" -> regex: ^[^/]*\.json$
+2026-11-18T11:17:43.2016292Z Scanning artifact directory: /tmp/gh-aw/repo-memory/catalogue
+2026-11-18T11:17:43.2031720Z   [keep] candidates.json (3420 bytes)
+2026-11-18T11:17:43.2032664Z   [keep] checked-makes.json (3 bytes)
+2026-11-18T11:17:43.2033496Z Scan complete: 2 file(s) accepted, 0 file(s) filtered out
+2026-11-18T11:17:43.2034351Z Accepted files:
+2026-11-18T11:17:43.2036499Z   - candidates.json (3420 bytes)
+2026-11-18T11:17:43.2037296Z   - checked-makes.json (3 bytes)
+2026-11-18T11:17:43.2039079Z Copying 2 validated file(s)...
+2026-11-18T11:17:43.2081011Z Copied: candidates.json (3420 bytes)
+2026-11-18T11:17:43.2081732Z Copied: checked-makes.json (3 bytes)
+2026-11-18T11:17:43.2082511Z FORMAT_JSON is enabled: formatting .json files as human-readable...
+2026-11-18T11:17:43.2112501Z Changed files detected after copying: 1
+2026-11-18T11:17:43.2113364Z Changes detected, committing and pushing...
+2026-11-18T11:17:43.2425336Z Patch diff size: 2 KB (1107 bytes) (configured limit: 50 KB (51200 bytes), effective with 20% overhead: 60 KB (61440 bytes))
+2026-11-18T11:17:43.2502159Z Pushing changes to memory/catalogue (attempt 1/11)...
+2026-11-18T11:17:43.6732825Z pushSignedCommits: replaying 1 commit(s) via GraphQL createCommitOnBranch (branch: memory/catalogue, repo: Suv4o/charge-line-data)
+2026-11-18T11:17:43.6823048Z pushSignedCommits: processing commit 1/1 sha=be227335892569cda224b8a5f508c6f915fcb8d8
+2026-11-18T11:17:44.0146545Z pushSignedCommits: using remote HEAD OID from ls-remote: f71b4b2f4299a76cf0b7cbd0971ba338a2cb581b
+2026-11-18T11:17:44.0212737Z pushSignedCommits: commit message headline: "Update repo memory from workflow run 44291434942"
+2026-11-18T11:17:44.0214403Z pushSignedCommits: file changes: 1 addition(s), 0 deletion(s)
+2026-11-18T11:17:44.0215949Z pushSignedCommits: calling createCommitOnBranch mutation (expectedHeadOid=f71b4b2f4299a76cf0b7cbd0971ba338a2cb581b)
+2026-11-18T11:17:45.2562752Z pushSignedCommits: signed commit created: 002784ebf970019177ac66978901c7bb8d471d73
+2026-11-18T11:17:45.2570749Z pushSignedCommits: all 1 commit(s) pushed as signed commits
+2026-11-18T11:17:45.2576625Z Successfully pushed changes to memory/catalogue branch
+2026-11-18T11:17:45.5394985Z Post job cleanup.
+2026-11-18T11:17:45.6583908Z [command]/usr/bin/git version
+2026-11-18T11:17:45.6630848Z git version 2.56.1
+2026-11-18T11:17:45.6789422Z Copying '/home/runner/.gitconfig' to '/home/runner/work/_temp/f1bb4ef1-60a7-4931-9031-1b485ba4603f/.gitconfig'
+2026-11-18T11:17:45.6811633Z Temporarily overriding HOME='/home/runner/work/_temp/f1bb4ef1-60a7-4931-9031-1b485ba4603f' before making global git config changes
+2026-11-18T11:17:45.6822909Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-18T11:17:45.6851909Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/charge-line-data/charge-line-data
+2026-11-18T11:17:45.6911582Z Removing SSH command configuration
+2026-11-18T11:17:45.6922393Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-18T11:17:45.6975546Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-18T11:17:45.7181851Z Removing HTTP extra header
+2026-11-18T11:17:45.7190012Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-18T11:17:45.7237842Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-18T11:17:45.7445462Z Removing includeIf entries pointing to credentials config files
+2026-11-18T11:17:45.7460041Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-18T11:17:45.7497107Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-18T11:17:45.8095689Z Post job cleanup.
+2026-11-18T11:17:45.9112583Z [info] [otlp] sending conclusion span "gh-aw.push_repo_memory.conclusion" to configured endpoints
+2026-11-18T11:17:45.9177678Z [info] [otlp] conclusion span export attempted
+2026-11-18T11:17:45.9184083Z Warning: leaving shared /tmp/gh-aw untouched; per-invocation ownership cannot be established.
+2026-11-18T11:17:45.9312357Z Evaluate and set job outputs
+2026-11-18T11:17:45.9328653Z Set output 'save_branch_catalogue'
+2026-11-18T11:17:45.9332426Z Set output 'save_commit_catalogue'
+2026-11-18T11:17:45.9336592Z Set output 'save_outcome_catalogue'
+2026-11-18T11:17:45.9338210Z Set output 'save_status_catalogue'
+2026-11-18T11:17:45.9342543Z Cleaning up orphan processes

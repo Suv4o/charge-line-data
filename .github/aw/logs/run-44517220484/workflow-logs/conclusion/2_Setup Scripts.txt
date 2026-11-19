@@ -1,0 +1,50 @@
+﻿2026-11-19T11:56:13.6956051Z ##[group]Run github/gh-aw-actions/setup@53d0749e19424a918acd82b4d140264ce48f2f14
+2026-11-19T11:56:13.6957355Z with:
+2026-11-19T11:56:13.6957870Z   destination: /home/runner/work/_temp/gh-aw/actions
+2026-11-19T11:56:13.6958648Z   job-name: conclusion
+2026-11-19T11:56:13.6959144Z   trace-id: 19af99b8ca6a314c08bd9b7019d79d19
+2026-11-19T11:56:13.6959717Z   parent-span-id: 8bb092f1684db251
+2026-11-19T11:56:13.6960271Z   safe-output-artifact-client: false
+2026-11-19T11:56:13.6961002Z env:
+2026-11-19T11:56:13.6961857Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:56:13.6962379Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:56:13.6963176Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-19T11:56:13.6964878Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517220484,github.run_id=44517220484,gh-aw.engine.id=claude
+2026-11-19T11:56:13.6966348Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:56:13.6966849Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:56:13.6967691Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:56:13.6968240Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:56:13.6968838Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:56:13.6970075Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","push_repo_memory":"push_repo_memory","safe_outputs":"safe_outputs"}
+2026-11-19T11:56:13.6972127Z   GH_AW_JOB_RESULTS: {"activation":{"result":"success"},"agent":{"result":"success"},"detection":{"result":"success"},"push_repo_memory":{"result":"success"},"safe_outputs":{"result":"success"}}
+2026-11-19T11:56:13.6974400Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"push_repo_memory":true,"safe_outputs":true}
+2026-11-19T11:56:13.6976538Z   GH_AW_MEMORY_SAVE_RESULTS: {"catalogue":{"branch":"memory/catalogue","commit":"9e4d68a0c07ac626e6778af20feaadcb133e2afa","jobResult":"success","outcome":"success","status":"saved"}}
+2026-11-19T11:56:13.6977845Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:56:13.6978401Z   GH_AW_SETUP_WORKFLOW_NAME: Keep the EV catalogue current
+2026-11-19T11:56:13.6979370Z   GH_AW_CURRENT_WORKFLOW_REF: Suv4o/charge-line-data/.github/workflows/catalogue.lock.yml@refs/heads/main
+2026-11-19T11:56:13.6980570Z   GH_AW_INFO_VERSION: 2.1.317
+2026-11-19T11:56:13.6981081Z   GH_AW_INFO_AWF_VERSION: v0.29.11
+2026-11-19T11:56:13.6981598Z   GH_AW_INFO_ENGINE_ID: claude
+2026-11-19T11:56:13.6982086Z   GH_AW_SETUP_AW_CONTEXT: 
+2026-11-19T11:56:13.6982549Z ##[endgroup]
+2026-11-19T11:56:17.1920659Z Successfully copied 795 files to /home/runner/work/_temp/gh-aw/actions
+2026-11-19T11:56:17.1956619Z ##[group]Runtime TLS inventory (not a trust-store attestation)
+2026-11-19T11:56:17.2375564Z curl 8.5.0 (x86_64-pc-linux-gnu) libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.10
+2026-11-19T11:56:17.2852822Z Node v24.22.3; OpenSSL 3.5.9
+2026-11-19T11:56:17.2961064Z Go: unavailable; binary build-toolchain inspection unavailable
+2026-11-19T11:56:17.2965787Z Python/certifi: not inspected by shell setup; record each client's interpreter, TLS backend and selected CA bundle separately.
+2026-11-19T11:56:17.2967957Z Container, proxy and MCP trust stores require separate image/vendor evidence.
+2026-11-19T11:56:17.2968931Z Browser updates and successful HTTPS connections do not attest CA distrust.
+2026-11-19T11:56:17.2970594Z ##[endgroup]
+2026-11-19T11:56:17.8818604Z Successfully copied 119 mcp-scripts files to /home/runner/work/_temp/gh-aw/mcp-scripts
+2026-11-19T11:56:18.1096386Z Successfully copied 183 safe-outputs files to /home/runner/work/_temp/gh-aw/safeoutputs
+2026-11-19T11:56:19.3742336Z [info] [otlp] INPUT_TRACE_ID=19af99b8ca6a314c08bd9b7019d79d19 (will reuse activation trace)
+2026-11-19T11:56:19.3788265Z [info] [otlp] INPUT_PARENT_SPAN_ID=8bb092f1684db251 (will parent setup span)
+2026-11-19T11:56:19.3796003Z [info] [otlp] no OTLP endpoints have usable credentials, skipping setup span
+2026-11-19T11:56:19.4767534Z [info] [otlp] resolved trace-id=19af99b8ca6a314c08bd9b7019d79d19
+2026-11-19T11:56:19.4775537Z [info] [otlp] trace-id=19af99b8ca6a314c08bd9b7019d79d19 written to GITHUB_OUTPUT
+2026-11-19T11:56:19.4780149Z [info] [otlp] span-id=e9f14cf3a8c9290f written to GITHUB_OUTPUT
+2026-11-19T11:56:19.4793402Z [info] [otlp] parent-span-id=8bb092f1684db251 written to GITHUB_OUTPUT
+2026-11-19T11:56:19.4796788Z [info] [otlp] GITHUB_AW_OTEL_TRACE_ID written to GITHUB_ENV
+2026-11-19T11:56:19.4799168Z [info] [otlp] GITHUB_AW_OTEL_PARENT_SPAN_ID written to GITHUB_ENV
+2026-11-19T11:56:19.4834868Z [info] [otlp] GITHUB_AW_OTEL_JOB_START_MS written to GITHUB_ENV
