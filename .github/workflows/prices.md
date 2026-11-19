@@ -7,10 +7,10 @@ on:
   workflow_dispatch:
     inputs:
       model:
-        description: "Claude model for this run (scheduled runs use Sonnet 5.5)"
+        description: "Claude model for this run (scheduled runs use Opus 5.5)"
         type: choice
-        options: [claude-sonnet-5-5, claude-opus-5-5]
-        default: claude-sonnet-5-5
+        options: [claude-opus-5-5, claude-sonnet-5-5]
+        default: claude-opus-5-5
 permissions:
   contents: read
   issues: read
@@ -18,7 +18,7 @@ permissions:
   id-token: write                   # Anthropic Workload Identity Federation: no API key stored anywhere
 engine:
   id: claude
-  model: ${{ inputs.model || 'claude-sonnet-5-5' }}
+  model: ${{ inputs.model || 'claude-opus-5-5' }}
   args: ["--settings", "{\"skipWebFetchPreflight\": true}"]   # Claude's own domain check can't leave the sandbox; the firewall decides
   auth:
     type: github-oidc
@@ -29,8 +29,8 @@ engine:
     workspace-id: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
 timeout-minutes: 30
 max-turns: 60
-max-ai-credits: 300                 # US$3 hard stop per run
-max-daily-ai-credits: 600
+max-ai-credits: 450                 # US$4.50 hard stop per run (an Opus run measured US$2.23)
+max-daily-ai-credits: 900
 max-turn-cache-misses: 10          # gh-aw's default of 5 stopped an Opus run; the credit caps still bound the cost
 imports:
   - shared/rules.md
