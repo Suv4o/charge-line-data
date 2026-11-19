@@ -64,3 +64,4 @@ it up.
 - The body is for a busy reviewer. Start with a one-line summary, then a table: what changed, the old and new
   value, and the source link with the exact figure it gives. Then anything you weren't sure about.
 - Never mention people by `@` handle, and never ask for the pull request to be merged.
+- Don't add a signature or a "Generated with" line: gh-aw adds its own footer.
