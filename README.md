@@ -40,6 +40,9 @@ the typical price here.
 | [`prices.md`](.github/workflows/prices.md) | 8th of each month | Finds operators with three or more fast sites that no network matches, decides whether each is a new network, and checks typical prices against sources it may read | `networks.json` |
 | [`validate.yml`](.github/workflows/validate.yml) | Every pull request | Plain GitHub Actions, no AI: tests and runs the validator | — |
 
+**Questions go to issues.** When sources disagree or a car can't be confirmed, an agent opens an issue instead of
+guessing. The owner answers in a comment, and the next run follows that answer.
+
 Each agentic workflow is a Markdown file: YAML settings, then plain-English instructions. Their shared rules are
 in [`shared/rules.md`](.github/workflows/shared/rules.md). `gh aw compile` turns each one into the `.lock.yml` that
 GitHub Actions runs.
