@@ -1,0 +1,48 @@
+﻿2026-11-19T11:42:59.4311872Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-19T11:42:59.4312821Z with:
+2026-11-19T11:42:59.4315581Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'check_workflow_timestamp_api.cjs'));
+await main();
+
+2026-11-19T11:42:59.4323759Z   github-token: ***
+2026-11-19T11:42:59.4324300Z   debug: false
+2026-11-19T11:42:59.4324795Z   user-agent: actions/github-script
+2026-11-19T11:42:59.4325382Z   result-encoding: json
+2026-11-19T11:42:59.4325886Z   retries: 0
+2026-11-19T11:42:59.4326413Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-19T11:42:59.4327049Z env:
+2026-11-19T11:42:59.4327496Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:42:59.4328065Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:42:59.4328658Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-19T11:42:59.4330643Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517227475,github.run_id=44517227475,gh-aw.engine.id=claude
+2026-11-19T11:42:59.4332598Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:42:59.4333254Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:42:59.4334752Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:42:59.4335384Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:42:59.4336039Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:42:59.4336587Z   GH_AW_MAX_DAILY_AI_CREDITS: 900
+2026-11-19T11:42:59.4337141Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:42:59.4337791Z   GITHUB_AW_OTEL_TRACE_ID: 85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:42:59.4338568Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: ad49c3eb3ca593f4
+2026-11-19T11:42:59.4339258Z   GITHUB_AW_OTEL_JOB_START_MS: 1795088575314
+2026-11-19T11:42:59.4339891Z   GH_AW_WORKFLOW_FILE: prices.lock.yml
+2026-11-19T11:42:59.4341417Z   GH_AW_CONTEXT_WORKFLOW_REF: Suv4o/charge-line-data/.github/workflows/prices.lock.yml@refs/heads/main
+2026-11-19T11:42:59.4342415Z ##[endgroup]
+2026-11-19T11:42:59.5819953Z Checking for stale lock file using frontmatter hash:
+2026-11-19T11:42:59.5826206Z   Source: .github/workflows/prices.md
+2026-11-19T11:42:59.5829394Z   Lock file: .github/workflows/prices.lock.yml
+2026-11-19T11:42:59.5834043Z Using immutable workflow revision from GITHUB_WORKFLOW_SHA: 5c02988e404353ec4ce1a012f048a04af7b8a5e0
+2026-11-19T11:42:59.5837741Z Env workflow ref already identifies this workflow, skipping referenced_workflows API lookup
+2026-11-19T11:42:59.5841719Z GITHUB_WORKFLOW_REF: Suv4o/charge-line-data/.github/workflows/prices.lock.yml@refs/heads/main
+2026-11-19T11:42:59.5846004Z GH_AW_CONTEXT_WORKFLOW_REF: Suv4o/charge-line-data/.github/workflows/prices.lock.yml@refs/heads/main (available as env fallback)
+2026-11-19T11:42:59.5851385Z GITHUB_REPOSITORY: Suv4o/charge-line-data
+2026-11-19T11:42:59.5853905Z Resolved source repo: Suv4o/charge-line-data @ 5c02988e404353ec4ce1a012f048a04af7b8a5e0
+2026-11-19T11:42:59.5858281Z Same-repo invocation: checking out Suv4o/charge-line-data @ 5c02988e404353ec4ce1a012f048a04af7b8a5e0
+2026-11-19T11:43:00.5412108Z Frontmatter hash comparison:
+2026-11-19T11:43:00.5415979Z   Lock file hash:    16e082e8661126129d87d36fde0588d210a8d40976e393bebbd21f8da78f9b6a
+2026-11-19T11:43:00.5419789Z   Recomputed hash:   16e082e8661126129d87d36fde0588d210a8d40976e393bebbd21f8da78f9b6a
+2026-11-19T11:43:00.5423667Z   Status: ✅ Hashes match
+2026-11-19T11:43:00.5426826Z ✅ Lock file is up to date (hashes match)

@@ -1,0 +1,21 @@
+﻿2026-11-19T11:54:01.7447247Z ##[group]Run mkdir -p "/tmp/gh-aw/threat-detection"
+2026-11-19T11:54:01.7447705Z [36;1mmkdir -p "/tmp/gh-aw/threat-detection"[0m
+2026-11-19T11:54:01.7448140Z [36;1mevidence_tmp="/tmp/gh-aw/threat-detection/execution.json.tmp"[0m
+2026-11-19T11:54:01.7448909Z [36;1mprintf '{"version":1,"component":"detection","run_id":%s,"run_attempt":%s,"state":"not_started"}\n' "$GITHUB_RUN_ID" "$GITHUB_RUN_ATTEMPT" > "$evidence_tmp"[0m
+2026-11-19T11:54:01.7449829Z [36;1mmv "$evidence_tmp" "/tmp/gh-aw/threat-detection/execution.json"[0m
+2026-11-19T11:54:01.7482487Z shell: /usr/bin/bash -e {0}
+2026-11-19T11:54:01.7482772Z env:
+2026-11-19T11:54:01.7482995Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:54:01.7483273Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:54:01.7483550Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-19T11:54:01.7484386Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517220484,github.run_id=44517220484,gh-aw.engine.id=claude
+2026-11-19T11:54:01.7485243Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:54:01.7485512Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:54:01.7485768Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:54:01.7486057Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:54:01.7486383Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:54:01.7486646Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:54:01.7486945Z   GITHUB_AW_OTEL_TRACE_ID: 19af99b8ca6a314c08bd9b7019d79d19
+2026-11-19T11:54:01.7487320Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: de96b3e46567a2b0
+2026-11-19T11:54:01.7487635Z   GITHUB_AW_OTEL_JOB_START_MS: 1795089237765
+2026-11-19T11:54:01.7487916Z ##[endgroup]

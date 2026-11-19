@@ -1,0 +1,137 @@
+﻿2026-11-19T11:42:57.3414418Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+2026-11-19T11:42:57.3415389Z with:
+2026-11-19T11:42:57.3415840Z   persist-credentials: false
+2026-11-19T11:42:57.3416504Z   sparse-checkout: .github
+.agents
+.claude
+.codex
+.gemini
+.pi
+
+2026-11-19T11:42:57.3417243Z   sparse-checkout-cone-mode: true
+2026-11-19T11:42:57.3417795Z   fetch-depth: 1
+2026-11-19T11:42:57.3418274Z   repository: Suv4o/charge-line-data
+2026-11-19T11:42:57.3422640Z   token: ***
+2026-11-19T11:42:57.3425239Z   ssh-strict: true
+2026-11-19T11:42:57.3426048Z   ssh-user: git
+2026-11-19T11:42:57.3426506Z   clean: true
+2026-11-19T11:42:57.3426946Z   fetch-tags: false
+2026-11-19T11:42:57.3427412Z   show-progress: true
+2026-11-19T11:42:57.3427881Z   lfs: false
+2026-11-19T11:42:57.3428726Z   submodules: false
+2026-11-19T11:42:57.3429212Z   set-safe-directory: true
+2026-11-19T11:42:57.3429749Z   allow-unsafe-pr-checkout: false
+2026-11-19T11:42:57.3430300Z env:
+2026-11-19T11:42:57.3430729Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:42:57.3447411Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:42:57.3448345Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-19T11:42:57.3450025Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517227475,github.run_id=44517227475,gh-aw.engine.id=claude
+2026-11-19T11:42:57.3451962Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:42:57.3452509Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:42:57.3453026Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:42:57.3453598Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:42:57.3454236Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:42:57.3454768Z   GH_AW_MAX_DAILY_AI_CREDITS: 900
+2026-11-19T11:42:57.3455309Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:42:57.3455915Z   GITHUB_AW_OTEL_TRACE_ID: 85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:42:57.3456649Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: ad49c3eb3ca593f4
+2026-11-19T11:42:57.3457293Z   GITHUB_AW_OTEL_JOB_START_MS: 1795088575314
+2026-11-19T11:42:57.3457877Z ##[endgroup]
+2026-11-19T11:42:57.5203550Z Syncing repository: Suv4o/charge-line-data
+2026-11-19T11:42:57.5207252Z ##[group]Getting Git version info
+2026-11-19T11:42:57.5209291Z Working directory is '/home/runner/work/charge-line-data/charge-line-data'
+2026-11-19T11:42:57.5210519Z [command]/usr/bin/git version
+2026-11-19T11:42:57.5588238Z git version 2.56.1
+2026-11-19T11:42:57.5641693Z ##[endgroup]
+2026-11-19T11:42:57.5647763Z Temporarily overriding HOME='/home/runner/work/_temp/3f3fadd3-7f1a-477b-baf8-54c321a065ef' before making global git config changes
+2026-11-19T11:42:57.5649236Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T11:42:57.5665100Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/charge-line-data/charge-line-data
+2026-11-19T11:42:58.2841996Z Deleting the contents of '/home/runner/work/charge-line-data/charge-line-data'
+2026-11-19T11:42:58.2843444Z ##[group]Determining repository object format
+2026-11-19T11:42:58.2844398Z ##[endgroup]
+2026-11-19T11:42:58.2845149Z ##[group]Initializing the repository
+2026-11-19T11:42:58.2846105Z [command]/usr/bin/git init /home/runner/work/charge-line-data/charge-line-data
+2026-11-19T11:42:58.2847173Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-19T11:42:58.2848204Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-19T11:42:58.2849195Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-19T11:42:58.2849985Z hint: call:
+2026-11-19T11:42:58.2850404Z hint:
+2026-11-19T11:42:58.2850942Z hint: 	git config --global init.defaultBranch <name>
+2026-11-19T11:42:58.2851838Z hint:
+2026-11-19T11:42:58.2852472Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-19T11:42:58.2853481Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-19T11:42:58.2854273Z hint:
+2026-11-19T11:42:58.2854705Z hint: 	git branch -m <name>
+2026-11-19T11:42:58.2855566Z hint:
+2026-11-19T11:42:58.2856231Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-19T11:42:58.2857546Z Initialized empty Git repository in /home/runner/work/charge-line-data/charge-line-data/.git/
+2026-11-19T11:42:58.2859386Z [command]/usr/bin/git remote add origin https://github.com/Suv4o/charge-line-data
+2026-11-19T11:42:58.2861472Z ##[endgroup]
+2026-11-19T11:42:58.2862326Z ##[group]Disabling automatic garbage collection
+2026-11-19T11:42:58.2863023Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-19T11:42:58.2864458Z ##[endgroup]
+2026-11-19T11:42:58.2865162Z ##[group]Setting up auth
+2026-11-19T11:42:58.2865691Z Removing SSH command configuration
+2026-11-19T11:42:58.2866484Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T11:42:58.2868739Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T11:42:58.2870806Z Removing HTTP extra header
+2026-11-19T11:42:58.2871920Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T11:42:58.2874519Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T11:42:58.2876885Z Removing includeIf entries pointing to credentials config files
+2026-11-19T11:42:58.2877856Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T11:42:58.2879732Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T11:42:58.2882792Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-e20dc3d1-ac6f-49d7-b459-153a656036d0.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-19T11:42:58.2885883Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git.path /home/runner/work/_temp/git-credentials-e20dc3d1-ac6f-49d7-b459-153a656036d0.config
+2026-11-19T11:42:58.2889081Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-e20dc3d1-ac6f-49d7-b459-153a656036d0.config
+2026-11-19T11:42:58.2892397Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-e20dc3d1-ac6f-49d7-b459-153a656036d0.config
+2026-11-19T11:42:58.2895144Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-e20dc3d1-ac6f-49d7-b459-153a656036d0.config
+2026-11-19T11:42:58.2897413Z ##[endgroup]
+2026-11-19T11:42:58.2899940Z ##[group]Fetching the repository
+2026-11-19T11:42:58.2902150Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --filter=blob:none --depth=1 origin +5c02988e404353ec4ce1a012f048a04af7b8a5e0:refs/remotes/origin/main
+2026-11-19T11:42:58.4092715Z From https://github.com/Suv4o/charge-line-data
+2026-11-19T11:42:58.4093926Z  * [new ref]         5c02988e404353ec4ce1a012f048a04af7b8a5e0 -> origin/main
+2026-11-19T11:42:58.4124973Z [command]/usr/bin/git branch --list --remote origin/main
+2026-11-19T11:42:58.4237758Z   origin/main
+2026-11-19T11:42:58.4253350Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-11-19T11:42:58.4279408Z 5c02988e404353ec4ce1a012f048a04af7b8a5e0
+2026-11-19T11:42:58.4290599Z ##[endgroup]
+2026-11-19T11:42:58.4292081Z ##[group]Determining the checkout info
+2026-11-19T11:42:58.4293124Z ##[endgroup]
+2026-11-19T11:42:58.4293982Z ##[group]Setting up sparse checkout
+2026-11-19T11:42:58.4296198Z [command]/usr/bin/git sparse-checkout set .github .agents .claude .codex .gemini .pi
+2026-11-19T11:42:58.4360697Z ##[endgroup]
+2026-11-19T11:42:58.4365058Z ##[group]Checking out the ref
+2026-11-19T11:42:58.4368818Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-19T11:42:59.0130996Z Switched to a new branch 'main'
+2026-11-19T11:42:59.0142602Z branch 'main' set up to track 'origin/main'.
+2026-11-19T11:42:59.0154086Z ##[endgroup]
+2026-11-19T11:42:59.0258226Z [command]/usr/bin/git log -1 --format=%H
+2026-11-19T11:42:59.0282116Z 5c02988e404353ec4ce1a012f048a04af7b8a5e0
+2026-11-19T11:42:59.0300882Z ##[group]Removing auth
+2026-11-19T11:42:59.0304065Z Removing SSH command configuration
+2026-11-19T11:42:59.0308830Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T11:42:59.0342513Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T11:42:59.0669438Z Removing HTTP extra header
+2026-11-19T11:42:59.0699638Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T11:42:59.0906766Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T11:42:59.1205989Z Removing includeIf entries pointing to credentials config files
+2026-11-19T11:42:59.1228725Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T11:42:59.1260470Z includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git.path
+2026-11-19T11:42:59.1265753Z includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git/worktrees/*.path
+2026-11-19T11:42:59.1266827Z includeif.gitdir:/github/workspace/.git.path
+2026-11-19T11:42:59.1267588Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-19T11:42:59.1289132Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git.path
+2026-11-19T11:42:59.1320145Z /home/runner/work/_temp/git-credentials-e20dc3d1-ac6f-49d7-b459-153a656036d0.config
+2026-11-19T11:42:59.1340986Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-e20dc3d1\-ac6f\-49d7\-b459\-153a656036d0\.config
+2026-11-19T11:42:59.1385371Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git/worktrees/*.path
+2026-11-19T11:42:59.1408526Z /home/runner/work/_temp/git-credentials-e20dc3d1-ac6f-49d7-b459-153a656036d0.config
+2026-11-19T11:42:59.1427246Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-e20dc3d1\-ac6f\-49d7\-b459\-153a656036d0\.config
+2026-11-19T11:42:59.1541731Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-19T11:42:59.1639631Z /github/runner_temp/git-credentials-e20dc3d1-ac6f-49d7-b459-153a656036d0.config
+2026-11-19T11:42:59.1664776Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-e20dc3d1\-ac6f\-49d7\-b459\-153a656036d0\.config
+2026-11-19T11:42:59.1705672Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-19T11:42:59.1736256Z /github/runner_temp/git-credentials-e20dc3d1-ac6f-49d7-b459-153a656036d0.config
+2026-11-19T11:42:59.1753273Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-e20dc3d1\-ac6f\-49d7\-b459\-153a656036d0\.config
+2026-11-19T11:42:59.1988722Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T11:42:59.2253033Z Removing credentials config '/home/runner/work/_temp/git-credentials-e20dc3d1-ac6f-49d7-b459-153a656036d0.config'
+2026-11-19T11:42:59.2266942Z ##[endgroup]

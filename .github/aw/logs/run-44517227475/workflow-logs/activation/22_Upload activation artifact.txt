@@ -1,0 +1,53 @@
+﻿2026-11-19T11:43:04.2109292Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-11-19T11:43:04.2111398Z with:
+2026-11-19T11:43:04.2112211Z   name: activation
+2026-11-19T11:43:04.2113117Z   include-hidden-files: true
+2026-11-19T11:43:04.2119543Z   path: /tmp/gh-aw/aw_info.json
+/tmp/gh-aw/models.json
+/tmp/gh-aw/aw-prompts/prompt.txt
+/tmp/gh-aw/aw-prompts/system.txt
+/tmp/gh-aw/aw-prompts/user.txt
+/tmp/gh-aw/aw-prompts/prompt-template.txt
+/tmp/gh-aw/aw-prompts/prompt-import-tree.json
+/tmp/gh-aw/aw-prompts/prompt-literal-values.json
+/tmp/gh-aw/github_rate_limits.jsonl
+/tmp/gh-aw/base
+/tmp/gh-aw/.claude/agents
+/tmp/gh-aw/.claude/skills
+/tmp/gh-aw/skill_inventory.json
+
+2026-11-19T11:43:04.2130215Z   if-no-files-found: ignore
+2026-11-19T11:43:04.2131939Z   retention-days: 1
+2026-11-19T11:43:04.2133876Z   compression-level: 6
+2026-11-19T11:43:04.2134955Z   overwrite: false
+2026-11-19T11:43:04.2135825Z   archive: true
+2026-11-19T11:43:04.2136640Z env:
+2026-11-19T11:43:04.2137451Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:43:04.2139938Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:43:04.2141237Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-19T11:43:04.2145816Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517227475,github.run_id=44517227475,gh-aw.engine.id=claude
+2026-11-19T11:43:04.2149493Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:43:04.2150935Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:43:04.2152812Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:43:04.2153962Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:43:04.2155239Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:43:04.2156300Z   GH_AW_MAX_DAILY_AI_CREDITS: 900
+2026-11-19T11:43:04.2158161Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:43:04.2159405Z   GITHUB_AW_OTEL_TRACE_ID: 85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:43:04.2160909Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: ad49c3eb3ca593f4
+2026-11-19T11:43:04.2162430Z   GITHUB_AW_OTEL_JOB_START_MS: 1795088575314
+2026-11-19T11:43:04.2164262Z ##[endgroup]
+2026-11-19T11:43:04.4949700Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-19T11:43:04.5008766Z The least common ancestor is /tmp/gh-aw. This will be the root directory of the artifact
+2026-11-19T11:43:04.5014591Z With the provided path, there will be 11 files uploaded
+2026-11-19T11:43:04.5018071Z Artifact name is valid!
+2026-11-19T11:43:04.5019065Z Root directory input is valid!
+2026-11-19T11:43:04.7750147Z Uploading artifact: activation.zip
+2026-11-19T11:43:04.7836141Z Beginning upload of artifact content to blob storage
+2026-11-19T11:43:05.1098304Z Uploaded bytes 126818
+2026-11-19T11:43:05.1483567Z Finished uploading artifact content to blob storage!
+2026-11-19T11:43:05.1501379Z SHA256 digest of uploaded artifact is 569c4f273c97f09e4257bb9879009a9121fdeeabd58c5606ed33e93746f210ba
+2026-11-19T11:43:05.1505885Z Finalizing artifact upload
+2026-11-19T11:43:05.5692740Z Artifact activation successfully finalized. Artifact ID 14526042950
+2026-11-19T11:43:05.5695422Z Artifact activation has been successfully uploaded! Final size is 126818 bytes. Artifact ID is 14526042950
+2026-11-19T11:43:05.5698454Z Artifact download URL: https://github.com/Suv4o/charge-line-data/actions/runs/44517227475/artifacts/14526042950

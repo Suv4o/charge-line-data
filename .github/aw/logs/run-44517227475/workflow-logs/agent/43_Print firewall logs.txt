@@ -1,0 +1,83 @@
+﻿2026-11-19T11:48:00.1616899Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/print_firewall_logs.sh" --rootless
+2026-11-19T11:48:00.1617467Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/print_firewall_logs.sh" --rootless[0m
+2026-11-19T11:48:00.1671467Z shell: /usr/bin/bash -e {0}
+2026-11-19T11:48:00.1671745Z env:
+2026-11-19T11:48:00.1671968Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:48:00.1672256Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:48:00.1672527Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-19T11:48:00.1673376Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517227475,github.run_id=44517227475,gh-aw.engine.id=claude
+2026-11-19T11:48:00.1674212Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:48:00.1674490Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:48:00.1674740Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:48:00.1675029Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:48:00.1675338Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:48:00.1675628Z   DEFAULT_BRANCH: main
+2026-11-19T11:48:00.1675861Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-11-19T11:48:00.1676112Z   GH_AW_ASSETS_BRANCH: 
+2026-11-19T11:48:00.1676344Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-11-19T11:48:00.1676642Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-11-19T11:48:00.1676979Z   GH_AW_OBJECT_PACK_FETCH_DEPTHS: 
+2026-11-19T11:48:00.1677264Z   GH_AW_OBJECT_PACK_MAX_BYTES: 
+2026-11-19T11:48:00.1677529Z   GH_AW_OBJECT_PACK_MAX_OBJECTS: 
+2026-11-19T11:48:00.1677993Z   GH_AW_OBJECT_PACK_TIMEOUT_MS: 
+2026-11-19T11:48:00.1678316Z   GH_AW_PR_HEAD_BASE_BRANCH: 
+2026-11-19T11:48:00.1678573Z   GH_AW_PR_HEAD_BASE_PR_NUMBER: 
+2026-11-19T11:48:00.1678824Z   GH_AW_PR_HEAD_BASE_REF: 
+2026-11-19T11:48:00.1679077Z   GH_AW_PR_HEAD_BASE_REPO: 
+2026-11-19T11:48:00.1679332Z   GH_AW_PR_HEAD_BASE_SHA: 
+2026-11-19T11:48:00.1679566Z   GH_AW_PR_HEAD_REPO: 
+2026-11-19T11:48:00.1679797Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:48:00.1680037Z   GH_AW_TARGET_REPO_SLUG: 
+2026-11-19T11:48:00.1680288Z   GH_AW_WORKFLOW_ID_SANITIZED: prices
+2026-11-19T11:48:00.1680619Z   GITHUB_AW_OTEL_TRACE_ID: 85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:48:00.1680994Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 783ef75f45452283
+2026-11-19T11:48:00.1681313Z   GITHUB_AW_OTEL_JOB_START_MS: 1795088599425
+2026-11-19T11:48:00.1681640Z   GH_AW_RUNTIME_TMP_DIR: /tmp/gh-aw-runtime-CPX6Vn
+2026-11-19T11:48:00.1681970Z   GH_AW_RUNTIME_TMP_ID: 2049:7781166:1001
+2026-11-19T11:48:00.1682260Z   TMPDIR: /tmp/gh-aw-runtime-CPX6Vn
+2026-11-19T11:48:00.1682684Z   AWF_TOKEN_USAGE_LOG: /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-19T11:48:00.1683148Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-11-19T11:48:00.1683446Z   GH_AW_AIC: 179.1096
+2026-11-19T11:48:00.1683677Z   GH_AW_AMBIENT_CONTEXT: 2712
+2026-11-19T11:48:00.1683974Z   AWF_LOGS_DIR: /tmp/gh-aw/sandbox/firewall/logs
+2026-11-19T11:48:00.1684278Z ##[endgroup]
+2026-11-19T11:48:00.7008674Z <details>
+2026-11-19T11:48:00.7009091Z <summary>Firewall Activity</summary>
+2026-11-19T11:48:00.7009371Z 
+2026-11-19T11:48:00.7009882Z ▼ 58 requests | 57 allowed | 1 blocked | 10 unique domains
+2026-11-19T11:48:00.7010156Z 
+2026-11-19T11:48:00.7010293Z | Domain | Allowed | Denied |
+2026-11-19T11:48:00.7010589Z |--------|---------|--------|
+2026-11-19T11:48:00.7010892Z | api.anthropic.com | 41 | 1 |
+2026-11-19T11:48:00.7011187Z | api.github.com | 7 | 0 |
+2026-11-19T11:48:00.7011454Z | wevolt.com.au | 2 | 0 |
+2026-11-19T11:48:00.7011892Z | run-actions-2-azure-eastus.actions.githubusercontent.com | 1 | 0 |
+2026-11-19T11:48:00.7012325Z | www.yurika.com.au | 1 | 0 |
+2026-11-19T11:48:00.7012594Z | www.cvga.org.au | 1 | 0 |
+2026-11-19T11:48:00.7012906Z | www.horizonpower.com.au | 1 | 0 |
+2026-11-19T11:48:00.7013230Z | costtocharge.com.au | 1 | 0 |
+2026-11-19T11:48:00.7013820Z | evie.com.au | 1 | 0 |
+2026-11-19T11:48:00.7014097Z | www.mynrma.com.au | 1 | 0 |
+2026-11-19T11:48:00.7014263Z 
+2026-11-19T11:48:00.7014364Z <details>
+2026-11-19T11:48:00.7014626Z <summary>Policy Rules</summary>
+2026-11-19T11:48:00.7015037Z 
+2026-11-19T11:48:00.7015200Z | Rule | Action | Hits | Description |
+2026-11-19T11:48:00.7015544Z |------|--------|------|-------------|
+2026-11-19T11:48:00.7016460Z | allow-topology-peer-awmg-mcpg | ✅ allow | 0 | Allow trusted topology peer "awmg-mcpg" on any port (network-isolation mode, before Safe_ports deny) |
+2026-11-19T11:48:00.7017605Z | deny-unsafe-ports | 🚫 deny | 0 | Deny requests to ports not in Safe_ports ACL (only 80, 443, and user-specified ports allowed) |
+2026-11-19T11:48:00.7018782Z | deny-connect-unsafe-ports | 🚫 deny | 0 | Deny CONNECT (HTTPS) to ports not in Safe_ports ACL |
+2026-11-19T11:48:00.7019701Z | allow-api-proxy-ip | ✅ allow | 0 | Allow connections to the AWF api-proxy sidecar IP before raw-IP deny rules |
+2026-11-19T11:48:00.7020810Z | allow-from-api-proxy | ✅ allow | 0 | Allow unrestricted outbound from api-proxy sidecar (trusted AWF component, not subject to agent domain ACL) |
+2026-11-19T11:48:00.7021797Z | deny-raw-ipv4 | 🚫 deny | 0 | Deny requests to raw IPv4 addresses (bypasses domain filtering) |
+2026-11-19T11:48:00.7022579Z | deny-raw-ipv6 | 🚫 deny | 0 | Deny requests to raw IPv6 addresses (bypasses domain filtering) |
+2026-11-19T11:48:00.7023286Z | deny-blocked-plain | 🚫 deny | 0 | Deny requests to explicitly blocked domains |
+2026-11-19T11:48:00.7023954Z | allow-both-plain | ✅ allow | 0 | Allow HTTP and HTTPS traffic to these domains |
+2026-11-19T11:48:00.7024622Z | allow-both-regex | ✅ allow | 8 | Allow HTTP and HTTPS traffic matching these patterns |
+2026-11-19T11:48:00.7025414Z | deny-default | 🚫 deny | 1 | Deny all traffic not matching any allow rule (default deny) |
+2026-11-19T11:48:00.7026269Z | unknown | 🚫 deny | 49 | Unattributed traffic (port/method-based rules not replayable from logs) |
+2026-11-19T11:48:00.7026664Z 
+2026-11-19T11:48:00.7026764Z </details>
+2026-11-19T11:48:00.7026886Z 
+2026-11-19T11:48:00.7026979Z </details>
+2026-11-19T11:48:00.7027094Z 

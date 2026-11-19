@@ -1,0 +1,28 @@
+﻿2026-11-19T11:54:10.9023069Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/prepare_threat_detection_files.sh"
+2026-11-19T11:54:10.9023858Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/prepare_threat_detection_files.sh"[0m
+2026-11-19T11:54:10.9053777Z shell: /usr/bin/bash -e {0}
+2026-11-19T11:54:10.9054040Z env:
+2026-11-19T11:54:10.9054258Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:54:10.9054536Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:54:10.9054811Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-19T11:54:10.9055642Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517220484,github.run_id=44517220484,gh-aw.engine.id=claude
+2026-11-19T11:54:10.9056462Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:54:10.9056721Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:54:10.9056963Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:54:10.9057246Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:54:10.9057547Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:54:10.9057827Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:54:10.9058129Z   GITHUB_AW_OTEL_TRACE_ID: 19af99b8ca6a314c08bd9b7019d79d19
+2026-11-19T11:54:10.9058490Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: de96b3e46567a2b0
+2026-11-19T11:54:10.9058809Z   GITHUB_AW_OTEL_JOB_START_MS: 1795089237765
+2026-11-19T11:54:10.9059084Z ##[endgroup]
+2026-11-19T11:54:10.9793657Z Prepared threat detection files:
+2026-11-19T11:54:10.9827664Z total 48
+2026-11-19T11:54:10.9828072Z drwxr-xr-x 3 runner runner  4096 Nov 19 11:54 .
+2026-11-19T11:54:10.9828475Z drwxr-xr-x 9 runner runner  4096 Nov 19 11:54 ..
+2026-11-19T11:54:10.9828922Z -rw-r--r-- 1 runner runner  7850 Nov 19 11:54 agent_output.json
+2026-11-19T11:54:10.9829394Z drwxr-xr-x 2 runner runner  4096 Nov 19 11:54 aw-prompts
+2026-11-19T11:54:10.9830015Z -rw-r--r-- 1 runner runner  1324 Nov 19 11:54 aw-suv4o-charge-line-data-catalogue-2026-11-19-new-evs.bundle
+2026-11-19T11:54:10.9830976Z -rw-r--r-- 1 runner runner 13333 Nov 19 11:54 aw-suv4o-charge-line-data-catalogue-2026-11-19-new-evs.patch
+2026-11-19T11:54:10.9832194Z -rw-r--r-- 1 runner runner  1954 Nov 19 11:54 aw_info.json
+2026-11-19T11:54:10.9832913Z -rw-r--r-- 1 runner runner    97 Nov 19 11:54 execution.json

@@ -1,0 +1,868 @@
+﻿2026-11-19T11:49:34.9298428Z Current runner version: '2.338.2'
+2026-11-19T11:49:34.9320137Z ##[group]Runner Image Provisioner
+2026-11-19T11:49:34.9320821Z Hosted Compute Agent
+2026-11-19T11:49:34.9321400Z Version: 20261103.629
+2026-11-19T11:49:34.9321943Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+2026-11-19T11:49:34.9322549Z Build Date: 2026-11-03T17:26:59Z
+2026-11-19T11:49:34.9323148Z Worker ID: {b9e4e5bf-eb45-4ad2-9265-e163b9547c94}
+2026-11-19T11:49:34.9323784Z Region: eastus2
+2026-11-19T11:49:34.9324287Z Cloud: Azure
+2026-11-19T11:49:34.9324749Z ##[endgroup]
+2026-11-19T11:49:34.9325865Z ##[group]Operating System
+2026-11-19T11:49:34.9326437Z Ubuntu
+2026-11-19T11:49:34.9326876Z 26.04.1
+2026-11-19T11:49:34.9327393Z LTS
+2026-11-19T11:49:34.9328060Z ##[endgroup]
+2026-11-19T11:49:34.9328524Z ##[group]Runner Image
+2026-11-19T11:49:34.9329090Z Image: ubuntu-26.04
+2026-11-19T11:49:34.9329563Z Version: 20261111.196.1
+2026-11-19T11:49:34.9330700Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.196/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-19T11:49:34.9331909Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.196
+2026-11-19T11:49:34.9332734Z ##[endgroup]
+2026-11-19T11:49:34.9334287Z ##[group]GITHUB_TOKEN Permissions
+2026-11-19T11:49:34.9336652Z Contents: write
+2026-11-19T11:49:34.9337271Z Issues: write
+2026-11-19T11:49:34.9337967Z Metadata: read
+2026-11-19T11:49:34.9338677Z PullRequests: write
+2026-11-19T11:49:34.9339181Z ##[endgroup]
+2026-11-19T11:49:34.9341112Z Secret source: Actions
+2026-11-19T11:49:34.9341894Z Cache mode: write
+2026-11-19T11:49:34.9342532Z Prepare workflow directory
+2026-11-19T11:49:34.9792594Z Prepare all required actions
+2026-11-19T11:49:34.9831895Z Getting action download info
+2026-11-19T11:49:35.1836455Z Download action repository 'github/gh-aw-actions@53d0749e19424a918acd82b4d140264ce48f2f14' (SHA:53d0749e19424a918acd82b4d140264ce48f2f14)
+2026-11-19T11:49:35.7032877Z Download action repository 'actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333' (SHA:9000827ccba6bdab643e8b6fd33ac0654aef8333)
+2026-11-19T11:49:35.8848669Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-19T11:49:35.9376262Z Download action repository 'actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3' (SHA:3a2844b7e9c422d3c10d287c895573f7108da1b3)
+2026-11-19T11:49:36.0966527Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-19T11:49:36.2443023Z Complete job name: safe_outputs
+2026-11-19T11:49:36.3160213Z ##[group]Run github/gh-aw-actions/setup@53d0749e19424a918acd82b4d140264ce48f2f14
+2026-11-19T11:49:36.3161095Z with:
+2026-11-19T11:49:36.3161517Z   destination: /home/runner/work/_temp/gh-aw/actions
+2026-11-19T11:49:36.3162026Z   job-name: safe_outputs
+2026-11-19T11:49:36.3162445Z   trace-id: 85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:49:36.3162920Z   parent-span-id: ad49c3eb3ca593f4
+2026-11-19T11:49:36.3163383Z   safe-output-artifact-client: false
+2026-11-19T11:49:36.3163921Z env:
+2026-11-19T11:49:36.3164259Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:49:36.3164681Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:49:36.3165096Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-19T11:49:36.3166282Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517227475,github.run_id=44517227475,gh-aw.engine.id=claude
+2026-11-19T11:49:36.3167467Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:49:36.3168059Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:49:36.3168465Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:49:36.3168895Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:49:36.3169366Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:49:36.3169766Z   GH_AW_AGENT_AIC: 179.1096
+2026-11-19T11:49:36.3170150Z   GH_AW_AIC: 179.1096
+2026-11-19T11:49:36.3170529Z   GH_AW_AMBIENT_CONTEXT: 2712
+2026-11-19T11:49:36.3171207Z   GH_AW_CALLER_WORKFLOW_ID: Suv4o/charge-line-data/prices
+2026-11-19T11:49:36.3171715Z   GH_AW_DETECTION_CONCLUSION: success
+2026-11-19T11:49:36.3172128Z   GH_AW_DETECTION_REASON: 
+2026-11-19T11:49:36.3172520Z   GH_AW_DETECTION_THREAT_KINDS: 
+2026-11-19T11:49:36.3172929Z   GH_AW_ENGINE_ID: claude
+2026-11-19T11:49:36.3173332Z   GH_AW_ENGINE_MODEL: claude-opus-5-5
+2026-11-19T11:49:36.3173788Z   GH_AW_OBJECT_PACK_FETCH_DEPTHS: 
+2026-11-19T11:49:36.3174206Z   GH_AW_OBJECT_PACK_MAX_BYTES: 
+2026-11-19T11:49:36.3174610Z   GH_AW_OBJECT_PACK_MAX_OBJECTS: 
+2026-11-19T11:49:36.3175031Z   GH_AW_OBJECT_PACK_TIMEOUT_MS: 
+2026-11-19T11:49:36.3175448Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:49:36.3175833Z   GH_AW_RUN_DETECTION: true
+2026-11-19T11:49:36.3176323Z   GH_AW_THREAT_DETECTION_AIC: 31.01328
+2026-11-19T11:49:36.3176751Z   GH_AW_WORKFLOW_ID: prices
+2026-11-19T11:49:36.3177228Z   GH_AW_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-19T11:49:36.3178286Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Suv4o/charge-line-data/blob/main/.github/workflows/prices.md
+2026-11-19T11:49:36.3179136Z   GH_AW_SETUP_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-19T11:49:36.3179951Z   GH_AW_CURRENT_WORKFLOW_REF: Suv4o/charge-line-data/.github/workflows/prices.lock.yml@refs/heads/main
+2026-11-19T11:49:36.3180651Z   GH_AW_INFO_VERSION: 2.1.317
+2026-11-19T11:49:36.3181049Z   GH_AW_INFO_AWF_VERSION: v0.29.11
+2026-11-19T11:49:36.3181472Z   GH_AW_INFO_ENGINE_ID: claude
+2026-11-19T11:49:36.3181872Z   GH_AW_SETUP_AW_CONTEXT: 
+2026-11-19T11:49:36.3182245Z ##[endgroup]
+2026-11-19T11:49:39.6124597Z Successfully copied 795 files to /home/runner/work/_temp/gh-aw/actions
+2026-11-19T11:49:39.6136724Z ##[group]Runtime TLS inventory (not a trust-store attestation)
+2026-11-19T11:49:39.6208490Z curl 8.18.0 (x86_64-pc-linux-gnu) libcurl/8.18.0 OpenSSL/3.5.5 zlib/1.3.1 brotli/1.2.0 zstd/1.5.7 libidn2/2.3.8 libpsl/0.21.2 libssh2/1.11.1 nghttp2/1.68.0 librtmp/2.3 mit-krb5/1.22.1 OpenLDAP/2.6.10
+2026-11-19T11:49:39.6429726Z Node v24.22.2; OpenSSL 3.5.9
+2026-11-19T11:49:40.6252234Z go1.26.11
+2026-11-19T11:49:40.6303293Z /usr/bin/gh: go1.27.3
+2026-11-19T11:49:40.6306013Z gh-aw: unavailable for build-toolchain inspection
+2026-11-19T11:49:40.6306991Z Python/certifi: not inspected by shell setup; record each client's interpreter, TLS backend and selected CA bundle separately.
+2026-11-19T11:49:40.6308127Z Container, proxy and MCP trust stores require separate image/vendor evidence.
+2026-11-19T11:49:40.6308761Z Browser updates and successful HTTPS connections do not attest CA distrust.
+2026-11-19T11:49:40.6310471Z ##[endgroup]
+2026-11-19T11:49:41.1487489Z Successfully copied 119 mcp-scripts files to /home/runner/work/_temp/gh-aw/mcp-scripts
+2026-11-19T11:49:41.3901552Z Successfully copied 183 safe-outputs files to /home/runner/work/_temp/gh-aw/safeoutputs
+2026-11-19T11:49:41.4395279Z [info] [otlp] INPUT_TRACE_ID=85d1b9283f9d7efc1df09c197368e590 (will reuse activation trace)
+2026-11-19T11:49:41.4396594Z [info] [otlp] INPUT_PARENT_SPAN_ID=ad49c3eb3ca593f4 (will parent setup span)
+2026-11-19T11:49:41.4408795Z [info] [otlp] no OTLP endpoints have usable credentials, skipping setup span
+2026-11-19T11:49:41.5107293Z [info] [otlp] resolved trace-id=85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:49:41.5108679Z [info] [otlp] trace-id=85d1b9283f9d7efc1df09c197368e590 written to GITHUB_OUTPUT
+2026-11-19T11:49:41.5109356Z [info] [otlp] span-id=5f2d1c813be01303 written to GITHUB_OUTPUT
+2026-11-19T11:49:41.5109932Z [info] [otlp] parent-span-id=ad49c3eb3ca593f4 written to GITHUB_OUTPUT
+2026-11-19T11:49:41.5110575Z [info] [otlp] GITHUB_AW_OTEL_TRACE_ID written to GITHUB_ENV
+2026-11-19T11:49:41.5111092Z [info] [otlp] GITHUB_AW_OTEL_PARENT_SPAN_ID written to GITHUB_ENV
+2026-11-19T11:49:41.5112272Z [info] [otlp] GITHUB_AW_OTEL_JOB_START_MS written to GITHUB_ENV
+2026-11-19T11:49:41.5280399Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/mask_otlp_headers.sh"
+2026-11-19T11:49:41.5280864Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/mask_otlp_headers.sh"[0m
+2026-11-19T11:49:41.5327668Z shell: /usr/bin/bash -e {0}
+2026-11-19T11:49:41.5328158Z env:
+2026-11-19T11:49:41.5328340Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:49:41.5328562Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:49:41.5328802Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-19T11:49:41.5329507Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517227475,github.run_id=44517227475,gh-aw.engine.id=claude
+2026-11-19T11:49:41.5330175Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:49:41.5330395Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:49:41.5330603Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:49:41.5330824Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:49:41.5331128Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:49:41.5331332Z   GH_AW_AGENT_AIC: 179.1096
+2026-11-19T11:49:41.5331519Z   GH_AW_AIC: 179.1096
+2026-11-19T11:49:41.5331698Z   GH_AW_AMBIENT_CONTEXT: 2712
+2026-11-19T11:49:41.5331948Z   GH_AW_CALLER_WORKFLOW_ID: Suv4o/charge-line-data/prices
+2026-11-19T11:49:41.5332223Z   GH_AW_DETECTION_CONCLUSION: success
+2026-11-19T11:49:41.5332438Z   GH_AW_DETECTION_REASON: 
+2026-11-19T11:49:41.5332634Z   GH_AW_DETECTION_THREAT_KINDS: 
+2026-11-19T11:49:41.5332844Z   GH_AW_ENGINE_ID: claude
+2026-11-19T11:49:41.5333049Z   GH_AW_ENGINE_MODEL: claude-opus-5-5
+2026-11-19T11:49:41.5333277Z   GH_AW_OBJECT_PACK_FETCH_DEPTHS: 
+2026-11-19T11:49:41.5333500Z   GH_AW_OBJECT_PACK_MAX_BYTES: 
+2026-11-19T11:49:41.5333712Z   GH_AW_OBJECT_PACK_MAX_OBJECTS: 
+2026-11-19T11:49:41.5333923Z   GH_AW_OBJECT_PACK_TIMEOUT_MS: 
+2026-11-19T11:49:41.5334137Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:49:41.5334329Z   GH_AW_RUN_DETECTION: true
+2026-11-19T11:49:41.5334536Z   GH_AW_THREAT_DETECTION_AIC: 31.01328
+2026-11-19T11:49:41.5334764Z   GH_AW_WORKFLOW_ID: prices
+2026-11-19T11:49:41.5335012Z   GH_AW_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-19T11:49:41.5335566Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Suv4o/charge-line-data/blob/main/.github/workflows/prices.md
+2026-11-19T11:49:41.5336033Z   GITHUB_AW_OTEL_TRACE_ID: 85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:49:41.5336322Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 5f2d1c813be01303
+2026-11-19T11:49:41.5336579Z   GITHUB_AW_OTEL_JOB_START_MS: 1795088981511
+2026-11-19T11:49:41.5336810Z ##[endgroup]
+2026-11-19T11:49:41.5514710Z ##[group]Run actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
+2026-11-19T11:49:41.5515055Z with:
+2026-11-19T11:49:41.5515255Z   pattern: {agent,agent-output-fallback}
+2026-11-19T11:49:41.5515482Z   merge-multiple: true
+2026-11-19T11:49:41.5515677Z   path: /tmp/gh-aw/
+2026-11-19T11:49:41.5515874Z   repository: Suv4o/charge-line-data
+2026-11-19T11:49:41.5516086Z   run-id: 44517227475
+2026-11-19T11:49:41.5516272Z   skip-decompress: false
+2026-11-19T11:49:41.5516463Z   digest-mismatch: error
+2026-11-19T11:49:41.5516639Z env:
+2026-11-19T11:49:41.5516803Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:49:41.5517027Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:49:41.5517232Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-19T11:49:41.5518157Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517227475,github.run_id=44517227475,gh-aw.engine.id=claude
+2026-11-19T11:49:41.5518868Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:49:41.5519077Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:49:41.5519273Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:49:41.5519491Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:49:41.5519747Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:49:41.5519966Z   GH_AW_AGENT_AIC: 179.1096
+2026-11-19T11:49:41.5520191Z   GH_AW_AIC: 179.1096
+2026-11-19T11:49:41.5520376Z   GH_AW_AMBIENT_CONTEXT: 2712
+2026-11-19T11:49:41.5520612Z   GH_AW_CALLER_WORKFLOW_ID: Suv4o/charge-line-data/prices
+2026-11-19T11:49:41.5520885Z   GH_AW_DETECTION_CONCLUSION: success
+2026-11-19T11:49:41.5521333Z   GH_AW_DETECTION_REASON: 
+2026-11-19T11:49:41.5521529Z   GH_AW_DETECTION_THREAT_KINDS: 
+2026-11-19T11:49:41.5521735Z   GH_AW_ENGINE_ID: claude
+2026-11-19T11:49:41.5521929Z   GH_AW_ENGINE_MODEL: claude-opus-5-5
+2026-11-19T11:49:41.5522146Z   GH_AW_OBJECT_PACK_FETCH_DEPTHS: 
+2026-11-19T11:49:41.5522357Z   GH_AW_OBJECT_PACK_MAX_BYTES: 
+2026-11-19T11:49:41.5522570Z   GH_AW_OBJECT_PACK_MAX_OBJECTS: 
+2026-11-19T11:49:41.5522779Z   GH_AW_OBJECT_PACK_TIMEOUT_MS: 
+2026-11-19T11:49:41.5522978Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:49:41.5523164Z   GH_AW_RUN_DETECTION: true
+2026-11-19T11:49:41.5523367Z   GH_AW_THREAT_DETECTION_AIC: 31.01328
+2026-11-19T11:49:41.5523582Z   GH_AW_WORKFLOW_ID: prices
+2026-11-19T11:49:41.5523829Z   GH_AW_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-19T11:49:41.5524289Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Suv4o/charge-line-data/blob/main/.github/workflows/prices.md
+2026-11-19T11:49:41.5524727Z   GITHUB_AW_OTEL_TRACE_ID: 85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:49:41.5525016Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 5f2d1c813be01303
+2026-11-19T11:49:41.5525266Z   GITHUB_AW_OTEL_JOB_START_MS: 1795088981511
+2026-11-19T11:49:41.5525491Z ##[endgroup]
+2026-11-19T11:49:41.7558711Z Found 6 artifact(s)
+2026-11-19T11:49:41.7589477Z Filtering artifacts by pattern '{agent,agent-output-fallback}'
+2026-11-19T11:49:41.7590785Z Preparing to download the following artifacts:
+2026-11-19T11:49:41.7591646Z - agent-output-fallback (ID: 14526382412, Size: 8333, Expected Digest: sha256:55ae7b8fdd718d197ec3529ec8dede5293531111a3bf53bade552dc556c2b63e)
+2026-11-19T11:49:41.7592865Z - agent (ID: 14526113622, Size: 277775, Expected Digest: sha256:84398c4e0187c888361cb187b8c8805210002fd2eab4bee44dd04d2ceacc8dbd)
+2026-11-19T11:49:41.9198703Z Redirecting to blob download url: https://productionresultssa8.blob.core.windows.net/actions-results/a8cf3b62-61ad-4c42-8dba-b021b6948f3a/workflow-job-run-0e1bacf0-e463-5bfa-8ba5-af169bfdafc1/artifacts/daa0da78a4f899948f184de1c2267d4cff63de5d280692a88333f56508605a86.zip
+2026-11-19T11:49:41.9200402Z Starting download of artifact to: /tmp/gh-aw
+2026-11-19T11:49:41.9211635Z Redirecting to blob download url: https://productionresultssa8.blob.core.windows.net/actions-results/a8cf3b62-61ad-4c42-8dba-b021b6948f3a/workflow-job-run-0e1bacf0-e463-5bfa-8ba5-af169bfdafc1/artifacts/d4f0bc5a29de06b510f9aa428f1eedba926012b591fef7a518e776a7c9bd1824.zip
+2026-11-19T11:49:41.9212971Z Starting download of artifact to: /tmp/gh-aw
+2026-11-19T11:49:41.9432608Z (node:4345) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-11-19T11:49:41.9433371Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-19T11:49:41.9496121Z SHA256 digest of downloaded artifact is 55ae7b8fdd718d197ec3529ec8dede5293531111a3bf53bade552dc556c2b63e
+2026-11-19T11:49:41.9496916Z Artifact download completed successfully.
+2026-11-19T11:49:41.9768729Z SHA256 digest of downloaded artifact is 84398c4e0187c888361cb187b8c8805210002fd2eab4bee44dd04d2ceacc8dbd
+2026-11-19T11:49:41.9769280Z Artifact download completed successfully.
+2026-11-19T11:49:41.9769545Z Total of 2 artifact(s) downloaded
+2026-11-19T11:49:41.9771414Z Download artifact has finished successfully
+2026-11-19T11:49:41.9892836Z ##[group]Run mkdir -p /tmp/gh-aw/
+2026-11-19T11:49:41.9893131Z [36;1mmkdir -p /tmp/gh-aw/[0m
+2026-11-19T11:49:41.9893404Z [36;1mfind "/tmp/gh-aw/" -type f -print[0m
+2026-11-19T11:49:41.9893701Z [36;1mif [ -f "/tmp/gh-aw/agent_output.json" ]; then[0m
+2026-11-19T11:49:41.9894079Z [36;1m  echo "GH_AW_AGENT_OUTPUT=/tmp/gh-aw/agent_output.json" >> "$GITHUB_OUTPUT"[0m
+2026-11-19T11:49:41.9894421Z [36;1mfi[0m
+2026-11-19T11:49:41.9938435Z shell: /usr/bin/bash -e {0}
+2026-11-19T11:49:41.9938659Z env:
+2026-11-19T11:49:41.9938853Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:49:41.9939091Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:49:41.9939312Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-19T11:49:41.9940166Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517227475,github.run_id=44517227475,gh-aw.engine.id=claude
+2026-11-19T11:49:41.9940858Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:49:41.9941124Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:49:41.9941339Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:49:41.9941570Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:49:41.9941830Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:49:41.9942041Z   GH_AW_AGENT_AIC: 179.1096
+2026-11-19T11:49:41.9942251Z   GH_AW_AIC: 179.1096
+2026-11-19T11:49:41.9942442Z   GH_AW_AMBIENT_CONTEXT: 2712
+2026-11-19T11:49:41.9942702Z   GH_AW_CALLER_WORKFLOW_ID: Suv4o/charge-line-data/prices
+2026-11-19T11:49:41.9942987Z   GH_AW_DETECTION_CONCLUSION: success
+2026-11-19T11:49:41.9943224Z   GH_AW_DETECTION_REASON: 
+2026-11-19T11:49:41.9943430Z   GH_AW_DETECTION_THREAT_KINDS: 
+2026-11-19T11:49:41.9943645Z   GH_AW_ENGINE_ID: claude
+2026-11-19T11:49:41.9943863Z   GH_AW_ENGINE_MODEL: claude-opus-5-5
+2026-11-19T11:49:41.9944095Z   GH_AW_OBJECT_PACK_FETCH_DEPTHS: 
+2026-11-19T11:49:41.9944331Z   GH_AW_OBJECT_PACK_MAX_BYTES: 
+2026-11-19T11:49:41.9944544Z   GH_AW_OBJECT_PACK_MAX_OBJECTS: 
+2026-11-19T11:49:41.9944769Z   GH_AW_OBJECT_PACK_TIMEOUT_MS: 
+2026-11-19T11:49:41.9944979Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:49:41.9945186Z   GH_AW_RUN_DETECTION: true
+2026-11-19T11:49:41.9945396Z   GH_AW_THREAT_DETECTION_AIC: 31.01328
+2026-11-19T11:49:41.9945614Z   GH_AW_WORKFLOW_ID: prices
+2026-11-19T11:49:41.9945876Z   GH_AW_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-19T11:49:41.9946369Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Suv4o/charge-line-data/blob/main/.github/workflows/prices.md
+2026-11-19T11:49:41.9946852Z   GITHUB_AW_OTEL_TRACE_ID: 85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:49:41.9947151Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 5f2d1c813be01303
+2026-11-19T11:49:41.9947428Z   GITHUB_AW_OTEL_JOB_START_MS: 1795088981511
+2026-11-19T11:49:41.9947658Z ##[endgroup]
+2026-11-19T11:49:42.0042346Z /tmp/gh-aw/agent/model-resolution.json
+2026-11-19T11:49:42.0042778Z /tmp/gh-aw/agent/harness_retry.json
+2026-11-19T11:49:42.0043139Z /tmp/gh-aw/agent-stdio.log
+2026-11-19T11:49:42.0043418Z /tmp/gh-aw/agent_execution.json
+2026-11-19T11:49:42.0043826Z /tmp/gh-aw/aw-suv4o-charge-line-data-prices-new-operators-2026-11-19.patch
+2026-11-19T11:49:42.0044199Z /tmp/gh-aw/otel.jsonl
+2026-11-19T11:49:42.0044407Z /tmp/gh-aw/safeoutputs.jsonl
+2026-11-19T11:49:42.0044631Z /tmp/gh-aw/skill_inventory.json
+2026-11-19T11:49:42.0044877Z /tmp/gh-aw/agent_execution_exit_code.txt
+2026-11-19T11:49:42.0045115Z /tmp/gh-aw/awf-config.json
+2026-11-19T11:49:42.0045351Z /tmp/gh-aw/sandbox/firewall/awf-reflect.json
+2026-11-19T11:49:42.0045933Z /tmp/gh-aw/sandbox/firewall/logs/audit.jsonl
+2026-11-19T11:49:42.0046344Z /tmp/gh-aw/sandbox/firewall/logs/access.log
+2026-11-19T11:49:42.0046731Z /tmp/gh-aw/sandbox/firewall/logs/cache.log
+2026-11-19T11:49:42.0047199Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/otel.jsonl
+2026-11-19T11:49:42.0047577Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-19T11:49:42.0048120Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/models.json
+2026-11-19T11:49:42.0048660Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/harness-observation.json
+2026-11-19T11:49:42.0049055Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-19T11:49:42.0049445Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/agent-runtime/started-at-ms
+2026-11-19T11:49:42.0049798Z /tmp/gh-aw/sandbox/firewall/audit/image-manifest.json
+2026-11-19T11:49:42.0050126Z /tmp/gh-aw/sandbox/firewall/audit/docker-compose.redacted.yml
+2026-11-19T11:49:42.0050457Z /tmp/gh-aw/sandbox/firewall/audit/awf-resolved-config.json
+2026-11-19T11:49:42.0050780Z /tmp/gh-aw/sandbox/firewall/audit/sensitive-paths.json
+2026-11-19T11:49:42.0051064Z /tmp/gh-aw/sandbox/firewall/audit/squid.conf
+2026-11-19T11:49:42.0051460Z /tmp/gh-aw/sandbox/firewall/audit/policy-manifest.json
+2026-11-19T11:49:42.0051731Z /tmp/gh-aw/agent-session.jsonl
+2026-11-19T11:49:42.0051963Z /tmp/gh-aw/mcp-logs/rpc-messages.jsonl
+2026-11-19T11:49:42.0052195Z /tmp/gh-aw/mcp-logs/tools.json
+2026-11-19T11:49:42.0052434Z /tmp/gh-aw/mcp-logs/observed-url-domains.json
+2026-11-19T11:49:42.0052702Z /tmp/gh-aw/mcp-logs/configuration.jsonl
+2026-11-19T11:49:42.0052947Z /tmp/gh-aw/mcp-logs/mcp-gateway.log
+2026-11-19T11:49:42.0053177Z /tmp/gh-aw/mcp-logs/github.log
+2026-11-19T11:49:42.0053404Z /tmp/gh-aw/mcp-logs/safeoutputs.log
+2026-11-19T11:49:42.0053627Z /tmp/gh-aw/mcp-logs/gateway.md
+2026-11-19T11:49:42.0053834Z /tmp/gh-aw/agent_output.json
+2026-11-19T11:49:42.0054045Z /tmp/gh-aw/github_rate_limits.jsonl
+2026-11-19T11:49:42.0054386Z /tmp/gh-aw/aw-suv4o-charge-line-data-prices-new-operators-2026-11-19.bundle
+2026-11-19T11:49:42.0054729Z /tmp/gh-aw/agent-errors.jsonl
+2026-11-19T11:49:42.0054948Z /tmp/gh-aw/claude-debug.log
+2026-11-19T11:49:42.0055158Z /tmp/gh-aw/pre-agent-audit.txt
+2026-11-19T11:49:42.0055383Z /tmp/gh-aw/aw-prompts/prompt.txt
+2026-11-19T11:49:42.0055606Z /tmp/gh-aw/aw-prompts/system.txt
+2026-11-19T11:49:42.0055824Z /tmp/gh-aw/aw-prompts/user.txt
+2026-11-19T11:49:42.0056034Z /tmp/gh-aw/agent_usage.json
+2026-11-19T11:49:42.0129173Z ##[group]Run actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
+2026-11-19T11:49:42.0129534Z with:
+2026-11-19T11:49:42.0129706Z   name: agent
+2026-11-19T11:49:42.0129892Z   path: /tmp/gh-aw/
+2026-11-19T11:49:42.0130099Z   merge-multiple: false
+2026-11-19T11:49:42.0130312Z   repository: Suv4o/charge-line-data
+2026-11-19T11:49:42.0130543Z   run-id: 44517227475
+2026-11-19T11:49:42.0130731Z   skip-decompress: false
+2026-11-19T11:49:42.0130943Z   digest-mismatch: error
+2026-11-19T11:49:42.0131130Z env:
+2026-11-19T11:49:42.0131306Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:49:42.0131531Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:49:42.0131748Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-19T11:49:42.0132485Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517227475,github.run_id=44517227475,gh-aw.engine.id=claude
+2026-11-19T11:49:42.0133233Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:49:42.0133454Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:49:42.0133674Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:49:42.0133913Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:49:42.0134176Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:49:42.0134391Z   GH_AW_AGENT_AIC: 179.1096
+2026-11-19T11:49:42.0134586Z   GH_AW_AIC: 179.1096
+2026-11-19T11:49:42.0134784Z   GH_AW_AMBIENT_CONTEXT: 2712
+2026-11-19T11:49:42.0135035Z   GH_AW_CALLER_WORKFLOW_ID: Suv4o/charge-line-data/prices
+2026-11-19T11:49:42.0135319Z   GH_AW_DETECTION_CONCLUSION: success
+2026-11-19T11:49:42.0135549Z   GH_AW_DETECTION_REASON: 
+2026-11-19T11:49:42.0135759Z   GH_AW_DETECTION_THREAT_KINDS: 
+2026-11-19T11:49:42.0135972Z   GH_AW_ENGINE_ID: claude
+2026-11-19T11:49:42.0136189Z   GH_AW_ENGINE_MODEL: claude-opus-5-5
+2026-11-19T11:49:42.0136423Z   GH_AW_OBJECT_PACK_FETCH_DEPTHS: 
+2026-11-19T11:49:42.0136644Z   GH_AW_OBJECT_PACK_MAX_BYTES: 
+2026-11-19T11:49:42.0136866Z   GH_AW_OBJECT_PACK_MAX_OBJECTS: 
+2026-11-19T11:49:42.0137095Z   GH_AW_OBJECT_PACK_TIMEOUT_MS: 
+2026-11-19T11:49:42.0137333Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:49:42.0137545Z   GH_AW_RUN_DETECTION: true
+2026-11-19T11:49:42.0137947Z   GH_AW_THREAT_DETECTION_AIC: 31.01328
+2026-11-19T11:49:42.0138189Z   GH_AW_WORKFLOW_ID: prices
+2026-11-19T11:49:42.0138443Z   GH_AW_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-19T11:49:42.0138917Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Suv4o/charge-line-data/blob/main/.github/workflows/prices.md
+2026-11-19T11:49:42.0139396Z   GITHUB_AW_OTEL_TRACE_ID: 85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:49:42.0139701Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 5f2d1c813be01303
+2026-11-19T11:49:42.0139968Z   GITHUB_AW_OTEL_JOB_START_MS: 1795088981511
+2026-11-19T11:49:42.0140339Z ##[endgroup]
+2026-11-19T11:49:42.1212583Z Downloading single artifact
+2026-11-19T11:49:42.2089727Z Preparing to download the following artifacts:
+2026-11-19T11:49:42.2090677Z - agent (ID: 14526113622, Size: 277775, Expected Digest: sha256:84398c4e0187c888361cb187b8c8805210002fd2eab4bee44dd04d2ceacc8dbd)
+2026-11-19T11:49:42.3847628Z Redirecting to blob download url: https://productionresultssa8.blob.core.windows.net/actions-results/a8cf3b62-61ad-4c42-8dba-b021b6948f3a/workflow-job-run-0e1bacf0-e463-5bfa-8ba5-af169bfdafc1/artifacts/d4f0bc5a29de06b510f9aa428f1eedba926012b591fef7a518e776a7c9bd1824.zip
+2026-11-19T11:49:42.3848899Z Starting download of artifact to: /tmp/gh-aw
+2026-11-19T11:49:42.4246174Z (node:4361) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-11-19T11:49:42.4246950Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-19T11:49:42.6818590Z SHA256 digest of downloaded artifact is 84398c4e0187c888361cb187b8c8805210002fd2eab4bee44dd04d2ceacc8dbd
+2026-11-19T11:49:42.6819510Z Artifact download completed successfully.
+2026-11-19T11:49:42.6820369Z Total of 1 artifact(s) downloaded
+2026-11-19T11:49:42.6820747Z Download artifact has finished successfully
+2026-11-19T11:49:42.7326048Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+2026-11-19T11:49:42.7326382Z with:
+2026-11-19T11:49:42.7326575Z   persist-credentials: true
+2026-11-19T11:49:42.7328990Z   token: ***
+2026-11-19T11:49:42.7329204Z   repository: Suv4o/charge-line-data
+2026-11-19T11:49:42.7329450Z   ssh-strict: true
+2026-11-19T11:49:42.7329637Z   ssh-user: git
+2026-11-19T11:49:42.7329817Z   clean: true
+2026-11-19T11:49:42.7330006Z   sparse-checkout-cone-mode: true
+2026-11-19T11:49:42.7330243Z   fetch-depth: 1
+2026-11-19T11:49:42.7330431Z   fetch-tags: false
+2026-11-19T11:49:42.7330619Z   show-progress: true
+2026-11-19T11:49:42.7330835Z   lfs: false
+2026-11-19T11:49:42.7331007Z   submodules: false
+2026-11-19T11:49:42.7331201Z   set-safe-directory: true
+2026-11-19T11:49:42.7331422Z   allow-unsafe-pr-checkout: false
+2026-11-19T11:49:42.7331652Z env:
+2026-11-19T11:49:42.7331837Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:49:42.7332059Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:49:42.7332309Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-19T11:49:42.7332991Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517227475,github.run_id=44517227475,gh-aw.engine.id=claude
+2026-11-19T11:49:42.7333663Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:49:42.7333881Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:49:42.7334101Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:49:42.7334348Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:49:42.7334604Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:49:42.7334828Z   GH_AW_AGENT_AIC: 179.1096
+2026-11-19T11:49:42.7335040Z   GH_AW_AIC: 179.1096
+2026-11-19T11:49:42.7335244Z   GH_AW_AMBIENT_CONTEXT: 2712
+2026-11-19T11:49:42.7335498Z   GH_AW_CALLER_WORKFLOW_ID: Suv4o/charge-line-data/prices
+2026-11-19T11:49:42.7335776Z   GH_AW_DETECTION_CONCLUSION: success
+2026-11-19T11:49:42.7336008Z   GH_AW_DETECTION_REASON: 
+2026-11-19T11:49:42.7336223Z   GH_AW_DETECTION_THREAT_KINDS: 
+2026-11-19T11:49:42.7336445Z   GH_AW_ENGINE_ID: claude
+2026-11-19T11:49:42.7336662Z   GH_AW_ENGINE_MODEL: claude-opus-5-5
+2026-11-19T11:49:42.7336894Z   GH_AW_OBJECT_PACK_FETCH_DEPTHS: 
+2026-11-19T11:49:42.7337126Z   GH_AW_OBJECT_PACK_MAX_BYTES: 
+2026-11-19T11:49:42.7337345Z   GH_AW_OBJECT_PACK_MAX_OBJECTS: 
+2026-11-19T11:49:42.7337578Z   GH_AW_OBJECT_PACK_TIMEOUT_MS: 
+2026-11-19T11:49:42.7337907Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:49:42.7338118Z   GH_AW_RUN_DETECTION: true
+2026-11-19T11:49:42.7338335Z   GH_AW_THREAT_DETECTION_AIC: 31.01328
+2026-11-19T11:49:42.7338559Z   GH_AW_WORKFLOW_ID: prices
+2026-11-19T11:49:42.7338979Z   GH_AW_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-19T11:49:42.7339474Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Suv4o/charge-line-data/blob/main/.github/workflows/prices.md
+2026-11-19T11:49:42.7339930Z   GITHUB_AW_OTEL_TRACE_ID: 85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:49:42.7340234Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 5f2d1c813be01303
+2026-11-19T11:49:42.7340502Z   GITHUB_AW_OTEL_JOB_START_MS: 1795088981511
+2026-11-19T11:49:42.7340745Z ##[endgroup]
+2026-11-19T11:49:42.8118194Z Syncing repository: Suv4o/charge-line-data
+2026-11-19T11:49:42.8119079Z ##[group]Getting Git version info
+2026-11-19T11:49:42.8119643Z Working directory is '/home/runner/work/charge-line-data/charge-line-data'
+2026-11-19T11:49:42.8120439Z [command]/usr/bin/git version
+2026-11-19T11:49:42.8154096Z git version 2.56.1
+2026-11-19T11:49:42.8169818Z ##[endgroup]
+2026-11-19T11:49:42.8178035Z Temporarily overriding HOME='/home/runner/work/_temp/94df5eab-e159-4f30-a09a-d22ad27ca858' before making global git config changes
+2026-11-19T11:49:42.8179172Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T11:49:42.8214928Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/charge-line-data/charge-line-data
+2026-11-19T11:49:42.8981010Z Deleting the contents of '/home/runner/work/charge-line-data/charge-line-data'
+2026-11-19T11:49:42.8983200Z ##[group]Determining repository object format
+2026-11-19T11:49:42.8984874Z ##[endgroup]
+2026-11-19T11:49:42.8985330Z ##[group]Initializing the repository
+2026-11-19T11:49:42.8990555Z [command]/usr/bin/git init /home/runner/work/charge-line-data/charge-line-data
+2026-11-19T11:49:43.0535252Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-19T11:49:43.0536235Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-19T11:49:43.0536680Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-19T11:49:43.0537011Z hint: call:
+2026-11-19T11:49:43.0537207Z hint:
+2026-11-19T11:49:43.0537452Z hint: 	git config --global init.defaultBranch <name>
+2026-11-19T11:49:43.0538002Z hint:
+2026-11-19T11:49:43.0538374Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-19T11:49:43.0539033Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-19T11:49:43.0539517Z hint:
+2026-11-19T11:49:43.0539795Z hint: 	git branch -m <name>
+2026-11-19T11:49:43.0540107Z hint:
+2026-11-19T11:49:43.0540533Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-19T11:49:43.0543511Z Initialized empty Git repository in /home/runner/work/charge-line-data/charge-line-data/.git/
+2026-11-19T11:49:43.0555789Z [command]/usr/bin/git remote add origin https://github.com/Suv4o/charge-line-data
+2026-11-19T11:49:43.2553018Z ##[endgroup]
+2026-11-19T11:49:43.2553752Z ##[group]Disabling automatic garbage collection
+2026-11-19T11:49:43.2556884Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-19T11:49:43.2630887Z ##[endgroup]
+2026-11-19T11:49:43.2631409Z ##[group]Setting up auth
+2026-11-19T11:49:43.2631970Z Removing SSH command configuration
+2026-11-19T11:49:43.2636816Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T11:49:43.2671549Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T11:49:43.3024714Z Removing HTTP extra header
+2026-11-19T11:49:43.3031748Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T11:49:43.3066927Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T11:49:43.3301403Z Removing includeIf entries pointing to credentials config files
+2026-11-19T11:49:43.3306704Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T11:49:43.3343144Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T11:49:43.3582597Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-86b88e8d-63a8-4af8-9bbb-c1b5772250e8.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-19T11:49:43.3741501Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git.path /home/runner/work/_temp/git-credentials-86b88e8d-63a8-4af8-9bbb-c1b5772250e8.config
+2026-11-19T11:49:43.3790200Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-86b88e8d-63a8-4af8-9bbb-c1b5772250e8.config
+2026-11-19T11:49:43.3832293Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-86b88e8d-63a8-4af8-9bbb-c1b5772250e8.config
+2026-11-19T11:49:43.3910648Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-86b88e8d-63a8-4af8-9bbb-c1b5772250e8.config
+2026-11-19T11:49:43.3967886Z ##[endgroup]
+2026-11-19T11:49:43.3968552Z ##[group]Fetching the repository
+2026-11-19T11:49:43.3973519Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +5c02988e404353ec4ce1a012f048a04af7b8a5e0:refs/remotes/origin/main
+2026-11-19T11:49:43.5995723Z From https://github.com/Suv4o/charge-line-data
+2026-11-19T11:49:43.5996178Z  * [new ref]         5c02988e404353ec4ce1a012f048a04af7b8a5e0 -> origin/main
+2026-11-19T11:49:43.6008697Z [command]/usr/bin/git branch --list --remote origin/main
+2026-11-19T11:49:43.6028838Z   origin/main
+2026-11-19T11:49:43.6035575Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-11-19T11:49:43.6056850Z 5c02988e404353ec4ce1a012f048a04af7b8a5e0
+2026-11-19T11:49:43.6060568Z ##[endgroup]
+2026-11-19T11:49:43.6061105Z ##[group]Determining the checkout info
+2026-11-19T11:49:43.6061680Z ##[endgroup]
+2026-11-19T11:49:43.6065645Z [command]/usr/bin/git sparse-checkout disable
+2026-11-19T11:49:43.6115463Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-19T11:49:43.6142742Z ##[group]Checking out the ref
+2026-11-19T11:49:43.6146325Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-19T11:49:43.6221225Z Switched to a new branch 'main'
+2026-11-19T11:49:43.6225307Z branch 'main' set up to track 'origin/main'.
+2026-11-19T11:49:43.6229750Z ##[endgroup]
+2026-11-19T11:49:43.6268837Z [command]/usr/bin/git log -1 --format=%H
+2026-11-19T11:49:43.6291136Z 5c02988e404353ec4ce1a012f048a04af7b8a5e0
+2026-11-19T11:49:43.6411868Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/configure_git_credentials.sh"
+2026-11-19T11:49:43.6412361Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/configure_git_credentials.sh"[0m
+2026-11-19T11:49:43.6455021Z shell: /usr/bin/bash -e {0}
+2026-11-19T11:49:43.6455258Z env:
+2026-11-19T11:49:43.6455443Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:49:43.6455674Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:49:43.6455899Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-19T11:49:43.6456584Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517227475,github.run_id=44517227475,gh-aw.engine.id=claude
+2026-11-19T11:49:43.6457504Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:49:43.6458042Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:49:43.6458383Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:49:43.6458772Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:49:43.6459233Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:49:43.6459563Z   GH_AW_AGENT_AIC: 179.1096
+2026-11-19T11:49:43.6459941Z   GH_AW_AIC: 179.1096
+2026-11-19T11:49:43.6474125Z   GH_AW_AMBIENT_CONTEXT: 2712
+2026-11-19T11:49:43.6474444Z   GH_AW_CALLER_WORKFLOW_ID: Suv4o/charge-line-data/prices
+2026-11-19T11:49:43.6474772Z   GH_AW_DETECTION_CONCLUSION: success
+2026-11-19T11:49:43.6475003Z   GH_AW_DETECTION_REASON: 
+2026-11-19T11:49:43.6475226Z   GH_AW_DETECTION_THREAT_KINDS: 
+2026-11-19T11:49:43.6475445Z   GH_AW_ENGINE_ID: claude
+2026-11-19T11:49:43.6475658Z   GH_AW_ENGINE_MODEL: claude-opus-5-5
+2026-11-19T11:49:43.6475899Z   GH_AW_OBJECT_PACK_FETCH_DEPTHS: 
+2026-11-19T11:49:43.6476128Z   GH_AW_OBJECT_PACK_MAX_BYTES: 
+2026-11-19T11:49:43.6476356Z   GH_AW_OBJECT_PACK_MAX_OBJECTS: 
+2026-11-19T11:49:43.6476584Z   GH_AW_OBJECT_PACK_TIMEOUT_MS: 
+2026-11-19T11:49:43.6476807Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:49:43.6477015Z   GH_AW_RUN_DETECTION: true
+2026-11-19T11:49:43.6477226Z   GH_AW_THREAT_DETECTION_AIC: 31.01328
+2026-11-19T11:49:43.6477465Z   GH_AW_WORKFLOW_ID: prices
+2026-11-19T11:49:43.6477886Z   GH_AW_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-19T11:49:43.6478424Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Suv4o/charge-line-data/blob/main/.github/workflows/prices.md
+2026-11-19T11:49:43.6478883Z   GITHUB_AW_OTEL_TRACE_ID: 85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:49:43.6479180Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 5f2d1c813be01303
+2026-11-19T11:49:43.6479441Z   GITHUB_AW_OTEL_JOB_START_MS: 1795088981511
+2026-11-19T11:49:43.6479704Z   GH_AW_GIT_REPOSITORY: Suv4o/charge-line-data
+2026-11-19T11:49:43.6479961Z   GITHUB_SERVER_URL: https://github.com
+2026-11-19T11:49:43.6482089Z   GIT_TOKEN: ***
+2026-11-19T11:49:43.6482287Z ##[endgroup]
+2026-11-19T11:49:43.6789502Z Git checkout identity verified before credential configuration
+2026-11-19T11:49:43.6953813Z Git checkout identity verified after credential configuration
+2026-11-19T11:49:43.6954371Z Git configured with standard GitHub Actions identity
+2026-11-19T11:49:43.6984462Z ##[group]Run # Derive GH_HOST from GITHUB_SERVER_URL so the gh CLI targets the correct
+2026-11-19T11:49:43.6985141Z [36;1m# Derive GH_HOST from GITHUB_SERVER_URL so the gh CLI targets the correct[0m
+2026-11-19T11:49:43.6985736Z [36;1m# GitHub instance (GHES/GHEC). On github.com this is a harmless no-op.[0m
+2026-11-19T11:49:43.6986268Z [36;1mGH_HOST="${GITHUB_SERVER_URL#https://}"[0m
+2026-11-19T11:49:43.6986646Z [36;1mGH_HOST="${GH_HOST#http://}"[0m
+2026-11-19T11:49:43.6987044Z [36;1mecho "GH_HOST=${GH_HOST}" >> "$GITHUB_ENV"[0m
+2026-11-19T11:49:43.7029891Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T11:49:43.7030198Z env:
+2026-11-19T11:49:43.7030392Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:49:43.7030619Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:49:43.7030836Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-19T11:49:43.7031559Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517227475,github.run_id=44517227475,gh-aw.engine.id=claude
+2026-11-19T11:49:43.7032229Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:49:43.7032463Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:49:43.7032674Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:49:43.7032911Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:49:43.7033171Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:49:43.7033381Z   GH_AW_AGENT_AIC: 179.1096
+2026-11-19T11:49:43.7033590Z   GH_AW_AIC: 179.1096
+2026-11-19T11:49:43.7033785Z   GH_AW_AMBIENT_CONTEXT: 2712
+2026-11-19T11:49:43.7034038Z   GH_AW_CALLER_WORKFLOW_ID: Suv4o/charge-line-data/prices
+2026-11-19T11:49:43.7034316Z   GH_AW_DETECTION_CONCLUSION: success
+2026-11-19T11:49:43.7034541Z   GH_AW_DETECTION_REASON: 
+2026-11-19T11:49:43.7034754Z   GH_AW_DETECTION_THREAT_KINDS: 
+2026-11-19T11:49:43.7034970Z   GH_AW_ENGINE_ID: claude
+2026-11-19T11:49:43.7035182Z   GH_AW_ENGINE_MODEL: claude-opus-5-5
+2026-11-19T11:49:43.7035428Z   GH_AW_OBJECT_PACK_FETCH_DEPTHS: 
+2026-11-19T11:49:43.7035651Z   GH_AW_OBJECT_PACK_MAX_BYTES: 
+2026-11-19T11:49:43.7035872Z   GH_AW_OBJECT_PACK_MAX_OBJECTS: 
+2026-11-19T11:49:43.7036531Z   GH_AW_OBJECT_PACK_TIMEOUT_MS: 
+2026-11-19T11:49:43.7036751Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:49:43.7036959Z   GH_AW_RUN_DETECTION: true
+2026-11-19T11:49:43.7037172Z   GH_AW_THREAT_DETECTION_AIC: 31.01328
+2026-11-19T11:49:43.7037407Z   GH_AW_WORKFLOW_ID: prices
+2026-11-19T11:49:43.7037664Z   GH_AW_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-19T11:49:43.7038370Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Suv4o/charge-line-data/blob/main/.github/workflows/prices.md
+2026-11-19T11:49:43.7038834Z   GITHUB_AW_OTEL_TRACE_ID: 85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:49:43.7039150Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 5f2d1c813be01303
+2026-11-19T11:49:43.7039424Z   GITHUB_AW_OTEL_JOB_START_MS: 1795088981511
+2026-11-19T11:49:43.7039661Z ##[endgroup]
+2026-11-19T11:49:43.7143973Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-19T11:49:43.7144302Z with:
+2026-11-19T11:49:43.7146341Z   github-token: ***
+2026-11-19T11:49:43.7147425Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit, process.env.GH_AW_GITHUB_TOKEN_SOURCE);
+const { main } = require(path.join(actionsDir, 'process_safe_outputs.cjs'));
+await main();
+
+2026-11-19T11:49:43.7148694Z   debug: false
+2026-11-19T11:49:43.7148898Z   user-agent: actions/github-script
+2026-11-19T11:49:43.7149147Z   result-encoding: json
+2026-11-19T11:49:43.7149344Z   retries: 0
+2026-11-19T11:49:43.7149553Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-19T11:49:43.7149806Z env:
+2026-11-19T11:49:43.7149983Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:49:43.7150232Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:49:43.7150451Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-19T11:49:43.7151149Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517227475,github.run_id=44517227475,gh-aw.engine.id=claude
+2026-11-19T11:49:43.7151829Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:49:43.7152049Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:49:43.7152259Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:49:43.7152494Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:49:43.7152754Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:49:43.7152967Z   GH_AW_AGENT_AIC: 179.1096
+2026-11-19T11:49:43.7153169Z   GH_AW_AIC: 179.1096
+2026-11-19T11:49:43.7153371Z   GH_AW_AMBIENT_CONTEXT: 2712
+2026-11-19T11:49:43.7153634Z   GH_AW_CALLER_WORKFLOW_ID: Suv4o/charge-line-data/prices
+2026-11-19T11:49:43.7153922Z   GH_AW_DETECTION_CONCLUSION: success
+2026-11-19T11:49:43.7154153Z   GH_AW_DETECTION_REASON: 
+2026-11-19T11:49:43.7154372Z   GH_AW_DETECTION_THREAT_KINDS: 
+2026-11-19T11:49:43.7154598Z   GH_AW_ENGINE_ID: claude
+2026-11-19T11:49:43.7154809Z   GH_AW_ENGINE_MODEL: claude-opus-5-5
+2026-11-19T11:49:43.7155050Z   GH_AW_OBJECT_PACK_FETCH_DEPTHS: 
+2026-11-19T11:49:43.7155281Z   GH_AW_OBJECT_PACK_MAX_BYTES: 
+2026-11-19T11:49:43.7155509Z   GH_AW_OBJECT_PACK_MAX_OBJECTS: 
+2026-11-19T11:49:43.7155746Z   GH_AW_OBJECT_PACK_TIMEOUT_MS: 
+2026-11-19T11:49:43.7155965Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:49:43.7156178Z   GH_AW_RUN_DETECTION: true
+2026-11-19T11:49:43.7156392Z   GH_AW_THREAT_DETECTION_AIC: 31.01328
+2026-11-19T11:49:43.7156628Z   GH_AW_WORKFLOW_ID: prices
+2026-11-19T11:49:43.7156884Z   GH_AW_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-19T11:49:43.7157363Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Suv4o/charge-line-data/blob/main/.github/workflows/prices.md
+2026-11-19T11:49:43.7158023Z   GITHUB_AW_OTEL_TRACE_ID: 85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:49:43.7158331Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 5f2d1c813be01303
+2026-11-19T11:49:43.7158606Z   GITHUB_AW_OTEL_JOB_START_MS: 1795088981511
+2026-11-19T11:49:43.7158852Z   GH_HOST: github.com
+2026-11-19T11:49:43.7159054Z   GH_AW_JOB_CHECK_RUN_ID: 135539800818
+2026-11-19T11:49:43.7159477Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-11-19T11:49:43.7159728Z   GH_AW_COMMENT_ID: 
+2026-11-19T11:49:43.7161737Z   GH_AW_MENTIONS_GITHUB_TOKEN: ***
+2026-11-19T11:49:43.7165442Z   GH_AW_ALLOWED_DOMAINS: *.com.au,*.gov.au,*.net.au,*.org.au,archive.ubuntu.com,azure.archive.ubuntu.com,crl.geotrust.com,crl.globalsign.com,crl.identrust.com,crl.sectigo.com,crl.thawte.com,crl.usertrust.com,crl.verisign.com,crl3.digicert.com,crl4.digicert.com,crls.ssl.com,json-schema.org,json.schemastore.org,keyserver.ubuntu.com,ocsp.digicert.com,ocsp.geotrust.com,ocsp.globalsign.com,ocsp.identrust.com,ocsp.sectigo.com,ocsp.ssl.com,ocsp.thawte.com,ocsp.usertrust.com,ocsp.verisign.com,openchargemap.io,openchargemap.org,s.symcb.com,s.symcd.com,security.ubuntu.com,thedriven.io,ts-crl.ws.symantec.com,ts-ocsp.ws.symantec.com
+2026-11-19T11:49:43.7169203Z   GITHUB_SERVER_URL: https://github.com
+2026-11-19T11:49:43.7169466Z   GITHUB_API_URL: https://api.github.com
+2026-11-19T11:49:43.7172623Z   GH_AW_SAFE_OUTPUTS_HANDLER_CONFIG: {"create_issue":{"labels":["agent","prices"],"max":3,"max_issue_artifact_size":1048576,"max_issue_artifacts":10,"title_prefix":"[prices] "},"create_pull_request":{"allowed_files":["networks.json"],"draft":false,"if_no_changes":"ignore","labels":["agent","prices"],"max":1,"max_patch_files":100,"max_patch_size":4096,"protect_top_level_dot_folders":true,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS","DESIGN.md","README.md","CONTRIBUTING.md","SECURITY.md","CODE_OF_CONDUCT.md","CLAUDE.md","AGENTS.md"],"protected_files_policy":"request-review","reviewers":["Suv4o"],"title_prefix":"[prices] "},"create_report_incomplete_issue":{},"noop":{"max":2,"report-as-issue":"false"},"report_incomplete":{},"report_missing_data":{},"report_missing_tool":{}}
+2026-11-19T11:49:43.7176100Z   GH_AW_CI_TRIGGER_TOKEN: ***
+2026-11-19T11:49:43.7176337Z   GH_AW_GITHUB_TOKEN_SOURCE: github_actions
+2026-11-19T11:49:43.7176588Z ##[endgroup]
+2026-11-19T11:49:43.8431735Z Safe Output Handler Manager starting...
+2026-11-19T11:49:43.8441041Z Loaded config from GH_AW_SAFE_OUTPUTS_HANDLER_CONFIG: {"create_issue":{"labels":["agent","prices"],"max":3,"max_issue_artifact_size":1048576,"max_issue_artifacts":10,"title_prefix":"[prices] "},"create_pull_request":{"allowed_files":["networks.json"],"draft":false,"if_no_changes":"ignore","labels":["agent","prices"],"max":1,"max_patch_files":100,"max_patch_size":4096,"protect_top_level_dot_folders":true,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS","DESIGN.md","README.md","CONTRIBUTING.md","SECURITY.md","CODE_OF_CONDUCT.md","CLAUDE.md","AGENTS.md"],"protected_files_policy":"request-review","reviewers":["Suv4o"],"title_prefix":"[prices] "},"create_report_incomplete_issue":{},"noop":{"max":2,"report-as-issue":"false"},"report_incomplete":{},"report_missing_data":{},"report_missing_tool":{}}
+2026-11-19T11:49:43.8451384Z Agent output content length: 4198
+2026-11-19T11:49:43.8457482Z Found 1 message(s) in agent output
+2026-11-19T11:49:43.8463273Z Loading and initializing safe output handlers based on configuration...
+2026-11-19T11:49:43.8506623Z Found 1 unique mentions in text
+2026-11-19T11:49:44.1405227Z Cached 1 recent collaborators for optimistic resolution
+2026-11-19T11:49:44.1405960Z Resolved 0 mentions via individual API calls
+2026-11-19T11:49:44.1406433Z Total allowed mentions: 1
+2026-11-19T11:49:44.1406854Z [OUTPUT COLLECTOR] Allowed mentions: Suv4o
+2026-11-19T11:49:44.1409784Z Default target repo: Suv4o/charge-line-data
+2026-11-19T11:49:44.1410333Z Default labels: agent, prices
+2026-11-19T11:49:44.1410764Z Title prefix: [prices] 
+2026-11-19T11:49:44.1411109Z Max count: 3
+2026-11-19T11:49:44.1411797Z ✓ Loaded and initialized handler for: create_issue
+2026-11-19T11:49:44.1549225Z Found 1 unique mentions in text
+2026-11-19T11:49:44.1549577Z Cached 1 recent collaborators for optimistic resolution
+2026-11-19T11:49:44.1550417Z Resolved 0 mentions via individual API calls
+2026-11-19T11:49:44.1550684Z Total allowed mentions: 1
+2026-11-19T11:49:44.1551052Z [OUTPUT COLLECTOR] Allowed mentions: Suv4o
+2026-11-19T11:49:44.1555456Z Base branch: (dynamic - resolved per target repo)
+2026-11-19T11:49:44.1555920Z Default target repo: Suv4o/charge-line-data
+2026-11-19T11:49:44.1556315Z Default labels: agent, prices
+2026-11-19T11:49:44.1556645Z Configured reviewers: Suv4o
+2026-11-19T11:49:44.1556966Z Title prefix: [prices] 
+2026-11-19T11:49:44.1557251Z Draft default: false
+2026-11-19T11:49:44.1557531Z If no changes: ignore
+2026-11-19T11:49:44.1557937Z Allow empty: false
+2026-11-19T11:49:44.1558219Z Auto-merge: false
+2026-11-19T11:49:44.1558490Z Signed commits: true
+2026-11-19T11:49:44.1558756Z Max count: 1
+2026-11-19T11:49:44.1559016Z Max patch size: 4096 KB
+2026-11-19T11:49:44.1559297Z Max patch files: 100
+2026-11-19T11:49:44.1559852Z ✓ Loaded and initialized handler for: create_pull_request
+2026-11-19T11:49:44.1564131Z Max count: unlimited
+2026-11-19T11:49:44.1564569Z ✓ Loaded and initialized handler for: report_missing_tool
+2026-11-19T11:49:44.1565175Z Max count: unlimited
+2026-11-19T11:49:44.1565586Z ✓ Loaded and initialized handler for: report_missing_data
+2026-11-19T11:49:44.1567298Z Max count: 2
+2026-11-19T11:49:44.1567630Z ✓ Loaded and initialized handler for: noop
+2026-11-19T11:49:44.1569943Z Max count: unlimited
+2026-11-19T11:49:44.1570245Z ✓ Loaded and initialized handler for: report_incomplete
+2026-11-19T11:49:44.1578964Z Title prefix: [incomplete]
+2026-11-19T11:49:44.1579374Z Default labels: agentic-workflows
+2026-11-19T11:49:44.1579799Z Max count: 1
+2026-11-19T11:49:44.1580375Z ✓ Loaded and initialized handler for: create_report_incomplete_issue
+2026-11-19T11:49:44.1583050Z Loaded 7 handler(s)
+2026-11-19T11:49:44.3850739Z ℹ️ Rate-limit headroom: 4946/5000 requests remaining (98%) [safe_outputs_pre_check]
+2026-11-19T11:49:44.3858634Z Collected 0 missing tool(s), 0 missing data item(s), 0 noop message(s), and 0 incomplete signal(s)
+2026-11-19T11:49:44.3859103Z Processing 1 message(s) in order of appearance...
+2026-11-19T11:49:44.3878353Z Processing message 1/1: create_pull_request
+2026-11-19T11:49:44.3890156Z Processing create_pull_request: title=Add Exploren and Wevolt; map 10 operators to existing networks, bodyLength=3946
+2026-11-19T11:49:44.3896868Z Patch file path: /tmp/gh-aw/aw-suv4o-charge-line-data-prices-new-operators-2026-11-19.patch
+2026-11-19T11:49:44.3898004Z Bundle file path: /tmp/gh-aw/aw-suv4o-charge-line-data-prices-new-operators-2026-11-19.bundle
+2026-11-19T11:49:44.3898711Z Target repository: Suv4o/charge-line-data
+2026-11-19T11:49:44.6820885Z Base branch for Suv4o/charge-line-data: main
+2026-11-19T11:49:44.6823932Z Apply transport mode: bundle (bundle file present: true)
+2026-11-19T11:49:44.6831998Z Patch size: 7 KB (maximum allowed: 4096 KB)
+2026-11-19T11:49:44.6832472Z Patch size validation passed
+2026-11-19T11:49:44.6837943Z Patch content validation passed
+2026-11-19T11:49:44.7095320Z Using branch name from JSONL with added salt: prices/new-operators-2026-11-19-da70876d3d3b5233
+2026-11-19T11:49:44.7096341Z Branch name sanitized: "prices/new-operators-2026-11-19" -> "prices/new-operators-2026-11-19-da70876d3d3b5233"
+2026-11-19T11:49:44.7209565Z Creating pull request with title: [prices] Add Exploren and Wevolt; map 10 operators to existing networks
+2026-11-19T11:49:44.7210282Z Labels: ["agent","prices"]
+2026-11-19T11:49:44.7210613Z Draft: false
+2026-11-19T11:49:44.7210887Z Body length: 4910
+2026-11-19T11:49:44.7211345Z Generated branch name: prices/new-operators-2026-11-19-da70876d3d3b5233
+2026-11-19T11:49:44.7211841Z Base branch: main
+2026-11-19T11:49:44.7212162Z Fetching base branch: main
+2026-11-19T11:49:44.7235183Z [command]/usr/bin/git rev-parse --is-shallow-repository
+2026-11-19T11:49:44.7282230Z true
+2026-11-19T11:49:44.7302619Z [command]/usr/bin/git show-ref --verify --quiet refs/remotes/origin/main
+2026-11-19T11:49:44.7347651Z [command]/usr/bin/git fetch origin main
+2026-11-19T11:49:44.8947447Z From https://github.com/Suv4o/charge-line-data
+2026-11-19T11:49:44.8947995Z  * branch            main       -> FETCH_HEAD
+2026-11-19T11:49:44.8981382Z Applying changes from bundle: /tmp/gh-aw/aw-suv4o-charge-line-data-prices-new-operators-2026-11-19.bundle
+2026-11-19T11:49:44.9123218Z Bundle prerequisite commits already present locally; no fetch required
+2026-11-19T11:49:44.9125444Z Applying bundle /tmp/gh-aw/aw-suv4o-charge-line-data-prices-new-operators-2026-11-19.bundle to refs/heads/prices/new-operators-2026-11-19-da70876d3d3b5233 using temp ref refs/bundles/create-pr-prices-new-operators-2026-11-19-da70876d3d3b5233-fd0c0bd4 from refs/heads/prices/new-operators-2026-11-19
+2026-11-19T11:49:45.0409710Z Imported local bundle to refs/bundles/create-pr-prices-new-operators-2026-11-19-da70876d3d3b5233-fd0c0bd4
+2026-11-19T11:49:45.0420608Z [command]/usr/bin/git update-ref refs/heads/prices/new-operators-2026-11-19-da70876d3d3b5233 refs/bundles/create-pr-prices-new-operators-2026-11-19-da70876d3d3b5233-fd0c0bd4
+2026-11-19T11:49:45.0458313Z Created local branch prices/new-operators-2026-11-19-da70876d3d3b5233 from bundle
+2026-11-19T11:49:45.0584172Z Checked out branch prices/new-operators-2026-11-19-da70876d3d3b5233 from bundle
+2026-11-19T11:49:45.0591496Z [command]/usr/bin/git update-ref -d refs/bundles/create-pr-prices-new-operators-2026-11-19-da70876d3d3b5233-fd0c0bd4
+2026-11-19T11:49:45.0639092Z [command]/usr/bin/git ls-remote --heads origin prices/new-operators-2026-11-19-da70876d3d3b5233
+2026-11-19T11:49:45.3744082Z pushSignedCommits: replaying 1 commit(s) via GraphQL createCommitOnBranch (branch: prices/new-operators-2026-11-19-da70876d3d3b5233, repo: Suv4o/charge-line-data)
+2026-11-19T11:49:45.3829932Z pushSignedCommits: processing commit 1/1 sha=f0bc2990f8d6b78a16910d6ba99d414c806422f7
+2026-11-19T11:49:45.5399155Z pushSignedCommits: branch prices/new-operators-2026-11-19-da70876d3d3b5233 not yet on the remote, resolving parent OID for first commit
+2026-11-19T11:49:45.5400258Z pushSignedCommits: using baseRef OID for initial branch creation: 5c02988e404353ec4ce1a012f048a04af7b8a5e0
+2026-11-19T11:49:45.5401272Z pushSignedCommits: creating remote branch prices/new-operators-2026-11-19-da70876d3d3b5233 at parent OID 5c02988e404353ec4ce1a012f048a04af7b8a5e0
+2026-11-19T11:49:46.1301903Z pushSignedCommits: remote branch prices/new-operators-2026-11-19-da70876d3d3b5233 created successfully
+2026-11-19T11:49:46.1351016Z pushSignedCommits: commit message headline: "[prices] Add Exploren and Wevolt; map 10 operators to Chargefox, Evie, Exploren, Wevolt"
+2026-11-19T11:49:46.1351597Z pushSignedCommits: file changes: 1 addition(s), 0 deletion(s)
+2026-11-19T11:49:46.1352123Z pushSignedCommits: calling createCommitOnBranch mutation (expectedHeadOid=5c02988e404353ec4ce1a012f048a04af7b8a5e0)
+2026-11-19T11:49:47.3302665Z pushSignedCommits: signed commit created: 6fb153679ffb7b7e790f6b4de8e4b6c839da0d26
+2026-11-19T11:49:47.3303146Z pushSignedCommits: all 1 commit(s) pushed as signed commits
+2026-11-19T11:49:47.3303490Z Changes pushed to branch (from bundle)
+2026-11-19T11:49:47.3311496Z [command]/usr/bin/git rev-list --count origin/main..HEAD
+2026-11-19T11:49:47.3349835Z 1
+2026-11-19T11:49:47.3353533Z 1 new commit(s) on branch relative to origin/main
+2026-11-19T11:49:48.5445560Z Created pull request #16: https://github.com/Suv4o/charge-line-data/pull/16
+2026-11-19T11:49:49.6315775Z Added labels to pull request: ["agent","prices"]
+2026-11-19T11:49:49.6316445Z Requesting reviewers for pull request #16: reviewers=["Suv4o"], team_reviewers=[]
+2026-11-19T11:49:50.4337889Z Requested reviewers for pull request #16: reviewers=["Suv4o"], team_reviewers=[]
+2026-11-19T11:49:50.4356025Z No activation comment to update (GH_AW_COMMENT_ID not set)
+2026-11-19T11:49:50.4369928Z Extra empty commit token detected - pushing empty commit to trigger CI events
+2026-11-19T11:49:50.4370696Z Cycle check: analyzing up to 60 recent commits on prices/new-operators-2026-11-19-da70876d3d3b5233
+2026-11-19T11:49:50.4419871Z Cycle check details: analyzed 2 commit(s), ignored 0 merge commit(s), counted 0 empty non-merge commit(s)
+2026-11-19T11:49:50.4420522Z Cycle check passed: 0 empty commit(s) in last 60 (limit: 30)
+2026-11-19T11:49:50.4421071Z Overriding git extraheader for CI trigger push to Suv4o/charge-line-data on branch prices/new-operators-2026-11-19-da70876d3d3b5233
+2026-11-19T11:49:50.4458682Z git_auth_helpers: read 1 existing extraheader value(s) for https://github.com
+2026-11-19T11:49:50.4459460Z git_auth_helpers: overriding http.https://github.com/.extraheader with CI trigger token
+2026-11-19T11:49:50.4789687Z ##[warning]git_auth_helpers: skipping includeIf-referenced config file outside safe temp directories: /github/runner_temp/git-credentials-86b88e8d-63a8-4af8-9bbb-c1b5772250e8.config
+2026-11-19T11:49:50.4812320Z ##[warning]git_auth_helpers: skipping includeIf-referenced config file outside safe temp directories: /github/runner_temp/git-credentials-86b88e8d-63a8-4af8-9bbb-c1b5772250e8.config
+2026-11-19T11:49:50.5042579Z git_auth_helpers: extraheader override applied
+2026-11-19T11:49:50.5043268Z Fetching and syncing with remote branch prices/new-operators-2026-11-19-da70876d3d3b5233
+2026-11-19T11:49:50.5049833Z [command]/usr/bin/git fetch https://github.com/Suv4o/charge-line-data.git prices/new-operators-2026-11-19-da70876d3d3b5233
+2026-11-19T11:49:50.7043117Z From https://github.com/Suv4o/charge-line-data
+2026-11-19T11:49:50.7043766Z  * branch            prices/new-operators-2026-11-19-da70876d3d3b5233 -> FETCH_HEAD
+2026-11-19T11:49:50.7056749Z [command]/usr/bin/git reset --hard FETCH_HEAD
+2026-11-19T11:49:50.7101031Z HEAD is now at 6fb1536 [prices] Add Exploren and Wevolt; map 10 operators to Chargefox, Evie, Exploren, Wevolt
+2026-11-19T11:49:50.7103633Z Synced local branch with remote prices/new-operators-2026-11-19-da70876d3d3b5233
+2026-11-19T11:49:50.7143551Z HEAD OID for GraphQL mutation: 6fb153679ffb7b7e790f6b4de8e4b6c839da0d26
+2026-11-19T11:49:50.7144236Z Attempting to create verified empty commit via GitHub API (createCommitOnBranch)
+2026-11-19T11:49:51.8642814Z Verified empty commit created via GitHub API (oid=6b8d1d8b6fe5b5db56b035227cec7d7588a60cd6)
+2026-11-19T11:49:51.8651857Z [command]/usr/bin/git fetch https://github.com/Suv4o/charge-line-data.git prices/new-operators-2026-11-19-da70876d3d3b5233
+2026-11-19T11:49:52.0739228Z From https://github.com/Suv4o/charge-line-data
+2026-11-19T11:49:52.0751231Z  * branch            prices/new-operators-2026-11-19-da70876d3d3b5233 -> FETCH_HEAD
+2026-11-19T11:49:52.0751627Z [command]/usr/bin/git reset --hard FETCH_HEAD
+2026-11-19T11:49:52.0795928Z HEAD is now at 6b8d1d8 ci: trigger checks
+2026-11-19T11:49:52.0799440Z Updated local branch to API-created commit 6b8d1d8b6fe5b5db56b035227cec7d7588a60cd6
+2026-11-19T11:49:52.0806845Z Extra empty commit pushed to prices/new-operators-2026-11-19-da70876d3d3b5233 successfully
+2026-11-19T11:49:52.0807473Z [command]/usr/bin/git remote remove ci-trigger
+2026-11-19T11:49:52.0834041Z error: No such remote: 'ci-trigger'
+2026-11-19T11:49:52.0837077Z Restoring previous git auth configuration
+2026-11-19T11:49:52.1060326Z ##[warning]git_auth_helpers: skipping includeIf-referenced config file outside safe temp directories: /github/runner_temp/git-credentials-86b88e8d-63a8-4af8-9bbb-c1b5772250e8.config
+2026-11-19T11:49:52.1099604Z ##[warning]git_auth_helpers: skipping includeIf-referenced config file outside safe temp directories: /github/runner_temp/git-credentials-86b88e8d-63a8-4af8-9bbb-c1b5772250e8.config
+2026-11-19T11:49:52.1170687Z git_auth_helpers: restoring 1 previous extraheader value(s) for http.https://github.com/.extraheader
+2026-11-19T11:49:52.1208088Z git_auth_helpers: extraheader restored
+2026-11-19T11:49:52.1208568Z Extra empty commit pushed - CI checks should start shortly
+2026-11-19T11:49:52.1214715Z Registered temporary ID: aw_LuQvYiAV -> Suv4o/charge-line-data#16
+2026-11-19T11:49:52.1218808Z 📝 Manifest: logged create_pull_request → https://github.com/Suv4o/charge-line-data/pull/16
+2026-11-19T11:49:52.1222079Z ✓ Message 1 (create_pull_request) completed successfully
+2026-11-19T11:49:52.1227434Z Stored 0 missing tool(s), 0 missing data item(s), 0 noop message(s), and 0 incomplete signal(s) for footer generation
+2026-11-19T11:49:52.1239672Z 📝 Safe output summaries written to step summary
+2026-11-19T11:49:52.1240435Z 
+2026-11-19T11:49:52.1240577Z === Processing Summary ===
+2026-11-19T11:49:52.1240882Z Total messages: 1
+2026-11-19T11:49:52.1241151Z Status: success
+2026-11-19T11:49:52.1241420Z Successful: 1
+2026-11-19T11:49:52.1241669Z Failed: 0
+2026-11-19T11:49:52.1241963Z Temporary IDs registered: 1
+2026-11-19T11:49:52.1242287Z Synthetic updates: 0
+2026-11-19T11:49:52.1242629Z Wrote temporary ID map to file for artifact upload
+2026-11-19T11:49:52.1251351Z Exported created_pr_number: 16
+2026-11-19T11:49:52.1254398Z Exported created_pr_url: https://github.com/Suv4o/charge-line-data/pull/16
+2026-11-19T11:49:52.1372403Z Safe Output Handler Manager completed
+2026-11-19T11:49:52.1451679Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-11-19T11:49:52.1452026Z with:
+2026-11-19T11:49:52.1452222Z   name: safe-outputs-items
+2026-11-19T11:49:52.1452756Z   path: /tmp/gh-aw/safe-output-items.jsonl
+/tmp/gh-aw/safe-output-outcomes.jsonl
+/tmp/gh-aw/temporary-id-map.json
+/tmp/gh-aw/safe-output-errors.json
+
+2026-11-19T11:49:52.1453295Z   if-no-files-found: ignore
+2026-11-19T11:49:52.1453517Z   retention-days: 0
+2026-11-19T11:49:52.1453712Z   compression-level: 6
+2026-11-19T11:49:52.1453905Z   overwrite: false
+2026-11-19T11:49:52.1454107Z   include-hidden-files: false
+2026-11-19T11:49:52.1454323Z   archive: true
+2026-11-19T11:49:52.1454502Z env:
+2026-11-19T11:49:52.1454681Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:49:52.1454909Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:49:52.1455125Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-19T11:49:52.1455835Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517227475,github.run_id=44517227475,gh-aw.engine.id=claude
+2026-11-19T11:49:52.1456509Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:49:52.1456739Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:49:52.1456955Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:49:52.1457190Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:49:52.1457459Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:49:52.1457673Z   GH_AW_AGENT_AIC: 179.1096
+2026-11-19T11:49:52.1458082Z   GH_AW_AIC: 179.1096
+2026-11-19T11:49:52.1458287Z   GH_AW_AMBIENT_CONTEXT: 2712
+2026-11-19T11:49:52.1458549Z   GH_AW_CALLER_WORKFLOW_ID: Suv4o/charge-line-data/prices
+2026-11-19T11:49:52.1458830Z   GH_AW_DETECTION_CONCLUSION: success
+2026-11-19T11:49:52.1459079Z   GH_AW_DETECTION_REASON: 
+2026-11-19T11:49:52.1459297Z   GH_AW_DETECTION_THREAT_KINDS: 
+2026-11-19T11:49:52.1459519Z   GH_AW_ENGINE_ID: claude
+2026-11-19T11:49:52.1459742Z   GH_AW_ENGINE_MODEL: claude-opus-5-5
+2026-11-19T11:49:52.1459984Z   GH_AW_OBJECT_PACK_FETCH_DEPTHS: 
+2026-11-19T11:49:52.1460219Z   GH_AW_OBJECT_PACK_MAX_BYTES: 
+2026-11-19T11:49:52.1460451Z   GH_AW_OBJECT_PACK_MAX_OBJECTS: 
+2026-11-19T11:49:52.1460676Z   GH_AW_OBJECT_PACK_TIMEOUT_MS: 
+2026-11-19T11:49:52.1460900Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:49:52.1461117Z   GH_AW_RUN_DETECTION: true
+2026-11-19T11:49:52.1461489Z   GH_AW_THREAT_DETECTION_AIC: 31.01328
+2026-11-19T11:49:52.1461722Z   GH_AW_WORKFLOW_ID: prices
+2026-11-19T11:49:52.1461997Z   GH_AW_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-19T11:49:52.1462490Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Suv4o/charge-line-data/blob/main/.github/workflows/prices.md
+2026-11-19T11:49:52.1462956Z   GITHUB_AW_OTEL_TRACE_ID: 85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:49:52.1463260Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 5f2d1c813be01303
+2026-11-19T11:49:52.1463526Z   GITHUB_AW_OTEL_JOB_START_MS: 1795088981511
+2026-11-19T11:49:52.1463770Z   GH_HOST: github.com
+2026-11-19T11:49:52.1463968Z ##[endgroup]
+2026-11-19T11:49:52.2612068Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-19T11:49:52.2614180Z The least common ancestor is /tmp/gh-aw. This will be the root directory of the artifact
+2026-11-19T11:49:52.2614868Z With the provided path, there will be 3 files uploaded
+2026-11-19T11:49:52.2618719Z Artifact name is valid!
+2026-11-19T11:49:52.2632013Z Root directory input is valid!
+2026-11-19T11:49:52.4722110Z Uploading artifact: safe-outputs-items.zip
+2026-11-19T11:49:52.4752766Z Beginning upload of artifact content to blob storage
+2026-11-19T11:49:52.5230981Z Uploaded bytes 944
+2026-11-19T11:49:52.5334402Z Finished uploading artifact content to blob storage!
+2026-11-19T11:49:52.5335225Z SHA256 digest of uploaded artifact is 7144daa7f9ceeef035f763b9fe5717e5dcecd135fa6eb070a34ca8ae4d43bd5f
+2026-11-19T11:49:52.5335902Z Finalizing artifact upload
+2026-11-19T11:49:52.9160797Z Artifact safe-outputs-items successfully finalized. Artifact ID 14527195463
+2026-11-19T11:49:52.9161958Z Artifact safe-outputs-items has been successfully uploaded! Final size is 944 bytes. Artifact ID is 14527195463
+2026-11-19T11:49:52.9164160Z Artifact download URL: https://github.com/Suv4o/charge-line-data/actions/runs/44517227475/artifacts/14527195463
+2026-11-19T11:49:52.9347290Z Post job cleanup.
+2026-11-19T11:49:53.0043217Z [command]/usr/bin/git version
+2026-11-19T11:49:53.0112155Z git version 2.56.1
+2026-11-19T11:49:53.0138568Z Copying '/home/runner/.gitconfig' to '/home/runner/work/_temp/d8b81aba-19ca-415f-ba1a-375df836db2e/.gitconfig'
+2026-11-19T11:49:53.0146307Z Temporarily overriding HOME='/home/runner/work/_temp/d8b81aba-19ca-415f-ba1a-375df836db2e' before making global git config changes
+2026-11-19T11:49:53.0147571Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T11:49:53.0151905Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/charge-line-data/charge-line-data
+2026-11-19T11:49:53.0831855Z Removing SSH command configuration
+2026-11-19T11:49:53.0838780Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T11:49:53.0874882Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T11:49:53.1114915Z Removing HTTP extra header
+2026-11-19T11:49:53.1119402Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T11:49:53.1142143Z http.https://github.com/.extraheader
+2026-11-19T11:49:53.1150466Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-19T11:49:53.1180380Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T11:49:53.1411555Z Removing includeIf entries pointing to credentials config files
+2026-11-19T11:49:53.1418797Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T11:49:53.1442583Z includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git.path
+2026-11-19T11:49:53.1443446Z includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git/worktrees/*.path
+2026-11-19T11:49:53.1444293Z includeif.gitdir:/github/workspace/.git.path
+2026-11-19T11:49:53.1444724Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-19T11:49:53.1451825Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git.path
+2026-11-19T11:49:53.1482981Z /home/runner/work/_temp/git-credentials-86b88e8d-63a8-4af8-9bbb-c1b5772250e8.config
+2026-11-19T11:49:53.1494574Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-86b88e8d\-63a8\-4af8\-9bbb\-c1b5772250e8\.config
+2026-11-19T11:49:53.1528105Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git/worktrees/*.path
+2026-11-19T11:49:53.1550770Z /home/runner/work/_temp/git-credentials-86b88e8d-63a8-4af8-9bbb-c1b5772250e8.config
+2026-11-19T11:49:53.1558576Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-86b88e8d\-63a8\-4af8\-9bbb\-c1b5772250e8\.config
+2026-11-19T11:49:53.1589627Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-19T11:49:53.1611204Z /github/runner_temp/git-credentials-86b88e8d-63a8-4af8-9bbb-c1b5772250e8.config
+2026-11-19T11:49:53.1618006Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-86b88e8d\-63a8\-4af8\-9bbb\-c1b5772250e8\.config
+2026-11-19T11:49:53.1648193Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-19T11:49:53.1668816Z /github/runner_temp/git-credentials-86b88e8d-63a8-4af8-9bbb-c1b5772250e8.config
+2026-11-19T11:49:53.1675763Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-86b88e8d\-63a8\-4af8\-9bbb\-c1b5772250e8\.config
+2026-11-19T11:49:53.1705347Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T11:49:53.1938798Z Removing credentials config '/home/runner/work/_temp/git-credentials-86b88e8d-63a8-4af8-9bbb-c1b5772250e8.config'
+2026-11-19T11:49:53.2062713Z Post job cleanup.
+2026-11-19T11:49:53.2641682Z [info] [otlp] sending conclusion span "gh-aw.safe_outputs.conclusion" to configured endpoints
+2026-11-19T11:49:53.2760062Z [info] [otlp] conclusion span export attempted
+2026-11-19T11:49:53.2760817Z Warning: leaving shared /tmp/gh-aw untouched; per-invocation ownership cannot be established.
+2026-11-19T11:49:53.2861259Z Evaluate and set job outputs
+2026-11-19T11:49:53.2867516Z Set output 'code_push_failure_count'
+2026-11-19T11:49:53.2869572Z Set output 'create_discussion_error_count'
+2026-11-19T11:49:53.2870241Z Set output 'created_pr_number'
+2026-11-19T11:49:53.2870656Z Set output 'created_pr_url'
+2026-11-19T11:49:53.2870990Z Set output 'process_safe_outputs_items_applied'
+2026-11-19T11:49:53.2871368Z Set output 'process_safe_outputs_items_cancelled'
+2026-11-19T11:49:53.2871734Z Set output 'process_safe_outputs_items_deferred'
+2026-11-19T11:49:53.2872113Z Set output 'process_safe_outputs_items_failed'
+2026-11-19T11:49:53.2872471Z Set output 'process_safe_outputs_items_skipped'
+2026-11-19T11:49:53.2872824Z Set output 'process_safe_outputs_items_succeeded'
+2026-11-19T11:49:53.2873189Z Set output 'process_safe_outputs_items_warnings'
+2026-11-19T11:49:53.2873561Z Set output 'process_safe_outputs_processed_count'
+2026-11-19T11:49:53.2873906Z Set output 'process_safe_outputs_status'
+2026-11-19T11:49:53.2874538Z Cleaning up orphan processes

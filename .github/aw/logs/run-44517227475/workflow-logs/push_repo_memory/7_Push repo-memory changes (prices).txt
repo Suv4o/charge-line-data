@@ -1,0 +1,82 @@
+﻿2026-11-19T11:50:12.0139364Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-19T11:50:12.0141348Z with:
+2026-11-19T11:50:12.0146761Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'push_repo_memory.cjs'));
+await main();
+
+2026-11-19T11:50:12.0161916Z   github-token: ***
+2026-11-19T11:50:12.0162985Z   debug: false
+2026-11-19T11:50:12.0164034Z   user-agent: actions/github-script
+2026-11-19T11:50:12.0165326Z   result-encoding: json
+2026-11-19T11:50:12.0166612Z   retries: 0
+2026-11-19T11:50:12.0168501Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-19T11:50:12.0170211Z env:
+2026-11-19T11:50:12.0171385Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:50:12.0172884Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:50:12.0174592Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-19T11:50:12.0178905Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517227475,github.run_id=44517227475,gh-aw.engine.id=claude
+2026-11-19T11:50:12.0182770Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:50:12.0183965Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:50:12.0185128Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:50:12.0186634Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:50:12.0188087Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:50:12.0189291Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:50:12.0190655Z   GITHUB_AW_OTEL_TRACE_ID: 85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:50:12.0192308Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b636f1583cc75f3b
+2026-11-19T11:50:12.0193816Z   GITHUB_AW_OTEL_JOB_START_MS: 1795089007437
+2026-11-19T11:50:12.0204329Z   GH_TOKEN: ***
+2026-11-19T11:50:12.0205367Z   GITHUB_RUN_ID: 44517227475
+2026-11-19T11:50:12.0206809Z   GITHUB_SERVER_URL: https://github.com
+2026-11-19T11:50:12.0208701Z   GH_AW_TEMPORARY_ID_MAP_FILE: /tmp/gh-aw/safe-outputs-items/temporary-id-map.json
+2026-11-19T11:50:12.0210680Z   ARTIFACT_DIR: /tmp/gh-aw/repo-memory/prices
+2026-11-19T11:50:12.0212061Z   MEMORY_ID: prices
+2026-11-19T11:50:12.0213470Z   TARGET_REPO: Suv4o/charge-line-data
+2026-11-19T11:50:12.0214766Z   BRANCH_NAME: memory/prices
+2026-11-19T11:50:12.0216136Z   MAX_FILE_SIZE: 102400
+2026-11-19T11:50:12.0217244Z   MAX_FILE_COUNT: 100
+2026-11-19T11:50:12.0219663Z   MAX_PATCH_SIZE: 51200
+2026-11-19T11:50:12.0220788Z   ALLOWED_EXTENSIONS: [".json"]
+2026-11-19T11:50:12.0222012Z   FILE_GLOB_FILTER: *.json
+2026-11-19T11:50:12.0223130Z   FORMAT_JSON: true
+2026-11-19T11:50:12.0224136Z ##[endgroup]
+2026-11-19T11:50:12.1802634Z Environment configuration:
+2026-11-19T11:50:12.1814787Z   MEMORY_ID: prices
+2026-11-19T11:50:12.1819194Z   MAX_FILE_SIZE: 102400
+2026-11-19T11:50:12.1822718Z   MAX_FILE_COUNT: 100
+2026-11-19T11:50:12.1826487Z   MAX_PATCH_SIZE: 51200
+2026-11-19T11:50:12.1830314Z   ALLOWED_EXTENSIONS: [".json"]
+2026-11-19T11:50:12.1833872Z   FILE_GLOB_FILTER: "*.json"
+2026-11-19T11:50:12.1837385Z   FILE_GLOB_FILTER length: 6
+2026-11-19T11:50:12.1839819Z   FORMAT_JSON: true
+2026-11-19T11:50:12.1844347Z   TEMPORARY_ID_MAPPINGS: 1
+2026-11-19T11:50:12.1850501Z Working in repository: /home/runner/work/charge-line-data/charge-line-data
+2026-11-19T11:50:12.1853622Z Checking out branch: memory/prices...
+2026-11-19T11:50:12.6826496Z Checked out existing branch: memory/prices
+2026-11-19T11:50:12.6858571Z Captured baseRef for signed commit push: f7e450c5ffa9807bf6f32c28e46af3bb5ff936d6
+2026-11-19T11:50:12.6861164Z Destination directory: /home/runner/work/charge-line-data/charge-line-data
+2026-11-19T11:50:12.6925130Z File glob filter enabled with 1 pattern(s):
+2026-11-19T11:50:12.6926999Z   [1] "*.json" -> regex: ^[^/]*\.json$
+2026-11-19T11:50:12.6928521Z Scanning artifact directory: /tmp/gh-aw/repo-memory/prices
+2026-11-19T11:50:12.6930123Z   [keep] operators.json (3615 bytes)
+2026-11-19T11:50:12.6931944Z Scan complete: 1 file(s) accepted, 0 file(s) filtered out
+2026-11-19T11:50:12.6933405Z Accepted files:
+2026-11-19T11:50:12.6934413Z   - operators.json (3615 bytes)
+2026-11-19T11:50:12.6935972Z Copying 1 validated file(s)...
+2026-11-19T11:50:12.6937219Z Copied: operators.json (3615 bytes)
+2026-11-19T11:50:12.6938790Z FORMAT_JSON is enabled: formatting .json files as human-readable...
+2026-11-19T11:50:12.6970688Z Changed files detected after copying: 1
+2026-11-19T11:50:12.6972277Z Changes detected, committing and pushing...
+2026-11-19T11:50:12.7070905Z Patch diff size: 4 KB (3713 bytes) (configured limit: 50 KB (51200 bytes), effective with 20% overhead: 60 KB (61440 bytes))
+2026-11-19T11:50:12.7278674Z Pushing changes to memory/prices (attempt 1/11)...
+2026-11-19T11:50:13.1698191Z pushSignedCommits: replaying 1 commit(s) via GraphQL createCommitOnBranch (branch: memory/prices, repo: Suv4o/charge-line-data)
+2026-11-19T11:50:13.1804588Z pushSignedCommits: processing commit 1/1 sha=3aa3db4f5892c6cd311afec12ebcb93f16d874ff
+2026-11-19T11:50:13.5349421Z pushSignedCommits: using remote HEAD OID from ls-remote: f7e450c5ffa9807bf6f32c28e46af3bb5ff936d6
+2026-11-19T11:50:13.5428291Z pushSignedCommits: commit message headline: "Update repo memory from workflow run 44517227475"
+2026-11-19T11:50:13.5431130Z pushSignedCommits: file changes: 1 addition(s), 0 deletion(s)
+2026-11-19T11:50:13.5433922Z pushSignedCommits: calling createCommitOnBranch mutation (expectedHeadOid=f7e450c5ffa9807bf6f32c28e46af3bb5ff936d6)
+2026-11-19T11:50:14.7417412Z pushSignedCommits: signed commit created: 4cf217d50f7e9b6c12f5398014606096fd35e7b5
+2026-11-19T11:50:14.7427014Z pushSignedCommits: all 1 commit(s) pushed as signed commits
+2026-11-19T11:50:14.7431792Z Successfully pushed changes to memory/prices branch

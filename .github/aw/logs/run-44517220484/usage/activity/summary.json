@@ -1,0 +1,673 @@
+{
+  "schema": "usage-activity-summary/v1",
+  "memory_saves": [
+    {
+      "memoryId": "catalogue",
+      "jobResult": "success",
+      "outcome": "success",
+      "status": "saved",
+      "branch": "memory/catalogue",
+      "commit": "9e4d68a0c07ac626e6778af20feaadcb133e2afa"
+    }
+  ],
+  "firewall": {
+    "total_requests": 214,
+    "allowed_requests": 214,
+    "blocked_requests": 0,
+    "allowed_domains": [
+      "api.anthropic.com:443",
+      "api.github.com:443",
+      "bydautomotive.com.au",
+      "bydautomotive.com.au:443",
+      "content-autofill.googleapis.com:443",
+      "content.powerapps.com:443",
+      "mg.com.au",
+      "mg.com.au:443",
+      "mgmotor.com.au",
+      "mgmotor.com.au:443",
+      "run-actions-3-azure-eastus.actions.githubusercontent.com:443",
+      "shop.xpeng.com.au",
+      "shop.xpeng.com.au:443",
+      "thedriven.io",
+      "thedriven.io:443",
+      "update.googleapis.com:443",
+      "us-mobile.events.data.microsoft.com:443",
+      "www.abarth.com.au",
+      "www.abarth.com.au:443",
+      "www.alfaromeo.com.au",
+      "www.alfaromeo.com.au:443",
+      "www.audi.com.au",
+      "www.audi.com.au:443",
+      "www.bmw.com.au",
+      "www.bmw.com.au:443",
+      "www.byd.com",
+      "www.byd.com:443",
+      "www.bydautomotive.com.au",
+      "www.bydautomotive.com.au:443",
+      "www.cadillacanz.com",
+      "www.cadillacanz.com:443",
+      "www.chery.com.au",
+      "www.chery.com.au:443",
+      "www.cheryaustralia.com.au",
+      "www.cheryaustralia.com.au:443",
+      "www.cupra.com.au",
+      "www.cupra.com.au:443",
+      "www.cupra.com:443",
+      "www.deepal.com.au",
+      "www.deepal.com.au:443",
+      "www.denza.com.au",
+      "www.denza.com.au:443",
+      "www.fiat.com.au",
+      "www.fiat.com.au:443",
+      "www.ford.com.au",
+      "www.ford.com.au:443",
+      "www.gacmotor.com.au",
+      "www.gacmotor.com.au:443",
+      "www.goauto.com.au",
+      "www.goauto.com.au:443",
+      "www.googletagmanager.com:443",
+      "www.gstatic.com:443",
+      "www.leapmotor.com.au",
+      "www.leapmotor.com.au:443",
+      "www.leapmotor.net.au",
+      "www.leapmotor.net.au:443",
+      "www.leapmotor.net:443",
+      "www.mg.com.au",
+      "www.mg.com.au:443",
+      "www.mgmotor.com.au",
+      "www.mgmotor.com.au:443",
+      "www.mitsubishi-motors.com.au",
+      "www.mitsubishi-motors.com.au:443",
+      "www.rover.infrastructure.gov.au",
+      "www.rover.infrastructure.gov.au:443",
+      "www.xpeng.com",
+      "www.xpeng.com.au",
+      "www.xpeng.com.au:443",
+      "www.xpeng.com:443"
+    ],
+    "blocked_domains": [],
+    "requests_by_domain": {
+      "run-actions-3-azure-eastus.actions.githubusercontent.com:443": {
+        "allowed": 3,
+        "blocked": 0
+      },
+      "api.github.com:443": {
+        "allowed": 14,
+        "blocked": 0
+      },
+      "api.anthropic.com:443": {
+        "allowed": 86,
+        "blocked": 0
+      },
+      "www.deepal.com.au:443": {
+        "allowed": 4,
+        "blocked": 0
+      },
+      "www.deepal.com.au": {
+        "allowed": 4,
+        "blocked": 0
+      },
+      "www.mitsubishi-motors.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.mitsubishi-motors.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "thedriven.io:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "thedriven.io": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.goauto.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.goauto.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.xpeng.com:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.xpeng.com": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.leapmotor.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.leapmotor.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.mg.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.mg.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "mg.com.au:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "mg.com.au": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.mgmotor.com.au:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.mgmotor.com.au": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.xpeng.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.xpeng.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "mgmotor.com.au:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.leapmotor.net.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.leapmotor.net.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "mgmotor.com.au": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "shop.xpeng.com.au:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "shop.xpeng.com.au": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.leapmotor.net:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cheryaustralia.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cheryaustralia.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.chery.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.chery.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.abarth.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.abarth.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.alfaromeo.com.au:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.alfaromeo.com.au": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.audi.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.audi.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.bmw.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.bmw.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cupra.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cupra.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.byd.com:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.byd.com": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.ford.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.ford.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cupra.com:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.bydautomotive.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.bydautomotive.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "bydautomotive.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.fiat.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.fiat.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "bydautomotive.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cadillacanz.com:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cadillacanz.com": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.denza.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.denza.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.gacmotor.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.gacmotor.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.gstatic.com:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.rover.infrastructure.gov.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "content.powerapps.com:443": {
+        "allowed": 19,
+        "blocked": 0
+      },
+      "www.googletagmanager.com:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "content-autofill.googleapis.com:443": {
+        "allowed": 6,
+        "blocked": 0
+      },
+      "us-mobile.events.data.microsoft.com:443": {
+        "allowed": 3,
+        "blocked": 0
+      },
+      "www.rover.infrastructure.gov.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "update.googleapis.com:443": {
+        "allowed": 1,
+        "blocked": 0
+      }
+    }
+  },
+  "gateway": {
+    "total_calls": 4,
+    "failed_calls": 0,
+    "total_input_size": 7694,
+    "total_output_size": 0,
+    "avg_input_size": 1924,
+    "avg_output_size": 0,
+    "max_input_size": 5310,
+    "max_output_size": 0,
+    "total_duration_ms": 0,
+    "max_duration_ms": 0,
+    "tool_calls": [
+      {
+        "tool_call_id": "call-1",
+        "timestamp": "2026-11-19T11:52:43.380Z",
+        "server_name": "safeoutputs",
+        "tool_name": "push_repo_memory",
+        "request_size": 25,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-2",
+        "timestamp": "2026-11-19T11:53:07.036Z",
+        "server_name": "safeoutputs",
+        "tool_name": "create_pull_request",
+        "request_size": 5310,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-3",
+        "timestamp": "2026-11-19T11:53:15.156Z",
+        "server_name": "safeoutputs",
+        "tool_name": "create_issue",
+        "request_size": 1790,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-4",
+        "timestamp": "2026-11-19T11:53:18.696Z",
+        "server_name": "safeoutputs",
+        "tool_name": "noop",
+        "request_size": 569,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      }
+    ],
+    "servers": [
+      {
+        "server_name": "safeoutputs",
+        "request_count": 4,
+        "tool_call_count": 4,
+        "failed_calls": 0,
+        "total_input_size": 7694,
+        "total_output_size": 0,
+        "max_input_size": 5310,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "avg_input_size": 1924,
+        "avg_output_size": 0,
+        "avg_duration_ms": 0
+      }
+    ],
+    "tools": [
+      {
+        "server_name": "safeoutputs",
+        "tool_name": "create_issue",
+        "call_count": 1,
+        "failed_calls": 0,
+        "total_input_size": 1790,
+        "total_output_size": 0,
+        "max_input_size": 1790,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "max_duration_ms": 0,
+        "avg_input_size": 1790,
+        "avg_output_size": 0,
+        "avg_duration_ms": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "tool_name": "create_pull_request",
+        "call_count": 1,
+        "failed_calls": 0,
+        "total_input_size": 5310,
+        "total_output_size": 0,
+        "max_input_size": 5310,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "max_duration_ms": 0,
+        "avg_input_size": 5310,
+        "avg_output_size": 0,
+        "avg_duration_ms": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "tool_name": "noop",
+        "call_count": 1,
+        "failed_calls": 0,
+        "total_input_size": 569,
+        "total_output_size": 0,
+        "max_input_size": 569,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "max_duration_ms": 0,
+        "avg_input_size": 569,
+        "avg_output_size": 0,
+        "avg_duration_ms": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "tool_name": "push_repo_memory",
+        "call_count": 1,
+        "failed_calls": 0,
+        "total_input_size": 25,
+        "total_output_size": 0,
+        "max_input_size": 25,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "max_duration_ms": 0,
+        "avg_input_size": 25,
+        "avg_output_size": 0,
+        "avg_duration_ms": 0
+      }
+    ]
+  },
+  "safe_outputs": {
+    "total_items": 2,
+    "items_by_type": {
+      "create_pull_request": 1,
+      "create_issue": 1
+    },
+    "items": [
+      {
+        "type": "create_pull_request",
+        "status": "success",
+        "url": "https://github.com/Suv4o/charge-line-data/pull/17",
+        "number": 17,
+        "repo": "Suv4o/charge-line-data",
+        "provider": "github",
+        "id": 5394395885,
+        "target": {
+          "provider": "github",
+          "repository": "Suv4o/charge-line-data",
+          "number": 17
+        },
+        "temporaryId": "aw_59UqApai",
+        "metadata": {
+          "node_id": "PR_kwDOVxmBF88AAAABQYfy7Q"
+        },
+        "timestamp": "2026-11-19T11:55:41.130Z"
+      },
+      {
+        "type": "create_issue",
+        "status": "success",
+        "url": "https://github.com/Suv4o/charge-line-data/issues/18",
+        "number": 18,
+        "repo": "Suv4o/charge-line-data",
+        "provider": "github",
+        "id": 6489003512,
+        "target": {
+          "provider": "github",
+          "repository": "Suv4o/charge-line-data",
+          "number": 18
+        },
+        "temporaryId": "aw_tjX7Ebw0",
+        "metadata": {
+          "node_id": "I_kwDOVxmBF88AAAABgsZV-A"
+        },
+        "timestamp": "2026-11-19T11:55:41.519Z"
+      }
+    ]
+  },
+  "ledger": {
+    "transactions_added": 0
+  },
+  "working_set": {
+    "measurement_state": "measured",
+    "cumulative_input_tokens": 245137,
+    "peak_input_tokens": 21113,
+    "rebuild_excess_tokens": 224024,
+    "invocations": 75,
+    "rebuild_factor": 11.610713778240894
+  },
+  "friction": {
+    "measurement_state": "measured",
+    "canonical_unit": "aic",
+    "sources": [
+      "agent_token_usage",
+      "firewall",
+      "mcp_gateway"
+    ],
+    "total_events": 0,
+    "total_occurrences": 0,
+    "counted_occurrences": 0,
+    "suppressed_occurrences": 0,
+    "linked_invocations": 0,
+    "unattributed_occurrences": 0,
+    "cost": {
+      "aic": 0,
+      "tokens": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0,
+        "reasoning": 0,
+        "total": 0
+      },
+      "turns": 0,
+      "tool_calls": 0,
+      "latency_ms": 0
+    },
+    "total_run_aic": 317.19688,
+    "friction_ratio": 0,
+    "dimension_states": {
+      "aic": "measured",
+      "tokens": "measured",
+      "turns": "measured",
+      "tool_calls": "measured",
+      "latency_ms": "measured"
+    },
+    "uncertainty": {
+      "aic": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "sample_size": 75,
+        "basis": "AI credits of errored invocations (measured), of linked follow-up invocations (causal), or the mean healthy-invocation cost (statistical)",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0
+      },
+      "tokens": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "sample_size": 75,
+        "basis": "token classes of the attributed invocations",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0
+      },
+      "turns": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "sample_size": 0,
+        "basis": "one additional turn per errored or retried model invocation",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0
+      },
+      "tool_calls": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "sample_size": 0,
+        "basis": "counted friction occurrences that consumed a tool call",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0
+      },
+      "latency_ms": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "sample_size": 0,
+        "basis": "wall-clock duration recorded on the failing tool call or invocation",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0
+      }
+    },
+    "drivers": [],
+    "groups": [],
+    "events": [],
+    "unmeasured_drivers": [
+      {
+        "driver": "agent_api_error",
+        "reason": "no_occurrences"
+      },
+      {
+        "driver": "firewall_block",
+        "reason": "no_occurrences"
+      },
+      {
+        "driver": "integrity_filter",
+        "reason": "no_occurrences"
+      },
+      {
+        "driver": "mcp_tool_error",
+        "reason": "no_occurrences"
+      },
+      {
+        "driver": "session_tool_failure",
+        "reason": "source_unavailable:agent_session"
+      }
+    ]
+  }
+}

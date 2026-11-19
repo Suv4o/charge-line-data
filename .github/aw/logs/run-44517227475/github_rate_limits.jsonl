@@ -1,0 +1,5 @@
+{"timestamp":"2026-11-19T11:42:56.370Z","source":"response_headers","operation":"repos.getContent","credentialSource":"unknown","resource":"core","limit":5000,"remaining":4964,"used":36,"reset":"2026-11-19T12:26:47.000Z"}
+{"timestamp":"2026-11-19T11:42:59.978Z","source":"response_headers","operation":"repos.getContent","credentialSource":"unknown","resource":"core","limit":5000,"remaining":4963,"used":37,"reset":"2026-11-19T12:26:47.000Z"}
+{"timestamp":"2026-11-19T11:43:00.207Z","source":"response_headers","operation":"repos.getContent","credentialSource":"unknown","resource":"core","limit":5000,"remaining":4962,"used":38,"reset":"2026-11-19T12:26:47.000Z"}
+{"timestamp":"2026-11-19T11:43:00.379Z","source":"response_headers","operation":"repos.getContent","credentialSource":"unknown","resource":"core","limit":5000,"remaining":4961,"used":39,"reset":"2026-11-19T12:26:47.000Z"}
+{"timestamp":"2026-11-19T11:43:00.539Z","source":"response_headers","operation":"repos.getContent","credentialSource":"unknown","resource":"core","limit":5000,"remaining":4960,"used":40,"reset":"2026-11-19T12:26:47.000Z"}

@@ -1,0 +1,54 @@
+﻿2026-11-19T11:55:13.3911615Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-19T11:55:13.3912422Z with:
+2026-11-19T11:55:13.3914412Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'parse_token_usage.cjs'));
+await main();
+
+2026-11-19T11:55:13.3920783Z   github-token: ***
+2026-11-19T11:55:13.3921157Z   debug: false
+2026-11-19T11:55:13.3921528Z   user-agent: actions/github-script
+2026-11-19T11:55:13.3921980Z   result-encoding: json
+2026-11-19T11:55:13.3922540Z   retries: 0
+2026-11-19T11:55:13.3922932Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-19T11:55:13.3923460Z env:
+2026-11-19T11:55:13.3923681Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:55:13.3923969Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:55:13.3924234Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-19T11:55:13.3925620Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517220484,github.run_id=44517220484,gh-aw.engine.id=claude
+2026-11-19T11:55:13.3927047Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:55:13.3927482Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:55:13.3927761Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:55:13.3928049Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:55:13.3928354Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:55:13.3928773Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:55:13.3929271Z   GITHUB_AW_OTEL_TRACE_ID: 19af99b8ca6a314c08bd9b7019d79d19
+2026-11-19T11:55:13.3929852Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: de96b3e46567a2b0
+2026-11-19T11:55:13.3930331Z   GITHUB_AW_OTEL_JOB_START_MS: 1795089237765
+2026-11-19T11:55:13.3930679Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-11-19T11:55:13.3931030Z   GH_AW_RUNTIME_TMP_DIR: /tmp/gh-aw-runtime-HlJhoR
+2026-11-19T11:55:13.3931370Z   GH_AW_RUNTIME_TMP_ID: 2049:8554983:1001
+2026-11-19T11:55:13.3931661Z   TMPDIR: /tmp/gh-aw-runtime-HlJhoR
+2026-11-19T11:55:13.3932444Z   AWF_TOKEN_USAGE_LOG: /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-19T11:55:13.3933026Z   GH_AW_TOKEN_USAGE_SUMMARY_TITLE: Threat Detection Token Usage
+2026-11-19T11:55:13.3933380Z   GH_AW_PHASE: detection
+2026-11-19T11:55:13.3933723Z   GH_AW_AGENT_USAGE_PATH: /tmp/gh-aw/threat-detection/detection_usage.json
+2026-11-19T11:55:13.3934236Z   GH_AW_AGENT_USAGE_JSONL_PATH: /tmp/gh-aw/threat-detection/detection_usage.jsonl
+2026-11-19T11:55:13.3934648Z   GH_AW_WRITE_EMPTY_USAGE: true
+2026-11-19T11:55:13.3934901Z ##[endgroup]
+2026-11-19T11:55:13.5519953Z Parsing token usage from 1 file(s): /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl (1558 bytes)
+2026-11-19T11:55:13.5926224Z Threat Detection Token Usage
+2026-11-19T11:55:13.5926712Z 
+2026-11-19T11:55:13.5927632Z # | Alias | Input | Output | Cache Read | Cache Write | ΔAI Credits | AI Credits | Duration 
+2026-11-19T11:55:13.5928266Z 
+2026-11-19T11:55:13.5928609Z  1 | opus55 | 2 | 164 | 0 | 57,409 | 29.0333 | 29.0333 | 2.1s 
+2026-11-19T11:55:13.5929810Z  2 | opus55 | 2 | 145 | 57,409 | 11,302 | 7.08998 | 36.12328 | 2.1s 
+2026-11-19T11:55:13.5930590Z  Total |  | 4 | 309 | 57,409 | 68,711 |  | 36.12328 | 4.2s 
+2026-11-19T11:55:13.5930998Z 
+2026-11-19T11:55:13.5932828Z Legend: `Alias` shows the model shorthand used in the table. `ΔAI Credits` is the per-request cost, and `AI Credits` is the running total mirrored from AWF fields for reporting.
+2026-11-19T11:55:13.5934473Z Token usage summary appended to step summary
+2026-11-19T11:55:13.5951421Z Primary model: claude-opus-5-5
+2026-11-19T11:55:13.5952566Z AI Credits: 36.12328
+2026-11-19T11:55:13.5954034Z Ambient context: 5743

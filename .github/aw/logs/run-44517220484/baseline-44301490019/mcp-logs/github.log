@@ -1,0 +1,38 @@
+[2026-11-18T12:14:01.825Z] [INFO] [difc] Guard policy: {"allow-only":{"min-integrity":"approved","repos":"public"}}
+[2026-11-18T12:14:02.040Z] [INFO] [difc] Loaded discovered WASM guard from file: 00-github-guard.wasm
+[2026-11-18T12:14:02.704Z] [WARN] [difc] FORCED REPOS=PUBLIC: workflow repo Suv4o/charge-line-data is public — overriding allow-only scope to 'public' to prevent private data reads
+[2026-11-18T12:14:02.705Z] [INFO] [difc] Registered guard 'github'
+[2026-11-18T12:14:02.710Z] [DEBUG] [backend] GetOrLaunch called for server: github
+[2026-11-18T12:14:02.715Z] [INFO] [backend] Launching MCP backend server: server=github, command=docker, args=[run --rm -i -e NO_COLOR=... -e TERM=... -e PYTHONUNBUFFERED=... -e GITHUB_FEATURES=fiel... -e GITHUB_HOST=http... -e GITHUB_PERSONAL_ACCESS_TOKEN=ghs_... -e GITHUB_READ_ONLY=... -e GITHUB_TOOLSETS=cont... ghcr.io/github/github-mcp-server:v2.1.0]
+[2026-11-18T12:14:05.065Z] [INFO] [backend] [stderr] time=2026-11-18T12:14:05.014Z level=INFO msg="starting server" version=v2.1.0 host=https://github.com readOnly=true lockdownEnabled=false
+[2026-11-18T12:14:05.198Z] [INFO] [backend] [stderr] GitHub MCP Server running on stdio
+[2026-11-18T12:14:05.202Z] [INFO] [backend] [stderr] time=2026-11-18T12:14:05.202Z level=INFO msg="server run start"
+[2026-11-18T12:14:05.203Z] [INFO] [backend] [stderr] time=2026-11-18T12:14:05.202Z level=INFO msg="server connecting"
+[2026-11-18T12:14:05.206Z] [INFO] [backend] [stderr] time=2026-11-18T12:14:05.206Z level=INFO msg="server session connected" session_id=""
+[2026-11-18T12:14:05.212Z] [INFO] [backend] Successfully launched MCP backend server: server=github
+[2026-11-18T12:14:05.213Z] [INFO] [backend] Backend server info: name=github-mcp-server, version=v2.1.0
+[2026-11-18T12:14:05.322Z] [INFO] [backend] Successfully registered tools from github (took 2.611920207s)
+[2026-11-18T12:15:15.413Z] [INFO] [difc] Initializing guard session state: session=agent:0c410ce12406, policy_source=server
+[2026-11-18T12:15:15.414Z] [INFO] [difc] Calling label_agent: session=agent:0c410ce12406, guard=github, policy={"allow-only":{"repos":"public","min-integrity":"approved"}}
+[2026-11-18T12:15:15.430Z] [INFO] [difc] label_agent response: session=agent:0c410ce12406, guard=github, response={"agent":{"secrecy":[],"integrity":["none:public","unapproved:public","approved:public"]},"difc_mode":"filter","normalized_policy":{"min-integrity":"approved","scope_kind":"Public"}}
+[2026-11-18T12:15:15.432Z] [INFO] [difc] Guard policy initialized: session=agent:0c410ce12406, guard_policy.source=server, difc_mode=filter, guard_policy.normalized=map[min-integrity:approved scope_kind:public]
+[2026-11-18T12:15:15.438Z] [DEBUG] [backend] GetOrLaunchForSession called: server=github, session=agent:0c410ce12406
+[2026-11-18T12:15:15.439Z] [INFO] [backend] Launching MCP backend server for session 'agent:0c410ce12406': server=github for session 'agent:0c410ce12406', command=docker, args=[run --rm -i -e NO_COLOR=... -e TERM=... -e PYTHONUNBUFFERED=... -e GITHUB_FEATURES=fiel... -e GITHUB_HOST=http... -e GITHUB_PERSONAL_ACCESS_TOKEN=ghs_... -e GITHUB_READ_ONLY=... -e GITHUB_TOOLSETS=cont... ghcr.io/github/github-mcp-server:v2.1.0]
+[2026-11-18T12:15:15.692Z] [INFO] [backend] [stderr] time=2026-11-18T12:15:15.691Z level=INFO msg="starting server" version=v2.1.0 host=https://github.com readOnly=true lockdownEnabled=false
+[2026-11-18T12:15:15.747Z] [INFO] [backend] [stderr] GitHub MCP Server running on stdio
+[2026-11-18T12:15:15.748Z] [INFO] [backend] [stderr] time=2026-11-18T12:15:15.746Z level=INFO msg="server run start"
+[2026-11-18T12:15:15.749Z] [INFO] [backend] [stderr] time=2026-11-18T12:15:15.746Z level=INFO msg="server connecting"
+[2026-11-18T12:15:15.750Z] [INFO] [backend] Successfully launched MCP backend server for session 'agent:0c410ce12406': server=github for session 'agent:0c410ce12406'
+[2026-11-18T12:15:15.750Z] [INFO] [backend] [stderr] time=2026-11-18T12:15:15.746Z level=INFO msg="server session connected" session_id=""
+[2026-11-18T12:15:16.345Z] [DEBUG] [backend] GetOrLaunchForSession called: server=github, session=agent:0c410ce12406
+[2026-11-18T12:15:16.345Z] [DEBUG] [backend] Reusing session connection: server=github, session=agent:0c410ce12406
+[2026-11-18T12:15:16.723Z] [DEBUG] [backend] GetOrLaunchForSession called: server=github, session=agent:0c410ce12406
+[2026-11-18T12:15:16.724Z] [DEBUG] [backend] Reusing session connection: server=github, session=agent:0c410ce12406
+[2026-11-18T12:15:16.957Z] [DEBUG] [backend] GetOrLaunchForSession called: server=github, session=agent:0c410ce12406
+[2026-11-18T12:15:16.958Z] [DEBUG] [backend] Reusing session connection: server=github, session=agent:0c410ce12406
+[2026-11-18T12:15:17.225Z] [DEBUG] [backend] GetOrLaunchForSession called: server=github, session=agent:0c410ce12406
+[2026-11-18T12:15:17.226Z] [DEBUG] [backend] Reusing session connection: server=github, session=agent:0c410ce12406
+[2026-11-18T12:15:17.502Z] [DEBUG] [backend] GetOrLaunchForSession called: server=github, session=agent:0c410ce12406
+[2026-11-18T12:15:17.503Z] [DEBUG] [backend] Reusing session connection: server=github, session=agent:0c410ce12406
+[2026-11-18T12:15:17.766Z] [DEBUG] [backend] GetOrLaunchForSession called: server=github, session=agent:0c410ce12406
+[2026-11-18T12:15:17.766Z] [DEBUG] [backend] Reusing session connection: server=github, session=agent:0c410ce12406

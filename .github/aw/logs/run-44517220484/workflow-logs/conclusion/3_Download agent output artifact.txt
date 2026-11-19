@@ -1,0 +1,45 @@
+﻿2026-11-19T11:56:21.0688867Z ##[group]Run actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
+2026-11-19T11:56:21.0691272Z with:
+2026-11-19T11:56:21.0692215Z   pattern: {agent,agent-output-fallback}
+2026-11-19T11:56:21.0693456Z   merge-multiple: true
+2026-11-19T11:56:21.0695191Z   path: /tmp/gh-aw/
+2026-11-19T11:56:21.0696217Z   repository: Suv4o/charge-line-data
+2026-11-19T11:56:21.0697376Z   run-id: 44517220484
+2026-11-19T11:56:21.0698338Z   skip-decompress: false
+2026-11-19T11:56:21.0699374Z   digest-mismatch: error
+2026-11-19T11:56:21.0701640Z env:
+2026-11-19T11:56:21.0702772Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:56:21.0704301Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:56:21.0706048Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-19T11:56:21.0711435Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517220484,github.run_id=44517220484,gh-aw.engine.id=claude
+2026-11-19T11:56:21.0718964Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:56:21.0720683Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:56:21.0722861Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:56:21.0726579Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:56:21.0727951Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:56:21.0732502Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","push_repo_memory":"push_repo_memory","safe_outputs":"safe_outputs"}
+2026-11-19T11:56:21.0762251Z   GH_AW_JOB_RESULTS: {"activation":{"result":"success"},"agent":{"result":"success"},"detection":{"result":"success"},"push_repo_memory":{"result":"success"},"safe_outputs":{"result":"success"}}
+2026-11-19T11:56:21.0772232Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"push_repo_memory":true,"safe_outputs":true}
+2026-11-19T11:56:21.0779700Z   GH_AW_MEMORY_SAVE_RESULTS: {"catalogue":{"branch":"memory/catalogue","commit":"9e4d68a0c07ac626e6778af20feaadcb133e2afa","jobResult":"success","outcome":"success","status":"saved"}}
+2026-11-19T11:56:21.0786833Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:56:21.0788549Z   GITHUB_AW_OTEL_TRACE_ID: 19af99b8ca6a314c08bd9b7019d79d19
+2026-11-19T11:56:21.0791446Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: e9f14cf3a8c9290f
+2026-11-19T11:56:21.0793385Z   GITHUB_AW_OTEL_JOB_START_MS: 1795089379486
+2026-11-19T11:56:21.0794754Z ##[endgroup]
+2026-11-19T11:56:21.8648607Z Found 7 artifact(s)
+2026-11-19T11:56:21.8654519Z Filtering artifacts by pattern '{agent,agent-output-fallback}'
+2026-11-19T11:56:21.8758393Z Preparing to download the following artifacts:
+2026-11-19T11:56:21.8764600Z - agent-output-fallback (ID: 14526533009, Size: 14134, Expected Digest: sha256:7123aaca8b9395b8761abf68ab1e48f3a01fd569b69c2fb2a4d8daeeede18cb9)
+2026-11-19T11:56:21.8771446Z - agent (ID: 14526338154, Size: 753462, Expected Digest: sha256:cf8adef2e85a2b83f5b71e7a1469cdb0bad4a68bf93e39f15e96796f8c12e67c)
+2026-11-19T11:56:22.3181515Z (node:2348) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-11-19T11:56:22.3208784Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-19T11:56:22.3421052Z Redirecting to blob download url: https://productionresultssa5.blob.core.windows.net/actions-results/c16ebdc8-5f8a-4e8f-aea6-cbdd9271f2cc/workflow-job-run-ea2bfdaf-bd56-5a6f-acfe-4d897b5e8b34/artifacts/d4f0bc5a29de06b510f9aa428f1eedba926012b591fef7a518e776a7c9bd1824.zip
+2026-11-19T11:56:22.3427067Z Starting download of artifact to: /tmp/gh-aw
+2026-11-19T11:56:22.3440277Z Redirecting to blob download url: https://productionresultssa5.blob.core.windows.net/actions-results/c16ebdc8-5f8a-4e8f-aea6-cbdd9271f2cc/workflow-job-run-ea2bfdaf-bd56-5a6f-acfe-4d897b5e8b34/artifacts/daa0da78a4f899948f184de1c2267d4cff63de5d280692a88333f56508605a86.zip
+2026-11-19T11:56:22.3446081Z Starting download of artifact to: /tmp/gh-aw
+2026-11-19T11:56:22.5875879Z SHA256 digest of downloaded artifact is 7123aaca8b9395b8761abf68ab1e48f3a01fd569b69c2fb2a4d8daeeede18cb9
+2026-11-19T11:56:22.5878550Z Artifact download completed successfully.
+2026-11-19T11:56:22.5882872Z SHA256 digest of downloaded artifact is cf8adef2e85a2b83f5b71e7a1469cdb0bad4a68bf93e39f15e96796f8c12e67c
+2026-11-19T11:56:22.5885339Z Artifact download completed successfully.
+2026-11-19T11:56:22.5887194Z Total of 2 artifact(s) downloaded
+2026-11-19T11:56:22.5918769Z Download artifact has finished successfully

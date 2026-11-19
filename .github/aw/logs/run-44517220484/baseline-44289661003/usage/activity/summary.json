@@ -1,0 +1,303 @@
+{
+  "schema": "usage-activity-summary/v1",
+  "memory_saves": [
+    {
+      "memoryId": "catalogue",
+      "jobResult": "success",
+      "outcome": "success",
+      "status": "saved",
+      "branch": "memory/catalogue",
+      "commit": "f71b4b2f4299a76cf0b7cbd0971ba338a2cb581b"
+    }
+  ],
+  "firewall": {
+    "total_requests": 73,
+    "allowed_requests": 73,
+    "blocked_requests": 0,
+    "allowed_domains": [
+      "api.anthropic.com:443",
+      "api.github.com:443",
+      "mgmotor.com.au",
+      "mgmotor.com.au:443",
+      "run-actions-3-azure-eastus.actions.githubusercontent.com:443",
+      "thedriven.io",
+      "thedriven.io:443",
+      "www.deepal.com.au",
+      "www.deepal.com.au:443",
+      "www.leapmotor.com.au",
+      "www.leapmotor.com.au:443",
+      "www.leapmotor.net:443",
+      "www.mgmotor.com.au",
+      "www.mgmotor.com.au:443",
+      "www.xpengmotors.com:443"
+    ],
+    "blocked_domains": [],
+    "requests_by_domain": {
+      "run-actions-3-azure-eastus.actions.githubusercontent.com:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "api.github.com:443": {
+        "allowed": 8,
+        "blocked": 0
+      },
+      "api.anthropic.com:443": {
+        "allowed": 43,
+        "blocked": 0
+      },
+      "www.mgmotor.com.au:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.mgmotor.com.au": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "mgmotor.com.au:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "mgmotor.com.au": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.deepal.com.au:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.leapmotor.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.leapmotor.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.deepal.com.au": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.xpengmotors.com:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.leapmotor.net:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "thedriven.io:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "thedriven.io": {
+        "allowed": 2,
+        "blocked": 0
+      }
+    }
+  },
+  "gateway": {
+    "total_calls": 2,
+    "failed_calls": 0,
+    "total_input_size": 2160,
+    "total_output_size": 0,
+    "avg_input_size": 1080,
+    "avg_output_size": 0,
+    "max_input_size": 2135,
+    "max_output_size": 0,
+    "total_duration_ms": 0,
+    "max_duration_ms": 0,
+    "tool_calls": [
+      {
+        "tool_call_id": "call-1",
+        "timestamp": "2026-11-18T10:59:04.986Z",
+        "server_name": "safeoutputs",
+        "tool_name": "create_pull_request",
+        "request_size": 2135,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-2",
+        "timestamp": "2026-11-18T10:59:05.872Z",
+        "server_name": "safeoutputs",
+        "tool_name": "push_repo_memory",
+        "request_size": 25,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      }
+    ],
+    "servers": [
+      {
+        "server_name": "safeoutputs",
+        "request_count": 2,
+        "tool_call_count": 2,
+        "failed_calls": 0,
+        "total_input_size": 2160,
+        "total_output_size": 0,
+        "max_input_size": 2135,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "avg_input_size": 1080,
+        "avg_output_size": 0,
+        "avg_duration_ms": 0
+      }
+    ],
+    "tools": [
+      {
+        "server_name": "safeoutputs",
+        "tool_name": "create_pull_request",
+        "call_count": 1,
+        "failed_calls": 0,
+        "total_input_size": 2135,
+        "total_output_size": 0,
+        "max_input_size": 2135,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "max_duration_ms": 0,
+        "avg_input_size": 2135,
+        "avg_output_size": 0,
+        "avg_duration_ms": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "tool_name": "push_repo_memory",
+        "call_count": 1,
+        "failed_calls": 0,
+        "total_input_size": 25,
+        "total_output_size": 0,
+        "max_input_size": 25,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "max_duration_ms": 0,
+        "avg_input_size": 25,
+        "avg_output_size": 0,
+        "avg_duration_ms": 0
+      }
+    ]
+  },
+  "working_set": {
+    "measurement_state": "measured",
+    "cumulative_input_tokens": 106441,
+    "peak_input_tokens": 20576,
+    "rebuild_excess_tokens": 85865,
+    "invocations": 33,
+    "rebuild_factor": 5.173065707620529
+  },
+  "friction": {
+    "measurement_state": "measured",
+    "canonical_unit": "aic",
+    "sources": [
+      "agent_token_usage",
+      "firewall",
+      "mcp_gateway"
+    ],
+    "total_events": 0,
+    "total_occurrences": 0,
+    "counted_occurrences": 0,
+    "suppressed_occurrences": 0,
+    "linked_invocations": 0,
+    "unattributed_occurrences": 0,
+    "cost": {
+      "aic": 0,
+      "tokens": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0,
+        "reasoning": 0,
+        "total": 0
+      },
+      "turns": 0,
+      "tool_calls": 0,
+      "latency_ms": 0
+    },
+    "total_run_aic": 56.287719999999986,
+    "friction_ratio": 0,
+    "dimension_states": {
+      "aic": "measured",
+      "tokens": "measured",
+      "turns": "measured",
+      "tool_calls": "measured",
+      "latency_ms": "measured"
+    },
+    "uncertainty": {
+      "aic": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "sample_size": 33,
+        "basis": "AI credits of errored invocations (measured), of linked follow-up invocations (causal), or the mean healthy-invocation cost (statistical)",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0
+      },
+      "tokens": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "sample_size": 33,
+        "basis": "token classes of the attributed invocations",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0
+      },
+      "turns": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "sample_size": 0,
+        "basis": "one additional turn per errored or retried model invocation",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0
+      },
+      "tool_calls": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "sample_size": 0,
+        "basis": "counted friction occurrences that consumed a tool call",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0
+      },
+      "latency_ms": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "sample_size": 0,
+        "basis": "wall-clock duration recorded on the failing tool call or invocation",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0
+      }
+    },
+    "drivers": [],
+    "groups": [],
+    "events": [],
+    "unmeasured_drivers": [
+      {
+        "driver": "agent_api_error",
+        "reason": "no_occurrences"
+      },
+      {
+        "driver": "firewall_block",
+        "reason": "no_occurrences"
+      },
+      {
+        "driver": "integrity_filter",
+        "reason": "no_occurrences"
+      },
+      {
+        "driver": "mcp_tool_error",
+        "reason": "no_occurrences"
+      },
+      {
+        "driver": "session_tool_failure",
+        "reason": "source_unavailable:agent_session"
+      }
+    ]
+  }
+}
