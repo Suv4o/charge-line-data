@@ -1,0 +1,51 @@
+{
+  "engine_id": "claude",
+  "engine_name": "Claude Code",
+  "model": "claude-sonnet-5-5",
+  "version": "2.1.317",
+  "agent_version": "2.1.317",
+  "workflow_name": "Keep charging networks and prices current",
+  "workflow_id": "Suv4o/charge-line-data/.github/workflows/prices.lock.yml@refs/heads/main",
+  "agent_metadata": {},
+  "workflow_call_id": "44281021812-1:Suv4o/charge-line-data/.github/workflows/prices.lock.yml@refs/heads/main",
+  "caller_workflow_ref": "Suv4o/charge-line-data/.github/workflows/prices.lock.yml@refs/heads/main",
+  "experimental": false,
+  "supports_tools_allowlist": true,
+  "cache_memory": false,
+  "run_id": 44281021812,
+  "run_number": 2,
+  "run_attempt": "1",
+  "repository": "Suv4o/charge-line-data",
+  "ref": "refs/heads/main",
+  "sha": "57e9f04a18645d1627e8db071ca768dd62fe6970",
+  "actor": "Suv4o",
+  "event_name": "workflow_dispatch",
+  "target_repo": "",
+  "staged": true,
+  "dry_run": false,
+  "allowed_domains": [
+    "defaults"
+  ],
+  "firewall_enabled": true,
+  "awf_version": "v0.29.11",
+  "awmg_version": "",
+  "agent_runtime": "",
+  "steps": {
+    "firewall": "squid"
+  },
+  "created_at": "2026-11-18T09:59:32.595Z",
+  "cli_version": "v1.2.2",
+  "workflow_ref": "Suv4o/charge-line-data/.github/workflows/prices.lock.yml@refs/heads/main",
+  "server_url": "https://github.com",
+  "model_config": {
+    "routing": {
+      "enabled": false
+    },
+    "models": {
+      "allowed": [],
+      "blocked": []
+    },
+    "max_ai_credits_source": "frontmatter",
+    "max_ai_credits": 300
+  }
+}

@@ -1,0 +1,40 @@
+﻿2026-11-19T11:54:10.9927235Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-19T11:54:10.9927668Z with:
+2026-11-19T11:54:10.9928843Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'setup_threat_detection.cjs'));
+await main();
+
+2026-11-19T11:54:10.9932668Z   github-token: ***
+2026-11-19T11:54:10.9932927Z   debug: false
+2026-11-19T11:54:10.9933163Z   user-agent: actions/github-script
+2026-11-19T11:54:10.9933452Z   result-encoding: json
+2026-11-19T11:54:10.9933683Z   retries: 0
+2026-11-19T11:54:10.9933933Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-19T11:54:10.9934253Z env:
+2026-11-19T11:54:10.9934465Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:54:10.9934732Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:54:10.9934995Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-19T11:54:10.9935838Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517220484,github.run_id=44517220484,gh-aw.engine.id=claude
+2026-11-19T11:54:10.9936731Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:54:10.9936989Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:54:10.9937240Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:54:10.9937516Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:54:10.9937830Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:54:10.9938084Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:54:10.9938397Z   GITHUB_AW_OTEL_TRACE_ID: 19af99b8ca6a314c08bd9b7019d79d19
+2026-11-19T11:54:10.9938762Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: de96b3e46567a2b0
+2026-11-19T11:54:10.9939087Z   GITHUB_AW_OTEL_JOB_START_MS: 1795089237765
+2026-11-19T11:54:10.9939602Z   WORKFLOW_NAME: Keep the EV catalogue current
+2026-11-19T11:54:10.9940259Z   WORKFLOW_DESCRIPTION: Keeps the EV catalogue current. Re-checks the makes checked longest ago, and looks for EVs and brands new to Australia.
+2026-11-19T11:54:10.9940878Z   HAS_PATCH: true
+2026-11-19T11:54:10.9941112Z   GH_AW_DETECTION_CONTINUE_ON_ERROR: true
+2026-11-19T11:54:10.9941423Z   GH_AW_DETECTION_SKIP_PROMPT_SUMMARY: true
+2026-11-19T11:54:10.9941705Z ##[endgroup]
+2026-11-19T11:54:11.0968672Z Removed framework system prompt block from /tmp/gh-aw/threat-detection/aw-prompts/prompt.txt
+2026-11-19T11:54:11.0970043Z Prompt file found: /tmp/gh-aw/threat-detection/aw-prompts/prompt.txt (8669 bytes)
+2026-11-19T11:54:11.0971799Z Agent output file found: /tmp/gh-aw/threat-detection/agent_output.json (7850 bytes)
+2026-11-19T11:54:11.0979288Z Skipping threat detection prompt step summary (external detector renders its own prompt)
+2026-11-19T11:54:11.0980258Z Threat detection setup completed

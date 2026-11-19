@@ -1,0 +1,125 @@
+﻿2026-11-19T11:56:26.4962216Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-19T11:56:26.4963630Z with:
+2026-11-19T11:56:26.4970997Z   github-token: ***
+2026-11-19T11:56:26.4974732Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'handle_agent_failure.cjs'));
+await main();
+
+2026-11-19T11:56:26.4978471Z   debug: false
+2026-11-19T11:56:26.4979383Z   user-agent: actions/github-script
+2026-11-19T11:56:26.4980437Z   result-encoding: json
+2026-11-19T11:56:26.4981350Z   retries: 0
+2026-11-19T11:56:26.4982300Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-19T11:56:26.4983405Z env:
+2026-11-19T11:56:26.4984438Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:56:26.4985824Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:56:26.4986862Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-19T11:56:26.4989424Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517220484,github.run_id=44517220484,gh-aw.engine.id=claude
+2026-11-19T11:56:26.4991951Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:56:26.4992948Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:56:26.4994294Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:56:26.4995375Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:56:26.4996521Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:56:26.4998769Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","push_repo_memory":"push_repo_memory","safe_outputs":"safe_outputs"}
+2026-11-19T11:56:26.5002265Z   GH_AW_JOB_RESULTS: {"activation":{"result":"success"},"agent":{"result":"success"},"detection":{"result":"success"},"push_repo_memory":{"result":"success"},"safe_outputs":{"result":"success"}}
+2026-11-19T11:56:26.5005506Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"push_repo_memory":true,"safe_outputs":true}
+2026-11-19T11:56:26.5008668Z   GH_AW_MEMORY_SAVE_RESULTS: {"catalogue":{"branch":"memory/catalogue","commit":"9e4d68a0c07ac626e6778af20feaadcb133e2afa","jobResult":"success","outcome":"success","status":"saved"}}
+2026-11-19T11:56:26.5011013Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:56:26.5012145Z   GITHUB_AW_OTEL_TRACE_ID: 19af99b8ca6a314c08bd9b7019d79d19
+2026-11-19T11:56:26.5013431Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: e9f14cf3a8c9290f
+2026-11-19T11:56:26.5014757Z   GITHUB_AW_OTEL_JOB_START_MS: 1795089379486
+2026-11-19T11:56:26.5015949Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-11-19T11:56:26.5017184Z   GH_AW_WORKFLOW_NAME: Keep the EV catalogue current
+2026-11-19T11:56:26.5018967Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Suv4o/charge-line-data/blob/main/.github/workflows/catalogue.md
+2026-11-19T11:56:26.5020986Z   GH_AW_RUN_URL: https://github.com/Suv4o/charge-line-data/actions/runs/44517220484
+2026-11-19T11:56:26.5022420Z   GH_AW_AGENT_CONCLUSION: success
+2026-11-19T11:56:26.5023467Z   GH_AW_ACTIVATION_RESULT: success
+2026-11-19T11:56:26.5024663Z   GH_AW_WORKFLOW_ID: catalogue
+2026-11-19T11:56:26.5025750Z   GH_AW_ACTION_FAILURE_ISSUE_EXPIRES_HOURS: 0
+2026-11-19T11:56:26.5026860Z   GH_AW_ENGINE_ID: claude
+2026-11-19T11:56:26.5027845Z   GH_AW_CHECKOUT_PR_SUCCESS: true
+2026-11-19T11:56:26.5028903Z   GH_AW_CHECKOUT_PR_INVALIDATED: false
+2026-11-19T11:56:26.5030002Z   GH_AW_AI_CREDITS_RATE_LIMIT_ERROR: false
+2026-11-19T11:56:26.5031096Z   GH_AW_UNKNOWN_MODEL_AI_CREDITS: false
+2026-11-19T11:56:26.5032126Z   GH_AW_AIC: 317.19688
+2026-11-19T11:56:26.5033085Z   GH_AW_THREAT_DETECTION_AIC: 36.12328
+2026-11-19T11:56:26.5034320Z   GH_AW_DETECTION_JOB_RESULT: success
+2026-11-19T11:56:26.5035381Z   GH_AW_MAX_AI_CREDITS: 600
+2026-11-19T11:56:26.5036414Z   GH_AW_DEFAULT_CHECKOUT_USES_TRIGGER_REF: true
+2026-11-19T11:56:26.5037589Z   GH_AW_INFERENCE_ACCESS_ERROR: false
+2026-11-19T11:56:26.5038864Z   GH_AW_MCP_POLICY_ERROR: false
+2026-11-19T11:56:26.5039894Z   GH_AW_AGENTIC_ENGINE_TIMEOUT: false
+2026-11-19T11:56:26.5040978Z   GH_AW_MODEL_NOT_SUPPORTED_ERROR: false
+2026-11-19T11:56:26.5042095Z   GH_AW_MODEL_ENDPOINT_MISMATCH_ERROR: false
+2026-11-19T11:56:26.5043207Z   GH_AW_HTTP_400_RESPONSE_ERROR: false
+2026-11-19T11:56:26.5044469Z   GH_AW_MAX_CACHE_MISSES_EXCEEDED: false
+2026-11-19T11:56:26.5045592Z   GH_AW_MISSING_MODEL_PRICING_ERROR: false
+2026-11-19T11:56:26.5050942Z   GH_AW_MISSING_MODEL_PRICING_MODEL_NAME: 
+2026-11-19T11:56:26.5052214Z   GH_AW_SHELL_EXPANSION_GUARD_REJECTED: false
+2026-11-19T11:56:26.5053395Z   GH_AW_ENGINE_API_HOSTS: api.anthropic.com
+2026-11-19T11:56:26.5055219Z   GH_AW_CODE_PUSH_FAILURE_ERRORS: 
+2026-11-19T11:56:26.5056380Z   GH_AW_CODE_PUSH_FAILURE_COUNT: 0
+2026-11-19T11:56:26.5057447Z   GH_AW_LOCKDOWN_CHECK_FAILED: false
+2026-11-19T11:56:26.5058524Z   GH_AW_OAUTH_TOKEN_CHECK_FAILED: false
+2026-11-19T11:56:26.5059602Z   GH_AW_STALE_LOCK_FILE_FAILED: false
+2026-11-19T11:56:26.5060707Z   GH_AW_DAILY_AI_CREDITS_EXCEEDED: false
+2026-11-19T11:56:26.5061867Z   GH_AW_DAILY_AI_CREDITS_GUARDRAIL_STATUS: skipped
+2026-11-19T11:56:26.5063092Z   GH_AW_DAILY_AI_CREDITS_GUARDRAIL_ERROR: 
+2026-11-19T11:56:26.5064332Z   GH_AW_DAILY_AI_CREDITS_TOTAL: 
+2026-11-19T11:56:26.5065386Z   GH_AW_DAILY_AI_CREDITS_ESTIMATED: 
+2026-11-19T11:56:26.5066648Z   GH_AW_DAILY_AI_CREDITS_THRESHOLD: 
+2026-11-19T11:56:26.5067762Z   GH_AW_DAILY_AI_CREDITS_CONTINUE_ON_ERROR: false
+2026-11-19T11:56:26.5068944Z   GH_AW_PUSH_REPO_MEMORY_RESULT: success
+2026-11-19T11:56:26.5070135Z   GH_AW_REPO_MEMORY_VALIDATION_FAILED_catalogue: 
+2026-11-19T11:56:26.5071407Z   GH_AW_REPO_MEMORY_VALIDATION_ERROR_catalogue: 
+2026-11-19T11:56:26.5072652Z   GH_AW_REPO_MEMORY_PATCH_SIZE_EXCEEDED_catalogue: 
+2026-11-19T11:56:26.5073805Z   GH_AW_GROUP_REPORTS: false
+2026-11-19T11:56:26.5075007Z   GH_AW_FAILURE_REPORT_AS_ISSUE: true
+2026-11-19T11:56:26.5076135Z   GH_AW_MISSING_TOOL_REPORT_AS_FAILURE: true
+2026-11-19T11:56:26.5077300Z   GH_AW_MISSING_DATA_REPORT_AS_FAILURE: true
+2026-11-19T11:56:26.5078399Z   GH_AW_TIMEOUT_MINUTES: 30
+2026-11-19T11:56:26.5079326Z ##[endgroup]
+2026-11-19T11:56:26.9462835Z [ai-credits] aiCredits source=token_usage value=317.19688
+2026-11-19T11:56:26.9469323Z [ai-credits] maxAICredits source=awf_config value=600
+2026-11-19T11:56:26.9471473Z [ai-credits] rateLimitSignal source=none
+2026-11-19T11:56:26.9481872Z Agent conclusion: success
+2026-11-19T11:56:26.9483813Z Workflow name: Keep the EV catalogue current
+2026-11-19T11:56:26.9486040Z Workflow ID: catalogue
+2026-11-19T11:56:26.9487538Z Secret verification result: 
+2026-11-19T11:56:26.9489087Z Engine secret failure message: (none)
+2026-11-19T11:56:26.9490672Z Assignment error count: 0
+2026-11-19T11:56:26.9494453Z Assign copilot failure count: 0
+2026-11-19T11:56:26.9496369Z Skill install failure count: 0
+2026-11-19T11:56:26.9498279Z Create discussion error count: 0
+2026-11-19T11:56:26.9499963Z Code push failure count: 0
+2026-11-19T11:56:26.9501594Z Checkout PR success: true
+2026-11-19T11:56:26.9503202Z AI credits: 317.19688
+2026-11-19T11:56:26.9505078Z Configured max AI credits: 600
+2026-11-19T11:56:26.9506757Z AI credits rate-limit error: false
+2026-11-19T11:56:26.9508549Z Max AI credits exceeded (harness budget abort): false
+2026-11-19T11:56:26.9510073Z Daily workflow AIC guardrail exceeded: false
+2026-11-19T11:56:26.9511893Z Daily workflow AIC guardrail status: skipped; error detail: (none)
+2026-11-19T11:56:26.9513800Z Daily workflow AIC guardrail continue-on-error (warning mode): false
+2026-11-19T11:56:26.9515727Z Inference access error: false
+2026-11-19T11:56:26.9517861Z MCP policy error: false
+2026-11-19T11:56:26.9519215Z Agentic engine timeout: false
+2026-11-19T11:56:26.9520541Z Model not supported error: false
+2026-11-19T11:56:26.9521845Z HTTP 400 response error: false
+2026-11-19T11:56:26.9535643Z Unknown model AI credits error: false
+2026-11-19T11:56:26.9536987Z Unknown model AI credits sources (audit/output): false/false
+2026-11-19T11:56:26.9538708Z Missing model pricing error: false (model: (unknown))
+2026-11-19T11:56:26.9539907Z Shell expansion guard rejected: false
+2026-11-19T11:56:26.9540979Z Push repo-memory result: success
+2026-11-19T11:56:26.9542361Z App token minting failed (safe_outputs/conclusion/activation): false/false/false
+2026-11-19T11:56:26.9543764Z Lockdown check failed: false
+2026-11-19T11:56:26.9545044Z OAuth token check failed: false
+2026-11-19T11:56:26.9546078Z Stale lock file check failed: false
+2026-11-19T11:56:26.9547104Z Cache memory enabled: false
+2026-11-19T11:56:26.9548164Z Cache memory restored (from restore outputs): false
+2026-11-19T11:56:26.9549338Z Missing tool report-as-failure: true
+2026-11-19T11:56:26.9550419Z Missing data report-as-failure: true
+2026-11-19T11:56:26.9551487Z Agent output content length: 7836
+2026-11-19T11:56:26.9556370Z Agent job did not fail and no assignment/discussion/code-push/push-repo-memory/app-token/lockdown/oauth-token-check/stale-lock-file/activation/daily-workflow-aic/daily-workflow-aic-accounting/ai-credits/max-ai-credits-exceeded/report-incomplete/cache-miss/missing-tool/missing-data/tool-denials-exceeded/secret-verification errors and has safe outputs (conclusion: success), skipping failure handling

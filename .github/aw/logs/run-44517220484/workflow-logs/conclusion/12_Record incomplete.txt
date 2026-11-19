@@ -1,0 +1,41 @@
+﻿2026-11-19T11:56:26.3205490Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-19T11:56:26.3206918Z with:
+2026-11-19T11:56:26.3213824Z   github-token: ***
+2026-11-19T11:56:26.3217684Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'report_incomplete_handler.cjs'));
+await main();
+
+2026-11-19T11:56:26.3221437Z   debug: false
+2026-11-19T11:56:26.3222345Z   user-agent: actions/github-script
+2026-11-19T11:56:26.3223587Z   result-encoding: json
+2026-11-19T11:56:26.3224719Z   retries: 0
+2026-11-19T11:56:26.3225685Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-19T11:56:26.3226796Z env:
+2026-11-19T11:56:26.3227643Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:56:26.3228661Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:56:26.3229685Z   OTEL_SERVICE_NAME: gh-aw.catalogue
+2026-11-19T11:56:26.3236239Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20the%20EV%20catalogue%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517220484,github.run_id=44517220484,gh-aw.engine.id=claude
+2026-11-19T11:56:26.3238924Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:56:26.3239952Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:56:26.3241013Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:56:26.3242098Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:56:26.3243241Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:56:26.3245689Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","push_repo_memory":"push_repo_memory","safe_outputs":"safe_outputs"}
+2026-11-19T11:56:26.3249293Z   GH_AW_JOB_RESULTS: {"activation":{"result":"success"},"agent":{"result":"success"},"detection":{"result":"success"},"push_repo_memory":{"result":"success"},"safe_outputs":{"result":"success"}}
+2026-11-19T11:56:26.3252429Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"push_repo_memory":true,"safe_outputs":true}
+2026-11-19T11:56:26.3255777Z   GH_AW_MEMORY_SAVE_RESULTS: {"catalogue":{"branch":"memory/catalogue","commit":"9e4d68a0c07ac626e6778af20feaadcb133e2afa","jobResult":"success","outcome":"success","status":"saved"}}
+2026-11-19T11:56:26.3258141Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:56:26.3259276Z   GITHUB_AW_OTEL_TRACE_ID: 19af99b8ca6a314c08bd9b7019d79d19
+2026-11-19T11:56:26.3260561Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: e9f14cf3a8c9290f
+2026-11-19T11:56:26.3261741Z   GITHUB_AW_OTEL_JOB_START_MS: 1795089379486
+2026-11-19T11:56:26.3262939Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-11-19T11:56:26.3264296Z   GH_AW_REPORT_INCOMPLETE_CREATE_ISSUE: true
+2026-11-19T11:56:26.3265516Z   GH_AW_WORKFLOW_NAME: Keep the EV catalogue current
+2026-11-19T11:56:26.3267329Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Suv4o/charge-line-data/blob/main/.github/workflows/catalogue.md
+2026-11-19T11:56:26.3269046Z   GH_AW_ENGINE_ID: claude
+2026-11-19T11:56:26.3270043Z   GH_AW_ENGINE_MODEL: claude-opus-5-5
+2026-11-19T11:56:26.3271062Z ##[endgroup]
+2026-11-19T11:56:26.4760171Z Max count: unlimited

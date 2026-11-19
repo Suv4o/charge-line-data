@@ -1,0 +1,1815 @@
+﻿2026-11-18T10:07:30.1173758Z Current runner version: '2.338.2'
+2026-11-18T10:07:30.1236480Z ##[group]Runner Image Provisioner
+2026-11-18T10:07:30.1307229Z Hosted Compute Agent
+2026-11-18T10:07:30.1339164Z Version: 20261103.629
+2026-11-18T10:07:30.1340614Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+2026-11-18T10:07:30.1341627Z Build Date: 2026-11-03T17:26:59Z
+2026-11-18T10:07:30.1342354Z Worker ID: {4d29f8f6-6097-412f-9722-52577e88455d}
+2026-11-18T10:07:30.1369523Z Region: eastus
+2026-11-18T10:07:30.1373354Z Cloud: Azure
+2026-11-18T10:07:30.1375921Z ##[endgroup]
+2026-11-18T10:07:30.1392701Z ##[group]VM Image
+2026-11-18T10:07:30.1394953Z - OS: Linux (x64)
+2026-11-18T10:07:30.1395768Z - Source: Docker
+2026-11-18T10:07:30.1396345Z - Name: ubuntu:24.04
+2026-11-18T10:07:30.1396966Z - Version: 20261111.52.1
+2026-11-18T10:07:30.1409176Z ##[endgroup]
+2026-11-18T10:07:30.1416810Z ##[group]GITHUB_TOKEN Permissions
+2026-11-18T10:07:30.1518146Z Actions: read
+2026-11-18T10:07:30.1519158Z Checks: read
+2026-11-18T10:07:30.1520196Z Issues: write
+2026-11-18T10:07:30.1520943Z Metadata: read
+2026-11-18T10:07:30.1521638Z PullRequests: read
+2026-11-18T10:07:30.1522272Z ##[endgroup]
+2026-11-18T10:07:30.1526245Z Secret source: Actions
+2026-11-18T10:07:30.1527730Z Cache mode: write
+2026-11-18T10:07:30.1529614Z Prepare workflow directory
+2026-11-18T10:07:30.6272008Z Prepare all required actions
+2026-11-18T10:07:30.6770234Z Getting action download info
+2026-11-18T10:07:31.3264250Z Download action repository 'github/gh-aw-actions@53d0749e19424a918acd82b4d140264ce48f2f14' (SHA:53d0749e19424a918acd82b4d140264ce48f2f14)
+2026-11-18T10:07:33.3156304Z Download action repository 'actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333' (SHA:9000827ccba6bdab643e8b6fd33ac0654aef8333)
+2026-11-18T10:07:33.6171045Z Download action repository 'actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3' (SHA:3a2844b7e9c422d3c10d287c895573f7108da1b3)
+2026-11-18T10:07:33.9611909Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-18T10:07:34.7926951Z Complete job name: conclusion
+2026-11-18T10:07:35.1019635Z ##[group]Run github/gh-aw-actions/setup@53d0749e19424a918acd82b4d140264ce48f2f14
+2026-11-18T10:07:35.1021119Z with:
+2026-11-18T10:07:35.1021700Z   destination: /home/runner/work/_temp/gh-aw/actions
+2026-11-18T10:07:35.1022388Z   job-name: conclusion
+2026-11-18T10:07:35.1022934Z   trace-id: 9d4fcd52fb4af697812bd158a796e4ff
+2026-11-18T10:07:35.1023579Z   parent-span-id: 7cf02d7921ec9df0
+2026-11-18T10:07:35.1024179Z   safe-output-artifact-client: false
+2026-11-18T10:07:35.1024966Z env:
+2026-11-18T10:07:35.1025446Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T10:07:35.1028751Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T10:07:35.1029412Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T10:07:35.1031062Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44281021812,github.run_id=44281021812,gh-aw.engine.id=claude
+2026-11-18T10:07:35.1034843Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T10:07:35.1038267Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T10:07:35.1059929Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T10:07:35.1061374Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T10:07:35.1063287Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T10:07:35.1066978Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","push_repo_memory":"push_repo_memory","safe_outputs":"safe_outputs"}
+2026-11-18T10:07:35.1069571Z   GH_AW_JOB_RESULTS: {"activation":{"result":"success"},"agent":{"result":"success"},"detection":{"result":"success"},"push_repo_memory":{"result":"success"},"safe_outputs":{"result":"success"}}
+2026-11-18T10:07:35.1071501Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"push_repo_memory":true,"safe_outputs":true}
+2026-11-18T10:07:35.1073484Z   GH_AW_MEMORY_SAVE_RESULTS: {"prices":{"branch":"memory/prices","commit":"779e80f5a8491f208809c904282d0637f4bc7008","jobResult":"success","outcome":"success","status":"saved"}}
+2026-11-18T10:07:35.1075368Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T10:07:35.1076078Z   GH_AW_SETUP_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-18T10:07:35.1077201Z   GH_AW_CURRENT_WORKFLOW_REF: Suv4o/charge-line-data/.github/workflows/prices.lock.yml@refs/heads/main
+2026-11-18T10:07:35.1078185Z   GH_AW_INFO_VERSION: 2.1.317
+2026-11-18T10:07:35.1078963Z   GH_AW_INFO_AWF_VERSION: v0.29.11
+2026-11-18T10:07:35.1079565Z   GH_AW_INFO_ENGINE_ID: claude
+2026-11-18T10:07:35.1080108Z   GH_AW_SETUP_AW_CONTEXT: 
+2026-11-18T10:07:35.1080622Z ##[endgroup]
+2026-11-18T10:07:47.6585771Z Successfully copied 795 files to /home/runner/work/_temp/gh-aw/actions
+2026-11-18T10:07:47.6622690Z ##[group]Runtime TLS inventory (not a trust-store attestation)
+2026-11-18T10:07:49.8106488Z curl 8.5.0 (x86_64-pc-linux-gnu) libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.10
+2026-11-18T10:07:49.8382509Z Node v24.22.3; OpenSSL 3.5.9
+2026-11-18T10:07:49.8570787Z Go: unavailable; binary build-toolchain inspection unavailable
+2026-11-18T10:07:49.8572183Z Python/certifi: not inspected by shell setup; record each client's interpreter, TLS backend and selected CA bundle separately.
+2026-11-18T10:07:49.8573298Z Container, proxy and MCP trust stores require separate image/vendor evidence.
+2026-11-18T10:07:49.8623613Z Browser updates and successful HTTPS connections do not attest CA distrust.
+2026-11-18T10:07:49.8625570Z ##[endgroup]
+2026-11-18T10:07:50.2167486Z Successfully copied 119 mcp-scripts files to /home/runner/work/_temp/gh-aw/mcp-scripts
+2026-11-18T10:07:50.4500219Z Successfully copied 183 safe-outputs files to /home/runner/work/_temp/gh-aw/safeoutputs
+2026-11-18T10:07:51.1120688Z [info] [otlp] INPUT_TRACE_ID=9d4fcd52fb4af697812bd158a796e4ff (will reuse activation trace)
+2026-11-18T10:07:51.1126783Z [info] [otlp] INPUT_PARENT_SPAN_ID=7cf02d7921ec9df0 (will parent setup span)
+2026-11-18T10:07:51.1133898Z [info] [otlp] no OTLP endpoints have usable credentials, skipping setup span
+2026-11-18T10:07:51.1544786Z [info] [otlp] resolved trace-id=9d4fcd52fb4af697812bd158a796e4ff
+2026-11-18T10:07:51.1570085Z [info] [otlp] trace-id=9d4fcd52fb4af697812bd158a796e4ff written to GITHUB_OUTPUT
+2026-11-18T10:07:51.1575492Z [info] [otlp] span-id=b7f9684b9f37a493 written to GITHUB_OUTPUT
+2026-11-18T10:07:51.1579743Z [info] [otlp] parent-span-id=7cf02d7921ec9df0 written to GITHUB_OUTPUT
+2026-11-18T10:07:51.1583377Z [info] [otlp] GITHUB_AW_OTEL_TRACE_ID written to GITHUB_ENV
+2026-11-18T10:07:51.1586774Z [info] [otlp] GITHUB_AW_OTEL_PARENT_SPAN_ID written to GITHUB_ENV
+2026-11-18T10:07:51.1594551Z [info] [otlp] GITHUB_AW_OTEL_JOB_START_MS written to GITHUB_ENV
+2026-11-18T10:07:51.8180980Z ##[group]Run actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
+2026-11-18T10:07:51.8181535Z with:
+2026-11-18T10:07:51.8181831Z   pattern: {agent,agent-output-fallback}
+2026-11-18T10:07:51.8182175Z   merge-multiple: true
+2026-11-18T10:07:51.8182452Z   path: /tmp/gh-aw/
+2026-11-18T10:07:51.8182740Z   repository: Suv4o/charge-line-data
+2026-11-18T10:07:51.8183076Z   run-id: 44281021812
+2026-11-18T10:07:51.8183360Z   skip-decompress: false
+2026-11-18T10:07:51.8183669Z   digest-mismatch: error
+2026-11-18T10:07:51.8183967Z env:
+2026-11-18T10:07:51.8184216Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T10:07:51.8184524Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T10:07:51.8184833Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T10:07:51.8185743Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44281021812,github.run_id=44281021812,gh-aw.engine.id=claude
+2026-11-18T10:07:51.8186707Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T10:07:51.8187007Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T10:07:51.8187292Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T10:07:51.8187776Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T10:07:51.8188128Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T10:07:51.8189266Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","push_repo_memory":"push_repo_memory","safe_outputs":"safe_outputs"}
+2026-11-18T10:07:51.8190513Z   GH_AW_JOB_RESULTS: {"activation":{"result":"success"},"agent":{"result":"success"},"detection":{"result":"success"},"push_repo_memory":{"result":"success"},"safe_outputs":{"result":"success"}}
+2026-11-18T10:07:51.8191591Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"push_repo_memory":true,"safe_outputs":true}
+2026-11-18T10:07:51.8192668Z   GH_AW_MEMORY_SAVE_RESULTS: {"prices":{"branch":"memory/prices","commit":"779e80f5a8491f208809c904282d0637f4bc7008","jobResult":"success","outcome":"success","status":"saved"}}
+2026-11-18T10:07:51.8193430Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T10:07:51.8193781Z   GITHUB_AW_OTEL_TRACE_ID: 9d4fcd52fb4af697812bd158a796e4ff
+2026-11-18T10:07:51.8194190Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b7f9684b9f37a493
+2026-11-18T10:07:51.8194562Z   GITHUB_AW_OTEL_JOB_START_MS: 1794996471160
+2026-11-18T10:07:51.8194910Z ##[endgroup]
+2026-11-18T10:07:53.1299174Z Found 6 artifact(s)
+2026-11-18T10:07:53.1307874Z Filtering artifacts by pattern '{agent,agent-output-fallback}'
+2026-11-18T10:07:53.1343732Z Preparing to download the following artifacts:
+2026-11-18T10:07:53.1347434Z - agent-output-fallback (ID: 14417526015, Size: 2938, Expected Digest: sha256:1af1d480b4eaf79285069d2c9002c3db6385b5ca0b6842fb64cb55f55ac867ea)
+2026-11-18T10:07:53.1351272Z - agent (ID: 14416624084, Size: 156225, Expected Digest: sha256:ca01046425ff5ed81cb8cabb20597088ab3effd407567dd501dc7d66f1166770)
+2026-11-18T10:07:53.3077776Z Redirecting to blob download url: https://productionresultssa0.blob.core.windows.net/actions-results/d36e003e-8293-46ff-9129-7c51b2dcc543/workflow-job-run-b4dbf6fe-b664-5d1a-80a5-7c209c1ef4ac/artifacts/d4f0bc5a29de06b510f9aa428f1eedba926012b591fef7a518e776a7c9bd1824.zip
+2026-11-18T10:07:53.3081324Z Starting download of artifact to: /tmp/gh-aw
+2026-11-18T10:07:53.3148711Z Redirecting to blob download url: https://productionresultssa0.blob.core.windows.net/actions-results/d36e003e-8293-46ff-9129-7c51b2dcc543/workflow-job-run-b4dbf6fe-b664-5d1a-80a5-7c209c1ef4ac/artifacts/daa0da78a4f899948f184de1c2267d4cff63de5d280692a88333f56508605a86.zip
+2026-11-18T10:07:53.3153970Z Starting download of artifact to: /tmp/gh-aw
+2026-11-18T10:07:53.3664547Z (node:2334) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-11-18T10:07:53.3667859Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-18T10:07:53.5274827Z SHA256 digest of downloaded artifact is 1af1d480b4eaf79285069d2c9002c3db6385b5ca0b6842fb64cb55f55ac867ea
+2026-11-18T10:07:53.5285782Z Artifact download completed successfully.
+2026-11-18T10:07:53.5382138Z SHA256 digest of downloaded artifact is ca01046425ff5ed81cb8cabb20597088ab3effd407567dd501dc7d66f1166770
+2026-11-18T10:07:53.5394360Z Artifact download completed successfully.
+2026-11-18T10:07:53.5401519Z Total of 2 artifact(s) downloaded
+2026-11-18T10:07:53.5431187Z Download artifact has finished successfully
+2026-11-18T10:07:53.5826060Z ##[group]Run mkdir -p /tmp/gh-aw/
+2026-11-18T10:07:53.5828064Z [36;1mmkdir -p /tmp/gh-aw/[0m
+2026-11-18T10:07:53.5828922Z [36;1mfind "/tmp/gh-aw/" -type f -print[0m
+2026-11-18T10:07:53.5829398Z [36;1mif [ -f "/tmp/gh-aw/agent_output.json" ]; then[0m
+2026-11-18T10:07:53.5835381Z [36;1m  echo "GH_AW_AGENT_OUTPUT=/tmp/gh-aw/agent_output.json" >> "$GITHUB_OUTPUT"[0m
+2026-11-18T10:07:53.5835928Z [36;1mfi[0m
+2026-11-18T10:07:53.5917735Z shell: /usr/bin/bash -e {0}
+2026-11-18T10:07:53.5918122Z env:
+2026-11-18T10:07:53.5918910Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T10:07:53.5919573Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T10:07:53.5919927Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T10:07:53.5921106Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44281021812,github.run_id=44281021812,gh-aw.engine.id=claude
+2026-11-18T10:07:53.5922112Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T10:07:53.5922493Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T10:07:53.5922804Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T10:07:53.5923148Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T10:07:53.5923528Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T10:07:53.5924323Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","push_repo_memory":"push_repo_memory","safe_outputs":"safe_outputs"}
+2026-11-18T10:07:53.5925605Z   GH_AW_JOB_RESULTS: {"activation":{"result":"success"},"agent":{"result":"success"},"detection":{"result":"success"},"push_repo_memory":{"result":"success"},"safe_outputs":{"result":"success"}}
+2026-11-18T10:07:53.5926742Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"push_repo_memory":true,"safe_outputs":true}
+2026-11-18T10:07:53.5927894Z   GH_AW_MEMORY_SAVE_RESULTS: {"prices":{"branch":"memory/prices","commit":"779e80f5a8491f208809c904282d0637f4bc7008","jobResult":"success","outcome":"success","status":"saved"}}
+2026-11-18T10:07:53.5928942Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T10:07:53.5929346Z   GITHUB_AW_OTEL_TRACE_ID: 9d4fcd52fb4af697812bd158a796e4ff
+2026-11-18T10:07:53.5929773Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b7f9684b9f37a493
+2026-11-18T10:07:53.5930163Z   GITHUB_AW_OTEL_JOB_START_MS: 1794996471160
+2026-11-18T10:07:53.5930650Z ##[endgroup]
+2026-11-18T10:07:53.7053055Z /tmp/gh-aw/awf-config.json
+2026-11-18T10:07:53.7058161Z /tmp/gh-aw/agent-errors.jsonl
+2026-11-18T10:07:53.7070707Z /tmp/gh-aw/agent_execution_exit_code.txt
+2026-11-18T10:07:53.7071448Z /tmp/gh-aw/skill_inventory.json
+2026-11-18T10:07:53.7090890Z /tmp/gh-aw/agent/model-resolution.json
+2026-11-18T10:07:53.7091530Z /tmp/gh-aw/agent/harness_retry.json
+2026-11-18T10:07:53.7092053Z /tmp/gh-aw/mcp-logs/safeoutputs.log
+2026-11-18T10:07:53.7092563Z /tmp/gh-aw/mcp-logs/configuration.jsonl
+2026-11-18T10:07:53.7093000Z /tmp/gh-aw/mcp-logs/tools.json
+2026-11-18T10:07:53.7095760Z /tmp/gh-aw/mcp-logs/observed-url-domains.json
+2026-11-18T10:07:53.7100560Z /tmp/gh-aw/mcp-logs/github.log
+2026-11-18T10:07:53.7101064Z /tmp/gh-aw/mcp-logs/mcp-gateway.log
+2026-11-18T10:07:53.7101551Z /tmp/gh-aw/mcp-logs/rpc-messages.jsonl
+2026-11-18T10:07:53.7101991Z /tmp/gh-aw/mcp-logs/gateway.md
+2026-11-18T10:07:53.7102425Z /tmp/gh-aw/github_rate_limits.jsonl
+2026-11-18T10:07:53.7102842Z /tmp/gh-aw/safeoutputs.jsonl
+2026-11-18T10:07:53.7103259Z /tmp/gh-aw/claude-debug.log
+2026-11-18T10:07:53.7103654Z /tmp/gh-aw/pre-agent-audit.txt
+2026-11-18T10:07:53.7104037Z /tmp/gh-aw/aw-prompts/prompt.txt
+2026-11-18T10:07:53.7104465Z /tmp/gh-aw/aw-prompts/user.txt
+2026-11-18T10:07:53.7105294Z /tmp/gh-aw/aw-prompts/system.txt
+2026-11-18T10:07:53.7106115Z /tmp/gh-aw/agent_output.json
+2026-11-18T10:07:53.7107268Z /tmp/gh-aw/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:53.7109558Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:53.7112898Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/harness-observation.json
+2026-11-18T10:07:53.7121137Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/agent-runtime/started-at-ms
+2026-11-18T10:07:53.7123025Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/otel.jsonl
+2026-11-18T10:07:53.7124434Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/models.json
+2026-11-18T10:07:53.7125081Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T10:07:53.7125634Z /tmp/gh-aw/sandbox/firewall/logs/cache.log
+2026-11-18T10:07:53.7127905Z /tmp/gh-aw/sandbox/firewall/logs/access.log
+2026-11-18T10:07:53.7131740Z /tmp/gh-aw/sandbox/firewall/awf-reflect.json
+2026-11-18T10:07:53.7137046Z /tmp/gh-aw/sandbox/firewall/audit/policy-manifest.json
+2026-11-18T10:07:53.7141144Z /tmp/gh-aw/sandbox/firewall/audit/sensitive-paths.json
+2026-11-18T10:07:53.7144060Z /tmp/gh-aw/sandbox/firewall/audit/awf-resolved-config.json
+2026-11-18T10:07:53.7146679Z /tmp/gh-aw/sandbox/firewall/audit/squid.conf
+2026-11-18T10:07:53.7147244Z /tmp/gh-aw/sandbox/firewall/audit/docker-compose.redacted.yml
+2026-11-18T10:07:53.7147868Z /tmp/gh-aw/sandbox/firewall/audit/image-manifest.json
+2026-11-18T10:07:53.7148617Z /tmp/gh-aw/agent_usage.json
+2026-11-18T10:07:53.7150172Z /tmp/gh-aw/otel.jsonl
+2026-11-18T10:07:53.7150608Z /tmp/gh-aw/agent-stdio.log
+2026-11-18T10:07:53.7215210Z /tmp/gh-aw/agent_execution.json
+2026-11-18T10:07:53.7215629Z /tmp/gh-aw/agent-session.jsonl
+2026-11-18T10:07:53.7343441Z ##[group]Run actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
+2026-11-18T10:07:53.7344116Z with:
+2026-11-18T10:07:53.7344388Z   name: info
+2026-11-18T10:07:53.7344701Z   path: /tmp/gh-aw/
+2026-11-18T10:07:53.7345026Z   merge-multiple: false
+2026-11-18T10:07:53.7345363Z   repository: Suv4o/charge-line-data
+2026-11-18T10:07:53.7345721Z   run-id: 44281021812
+2026-11-18T10:07:53.7346033Z   skip-decompress: false
+2026-11-18T10:07:53.7346337Z   digest-mismatch: error
+2026-11-18T10:07:53.7346614Z env:
+2026-11-18T10:07:53.7346892Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T10:07:53.7347252Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T10:07:53.7349673Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T10:07:53.7352133Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44281021812,github.run_id=44281021812,gh-aw.engine.id=claude
+2026-11-18T10:07:53.7353210Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T10:07:53.7353574Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T10:07:53.7353898Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T10:07:53.7361593Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T10:07:53.7362010Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T10:07:53.7362855Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","push_repo_memory":"push_repo_memory","safe_outputs":"safe_outputs"}
+2026-11-18T10:07:53.7366818Z   GH_AW_JOB_RESULTS: {"activation":{"result":"success"},"agent":{"result":"success"},"detection":{"result":"success"},"push_repo_memory":{"result":"success"},"safe_outputs":{"result":"success"}}
+2026-11-18T10:07:53.7370146Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"push_repo_memory":true,"safe_outputs":true}
+2026-11-18T10:07:53.7371738Z   GH_AW_MEMORY_SAVE_RESULTS: {"prices":{"branch":"memory/prices","commit":"779e80f5a8491f208809c904282d0637f4bc7008","jobResult":"success","outcome":"success","status":"saved"}}
+2026-11-18T10:07:53.7374372Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T10:07:53.7374840Z   GITHUB_AW_OTEL_TRACE_ID: 9d4fcd52fb4af697812bd158a796e4ff
+2026-11-18T10:07:53.7375320Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b7f9684b9f37a493
+2026-11-18T10:07:53.7375746Z   GITHUB_AW_OTEL_JOB_START_MS: 1794996471160
+2026-11-18T10:07:53.7376103Z ##[endgroup]
+2026-11-18T10:07:54.0163494Z Downloading single artifact
+2026-11-18T10:07:54.1064336Z Preparing to download the following artifacts:
+2026-11-18T10:07:54.1068651Z - info (ID: 14417176562, Size: 746, Expected Digest: sha256:c9153fca8c7801a78286ccf88ababd6df59d8a26fd8b7298b423674df60ddbe8)
+2026-11-18T10:07:54.3161457Z Redirecting to blob download url: https://productionresultssa0.blob.core.windows.net/actions-results/d36e003e-8293-46ff-9129-7c51b2dcc543/workflow-job-run-cb949c96-b802-5ce5-b013-0651875442cc/artifacts/06271baf49532c879aa3c58b48671884bcc858f09197412d682750496c33e1e1.zip
+2026-11-18T10:07:54.3166521Z Starting download of artifact to: /tmp/gh-aw
+2026-11-18T10:07:54.3568220Z (node:2351) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-11-18T10:07:54.3570389Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-18T10:07:54.3670225Z SHA256 digest of downloaded artifact is c9153fca8c7801a78286ccf88ababd6df59d8a26fd8b7298b423674df60ddbe8
+2026-11-18T10:07:54.3680405Z Artifact download completed successfully.
+2026-11-18T10:07:54.3688735Z Total of 1 artifact(s) downloaded
+2026-11-18T10:07:54.3701729Z Download artifact has finished successfully
+2026-11-18T10:07:54.3972346Z ##[group]Run actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
+2026-11-18T10:07:54.3972909Z with:
+2026-11-18T10:07:54.3973195Z   name: detection
+2026-11-18T10:07:54.3973497Z   path: /tmp/gh-aw/threat-detection/
+2026-11-18T10:07:54.3973860Z   merge-multiple: false
+2026-11-18T10:07:54.3974277Z   repository: Suv4o/charge-line-data
+2026-11-18T10:07:54.3974613Z   run-id: 44281021812
+2026-11-18T10:07:54.3974911Z   skip-decompress: false
+2026-11-18T10:07:54.3975597Z   digest-mismatch: error
+2026-11-18T10:07:54.3976822Z env:
+2026-11-18T10:07:54.3977732Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T10:07:54.3979163Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T10:07:54.3979513Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T10:07:54.3980462Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44281021812,github.run_id=44281021812,gh-aw.engine.id=claude
+2026-11-18T10:07:54.3981443Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T10:07:54.3981765Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T10:07:54.3982084Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T10:07:54.3982431Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T10:07:54.3982813Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T10:07:54.3983605Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","push_repo_memory":"push_repo_memory","safe_outputs":"safe_outputs"}
+2026-11-18T10:07:54.3985370Z   GH_AW_JOB_RESULTS: {"activation":{"result":"success"},"agent":{"result":"success"},"detection":{"result":"success"},"push_repo_memory":{"result":"success"},"safe_outputs":{"result":"success"}}
+2026-11-18T10:07:54.3990529Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"push_repo_memory":true,"safe_outputs":true}
+2026-11-18T10:07:54.3993629Z   GH_AW_MEMORY_SAVE_RESULTS: {"prices":{"branch":"memory/prices","commit":"779e80f5a8491f208809c904282d0637f4bc7008","jobResult":"success","outcome":"success","status":"saved"}}
+2026-11-18T10:07:54.3995577Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T10:07:54.3995979Z   GITHUB_AW_OTEL_TRACE_ID: 9d4fcd52fb4af697812bd158a796e4ff
+2026-11-18T10:07:54.4003222Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b7f9684b9f37a493
+2026-11-18T10:07:54.4003674Z   GITHUB_AW_OTEL_JOB_START_MS: 1794996471160
+2026-11-18T10:07:54.4004022Z ##[endgroup]
+2026-11-18T10:07:54.6601486Z Downloading single artifact
+2026-11-18T10:07:54.7698697Z Preparing to download the following artifacts:
+2026-11-18T10:07:54.7706627Z - detection (ID: 14417766326, Size: 19930, Expected Digest: sha256:f26add69e3f22ca730935e67dfaa9fe28922e2760ba8a2794fe75cac6810b396)
+2026-11-18T10:07:54.9372801Z Redirecting to blob download url: https://productionresultssa0.blob.core.windows.net/actions-results/d36e003e-8293-46ff-9129-7c51b2dcc543/workflow-job-run-f85fffe4-5898-5cc0-95d8-8ab27fc9ff5e/artifacts/dad9a79bf7094d4e4604288b20606bf0c332ad493b99c12f1d458912c5ab4bdc.zip
+2026-11-18T10:07:54.9376486Z Starting download of artifact to: /tmp/gh-aw/threat-detection
+2026-11-18T10:07:54.9744411Z (node:2363) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-11-18T10:07:54.9746454Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-18T10:07:55.0226252Z SHA256 digest of downloaded artifact is f26add69e3f22ca730935e67dfaa9fe28922e2760ba8a2794fe75cac6810b396
+2026-11-18T10:07:55.0232281Z Artifact download completed successfully.
+2026-11-18T10:07:55.0323779Z Total of 1 artifact(s) downloaded
+2026-11-18T10:07:55.0324263Z Download artifact has finished successfully
+2026-11-18T10:07:55.0452433Z ##[group]Run actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
+2026-11-18T10:07:55.0452995Z with:
+2026-11-18T10:07:55.0453288Z   pattern: safe-outputs-items
+2026-11-18T10:07:55.0453632Z   merge-multiple: true
+2026-11-18T10:07:55.0453936Z   path: /tmp/gh-aw/
+2026-11-18T10:07:55.0454240Z   repository: Suv4o/charge-line-data
+2026-11-18T10:07:55.0454583Z   run-id: 44281021812
+2026-11-18T10:07:55.0454883Z   skip-decompress: false
+2026-11-18T10:07:55.0455195Z   digest-mismatch: error
+2026-11-18T10:07:55.0455642Z env:
+2026-11-18T10:07:55.0455923Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T10:07:55.0456258Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T10:07:55.0456602Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T10:07:55.0457551Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44281021812,github.run_id=44281021812,gh-aw.engine.id=claude
+2026-11-18T10:07:55.0458824Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T10:07:55.0459169Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T10:07:55.0459489Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T10:07:55.0459846Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T10:07:55.0460232Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T10:07:55.0461024Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","push_repo_memory":"push_repo_memory","safe_outputs":"safe_outputs"}
+2026-11-18T10:07:55.0462289Z   GH_AW_JOB_RESULTS: {"activation":{"result":"success"},"agent":{"result":"success"},"detection":{"result":"success"},"push_repo_memory":{"result":"success"},"safe_outputs":{"result":"success"}}
+2026-11-18T10:07:55.0463409Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"push_repo_memory":true,"safe_outputs":true}
+2026-11-18T10:07:55.0464522Z   GH_AW_MEMORY_SAVE_RESULTS: {"prices":{"branch":"memory/prices","commit":"779e80f5a8491f208809c904282d0637f4bc7008","jobResult":"success","outcome":"success","status":"saved"}}
+2026-11-18T10:07:55.0465305Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T10:07:55.0465692Z   GITHUB_AW_OTEL_TRACE_ID: 9d4fcd52fb4af697812bd158a796e4ff
+2026-11-18T10:07:55.0466141Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b7f9684b9f37a493
+2026-11-18T10:07:55.0466535Z   GITHUB_AW_OTEL_JOB_START_MS: 1794996471160
+2026-11-18T10:07:55.0466898Z ##[endgroup]
+2026-11-18T10:07:55.4429648Z Found 6 artifact(s)
+2026-11-18T10:07:55.4437025Z Filtering artifacts by pattern 'safe-outputs-items'
+2026-11-18T10:07:55.4518575Z Total of 0 artifact(s) downloaded
+2026-11-18T10:07:55.4542517Z Download artifact has finished successfully
+2026-11-18T10:07:55.4733146Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-18T10:07:55.4733683Z with:
+2026-11-18T10:07:55.4736462Z   github-token: ***
+2026-11-18T10:07:55.4737800Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'handle_noop_message.cjs'));
+await main();
+
+2026-11-18T10:07:55.4739483Z   debug: false
+2026-11-18T10:07:55.4739798Z   user-agent: actions/github-script
+2026-11-18T10:07:55.4740151Z   result-encoding: json
+2026-11-18T10:07:55.4740457Z   retries: 0
+2026-11-18T10:07:55.4740772Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-18T10:07:55.4741138Z env:
+2026-11-18T10:07:55.4741416Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T10:07:55.4741752Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T10:07:55.4742121Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T10:07:55.4743075Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44281021812,github.run_id=44281021812,gh-aw.engine.id=claude
+2026-11-18T10:07:55.4744234Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T10:07:55.4744565Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T10:07:55.4744885Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T10:07:55.4745239Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T10:07:55.4745640Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T10:07:55.4746438Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","push_repo_memory":"push_repo_memory","safe_outputs":"safe_outputs"}
+2026-11-18T10:07:55.4747700Z   GH_AW_JOB_RESULTS: {"activation":{"result":"success"},"agent":{"result":"success"},"detection":{"result":"success"},"push_repo_memory":{"result":"success"},"safe_outputs":{"result":"success"}}
+2026-11-18T10:07:55.4749055Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"push_repo_memory":true,"safe_outputs":true}
+2026-11-18T10:07:55.4750238Z   GH_AW_MEMORY_SAVE_RESULTS: {"prices":{"branch":"memory/prices","commit":"779e80f5a8491f208809c904282d0637f4bc7008","jobResult":"success","outcome":"success","status":"saved"}}
+2026-11-18T10:07:55.4751024Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T10:07:55.4751399Z   GITHUB_AW_OTEL_TRACE_ID: 9d4fcd52fb4af697812bd158a796e4ff
+2026-11-18T10:07:55.4751859Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b7f9684b9f37a493
+2026-11-18T10:07:55.4752256Z   GITHUB_AW_OTEL_JOB_START_MS: 1794996471160
+2026-11-18T10:07:55.4752660Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-11-18T10:07:55.4753045Z   GH_AW_NOOP_MAX: 2
+2026-11-18T10:07:55.4753415Z   GH_AW_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-18T10:07:55.4754101Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Suv4o/charge-line-data/blob/main/.github/workflows/prices.md
+2026-11-18T10:07:55.4754697Z   GH_AW_ENGINE_ID: claude
+2026-11-18T10:07:55.4755028Z   GH_AW_ENGINE_MODEL: claude-sonnet-5-5
+2026-11-18T10:07:55.4755527Z   GH_AW_RUN_URL: https://github.com/Suv4o/charge-line-data/actions/runs/44281021812
+2026-11-18T10:07:55.4756026Z   GH_AW_AGENT_CONCLUSION: success
+2026-11-18T10:07:55.4756379Z   GH_AW_NOOP_REPORT_AS_ISSUE: false
+2026-11-18T10:07:55.4756712Z   GH_AW_AIC: 14.72596
+2026-11-18T10:07:55.4757010Z   GH_AW_THREAT_DETECTION_AIC: 10.63014
+2026-11-18T10:07:55.4757360Z   GH_AW_AMBIENT_CONTEXT: 2633
+2026-11-18T10:07:55.4757693Z   GH_AW_WORKFLOW_ID: prices
+2026-11-18T10:07:55.4757995Z ##[endgroup]
+2026-11-18T10:07:55.7175107Z Agent output content length: 437
+2026-11-18T10:07:55.7181609Z Found 1 noop item(s)
+2026-11-18T10:07:55.7234922Z Successfully processed 1 noop message(s)
+2026-11-18T10:07:55.8302171Z Workflow name: Keep charging networks and prices current
+2026-11-18T10:07:55.8305721Z Run URL: https://github.com/Suv4o/charge-line-data/actions/runs/44281021812
+2026-11-18T10:07:55.8309077Z No-op outcome: reported_no_action
+2026-11-18T10:07:55.8312899Z Report as issue: false
+2026-11-18T10:07:55.8315687Z report-as-issue is disabled (set to false), skipping no-op message posting to issue
+2026-11-18T10:07:55.8478785Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-18T10:07:55.8479351Z with:
+2026-11-18T10:07:55.8481951Z   github-token: ***
+2026-11-18T10:07:55.8483295Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'handle_detection_runs.cjs'));
+await main();
+
+2026-11-18T10:07:55.8484648Z   debug: false
+2026-11-18T10:07:55.8484947Z   user-agent: actions/github-script
+2026-11-18T10:07:55.8485300Z   result-encoding: json
+2026-11-18T10:07:55.8485601Z   retries: 0
+2026-11-18T10:07:55.8485909Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-18T10:07:55.8486282Z env:
+2026-11-18T10:07:55.8486562Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T10:07:55.8487096Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T10:07:55.8487478Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T10:07:55.8488649Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44281021812,github.run_id=44281021812,gh-aw.engine.id=claude
+2026-11-18T10:07:55.8489624Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T10:07:55.8489962Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T10:07:55.8490279Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T10:07:55.8490628Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T10:07:55.8491015Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T10:07:55.8491811Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","push_repo_memory":"push_repo_memory","safe_outputs":"safe_outputs"}
+2026-11-18T10:07:55.8493071Z   GH_AW_JOB_RESULTS: {"activation":{"result":"success"},"agent":{"result":"success"},"detection":{"result":"success"},"push_repo_memory":{"result":"success"},"safe_outputs":{"result":"success"}}
+2026-11-18T10:07:55.8494202Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"push_repo_memory":true,"safe_outputs":true}
+2026-11-18T10:07:55.8495406Z   GH_AW_MEMORY_SAVE_RESULTS: {"prices":{"branch":"memory/prices","commit":"779e80f5a8491f208809c904282d0637f4bc7008","jobResult":"success","outcome":"success","status":"saved"}}
+2026-11-18T10:07:55.8496194Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T10:07:55.8496562Z   GITHUB_AW_OTEL_TRACE_ID: 9d4fcd52fb4af697812bd158a796e4ff
+2026-11-18T10:07:55.8497007Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b7f9684b9f37a493
+2026-11-18T10:07:55.8497403Z   GITHUB_AW_OTEL_JOB_START_MS: 1794996471160
+2026-11-18T10:07:55.8497798Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-11-18T10:07:55.8498269Z   GH_AW_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-18T10:07:55.8499105Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Suv4o/charge-line-data/blob/main/.github/workflows/prices.md
+2026-11-18T10:07:55.8499837Z   GH_AW_RUN_URL: https://github.com/Suv4o/charge-line-data/actions/runs/44281021812
+2026-11-18T10:07:55.8500330Z   GH_AW_DETECTION_CONCLUSION: success
+2026-11-18T10:07:55.8500680Z   GH_AW_DETECTION_REASON: 
+2026-11-18T10:07:55.8501003Z   GH_AW_DETECTION_THREAT_KINDS: 
+2026-11-18T10:07:55.8501323Z ##[endgroup]
+2026-11-18T10:07:55.9946900Z Detection conclusion: success
+2026-11-18T10:07:55.9952879Z Detection category: detection_outcome_unknown
+2026-11-18T10:07:55.9955803Z Workflow name: Keep charging networks and prices current
+2026-11-18T10:07:55.9958951Z Run URL: https://github.com/Suv4o/charge-line-data/actions/runs/44281021812
+2026-11-18T10:07:55.9962313Z Detection did not produce a warning or failure, no issue comment needed
+2026-11-18T10:07:56.0136371Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-18T10:07:56.0136935Z with:
+2026-11-18T10:07:56.0139963Z   github-token: ***
+2026-11-18T10:07:56.0141292Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'missing_tool.cjs'));
+await main();
+
+2026-11-18T10:07:56.0142629Z   debug: false
+2026-11-18T10:07:56.0142927Z   user-agent: actions/github-script
+2026-11-18T10:07:56.0143286Z   result-encoding: json
+2026-11-18T10:07:56.0143589Z   retries: 0
+2026-11-18T10:07:56.0143905Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-18T10:07:56.0144279Z env:
+2026-11-18T10:07:56.0144553Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T10:07:56.0144892Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T10:07:56.0145265Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T10:07:56.0146205Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44281021812,github.run_id=44281021812,gh-aw.engine.id=claude
+2026-11-18T10:07:56.0147363Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T10:07:56.0147706Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T10:07:56.0148034Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T10:07:56.0148602Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T10:07:56.0149002Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T10:07:56.0149799Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","push_repo_memory":"push_repo_memory","safe_outputs":"safe_outputs"}
+2026-11-18T10:07:56.0151073Z   GH_AW_JOB_RESULTS: {"activation":{"result":"success"},"agent":{"result":"success"},"detection":{"result":"success"},"push_repo_memory":{"result":"success"},"safe_outputs":{"result":"success"}}
+2026-11-18T10:07:56.0152201Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"push_repo_memory":true,"safe_outputs":true}
+2026-11-18T10:07:56.0153322Z   GH_AW_MEMORY_SAVE_RESULTS: {"prices":{"branch":"memory/prices","commit":"779e80f5a8491f208809c904282d0637f4bc7008","jobResult":"success","outcome":"success","status":"saved"}}
+2026-11-18T10:07:56.0154122Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T10:07:56.0154498Z   GITHUB_AW_OTEL_TRACE_ID: 9d4fcd52fb4af697812bd158a796e4ff
+2026-11-18T10:07:56.0154943Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b7f9684b9f37a493
+2026-11-18T10:07:56.0155351Z   GITHUB_AW_OTEL_JOB_START_MS: 1794996471160
+2026-11-18T10:07:56.0155754Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-11-18T10:07:56.0156159Z   GH_AW_MISSING_TOOL_CREATE_ISSUE: true
+2026-11-18T10:07:56.0156596Z   GH_AW_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-18T10:07:56.0157276Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Suv4o/charge-line-data/blob/main/.github/workflows/prices.md
+2026-11-18T10:07:56.0157870Z   GH_AW_ENGINE_ID: claude
+2026-11-18T10:07:56.0158200Z   GH_AW_ENGINE_MODEL: claude-sonnet-5-5
+2026-11-18T10:07:56.0158725Z ##[endgroup]
+2026-11-18T10:07:56.1499546Z Max count: unlimited
+2026-11-18T10:07:56.1726773Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-18T10:07:56.1727319Z with:
+2026-11-18T10:07:56.1730287Z   github-token: ***
+2026-11-18T10:07:56.1731638Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'report_incomplete_handler.cjs'));
+await main();
+
+2026-11-18T10:07:56.1733021Z   debug: false
+2026-11-18T10:07:56.1733312Z   user-agent: actions/github-script
+2026-11-18T10:07:56.1733665Z   result-encoding: json
+2026-11-18T10:07:56.1733964Z   retries: 0
+2026-11-18T10:07:56.1734318Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-18T10:07:56.1734693Z env:
+2026-11-18T10:07:56.1734965Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T10:07:56.1735330Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T10:07:56.1735705Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T10:07:56.1736652Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44281021812,github.run_id=44281021812,gh-aw.engine.id=claude
+2026-11-18T10:07:56.1737602Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T10:07:56.1737943Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T10:07:56.1738260Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T10:07:56.1738830Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T10:07:56.1739221Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T10:07:56.1740008Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","push_repo_memory":"push_repo_memory","safe_outputs":"safe_outputs"}
+2026-11-18T10:07:56.1742185Z   GH_AW_JOB_RESULTS: {"activation":{"result":"success"},"agent":{"result":"success"},"detection":{"result":"success"},"push_repo_memory":{"result":"success"},"safe_outputs":{"result":"success"}}
+2026-11-18T10:07:56.1743528Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"push_repo_memory":true,"safe_outputs":true}
+2026-11-18T10:07:56.1744636Z   GH_AW_MEMORY_SAVE_RESULTS: {"prices":{"branch":"memory/prices","commit":"779e80f5a8491f208809c904282d0637f4bc7008","jobResult":"success","outcome":"success","status":"saved"}}
+2026-11-18T10:07:56.1745431Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T10:07:56.1745810Z   GITHUB_AW_OTEL_TRACE_ID: 9d4fcd52fb4af697812bd158a796e4ff
+2026-11-18T10:07:56.1746259Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b7f9684b9f37a493
+2026-11-18T10:07:56.1746659Z   GITHUB_AW_OTEL_JOB_START_MS: 1794996471160
+2026-11-18T10:07:56.1747063Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-11-18T10:07:56.1747476Z   GH_AW_REPORT_INCOMPLETE_CREATE_ISSUE: true
+2026-11-18T10:07:56.1747927Z   GH_AW_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-18T10:07:56.1748827Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Suv4o/charge-line-data/blob/main/.github/workflows/prices.md
+2026-11-18T10:07:56.1749430Z   GH_AW_ENGINE_ID: claude
+2026-11-18T10:07:56.1749774Z   GH_AW_ENGINE_MODEL: claude-sonnet-5-5
+2026-11-18T10:07:56.1752779Z ##[endgroup]
+2026-11-18T10:07:56.3235490Z Max count: unlimited
+2026-11-18T10:07:56.3440592Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-18T10:07:56.3441134Z with:
+2026-11-18T10:07:56.3445319Z   github-token: ***
+2026-11-18T10:07:56.3446705Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'handle_agent_failure.cjs'));
+await main();
+
+2026-11-18T10:07:56.3448069Z   debug: false
+2026-11-18T10:07:56.3448639Z   user-agent: actions/github-script
+2026-11-18T10:07:56.3449043Z   result-encoding: json
+2026-11-18T10:07:56.3449352Z   retries: 0
+2026-11-18T10:07:56.3449670Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-18T10:07:56.3450046Z env:
+2026-11-18T10:07:56.3450329Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T10:07:56.3450673Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T10:07:56.3451043Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T10:07:56.3451989Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44281021812,github.run_id=44281021812,gh-aw.engine.id=claude
+2026-11-18T10:07:56.3452945Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T10:07:56.3453282Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T10:07:56.3453607Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T10:07:56.3453961Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T10:07:56.3454345Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T10:07:56.3455135Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","push_repo_memory":"push_repo_memory","safe_outputs":"safe_outputs"}
+2026-11-18T10:07:56.3456406Z   GH_AW_JOB_RESULTS: {"activation":{"result":"success"},"agent":{"result":"success"},"detection":{"result":"success"},"push_repo_memory":{"result":"success"},"safe_outputs":{"result":"success"}}
+2026-11-18T10:07:56.3457527Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"push_repo_memory":true,"safe_outputs":true}
+2026-11-18T10:07:56.3458839Z   GH_AW_MEMORY_SAVE_RESULTS: {"prices":{"branch":"memory/prices","commit":"779e80f5a8491f208809c904282d0637f4bc7008","jobResult":"success","outcome":"success","status":"saved"}}
+2026-11-18T10:07:56.3459647Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T10:07:56.3460028Z   GITHUB_AW_OTEL_TRACE_ID: 9d4fcd52fb4af697812bd158a796e4ff
+2026-11-18T10:07:56.3460485Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b7f9684b9f37a493
+2026-11-18T10:07:56.3460895Z   GITHUB_AW_OTEL_JOB_START_MS: 1794996471160
+2026-11-18T10:07:56.3461524Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-11-18T10:07:56.3462006Z   GH_AW_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-18T10:07:56.3462697Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Suv4o/charge-line-data/blob/main/.github/workflows/prices.md
+2026-11-18T10:07:56.3463429Z   GH_AW_RUN_URL: https://github.com/Suv4o/charge-line-data/actions/runs/44281021812
+2026-11-18T10:07:56.3463919Z   GH_AW_AGENT_CONCLUSION: success
+2026-11-18T10:07:56.3464266Z   GH_AW_ACTIVATION_RESULT: success
+2026-11-18T10:07:56.3464611Z   GH_AW_WORKFLOW_ID: prices
+2026-11-18T10:07:56.3465058Z   GH_AW_ACTION_FAILURE_ISSUE_EXPIRES_HOURS: 0
+2026-11-18T10:07:56.3465436Z   GH_AW_ENGINE_ID: claude
+2026-11-18T10:07:56.3465755Z   GH_AW_CHECKOUT_PR_SUCCESS: true
+2026-11-18T10:07:56.3466103Z   GH_AW_CHECKOUT_PR_INVALIDATED: false
+2026-11-18T10:07:56.3466472Z   GH_AW_AI_CREDITS_RATE_LIMIT_ERROR: false
+2026-11-18T10:07:56.3466843Z   GH_AW_UNKNOWN_MODEL_AI_CREDITS: false
+2026-11-18T10:07:56.3467194Z   GH_AW_AIC: 14.72596
+2026-11-18T10:07:56.3467498Z   GH_AW_THREAT_DETECTION_AIC: 10.63014
+2026-11-18T10:07:56.3467857Z   GH_AW_DETECTION_JOB_RESULT: success
+2026-11-18T10:07:56.3468198Z   GH_AW_MAX_AI_CREDITS: 300
+2026-11-18T10:07:56.3468740Z   GH_AW_DEFAULT_CHECKOUT_USES_TRIGGER_REF: true
+2026-11-18T10:07:56.3469302Z   GH_AW_INFERENCE_ACCESS_ERROR: false
+2026-11-18T10:07:56.3469670Z   GH_AW_MCP_POLICY_ERROR: false
+2026-11-18T10:07:56.3470011Z   GH_AW_AGENTIC_ENGINE_TIMEOUT: false
+2026-11-18T10:07:56.3470372Z   GH_AW_MODEL_NOT_SUPPORTED_ERROR: false
+2026-11-18T10:07:56.3470748Z   GH_AW_MODEL_ENDPOINT_MISMATCH_ERROR: false
+2026-11-18T10:07:56.3471123Z   GH_AW_HTTP_400_RESPONSE_ERROR: false
+2026-11-18T10:07:56.3471481Z   GH_AW_MAX_CACHE_MISSES_EXCEEDED: false
+2026-11-18T10:07:56.3471843Z   GH_AW_MISSING_MODEL_PRICING_ERROR: false
+2026-11-18T10:07:56.3472222Z   GH_AW_MISSING_MODEL_PRICING_MODEL_NAME: 
+2026-11-18T10:07:56.3472598Z   GH_AW_SHELL_EXPANSION_GUARD_REJECTED: false
+2026-11-18T10:07:56.3472991Z   GH_AW_ENGINE_API_HOSTS: api.anthropic.com
+2026-11-18T10:07:56.3473368Z   GH_AW_CODE_PUSH_FAILURE_ERRORS: 
+2026-11-18T10:07:56.3473715Z   GH_AW_CODE_PUSH_FAILURE_COUNT: 0
+2026-11-18T10:07:56.3474060Z   GH_AW_LOCKDOWN_CHECK_FAILED: false
+2026-11-18T10:07:56.3474422Z   GH_AW_OAUTH_TOKEN_CHECK_FAILED: false
+2026-11-18T10:07:56.3474787Z   GH_AW_STALE_LOCK_FILE_FAILED: false
+2026-11-18T10:07:56.3475142Z   GH_AW_DAILY_AI_CREDITS_EXCEEDED: false
+2026-11-18T10:07:56.3475535Z   GH_AW_DAILY_AI_CREDITS_GUARDRAIL_STATUS: skipped
+2026-11-18T10:07:56.3475935Z   GH_AW_DAILY_AI_CREDITS_GUARDRAIL_ERROR: 
+2026-11-18T10:07:56.3476293Z   GH_AW_DAILY_AI_CREDITS_TOTAL: 
+2026-11-18T10:07:56.3476633Z   GH_AW_DAILY_AI_CREDITS_ESTIMATED: 
+2026-11-18T10:07:56.3476992Z   GH_AW_DAILY_AI_CREDITS_THRESHOLD: 
+2026-11-18T10:07:56.3477368Z   GH_AW_DAILY_AI_CREDITS_CONTINUE_ON_ERROR: false
+2026-11-18T10:07:56.3477765Z   GH_AW_PUSH_REPO_MEMORY_RESULT: success
+2026-11-18T10:07:56.3478147Z   GH_AW_REPO_MEMORY_VALIDATION_FAILED_prices: 
+2026-11-18T10:07:56.3478730Z   GH_AW_REPO_MEMORY_VALIDATION_ERROR_prices: 
+2026-11-18T10:07:56.3479139Z   GH_AW_REPO_MEMORY_PATCH_SIZE_EXCEEDED_prices: 
+2026-11-18T10:07:56.3479522Z   GH_AW_GROUP_REPORTS: false
+2026-11-18T10:07:56.3479855Z   GH_AW_FAILURE_REPORT_AS_ISSUE: true
+2026-11-18T10:07:56.3480228Z   GH_AW_MISSING_TOOL_REPORT_AS_FAILURE: true
+2026-11-18T10:07:56.3480611Z   GH_AW_MISSING_DATA_REPORT_AS_FAILURE: true
+2026-11-18T10:07:56.3480965Z   GH_AW_TIMEOUT_MINUTES: 30
+2026-11-18T10:07:56.3481275Z ##[endgroup]
+2026-11-18T10:07:56.5714491Z [ai-credits] aiCredits source=token_usage value=14.72596
+2026-11-18T10:07:56.5720287Z [ai-credits] maxAICredits source=awf_config value=300
+2026-11-18T10:07:56.5723087Z [ai-credits] rateLimitSignal source=none
+2026-11-18T10:07:56.5732931Z Agent conclusion: success
+2026-11-18T10:07:56.5735764Z Workflow name: Keep charging networks and prices current
+2026-11-18T10:07:56.5738856Z Workflow ID: prices
+2026-11-18T10:07:56.5741430Z Secret verification result: 
+2026-11-18T10:07:56.5744369Z Engine secret failure message: (none)
+2026-11-18T10:07:56.5746930Z Assignment error count: 0
+2026-11-18T10:07:56.5752603Z Assign copilot failure count: 0
+2026-11-18T10:07:56.5755335Z Skill install failure count: 0
+2026-11-18T10:07:56.5758216Z Create discussion error count: 0
+2026-11-18T10:07:56.5761377Z Code push failure count: 0
+2026-11-18T10:07:56.5764060Z Checkout PR success: true
+2026-11-18T10:07:56.5766802Z AI credits: 14.72596
+2026-11-18T10:07:56.5769830Z Configured max AI credits: 300
+2026-11-18T10:07:56.5772515Z AI credits rate-limit error: false
+2026-11-18T10:07:56.5775233Z Max AI credits exceeded (harness budget abort): false
+2026-11-18T10:07:56.5777940Z Daily workflow AIC guardrail exceeded: false
+2026-11-18T10:07:56.5781956Z Daily workflow AIC guardrail status: skipped; error detail: (none)
+2026-11-18T10:07:56.5783540Z Daily workflow AIC guardrail continue-on-error (warning mode): false
+2026-11-18T10:07:56.5785210Z Inference access error: false
+2026-11-18T10:07:56.5787234Z MCP policy error: false
+2026-11-18T10:07:56.5788814Z Agentic engine timeout: false
+2026-11-18T10:07:56.5790128Z Model not supported error: false
+2026-11-18T10:07:56.5791360Z HTTP 400 response error: false
+2026-11-18T10:07:56.5792436Z Unknown model AI credits error: false
+2026-11-18T10:07:56.5793808Z Unknown model AI credits sources (audit/output): false/false
+2026-11-18T10:07:56.5795112Z Missing model pricing error: false (model: (unknown))
+2026-11-18T10:07:56.5796261Z Shell expansion guard rejected: false
+2026-11-18T10:07:56.5797349Z Push repo-memory result: success
+2026-11-18T10:07:56.5798838Z App token minting failed (safe_outputs/conclusion/activation): false/false/false
+2026-11-18T10:07:56.5800174Z Lockdown check failed: false
+2026-11-18T10:07:56.5892850Z OAuth token check failed: false
+2026-11-18T10:07:56.5893370Z Stale lock file check failed: false
+2026-11-18T10:07:56.5893830Z Cache memory enabled: false
+2026-11-18T10:07:56.5894305Z Cache memory restored (from restore outputs): false
+2026-11-18T10:07:56.5894865Z Missing tool report-as-failure: true
+2026-11-18T10:07:56.5895331Z Missing data report-as-failure: true
+2026-11-18T10:07:56.5895784Z Agent output content length: 437
+2026-11-18T10:07:56.5896333Z Agent succeeded with only noop outputs - this is not a failure
+2026-11-18T10:07:56.5898671Z Agent job did not fail and no assignment/discussion/code-push/push-repo-memory/app-token/lockdown/oauth-token-check/stale-lock-file/activation/daily-workflow-aic/daily-workflow-aic-accounting/ai-credits/max-ai-credits-exceeded/report-incomplete/cache-miss/missing-tool/missing-data/tool-denials-exceeded/secret-verification errors and has safe outputs (conclusion: success), skipping failure handling
+2026-11-18T10:07:56.6035055Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-18T10:07:56.6035604Z with:
+2026-11-18T10:07:56.6038143Z   github-token: ***
+2026-11-18T10:07:56.6039859Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'report_failed_jobs.cjs'));
+await main();
+
+2026-11-18T10:07:56.6041243Z   debug: false
+2026-11-18T10:07:56.6041544Z   user-agent: actions/github-script
+2026-11-18T10:07:56.6041907Z   result-encoding: json
+2026-11-18T10:07:56.6042208Z   retries: 0
+2026-11-18T10:07:56.6042522Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-18T10:07:56.6042897Z env:
+2026-11-18T10:07:56.6043177Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T10:07:56.6043537Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T10:07:56.6043908Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T10:07:56.6044857Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44281021812,github.run_id=44281021812,gh-aw.engine.id=claude
+2026-11-18T10:07:56.6045811Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T10:07:56.6046318Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T10:07:56.6046645Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T10:07:56.6047002Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T10:07:56.6047391Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T10:07:56.6048192Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","push_repo_memory":"push_repo_memory","safe_outputs":"safe_outputs"}
+2026-11-18T10:07:56.6049690Z   GH_AW_JOB_RESULTS: {"activation":{"result":"success"},"agent":{"result":"success"},"detection":{"result":"success"},"push_repo_memory":{"result":"success"},"safe_outputs":{"result":"success"}}
+2026-11-18T10:07:56.6050817Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"push_repo_memory":true,"safe_outputs":true}
+2026-11-18T10:07:56.6051924Z   GH_AW_MEMORY_SAVE_RESULTS: {"prices":{"branch":"memory/prices","commit":"779e80f5a8491f208809c904282d0637f4bc7008","jobResult":"success","outcome":"success","status":"saved"}}
+2026-11-18T10:07:56.6052718Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T10:07:56.6053099Z   GITHUB_AW_OTEL_TRACE_ID: 9d4fcd52fb4af697812bd158a796e4ff
+2026-11-18T10:07:56.6053552Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b7f9684b9f37a493
+2026-11-18T10:07:56.6053954Z   GITHUB_AW_OTEL_JOB_START_MS: 1794996471160
+2026-11-18T10:07:56.6058834Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-11-18T10:07:56.6059405Z   GH_AW_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-18T10:07:56.6060110Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Suv4o/charge-line-data/blob/main/.github/workflows/prices.md
+2026-11-18T10:07:56.6064895Z   GH_AW_RUN_URL: https://github.com/Suv4o/charge-line-data/actions/runs/44281021812
+2026-11-18T10:07:56.6065539Z   GH_AW_REPORT_FAILED_JOBS: true
+2026-11-18T10:07:56.6065882Z ##[endgroup]
+2026-11-18T10:07:56.7569400Z Checking GitHub API rate limit before querying jobs
+2026-11-18T10:07:57.3559258Z Checking GitHub API rate limit after querying jobs
+2026-11-18T10:07:57.5550489Z No failed non-builtin jobs found, skipping issue creation
+2026-11-18T10:07:57.5678239Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/collect_usage_artifact_files.sh"
+2026-11-18T10:07:57.5679361Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/collect_usage_artifact_files.sh"[0m
+2026-11-18T10:07:57.5684206Z shell: /usr/bin/bash -e {0}
+2026-11-18T10:07:57.5684551Z env:
+2026-11-18T10:07:57.5684838Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T10:07:57.5685192Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T10:07:57.5685548Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T10:07:57.5686521Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44281021812,github.run_id=44281021812,gh-aw.engine.id=claude
+2026-11-18T10:07:57.5687485Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T10:07:57.5687827Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T10:07:57.5688154Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T10:07:57.5688848Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T10:07:57.5689275Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T10:07:57.5690070Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","push_repo_memory":"push_repo_memory","safe_outputs":"safe_outputs"}
+2026-11-18T10:07:57.5692423Z   GH_AW_JOB_RESULTS: {"activation":{"result":"success"},"agent":{"result":"success"},"detection":{"result":"success"},"push_repo_memory":{"result":"success"},"safe_outputs":{"result":"success"}}
+2026-11-18T10:07:57.5693577Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"push_repo_memory":true,"safe_outputs":true}
+2026-11-18T10:07:57.5694690Z   GH_AW_MEMORY_SAVE_RESULTS: {"prices":{"branch":"memory/prices","commit":"779e80f5a8491f208809c904282d0637f4bc7008","jobResult":"success","outcome":"success","status":"saved"}}
+2026-11-18T10:07:57.5695481Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T10:07:57.5696081Z   GITHUB_AW_OTEL_TRACE_ID: 9d4fcd52fb4af697812bd158a796e4ff
+2026-11-18T10:07:57.5696554Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b7f9684b9f37a493
+2026-11-18T10:07:57.5696965Z   GITHUB_AW_OTEL_JOB_START_MS: 1794996471160
+2026-11-18T10:07:57.5697341Z   GH_AW_DETECTION_JOB_RESULT: success
+2026-11-18T10:07:57.5697704Z   GH_AW_DETECTION_CONCLUSION: success
+2026-11-18T10:07:57.5698056Z   GH_AW_DETECTION_REASON: 
+2026-11-18T10:07:57.5698629Z ##[endgroup]
+2026-11-18T10:07:57.5749162Z Usage artifact source file status:
+2026-11-18T10:07:57.5749830Z FOUND: /tmp/gh-aw/aw_info.json
+2026-11-18T10:07:57.5750342Z MISSING: /tmp/gh-aw/runtime/aw_info.json
+2026-11-18T10:07:57.5750929Z MISSING: /tmp/gh-aw/aw-info.jsonl
+2026-11-18T10:07:57.5751399Z FOUND: /tmp/gh-aw/agent_usage.json
+2026-11-18T10:07:57.5751867Z MISSING: /tmp/gh-aw/agent_usage.jsonl
+2026-11-18T10:07:57.5752347Z FOUND: /tmp/gh-aw/agent/harness_retry.json
+2026-11-18T10:07:57.5752929Z FOUND: /tmp/gh-aw/threat-detection/detection_harness_retry.json
+2026-11-18T10:07:57.5753508Z MISSING: /tmp/gh-aw/detection_usage.jsonl
+2026-11-18T10:07:57.5754015Z MISSING: /tmp/gh-aw/threat-detection/detection_usage.jsonl
+2026-11-18T10:07:57.5754509Z MISSING: /tmp/gh-aw/evals/evals.jsonl
+2026-11-18T10:07:57.5754939Z MISSING: /tmp/gh-aw/evals/evals_status.json
+2026-11-18T10:07:57.5755413Z MISSING: /tmp/gh-aw/evals/evals_token_usage.jsonl
+2026-11-18T10:07:57.5755864Z MISSING: /tmp/gh-aw/evals/execution.json
+2026-11-18T10:07:57.5756378Z MISSING: /tmp/gh-aw/evals/evals/execution.json
+2026-11-18T10:07:57.5756849Z MISSING: /tmp/gh-aw/experiments/state.jsonl
+2026-11-18T10:07:57.5757294Z MISSING: /tmp/gh-aw/experiments/state.json
+2026-11-18T10:07:57.5757761Z MISSING: /tmp/gh-aw/experiments/assignments.json
+2026-11-18T10:07:57.5758224Z FOUND: /tmp/gh-aw/github_rate_limits.jsonl
+2026-11-18T10:07:57.5761334Z MISSING: /tmp/gh-aw/safe-output-items.jsonl
+2026-11-18T10:07:57.5761890Z MISSING: /tmp/gh-aw/sandbox/firewall-audit-logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T10:07:57.5762610Z MISSING: /tmp/gh-aw/sandbox/firewall-audit-logs/api-proxy-logs/model-routing.jsonl
+2026-11-18T10:07:57.5763453Z FOUND: /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T10:07:57.5764088Z MISSING: /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/model-routing.jsonl
+2026-11-18T10:07:57.5764712Z MISSING: /tmp/gh-aw/sandbox/firewall/audit/api-proxy-logs/token-usage.jsonl
+2026-11-18T10:07:57.5765339Z MISSING: /tmp/gh-aw/sandbox/firewall/audit/api-proxy-logs/model-routing.jsonl
+2026-11-18T10:07:57.5766059Z MISSING: /tmp/gh-aw/threat-detection/sandbox/firewall-audit-logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T10:07:57.5766844Z FOUND: /tmp/gh-aw/threat-detection/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T10:07:57.5767572Z MISSING: /tmp/gh-aw/threat-detection/sandbox/firewall/audit/api-proxy-logs/token-usage.jsonl
+2026-11-18T10:07:57.6472164Z /tmp/gh-aw/usage/agent/execution.json
+2026-11-18T10:07:57.6472661Z /tmp/gh-aw/usage/agent/harness_retry.json
+2026-11-18T10:07:57.6473102Z /tmp/gh-aw/usage/agent/token_usage.jsonl
+2026-11-18T10:07:57.6473494Z /tmp/gh-aw/usage/agent_usage.json
+2026-11-18T10:07:57.6473852Z /tmp/gh-aw/usage/aw_info.json
+2026-11-18T10:07:57.6474212Z /tmp/gh-aw/usage/detection/execution.json
+2026-11-18T10:07:57.6474618Z /tmp/gh-aw/usage/detection/harness_retry.json
+2026-11-18T10:07:57.6475038Z /tmp/gh-aw/usage/detection/token_usage.jsonl
+2026-11-18T10:07:57.6475498Z /tmp/gh-aw/usage/github_rate_limits.jsonl
+2026-11-18T10:07:57.6588169Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-18T10:07:57.6589094Z with:
+2026-11-18T10:07:57.6590425Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'generate_usage_artifacts.cjs'));
+await main();
+
+2026-11-18T10:07:57.6594219Z   github-token: ***
+2026-11-18T10:07:57.6594531Z   debug: false
+2026-11-18T10:07:57.6594839Z   user-agent: actions/github-script
+2026-11-18T10:07:57.6595207Z   result-encoding: json
+2026-11-18T10:07:57.6595519Z   retries: 0
+2026-11-18T10:07:57.6595841Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-18T10:07:57.6596222Z env:
+2026-11-18T10:07:57.6596494Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T10:07:57.6596834Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T10:07:57.6597210Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T10:07:57.6598164Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44281021812,github.run_id=44281021812,gh-aw.engine.id=claude
+2026-11-18T10:07:57.6599408Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T10:07:57.6599753Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T10:07:57.6600085Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T10:07:57.6600447Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T10:07:57.6600848Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T10:07:57.6601648Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","push_repo_memory":"push_repo_memory","safe_outputs":"safe_outputs"}
+2026-11-18T10:07:57.6602924Z   GH_AW_JOB_RESULTS: {"activation":{"result":"success"},"agent":{"result":"success"},"detection":{"result":"success"},"push_repo_memory":{"result":"success"},"safe_outputs":{"result":"success"}}
+2026-11-18T10:07:57.6604045Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"push_repo_memory":true,"safe_outputs":true}
+2026-11-18T10:07:57.6605168Z   GH_AW_MEMORY_SAVE_RESULTS: {"prices":{"branch":"memory/prices","commit":"779e80f5a8491f208809c904282d0637f4bc7008","jobResult":"success","outcome":"success","status":"saved"}}
+2026-11-18T10:07:57.6605960Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T10:07:57.6606348Z   GITHUB_AW_OTEL_TRACE_ID: 9d4fcd52fb4af697812bd158a796e4ff
+2026-11-18T10:07:57.6606801Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b7f9684b9f37a493
+2026-11-18T10:07:57.6607204Z   GITHUB_AW_OTEL_JOB_START_MS: 1794996471160
+2026-11-18T10:07:57.6607632Z   GH_AW_GRADER_MANIFEST_0: {"version":2,"graders":[]}
+2026-11-18T10:07:57.6608027Z   GH_AW_GRADER_MANIFEST_CHUNKS: 1
+2026-11-18T10:07:57.6608544Z   GH_AW_JOB_DURATIONS: 
+2026-11-18T10:07:57.6608898Z   GH_AW_DAILY_AI_CREDITS_GUARDRAIL_STATUS: skipped
+2026-11-18T10:07:57.6609296Z   GH_AW_DAILY_AI_CREDITS_EXCEEDED: false
+2026-11-18T10:07:57.6609661Z   GH_AW_DAILY_AI_CREDITS_TOTAL: 
+2026-11-18T10:07:57.6610005Z   GH_AW_DAILY_AI_CREDITS_ESTIMATED: 
+2026-11-18T10:07:57.6610351Z   GH_AW_DAILY_AI_CREDITS_THRESHOLD: 
+2026-11-18T10:07:57.6610688Z ##[endgroup]
+2026-11-18T10:07:58.2457746Z safe-output-items manifest not found at /tmp/gh-aw/safe-output-items.jsonl — safe-outputs-items artifact may not have been downloaded
+2026-11-18T10:07:58.2593176Z /tmp/gh-aw/usage/activity/summary.json
+2026-11-18T10:07:59.7588117Z === Unified session ===
+2026-11-18T10:07:59.7589282Z File format version: 1
+2026-11-18T10:07:59.7590843Z Records: 285 (collector=2, github_api=68, workflow=7, otel=1, mcp=13, harness=5, firewall=140, agent=36, skill=1, prompt=2, model_resolution=1, safe_output=1, execution=3, detection=1, guardrail=1, memory=1, grader=2)
+2026-11-18T10:07:59.7591773Z 
+2026-11-18T10:07:59.7592061Z Agent source: agent/agent-session.jsonl
+2026-11-18T10:07:59.7593157Z Model: claude-sonnet-5-5
+2026-11-18T10:07:59.7594055Z Initialization:
+2026-11-18T10:07:59.7594537Z   Engine: claude
+2026-11-18T10:07:59.7595020Z   Session ID: 4a852b51-1e1e-4265-924e-2201e84b266c
+2026-11-18T10:07:59.7595624Z   Working Directory: /home/runner/work/charge-line-data/charge-line-data
+2026-11-18T10:07:59.7596058Z 
+2026-11-18T10:07:59.7677487Z Statistics:
+2026-11-18T10:07:59.7677845Z   Turns: 12
+2026-11-18T10:07:59.7678129Z   Duration: 34s
+2026-11-18T10:07:59.7678797Z   Tools: 1/11 succeeded
+2026-11-18T10:07:59.7679142Z   Failed Tools: 4
+2026-11-18T10:07:59.7679444Z   Unknown Outcomes: 6
+2026-11-18T10:07:59.7680177Z   Tokens: 258,752 total (17 in / 3,731 out)
+2026-11-18T10:07:59.7680560Z   Cache Read Tokens: 232,256
+2026-11-18T10:07:59.7680910Z   Cache Creation Tokens: 22,748
+2026-11-18T10:07:59.7681238Z   Cost: $0.1573
+2026-11-18T10:07:59.7681527Z   Permission Denials: 1
+2026-11-18T10:07:59.7681831Z     {
+2026-11-18T10:07:59.7682121Z   "subtype": "permission_denied",
+2026-11-18T10:07:59.7682464Z   "tool_name": "Bash",
+2026-11-18T10:07:59.7682850Z   "tool_use_id": "toolu_01DUh8ej6BS5EMwWYpg45zEN",
+2026-11-18T10:07:59.7683279Z   "decision_reason_type": "mode",
+2026-11-18T10:07:59.7686132Z   "message": "Permission to use Bash has been denied because Claude Code is running in don't ask mode. IMPORTANT: You *may* attempt to accomplish this action using other tools that might naturally be used to accomplish this goal, e.g. using head instead of cat. But you *should not* attempt to work around this denial in malicious ways, e.g. do not use your ability to run tests to execute non-test actions. You should only try to work around this restriction in reasonable ways that do not attempt to bypass the intent behind this denial. If you believe this capability is essential to complete the user's request, STOP and explain to the user what you were trying to do and why you need this permission. Let the user decide how to proceed.",
+2026-11-18T10:07:59.7689187Z   "uuid": "350dae59-1847-4885-853f-df3b2ffca2b7",
+2026-11-18T10:07:59.7689644Z   "session_id": "4a852b51-1e1e-4265-924e-2201e84b266c",
+2026-11-18T10:07:59.7690040Z   "tool_input": {
+2026-11-18T10:07:59.7697950Z     "command": "cat > /tmp/gh-aw/repo-memory/prices/operators.json <<'E'\n[\n{\"operator\":\"Yurika\",\"fastSites\":49,\"firstSeen\":\"2026-11-18\",\"lastSeen\":\"2026-11-18\",\"decision\":\"pending\",\"notes\":\"Search snippets suggest it runs the Queensland Electric Super Highway (QESH), so 'Queensland Electric Super Highway' is probably an alias. Only third-party listings (Plugroo) gave prices, about $0.55 for DC. No primary source read: yurika.com.au could not be fetched.\"},\n{\"operator\":\"Queensland Electric Super Highway\",\"fastSites\":6,\"firstSeen\":\"2026-11-18\",\"lastSeen\":\"2026-11-18\",\"decision\":\"pending\",\"notes\":\"Probably the same network as Yurika. Unconfirmed.\"},\n{\"operator\":\"Exploren\",\"fastSites\":33,\"firstSeen\":\"2026-11-18\",\"lastSeen\":\"2026-11-18\",\"decision\":\"pending\",\"notes\":\"Exploren is a banned source. Not researched.\"},\n{\"operator\":\"Charging the Regions\",\"fastSites\":25,\"firstSeen\":\"2026-11-18\",\"lastSeen\":\"2026-11-18\",\"decision\":\"pending\",\"notes\":\"Not researched.\"},\n{\"operator\":\"RAA\",\"fastSites\":13,\"firstSeen\":\"2026-11-18\",\"lastSeen\":\"2026-11-18\",\"decision\":\"pending\",\"notes\":\"Not researched.\"},\n{\"operator\":\"Electric Highway Tasmania\",\"fastSites\":6,\"firstSeen\":\"2026-11-18\",\"lastSeen\":\"2026-11-18\",\"decision\":\"pending\",\"notes\":\"Not researched.\"},\n{\"operator\":\"Engie\",\"fastSites\":5,\"firstSeen\":\"2026-11-18\",\"lastSeen\":\"2026-11-18\",\"decision\":\"pending\",\"notes\":\"Not researched.\"},\n{\"operator\":\"Woolworths\",\"fastSites\":4,\"firstSeen\":\"2026-11-18\",\"lastSeen\":\"2026-11-18\",\"decision\":\"pending\",\"notes\":\"Probably a site owner. Not researched.\"},\n{\"operator\":\"WA EV Network (AU)\",\"fastSites\":4,\"firstSeen\":\"2026-11-18\",\"lastSeen\":\"2026-11-18\",\"decision\":\"pending\",\"notes\":\"Not researched.\"},\n{\"operator\":\"WeVolt (AU)\",\"fastSites\":4,\"firstSeen\":\"2026-11-18\",\"lastSeen\":\"2026-11-18\",\"decision\":\"pending\",\"notes\":\"Not researched.\"},\n{\"operator\":\"Electrona\",\"fastSites\":4,\"firstSeen\":\"2026-11-18\",\"lastSeen\":\"2026-11-18\",\"decision\":\"pending\",\"notes\":\"Not researched.\"},\n{\"operator\":\"EV Highway (Horizon Power)\",\"fastSites\":3,\"firstSeen\":\"2026-11-18\",\"lastSeen\":\"2026-11-18\",\"decision\":\"pending\",\"notes\":\"Not researched.\"}\n]\nE"
+2026-11-18T10:07:59.7705483Z   }
+2026-11-18T10:07:59.7705739Z }
+2026-11-18T10:07:59.7706042Z 
+2026-11-18T10:07:59.7706322Z Chronological trace (user prompts omitted; untimed observations follow):
+2026-11-18T10:07:59.7706689Z 
+2026-11-18T10:07:59.7706930Z [1] collector/conclusion session.format version=1 [file metadata]
+2026-11-18T10:07:59.7707386Z   path=usage/aw_session.jsonl
+2026-11-18T10:07:59.7707599Z 
+2026-11-18T10:07:59.7708117Z [2] github_api/workflow github_api.rate_limit source=response_headers operation=repos.getContent resource=core remaining=4999 limit=5000 +0s
+2026-11-18T10:07:59.7709346Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.7709580Z 
+2026-11-18T10:07:59.7712216Z [3] workflow/activation workflow.info engineId=claude model=claude-sonnet-5-5 requestedModel=claude-sonnet-5-5 triggerType=workflow_dispatch cliVersion=v1.2.2 awfVersion=v0.29.11 mcpgVersion= agentVersion=2.1.317 workflow=Keep charging networks and prices current workflowId=Suv4o/charge-line-data/.github/workflows/prices.lock.yml@refs/heads/main workflowCallId=44281021812-1:Suv4o/charge-line-data/.github/workflows/prices.lock.yml@refs/heads/main callerWorkflowRef=Suv4o/charge-line-data/.github/workflows/prices.lock.yml@refs/heads/main repository=Suv4o/charge-line-data runId=44281021812 runAttempt=1 ref=refs/heads/main sha=57e9f04a18645d1627e8db071ca768dd62fe6970 actor=Suv4o targetRepo= +0.117s
+2026-11-18T10:07:59.7714908Z   path=aw_info.json
+2026-11-18T10:07:59.7715096Z 
+2026-11-18T10:07:59.7715370Z [4] workflow/activation model.config [extension payload omitted] [untimed]
+2026-11-18T10:07:59.7715855Z   path=aw_info.json
+2026-11-18T10:07:59.7716031Z 
+2026-11-18T10:07:59.7716556Z [5] github_api/workflow github_api.rate_limit source=response_headers operation=repos.getContent resource=core remaining=4998 limit=5000 +3.816s
+2026-11-18T10:07:59.7717290Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.7717502Z 
+2026-11-18T10:07:59.7718010Z [6] github_api/workflow github_api.rate_limit source=response_headers operation=repos.getContent resource=core remaining=4997 limit=5000 +0.26s
+2026-11-18T10:07:59.7718912Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.7719132Z 
+2026-11-18T10:07:59.7719650Z [7] github_api/workflow github_api.rate_limit source=response_headers operation=repos.getContent resource=core remaining=4996 limit=5000 +0.194s
+2026-11-18T10:07:59.7720362Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.7720561Z 
+2026-11-18T10:07:59.7721134Z [8] github_api/workflow github_api.rate_limit source=response_headers operation=repos.getContent resource=core remaining=4995 limit=5000 +0.167s
+2026-11-18T10:07:59.7721847Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.7722051Z 
+2026-11-18T10:07:59.7722630Z [9] otel/agent otel.span name=gh-aw.agent.setup traceId=9d4fcd52fb4af697812bd158a796e4ff spanId=34932ffcf70e9bc6 parentSpanId=7cf02d7921ec9df0 code=1 +13.633s
+2026-11-18T10:07:59.7723380Z   path=otel.jsonl
+2026-11-18T10:07:59.7723555Z 
+2026-11-18T10:07:59.7724011Z [10] mcp/agent mcp.configuration servers=[serverName=github transport=stdio; serverName=safeoutputs transport=stdio] +155.024s
+2026-11-18T10:07:59.7724687Z   path=mcp-logs/configuration.jsonl
+2026-11-18T10:07:59.7724921Z 
+2026-11-18T10:07:59.7725253Z [11] mcp/agent mcp.rpc.request serverName=safeoutputs direction=OUT method=tools/list +6.995s
+2026-11-18T10:07:59.7725805Z   path=mcp-logs/rpc-messages.jsonl
+2026-11-18T10:07:59.7726031Z 
+2026-11-18T10:07:59.7726400Z [12] mcp/agent mcp.rpc.response serverName=safeoutputs direction=IN rpcId=1 [response observed] +0.024s
+2026-11-18T10:07:59.7727104Z   path=mcp-logs/rpc-messages.jsonl
+2026-11-18T10:07:59.7727335Z 
+2026-11-18T10:07:59.7727636Z [13] mcp/agent mcp.rpc.request serverName=github direction=OUT method=tools/list +2.966s
+2026-11-18T10:07:59.7728170Z   path=mcp-logs/rpc-messages.jsonl
+2026-11-18T10:07:59.7728566Z 
+2026-11-18T10:07:59.7728919Z [14] mcp/agent mcp.rpc.response serverName=github direction=IN rpcId=1 [response observed] +0.095s
+2026-11-18T10:07:59.7729490Z   path=mcp-logs/rpc-messages.jsonl
+2026-11-18T10:07:59.7729707Z 
+2026-11-18T10:07:59.7730020Z [15] mcp/agent mcp.rpc.request serverName=github direction=OUT method=prompts/list +0.006s
+2026-11-18T10:07:59.7730675Z   path=mcp-logs/rpc-messages.jsonl
+2026-11-18T10:07:59.7730898Z 
+2026-11-18T10:07:59.7731239Z [16] mcp/agent mcp.rpc.response serverName=github direction=IN rpcId=1 [response observed] +0.007s
+2026-11-18T10:07:59.7731798Z   path=mcp-logs/rpc-messages.jsonl
+2026-11-18T10:07:59.7732018Z 
+2026-11-18T10:07:59.7732507Z [17] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_start resource=core remaining=4980 limit=5000 +1.567s
+2026-11-18T10:07:59.7733200Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.7733412Z 
+2026-11-18T10:07:59.7733868Z [18] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_start resource=search remaining=30 limit=30 +0s
+2026-11-18T10:07:59.7734544Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.7734753Z 
+2026-11-18T10:07:59.7735233Z [19] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_start resource=graphql remaining=5000 limit=5000 +0s
+2026-11-18T10:07:59.7735919Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.7736121Z 
+2026-11-18T10:07:59.7736655Z [20] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_start resource=integration_manifest remaining=5000 limit=5000 +0s
+2026-11-18T10:07:59.7737390Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.7737594Z 
+2026-11-18T10:07:59.7738095Z [21] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_start resource=source_import remaining=100 limit=100 +0s
+2026-11-18T10:07:59.7738972Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.7739179Z 
+2026-11-18T10:07:59.7739693Z [22] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_start resource=code_scanning_autofix remaining=10 limit=10 +0s
+2026-11-18T10:07:59.7740411Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.7740618Z 
+2026-11-18T10:07:59.7741180Z [23] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_start resource=actions_runner_registration remaining=10000 limit=10000 +0s
+2026-11-18T10:07:59.7741955Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.7742159Z 
+2026-11-18T10:07:59.7742634Z [24] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_start resource=scim remaining=15000 limit=15000 +0s
+2026-11-18T10:07:59.7743316Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.7743520Z 
+2026-11-18T10:07:59.7744040Z [25] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_start resource=dependency_snapshots remaining=100 limit=100 +0s
+2026-11-18T10:07:59.7744763Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.7744970Z 
+2026-11-18T10:07:59.7745471Z [26] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_start resource=dependency_sbom remaining=100 limit=100 +0s
+2026-11-18T10:07:59.7746177Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.7746374Z 
+2026-11-18T10:07:59.7746856Z [27] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_start resource=audit_log remaining=1750 limit=1750 +0s
+2026-11-18T10:07:59.7747551Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.7747753Z 
+2026-11-18T10:07:59.7748264Z [28] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_start resource=audit_log_streaming remaining=15 limit=15 +0s
+2026-11-18T10:07:59.7789391Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.7789652Z 
+2026-11-18T10:07:59.7790348Z [29] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_start resource=code_search remaining=10 limit=10 +0s
+2026-11-18T10:07:59.7791085Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.7791307Z 
+2026-11-18T10:07:59.7791850Z [30] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_start resource=copilot_usage_records remaining=1750 limit=1750 +0s
+2026-11-18T10:07:59.7792589Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.7792820Z 
+2026-11-18T10:07:59.7793392Z [31] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_start resource=enterprise_token_inventory remaining=1750 limit=1750 +0s
+2026-11-18T10:07:59.7794251Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.7794468Z 
+2026-11-18T10:07:59.7794719Z [32] harness/agent harness.retry [extension payload omitted] [untimed]
+2026-11-18T10:07:59.7795194Z   path=agent/harness_retry.json
+2026-11-18T10:07:59.7795406Z 
+2026-11-18T10:07:59.7795662Z [33] harness/agent harness.attempt [extension payload omitted] +0.213s
+2026-11-18T10:07:59.7796140Z   path=agent/harness_retry.json
+2026-11-18T10:07:59.7796345Z 
+2026-11-18T10:07:59.7796689Z [34] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +12.63s
+2026-11-18T10:07:59.7797251Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7797490Z 
+2026-11-18T10:07:59.7797808Z [35] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.047s
+2026-11-18T10:07:59.7888706Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7889086Z 
+2026-11-18T10:07:59.7889498Z [36] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.039s
+2026-11-18T10:07:59.7890185Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7890488Z 
+2026-11-18T10:07:59.7890876Z [37] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.039s
+2026-11-18T10:07:59.7891555Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7891858Z 
+2026-11-18T10:07:59.7892251Z [38] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.038s
+2026-11-18T10:07:59.7892934Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7893219Z 
+2026-11-18T10:07:59.7893610Z [39] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.043s
+2026-11-18T10:07:59.7894283Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7894574Z 
+2026-11-18T10:07:59.7895094Z [40] firewall/agent firewall.http_access host=api.github.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.097s
+2026-11-18T10:07:59.7895932Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7896228Z 
+2026-11-18T10:07:59.7896962Z [41] firewall/agent firewall.http_access host=run-actions-1-azure-eastus.actions.githubusercontent.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.017s
+2026-11-18T10:07:59.7897780Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7898017Z 
+2026-11-18T10:07:59.7898628Z [42] firewall/agent firewall.http_access host=api.anthropic.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.159s
+2026-11-18T10:07:59.7899295Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7899533Z 
+2026-11-18T10:07:59.7899948Z [43] firewall/agent firewall.http_access host=api.github.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.033s
+2026-11-18T10:07:59.7900582Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7900814Z 
+2026-11-18T10:07:59.7901233Z [44] firewall/agent firewall.http_access host=api.anthropic.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.155s
+2026-11-18T10:07:59.7901965Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7902207Z 
+2026-11-18T10:07:59.7902617Z [45] firewall/agent firewall.http_access host=api.github.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.096s
+2026-11-18T10:07:59.7903239Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7903472Z 
+2026-11-18T10:07:59.7904036Z [46] firewall/agent firewall.http_access host=api.anthropic.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.028s
+2026-11-18T10:07:59.7904693Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7904928Z 
+2026-11-18T10:07:59.7905339Z [47] firewall/agent firewall.http_access host=api.github.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.411s
+2026-11-18T10:07:59.7905960Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7906194Z 
+2026-11-18T10:07:59.7906601Z [48] firewall/agent firewall.http_access host=api.github.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.659s
+2026-11-18T10:07:59.7907340Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7907598Z 
+2026-11-18T10:07:59.7908009Z [49] firewall/agent firewall.http_access host=api.github.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.207s
+2026-11-18T10:07:59.7908853Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7909096Z 
+2026-11-18T10:07:59.7909424Z [50] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +0.18s
+2026-11-18T10:07:59.7909988Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7910223Z 
+2026-11-18T10:07:59.7910638Z [51] firewall/agent firewall.http_access host=api.github.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.094s
+2026-11-18T10:07:59.7911270Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7911507Z 
+2026-11-18T10:07:59.7911852Z [52] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +1.947s
+2026-11-18T10:07:59.7912397Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7912687Z 
+2026-11-18T10:07:59.7913005Z [53] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.044s
+2026-11-18T10:07:59.7913556Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7913785Z 
+2026-11-18T10:07:59.7914096Z [54] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.041s
+2026-11-18T10:07:59.7914643Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7914880Z 
+2026-11-18T10:07:59.7915197Z [55] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.042s
+2026-11-18T10:07:59.7915729Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7915960Z 
+2026-11-18T10:07:59.7916271Z [56] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.041s
+2026-11-18T10:07:59.7916809Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7917043Z 
+2026-11-18T10:07:59.7917358Z [57] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.04s
+2026-11-18T10:07:59.7917898Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7918128Z 
+2026-11-18T10:07:59.7918595Z [58] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.041s
+2026-11-18T10:07:59.7919167Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7919406Z 
+2026-11-18T10:07:59.7919734Z [59] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.044s
+2026-11-18T10:07:59.7920308Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7920552Z 
+2026-11-18T10:07:59.7920878Z [60] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.042s
+2026-11-18T10:07:59.7921425Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7921661Z 
+2026-11-18T10:07:59.7921975Z [61] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.046s
+2026-11-18T10:07:59.7922516Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7922762Z 
+2026-11-18T10:07:59.7923010Z [62] harness/agent harness.attempt [extension payload omitted] +0.705s
+2026-11-18T10:07:59.7923475Z   path=agent/harness_retry.json
+2026-11-18T10:07:59.7923691Z 
+2026-11-18T10:07:59.7924009Z [63] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +1.335s
+2026-11-18T10:07:59.7924555Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7924791Z 
+2026-11-18T10:07:59.7925161Z [64] firewall/agent firewall.event event=TRACK_START status=200 +0.363s
+2026-11-18T10:07:59.7925760Z   path=sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.7926518Z 
+2026-11-18T10:07:59.7926967Z [65] firewall/agent firewall.http_access host=api.anthropic.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +1.056s
+2026-11-18T10:07:59.7927622Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7927865Z 
+2026-11-18T10:07:59.7975963Z [66] agent/agent session.init sourceEngine=claude model=claude-sonnet-5-5 sessionId=4a852b51-1e1e-4265-924e-2201e84b266c cwd=/home/runner/work/charge-line-data/charge-line-data [untimed]
+2026-11-18T10:07:59.7977449Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c
+2026-11-18T10:07:59.7977817Z 
+2026-11-18T10:07:59.7978241Z [67] agent/agent tool.execution_start toolName=Bash toolCallId=toolu_01XdySyRCQtAg8dWzzzUgT8X [started] +0.001s
+2026-11-18T10:07:59.7979323Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.7980668Z ? $ cd /home/runner/work/charge-line-data/charge-line-data; cat networks.json; cat /tmp/gh-aw/agent/sources/new-operators.json | head -100; ls /tmp/gh-aw/repo-memory/prices/ /tmp/gh-aw/repo-memory-prices/ /tmp/gh-aw/agent/sources/ [pending]
+2026-11-18T10:07:59.7981615Z 
+2026-11-18T10:07:59.7981625Z 
+2026-11-18T10:07:59.7981834Z [68] firewall/agent firewall.event event=TRACK_END +0.002s
+2026-11-18T10:07:59.7982384Z   path=sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.7982737Z 
+2026-11-18T10:07:59.7984235Z [69] firewall/agent firewall.token_usage provider=anthropic model=claude-sonnet-5-5 aic=3.31895 totalAic=3.31895 durationMs=2197 inputTokens=2 outputTokens=168 cacheReadInputTokens=14280 cacheCreationInputTokens=12031 +0.002s
+2026-11-18T10:07:59.7985376Z   path=sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T10:07:59.7985693Z 
+2026-11-18T10:07:59.7986112Z [70] agent/agent tool.execution_complete toolName=Bash toolCallId=toolu_01XdySyRCQtAg8dWzzzUgT8X [failed] +0.072s
+2026-11-18T10:07:59.7986930Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.7989093Z ✗ $ cd /home/runner/work/charge-line-data/charge-line-data; cat networks.json; cat /tmp/gh-aw/agent/sources/new-operators.json | head -100; ls /tmp/gh-aw/repo-memory/prices/ /tmp/gh-aw/repo-memory-prices/ /tmp/gh-aw/agent/sources/
+2026-11-18T10:07:59.7990199Z    ├ Exit code 2
+2026-11-18T10:07:59.7990521Z    └ { (+ 118 more)
+2026-11-18T10:07:59.7990707Z 
+2026-11-18T10:07:59.7990716Z 
+2026-11-18T10:07:59.7990957Z [71] agent/agent session.info sourceType=thinking_tokens [untimed]
+2026-11-18T10:07:59.7991529Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c
+2026-11-18T10:07:59.7991878Z 
+2026-11-18T10:07:59.7992112Z [72] agent/agent session.info sourceType=thinking_tokens [untimed]
+2026-11-18T10:07:59.7993009Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c
+2026-11-18T10:07:59.7993380Z 
+2026-11-18T10:07:59.7993704Z [73] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +0.543s
+2026-11-18T10:07:59.7994307Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.7994553Z 
+2026-11-18T10:07:59.7994807Z [74] firewall/agent firewall.event event=TRACK_START status=200 +0.376s
+2026-11-18T10:07:59.7995441Z   path=sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.7996074Z 
+2026-11-18T10:07:59.7996250Z [75] agent/agent assistant.reasoning +0.624s
+2026-11-18T10:07:59.7997418Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.7997852Z 
+2026-11-18T10:07:59.7998253Z [76] agent/agent tool.execution_start toolName=Bash toolCallId=toolu_015fk9U9LS2ya8zbuHa3u6tR [started] +0.353s
+2026-11-18T10:07:59.8000270Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8001303Z ? $ grep '"operator"\|fastSites' /tmp/gh-aw/agent/sources/new-operators.json | paste - - | tail -n +11 [pending]
+2026-11-18T10:07:59.8001820Z 
+2026-11-18T10:07:59.8001829Z 
+2026-11-18T10:07:59.8002351Z [77] agent/agent tool.execution_complete toolName=Bash toolCallId=toolu_015fk9U9LS2ya8zbuHa3u6tR [succeeded] +0.032s
+2026-11-18T10:07:59.8003192Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8004916Z ✓ $ grep '"operator"\|fastSites' /tmp/gh-aw/agent/sources/new-operators.json | paste - - | tail -n +11
+2026-11-18T10:07:59.8006909Z    ├       "operator": "Electrona",	      "fastSites": 4,
+2026-11-18T10:07:59.8007499Z    └       "operator": "EV Highway (Horizon Power)",	      "fastSites": 3,
+2026-11-18T10:07:59.8008041Z 
+2026-11-18T10:07:59.8008056Z 
+2026-11-18T10:07:59.8065023Z [78] agent/agent tool.execution_start toolName=ToolSearch toolCallId=toolu_01XbsR24a9zAWgzGjQ5T1Lqh [started] +0.17s
+2026-11-18T10:07:59.8066168Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8066897Z ? ToolSearch(query: select:WebFetch,WebSearch, max_results: 2) [pending]
+2026-11-18T10:07:59.8067258Z 
+2026-11-18T10:07:59.8067266Z 
+2026-11-18T10:07:59.8067710Z [79] firewall/agent firewall.http_access host=api.anthropic.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.001s
+2026-11-18T10:07:59.8068557Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8068820Z 
+2026-11-18T10:07:59.8069033Z [80] firewall/agent firewall.event event=TRACK_END +0.002s
+2026-11-18T10:07:59.8069591Z   path=sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.8069940Z 
+2026-11-18T10:07:59.8070757Z [81] firewall/agent firewall.token_usage provider=anthropic model=claude-sonnet-5-5 aic=1.26801 totalAic=4.58696 durationMs=2069 inputTokens=2 outputTokens=229 cacheReadInputTokens=26311 cacheCreationInputTokens=3102 +0.001s
+2026-11-18T10:07:59.8071927Z   path=sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T10:07:59.8072251Z 
+2026-11-18T10:07:59.8072721Z [82] agent/agent tool.execution_complete toolName=ToolSearch toolCallId=toolu_01XbsR24a9zAWgzGjQ5T1Lqh [outcome unknown] +0.003s
+2026-11-18T10:07:59.8073925Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8075240Z ? ToolSearch(query: select:WebFetch,WebSearch, max_results: 2) [outcome unknown]
+2026-11-18T10:07:59.8075892Z    ├ [
+2026-11-18T10:07:59.8080002Z    └   { (+ 8 more)
+2026-11-18T10:07:59.8080234Z 
+2026-11-18T10:07:59.8080266Z 
+2026-11-18T10:07:59.8080712Z [83] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +0.48s
+2026-11-18T10:07:59.8082214Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8083034Z 
+2026-11-18T10:07:59.8083532Z [84] firewall/agent firewall.event event=TRACK_START status=200 +0.391s
+2026-11-18T10:07:59.8084246Z   path=sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.8084599Z 
+2026-11-18T10:07:59.8084788Z [85] agent/agent assistant.reasoning +0.438s
+2026-11-18T10:07:59.8085384Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8085815Z 
+2026-11-18T10:07:59.8086231Z [86] agent/agent tool.execution_start toolName=WebFetch toolCallId=toolu_018yCnvtc8SdyebUrjQC5aEp [started] +0.401s
+2026-11-18T10:07:59.8088215Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8091166Z ? WebFetch(url: https://yurika.com.au, prompt: What is Yurika? Does it state a per kWh ...) [pending]
+2026-11-18T10:07:59.8091917Z 
+2026-11-18T10:07:59.8091926Z 
+2026-11-18T10:07:59.8093422Z [87] firewall/agent firewall.http_access host=api.anthropic.com:443 method=CONNECT status=200 decision=TCP_DENIED +0.05s
+2026-11-18T10:07:59.8095070Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8095349Z 
+2026-11-18T10:07:59.8096136Z [88] agent/agent tool.execution_complete toolName=WebFetch toolCallId=toolu_018yCnvtc8SdyebUrjQC5aEp [failed] +0.002s
+2026-11-18T10:07:59.8097025Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8097945Z ✗ WebFetch(url: https://yurika.com.au, prompt: What is Yurika? Does it state a per kWh ...)
+2026-11-18T10:07:59.8110930Z    └ Unable to verify if domain yurika.com.au is safe to fetch. This may be due to ne...
+2026-11-18T10:07:59.8112805Z 
+2026-11-18T10:07:59.8112827Z 
+2026-11-18T10:07:59.8113686Z [89] agent/agent tool.execution_start toolName=WebFetch toolCallId=toolu_01K9WNSKQacdXvTQnTnvmvwZ [started] +0.319s
+2026-11-18T10:07:59.8114853Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8116246Z ? WebFetch(url: https://yurika.com.au/robots.txt, prompt: Show the full robots.txt content.) [pending]
+2026-11-18T10:07:59.8116720Z 
+2026-11-18T10:07:59.8116737Z 
+2026-11-18T10:07:59.8117181Z [90] firewall/agent firewall.http_access host=api.anthropic.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0s
+2026-11-18T10:07:59.8117836Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8118080Z 
+2026-11-18T10:07:59.8118287Z [91] firewall/agent firewall.event event=TRACK_END +0.001s
+2026-11-18T10:07:59.8119061Z   path=sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.8119412Z 
+2026-11-18T10:07:59.8120230Z [92] firewall/agent firewall.token_usage provider=anthropic model=claude-sonnet-5-5 aic=0.79968 totalAic=5.38664 durationMs=2043 inputTokens=4 outputTokens=235 cacheReadInputTokens=29413 cacheCreationInputTokens=1079 +0.001s
+2026-11-18T10:07:59.8121322Z   path=sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T10:07:59.8121626Z 
+2026-11-18T10:07:59.8122058Z [93] firewall/agent firewall.http_access host=api.anthropic.com:443 method=CONNECT status=200 decision=TCP_DENIED +0.024s
+2026-11-18T10:07:59.8122708Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8122955Z 
+2026-11-18T10:07:59.8123385Z [94] agent/agent tool.execution_complete toolName=WebFetch toolCallId=toolu_01K9WNSKQacdXvTQnTnvmvwZ [failed] +0.001s
+2026-11-18T10:07:59.8124219Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8125740Z ✗ WebFetch(url: https://yurika.com.au/robots.txt, prompt: Show the full robots.txt content.)
+2026-11-18T10:07:59.8126509Z    └ Unable to verify if domain yurika.com.au is safe to fetch. This may be due to ne...
+2026-11-18T10:07:59.8126894Z 
+2026-11-18T10:07:59.8126916Z 
+2026-11-18T10:07:59.8127249Z [95] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +0.414s
+2026-11-18T10:07:59.8128519Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8128815Z 
+2026-11-18T10:07:59.8130133Z [96] firewall/agent firewall.event event=otel_span status={   "code": 1 } +0.305s
+2026-11-18T10:07:59.8131353Z   path=sandbox/firewall/logs/api-proxy-logs/otel.jsonl
+2026-11-18T10:07:59.8131677Z 
+2026-11-18T10:07:59.8131983Z [97] firewall/agent firewall.event event=otel_span status={   "code": 1 } +0s
+2026-11-18T10:07:59.8132543Z   path=sandbox/firewall/logs/api-proxy-logs/otel.jsonl
+2026-11-18T10:07:59.8132830Z 
+2026-11-18T10:07:59.8133109Z [98] firewall/agent firewall.event event=otel_span status={   "code": 1 } +0s
+2026-11-18T10:07:59.8133656Z   path=sandbox/firewall/logs/api-proxy-logs/otel.jsonl
+2026-11-18T10:07:59.8133934Z 
+2026-11-18T10:07:59.8134185Z [99] firewall/agent firewall.event event=TRACK_START status=200 +0.717s
+2026-11-18T10:07:59.8178700Z   path=sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.8179199Z 
+2026-11-18T10:07:59.8179966Z [100] agent/agent assistant.message +0.003s
+2026-11-18T10:07:59.8180607Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8181355Z ◆ Network restrictions block fetching. I'll try search.
+2026-11-18T10:07:59.8181660Z 
+2026-11-18T10:07:59.8181669Z 
+2026-11-18T10:07:59.8182339Z [101] agent/agent tool.execution_start toolName=WebSearch toolCallId=toolu_01AUxr5ACrBHuCnhtVXJhwPH [started] +0.234s
+2026-11-18T10:07:59.8183223Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8183917Z ? WebSearch(query: Yurika Queensland Electric Super Highway...) [pending]
+2026-11-18T10:07:59.8184279Z 
+2026-11-18T10:07:59.8184290Z 
+2026-11-18T10:07:59.8184727Z [102] firewall/agent firewall.http_access host=api.anthropic.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0s
+2026-11-18T10:07:59.8185508Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8185755Z 
+2026-11-18T10:07:59.8185973Z [103] firewall/agent firewall.event event=TRACK_END +0.002s
+2026-11-18T10:07:59.8186517Z   path=sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.8186859Z 
+2026-11-18T10:07:59.8187692Z [104] firewall/agent firewall.token_usage provider=anthropic model=claude-sonnet-5-5 aic=0.49407 totalAic=5.88071 durationMs=1638 inputTokens=2 outputTokens=89 cacheReadInputTokens=30492 cacheCreationInputTokens=399 +0.001s
+2026-11-18T10:07:59.8188998Z   path=sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T10:07:59.8189319Z 
+2026-11-18T10:07:59.8189576Z [105] firewall/agent firewall.event event=TRACK_START status=200 +0.637s
+2026-11-18T10:07:59.8190160Z   path=sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.8190502Z 
+2026-11-18T10:07:59.8190827Z [106] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +0.144s
+2026-11-18T10:07:59.8191395Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8192799Z 
+2026-11-18T10:07:59.8193156Z [107] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.041s
+2026-11-18T10:07:59.8193731Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8194513Z 
+2026-11-18T10:07:59.8194851Z [108] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.04s
+2026-11-18T10:07:59.8195461Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8195695Z 
+2026-11-18T10:07:59.8195987Z [109] firewall/agent firewall.event event=otel_span status={   "code": 1 } +0.138s
+2026-11-18T10:07:59.8196556Z   path=sandbox/firewall/logs/api-proxy-logs/otel.jsonl
+2026-11-18T10:07:59.8196927Z 
+2026-11-18T10:07:59.8197368Z [110] firewall/agent firewall.http_access host=api.anthropic.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +1.092s
+2026-11-18T10:07:59.8198075Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8198547Z 
+2026-11-18T10:07:59.8198808Z [111] firewall/agent firewall.event event=TRACK_END +0.003s
+2026-11-18T10:07:59.8199632Z   path=sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.8200028Z 
+2026-11-18T10:07:59.8200887Z [112] firewall/agent firewall.token_usage provider=anthropic model=claude-sonnet-5-5 aic=2.982 totalAic=8.86271 durationMs=6077 inputTokens=11835 outputTokens=615 cacheReadInputTokens=0 cacheCreationInputTokens=0 +0.001s
+2026-11-18T10:07:59.8272554Z   path=sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T10:07:59.8272943Z 
+2026-11-18T10:07:59.8273445Z [113] agent/agent tool.execution_complete toolName=WebSearch toolCallId=toolu_01AUxr5ACrBHuCnhtVXJhwPH [outcome unknown] +0.003s
+2026-11-18T10:07:59.8274358Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8275085Z ? WebSearch(query: Yurika Queensland Electric Super Highway...) [outcome unknown]
+2026-11-18T10:07:59.8275951Z    ├ Web search results for query: "Yurika Queensland Electric Super Highway charging...
+2026-11-18T10:07:59.8276764Z    └ Links: [{"title":"Queensland extends the Electric Super Highway - electrive.com"... (+ 10 more)
+2026-11-18T10:07:59.8277196Z 
+2026-11-18T10:07:59.8277205Z 
+2026-11-18T10:07:59.8277459Z [114] agent/agent session.info sourceType=thinking_tokens [untimed]
+2026-11-18T10:07:59.8280999Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c
+2026-11-18T10:07:59.8281502Z 
+2026-11-18T10:07:59.8281770Z [115] agent/agent session.info sourceType=thinking_tokens [untimed]
+2026-11-18T10:07:59.8282367Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c
+2026-11-18T10:07:59.8282720Z 
+2026-11-18T10:07:59.8282967Z [116] agent/agent session.info sourceType=thinking_tokens [untimed]
+2026-11-18T10:07:59.8283526Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c
+2026-11-18T10:07:59.8283870Z 
+2026-11-18T10:07:59.8284119Z [117] firewall/agent firewall.event event=TRACK_START status=200 +0.745s
+2026-11-18T10:07:59.8284874Z   path=sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.8285215Z 
+2026-11-18T10:07:59.8285536Z [118] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +0.059s
+2026-11-18T10:07:59.8286208Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8286449Z 
+2026-11-18T10:07:59.8286629Z [119] agent/agent assistant.reasoning +1.628s
+2026-11-18T10:07:59.8287211Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8287631Z 
+2026-11-18T10:07:59.8287957Z [120] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +0.414s
+2026-11-18T10:07:59.8288751Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8288998Z 
+2026-11-18T10:07:59.8289327Z [121] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.048s
+2026-11-18T10:07:59.8289875Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8290121Z 
+2026-11-18T10:07:59.8290404Z [122] firewall/agent firewall.event event=otel_span status={   "code": 1 } +0.104s
+2026-11-18T10:07:59.8291643Z   path=sandbox/firewall/logs/api-proxy-logs/otel.jsonl
+2026-11-18T10:07:59.8291939Z 
+2026-11-18T10:07:59.8292254Z [123] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +1.937s
+2026-11-18T10:07:59.8292815Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8293057Z 
+2026-11-18T10:07:59.8293463Z [124] agent/agent tool.execution_start toolName=Bash toolCallId=toolu_01DUh8ej6BS5EMwWYpg45zEN [started] +0.18s
+2026-11-18T10:07:59.8294272Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8296325Z ? $ cat > /tmp/gh-aw/repo-memory/prices/operators.json <<'E' [ {"operator":"Yurika","fastSites":49,"firstSeen":"2026-11-18","lastSeen":"2026-11-18","decision":"pending","notes":"Search snippets suggest it runs the Queensland Electric Super Highway (QESH), so 'Queensland Electric Super Highway' is probab... [pending]
+2026-11-18T10:07:59.8297489Z 
+2026-11-18T10:07:59.8297498Z 
+2026-11-18T10:07:59.8297724Z [125] agent/agent session.result sourceType=system [untimed]
+2026-11-18T10:07:59.8298274Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c
+2026-11-18T10:07:59.8298911Z 
+2026-11-18T10:07:59.8299327Z [126] agent/agent tool.execution_complete toolName=Bash toolCallId=toolu_01DUh8ej6BS5EMwWYpg45zEN [failed] +0.01s
+2026-11-18T10:07:59.8300144Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8302384Z ✗ $ cat > /tmp/gh-aw/repo-memory/prices/operators.json <<'E' [ {"operator":"Yurika","fastSites":49,"firstSeen":"2026-11-18","lastSeen":"2026-11-18","decision":"pending","notes":"Search snippets suggest it runs the Queensland Electric Super Highway (QESH), so 'Queensland Electric Super Highway' is probab...
+2026-11-18T10:07:59.8304375Z    └ Permission to use Bash has been denied because Claude Code is running in don't a...
+2026-11-18T10:07:59.8304795Z 
+2026-11-18T10:07:59.8304804Z 
+2026-11-18T10:07:59.8305369Z [127] agent/agent tool.execution_start toolName=push_repo_memory mcpServerName=safeoutputs toolCallId=toolu_01BAV2D8gDFQTSdfqDz7axSd [started] +0.107s
+2026-11-18T10:07:59.8306320Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8307119Z ? safeoutputs-push_repo_memory(memory_id: prices) [pending]
+2026-11-18T10:07:59.8307444Z 
+2026-11-18T10:07:59.8307452Z 
+2026-11-18T10:07:59.8307652Z [128] firewall/agent firewall.event event=TRACK_END +0s
+2026-11-18T10:07:59.8308185Z   path=sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.8308791Z 
+2026-11-18T10:07:59.8309254Z [129] firewall/agent firewall.http_access host=api.anthropic.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0s
+2026-11-18T10:07:59.8309920Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8310360Z 
+2026-11-18T10:07:59.8311340Z [130] firewall/agent firewall.token_usage provider=anthropic model=claude-sonnet-5-5 aic=1.88306 totalAic=10.74577 durationMs=7207 inputTokens=2 outputTokens=1283 cacheReadInputTokens=30891 cacheCreationInputTokens=1163 +0.001s
+2026-11-18T10:07:59.8313160Z   path=sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T10:07:59.8313510Z 
+2026-11-18T10:07:59.8313975Z [131] mcp/agent mcp.rpc.request serverName=safeoutputs direction=OUT method=tools/call toolName=push_repo_memory +0.34s
+2026-11-18T10:07:59.8314638Z   path=mcp-logs/rpc-messages.jsonl
+2026-11-18T10:07:59.8315404Z 
+2026-11-18T10:07:59.8315788Z [132] mcp/agent mcp.rpc.response serverName=safeoutputs direction=IN rpcId=1 [response observed] +0.02s
+2026-11-18T10:07:59.8316385Z   path=mcp-logs/rpc-messages.jsonl
+2026-11-18T10:07:59.8316615Z 
+2026-11-18T10:07:59.8317206Z [133] agent/agent tool.execution_complete toolName=push_repo_memory mcpServerName=safeoutputs toolCallId=toolu_01BAV2D8gDFQTSdfqDz7axSd [outcome unknown] +0.004s
+2026-11-18T10:07:59.8318211Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8353142Z ? safeoutputs-push_repo_memory(memory_id: prices) [outcome unknown]
+2026-11-18T10:07:59.8353967Z    └ {"result":"success","message":"Storage validation passed: 0 file(s), 0 KB total ...
+2026-11-18T10:07:59.8354366Z 
+2026-11-18T10:07:59.8354377Z 
+2026-11-18T10:07:59.8354668Z [134] firewall/agent firewall.event event=TRACK_START status=200 +1.036s
+2026-11-18T10:07:59.8355288Z   path=sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.8355627Z 
+2026-11-18T10:07:59.8355795Z [135] agent/agent assistant.message +0.002s
+2026-11-18T10:07:59.8356382Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8357052Z ◆ Bash was denied, so I'll use Write for the memory file.
+2026-11-18T10:07:59.8357339Z 
+2026-11-18T10:07:59.8357347Z 
+2026-11-18T10:07:59.8357684Z [136] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +0.345s
+2026-11-18T10:07:59.8358300Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8359493Z 
+2026-11-18T10:07:59.8359847Z [137] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.043s
+2026-11-18T10:07:59.8360411Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8360644Z 
+2026-11-18T10:07:59.8360945Z [138] firewall/agent firewall.event event=otel_span status={   "code": 1 } +1.211s
+2026-11-18T10:07:59.8361516Z   path=sandbox/firewall/logs/api-proxy-logs/otel.jsonl
+2026-11-18T10:07:59.8361811Z 
+2026-11-18T10:07:59.8362263Z [139] firewall/agent firewall.http_access host=api.anthropic.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.664s
+2026-11-18T10:07:59.8362927Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8363171Z 
+2026-11-18T10:07:59.8363385Z [140] firewall/agent firewall.event event=TRACK_END +0.004s
+2026-11-18T10:07:59.8363936Z   path=sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.8364861Z 
+2026-11-18T10:07:59.8366245Z [141] firewall/agent firewall.token_usage provider=anthropic model=claude-sonnet-5-5 aic=1.81569 totalAic=12.56146 durationMs=5280 inputTokens=2 outputTokens=1062 cacheReadInputTokens=32054 cacheCreationInputTokens=1731 +0.001s
+2026-11-18T10:07:59.8367488Z   path=sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T10:07:59.8405600Z 
+2026-11-18T10:07:59.8406098Z [142] agent/agent tool.execution_start toolName=Write toolCallId=toolu_01X52MbJfmdDEZfpzGoroVni [started] +0.007s
+2026-11-18T10:07:59.8407151Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8407853Z ? Write(file_path: /tmp/gh-aw/repo-memory/prices/operators...., content: [
+2026-11-18T10:07:59.8408596Z {"operator":"Yurika","fastSites":49,"f...) [pending]
+2026-11-18T10:07:59.8408886Z 
+2026-11-18T10:07:59.8408897Z 
+2026-11-18T10:07:59.8409530Z [143] agent/agent tool.execution_complete toolName=Write toolCallId=toolu_01X52MbJfmdDEZfpzGoroVni [outcome unknown] +0.021s
+2026-11-18T10:07:59.8410398Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8411079Z ? Write(file_path: /tmp/gh-aw/repo-memory/prices/operators...., content: [
+2026-11-18T10:07:59.8411631Z {"operator":"Yurika","fastSites":49,"f...) [outcome unknown]
+2026-11-18T10:07:59.8412375Z    └ File created successfully at: /tmp/gh-aw/repo-memory/prices/operators.json (file...
+2026-11-18T10:07:59.8412791Z 
+2026-11-18T10:07:59.8412800Z 
+2026-11-18T10:07:59.8413128Z [144] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +0.133s
+2026-11-18T10:07:59.8413695Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8413935Z 
+2026-11-18T10:07:59.8414186Z [145] firewall/agent firewall.event event=TRACK_START status=200 +0.778s
+2026-11-18T10:07:59.8414774Z   path=sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.8415138Z 
+2026-11-18T10:07:59.8415698Z [146] agent/agent tool.execution_start toolName=push_repo_memory mcpServerName=safeoutputs toolCallId=toolu_01JSVbaimqA8XPmVXQPcaeyb [started] +0.37s
+2026-11-18T10:07:59.8416652Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8417293Z ? safeoutputs-push_repo_memory(memory_id: prices) [pending]
+2026-11-18T10:07:59.8417596Z 
+2026-11-18T10:07:59.8417612Z 
+2026-11-18T10:07:59.8418044Z [147] mcp/agent mcp.rpc.request serverName=safeoutputs direction=OUT method=tools/call toolName=push_repo_memory +0.011s
+2026-11-18T10:07:59.8418908Z   path=mcp-logs/rpc-messages.jsonl
+2026-11-18T10:07:59.8419143Z 
+2026-11-18T10:07:59.8419521Z [148] mcp/agent mcp.rpc.response serverName=safeoutputs direction=IN rpcId=1 [response observed] +0.029s
+2026-11-18T10:07:59.8420114Z   path=mcp-logs/rpc-messages.jsonl
+2026-11-18T10:07:59.8420334Z 
+2026-11-18T10:07:59.8420927Z [149] agent/agent tool.execution_complete toolName=push_repo_memory mcpServerName=safeoutputs toolCallId=toolu_01JSVbaimqA8XPmVXQPcaeyb [outcome unknown] +0.003s
+2026-11-18T10:07:59.8421928Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8422587Z ? safeoutputs-push_repo_memory(memory_id: prices) [outcome unknown]
+2026-11-18T10:07:59.8423587Z    └ {"result":"success","message":"Storage validation passed: 1 file(s), 3 KB total ...
+2026-11-18T10:07:59.8423978Z 
+2026-11-18T10:07:59.8423987Z 
+2026-11-18T10:07:59.8424320Z [150] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +0.852s
+2026-11-18T10:07:59.8424880Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8425123Z 
+2026-11-18T10:07:59.8425551Z [151] firewall/agent firewall.http_access host=api.anthropic.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.02s
+2026-11-18T10:07:59.8426191Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8426429Z 
+2026-11-18T10:07:59.8426949Z [152] agent/agent tool.execution_start toolName=noop mcpServerName=safeoutputs toolCallId=toolu_01SbDpPEauWpzTRk5uFjF1ty [started] +0.002s
+2026-11-18T10:07:59.8427882Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8429948Z ? safeoutputs-noop(message: No change to networks.json. The Yurika, ...) [pending]
+2026-11-18T10:07:59.8430370Z 
+2026-11-18T10:07:59.8430379Z 
+2026-11-18T10:07:59.8430751Z [153] firewall/agent firewall.event event=TRACK_END +0s
+2026-11-18T10:07:59.8431313Z   path=sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.8431658Z 
+2026-11-18T10:07:59.8432494Z [154] firewall/agent firewall.token_usage provider=anthropic model=claude-sonnet-5-5 aic=0.8763 totalAic=13.43776 durationMs=2166 inputTokens=1 outputTokens=227 cacheReadInputTokens=33785 cacheCreationInputTokens=1245 +0.001s
+2026-11-18T10:07:59.8433705Z   path=sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T10:07:59.8434143Z 
+2026-11-18T10:07:59.8434546Z [155] mcp/agent mcp.rpc.request serverName=safeoutputs direction=OUT method=tools/call toolName=noop +0.013s
+2026-11-18T10:07:59.8435167Z   path=mcp-logs/rpc-messages.jsonl
+2026-11-18T10:07:59.8435397Z 
+2026-11-18T10:07:59.8435778Z [156] mcp/agent mcp.rpc.response serverName=safeoutputs direction=IN rpcId=1 [response observed] +0.007s
+2026-11-18T10:07:59.8436372Z   path=mcp-logs/rpc-messages.jsonl
+2026-11-18T10:07:59.8436602Z 
+2026-11-18T10:07:59.8437154Z [157] agent/agent tool.execution_complete toolName=noop mcpServerName=safeoutputs toolCallId=toolu_01SbDpPEauWpzTRk5uFjF1ty [outcome unknown] +0.002s
+2026-11-18T10:07:59.8438138Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8469524Z ? safeoutputs-noop(message: No change to networks.json. The Yurika, ...) [outcome unknown]
+2026-11-18T10:07:59.8470412Z    └ {"result":"success","output_id":"so_cauBHEPHQ0Wo"}
+2026-11-18T10:07:59.8470753Z 
+2026-11-18T10:07:59.8470762Z 
+2026-11-18T10:07:59.8471108Z [158] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +1.996s
+2026-11-18T10:07:59.8471691Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8471940Z 
+2026-11-18T10:07:59.8472231Z [159] firewall/agent firewall.event event=otel_span status={   "code": 1 } +0.756s
+2026-11-18T10:07:59.8472800Z   path=sandbox/firewall/logs/api-proxy-logs/otel.jsonl
+2026-11-18T10:07:59.8473076Z 
+2026-11-18T10:07:59.8473354Z [160] firewall/agent firewall.event event=otel_span status={   "code": 1 } +0s
+2026-11-18T10:07:59.8473900Z   path=sandbox/firewall/logs/api-proxy-logs/otel.jsonl
+2026-11-18T10:07:59.8474177Z 
+2026-11-18T10:07:59.8474509Z [161] firewall/agent firewall.http_access host=- method=- status=0 decision=NONE_NONE +1.287s
+2026-11-18T10:07:59.8475063Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8475300Z 
+2026-11-18T10:07:59.8475546Z [162] firewall/agent firewall.event event=TRACK_START status=200 +0.207s
+2026-11-18T10:07:59.8476139Z   path=sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.8476483Z 
+2026-11-18T10:07:59.8476913Z [163] firewall/agent firewall.http_access host=api.anthropic.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.005s
+2026-11-18T10:07:59.8477573Z   path=sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8477807Z 
+2026-11-18T10:07:59.8477975Z [164] agent/agent assistant.message +0.002s
+2026-11-18T10:07:59.8489097Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c parentToolUseId=null
+2026-11-18T10:07:59.8490310Z ◆ I didn't change `networks.json` this run, so there's no pull request. I saved the findings to memory and logged a `noop` as the final outcome.
+2026-11-18T10:07:59.8491019Z   
+2026-11-18T10:07:59.8492972Z   - **Why no change:** I couldn't fetch `yurika.com.au`, because the fetch tool reported the domain as blocked. The only price evidence I found was third-party Plugroo listings of about $0.55 per kWh for DC. That isn't a source I'm allowed to cite, so I added no price.
+2026-11-18T10:07:59.8495208Z   - **Yurika alias:** Search results suggest Yurika runs the Queensland Electric Super Highway. I didn't add it as an alias because I couldn't confirm that from a primary source.
+2026-11-18T10:07:59.8496510Z   - **Other operators:** I didn't research the other 10 operators in the new-operators file. Exploren is a banned source. Of the rest, Woolworths is probably just a site owner.
+2026-11-18T10:07:59.8498129Z   - **Typical prices:** None of the seven listed networks had a source I could read that supports a different price. Their `checked` dates are 2026-10-27, so none is past the six-month limit that would call for an issue.
+2026-11-18T10:07:59.8513574Z   - **Memory:** `operators.json` has all 12 operators as `pending`, with notes on what I found. The memory push passed validation. My first attempt to write the file with Bash was denied, so I wrote it with the Write tool instead.
+2026-11-18T10:07:59.8515691Z   
+2026-11-18T10:07:59.8516337Z   The next run can pick up from the `pending` entries, starting with Yurika.
+2026-11-18T10:07:59.8517133Z 
+2026-11-18T10:07:59.8517143Z 
+2026-11-18T10:07:59.8517622Z [165] agent/agent session.result numTurns=12 durationMs=33781 totalCostUsd=0.1572596 status=success sourceType=result [untimed]
+2026-11-18T10:07:59.8518648Z   path=agent-session.jsonl sessionId=4a852b51-1e1e-4265-924e-2201e84b266c
+2026-11-18T10:07:59.8519013Z 
+2026-11-18T10:07:59.8519235Z [166] firewall/agent firewall.event event=TRACK_END +0.001s
+2026-11-18T10:07:59.8519783Z   path=sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.8520522Z 
+2026-11-18T10:07:59.8522137Z [167] firewall/agent firewall.token_usage provider=anthropic model=claude-sonnet-5-5 aic=1.2882 totalAic=14.72596 durationMs=4127 inputTokens=2 outputTokens=438 cacheReadInputTokens=35030 cacheCreationInputTokens=1998 +0.001s
+2026-11-18T10:07:59.8523352Z   path=sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T10:07:59.8523690Z 
+2026-11-18T10:07:59.8523984Z [168] firewall/agent firewall.event event=otel_span status={   "code": 1 } +0.711s
+2026-11-18T10:07:59.8524556Z   path=sandbox/firewall/logs/api-proxy-logs/otel.jsonl
+2026-11-18T10:07:59.8524842Z 
+2026-11-18T10:07:59.8525332Z [169] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_end resource=core remaining=4980 limit=5000 +2.405s
+2026-11-18T10:07:59.8526697Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.8526945Z 
+2026-11-18T10:07:59.8527417Z [170] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_end resource=search remaining=30 limit=30 +0s
+2026-11-18T10:07:59.8528096Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.8528317Z 
+2026-11-18T10:07:59.8529052Z [171] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_end resource=graphql remaining=5000 limit=5000 +0s
+2026-11-18T10:07:59.8529756Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.8529970Z 
+2026-11-18T10:07:59.8530507Z [172] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_end resource=integration_manifest remaining=5000 limit=5000 +0s
+2026-11-18T10:07:59.8531259Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.8531470Z 
+2026-11-18T10:07:59.8532509Z [173] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_end resource=source_import remaining=100 limit=100 +0s
+2026-11-18T10:07:59.8534120Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.8534380Z 
+2026-11-18T10:07:59.8534911Z [174] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_end resource=code_scanning_autofix remaining=10 limit=10 +0s
+2026-11-18T10:07:59.8535654Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.8535869Z 
+2026-11-18T10:07:59.8536433Z [175] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_end resource=actions_runner_registration remaining=10000 limit=10000 +0s
+2026-11-18T10:07:59.8537770Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.8538014Z 
+2026-11-18T10:07:59.8540627Z [176] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_end resource=scim remaining=15000 limit=15000 +0s
+2026-11-18T10:07:59.8541778Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.8542010Z 
+2026-11-18T10:07:59.8542545Z [177] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_end resource=dependency_snapshots remaining=100 limit=100 +0s
+2026-11-18T10:07:59.8543494Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.8543734Z 
+2026-11-18T10:07:59.8544252Z [178] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_end resource=dependency_sbom remaining=100 limit=100 +0s
+2026-11-18T10:07:59.8545646Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.8545908Z 
+2026-11-18T10:07:59.8546816Z [179] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_end resource=audit_log remaining=1750 limit=1750 +0s
+2026-11-18T10:07:59.8547709Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.8547923Z 
+2026-11-18T10:07:59.8949079Z [180] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_end resource=audit_log_streaming remaining=15 limit=15 +0s
+2026-11-18T10:07:59.8950141Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.8950380Z 
+2026-11-18T10:07:59.8950928Z [181] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_end resource=code_search remaining=10 limit=10 +0s
+2026-11-18T10:07:59.8951651Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.8951875Z 
+2026-11-18T10:07:59.8952404Z [182] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_end resource=copilot_usage_records remaining=1750 limit=1750 +0s
+2026-11-18T10:07:59.8953149Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.8953367Z 
+2026-11-18T10:07:59.8953922Z [183] github_api/workflow github_api.rate_limit source=rate_limit_api operation=agent_end resource=enterprise_token_inventory remaining=1750 limit=1750 +0s
+2026-11-18T10:07:59.8954696Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.8954899Z 
+2026-11-18T10:07:59.8955257Z [184] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +67.877s
+2026-11-18T10:07:59.8955898Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8956192Z 
+2026-11-18T10:07:59.8956534Z [185] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.032s
+2026-11-18T10:07:59.8957161Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.8957445Z 
+2026-11-18T10:07:59.8957786Z [186] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.033s
+2026-11-18T10:07:59.9002526Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9002966Z 
+2026-11-18T10:07:59.9003472Z [187] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.032s
+2026-11-18T10:07:59.9004142Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9004468Z 
+2026-11-18T10:07:59.9004826Z [188] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.034s
+2026-11-18T10:07:59.9005462Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9005749Z 
+2026-11-18T10:07:59.9006090Z [189] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.032s
+2026-11-18T10:07:59.9006710Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9006996Z 
+2026-11-18T10:07:59.9007633Z [190] firewall/detection firewall.http_access host=run-actions-1-azure-eastus.actions.githubusercontent.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.954s
+2026-11-18T10:07:59.9008707Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9009005Z 
+2026-11-18T10:07:59.9009456Z [191] firewall/detection firewall.http_access host=api.github.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.008s
+2026-11-18T10:07:59.9010184Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9010470Z 
+2026-11-18T10:07:59.9010951Z [192] firewall/detection firewall.http_access host=api.github.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.128s
+2026-11-18T10:07:59.9011650Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9011939Z 
+2026-11-18T10:07:59.9012691Z [193] firewall/detection firewall.http_access host=api.anthropic.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.054s
+2026-11-18T10:07:59.9013457Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9013767Z 
+2026-11-18T10:07:59.9014216Z [194] firewall/detection firewall.http_access host=api.github.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.126s
+2026-11-18T10:07:59.9014923Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9015214Z 
+2026-11-18T10:07:59.9015655Z [195] firewall/detection firewall.http_access host=api.anthropic.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.05s
+2026-11-18T10:07:59.9016483Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9016769Z 
+2026-11-18T10:07:59.9017209Z [196] firewall/detection firewall.http_access host=api.anthropic.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.015s
+2026-11-18T10:07:59.9017947Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9018239Z 
+2026-11-18T10:07:59.9018860Z [197] firewall/detection firewall.http_access host=api.github.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.093s
+2026-11-18T10:07:59.9019586Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9020784Z 
+2026-11-18T10:07:59.9022680Z [198] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +0.605s
+2026-11-18T10:07:59.9025784Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9026116Z 
+2026-11-18T10:07:59.9129555Z [199] firewall/detection firewall.http_access host=api.github.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.072s
+2026-11-18T10:07:59.9130571Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9130891Z 
+2026-11-18T10:07:59.9131374Z [200] firewall/detection firewall.http_access host=api.github.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.178s
+2026-11-18T10:07:59.9132116Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9132417Z 
+2026-11-18T10:07:59.9132877Z [201] firewall/detection firewall.http_access host=api.github.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.174s
+2026-11-18T10:07:59.9133596Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9133892Z 
+2026-11-18T10:07:59.9134237Z [202] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +1.61s
+2026-11-18T10:07:59.9134863Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9135150Z 
+2026-11-18T10:07:59.9135486Z [203] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.039s
+2026-11-18T10:07:59.9136115Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9136405Z 
+2026-11-18T10:07:59.9136741Z [204] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.032s
+2026-11-18T10:07:59.9137359Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9137647Z 
+2026-11-18T10:07:59.9137989Z [205] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.034s
+2026-11-18T10:07:59.9169948Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9170320Z 
+2026-11-18T10:07:59.9170686Z [206] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.032s
+2026-11-18T10:07:59.9172450Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9172786Z 
+2026-11-18T10:07:59.9173145Z [207] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.032s
+2026-11-18T10:07:59.9173816Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9174113Z 
+2026-11-18T10:07:59.9174940Z [208] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.033s
+2026-11-18T10:07:59.9175610Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9175906Z 
+2026-11-18T10:07:59.9177561Z [209] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.034s
+2026-11-18T10:07:59.9178590Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9178936Z 
+2026-11-18T10:07:59.9179288Z [210] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.033s
+2026-11-18T10:07:59.9180404Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9180714Z 
+2026-11-18T10:07:59.9181844Z [211] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.032s
+2026-11-18T10:07:59.9234252Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9234670Z 
+2026-11-18T10:07:59.9235066Z [212] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.034s
+2026-11-18T10:07:59.9237845Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9238183Z 
+2026-11-18T10:07:59.9238828Z [213] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.033s
+2026-11-18T10:07:59.9240960Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9241293Z 
+2026-11-18T10:07:59.9241651Z [214] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.031s
+2026-11-18T10:07:59.9242288Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9242852Z 
+2026-11-18T10:07:59.9243396Z [215] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +2.033s
+2026-11-18T10:07:59.9244035Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9244335Z 
+2026-11-18T10:07:59.9244609Z [216] harness/detection harness.retry [extension payload omitted] [untimed]
+2026-11-18T10:07:59.9245147Z   path=threat-detection/detection_harness_retry.json
+2026-11-18T10:07:59.9245418Z 
+2026-11-18T10:07:59.9245686Z [217] harness/detection harness.attempt [extension payload omitted] +0.56s
+2026-11-18T10:07:59.9247059Z   path=threat-detection/detection_harness_retry.json
+2026-11-18T10:07:59.9247382Z 
+2026-11-18T10:07:59.9247860Z [218] firewall/detection firewall.http_access host=api.anthropic.com:443 method=CONNECT status=200 decision=TCP_DENIED +0.555s
+2026-11-18T10:07:59.9250204Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9250525Z 
+2026-11-18T10:07:59.9250875Z [219] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +0.916s
+2026-11-18T10:07:59.9251493Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9251783Z 
+2026-11-18T10:07:59.9252085Z [220] firewall/detection firewall.event event=TRACK_START status=200 +0.234s
+2026-11-18T10:07:59.9252751Z   path=threat-detection/sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.9253163Z 
+2026-11-18T10:07:59.9253614Z [221] firewall/detection firewall.http_access host=api.anthropic.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.285s
+2026-11-18T10:07:59.9254344Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9254627Z 
+2026-11-18T10:07:59.9254855Z [222] firewall/detection firewall.event event=TRACK_END +0.002s
+2026-11-18T10:07:59.9255474Z   path=threat-detection/sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.9255882Z 
+2026-11-18T10:07:59.9256725Z [223] firewall/detection firewall.token_usage provider=anthropic model=claude-sonnet-5-5 aic=9.96333 totalAic=9.96333 durationMs=1639 inputTokens=2 outputTokens=105 cacheReadInputTokens=12718 cacheCreationInputTokens=38923 +0.002s
+2026-11-18T10:07:59.9257924Z   path=threat-detection/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T10:07:59.9258297Z 
+2026-11-18T10:07:59.9299284Z [224] firewall/detection firewall.event event=TRACK_START status=200 +0.922s
+2026-11-18T10:07:59.9300092Z   path=threat-detection/sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.9300524Z 
+2026-11-18T10:07:59.9300757Z [225] firewall/detection firewall.event event=TRACK_END +0.255s
+2026-11-18T10:07:59.9301602Z   path=threat-detection/sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T10:07:59.9302045Z 
+2026-11-18T10:07:59.9302494Z [226] firewall/detection firewall.http_access host=api.anthropic.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0s
+2026-11-18T10:07:59.9303215Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9303505Z 
+2026-11-18T10:07:59.9304343Z [227] firewall/detection firewall.token_usage provider=anthropic model=claude-sonnet-5-5 aic=0.66681 totalAic=10.63014 durationMs=946 inputTokens=2 outputTokens=76 cacheReadInputTokens=51641 cacheCreationInputTokens=296 +0.001s
+2026-11-18T10:07:59.9305633Z   path=threat-detection/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T10:07:59.9306012Z 
+2026-11-18T10:07:59.9306460Z [228] firewall/detection firewall.http_access host=api.anthropic.com:443 method=CONNECT status=200 decision=TCP_TUNNEL +0.128s
+2026-11-18T10:07:59.9307186Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9307476Z 
+2026-11-18T10:07:59.9307808Z [229] firewall/detection firewall.http_access host=- method=- status=0 decision=NONE_NONE +0.205s
+2026-11-18T10:07:59.9329256Z   path=threat-detection/sandbox/firewall/logs/audit.jsonl
+2026-11-18T10:07:59.9329688Z 
+2026-11-18T10:07:59.9330037Z [230] firewall/detection firewall.event event=otel_span status={   "code": 1 } +0.684s
+2026-11-18T10:07:59.9330734Z   path=threat-detection/sandbox/firewall/logs/api-proxy-logs/otel.jsonl
+2026-11-18T10:07:59.9331100Z 
+2026-11-18T10:07:59.9331424Z [231] firewall/detection firewall.event event=otel_span status={   "code": 1 } +0.001s
+2026-11-18T10:07:59.9332075Z   path=threat-detection/sandbox/firewall/logs/api-proxy-logs/otel.jsonl
+2026-11-18T10:07:59.9332424Z 
+2026-11-18T10:07:59.9332719Z [232] firewall/detection firewall.event event=otel_span status={   "code": 0 } +0s
+2026-11-18T10:07:59.9333343Z   path=threat-detection/sandbox/firewall/logs/api-proxy-logs/otel.jsonl
+2026-11-18T10:07:59.9333694Z 
+2026-11-18T10:07:59.9334214Z [233] github_api/workflow github_api.rate_limit source=response_headers operation=rateLimit.get resource=core remaining=4970 limit=5000 +123.07s
+2026-11-18T10:07:59.9334938Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9335156Z 
+2026-11-18T10:07:59.9335701Z [234] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_before resource=core remaining=4970 limit=5000 +0.086s
+2026-11-18T10:07:59.9336436Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9336654Z 
+2026-11-18T10:07:59.9337175Z [235] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_before resource=search remaining=30 limit=30 +0s
+2026-11-18T10:07:59.9337899Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9338109Z 
+2026-11-18T10:07:59.9338849Z [236] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_before resource=graphql remaining=5000 limit=5000 +0s
+2026-11-18T10:07:59.9339983Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9340198Z 
+2026-11-18T10:07:59.9340793Z [237] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_before resource=integration_manifest remaining=5000 limit=5000 +0s
+2026-11-18T10:07:59.9341588Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9341786Z 
+2026-11-18T10:07:59.9342342Z [238] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_before resource=source_import remaining=100 limit=100 +0s
+2026-11-18T10:07:59.9343112Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9343332Z 
+2026-11-18T10:07:59.9343908Z [239] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_before resource=code_scanning_autofix remaining=10 limit=10 +0s
+2026-11-18T10:07:59.9344686Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9344904Z 
+2026-11-18T10:07:59.9345718Z [240] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_before resource=actions_runner_registration remaining=10000 limit=10000 +0s
+2026-11-18T10:07:59.9346561Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9346767Z 
+2026-11-18T10:07:59.9347294Z [241] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_before resource=scim remaining=15000 limit=15000 +0s
+2026-11-18T10:07:59.9348020Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9348225Z 
+2026-11-18T10:07:59.9349015Z [242] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_before resource=dependency_snapshots remaining=100 limit=100 +0s
+2026-11-18T10:07:59.9349959Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9350168Z 
+2026-11-18T10:07:59.9350730Z [243] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_before resource=dependency_sbom remaining=100 limit=100 +0s
+2026-11-18T10:07:59.9351490Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9351701Z 
+2026-11-18T10:07:59.9352245Z [244] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_before resource=audit_log remaining=1750 limit=1750 +0s
+2026-11-18T10:07:59.9352987Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9353194Z 
+2026-11-18T10:07:59.9353754Z [245] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_before resource=audit_log_streaming remaining=15 limit=15 +0s
+2026-11-18T10:07:59.9354521Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9354732Z 
+2026-11-18T10:07:59.9355261Z [246] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_before resource=code_search remaining=10 limit=10 +0s
+2026-11-18T10:07:59.9355999Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9356199Z 
+2026-11-18T10:07:59.9356785Z [247] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_before resource=copilot_usage_records remaining=1750 limit=1750 +0s
+2026-11-18T10:07:59.9357580Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9357790Z 
+2026-11-18T10:07:59.9358577Z [248] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_before resource=enterprise_token_inventory remaining=1750 limit=1750 +0s
+2026-11-18T10:07:59.9359394Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9359600Z 
+2026-11-18T10:07:59.9360115Z [249] github_api/workflow github_api.rate_limit source=response_headers operation=rateLimit.get resource=core remaining=4970 limit=5000 +0.199s
+2026-11-18T10:07:59.9360839Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9361045Z 
+2026-11-18T10:07:59.9361564Z [250] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_after resource=core remaining=4970 limit=5000 +0s
+2026-11-18T10:07:59.9362282Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9362489Z 
+2026-11-18T10:07:59.9363005Z [251] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_after resource=search remaining=30 limit=30 +0s
+2026-11-18T10:07:59.9363727Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9363933Z 
+2026-11-18T10:07:59.9364464Z [252] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_after resource=graphql remaining=5000 limit=5000 +0s
+2026-11-18T10:07:59.9365191Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9365396Z 
+2026-11-18T10:07:59.9365970Z [253] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_after resource=integration_manifest remaining=5000 limit=5000 +0s
+2026-11-18T10:07:59.9366756Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9366964Z 
+2026-11-18T10:07:59.9367505Z [254] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_after resource=source_import remaining=100 limit=100 +0s
+2026-11-18T10:07:59.9368255Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9400349Z 
+2026-11-18T10:07:59.9401200Z [255] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_after resource=code_scanning_autofix remaining=10 limit=10 +0s
+2026-11-18T10:07:59.9402046Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9402268Z 
+2026-11-18T10:07:59.9402897Z [256] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_after resource=actions_runner_registration remaining=10000 limit=10000 +0s
+2026-11-18T10:07:59.9403716Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9403929Z 
+2026-11-18T10:07:59.9404583Z [257] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_after resource=scim remaining=15000 limit=15000 +0s
+2026-11-18T10:07:59.9405326Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9405543Z 
+2026-11-18T10:07:59.9406134Z [258] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_after resource=dependency_snapshots remaining=100 limit=100 +0s
+2026-11-18T10:07:59.9406919Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9407132Z 
+2026-11-18T10:07:59.9407687Z [259] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_after resource=dependency_sbom remaining=100 limit=100 +0s
+2026-11-18T10:07:59.9408701Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9408919Z 
+2026-11-18T10:07:59.9409475Z [260] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_after resource=audit_log remaining=1750 limit=1750 +0s
+2026-11-18T10:07:59.9410251Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9410459Z 
+2026-11-18T10:07:59.9411018Z [261] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_after resource=audit_log_streaming remaining=15 limit=15 +0s
+2026-11-18T10:07:59.9411786Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9411989Z 
+2026-11-18T10:07:59.9412522Z [262] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_after resource=code_search remaining=10 limit=10 +0s
+2026-11-18T10:07:59.9413268Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9413469Z 
+2026-11-18T10:07:59.9414042Z [263] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_after resource=copilot_usage_records remaining=1750 limit=1750 +0s
+2026-11-18T10:07:59.9414828Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9415033Z 
+2026-11-18T10:07:59.9415635Z [264] github_api/workflow github_api.rate_limit source=rate_limit_api operation=report_failed_jobs_after resource=enterprise_token_inventory remaining=1750 limit=1750 +0s
+2026-11-18T10:07:59.9416434Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9416631Z 
+2026-11-18T10:07:59.9417248Z [265] github_api/workflow github_api.rate_limit source=response_headers operation=actions.listJobsForWorkflowRunAttempt resource=core remaining=4969 limit=5000 +1.869s
+2026-11-18T10:07:59.9418059Z   path=github_rate_limits.jsonl
+2026-11-18T10:07:59.9418267Z 
+2026-11-18T10:07:59.9418712Z [266] skill/activation skill.inventory installed skills=0 [untimed]
+2026-11-18T10:07:59.9419188Z   path=skill_inventory.json
+2026-11-18T10:07:59.9419390Z 
+2026-11-18T10:07:59.9461594Z [269] firewall/agent model.inventory endpoints=[   {     "provider": "openai",     "configured": false   },   {     "provider": "anthropic",     "configured": true,     "models": [       "claude-fable-5",       "claude-fable-5-1",       "claude-fable-5-2",       "claude-haiku-4-5-20251001",       "claude-haiku-5-5",       "claude-opus-4-5-20251101",       "claude-opus-4-6",       "claude-opus-4-7",       "claude-opus-4-8",       "claude-opus-5",       "claude-opus-5-5",       "claude-sonnet-4-5-20250929",       "claude-sonnet-4-6",       "claude-sonnet-5",       "claude-sonnet-5-5"     ],     "routingModels": [       {         "modelId": "claude-fable-5",         "supportedEndpoints": [           "messages"         ],         "supportedReasoningEfforts": [           "low",           "medium",           "high",           "max"         ],         "contextWindowTokens": 1000000       },       {         "modelId": "claude-fable-5-1",         "supportedEndpoints": [           "messages"         ],         "supportedReasoningEfforts": [           "low",           "medium",           "high",           "max"         ],         "contextWindowTokens": 1000000       },       {         "modelId": "claude-fable-5-2",         "supportedEndpoints": [           "messages"         ]       },       {         "modelId": "claude-haiku-4-5-20251001",         "supportedEndpoints": [           "messages"         ]       },       {         "modelId": "claude-haiku-5-5",         "supportedEndpoints": [           "messages"         ]       },       {         "modelId": "claude-opus-4-5-20251101",         "supportedEndpoints": [           "messages"         ]       },       {         "modelId": "claude-opus-4-6",         "supportedEndpoints": [           "messages"         ],         "supportedReasoningEfforts": [           "low",           "medium",           "high",           "max"         ],         "contextWindowTokens": 1000000       },       {         "modelId": "claude-opus-4-7",         "supportedEndpoints": [           "messages"         ],         "supportedReasoningEfforts": [           "low",           "medium",           "high",           "xhigh",           "max"         ],         "contextWindowTokens": 1000000       },       {         "modelId": "claude-opus-4-8",         "supportedEndpoints": [           "messages"         ],         "supportedReasoningEfforts": [           "low",           "medium",           "high",           "xhigh",           "max"         ],         "contextWindowTokens": 1000000       },       {         "modelId": "claude-opus-5",         "supportedEndpoints": [           "messages"         ],         "supportedReasoningEfforts": [           "low",           "medium",           "high",           "max"         ],         "contextWindowTokens": 1000000       },       {         "modelId": "claude-opus-5-5",         "supportedEndpoints": [           "messages"         ],         "supportedReasoningEfforts": [           "low",           "medium",           "high",           "max"         ],         "contextWindowTokens": 1000000       },       {         "modelId": "claude-sonnet-4-5-20250929",         "supportedEndpoints": [           "messages"         ]       },       {         "modelId": "claude-sonnet-4-6",         "supportedEndpoints": [           "messages"         ],         "supportedReasoningEfforts": [           "low",           "medium",           "high",           "max"         ],         "contextWindowTokens": 1000000       },       {         "modelId": "claude-sonnet-5",         "supportedEndpoints": [           "messages"         ],         "supportedReasoningEfforts": [           "low",           "medium",           "high",           "max"         ],         "contextWindowTokens": 1000000       },       {         "modelId": "claude-sonnet-5-5",         "supportedEndpoints": [           "messages"         ],         "supportedReasoningEfforts": [           "low",           "medium",           "high",           "max"         ],         "contextWindowTokens": 1000000       }     ]   },   {     "provider": "copilot",     "configured": false   },   {     "provider": "gemini",     "configured": false   },   {     "provider": "vertex",     "configured": false   },   {     "provider": "foundry",     "configured": false   } ] modelsFetchComplete=true [untimed]
+2026-11-18T10:07:59.9473216Z   path=sandbox/firewall/awf-reflect.json
+2026-11-18T10:07:59.9473491Z 
+2026-11-18T10:07:59.9474301Z [270] model_resolution/agent model.resolution engine=claude role=main configured_model=claude-sonnet-5-5 resolved_model=claude-sonnet-5-5 provider=anthropic status=exact cause=null [untimed]
+2026-11-18T10:07:59.9475224Z   path=agent/model-resolution.json
+2026-11-18T10:07:59.9475460Z 
+2026-11-18T10:07:59.9475788Z [271] safe_output/agent safe_output.request type=noop [requested, not executed] [untimed]
+2026-11-18T10:07:59.9476453Z   path=safeoutputs.jsonl
+2026-11-18T10:07:59.9476662Z 
+2026-11-18T10:07:59.9476843Z [272] execution/agent execution.result  [untimed]
+2026-11-18T10:07:59.9477242Z   path=agent_execution.json
+2026-11-18T10:07:59.9477438Z 
+2026-11-18T10:07:59.9477627Z [273] execution/detection execution.result  [untimed]
+2026-11-18T10:07:59.9478045Z   path=threat-detection/execution.json
+2026-11-18T10:07:59.9478281Z 
+2026-11-18T10:07:59.9478886Z [274] detection/detection detection.result promptInjection=false secretLeak=false maliciousPatch=false [untimed]
+2026-11-18T10:07:59.9479655Z   path=threat-detection/detection_result.json
+2026-11-18T10:07:59.9479917Z 
+2026-11-18T10:07:59.9480275Z [275] execution/agent agent.execution categories=[] errorCodes=[] errorTypes=[] exitCode=0 [untimed]
+2026-11-18T10:07:59.9480842Z   path=agent-errors.jsonl
+2026-11-18T10:07:59.9481039Z 
+2026-11-18T10:07:59.9481345Z [276] guardrail/activation guardrail.daily_aic status=skipped exceeded=false [untimed]
+2026-11-18T10:07:59.9481875Z   path=usage/aw_session.jsonl
+2026-11-18T10:07:59.9482081Z 
+2026-11-18T10:07:59.9482456Z [277] workflow/conclusion workflow.job_result jobId=activation result=success durationMs=25000 [untimed]
+2026-11-18T10:07:59.9483045Z   path=usage/aw_session.jsonl
+2026-11-18T10:07:59.9483243Z 
+2026-11-18T10:07:59.9483594Z [278] workflow/conclusion workflow.job_result jobId=agent result=success durationMs=270000 [untimed]
+2026-11-18T10:07:59.9484157Z   path=usage/aw_session.jsonl
+2026-11-18T10:07:59.9484357Z 
+2026-11-18T10:07:59.9484716Z [279] workflow/conclusion workflow.job_result jobId=detection result=success durationMs=104000 [untimed]
+2026-11-18T10:07:59.9485289Z   path=usage/aw_session.jsonl
+2026-11-18T10:07:59.9485495Z 
+2026-11-18T10:07:59.9485881Z [280] workflow/conclusion workflow.job_result jobId=push_repo_memory result=success durationMs=52000 [untimed]
+2026-11-18T10:07:59.9486481Z   path=usage/aw_session.jsonl
+2026-11-18T10:07:59.9486684Z 
+2026-11-18T10:07:59.9487062Z [281] workflow/conclusion workflow.job_result jobId=safe_outputs result=success durationMs=10000 [untimed]
+2026-11-18T10:07:59.9487637Z   path=usage/aw_session.jsonl
+2026-11-18T10:07:59.9487839Z 
+2026-11-18T10:07:59.9488096Z [282] memory/conclusion memory.push [extension payload omitted] [untimed]
+2026-11-18T10:07:59.9521793Z   path=usage/aw_session.jsonl
+2026-11-18T10:07:59.9522035Z 
+2026-11-18T10:07:59.9522553Z [283] collector/conclusion session.collection sources=32 warnings=0 untimedEvents=30 absentComponents=[   "experiment",   "eval" ] [untimed]
+2026-11-18T10:07:59.9523737Z   path=usage/aw_session.jsonl
+2026-11-18T10:07:59.9524696Z 
+2026-11-18T10:07:59.9524915Z [284] grader/conclusion grader.manifest graders=10 [untimed]
+2026-11-18T10:07:59.9525330Z   path=usage/graders/grader_manifest.json
+2026-11-18T10:07:59.9525555Z 
+2026-11-18T10:07:59.9529292Z [285] grader/conclusion grader.result results=[id=tool-success-rate value=0.5 unit=ratio passed=false status=fail; id=tool-failure-count value=7 unit=count passed=false status=fail; id=retries value=0 unit=count passed=true status=pass; id=loops value=1 unit=count passed=true status=pass; id=trajectory-efficiency value=0.5 unit=ratio passed=null status=pass; id=execution-step-count value=9 unit=count passed=null status=pass; id=execution-duration value=32804 unit=ms passed=null status=pass; id=working-set-rebuild-factor value=1.001436417405999 unit=factor passed=null status=pass; id=context-growth value=95.28235294117647 unit=factor passed=null status=pass; id=artifact-production value=0 unit=count passed=null status=pass] [untimed]
+2026-11-18T10:07:59.9559235Z   path=usage/graders/grader_results.json
+2026-11-18T10:07:59.9559751Z /tmp/gh-aw/usage/activity/summary.json
+2026-11-18T10:07:59.9560110Z /tmp/gh-aw/usage/agent/execution.json
+2026-11-18T10:07:59.9560890Z /tmp/gh-aw/usage/agent/harness_retry.json
+2026-11-18T10:07:59.9563331Z /tmp/gh-aw/usage/agent/token_usage.jsonl
+2026-11-18T10:07:59.9563714Z /tmp/gh-aw/usage/agent_usage.json
+2026-11-18T10:07:59.9564034Z /tmp/gh-aw/usage/aw_info.json
+2026-11-18T10:07:59.9564735Z /tmp/gh-aw/usage/aw_session.jsonl
+2026-11-18T10:07:59.9565069Z /tmp/gh-aw/usage/detection/execution.json
+2026-11-18T10:07:59.9565432Z /tmp/gh-aw/usage/detection/harness_retry.json
+2026-11-18T10:07:59.9565795Z /tmp/gh-aw/usage/detection/token_usage.jsonl
+2026-11-18T10:07:59.9566140Z /tmp/gh-aw/usage/github_rate_limits.jsonl
+2026-11-18T10:07:59.9566483Z /tmp/gh-aw/usage/graders/grader_manifest.json
+2026-11-18T10:07:59.9566837Z /tmp/gh-aw/usage/graders/grader_results.json
+2026-11-18T10:08:00.0640375Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-11-18T10:08:00.0641158Z with:
+2026-11-18T10:08:00.0641383Z   name: usage
+2026-11-18T10:08:00.0645084Z   path: /tmp/gh-aw/usage/aw_session.jsonl
+/tmp/gh-aw/usage/aw_info.json
+/tmp/gh-aw/usage/aw-info.jsonl
+/tmp/gh-aw/usage/agent_usage.json
+/tmp/gh-aw/usage/agent_usage.jsonl
+/tmp/gh-aw/usage/detection_usage.jsonl
+/tmp/gh-aw/usage/evals.jsonl
+/tmp/gh-aw/usage/graders/grader_manifest.json
+/tmp/gh-aw/usage/graders/grader_results.json
+/tmp/gh-aw/usage/github_rate_limits.jsonl
+/tmp/gh-aw/usage/agent/token_usage.jsonl
+/tmp/gh-aw/usage/agent/model-routing.jsonl
+/tmp/gh-aw/usage/agent/execution.json
+/tmp/gh-aw/usage/agent/harness_retry.json
+/tmp/gh-aw/usage/agent/durable-session.jsonl
+/tmp/gh-aw/usage/detection/token_usage.jsonl
+/tmp/gh-aw/usage/detection/execution.json
+/tmp/gh-aw/usage/detection/harness_retry.json
+/tmp/gh-aw/usage/detection/detection_result.json
+/tmp/gh-aw/usage/evals/token_usage.jsonl
+/tmp/gh-aw/usage/evals/execution.json
+/tmp/gh-aw/usage/evals/evals_status.json
+/tmp/gh-aw/usage/experiment/state.jsonl
+/tmp/gh-aw/usage/experiment/state.json
+/tmp/gh-aw/usage/experiment/assignments.json
+/tmp/gh-aw/usage/activity/summary.json
+
+2026-11-18T10:08:00.0649385Z   if-no-files-found: ignore
+2026-11-18T10:08:00.0649655Z   retention-days: 0
+2026-11-18T10:08:00.0649899Z   compression-level: 6
+2026-11-18T10:08:00.0650153Z   overwrite: false
+2026-11-18T10:08:00.0650406Z   include-hidden-files: false
+2026-11-18T10:08:00.0650677Z   archive: true
+2026-11-18T10:08:00.0650894Z env:
+2026-11-18T10:08:00.0651118Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T10:08:00.0651399Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T10:08:00.0651683Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T10:08:00.0652581Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44281021812,github.run_id=44281021812,gh-aw.engine.id=claude
+2026-11-18T10:08:00.0653486Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T10:08:00.0653767Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T10:08:00.0654038Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T10:08:00.0654339Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T10:08:00.0654662Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T10:08:00.0655401Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","push_repo_memory":"push_repo_memory","safe_outputs":"safe_outputs"}
+2026-11-18T10:08:00.0656619Z   GH_AW_JOB_RESULTS: {"activation":{"result":"success"},"agent":{"result":"success"},"detection":{"result":"success"},"push_repo_memory":{"result":"success"},"safe_outputs":{"result":"success"}}
+2026-11-18T10:08:00.0657679Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"push_repo_memory":true,"safe_outputs":true}
+2026-11-18T10:08:00.0679169Z   GH_AW_MEMORY_SAVE_RESULTS: {"prices":{"branch":"memory/prices","commit":"779e80f5a8491f208809c904282d0637f4bc7008","jobResult":"success","outcome":"success","status":"saved"}}
+2026-11-18T10:08:00.0679999Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T10:08:00.0680344Z   GITHUB_AW_OTEL_TRACE_ID: 9d4fcd52fb4af697812bd158a796e4ff
+2026-11-18T10:08:00.0680738Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b7f9684b9f37a493
+2026-11-18T10:08:00.0681094Z   GITHUB_AW_OTEL_JOB_START_MS: 1794996471160
+2026-11-18T10:08:00.0681397Z ##[endgroup]
+2026-11-18T10:08:00.4265286Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-18T10:08:00.4270868Z The least common ancestor is /tmp/gh-aw/usage. This will be the root directory of the artifact
+2026-11-18T10:08:00.4272002Z With the provided path, there will be 13 files uploaded
+2026-11-18T10:08:00.4272551Z Artifact name is valid!
+2026-11-18T10:08:00.4272822Z Root directory input is valid!
+2026-11-18T10:08:00.6879976Z Uploading artifact: usage.zip
+2026-11-18T10:08:00.6937106Z Beginning upload of artifact content to blob storage
+2026-11-18T10:08:01.1606082Z Uploaded bytes 33188
+2026-11-18T10:08:01.1776990Z Finished uploading artifact content to blob storage!
+2026-11-18T10:08:01.1782880Z SHA256 digest of uploaded artifact is c3a1ef2ead19f1e6546b4c500001bb03cd2f27855f37584302f2e751ce84284d
+2026-11-18T10:08:01.1786820Z Finalizing artifact upload
+2026-11-18T10:08:01.6746336Z Artifact usage successfully finalized. Artifact ID 14418090604
+2026-11-18T10:08:01.6749827Z Artifact usage has been successfully uploaded! Final size is 33188 bytes. Artifact ID is 14418090604
+2026-11-18T10:08:01.6758237Z Artifact download URL: https://github.com/Suv4o/charge-line-data/actions/runs/44281021812/artifacts/14418090604
+2026-11-18T10:08:01.7002553Z Post job cleanup.
+2026-11-18T10:08:01.8216499Z [info] [otlp] sending conclusion span "gh-aw.conclusion.conclusion" to configured endpoints
+2026-11-18T10:08:01.8423000Z [info] [otlp] conclusion span export attempted
+2026-11-18T10:08:01.8427313Z Warning: leaving shared /tmp/gh-aw untouched; per-invocation ownership cannot be established.
+2026-11-18T10:08:01.8615935Z Evaluate and set job outputs
+2026-11-18T10:08:01.8627678Z Set output 'noop_comment_body'
+2026-11-18T10:08:01.8631855Z Set output 'noop_message'
+2026-11-18T10:08:01.8633118Z Cleaning up orphan processes

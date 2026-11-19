@@ -1,0 +1,28 @@
+﻿2026-11-19T11:48:46.4563012Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/install_threat_detect_binary.sh" v0.5.3 --artifact-base-url https://github.com/github/gh-aw-threat-detection/releases/download --sha256-amd64 7cfab3bd02717968a0584ddd3790cff22550059e36d6f656c4f35e9d27851009 --sha256-arm64 6f355949af98e7b5527a958ac11431bd7867db45c0191b94c3a205c662181cc6
+2026-11-19T11:48:46.4567197Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/install_threat_detect_binary.sh" v0.5.3 --artifact-base-url https://github.com/github/gh-aw-threat-detection/releases/download --sha256-amd64 7cfab3bd02717968a0584ddd3790cff22550059e36d6f656c4f35e9d27851009 --sha256-arm64 6f355949af98e7b5527a958ac11431bd7867db45c0191b94c3a205c662181cc6[0m
+2026-11-19T11:48:46.4603804Z shell: /usr/bin/bash -e {0}
+2026-11-19T11:48:46.4604099Z env:
+2026-11-19T11:48:46.4604320Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:48:46.4604609Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:48:46.4604892Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-19T11:48:46.4605765Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517227475,github.run_id=44517227475,gh-aw.engine.id=claude
+2026-11-19T11:48:46.4606677Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:48:46.4606959Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:48:46.4607207Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:48:46.4607499Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:48:46.4607809Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:48:46.4608072Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:48:46.4608374Z   GITHUB_AW_OTEL_TRACE_ID: 85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:48:46.4608753Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 66b6342b98b65b12
+2026-11-19T11:48:46.4609085Z   GITHUB_AW_OTEL_JOB_START_MS: 1795088898684
+2026-11-19T11:48:46.4609414Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-11-19T11:48:46.4609772Z   GH_AW_RUNTIME_TMP_DIR: /tmp/gh-aw-runtime-bCewtc
+2026-11-19T11:48:46.4610091Z   GH_AW_RUNTIME_TMP_ID: 2049:8554463:1001
+2026-11-19T11:48:46.4610398Z   TMPDIR: /tmp/gh-aw-runtime-bCewtc
+2026-11-19T11:48:46.4610666Z ##[endgroup]
+2026-11-19T11:48:46.5427090Z Installing threat-detect with compiler-pinned checksum verification (version: v0.5.3, os: Linux, arch: x86_64)
+2026-11-19T11:48:46.5589712Z Downloading binary from "https://github.com/github/gh-aw-threat-detection/releases/download/v0.5.3/threat-detect-linux-amd64"...
+2026-11-19T11:48:46.6281897Z Verifying SHA256 checksum for threat-detect-linux-amd64...
+2026-11-19T11:48:46.6357810Z ✓ Checksum verification passed for threat-detect-linux-amd64
+2026-11-19T11:48:46.6754469Z threat-detect v0.5.3
+2026-11-19T11:48:46.6768387Z ✓ threat-detect installation complete

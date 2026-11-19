@@ -1,0 +1,66 @@
+﻿2026-11-19T11:49:36.3160182Z ##[group]Run github/gh-aw-actions/setup@53d0749e19424a918acd82b4d140264ce48f2f14
+2026-11-19T11:49:36.3161091Z with:
+2026-11-19T11:49:36.3161512Z   destination: /home/runner/work/_temp/gh-aw/actions
+2026-11-19T11:49:36.3162023Z   job-name: safe_outputs
+2026-11-19T11:49:36.3162441Z   trace-id: 85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:49:36.3162917Z   parent-span-id: ad49c3eb3ca593f4
+2026-11-19T11:49:36.3163379Z   safe-output-artifact-client: false
+2026-11-19T11:49:36.3163917Z env:
+2026-11-19T11:49:36.3164256Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:49:36.3164678Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:49:36.3165089Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-19T11:49:36.3166278Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517227475,github.run_id=44517227475,gh-aw.engine.id=claude
+2026-11-19T11:49:36.3167464Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:49:36.3168015Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:49:36.3168462Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:49:36.3168891Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:49:36.3169363Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:49:36.3169764Z   GH_AW_AGENT_AIC: 179.1096
+2026-11-19T11:49:36.3170148Z   GH_AW_AIC: 179.1096
+2026-11-19T11:49:36.3170521Z   GH_AW_AMBIENT_CONTEXT: 2712
+2026-11-19T11:49:36.3171201Z   GH_AW_CALLER_WORKFLOW_ID: Suv4o/charge-line-data/prices
+2026-11-19T11:49:36.3171712Z   GH_AW_DETECTION_CONCLUSION: success
+2026-11-19T11:49:36.3172125Z   GH_AW_DETECTION_REASON: 
+2026-11-19T11:49:36.3172517Z   GH_AW_DETECTION_THREAT_KINDS: 
+2026-11-19T11:49:36.3172926Z   GH_AW_ENGINE_ID: claude
+2026-11-19T11:49:36.3173329Z   GH_AW_ENGINE_MODEL: claude-opus-5-5
+2026-11-19T11:49:36.3173785Z   GH_AW_OBJECT_PACK_FETCH_DEPTHS: 
+2026-11-19T11:49:36.3174203Z   GH_AW_OBJECT_PACK_MAX_BYTES: 
+2026-11-19T11:49:36.3174607Z   GH_AW_OBJECT_PACK_MAX_OBJECTS: 
+2026-11-19T11:49:36.3175022Z   GH_AW_OBJECT_PACK_TIMEOUT_MS: 
+2026-11-19T11:49:36.3175445Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:49:36.3175830Z   GH_AW_RUN_DETECTION: true
+2026-11-19T11:49:36.3176320Z   GH_AW_THREAT_DETECTION_AIC: 31.01328
+2026-11-19T11:49:36.3176748Z   GH_AW_WORKFLOW_ID: prices
+2026-11-19T11:49:36.3177225Z   GH_AW_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-19T11:49:36.3178281Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Suv4o/charge-line-data/blob/main/.github/workflows/prices.md
+2026-11-19T11:49:36.3179131Z   GH_AW_SETUP_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-19T11:49:36.3179944Z   GH_AW_CURRENT_WORKFLOW_REF: Suv4o/charge-line-data/.github/workflows/prices.lock.yml@refs/heads/main
+2026-11-19T11:49:36.3180647Z   GH_AW_INFO_VERSION: 2.1.317
+2026-11-19T11:49:36.3181047Z   GH_AW_INFO_AWF_VERSION: v0.29.11
+2026-11-19T11:49:36.3181469Z   GH_AW_INFO_ENGINE_ID: claude
+2026-11-19T11:49:36.3181870Z   GH_AW_SETUP_AW_CONTEXT: 
+2026-11-19T11:49:36.3182242Z ##[endgroup]
+2026-11-19T11:49:39.6124446Z Successfully copied 795 files to /home/runner/work/_temp/gh-aw/actions
+2026-11-19T11:49:39.6136697Z ##[group]Runtime TLS inventory (not a trust-store attestation)
+2026-11-19T11:49:39.6208458Z curl 8.18.0 (x86_64-pc-linux-gnu) libcurl/8.18.0 OpenSSL/3.5.5 zlib/1.3.1 brotli/1.2.0 zstd/1.5.7 libidn2/2.3.8 libpsl/0.21.2 libssh2/1.11.1 nghttp2/1.68.0 librtmp/2.3 mit-krb5/1.22.1 OpenLDAP/2.6.10
+2026-11-19T11:49:39.6429687Z Node v24.22.2; OpenSSL 3.5.9
+2026-11-19T11:49:40.6252164Z go1.26.11
+2026-11-19T11:49:40.6303272Z /usr/bin/gh: go1.27.3
+2026-11-19T11:49:40.6305987Z gh-aw: unavailable for build-toolchain inspection
+2026-11-19T11:49:40.6306978Z Python/certifi: not inspected by shell setup; record each client's interpreter, TLS backend and selected CA bundle separately.
+2026-11-19T11:49:40.6308119Z Container, proxy and MCP trust stores require separate image/vendor evidence.
+2026-11-19T11:49:40.6308748Z Browser updates and successful HTTPS connections do not attest CA distrust.
+2026-11-19T11:49:40.6310124Z ##[endgroup]
+2026-11-19T11:49:41.1487424Z Successfully copied 119 mcp-scripts files to /home/runner/work/_temp/gh-aw/mcp-scripts
+2026-11-19T11:49:41.3901492Z Successfully copied 183 safe-outputs files to /home/runner/work/_temp/gh-aw/safeoutputs
+2026-11-19T11:49:41.4395224Z [info] [otlp] INPUT_TRACE_ID=85d1b9283f9d7efc1df09c197368e590 (will reuse activation trace)
+2026-11-19T11:49:41.4396291Z [info] [otlp] INPUT_PARENT_SPAN_ID=ad49c3eb3ca593f4 (will parent setup span)
+2026-11-19T11:49:41.4408776Z [info] [otlp] no OTLP endpoints have usable credentials, skipping setup span
+2026-11-19T11:49:41.5107261Z [info] [otlp] resolved trace-id=85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:49:41.5108671Z [info] [otlp] trace-id=85d1b9283f9d7efc1df09c197368e590 written to GITHUB_OUTPUT
+2026-11-19T11:49:41.5109352Z [info] [otlp] span-id=5f2d1c813be01303 written to GITHUB_OUTPUT
+2026-11-19T11:49:41.5109928Z [info] [otlp] parent-span-id=ad49c3eb3ca593f4 written to GITHUB_OUTPUT
+2026-11-19T11:49:41.5110510Z [info] [otlp] GITHUB_AW_OTEL_TRACE_ID written to GITHUB_ENV
+2026-11-19T11:49:41.5111088Z [info] [otlp] GITHUB_AW_OTEL_PARENT_SPAN_ID written to GITHUB_ENV
+2026-11-19T11:49:41.5112261Z [info] [otlp] GITHUB_AW_OTEL_JOB_START_MS written to GITHUB_ENV

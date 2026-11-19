@@ -1,0 +1,3998 @@
+{
+  "schema_version": 13,
+  "cache_source": "full",
+  "overview": {
+    "run_id": 44517220484,
+    "workflow_name": "Keep the EV catalogue current",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-19T11:42:32Z",
+    "started_at": "2026-11-19T11:42:32Z",
+    "updated_at": "2026-11-19T11:56:35Z",
+    "duration": "14.1m",
+    "event": "workflow_dispatch",
+    "branch": "main",
+    "url": "https://github.com/Suv4o/charge-line-data/actions/runs/44517220484",
+    "logs_path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484"
+  },
+  "comparison": {
+    "baseline_found": true,
+    "baseline": {
+      "run_id": 44301490019,
+      "workflow_name": "Keep the EV catalogue current",
+      "conclusion": "success",
+      "created_at": "2026-11-18T12:11:03Z",
+      "selection": "cohort_match",
+      "matched_on": [
+        "event",
+        "task_domain",
+        "execution_style",
+        "resource_profile",
+        "dispatch_mode",
+        "tool_breadth"
+      ]
+    },
+    "delta": {
+      "turns": {
+        "before": 91,
+        "after": 90,
+        "changed": true
+      },
+      "posture": {
+        "before": "read_only",
+        "after": "write_capable",
+        "changed": true
+      },
+      "blocked_requests": {
+        "before": 2,
+        "after": 2,
+        "changed": false
+      }
+    },
+    "classification": {
+      "label": "risky",
+      "reason_codes": [
+        "turns_decrease",
+        "posture_changed"
+      ]
+    },
+    "recommendation": {
+      "action": "Review first-time write-capable behavior and add a guardrail before enabling by default."
+    }
+  },
+  "task_domain": {
+    "name": "code_fix",
+    "label": "Code Fix",
+    "reason": "The workflow appears oriented toward code changes or pull request review."
+  },
+  "behavior_fingerprint": {
+    "execution_style": "exploratory",
+    "tool_breadth": "broad",
+    "actuation_style": "selective_write",
+    "resource_profile": "heavy",
+    "dispatch_mode": "standalone",
+    "agentic_fraction": 0.03333333333333333
+  },
+  "agentic_assessments": [
+    {
+      "kind": "resource_heavy_for_domain",
+      "severity": "high",
+      "summary": "This Code Fix run consumed a heavy execution profile for its task shape.",
+      "evidence": "turns=90 tool_types=37 duration=14m3s write_actions=4",
+      "recommendation": "Compare this run to similar successful runs and trim unnecessary turns, tools, or write actions."
+    },
+    {
+      "kind": "partially_reducible",
+      "severity": "medium",
+      "summary": "About 96% of this run's turns appear to be data-gathering that could move to deterministic steps.",
+      "evidence": "agentic_fraction=0.03 turns=90",
+      "recommendation": "Move data-fetching work to frontmatter steps: (pre-agent) writing to /tmp/gh-aw/agent/ or post-steps: (post-agent) to reduce inference cost. See the DeterministicOps guide."
+    }
+  ],
+  "metrics": {
+    "token_usage": 4012688,
+    "aic": 317.19688,
+    "ambient_context": {
+      "input_tokens": 2,
+      "cached_tokens": 14356
+    },
+    "working_set": {
+      "measurement_state": "measured",
+      "rebuild_factor": 11.610713778240894,
+      "cumulative_input_tokens": 245137,
+      "peak_input_tokens": 21113,
+      "rebuild_excess_tokens": 224024,
+      "invocations": 75
+    },
+    "action_minutes": 15,
+    "turns": 90,
+    "error_count": 0,
+    "warning_count": 0
+  },
+  "key_findings": [
+    {
+      "code": "high_token_usage",
+      "category": "performance",
+      "severity": "medium",
+      "title": "High Token Usage",
+      "description": "Used 4.01M tokens",
+      "impact": "High token usage may indicate verbose outputs or inefficient prompts",
+      "playbook_url": "https://github.com/github/gh-aw/blob/main/.github/aw/debug-playbook.md#audit-findings"
+    },
+    {
+      "code": "many_iterations",
+      "category": "performance",
+      "severity": "medium",
+      "title": "Many Iterations",
+      "description": "Workflow took 90 turns to complete",
+      "impact": "Many turns may indicate task complexity or unclear instructions",
+      "playbook_url": "https://github.com/github/gh-aw/blob/main/.github/aw/debug-playbook.md#audit-findings"
+    },
+    {
+      "code": "blocked_network_requests",
+      "category": "network",
+      "severity": "medium",
+      "title": "Blocked Network Requests",
+      "description": "2 network request(s) were blocked by firewall",
+      "impact": "Blocked requests may indicate missing network permissions or unexpected behavior",
+      "playbook_url": "https://github.com/github/gh-aw/blob/main/.github/aw/debug-playbook.md#audit-findings"
+    },
+    {
+      "code": "workflow_succeeded",
+      "category": "success",
+      "severity": "info",
+      "title": "Workflow Completed Successfully",
+      "description": "Completed in 90 turns with no reported workflow errors",
+      "impact": "No action needed",
+      "playbook_url": "https://github.com/github/gh-aw/blob/main/.github/aw/debug-playbook.md#audit-findings"
+    },
+    {
+      "code": "agentic_resource_heavy_for_domain",
+      "category": "performance",
+      "severity": "high",
+      "title": "Resource Heavy For Domain",
+      "description": "This Code Fix run consumed a heavy execution profile for its task shape.",
+      "impact": "Higher cost and latency than a comparable well-behaved run"
+    },
+    {
+      "code": "agentic_partially_reducible",
+      "category": "optimization",
+      "severity": "medium",
+      "title": "Partially Reducible To Deterministic",
+      "description": "About 96% of this run's turns appear to be data-gathering that could move to deterministic steps.",
+      "impact": "Moving data-gathering turns to deterministic steps reduces inference cost"
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "medium",
+      "action": "Clarify workflow instructions or break into smaller tasks",
+      "reason": "Many iterations may indicate unclear objectives or overly complex tasks",
+      "example": "Split complex workflows into discrete steps with clear success criteria"
+    },
+    {
+      "priority": "medium",
+      "action": "Add blocked domains to the workflow network allow-list",
+      "reason": "Firewall-blocked domains prevent the agent from completing its tasks",
+      "example": "Add allowed domains to network configuration or review firewall rules"
+    },
+    {
+      "priority": "high",
+      "action": "Compare this run to similar successful runs and trim unnecessary turns, tools, or write actions.",
+      "reason": "This Code Fix run consumed a heavy execution profile for its task shape."
+    },
+    {
+      "priority": "medium",
+      "action": "Move data-fetching work to frontmatter steps: (pre-agent) writing to /tmp/gh-aw/agent/ or post-steps: (post-agent) to reduce inference cost. See the DeterministicOps guide.",
+      "reason": "About 96% of this run's turns appear to be data-gathering that could move to deterministic steps."
+    }
+  ],
+  "observability_insights": [
+    {
+      "category": "execution",
+      "severity": "medium",
+      "title": "Exploratory execution path",
+      "summary": "The agent used 90 turns across 37 tool types, which indicates adaptive planning instead of a strictly linear path.",
+      "evidence": "turns=90 tool_types=37"
+    },
+    {
+      "category": "actuation",
+      "severity": "info",
+      "title": "Write path executed",
+      "summary": "The workflow crossed from analysis into action, producing 2 created item(s) and 2 safe output action(s).",
+      "evidence": "created_items=2 safe_items=2"
+    },
+    {
+      "category": "network",
+      "severity": "medium",
+      "title": "Network friction detected",
+      "summary": "The firewall observed 201 request(s) with 2 blocked, for a 1% block rate.",
+      "evidence": "blocked=2 total=201"
+    },
+    {
+      "category": "execution",
+      "severity": "info",
+      "title": "Log template patterns mined",
+      "summary": "Analysis identified 10 distinct event templates across 6 pipeline stages from 40 events.",
+      "evidence": "finish=1 plan=1 tool_call=7 tool_result=1"
+    },
+    {
+      "category": "reliability",
+      "severity": "high",
+      "title": "8 anomalous event pattern(s) detected",
+      "summary": "Anomaly detection flagged 8 event(s) as unusual based on template similarity and cluster rarity.",
+      "evidence": "stage=tool_call score=0.65: new log template discovered; rare cluster (few observations); stage=tool_result score=0.65: new log template discovered; rare cluster (few observations)"
+    },
+    {
+      "category": "execution",
+      "severity": "info",
+      "title": "Agent stage sequence",
+      "summary": "The observed pipeline stage sequence for this run.",
+      "evidence": "plan tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_call tool_result finish"
+    }
+  ],
+  "performance_metrics": {
+    "tokens_per_minute": 285600.56939501775,
+    "most_used_tool": "WebFetch (34 calls)",
+    "network_requests": 201
+  },
+  "engine_config": {
+    "engine_id": "claude",
+    "engine_name": "Claude Code",
+    "model": "claude-opus-5-5",
+    "requested_model": "claude-opus-5-5",
+    "version": "2.1.317",
+    "cli_version": "v1.2.2",
+    "firewall_version": "v0.29.11",
+    "trigger_event": "workflow_dispatch",
+    "repository": "Suv4o/charge-line-data",
+    "dry_run": false
+  },
+  "prompt_analysis": {
+    "prompt_size": 27506,
+    "prompt_file": "aw-prompts/prompt.txt"
+  },
+  "session_analysis": {
+    "wall_time": "14.1m",
+    "turn_count": 90,
+    "avg_turn_duration": "9.4s",
+    "avg_time_between_turns": "9.5s (estimated)",
+    "tokens_per_minute": 285600.56939501775,
+    "timeout_detected": false
+  },
+  "safe_output_summary": {
+    "total_items": 2,
+    "items_by_type": {
+      "create_issue": 1,
+      "create_pull_request": 1
+    },
+    "summary": "1 issue(s), 1 PR(s)",
+    "temporary_id_map_status": "loaded",
+    "temporary_id_mappings": 2,
+    "type_details": [
+      {
+        "type": "create_issue",
+        "count": 1
+      },
+      {
+        "type": "create_pull_request",
+        "count": 1
+      }
+    ]
+  },
+  "mcp_server_health": {
+    "total_servers": 1,
+    "healthy_servers": 1,
+    "degraded_servers": 0,
+    "failed_servers": 0,
+    "summary": "1 server(s), 1 healthy, 0 degraded, 0 failed",
+    "total_requests": 4,
+    "total_errors": 0,
+    "error_rate": 0,
+    "servers": [
+      {
+        "server_name": "safeoutputs",
+        "request_count": 4,
+        "tool_calls": 4,
+        "error_count": 0,
+        "error_rate": 0,
+        "error_rate_str": "0.0%",
+        "avg_latency": "0ns",
+        "status": "✅ healthy"
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "name": "activation",
+      "status": "completed",
+      "conclusion": "success",
+      "duration": "17.0s",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-19T11:42:38Z",
+          "completed_at": "2026-11-19T11:42:40Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-19T11:42:40Z",
+          "completed_at": "2026-11-19T11:42:44Z"
+        },
+        {
+          "name": "Mask OTLP telemetry headers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-19T11:42:44Z",
+          "completed_at": "2026-11-19T11:42:44Z"
+        },
+        {
+          "name": "Generate agentic run info",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-19T11:42:44Z",
+          "completed_at": "2026-11-19T11:42:44Z"
+        },
+        {
+          "name": "Restore daily AIC scan observations",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-19T11:42:44Z",
+          "completed_at": "2026-11-19T11:42:45Z"
+        },
+        {
+          "name": "Check daily workflow token guardrail",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-19T11:42:45Z",
+          "completed_at": "2026-11-19T11:42:45Z"
+        },
+        {
+          "name": "Publish daily AIC scan observations",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-19T11:42:45Z",
+          "completed_at": "2026-11-19T11:42:45Z"
+        },
+        {
+          "name": "Check for OAuth tokens",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-19T11:42:45Z",
+          "completed_at": "2026-11-19T11:42:45Z"
+        },
+        {
+          "name": "Checkout .github and .agents folders",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-19T11:42:45Z",
+          "completed_at": "2026-11-19T11:42:47Z"
+        },
+        {
+          "name": "Save agent config folders for base branch restoration",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-19T11:42:47Z",
+          "completed_at": "2026-11-19T11:42:47Z"
+        },
+        {
+          "name": "Check workflow lock file",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-19T11:42:47Z",
+          "completed_at": "2026-11-19T11:42:48Z"
+        },
+        {
+          "name": "Check compile-agentic version",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-19T11:42:48Z",
+          "completed_at": "2026-11-19T11:42:49Z"
+        },
+        {
+          "name": "Log runtime features",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 13,
+          "started_at": "2026-11-19T11:42:49Z",
+          "completed_at": "2026-11-19T11:42:49Z"
+        },
+        {
+          "name": "Create prompt with built-in context",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-11-19T11:42:49Z",
+          "completed_at": "2026-11-19T11:42:49Z"
+        },
+        {
+          "name": "Interpolate variables and render templates",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-11-19T11:42:49Z",
+          "completed_at": "2026-11-19T11:42:49Z"
+        },
+        {
+          "name": "Substitute placeholders",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-11-19T11:42:49Z",
+          "completed_at": "2026-11-19T11:42:49Z"
+        },
+        {
+          "name": "Validate prompt placeholders",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-19T11:42:49Z",
+          "completed_at": "2026-11-19T11:42:49Z"
+        },
+        {
+          "name": "Print prompt",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-19T11:42:49Z",
+          "completed_at": "2026-11-19T11:42:50Z"
+        },
+        {
+          "name": "Inventory installed skills",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-19T11:42:50Z",
+          "completed_at": "2026-11-19T11:42:50Z"
+        },
+        {
+          "name": "Upload info artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-11-19T11:42:50Z",
+          "completed_at": "2026-11-19T11:42:51Z"
+        },
+        {
+          "name": "Stage prompt files for artifact upload",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-11-19T11:42:51Z",
+          "completed_at": "2026-11-19T11:42:51Z"
+        },
+        {
+          "name": "Upload activation artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22,
+          "started_at": "2026-11-19T11:42:51Z",
+          "completed_at": "2026-11-19T11:42:52Z"
+        },
+        {
+          "name": "Post Checkout .github and .agents folders",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 43,
+          "started_at": "2026-11-19T11:42:52Z",
+          "completed_at": "2026-11-19T11:42:52Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 44,
+          "started_at": "2026-11-19T11:42:52Z",
+          "completed_at": "2026-11-19T11:42:52Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 45,
+          "started_at": "2026-11-19T11:42:52Z",
+          "completed_at": "2026-11-19T11:42:52Z"
+        }
+      ]
+    },
+    {
+      "name": "agent",
+      "status": "completed",
+      "conclusion": "success",
+      "duration": "10.8m",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-19T11:42:58Z",
+          "completed_at": "2026-11-19T11:43:00Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-19T11:43:00Z",
+          "completed_at": "2026-11-19T11:43:04Z"
+        },
+        {
+          "name": "Set runtime paths",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-19T11:43:04Z",
+          "completed_at": "2026-11-19T11:43:04Z"
+        },
+        {
+          "name": "Mask OTLP telemetry headers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-19T11:43:04Z",
+          "completed_at": "2026-11-19T11:43:04Z"
+        },
+        {
+          "name": "Check OTLP telemetry configuration",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-19T11:43:04Z",
+          "completed_at": "2026-11-19T11:43:04Z"
+        },
+        {
+          "name": "Checkout repository (gh-aw default)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-19T11:43:04Z",
+          "completed_at": "2026-11-19T11:43:05Z"
+        },
+        {
+          "name": "Initialize agent execution evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-19T11:43:05Z",
+          "completed_at": "2026-11-19T11:43:05Z"
+        },
+        {
+          "name": "Create gh-aw temp directory",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-19T11:43:05Z",
+          "completed_at": "2026-11-19T11:43:05Z"
+        },
+        {
+          "name": "Configure gh CLI for GitHub Enterprise",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-19T11:43:05Z",
+          "completed_at": "2026-11-19T11:43:05Z"
+        },
+        {
+          "name": "Download activation artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-19T11:43:05Z",
+          "completed_at": "2026-11-19T11:43:06Z"
+        },
+        {
+          "name": "Clone repo-memory branch (catalogue)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-19T11:43:06Z",
+          "completed_at": "2026-11-19T11:43:07Z"
+        },
+        {
+          "name": "Download the agent's reading (The Driven's feed, BITRE's register entries)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-19T11:43:07Z",
+          "completed_at": "2026-11-19T11:44:31Z"
+        },
+        {
+          "name": "Configure Git credentials",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-19T11:44:31Z",
+          "completed_at": "2026-11-19T11:44:31Z"
+        },
+        {
+          "name": "Checkout PR branch",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-11-19T11:44:31Z",
+          "completed_at": "2026-11-19T11:44:31Z"
+        },
+        {
+          "name": "Setup Node.js",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-11-19T11:44:31Z",
+          "completed_at": "2026-11-19T11:44:31Z"
+        },
+        {
+          "name": "Install AWF binary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-11-19T11:44:31Z",
+          "completed_at": "2026-11-19T11:44:44Z"
+        },
+        {
+          "name": "Install Claude Code CLI",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-19T11:44:44Z",
+          "completed_at": "2026-11-19T11:44:47Z"
+        },
+        {
+          "name": "Install Playwright CLI",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-19T11:44:47Z",
+          "completed_at": "2026-11-19T11:44:48Z"
+        },
+        {
+          "name": "Install Playwright browsers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-19T11:44:48Z",
+          "completed_at": "2026-11-19T11:45:01Z"
+        },
+        {
+          "name": "Install Playwright CLI skills",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-11-19T11:45:01Z",
+          "completed_at": "2026-11-19T11:45:01Z"
+        },
+        {
+          "name": "Determine automatic lockdown mode for GitHub MCP Server",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-11-19T11:45:01Z",
+          "completed_at": "2026-11-19T11:45:02Z"
+        },
+        {
+          "name": "Restore agent config folders from base branch",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 22,
+          "started_at": "2026-11-19T11:45:02Z",
+          "completed_at": "2026-11-19T11:45:02Z"
+        },
+        {
+          "name": "Restore inline sub-agents from activation artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23,
+          "started_at": "2026-11-19T11:45:02Z",
+          "completed_at": "2026-11-19T11:45:02Z"
+        },
+        {
+          "name": "Restore inline skills from activation artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 24,
+          "started_at": "2026-11-19T11:45:02Z",
+          "completed_at": "2026-11-19T11:45:02Z"
+        },
+        {
+          "name": "Download container images",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 25,
+          "started_at": "2026-11-19T11:45:02Z",
+          "completed_at": "2026-11-19T11:45:16Z"
+        },
+        {
+          "name": "Prepare Safe Outputs Directories",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 26,
+          "started_at": "2026-11-19T11:45:16Z",
+          "completed_at": "2026-11-19T11:45:16Z"
+        },
+        {
+          "name": "Generate Safe Outputs Config",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 27,
+          "started_at": "2026-11-19T11:45:16Z",
+          "completed_at": "2026-11-19T11:45:16Z"
+        },
+        {
+          "name": "Generate Safe Outputs Tools",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 28,
+          "started_at": "2026-11-19T11:45:16Z",
+          "completed_at": "2026-11-19T11:45:16Z"
+        },
+        {
+          "name": "Start MCP Gateway",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 29,
+          "started_at": "2026-11-19T11:45:16Z",
+          "completed_at": "2026-11-19T11:45:33Z"
+        },
+        {
+          "name": "Mount MCP servers as CLIs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30,
+          "started_at": "2026-11-19T11:45:33Z",
+          "completed_at": "2026-11-19T11:45:33Z"
+        },
+        {
+          "name": "Clean credentials",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31,
+          "started_at": "2026-11-19T11:45:33Z",
+          "completed_at": "2026-11-19T11:45:33Z"
+        },
+        {
+          "name": "Audit pre-agent workspace",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32,
+          "started_at": "2026-11-19T11:45:33Z",
+          "completed_at": "2026-11-19T11:45:33Z"
+        },
+        {
+          "name": "Log GitHub rate limits at agent start",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33,
+          "started_at": "2026-11-19T11:45:33Z",
+          "completed_at": "2026-11-19T11:45:33Z"
+        },
+        {
+          "name": "Execute Claude Code CLI",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 34,
+          "started_at": "2026-11-19T11:45:33Z",
+          "completed_at": "2026-11-19T11:53:31Z"
+        },
+        {
+          "name": "Log GitHub rate limits at agent end",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 35,
+          "started_at": "2026-11-19T11:53:31Z",
+          "completed_at": "2026-11-19T11:53:31Z"
+        },
+        {
+          "name": "Detect agent errors",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 36,
+          "started_at": "2026-11-19T11:53:31Z",
+          "completed_at": "2026-11-19T11:53:31Z"
+        },
+        {
+          "name": "Configure Git credentials",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 37,
+          "started_at": "2026-11-19T11:53:31Z",
+          "completed_at": "2026-11-19T11:53:32Z"
+        },
+        {
+          "name": "Stop MCP Gateway",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 38,
+          "started_at": "2026-11-19T11:53:32Z",
+          "completed_at": "2026-11-19T11:53:33Z"
+        },
+        {
+          "name": "Redact secrets in logs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 39,
+          "started_at": "2026-11-19T11:53:33Z",
+          "completed_at": "2026-11-19T11:53:33Z"
+        },
+        {
+          "name": "Validate recovery envelopes before upload",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 40,
+          "started_at": "2026-11-19T11:53:33Z",
+          "completed_at": "2026-11-19T11:53:33Z"
+        },
+        {
+          "name": "Append agent step summary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 41,
+          "started_at": "2026-11-19T11:53:33Z",
+          "completed_at": "2026-11-19T11:53:33Z"
+        },
+        {
+          "name": "Copy Safe Outputs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 42,
+          "started_at": "2026-11-19T11:53:33Z",
+          "completed_at": "2026-11-19T11:53:33Z"
+        },
+        {
+          "name": "Ingest agent output",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 43,
+          "started_at": "2026-11-19T11:53:33Z",
+          "completed_at": "2026-11-19T11:53:33Z"
+        },
+        {
+          "name": "Parse agent logs for step summary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 44,
+          "started_at": "2026-11-19T11:53:33Z",
+          "completed_at": "2026-11-19T11:53:34Z"
+        },
+        {
+          "name": "Parse MCP Gateway logs for step summary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 45,
+          "started_at": "2026-11-19T11:53:34Z",
+          "completed_at": "2026-11-19T11:53:34Z"
+        },
+        {
+          "name": "Print firewall logs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 46,
+          "started_at": "2026-11-19T11:53:34Z",
+          "completed_at": "2026-11-19T11:53:34Z"
+        },
+        {
+          "name": "Parse token usage for step summary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 47,
+          "started_at": "2026-11-19T11:53:34Z",
+          "completed_at": "2026-11-19T11:53:35Z"
+        },
+        {
+          "name": "Print AWF reflect summary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 48,
+          "started_at": "2026-11-19T11:53:35Z",
+          "completed_at": "2026-11-19T11:53:35Z"
+        },
+        {
+          "name": "Generate observability summary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 49,
+          "started_at": "2026-11-19T11:53:35Z",
+          "completed_at": "2026-11-19T11:53:35Z"
+        },
+        {
+          "name": "Write agent output placeholder if missing",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 50,
+          "started_at": "2026-11-19T11:53:35Z",
+          "completed_at": "2026-11-19T11:53:35Z"
+        },
+        {
+          "name": "Sanitize repo-memory filenames (catalogue)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 51,
+          "started_at": "2026-11-19T11:53:35Z",
+          "completed_at": "2026-11-19T11:53:35Z"
+        },
+        {
+          "name": "Filter repo-memory files (catalogue)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 52,
+          "started_at": "2026-11-19T11:53:35Z",
+          "completed_at": "2026-11-19T11:53:35Z"
+        },
+        {
+          "name": "Validate recovery envelopes before upload",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 53,
+          "started_at": "2026-11-19T11:53:35Z",
+          "completed_at": "2026-11-19T11:53:35Z"
+        },
+        {
+          "name": "Upload repo-memory artifact (catalogue)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 54,
+          "started_at": "2026-11-19T11:53:35Z",
+          "completed_at": "2026-11-19T11:53:36Z"
+        },
+        {
+          "name": "Validate recovery envelopes before upload",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 55,
+          "started_at": "2026-11-19T11:53:36Z",
+          "completed_at": "2026-11-19T11:53:36Z"
+        },
+        {
+          "name": "Upload agent output fallback artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 56,
+          "started_at": "2026-11-19T11:53:36Z",
+          "completed_at": "2026-11-19T11:53:38Z"
+        },
+        {
+          "name": "Upload agent artifacts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 57,
+          "started_at": "2026-11-19T11:53:38Z",
+          "completed_at": "2026-11-19T11:53:39Z"
+        },
+        {
+          "name": "Post Setup Node.js",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 112,
+          "started_at": "2026-11-19T11:53:39Z",
+          "completed_at": "2026-11-19T11:53:39Z"
+        },
+        {
+          "name": "Post Checkout repository (gh-aw default)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 113,
+          "started_at": "2026-11-19T11:53:39Z",
+          "completed_at": "2026-11-19T11:53:40Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 114,
+          "started_at": "2026-11-19T11:53:40Z",
+          "completed_at": "2026-11-19T11:53:40Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 115,
+          "started_at": "2026-11-19T11:53:40Z",
+          "completed_at": "2026-11-19T11:53:40Z"
+        }
+      ]
+    },
+    {
+      "name": "detection",
+      "status": "completed",
+      "conclusion": "success",
+      "duration": "1.5m",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-19T11:53:49Z",
+          "completed_at": "2026-11-19T11:53:51Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-19T11:53:51Z",
+          "completed_at": "2026-11-19T11:53:57Z"
+        },
+        {
+          "name": "Download activation artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-19T11:53:57Z",
+          "completed_at": "2026-11-19T11:53:59Z"
+        },
+        {
+          "name": "Download agent output artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-19T11:53:59Z",
+          "completed_at": "2026-11-19T11:54:00Z"
+        },
+        {
+          "name": "Setup agent output environment variable",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-19T11:54:00Z",
+          "completed_at": "2026-11-19T11:54:00Z"
+        },
+        {
+          "name": "Clear agent token usage",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-19T11:54:00Z",
+          "completed_at": "2026-11-19T11:54:00Z"
+        },
+        {
+          "name": "Checkout repository for patch context",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-19T11:54:00Z",
+          "completed_at": "2026-11-19T11:54:01Z"
+        },
+        {
+          "name": "Initialize detection execution evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-19T11:54:01Z",
+          "completed_at": "2026-11-19T11:54:01Z"
+        },
+        {
+          "name": "Clear inherited Copilot session state",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-19T11:54:01Z",
+          "completed_at": "2026-11-19T11:54:01Z"
+        },
+        {
+          "name": "Clean stale firewall files from agent artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-19T11:54:01Z",
+          "completed_at": "2026-11-19T11:54:01Z"
+        },
+        {
+          "name": "Download container images",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-19T11:54:01Z",
+          "completed_at": "2026-11-19T11:54:10Z"
+        },
+        {
+          "name": "Check if detection needed",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-19T11:54:10Z",
+          "completed_at": "2026-11-19T11:54:10Z"
+        },
+        {
+          "name": "Clear MCP Config for detection",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-19T11:54:10Z",
+          "completed_at": "2026-11-19T11:54:10Z"
+        },
+        {
+          "name": "Prepare threat detection files",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-11-19T11:54:10Z",
+          "completed_at": "2026-11-19T11:54:10Z"
+        },
+        {
+          "name": "Setup threat detection",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-11-19T11:54:10Z",
+          "completed_at": "2026-11-19T11:54:11Z"
+        },
+        {
+          "name": "Ensure threat-detection directory and log",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-11-19T11:54:11Z",
+          "completed_at": "2026-11-19T11:54:11Z"
+        },
+        {
+          "name": "Install AWF binary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-19T11:54:11Z",
+          "completed_at": "2026-11-19T11:54:23Z"
+        },
+        {
+          "name": "Setup Node.js",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-19T11:54:23Z",
+          "completed_at": "2026-11-19T11:54:26Z"
+        },
+        {
+          "name": "Install Claude Code CLI",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-19T11:54:26Z",
+          "completed_at": "2026-11-19T11:54:31Z"
+        },
+        {
+          "name": "Install threat-detect binary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-11-19T11:54:31Z",
+          "completed_at": "2026-11-19T11:54:31Z"
+        },
+        {
+          "name": "Execute threat detection with AWF",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-11-19T11:54:31Z",
+          "completed_at": "2026-11-19T11:55:12Z"
+        },
+        {
+          "name": "Copy detection firewall logs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22,
+          "started_at": "2026-11-19T11:55:12Z",
+          "completed_at": "2026-11-19T11:55:12Z"
+        },
+        {
+          "name": "Redact secrets in detection logs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23,
+          "started_at": "2026-11-19T11:55:12Z",
+          "completed_at": "2026-11-19T11:55:13Z"
+        },
+        {
+          "name": "Parse threat detection token usage for step summary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 24,
+          "started_at": "2026-11-19T11:55:13Z",
+          "completed_at": "2026-11-19T11:55:13Z"
+        },
+        {
+          "name": "Redact secrets in detection artifacts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 25,
+          "started_at": "2026-11-19T11:55:13Z",
+          "completed_at": "2026-11-19T11:55:14Z"
+        },
+        {
+          "name": "Render detection log",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 26,
+          "started_at": "2026-11-19T11:55:14Z",
+          "completed_at": "2026-11-19T11:55:14Z"
+        },
+        {
+          "name": "Upload threat detection artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 27,
+          "started_at": "2026-11-19T11:55:14Z",
+          "completed_at": "2026-11-19T11:55:16Z"
+        },
+        {
+          "name": "Conclude threat detection",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 28,
+          "started_at": "2026-11-19T11:55:16Z",
+          "completed_at": "2026-11-19T11:55:16Z"
+        },
+        {
+          "name": "Upload skipped detection execution evidence",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 29,
+          "started_at": "2026-11-19T11:55:16Z",
+          "completed_at": "2026-11-19T11:55:16Z"
+        },
+        {
+          "name": "Post Setup Node.js",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 56,
+          "started_at": "2026-11-19T11:55:16Z",
+          "completed_at": "2026-11-19T11:55:16Z"
+        },
+        {
+          "name": "Post Checkout repository for patch context",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 57,
+          "started_at": "2026-11-19T11:55:16Z",
+          "completed_at": "2026-11-19T11:55:16Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 58,
+          "started_at": "2026-11-19T11:55:16Z",
+          "completed_at": "2026-11-19T11:55:16Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 59,
+          "started_at": "2026-11-19T11:55:16Z",
+          "completed_at": "2026-11-19T11:55:16Z"
+        }
+      ]
+    },
+    {
+      "name": "safe_outputs",
+      "status": "completed",
+      "conclusion": "success",
+      "duration": "22.0s",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-19T11:55:23Z",
+          "completed_at": "2026-11-19T11:55:25Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-19T11:55:25Z",
+          "completed_at": "2026-11-19T11:55:29Z"
+        },
+        {
+          "name": "Mask OTLP telemetry headers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-19T11:55:29Z",
+          "completed_at": "2026-11-19T11:55:29Z"
+        },
+        {
+          "name": "Download agent output artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-19T11:55:29Z",
+          "completed_at": "2026-11-19T11:55:30Z"
+        },
+        {
+          "name": "Setup agent output environment variable",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-19T11:55:30Z",
+          "completed_at": "2026-11-19T11:55:30Z"
+        },
+        {
+          "name": "Download patch artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-19T11:55:30Z",
+          "completed_at": "2026-11-19T11:55:31Z"
+        },
+        {
+          "name": "Checkout repository (gh-aw default)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-19T11:55:31Z",
+          "completed_at": "2026-11-19T11:55:32Z"
+        },
+        {
+          "name": "Configure Git credentials",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-19T11:55:32Z",
+          "completed_at": "2026-11-19T11:55:32Z"
+        },
+        {
+          "name": "Configure GH_HOST for enterprise compatibility",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-19T11:55:32Z",
+          "completed_at": "2026-11-19T11:55:32Z"
+        },
+        {
+          "name": "Process Safe Outputs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-19T11:55:32Z",
+          "completed_at": "2026-11-19T11:55:41Z"
+        },
+        {
+          "name": "Upload Safe Outputs Items",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-19T11:55:41Z",
+          "completed_at": "2026-11-19T11:55:42Z"
+        },
+        {
+          "name": "Post Checkout repository (gh-aw default)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-11-19T11:55:42Z",
+          "completed_at": "2026-11-19T11:55:42Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22,
+          "started_at": "2026-11-19T11:55:42Z",
+          "completed_at": "2026-11-19T11:55:42Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23,
+          "started_at": "2026-11-19T11:55:42Z",
+          "completed_at": "2026-11-19T11:55:42Z"
+        }
+      ]
+    },
+    {
+      "name": "push_repo_memory",
+      "status": "completed",
+      "conclusion": "success",
+      "duration": "16.0s",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-19T11:55:49Z",
+          "completed_at": "2026-11-19T11:55:52Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-19T11:55:52Z",
+          "completed_at": "2026-11-19T11:55:57Z"
+        },
+        {
+          "name": "Checkout repository",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-19T11:55:57Z",
+          "completed_at": "2026-11-19T11:55:58Z"
+        },
+        {
+          "name": "Configure Git credentials",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-19T11:55:58Z",
+          "completed_at": "2026-11-19T11:55:58Z"
+        },
+        {
+          "name": "Download safe-output temporary ID map",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-19T11:55:58Z",
+          "completed_at": "2026-11-19T11:55:59Z"
+        },
+        {
+          "name": "Download repo-memory artifact (catalogue)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-19T11:55:59Z",
+          "completed_at": "2026-11-19T11:56:00Z"
+        },
+        {
+          "name": "Push repo-memory changes (catalogue)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-19T11:56:00Z",
+          "completed_at": "2026-11-19T11:56:02Z"
+        },
+        {
+          "name": "Post Checkout repository",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-19T11:56:02Z",
+          "completed_at": "2026-11-19T11:56:03Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-11-19T11:56:03Z",
+          "completed_at": "2026-11-19T11:56:03Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-11-19T11:56:03Z",
+          "completed_at": "2026-11-19T11:56:03Z"
+        }
+      ]
+    },
+    {
+      "name": "conclusion",
+      "status": "completed",
+      "conclusion": "success",
+      "duration": "26.0s",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-19T11:56:10Z",
+          "completed_at": "2026-11-19T11:56:13Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-19T11:56:13Z",
+          "completed_at": "2026-11-19T11:56:21Z"
+        },
+        {
+          "name": "Download agent output artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-19T11:56:21Z",
+          "completed_at": "2026-11-19T11:56:22Z"
+        },
+        {
+          "name": "Setup agent output environment variable",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-19T11:56:22Z",
+          "completed_at": "2026-11-19T11:56:22Z"
+        },
+        {
+          "name": "Download workflow metadata",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-19T11:56:22Z",
+          "completed_at": "2026-11-19T11:56:23Z"
+        },
+        {
+          "name": "Warn if threat detection produced no verdict",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 6,
+          "started_at": "2026-11-19T11:56:23Z",
+          "completed_at": "2026-11-19T11:56:23Z"
+        },
+        {
+          "name": "Download detection artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-19T11:56:23Z",
+          "completed_at": "2026-11-19T11:56:24Z"
+        },
+        {
+          "name": "Download Safe Outputs Items Manifest",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-19T11:56:24Z",
+          "completed_at": "2026-11-19T11:56:25Z"
+        },
+        {
+          "name": "Process no-op messages",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-19T11:56:25Z",
+          "completed_at": "2026-11-19T11:56:25Z"
+        },
+        {
+          "name": "Log detection run",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-19T11:56:25Z",
+          "completed_at": "2026-11-19T11:56:26Z"
+        },
+        {
+          "name": "Record missing tool",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-19T11:56:26Z",
+          "completed_at": "2026-11-19T11:56:26Z"
+        },
+        {
+          "name": "Record incomplete",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-19T11:56:26Z",
+          "completed_at": "2026-11-19T11:56:26Z"
+        },
+        {
+          "name": "Handle agent failure",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-19T11:56:26Z",
+          "completed_at": "2026-11-19T11:56:26Z"
+        },
+        {
+          "name": "Report failed jobs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-11-19T11:56:26Z",
+          "completed_at": "2026-11-19T11:56:28Z"
+        },
+        {
+          "name": "Collect usage artifact files",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-11-19T11:56:28Z",
+          "completed_at": "2026-11-19T11:56:28Z"
+        },
+        {
+          "name": "Generate usage activity summary and unified session",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-11-19T11:56:28Z",
+          "completed_at": "2026-11-19T11:56:31Z"
+        },
+        {
+          "name": "Upload usage artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-19T11:56:31Z",
+          "completed_at": "2026-11-19T11:56:32Z"
+        },
+        {
+          "name": "Wait before retrying usage artifact upload",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 18,
+          "started_at": "2026-11-19T11:56:32Z",
+          "completed_at": "2026-11-19T11:56:32Z"
+        },
+        {
+          "name": "Retry upload usage artifact",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 19,
+          "started_at": "2026-11-19T11:56:32Z",
+          "completed_at": "2026-11-19T11:56:32Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 38,
+          "started_at": "2026-11-19T11:56:32Z",
+          "completed_at": "2026-11-19T11:56:33Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 39,
+          "started_at": "2026-11-19T11:56:33Z",
+          "completed_at": "2026-11-19T11:56:33Z"
+        }
+      ]
+    }
+  ],
+  "downloaded_files": [
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/.downloaded-artifacts/all",
+      "size": 0,
+      "description": ""
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/agent/harness_retry.json",
+      "size": 480,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/agent/model-resolution.json",
+      "size": 210,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/agent-errors.jsonl",
+      "size": 97,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/agent-session.jsonl",
+      "size": 2960393,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/agent-stdio.log",
+      "size": 1294984,
+      "description": "Agent standard output/error logs"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/agent_execution.json",
+      "size": 89,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/agent_execution_exit_code.txt",
+      "size": 1,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/agent_output.json",
+      "size": 7850,
+      "description": "Validated safe outputs"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/agent_usage.json",
+      "size": 181,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/aw-prompts/prompt-import-tree.json",
+      "size": 28718,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/aw-prompts/prompt-literal-values.json",
+      "size": 112373,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/aw-prompts/prompt-template.txt",
+      "size": 24074,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/aw-prompts/prompt.txt",
+      "size": 27506,
+      "description": "Input prompt for AI agent"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/aw-prompts/system.txt",
+      "size": 18898,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/aw-prompts/user.txt",
+      "size": 8608,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/aw-suv4o-charge-line-data-catalogue-2026-11-19-new-evs.bundle",
+      "size": 1324,
+      "description": ""
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/aw-suv4o-charge-line-data-catalogue-2026-11-19-new-evs.patch",
+      "size": 13333,
+      "description": "Git patch file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/aw_info.json",
+      "size": 1954,
+      "description": "Engine configuration and workflow metadata"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/awf-config.json",
+      "size": 6701,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/claude-debug.log",
+      "size": 132113,
+      "description": "Log file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/detection/detection_harness_retry.json",
+      "size": 228,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/detection/detection_result.json",
+      "size": 118,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/detection/detection_usage.json",
+      "size": 171,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/detection/execution.json",
+      "size": 93,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/detection/sandbox/firewall/audit/awf-resolved-config.json",
+      "size": 9700,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/detection/sandbox/firewall/audit/docker-compose.redacted.yml",
+      "size": 18266,
+      "description": ""
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/detection/sandbox/firewall/audit/image-manifest.json",
+      "size": 531,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/detection/sandbox/firewall/audit/policy-manifest.json",
+      "size": 3463,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/detection/sandbox/firewall/audit/sensitive-paths.json",
+      "size": 1441,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/detection/sandbox/firewall/audit/squid.conf",
+      "size": 10135,
+      "description": ""
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/detection/sandbox/firewall/logs/access.log",
+      "size": 3483,
+      "description": "Log file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/detection/sandbox/firewall/logs/api-proxy-logs/agent-runtime/started-at-ms",
+      "size": 14,
+      "description": ""
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/detection/sandbox/firewall/logs/api-proxy-logs/harness-observation.json",
+      "size": 118,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/detection/sandbox/firewall/logs/api-proxy-logs/models.json",
+      "size": 5078,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/detection/sandbox/firewall/logs/api-proxy-logs/otel.jsonl",
+      "size": 2569,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/detection/sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl",
+      "size": 816,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/detection/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl",
+      "size": 1559,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/detection/sandbox/firewall/logs/audit.jsonl",
+      "size": 6964,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/detection/sandbox/firewall/logs/cache.log",
+      "size": 2783,
+      "description": "Log file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/github_rate_limits.jsonl",
+      "size": 1110,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/jobs.json",
+      "size": 33322,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/mcp-logs/configuration.jsonl",
+      "size": 182,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/mcp-logs/gateway.md",
+      "size": 6010,
+      "description": "Markdown documentation"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/mcp-logs/github.log",
+      "size": 1871,
+      "description": "Log file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/mcp-logs/mcp-gateway.log",
+      "size": 99704,
+      "description": "Log file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/mcp-logs/observed-url-domains.json",
+      "size": 2,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/mcp-logs/rpc-messages.jsonl",
+      "size": 166724,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/mcp-logs/safeoutputs.log",
+      "size": 6093,
+      "description": "Log file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/mcp-logs/tools.json",
+      "size": 9491,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/models.json",
+      "size": 19139,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/otel.jsonl",
+      "size": 3332,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/pre-agent-audit.txt",
+      "size": 152184,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/repo-memory-catalogue/candidates.json",
+      "size": 5051,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/repo-memory-catalogue/checked-makes.json",
+      "size": 82,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/safe-output-items.jsonl",
+      "size": 768,
+      "description": "Created items manifest (audit trail)"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/safe-output-outcomes.jsonl",
+      "size": 549,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/safeoutputs.jsonl",
+      "size": 7942,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/sandbox/firewall/audit/awf-resolved-config.json",
+      "size": 14232,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/sandbox/firewall/audit/docker-compose.redacted.yml",
+      "size": 22115,
+      "description": ""
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/sandbox/firewall/audit/image-manifest.json",
+      "size": 531,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/sandbox/firewall/audit/policy-manifest.json",
+      "size": 5581,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/sandbox/firewall/audit/sensitive-paths.json",
+      "size": 1441,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/sandbox/firewall/audit/squid.conf",
+      "size": 17338,
+      "description": ""
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/sandbox/firewall/awf-reflect.json",
+      "size": 36510,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/sandbox/firewall/logs/access.log",
+      "size": 52786,
+      "description": "Log file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/sandbox/firewall/logs/api-proxy-logs/agent-runtime/started-at-ms",
+      "size": 14,
+      "description": ""
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/sandbox/firewall/logs/api-proxy-logs/harness-observation.json",
+      "size": 118,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/sandbox/firewall/logs/api-proxy-logs/models.json",
+      "size": 5078,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/sandbox/firewall/logs/api-proxy-logs/otel.jsonl",
+      "size": 74611,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl",
+      "size": 30756,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl",
+      "size": 58502,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/sandbox/firewall/logs/audit.jsonl",
+      "size": 100626,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/sandbox/firewall/logs/cache.log",
+      "size": 12151,
+      "description": "Log file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/skill_inventory.json",
+      "size": 29,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/temporary-id-map.json",
+      "size": 161,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/usage/activity/summary.json",
+      "size": 16690,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/usage/agent/execution.json",
+      "size": 89,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/usage/agent/harness_retry.json",
+      "size": 480,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/usage/agent/token_usage.jsonl",
+      "size": 58502,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/usage/agent_usage.json",
+      "size": 181,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/usage/aw_info.json",
+      "size": 1954,
+      "description": "Engine configuration and workflow metadata"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/usage/aw_session.jsonl",
+      "size": 641059,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/usage/detection/execution.json",
+      "size": 93,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/usage/detection/harness_retry.json",
+      "size": 228,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/usage/detection/token_usage.jsonl",
+      "size": 1559,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/usage/github_rate_limits.jsonl",
+      "size": 13607,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/usage/graders/grader_manifest.json",
+      "size": 2813,
+      "description": "Grader manifest (configured graders and thresholds)"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/usage/graders/grader_results.json",
+      "size": 3765,
+      "description": "Deterministic grader results for the run"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/.complete",
+      "size": 25,
+      "description": ""
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/0_conclusion.txt",
+      "size": 447558,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/1_push_repo_memory.txt",
+      "size": 35149,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/2_safe_outputs.txt",
+      "size": 75674,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/3_detection.txt",
+      "size": 243704,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/4_agent.txt",
+      "size": 1935049,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/5_activation.txt",
+      "size": 113014,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/10_Save agent config folders for base branch restoration.txt",
+      "size": 1939,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/11_Check workflow lock file.txt",
+      "size": 3735,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/12_Check compile-agentic version.txt",
+      "size": 2578,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/14_Create prompt with built-in context.txt",
+      "size": 5630,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/15_Interpolate variables and render templates.txt",
+      "size": 9396,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/16_Substitute placeholders.txt",
+      "size": 4453,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/17_Validate prompt placeholders.txt",
+      "size": 1752,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/18_Print prompt.txt",
+      "size": 37885,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/19_Inventory installed skills.txt",
+      "size": 2141,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/1_Set up job.txt",
+      "size": 2140,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/20_Upload info artifact.txt",
+      "size": 2742,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/21_Stage prompt files for artifact upload.txt",
+      "size": 1480,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/22_Upload activation artifact.txt",
+      "size": 3397,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/2_Setup Scripts.txt",
+      "size": 3742,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/3_Mask OTLP telemetry headers.txt",
+      "size": 1427,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/43_Post Checkout .github and .agents folders.txt",
+      "size": 1759,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/44_Post Setup Scripts.txt",
+      "size": 370,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/45_Complete job.txt",
+      "size": 788,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/4_Generate agentic run info.txt",
+      "size": 4694,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/5_Restore daily AIC scan observations.txt",
+      "size": 2144,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/6_Check daily workflow token guardrail.txt",
+      "size": 2870,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/7_Publish daily AIC scan observations.txt",
+      "size": 1918,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/8_Check for OAuth tokens.txt",
+      "size": 1598,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/9_Checkout .github and .agents folders.txt",
+      "size": 12505,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/activation/system.txt",
+      "size": 586,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/10_Download activation artifact.txt",
+      "size": 4047,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/112_Post Setup Node.js.txt",
+      "size": 50,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/113_Post Checkout repository (gh-aw default).txt",
+      "size": 1899,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/114_Post Setup Scripts.txt",
+      "size": 365,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/115_Complete job.txt",
+      "size": 1540,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/11_Clone repo-memory branch (catalogue).txt",
+      "size": 2996,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/12_Download the agent's reading (The Driven's feed, BITRE's register entries).txt",
+      "size": 2983,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/13_Configure Git credentials.txt",
+      "size": 2922,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/14_Checkout PR branch.txt",
+      "size": 3163,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/15_Setup Node.js.txt",
+      "size": 2845,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/16_Install AWF binary.txt",
+      "size": 3427,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/17_Install Claude Code CLI.txt",
+      "size": 3345,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/18_Install Playwright CLI.txt",
+      "size": 2772,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/19_Install Playwright browsers.txt",
+      "size": 25167,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/1_Set up job.txt",
+      "size": 2861,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/20_Install Playwright CLI skills.txt",
+      "size": 3061,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/21_Determine automatic lockdown mode for GitHub MCP Server.txt",
+      "size": 4170,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/23_Restore inline sub-agents from activation artifact.txt",
+      "size": 3000,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/24_Restore inline skills from activation artifact.txt",
+      "size": 2934,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/25_Download container images.txt",
+      "size": 8074,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/26_Prepare Safe Outputs Directories.txt",
+      "size": 2791,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/27_Generate Safe Outputs Config.txt",
+      "size": 5089,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/28_Generate Safe Outputs Tools.txt",
+      "size": 7675,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/29_Start MCP Gateway.txt",
+      "size": 21976,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/2_Setup Scripts.txt",
+      "size": 5190,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/30_Mount MCP servers as CLIs.txt",
+      "size": 4684,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/31_Clean credentials.txt",
+      "size": 3388,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/32_Audit pre-agent workspace.txt",
+      "size": 2780,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/33_Log GitHub rate limits at agent start.txt",
+      "size": 3631,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/34_Execute Claude Code CLI.txt",
+      "size": 1331809,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/35_Log GitHub rate limits at agent end.txt",
+      "size": 3741,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/36_Detect agent errors.txt",
+      "size": 3513,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/37_Configure Git credentials.txt",
+      "size": 3257,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/38_Stop MCP Gateway.txt",
+      "size": 3436,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/39_Redact secrets in logs.txt",
+      "size": 3769,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/3_Set runtime paths.txt",
+      "size": 3113,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/40_Validate recovery envelopes before upload.txt",
+      "size": 3473,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/41_Append agent step summary.txt",
+      "size": 2798,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/42_Copy Safe Outputs.txt",
+      "size": 2929,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/43_Ingest agent output.txt",
+      "size": 11034,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/44_Parse agent logs for step summary.txt",
+      "size": 156254,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/45_Parse MCP Gateway logs for step summary.txt",
+      "size": 173053,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/46_Print firewall logs.txt",
+      "size": 8036,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/47_Parse token usage for step summary.txt",
+      "size": 11736,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/48_Print AWF reflect summary.txt",
+      "size": 10723,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/49_Generate observability summary.txt",
+      "size": 3723,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/4_Mask OTLP telemetry headers.txt",
+      "size": 2447,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/50_Write agent output placeholder if missing.txt",
+      "size": 3157,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/51_Sanitize repo-memory filenames (catalogue).txt",
+      "size": 3194,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/52_Filter repo-memory files (catalogue).txt",
+      "size": 3828,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/53_Validate recovery envelopes before upload.txt",
+      "size": 3766,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/54_Upload repo-memory artifact (catalogue).txt",
+      "size": 4436,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/55_Validate recovery envelopes before upload.txt",
+      "size": 4640,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/56_Upload agent output fallback artifact.txt",
+      "size": 5358,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/57_Upload agent artifacts.txt",
+      "size": 5221,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/5_Check OTLP telemetry configuration.txt",
+      "size": 2592,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/6_Checkout repository (gh-aw default).txt",
+      "size": 13372,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/7_Initialize agent execution evidence.txt",
+      "size": 2754,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/8_Create gh-aw temp directory.txt",
+      "size": 2554,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/9_Configure gh CLI for GitHub Enterprise.txt",
+      "size": 2685,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/agent/system.txt",
+      "size": 722,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/conclusion/10_Log detection run.txt",
+      "size": 3795,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/conclusion/11_Record missing tool.txt",
+      "size": 3315,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/conclusion/12_Record incomplete.txt",
+      "size": 3333,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/conclusion/13_Handle agent failure.txt",
+      "size": 9477,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/conclusion/14_Report failed jobs.txt",
+      "size": 3503,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/conclusion/15_Collect usage artifact files.txt",
+      "size": 5474,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/conclusion/16_Generate usage activity summary and unified session.txt",
+      "size": 380103,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/conclusion/17_Upload usage artifact.txt",
+      "size": 4767,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/conclusion/1_Set up job.txt",
+      "size": 2249,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/conclusion/2_Setup Scripts.txt",
+      "size": 4869,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/conclusion/38_Post Setup Scripts.txt",
+      "size": 370,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/conclusion/39_Complete job.txt",
+      "size": 234,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/conclusion/3_Download agent output artifact.txt",
+      "size": 4642,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/conclusion/4_Setup agent output environment variable.txt",
+      "size": 5687,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/conclusion/5_Download workflow metadata.txt",
+      "size": 3774,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/conclusion/7_Download detection artifact.txt",
+      "size": 3820,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/conclusion/8_Download Safe Outputs Items Manifest.txt",
+      "size": 3878,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/conclusion/9_Process no-op messages.txt",
+      "size": 4319,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/conclusion/system.txt",
+      "size": 1642,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/10_Clean stale firewall files from agent artifact.txt",
+      "size": 1410,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/11_Download container images.txt",
+      "size": 4403,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/12_Check if detection needed.txt",
+      "size": 2105,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/13_Clear MCP Config for detection.txt",
+      "size": 1530,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/14_Prepare threat detection files.txt",
+      "size": 2274,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/15_Setup threat detection.txt",
+      "size": 2922,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/16_Ensure threat-detection directory and log.txt",
+      "size": 1489,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/17_Install AWF binary.txt",
+      "size": 2421,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/18_Setup Node.js.txt",
+      "size": 2055,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/19_Install Claude Code CLI.txt",
+      "size": 2338,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/1_Set up job.txt",
+      "size": 2776,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/20_Install threat-detect binary.txt",
+      "size": 2784,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/21_Execute threat detection with AWF.txt",
+      "size": 86205,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/22_Copy detection firewall logs.txt",
+      "size": 2267,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/23_Redact secrets in detection logs.txt",
+      "size": 2793,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/24_Parse threat detection token usage for step summary.txt",
+      "size": 3923,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/25_Redact secrets in detection artifacts.txt",
+      "size": 2971,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/26_Render detection log.txt",
+      "size": 73161,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/27_Upload threat detection artifact.txt",
+      "size": 3870,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/28_Conclude threat detection.txt",
+      "size": 4737,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/2_Setup Scripts.txt",
+      "size": 4110,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/3_Download activation artifact.txt",
+      "size": 2963,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/4_Download agent output artifact.txt",
+      "size": 3817,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/56_Post Setup Node.js.txt",
+      "size": 50,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/57_Post Checkout repository for patch context.txt",
+      "size": 1759,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/58_Post Setup Scripts.txt",
+      "size": 369,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/59_Complete job.txt",
+      "size": 344,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/5_Setup agent output environment variable.txt",
+      "size": 5249,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/6_Clear agent token usage.txt",
+      "size": 1317,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/7_Checkout repository for patch context.txt",
+      "size": 12288,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/8_Initialize detection execution evidence.txt",
+      "size": 1730,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/9_Clear inherited Copilot session state.txt",
+      "size": 1367,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/detection/system.txt",
+      "size": 699,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/push_repo_memory/13_Post Checkout repository.txt",
+      "size": 1899,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/push_repo_memory/14_Post Setup Scripts.txt",
+      "size": 376,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/push_repo_memory/15_Complete job.txt",
+      "size": 376,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/push_repo_memory/1_Set up job.txt",
+      "size": 2071,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/push_repo_memory/2_Setup Scripts.txt",
+      "size": 4050,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/push_repo_memory/3_Checkout repository.txt",
+      "size": 12358,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/push_repo_memory/4_Configure Git credentials.txt",
+      "size": 1838,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/push_repo_memory/5_Download safe-output temporary ID map.txt",
+      "size": 3015,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/push_repo_memory/6_Download repo-memory artifact (catalogue).txt",
+      "size": 3027,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/push_repo_memory/7_Push repo-memory changes (catalogue).txt",
+      "size": 6166,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/push_repo_memory/system.txt",
+      "size": 889,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/safe_outputs/10_Process Safe Outputs.txt",
+      "size": 23492,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/safe_outputs/11_Upload Safe Outputs Items.txt",
+      "size": 4360,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/safe_outputs/1_Set up job.txt",
+      "size": 2709,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/safe_outputs/21_Post Checkout repository (gh-aw default).txt",
+      "size": 4571,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/safe_outputs/22_Post Setup Scripts.txt",
+      "size": 372,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/safe_outputs/23_Complete job.txt",
+      "size": 1190,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/safe_outputs/2_Setup Scripts.txt",
+      "size": 5337,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/safe_outputs/3_Mask OTLP telemetry headers.txt",
+      "size": 2587,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/safe_outputs/4_Download agent output artifact.txt",
+      "size": 5041,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/safe_outputs/5_Setup agent output environment variable.txt",
+      "size": 6086,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/safe_outputs/6_Download patch artifact.txt",
+      "size": 4178,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/safe_outputs/7_Checkout repository (gh-aw default).txt",
+      "size": 9736,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/safe_outputs/8_Configure Git credentials.txt",
+      "size": 3059,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/safe_outputs/9_Configure GH_HOST for enterprise compatibility.txt",
+      "size": 2995,
+      "description": "Text file"
+    },
+    {
+      "path": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484/workflow-logs/safe_outputs/system.txt",
+      "size": 779,
+      "description": "Text file"
+    }
+  ],
+  "noops": [
+    {
+      "message": "Run complete. PR proposed: adds the Deepal E07 (RWD and AWD Performance), Mitsubishi ASX VR-e LS (new make), MG U9 EV and Xpeng X9 (FWD and AWD); validate.mjs passes. Issue opened: the Chery E5 (renamed Omoda E5) DC figure (80 vs 130 kW), plus the Leapmotor B05 left as a candidate. Memory saved: BYD, Alfa Romeo and Deepal re-checked. Still to do: re-check Abarth, Audi, BMW, Cadillac, Cupra, Denza, Fiat, Ford and GAC (their sites blocked automated fetches), and check ROVER (table didn't render), BITRE (download timed out) and the Green Vehicle Guide.",
+      "timestamp": "",
+      "workflow_name": "Keep the EV catalogue current",
+      "run_id": 44517220484
+    }
+  ],
+  "firewall_token_usage": {
+    "total_input_tokens": 245137,
+    "total_output_tokens": 46125,
+    "total_cache_read_tokens": 3888504,
+    "total_cache_write_tokens": 98244,
+    "total_requests": 75,
+    "total_duration_ms": 436432,
+    "total_response_bytes": 538470,
+    "cache_efficiency": 0,
+    "total_aic": 317.19688,
+    "ambient_context": {
+      "input_tokens": 2,
+      "cached_tokens": 14356
+    },
+    "by_model": {
+      "claude-opus-5-5": {
+        "provider": "anthropic",
+        "input_tokens": 245137,
+        "output_tokens": 46125,
+        "cache_read_tokens": 3888504,
+        "cache_write_tokens": 98244,
+        "requests": 75,
+        "duration_ms": 436432,
+        "response_bytes": 538470,
+        "aic": 317.19688
+      }
+    }
+  },
+  "detection_model_usage": [
+    {
+      "model": "claude-opus-5-5",
+      "requests": 2
+    }
+  ],
+  "github_rate_limit_usage": {
+    "total_requests_made": 5,
+    "core_consumed": 4,
+    "core_consumed_source": "response_headers_delta",
+    "core_remaining": 4965,
+    "core_limit": 5000,
+    "resources": [
+      {
+        "resource": "core",
+        "requests_made": 5,
+        "quota_consumed": 4,
+        "final_remaining": 4965,
+        "limit": 5000
+      }
+    ]
+  },
+  "firewall_analysis": {
+    "allowed_domains": [
+      "api.anthropic.com:443",
+      "api.github.com:443",
+      "bydautomotive.com.au",
+      "bydautomotive.com.au:443",
+      "content-autofill.googleapis.com:443",
+      "content.powerapps.com:443",
+      "mg.com.au",
+      "mg.com.au:443",
+      "mgmotor.com.au",
+      "mgmotor.com.au:443",
+      "run-actions-3-azure-eastus.actions.githubusercontent.com:443",
+      "shop.xpeng.com.au",
+      "shop.xpeng.com.au:443",
+      "thedriven.io",
+      "thedriven.io:443",
+      "update.googleapis.com:443",
+      "us-mobile.events.data.microsoft.com:443",
+      "www.abarth.com.au",
+      "www.abarth.com.au:443",
+      "www.alfaromeo.com.au",
+      "www.alfaromeo.com.au:443",
+      "www.audi.com.au",
+      "www.audi.com.au:443",
+      "www.bmw.com.au",
+      "www.bmw.com.au:443",
+      "www.byd.com",
+      "www.byd.com:443",
+      "www.bydautomotive.com.au",
+      "www.bydautomotive.com.au:443",
+      "www.cadillacanz.com",
+      "www.cadillacanz.com:443",
+      "www.chery.com.au",
+      "www.chery.com.au:443",
+      "www.cheryaustralia.com.au",
+      "www.cheryaustralia.com.au:443",
+      "www.cupra.com.au",
+      "www.cupra.com.au:443",
+      "www.cupra.com:443",
+      "www.deepal.com.au",
+      "www.deepal.com.au:443",
+      "www.denza.com.au",
+      "www.denza.com.au:443",
+      "www.fiat.com.au",
+      "www.fiat.com.au:443",
+      "www.ford.com.au",
+      "www.ford.com.au:443",
+      "www.gacmotor.com.au",
+      "www.gacmotor.com.au:443",
+      "www.goauto.com.au",
+      "www.goauto.com.au:443",
+      "www.googletagmanager.com:443",
+      "www.gstatic.com:443",
+      "www.leapmotor.com.au",
+      "www.leapmotor.com.au:443",
+      "www.leapmotor.net.au",
+      "www.leapmotor.net.au:443",
+      "www.leapmotor.net:443",
+      "www.mg.com.au",
+      "www.mg.com.au:443",
+      "www.mgmotor.com.au",
+      "www.mgmotor.com.au:443",
+      "www.mitsubishi-motors.com.au",
+      "www.mitsubishi-motors.com.au:443",
+      "www.rover.infrastructure.gov.au",
+      "www.rover.infrastructure.gov.au:443",
+      "www.xpeng.com",
+      "www.xpeng.com.au",
+      "www.xpeng.com.au:443",
+      "www.xpeng.com:443"
+    ],
+    "total_requests": 201,
+    "allowed_requests": 199,
+    "blocked_requests": 2,
+    "requests_by_domain": {
+      "(unknown)": {
+        "allowed": 0,
+        "blocked": 2
+      },
+      "api.anthropic.com:443": {
+        "allowed": 79,
+        "blocked": 0
+      },
+      "api.github.com:443": {
+        "allowed": 7,
+        "blocked": 0
+      },
+      "bydautomotive.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "bydautomotive.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "content-autofill.googleapis.com:443": {
+        "allowed": 6,
+        "blocked": 0
+      },
+      "content.powerapps.com:443": {
+        "allowed": 19,
+        "blocked": 0
+      },
+      "mg.com.au": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "mg.com.au:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "mgmotor.com.au": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "mgmotor.com.au:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "run-actions-3-azure-eastus.actions.githubusercontent.com:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "shop.xpeng.com.au": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "shop.xpeng.com.au:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "thedriven.io": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "thedriven.io:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "update.googleapis.com:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "us-mobile.events.data.microsoft.com:443": {
+        "allowed": 3,
+        "blocked": 0
+      },
+      "www.abarth.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.abarth.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.alfaromeo.com.au": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.alfaromeo.com.au:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.audi.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.audi.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.bmw.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.bmw.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.byd.com": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.byd.com:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.bydautomotive.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.bydautomotive.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cadillacanz.com": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cadillacanz.com:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.chery.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.chery.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cheryaustralia.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cheryaustralia.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cupra.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cupra.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cupra.com:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.deepal.com.au": {
+        "allowed": 4,
+        "blocked": 0
+      },
+      "www.deepal.com.au:443": {
+        "allowed": 4,
+        "blocked": 0
+      },
+      "www.denza.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.denza.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.fiat.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.fiat.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.ford.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.ford.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.gacmotor.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.gacmotor.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.goauto.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.goauto.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.googletagmanager.com:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.gstatic.com:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.leapmotor.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.leapmotor.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.leapmotor.net.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.leapmotor.net.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.leapmotor.net:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.mg.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.mg.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.mgmotor.com.au": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.mgmotor.com.au:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.mitsubishi-motors.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.mitsubishi-motors.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.rover.infrastructure.gov.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.rover.infrastructure.gov.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.xpeng.com": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.xpeng.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.xpeng.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.xpeng.com:443": {
+        "allowed": 2,
+        "blocked": 0
+      }
+    }
+  },
+  "policy_analysis": {
+    "policy_summary": "11 rules, SSL Bump disabled, DLP disabled",
+    "rule_hits": [],
+    "total_requests": 0,
+    "allowed_count": 0,
+    "denied_count": 0,
+    "unique_domains": 0
+  },
+  "tool_usage": [
+    {
+      "name": "WebFetch",
+      "call_count": 34,
+      "max_input_size": 109,
+      "max_output_size": 561
+    },
+    {
+      "name": "WebSearch",
+      "call_count": 8,
+      "max_input_size": 22,
+      "max_output_size": 1057
+    },
+    {
+      "name": "Edit",
+      "call_count": 7,
+      "max_input_size": 285,
+      "max_output_size": 26
+    },
+    {
+      "name": "Read",
+      "call_count": 5,
+      "max_input_size": 35,
+      "max_output_size": 1227
+    },
+    {
+      "name": "bash_jq '.properties.vehi...",
+      "call_count": 3,
+      "max_input_size": 45,
+      "max_output_size": 255
+    },
+    {
+      "name": "bash_jq -c '.vehicles[] |...",
+      "call_count": 3,
+      "max_input_size": 54,
+      "max_output_size": 589
+    },
+    {
+      "name": "Grep",
+      "call_count": 2,
+      "max_input_size": 51,
+      "max_output_size": 3374
+    },
+    {
+      "name": "Write",
+      "call_count": 2,
+      "max_input_size": 1173,
+      "max_output_size": 37
+    },
+    {
+      "name": "ToolSearch",
+      "call_count": 1,
+      "max_input_size": 45,
+      "max_output_size": 96
+    },
+    {
+      "name": "bash_git add vehicles.jso...",
+      "call_count": 1,
+      "max_input_size": 8,
+      "max_output_size": 7
+    },
+    {
+      "name": "bash_git checkout -b cata...",
+      "call_count": 1,
+      "max_input_size": 14,
+      "max_output_size": 13
+    },
+    {
+      "name": "bash_git commit -m \"Add D...",
+      "call_count": 1,
+      "max_input_size": 40,
+      "max_output_size": 37
+    },
+    {
+      "name": "bash_git status --short",
+      "call_count": 1,
+      "max_input_size": 8,
+      "max_output_size": 6
+    },
+    {
+      "name": "bash_grep -A 12 -E '\u003ctitl...",
+      "call_count": 1,
+      "max_input_size": 66,
+      "max_output_size": 3148
+    },
+    {
+      "name": "bash_grep -c \"\" .playwrig...",
+      "call_count": 1,
+      "max_input_size": 19
+    },
+    {
+      "name": "bash_grep -n -A1 -o '\"id\"...",
+      "call_count": 1,
+      "max_input_size": 18,
+      "max_output_size": 7
+    },
+    {
+      "name": "bash_grep -n -i -E \"row|c...",
+      "call_count": 1,
+      "max_input_size": 22,
+      "max_output_size": 7
+    },
+    {
+      "name": "bash_grep -n -m3 '\"checke...",
+      "call_count": 1,
+      "max_input_size": 13,
+      "max_output_size": 7
+    },
+    {
+      "name": "bash_grep -n -o -E '\"id\":...",
+      "call_count": 1,
+      "max_input_size": 25,
+      "max_output_size": 226
+    },
+    {
+      "name": "bash_grep -o '\u003ctitle\u003e[^\u003c]...",
+      "call_count": 1,
+      "max_input_size": 64,
+      "max_output_size": 1835
+    },
+    {
+      "name": "bash_jq '.vehicles[] | se...",
+      "call_count": 1,
+      "max_input_size": 29,
+      "max_output_size": 215
+    },
+    {
+      "name": "bash_jq -r '.updated, (.v...",
+      "call_count": 1,
+      "max_input_size": 26,
+      "max_output_size": 79
+    },
+    {
+      "name": "bash_ls -la /tmp/gh-aw/re...",
+      "call_count": 1,
+      "max_input_size": 20,
+      "max_output_size": 145
+    },
+    {
+      "name": "bash_node scripts/format....",
+      "call_count": 1,
+      "max_input_size": 9,
+      "max_output_size": 7
+    },
+    {
+      "name": "bash_node scripts/validat...",
+      "call_count": 1,
+      "max_input_size": 15,
+      "max_output_size": 30
+    },
+    {
+      "name": "bash_playwright-cli click...",
+      "call_count": 1,
+      "max_input_size": 13,
+      "max_output_size": 110
+    },
+    {
+      "name": "bash_playwright-cli close",
+      "call_count": 1,
+      "max_input_size": 8,
+      "max_output_size": 6
+    },
+    {
+      "name": "bash_playwright-cli open ...",
+      "call_count": 1,
+      "max_input_size": 30,
+      "max_output_size": 129
+    },
+    {
+      "name": "bash_wc -l .playwright-cl...",
+      "call_count": 1,
+      "max_input_size": 17,
+      "max_output_size": 13
+    },
+    {
+      "name": "safeoutputs.create_issue",
+      "call_count": 1,
+      "max_input_size": 1790
+    },
+    {
+      "name": "safeoutputs.create_pull_request",
+      "call_count": 1,
+      "max_input_size": 5310
+    },
+    {
+      "name": "safeoutputs.noop",
+      "call_count": 1,
+      "max_input_size": 569
+    },
+    {
+      "name": "safeoutputs.push_repo_memory",
+      "call_count": 1,
+      "max_input_size": 25
+    },
+    {
+      "name": "safeoutputs_create_issue",
+      "call_count": 1,
+      "max_input_size": 447,
+      "max_output_size": 21
+    },
+    {
+      "name": "safeoutputs_create_pull_request",
+      "call_count": 1,
+      "max_input_size": 1327,
+      "max_output_size": 80
+    },
+    {
+      "name": "safeoutputs_noop",
+      "call_count": 1,
+      "max_input_size": 142,
+      "max_output_size": 21
+    },
+    {
+      "name": "safeoutputs_push_repo_memory",
+      "call_count": 1,
+      "max_input_size": 6,
+      "max_output_size": 100
+    }
+  ],
+  "mcp_tool_usage": {
+    "summary": [
+      {
+        "server_name": "safeoutputs",
+        "tool_name": "create_issue",
+        "call_count": 1,
+        "total_input_size": 1790,
+        "total_output_size": 0,
+        "avg_input_size": 1790,
+        "max_input_size": 1790,
+        "max_output_size": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "tool_name": "create_pull_request",
+        "call_count": 1,
+        "total_input_size": 5310,
+        "total_output_size": 0,
+        "avg_input_size": 5310,
+        "max_input_size": 5310,
+        "max_output_size": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "tool_name": "noop",
+        "call_count": 1,
+        "total_input_size": 569,
+        "total_output_size": 0,
+        "avg_input_size": 569,
+        "max_input_size": 569,
+        "max_output_size": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "tool_name": "push_repo_memory",
+        "call_count": 1,
+        "total_input_size": 25,
+        "total_output_size": 0,
+        "avg_input_size": 25,
+        "max_input_size": 25,
+        "max_output_size": 0
+      }
+    ],
+    "tool_calls": [
+      {
+        "timestamp": "2026-11-19T11:52:43.380Z",
+        "server_name": "safeoutputs",
+        "tool_name": "push_repo_memory",
+        "input_size": 0,
+        "output_size": 0,
+        "status": "unknown"
+      },
+      {
+        "timestamp": "2026-11-19T11:53:07.036Z",
+        "server_name": "safeoutputs",
+        "tool_name": "create_pull_request",
+        "input_size": 0,
+        "output_size": 0,
+        "status": "unknown"
+      },
+      {
+        "timestamp": "2026-11-19T11:53:15.156Z",
+        "server_name": "safeoutputs",
+        "tool_name": "create_issue",
+        "input_size": 0,
+        "output_size": 0,
+        "status": "unknown"
+      },
+      {
+        "timestamp": "2026-11-19T11:53:18.696Z",
+        "server_name": "safeoutputs",
+        "tool_name": "noop",
+        "input_size": 0,
+        "output_size": 0,
+        "status": "unknown"
+      }
+    ],
+    "servers": [
+      {
+        "server_name": "safeoutputs",
+        "tool_call_count": 4,
+        "request_count": 4,
+        "total_input_size": 7694,
+        "total_output_size": 0,
+        "avg_input_size": 1924,
+        "max_input_size": 5310,
+        "avg_duration": "0ns"
+      }
+    ]
+  },
+  "created_items": [
+    {
+      "type": "create_pull_request",
+      "url": "https://github.com/Suv4o/charge-line-data/pull/17",
+      "number": 17,
+      "repo": "Suv4o/charge-line-data",
+      "provider": "github",
+      "id": 5394395885,
+      "target": {
+        "number": 17,
+        "provider": "github",
+        "repository": "Suv4o/charge-line-data"
+      },
+      "temporaryId": "aw_59UqApai",
+      "metadata": {
+        "node_id": "PR_kwDOVxmBF88AAAABQYfy7Q"
+      },
+      "timestamp": "2026-11-19T11:55:41.130Z"
+    },
+    {
+      "type": "create_issue",
+      "url": "https://github.com/Suv4o/charge-line-data/issues/18",
+      "number": 18,
+      "repo": "Suv4o/charge-line-data",
+      "provider": "github",
+      "id": 6489003512,
+      "target": {
+        "number": 18,
+        "provider": "github",
+        "repository": "Suv4o/charge-line-data"
+      },
+      "temporaryId": "aw_tjX7Ebw0",
+      "metadata": {
+        "node_id": "I_kwDOVxmBF88AAAABgsZV-A"
+      },
+      "timestamp": "2026-11-19T11:55:41.519Z"
+    }
+  ],
+  "graders": {
+    "version": 2,
+    "results": [
+      {
+        "id": "artifact-production",
+        "name": "Artifact Production",
+        "status": "pass",
+        "value": 2,
+        "unit": "count",
+        "direction": "higher_is_better"
+      },
+      {
+        "id": "context-growth",
+        "name": "Context Growth",
+        "status": "pass",
+        "value": 1427.7549019607843,
+        "unit": "factor",
+        "direction": "lower_is_better"
+      },
+      {
+        "id": "execution-duration",
+        "name": "Execution Duration",
+        "status": "pass",
+        "value": 436432,
+        "unit": "ms",
+        "direction": "lower_is_better"
+      },
+      {
+        "id": "execution-step-count",
+        "name": "Execution Step Count",
+        "status": "pass",
+        "value": 75,
+        "unit": "count",
+        "direction": "lower_is_better"
+      },
+      {
+        "id": "loops",
+        "name": "Loops",
+        "status": "pass",
+        "value": 0,
+        "unit": "count",
+        "passed": true,
+        "direction": "lower_is_better",
+        "threshold": 3
+      },
+      {
+        "id": "retries",
+        "name": "Retries",
+        "status": "pass",
+        "value": 0,
+        "unit": "count",
+        "passed": true,
+        "direction": "lower_is_better",
+        "threshold": 10
+      },
+      {
+        "id": "tool-failure-count",
+        "name": "Tool Failure Count",
+        "status": "fail",
+        "value": 12,
+        "unit": "count",
+        "passed": false,
+        "direction": "lower_is_better",
+        "threshold": 5
+      },
+      {
+        "id": "tool-success-rate",
+        "name": "Tool Success Rate",
+        "status": "pass",
+        "value": 0.8709677419354839,
+        "unit": "ratio",
+        "passed": true,
+        "direction": "higher_is_better",
+        "threshold": 0.8
+      },
+      {
+        "id": "trajectory-efficiency",
+        "name": "Trajectory Efficiency",
+        "status": "pass",
+        "value": 0.12903225806451613,
+        "unit": "ratio",
+        "direction": "higher_is_better"
+      },
+      {
+        "id": "working-set-rebuild-factor",
+        "name": "Working-Set Rebuild Factor",
+        "status": "pass",
+        "value": 11.610713778240894,
+        "unit": "factor",
+        "direction": "lower_is_better"
+      }
+    ],
+    "total": 10,
+    "passed": 9,
+    "failed": 1,
+    "error_count": 0,
+    "unavailable_count": 0
+  },
+  "ledger": {
+    "transactions_added": 0
+  },
+  "friction": {
+    "measurement_state": "measured",
+    "canonical_unit": "aic",
+    "sources": [
+      "agent_token_usage",
+      "firewall",
+      "mcp_gateway"
+    ],
+    "total_events": 0,
+    "total_occurrences": 0,
+    "counted_occurrences": 0,
+    "suppressed_occurrences": 0,
+    "cost": {
+      "aic": 0,
+      "tokens": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0,
+        "reasoning": 0,
+        "total": 0
+      },
+      "turns": 0,
+      "tool_calls": 0,
+      "latency_ms": 0
+    },
+    "total_run_aic": 317.19688,
+    "friction_ratio": 0,
+    "dimension_states": {
+      "aic": "measured",
+      "latency_ms": "measured",
+      "tokens": "measured",
+      "tool_calls": "measured",
+      "turns": "measured"
+    },
+    "uncertainty": {
+      "aic": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0,
+        "sample_size": 75,
+        "basis": "AI credits of errored invocations (measured), of linked follow-up invocations (causal), or the mean healthy-invocation cost (statistical)"
+      },
+      "latency_ms": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0,
+        "basis": "wall-clock duration recorded on the failing tool call or invocation"
+      },
+      "tokens": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0,
+        "sample_size": 75,
+        "basis": "token classes of the attributed invocations"
+      },
+      "tool_calls": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0,
+        "basis": "counted friction occurrences that consumed a tool call"
+      },
+      "turns": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0,
+        "basis": "one additional turn per errored or retried model invocation"
+      }
+    },
+    "unmeasured_drivers": [
+      {
+        "driver": "agent_api_error",
+        "reason": "no_occurrences"
+      },
+      {
+        "driver": "firewall_block",
+        "reason": "no_occurrences"
+      },
+      {
+        "driver": "integrity_filter",
+        "reason": "no_occurrences"
+      },
+      {
+        "driver": "mcp_tool_error",
+        "reason": "no_occurrences"
+      },
+      {
+        "driver": "session_tool_failure",
+        "reason": "source_unavailable:agent_session"
+      }
+    ]
+  },
+  "retries": {
+    "agent_retries": 0,
+    "detection_retries": 0,
+    "attempts": [
+      {
+        "attempt": 1,
+        "attemptId": "startup:1",
+        "exitCode": 0,
+        "failureClasses": [],
+        "startedAt": 1795088733976,
+        "finishedAt": 1795089211354,
+        "strategy": "restart",
+        "backoffMs": 0,
+        "outcome": "success",
+        "layer": "startup",
+        "phase": "agent",
+        "path": "agent/harness_retry.json"
+      },
+      {
+        "attempt": 1,
+        "attemptId": "harness:1",
+        "startupAttemptId": "startup:1",
+        "exitCode": 0,
+        "failureClasses": [],
+        "startedAt": 1795088769984,
+        "finishedAt": 1795089209173,
+        "strategy": "restart",
+        "backoffMs": 0,
+        "outcome": "success",
+        "layer": "harness",
+        "phase": "agent",
+        "path": "agent/harness_retry.json"
+      },
+      {
+        "attempt": 1,
+        "attemptId": "harness:1",
+        "exitCode": null,
+        "failureClasses": [],
+        "startedAt": 1795089305651,
+        "strategy": "restart",
+        "backoffMs": 0,
+        "outcome": "running",
+        "layer": "harness",
+        "phase": "detection",
+        "path": "threat-detection/detection_harness_retry.json"
+      }
+    ],
+    "engine_retries": 0,
+    "detection_engine_retries": 0
+  }
+}

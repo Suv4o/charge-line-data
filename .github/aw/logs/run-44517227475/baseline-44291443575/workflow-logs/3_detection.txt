@@ -1,0 +1,1481 @@
+﻿2026-11-18T11:09:29.0518256Z Current runner version: '2.338.2'
+2026-11-18T11:09:29.0554109Z ##[group]Runner Image Provisioner
+2026-11-18T11:09:29.0555823Z Hosted Compute Agent
+2026-11-18T11:09:29.0557142Z Version: 20261103.629
+2026-11-18T11:09:29.0558338Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+2026-11-18T11:09:29.0559740Z Build Date: 2026-11-03T17:26:59Z
+2026-11-18T11:09:29.0560952Z Worker ID: {d1110977-8ea7-419c-8adf-69f079f99899}
+2026-11-18T11:09:29.0562269Z Region: eastus
+2026-11-18T11:09:29.0563208Z Cloud: Azure
+2026-11-18T11:09:29.0564173Z ##[endgroup]
+2026-11-18T11:09:29.0566853Z ##[group]Operating System
+2026-11-18T11:09:29.0567926Z Ubuntu
+2026-11-18T11:09:29.0568973Z 26.04.1
+2026-11-18T11:09:29.0569865Z LTS
+2026-11-18T11:09:29.0570712Z ##[endgroup]
+2026-11-18T11:09:29.0571630Z ##[group]Runner Image
+2026-11-18T11:09:29.0572771Z Image: ubuntu-26.04
+2026-11-18T11:09:29.0573733Z Version: 20261111.196.1
+2026-11-18T11:09:29.0576200Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.196/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-18T11:09:29.0579004Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.196
+2026-11-18T11:09:29.0580800Z ##[endgroup]
+2026-11-18T11:09:29.0582773Z ##[group]GITHUB_TOKEN Permissions
+2026-11-18T11:09:29.0585693Z Contents: read
+2026-11-18T11:09:29.0586754Z Metadata: read
+2026-11-18T11:09:29.0587753Z ##[endgroup]
+2026-11-18T11:09:29.0590702Z Secret source: Actions
+2026-11-18T11:09:29.0592409Z Cache mode: write
+2026-11-18T11:09:29.0593535Z Prepare workflow directory
+2026-11-18T11:09:29.1430074Z Prepare all required actions
+2026-11-18T11:09:29.1478213Z Getting action download info
+2026-11-18T11:09:29.3453651Z Download action repository 'github/gh-aw-actions@53d0749e19424a918acd82b4d140264ce48f2f14' (SHA:53d0749e19424a918acd82b4d140264ce48f2f14)
+2026-11-18T11:09:29.7311069Z Download action repository 'actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333' (SHA:9000827ccba6bdab643e8b6fd33ac0654aef8333)
+2026-11-18T11:09:29.8908909Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-18T11:09:29.9230064Z Download action repository 'actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3' (SHA:3a2844b7e9c422d3c10d287c895573f7108da1b3)
+2026-11-18T11:09:30.0648697Z Download action repository 'actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+2026-11-18T11:09:30.1344564Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-18T11:09:30.3866084Z Complete job name: detection
+2026-11-18T11:09:30.4913979Z ##[group]Run github/gh-aw-actions/setup@53d0749e19424a918acd82b4d140264ce48f2f14
+2026-11-18T11:09:30.4916013Z with:
+2026-11-18T11:09:30.4916935Z   destination: /home/runner/work/_temp/gh-aw/actions
+2026-11-18T11:09:30.4918098Z   job-name: detection
+2026-11-18T11:09:30.4918995Z   trace-id: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:09:30.4920126Z   parent-span-id: 1b950a3497edb7e8
+2026-11-18T11:09:30.4921164Z   safe-output-artifact-client: false
+2026-11-18T11:09:30.4922356Z env:
+2026-11-18T11:09:30.4923123Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:09:30.4924102Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:09:30.4925273Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:09:30.4928325Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:09:30.4931470Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:09:30.4932466Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:09:30.4933368Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:09:30.4934390Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:09:30.4935640Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:09:30.4936580Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:09:30.4937789Z   GH_AW_SETUP_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-18T11:09:30.4940127Z   GH_AW_CURRENT_WORKFLOW_REF: Suv4o/charge-line-data/.github/workflows/prices.lock.yml@refs/heads/main
+2026-11-18T11:09:30.4941911Z   GH_AW_INFO_VERSION: 2.1.317
+2026-11-18T11:09:30.4942857Z   GH_AW_INFO_AWF_VERSION: v0.29.11
+2026-11-18T11:09:30.4943837Z   GH_AW_INFO_ENGINE_ID: claude
+2026-11-18T11:09:30.4944774Z   GH_AW_SETUP_AW_CONTEXT: 
+2026-11-18T11:09:30.4945786Z ##[endgroup]
+2026-11-18T11:09:34.3262063Z Successfully copied 795 files to /home/runner/work/_temp/gh-aw/actions
+2026-11-18T11:09:34.3278042Z ##[group]Runtime TLS inventory (not a trust-store attestation)
+2026-11-18T11:09:34.3369278Z curl 8.18.0 (x86_64-pc-linux-gnu) libcurl/8.18.0 OpenSSL/3.5.5 zlib/1.3.1 brotli/1.2.0 zstd/1.5.7 libidn2/2.3.8 libpsl/0.21.2 libssh2/1.11.1 nghttp2/1.68.0 librtmp/2.3 mit-krb5/1.22.1 OpenLDAP/2.6.10
+2026-11-18T11:09:34.3639166Z Node v24.22.2; OpenSSL 3.5.9
+2026-11-18T11:09:34.4075995Z go1.26.11
+2026-11-18T11:09:34.4274072Z /usr/bin/gh: go1.27.3
+2026-11-18T11:09:34.4277650Z gh-aw: unavailable for build-toolchain inspection
+2026-11-18T11:09:34.4279152Z Python/certifi: not inspected by shell setup; record each client's interpreter, TLS backend and selected CA bundle separately.
+2026-11-18T11:09:34.4280644Z Container, proxy and MCP trust stores require separate image/vendor evidence.
+2026-11-18T11:09:34.4281764Z Browser updates and successful HTTPS connections do not attest CA distrust.
+2026-11-18T11:09:34.4284338Z ##[endgroup]
+2026-11-18T11:09:35.0219190Z Successfully copied 119 mcp-scripts files to /home/runner/work/_temp/gh-aw/mcp-scripts
+2026-11-18T11:09:35.3070044Z Successfully copied 183 safe-outputs files to /home/runner/work/_temp/gh-aw/safeoutputs
+2026-11-18T11:09:35.3668455Z [info] [otlp] INPUT_TRACE_ID=4352f78a4c69b047f9be43b00f346f20 (will reuse activation trace)
+2026-11-18T11:09:35.3670023Z [info] [otlp] INPUT_PARENT_SPAN_ID=1b950a3497edb7e8 (will parent setup span)
+2026-11-18T11:09:35.3677968Z [info] [otlp] no OTLP endpoints have usable credentials, skipping setup span
+2026-11-18T11:09:35.3741526Z [info] [otlp] resolved trace-id=4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:09:35.3743821Z [info] [otlp] trace-id=4352f78a4c69b047f9be43b00f346f20 written to GITHUB_OUTPUT
+2026-11-18T11:09:35.3744673Z [info] [otlp] span-id=bec1c697002b6761 written to GITHUB_OUTPUT
+2026-11-18T11:09:35.3745502Z [info] [otlp] parent-span-id=1b950a3497edb7e8 written to GITHUB_OUTPUT
+2026-11-18T11:09:35.3746557Z [info] [otlp] GITHUB_AW_OTEL_TRACE_ID written to GITHUB_ENV
+2026-11-18T11:09:35.3747347Z [info] [otlp] GITHUB_AW_OTEL_PARENT_SPAN_ID written to GITHUB_ENV
+2026-11-18T11:09:35.3748843Z [info] [otlp] GITHUB_AW_OTEL_JOB_START_MS written to GITHUB_ENV
+2026-11-18T11:09:35.3998524Z ##[group]Run actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
+2026-11-18T11:09:35.3998974Z with:
+2026-11-18T11:09:35.3999170Z   name: activation
+2026-11-18T11:09:35.3999446Z   path: /tmp/gh-aw
+2026-11-18T11:09:35.3999668Z   merge-multiple: false
+2026-11-18T11:09:35.3999952Z   repository: Suv4o/charge-line-data
+2026-11-18T11:09:35.4000250Z   run-id: 44291443575
+2026-11-18T11:09:35.4000516Z   skip-decompress: false
+2026-11-18T11:09:35.4000752Z   digest-mismatch: error
+2026-11-18T11:09:35.4000962Z env:
+2026-11-18T11:09:35.4001159Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:09:35.4001406Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:09:35.4001654Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:09:35.4002499Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:09:35.4003395Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:09:35.4003649Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:09:35.4003884Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:09:35.4004149Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:09:35.4004449Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:09:35.4004882Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:09:35.4005314Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:09:35.4005670Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:09:35.4006108Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:09:35.4006400Z ##[endgroup]
+2026-11-18T11:09:35.5525893Z Downloading single artifact
+2026-11-18T11:09:35.6451827Z Preparing to download the following artifacts:
+2026-11-18T11:09:35.6453134Z - activation (ID: 14420389587, Size: 124824, Expected Digest: sha256:43d28dae604a18dd1889dca7b356db22f4ead45007ceb4079222c8123cbea112)
+2026-11-18T11:09:35.8238898Z Redirecting to blob download url: https://productionresultssa5.blob.core.windows.net/actions-results/7f89719d-626b-40e4-818b-776e83efa11a/workflow-job-run-d81e7086-00db-5a48-a2f4-92342395336b/artifacts/b15526c9c0e75acea3d1f8055de216c85f0330baf8604e13d8c6ce90fb90d6d7.zip
+2026-11-18T11:09:35.8240435Z Starting download of artifact to: /tmp/gh-aw
+2026-11-18T11:09:35.8707309Z (node:4519) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-11-18T11:09:35.8708481Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-18T11:09:35.8902212Z SHA256 digest of downloaded artifact is 43d28dae604a18dd1889dca7b356db22f4ead45007ceb4079222c8123cbea112
+2026-11-18T11:09:35.8902951Z Artifact download completed successfully.
+2026-11-18T11:09:35.8903330Z Total of 1 artifact(s) downloaded
+2026-11-18T11:09:35.8908397Z Download artifact has finished successfully
+2026-11-18T11:09:35.9069061Z ##[group]Run actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
+2026-11-18T11:09:35.9069507Z with:
+2026-11-18T11:09:35.9069739Z   pattern: {agent,agent-output-fallback}
+2026-11-18T11:09:35.9070039Z   merge-multiple: true
+2026-11-18T11:09:35.9070273Z   path: /tmp/gh-aw/
+2026-11-18T11:09:35.9070519Z   repository: Suv4o/charge-line-data
+2026-11-18T11:09:35.9070801Z   run-id: 44291443575
+2026-11-18T11:09:35.9071031Z   skip-decompress: false
+2026-11-18T11:09:35.9071267Z   digest-mismatch: error
+2026-11-18T11:09:35.9071480Z env:
+2026-11-18T11:09:35.9071677Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:09:35.9071927Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:09:35.9072185Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:09:35.9073028Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:09:35.9073912Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:09:35.9074165Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:09:35.9074404Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:09:35.9074670Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:09:35.9074970Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:09:35.9075521Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:09:35.9075823Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:09:35.9076187Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:09:35.9076521Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:09:35.9076793Z ##[endgroup]
+2026-11-18T11:09:36.1278708Z Found 5 artifact(s)
+2026-11-18T11:09:36.1280189Z Filtering artifacts by pattern '{agent,agent-output-fallback}'
+2026-11-18T11:09:36.1282009Z Preparing to download the following artifacts:
+2026-11-18T11:09:36.1283471Z - agent (ID: 14421164294, Size: 233841, Expected Digest: sha256:7689930a7fe4587ac24c76021ae52b08e3c0aa7bfe2fe604599a0f1cb0cb4d57)
+2026-11-18T11:09:36.1285954Z - agent-output-fallback (ID: 14421148875, Size: 6119, Expected Digest: sha256:043245ee6d2350c06d405e91fcab5f171de37e6659822a3b9ae01128c02d3769)
+2026-11-18T11:09:36.2815009Z Redirecting to blob download url: https://productionresultssa5.blob.core.windows.net/actions-results/7f89719d-626b-40e4-818b-776e83efa11a/workflow-job-run-38b78fd1-8f94-5876-82cf-6c736eaf4ffa/artifacts/d4f0bc5a29de06b510f9aa428f1eedba926012b591fef7a518e776a7c9bd1824.zip
+2026-11-18T11:09:36.2816959Z Starting download of artifact to: /tmp/gh-aw
+2026-11-18T11:09:36.3163534Z Redirecting to blob download url: https://productionresultssa5.blob.core.windows.net/actions-results/7f89719d-626b-40e4-818b-776e83efa11a/workflow-job-run-38b78fd1-8f94-5876-82cf-6c736eaf4ffa/artifacts/daa0da78a4f899948f184de1c2267d4cff63de5d280692a88333f56508605a86.zip
+2026-11-18T11:09:36.3166143Z Starting download of artifact to: /tmp/gh-aw
+2026-11-18T11:09:36.3401193Z (node:4531) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-11-18T11:09:36.3402918Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-18T11:09:36.3879453Z SHA256 digest of downloaded artifact is 043245ee6d2350c06d405e91fcab5f171de37e6659822a3b9ae01128c02d3769
+2026-11-18T11:09:36.3880429Z Artifact download completed successfully.
+2026-11-18T11:09:36.3893602Z SHA256 digest of downloaded artifact is 7689930a7fe4587ac24c76021ae52b08e3c0aa7bfe2fe604599a0f1cb0cb4d57
+2026-11-18T11:09:36.3894643Z Artifact download completed successfully.
+2026-11-18T11:09:36.3895514Z Total of 2 artifact(s) downloaded
+2026-11-18T11:09:36.3899234Z Download artifact has finished successfully
+2026-11-18T11:09:36.4047104Z ##[group]Run mkdir -p /tmp/gh-aw/
+2026-11-18T11:09:36.4047507Z [36;1mmkdir -p /tmp/gh-aw/[0m
+2026-11-18T11:09:36.4047831Z [36;1mfind "/tmp/gh-aw/" -type f -print[0m
+2026-11-18T11:09:36.4048215Z [36;1mif [ -f "/tmp/gh-aw/agent_output.json" ]; then[0m
+2026-11-18T11:09:36.4048688Z [36;1m  echo "GH_AW_AGENT_OUTPUT=/tmp/gh-aw/agent_output.json" >> "$GITHUB_OUTPUT"[0m
+2026-11-18T11:09:36.4049097Z [36;1mfi[0m
+2026-11-18T11:09:36.4102492Z shell: /usr/bin/bash -e {0}
+2026-11-18T11:09:36.4102772Z env:
+2026-11-18T11:09:36.4102996Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:09:36.4103282Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:09:36.4103577Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:09:36.4104446Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:09:36.4105475Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:09:36.4105766Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:09:36.4106025Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:09:36.4106319Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:09:36.4106628Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:09:36.4106884Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:09:36.4107177Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:09:36.4107545Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:09:36.4107864Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:09:36.4108151Z ##[endgroup]
+2026-11-18T11:09:36.4234834Z /tmp/gh-aw/agent/model-resolution.json
+2026-11-18T11:09:36.4235834Z /tmp/gh-aw/agent/harness_retry.json
+2026-11-18T11:09:36.4236348Z /tmp/gh-aw/agent-stdio.log
+2026-11-18T11:09:36.4236635Z /tmp/gh-aw/agent_execution.json
+2026-11-18T11:09:36.4236909Z /tmp/gh-aw/otel.jsonl
+2026-11-18T11:09:36.4237161Z /tmp/gh-aw/safeoutputs.jsonl
+2026-11-18T11:09:36.4237599Z /tmp/gh-aw/aw-suv4o-charge-line-data-prices-new-networks-2026-11-18.bundle
+2026-11-18T11:09:36.4238053Z /tmp/gh-aw/skill_inventory.json
+2026-11-18T11:09:36.4238351Z /tmp/gh-aw/agent_execution_exit_code.txt
+2026-11-18T11:09:36.4238836Z /tmp/gh-aw/aw-suv4o-charge-line-data-prices-new-networks-2026-11-18.patch
+2026-11-18T11:09:36.4239787Z /tmp/gh-aw/awf-config.json
+2026-11-18T11:09:36.4240281Z /tmp/gh-aw/sandbox/firewall/awf-reflect.json
+2026-11-18T11:09:36.4240852Z /tmp/gh-aw/sandbox/firewall/logs/audit.jsonl
+2026-11-18T11:09:36.4241195Z /tmp/gh-aw/sandbox/firewall/logs/access.log
+2026-11-18T11:09:36.4241508Z /tmp/gh-aw/sandbox/firewall/logs/cache.log
+2026-11-18T11:09:36.4241890Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/otel.jsonl
+2026-11-18T11:09:36.4242552Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-11-18T11:09:36.4243027Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/models.json
+2026-11-18T11:09:36.4243477Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/harness-observation.json
+2026-11-18T11:09:36.4243966Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T11:09:36.4244446Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/agent-runtime/started-at-ms
+2026-11-18T11:09:36.4244906Z /tmp/gh-aw/sandbox/firewall/audit/image-manifest.json
+2026-11-18T11:09:36.4245563Z /tmp/gh-aw/sandbox/firewall/audit/docker-compose.redacted.yml
+2026-11-18T11:09:36.4245994Z /tmp/gh-aw/sandbox/firewall/audit/awf-resolved-config.json
+2026-11-18T11:09:36.4246384Z /tmp/gh-aw/sandbox/firewall/audit/sensitive-paths.json
+2026-11-18T11:09:36.4246740Z /tmp/gh-aw/sandbox/firewall/audit/squid.conf
+2026-11-18T11:09:36.4247088Z /tmp/gh-aw/sandbox/firewall/audit/policy-manifest.json
+2026-11-18T11:09:36.4247430Z /tmp/gh-aw/agent-session.jsonl
+2026-11-18T11:09:36.4247713Z /tmp/gh-aw/mcp-logs/rpc-messages.jsonl
+2026-11-18T11:09:36.4248000Z /tmp/gh-aw/mcp-logs/tools.json
+2026-11-18T11:09:36.4248297Z /tmp/gh-aw/mcp-logs/observed-url-domains.json
+2026-11-18T11:09:36.4248675Z /tmp/gh-aw/mcp-logs/configuration.jsonl
+2026-11-18T11:09:36.4249236Z /tmp/gh-aw/mcp-logs/mcp-gateway.log
+2026-11-18T11:09:36.4249532Z /tmp/gh-aw/mcp-logs/github.log
+2026-11-18T11:09:36.4249803Z /tmp/gh-aw/mcp-logs/safeoutputs.log
+2026-11-18T11:09:36.4250075Z /tmp/gh-aw/mcp-logs/gateway.md
+2026-11-18T11:09:36.4250336Z /tmp/gh-aw/agent_output.json
+2026-11-18T11:09:36.4250586Z /tmp/gh-aw/models.json
+2026-11-18T11:09:36.4250836Z /tmp/gh-aw/github_rate_limits.jsonl
+2026-11-18T11:09:36.4251107Z /tmp/gh-aw/aw_info.json
+2026-11-18T11:09:36.4251347Z /tmp/gh-aw/agent-errors.jsonl
+2026-11-18T11:09:36.4251609Z /tmp/gh-aw/claude-debug.log
+2026-11-18T11:09:36.4251867Z /tmp/gh-aw/pre-agent-audit.txt
+2026-11-18T11:09:36.4252128Z /tmp/gh-aw/base/snapshot.tar
+2026-11-18T11:09:36.4252442Z /tmp/gh-aw/aw-prompts/prompt-literal-values.json
+2026-11-18T11:09:36.4252779Z /tmp/gh-aw/aw-prompts/prompt.txt
+2026-11-18T11:09:36.4253075Z /tmp/gh-aw/aw-prompts/prompt-import-tree.json
+2026-11-18T11:09:36.4253394Z /tmp/gh-aw/aw-prompts/system.txt
+2026-11-18T11:09:36.4253681Z /tmp/gh-aw/aw-prompts/prompt-template.txt
+2026-11-18T11:09:36.4253983Z /tmp/gh-aw/aw-prompts/user.txt
+2026-11-18T11:09:36.4254239Z /tmp/gh-aw/agent_usage.json
+2026-11-18T11:09:36.4286070Z ##[group]Run rm -f /tmp/gh-aw/agent_usage.json
+2026-11-18T11:09:36.4286493Z [36;1mrm -f /tmp/gh-aw/agent_usage.json[0m
+2026-11-18T11:09:36.4330903Z shell: /usr/bin/bash -e {0}
+2026-11-18T11:09:36.4331167Z env:
+2026-11-18T11:09:36.4331389Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:09:36.4331669Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:09:36.4331944Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:09:36.4332815Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:09:36.4333695Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:09:36.4333958Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:09:36.4334204Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:09:36.4334491Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:09:36.4334798Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:09:36.4335333Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:09:36.4335679Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:09:36.4336060Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:09:36.4336388Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:09:36.4336674Z ##[endgroup]
+2026-11-18T11:09:36.4501708Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+2026-11-18T11:09:36.4502120Z with:
+2026-11-18T11:09:36.4502351Z   persist-credentials: false
+2026-11-18T11:09:36.4502632Z   repository: Suv4o/charge-line-data
+2026-11-18T11:09:36.4505546Z   token: ***
+2026-11-18T11:09:36.4505791Z   ssh-strict: true
+2026-11-18T11:09:36.4506013Z   ssh-user: git
+2026-11-18T11:09:36.4506229Z   clean: true
+2026-11-18T11:09:36.4506452Z   sparse-checkout-cone-mode: true
+2026-11-18T11:09:36.4506729Z   fetch-depth: 1
+2026-11-18T11:09:36.4506940Z   fetch-tags: false
+2026-11-18T11:09:36.4507169Z   show-progress: true
+2026-11-18T11:09:36.4507390Z   lfs: false
+2026-11-18T11:09:36.4507594Z   submodules: false
+2026-11-18T11:09:36.4507816Z   set-safe-directory: true
+2026-11-18T11:09:36.4508080Z   allow-unsafe-pr-checkout: false
+2026-11-18T11:09:36.4508336Z env:
+2026-11-18T11:09:36.4508547Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:09:36.4508812Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:09:36.4509095Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:09:36.4509964Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:09:36.4510848Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:09:36.4511103Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:09:36.4511359Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:09:36.4511639Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:09:36.4511954Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:09:36.4512206Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:09:36.4512507Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:09:36.4512874Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:09:36.4513199Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:09:36.4513479Z ##[endgroup]
+2026-11-18T11:09:36.5458427Z Syncing repository: Suv4o/charge-line-data
+2026-11-18T11:09:36.5459541Z ##[group]Getting Git version info
+2026-11-18T11:09:36.5460255Z Working directory is '/home/runner/work/charge-line-data/charge-line-data'
+2026-11-18T11:09:36.5461243Z [command]/usr/bin/git version
+2026-11-18T11:09:36.5461692Z git version 2.56.1
+2026-11-18T11:09:36.5473577Z ##[endgroup]
+2026-11-18T11:09:36.5484316Z Temporarily overriding HOME='/home/runner/work/_temp/e7c11bff-1b01-4551-8d4e-ec639daefe17' before making global git config changes
+2026-11-18T11:09:36.5485953Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-18T11:09:36.5490507Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/charge-line-data/charge-line-data
+2026-11-18T11:09:36.5560662Z Deleting the contents of '/home/runner/work/charge-line-data/charge-line-data'
+2026-11-18T11:09:36.5589515Z ##[group]Determining repository object format
+2026-11-18T11:09:36.5590646Z ##[endgroup]
+2026-11-18T11:09:36.5616062Z ##[group]Initializing the repository
+2026-11-18T11:09:36.5617144Z [command]/usr/bin/git init /home/runner/work/charge-line-data/charge-line-data
+2026-11-18T11:09:36.5702380Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-18T11:09:36.5703670Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-18T11:09:36.5704981Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-18T11:09:36.5706122Z hint: call:
+2026-11-18T11:09:36.5706747Z hint:
+2026-11-18T11:09:36.5707569Z hint: 	git config --global init.defaultBranch <name>
+2026-11-18T11:09:36.5708073Z hint:
+2026-11-18T11:09:36.5708594Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-18T11:09:36.5709201Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-18T11:09:36.5709638Z hint:
+2026-11-18T11:09:36.5709867Z hint: 	git branch -m <name>
+2026-11-18T11:09:36.5710133Z hint:
+2026-11-18T11:09:36.5710744Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-18T11:09:36.5730196Z Initialized empty Git repository in /home/runner/work/charge-line-data/charge-line-data/.git/
+2026-11-18T11:09:36.5743198Z [command]/usr/bin/git remote add origin https://github.com/Suv4o/charge-line-data
+2026-11-18T11:09:36.5799013Z ##[endgroup]
+2026-11-18T11:09:36.5799721Z ##[group]Disabling automatic garbage collection
+2026-11-18T11:09:36.5803898Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-18T11:09:36.5840661Z ##[endgroup]
+2026-11-18T11:09:36.5841370Z ##[group]Setting up auth
+2026-11-18T11:09:36.5841914Z Removing SSH command configuration
+2026-11-18T11:09:36.5848868Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-18T11:09:36.5894844Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-18T11:09:36.6346326Z Removing HTTP extra header
+2026-11-18T11:09:36.6351742Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-18T11:09:36.6385314Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-18T11:09:36.6656628Z Removing includeIf entries pointing to credentials config files
+2026-11-18T11:09:36.6662027Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-18T11:09:36.6695497Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-18T11:09:36.6968440Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-6841454d-db1c-4198-82ce-a948a33c8d46.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-18T11:09:36.7006654Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git.path /home/runner/work/_temp/git-credentials-6841454d-db1c-4198-82ce-a948a33c8d46.config
+2026-11-18T11:09:36.7038087Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-6841454d-db1c-4198-82ce-a948a33c8d46.config
+2026-11-18T11:09:36.7073147Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-6841454d-db1c-4198-82ce-a948a33c8d46.config
+2026-11-18T11:09:36.7104268Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-6841454d-db1c-4198-82ce-a948a33c8d46.config
+2026-11-18T11:09:36.7134561Z ##[endgroup]
+2026-11-18T11:09:36.7135453Z ##[group]Fetching the repository
+2026-11-18T11:09:36.7141382Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +18eb3dfb3c2b60267d25e7db772574388cb706c0:refs/remotes/origin/main
+2026-11-18T11:09:36.9338309Z From https://github.com/Suv4o/charge-line-data
+2026-11-18T11:09:36.9338849Z  * [new ref]         18eb3dfb3c2b60267d25e7db772574388cb706c0 -> origin/main
+2026-11-18T11:09:36.9351602Z [command]/usr/bin/git branch --list --remote origin/main
+2026-11-18T11:09:36.9382326Z   origin/main
+2026-11-18T11:09:36.9392832Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-11-18T11:09:36.9419764Z 18eb3dfb3c2b60267d25e7db772574388cb706c0
+2026-11-18T11:09:36.9425382Z ##[endgroup]
+2026-11-18T11:09:36.9426378Z ##[group]Determining the checkout info
+2026-11-18T11:09:36.9427417Z ##[endgroup]
+2026-11-18T11:09:36.9432769Z [command]/usr/bin/git sparse-checkout disable
+2026-11-18T11:09:36.9490742Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-18T11:09:36.9523734Z ##[group]Checking out the ref
+2026-11-18T11:09:36.9528942Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-18T11:09:36.9622310Z Switched to a new branch 'main'
+2026-11-18T11:09:36.9628273Z branch 'main' set up to track 'origin/main'.
+2026-11-18T11:09:36.9633913Z ##[endgroup]
+2026-11-18T11:09:36.9688137Z [command]/usr/bin/git log -1 --format=%H
+2026-11-18T11:09:36.9715620Z 18eb3dfb3c2b60267d25e7db772574388cb706c0
+2026-11-18T11:09:36.9726337Z ##[group]Removing auth
+2026-11-18T11:09:36.9727021Z Removing SSH command configuration
+2026-11-18T11:09:36.9729937Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-18T11:09:36.9765740Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-18T11:09:37.0056784Z Removing HTTP extra header
+2026-11-18T11:09:37.0062208Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-18T11:09:37.0107074Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-18T11:09:37.0397901Z Removing includeIf entries pointing to credentials config files
+2026-11-18T11:09:37.0413596Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-18T11:09:37.0442378Z includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git.path
+2026-11-18T11:09:37.0443605Z includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git/worktrees/*.path
+2026-11-18T11:09:37.0444449Z includeif.gitdir:/github/workspace/.git.path
+2026-11-18T11:09:37.0445927Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-18T11:09:37.0454319Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git.path
+2026-11-18T11:09:37.0493339Z /home/runner/work/_temp/git-credentials-6841454d-db1c-4198-82ce-a948a33c8d46.config
+2026-11-18T11:09:37.0502978Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-6841454d\-db1c\-4198\-82ce\-a948a33c8d46\.config
+2026-11-18T11:09:37.0545501Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git/worktrees/*.path
+2026-11-18T11:09:37.0571807Z /home/runner/work/_temp/git-credentials-6841454d-db1c-4198-82ce-a948a33c8d46.config
+2026-11-18T11:09:37.0582948Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/charge-line-data/charge-line-data/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-6841454d\-db1c\-4198\-82ce\-a948a33c8d46\.config
+2026-11-18T11:09:37.0620617Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-18T11:09:37.0649850Z /github/runner_temp/git-credentials-6841454d-db1c-4198-82ce-a948a33c8d46.config
+2026-11-18T11:09:37.0659772Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-6841454d\-db1c\-4198\-82ce\-a948a33c8d46\.config
+2026-11-18T11:09:37.0697885Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-18T11:09:37.0724533Z /github/runner_temp/git-credentials-6841454d-db1c-4198-82ce-a948a33c8d46.config
+2026-11-18T11:09:37.0743903Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-6841454d\-db1c\-4198\-82ce\-a948a33c8d46\.config
+2026-11-18T11:09:37.0785739Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-18T11:09:37.1071432Z Removing credentials config '/home/runner/work/_temp/git-credentials-6841454d-db1c-4198-82ce-a948a33c8d46.config'
+2026-11-18T11:09:37.1083267Z ##[endgroup]
+2026-11-18T11:09:37.1211053Z ##[group]Run mkdir -p "/tmp/gh-aw/threat-detection"
+2026-11-18T11:09:37.1211506Z [36;1mmkdir -p "/tmp/gh-aw/threat-detection"[0m
+2026-11-18T11:09:37.1211952Z [36;1mevidence_tmp="/tmp/gh-aw/threat-detection/execution.json.tmp"[0m
+2026-11-18T11:09:37.1212881Z [36;1mprintf '{"version":1,"component":"detection","run_id":%s,"run_attempt":%s,"state":"not_started"}\n' "$GITHUB_RUN_ID" "$GITHUB_RUN_ATTEMPT" > "$evidence_tmp"[0m
+2026-11-18T11:09:37.1213626Z [36;1mmv "$evidence_tmp" "/tmp/gh-aw/threat-detection/execution.json"[0m
+2026-11-18T11:09:37.1262099Z shell: /usr/bin/bash -e {0}
+2026-11-18T11:09:37.1262364Z env:
+2026-11-18T11:09:37.1262581Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:09:37.1262858Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:09:37.1263138Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:09:37.1264053Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:09:37.1264930Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:09:37.1265327Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:09:37.1265618Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:09:37.1265925Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:09:37.1266241Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:09:37.1266514Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:09:37.1266817Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:09:37.1267195Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:09:37.1267521Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:09:37.1267807Z ##[endgroup]
+2026-11-18T11:09:37.1397601Z ##[group]Run rm -rf /tmp/gh-aw/sandbox/agent/logs/copilot-session-state
+2026-11-18T11:09:37.1398137Z [36;1mrm -rf /tmp/gh-aw/sandbox/agent/logs/copilot-session-state[0m
+2026-11-18T11:09:37.1439578Z shell: /usr/bin/bash -e {0}
+2026-11-18T11:09:37.1439847Z env:
+2026-11-18T11:09:37.1440070Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:09:37.1440346Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:09:37.1440620Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:09:37.1441491Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:09:37.1442381Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:09:37.1442647Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:09:37.1442894Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:09:37.1443186Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:09:37.1443518Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:09:37.1443771Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:09:37.1444069Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:09:37.1444446Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:09:37.1444776Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:09:37.1445254Z ##[endgroup]
+2026-11-18T11:09:37.1542090Z ##[group]Run rm -rf /tmp/gh-aw/sandbox/firewall/logs
+2026-11-18T11:09:37.1542531Z [36;1mrm -rf /tmp/gh-aw/sandbox/firewall/logs[0m
+2026-11-18T11:09:37.1542919Z [36;1mrm -rf /tmp/gh-aw/sandbox/firewall/audit[0m
+2026-11-18T11:09:37.1584743Z shell: /usr/bin/bash -e {0}
+2026-11-18T11:09:37.1585217Z env:
+2026-11-18T11:09:37.1585506Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:09:37.1585803Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:09:37.1586091Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:09:37.1586969Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:09:37.1587854Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:09:37.1588122Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:09:37.1588387Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:09:37.1588677Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:09:37.1589033Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:09:37.1589298Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:09:37.1589609Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:09:37.1590151Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:09:37.1590486Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:09:37.1590775Z ##[endgroup]
+2026-11-18T11:09:37.1702860Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/download_docker_images.sh" ghcr.io/github/gh-aw-firewall/agent:0.29.11@sha256:8774a73c351395b41d2ad0af4ddb4689007c67de3cd08bd9f43bb8a0e300690e ghcr.io/github/gh-aw-firewall/api-proxy:0.29.11@sha256:88d2d0e315a504d93fd4fb8847fd0f6b7f4469f41a6fc6047b3dc9654c56ab2c ghcr.io/github/gh-aw-firewall/squid:0.29.11@sha256:861739ecf924dd2db5e5fb652db2ad82aaafd1615623297ddabc8f41a36b2847
+2026-11-18T11:09:37.1706085Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/download_docker_images.sh" ghcr.io/github/gh-aw-firewall/agent:0.29.11@sha256:8774a73c351395b41d2ad0af4ddb4689007c67de3cd08bd9f43bb8a0e300690e ghcr.io/github/gh-aw-firewall/api-proxy:0.29.11@sha256:88d2d0e315a504d93fd4fb8847fd0f6b7f4469f41a6fc6047b3dc9654c56ab2c ghcr.io/github/gh-aw-firewall/squid:0.29.11@sha256:861739ecf924dd2db5e5fb652db2ad82aaafd1615623297ddabc8f41a36b2847[0m
+2026-11-18T11:09:37.1749377Z shell: /usr/bin/bash -e {0}
+2026-11-18T11:09:37.1749638Z env:
+2026-11-18T11:09:37.1749877Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:09:37.1750156Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:09:37.1750428Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:09:37.1751295Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:09:37.1752188Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:09:37.1752457Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:09:37.1752702Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:09:37.1752987Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:09:37.1753297Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:09:37.1753554Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:09:37.1753848Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:09:37.1754224Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:09:37.1754540Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:09:37.1754832Z ##[endgroup]
+2026-11-18T11:09:37.1831702Z Starting download of 3 image(s) with max 4 concurrent downloads...
+2026-11-18T11:09:37.1907659Z Attempt 1 of 3: Pulling ghcr.io/github/gh-aw-firewall/api-proxy:0.29.11@sha256:88d2d0e315a504d93fd4fb8847fd0f6b7f4469f41a6fc6047b3dc9654c56ab2c...
+2026-11-18T11:09:37.1909855Z Attempt 1 of 3: Pulling ghcr.io/github/gh-aw-firewall/agent:0.29.11@sha256:8774a73c351395b41d2ad0af4ddb4689007c67de3cd08bd9f43bb8a0e300690e...
+2026-11-18T11:09:37.1912489Z Attempt 1 of 3: Pulling ghcr.io/github/gh-aw-firewall/squid:0.29.11@sha256:861739ecf924dd2db5e5fb652db2ad82aaafd1615623297ddabc8f41a36b2847...
+2026-11-18T11:09:37.5053213Z ghcr.io/github/gh-aw-firewall/api-proxy:0.29.11@sha256:88d2d0e315a504d93fd4fb8847fd0f6b7f4469f41a6fc6047b3dc9654c56ab2c
+2026-11-18T11:09:37.5071420Z ghcr.io/github/gh-aw-firewall/squid:0.29.11@sha256:861739ecf924dd2db5e5fb652db2ad82aaafd1615623297ddabc8f41a36b2847
+2026-11-18T11:09:37.5094044Z Successfully pulled ghcr.io/github/gh-aw-firewall/api-proxy:0.29.11@sha256:88d2d0e315a504d93fd4fb8847fd0f6b7f4469f41a6fc6047b3dc9654c56ab2c
+2026-11-18T11:09:37.5097449Z Tagging digest-pinned image as ghcr.io/github/gh-aw-firewall/api-proxy:0.29.11
+2026-11-18T11:09:37.5100963Z Successfully pulled ghcr.io/github/gh-aw-firewall/squid:0.29.11@sha256:861739ecf924dd2db5e5fb652db2ad82aaafd1615623297ddabc8f41a36b2847
+2026-11-18T11:09:37.5105649Z Tagging digest-pinned image as ghcr.io/github/gh-aw-firewall/squid:0.29.11
+2026-11-18T11:09:37.5239016Z ghcr.io/github/gh-aw-firewall/agent:0.29.11@sha256:8774a73c351395b41d2ad0af4ddb4689007c67de3cd08bd9f43bb8a0e300690e
+2026-11-18T11:09:37.5299917Z Successfully pulled ghcr.io/github/gh-aw-firewall/agent:0.29.11@sha256:8774a73c351395b41d2ad0af4ddb4689007c67de3cd08bd9f43bb8a0e300690e
+2026-11-18T11:09:37.5301758Z Tagging digest-pinned image as ghcr.io/github/gh-aw-firewall/agent:0.29.11
+2026-11-18T11:09:37.5702996Z Aliasing ghcr.io/github/gh-aw-firewall/squid:0.29.11 as ghcr.io/github/gh-aw-firewall/squid:latest
+2026-11-18T11:09:37.5842791Z Aliasing ghcr.io/github/gh-aw-firewall/api-proxy:0.29.11 as ghcr.io/github/gh-aw-firewall/api-proxy:latest
+2026-11-18T11:09:37.6136535Z Aliasing ghcr.io/github/gh-aw-firewall/agent:0.29.11 as ghcr.io/github/gh-aw-firewall/agent:latest
+2026-11-18T11:09:37.6721250Z All images downloaded successfully
+2026-11-18T11:09:37.6768905Z ##[group]Run if [[ -n "$OUTPUT_TYPES" || "$HAS_PATCH" == "true" ]]; then
+2026-11-18T11:09:37.6769469Z [36;1mif [[ -n "$OUTPUT_TYPES" || "$HAS_PATCH" == "true" ]]; then[0m
+2026-11-18T11:09:37.6769889Z [36;1m  echo "run_detection=true" >> "$GITHUB_OUTPUT"[0m
+2026-11-18T11:09:37.6770367Z [36;1m  echo "Detection will run: output_types=$OUTPUT_TYPES, has_patch=$HAS_PATCH"[0m
+2026-11-18T11:09:37.6770784Z [36;1melse[0m
+2026-11-18T11:09:37.6771060Z [36;1m  echo "run_detection=false" >> "$GITHUB_OUTPUT"[0m
+2026-11-18T11:09:37.6771518Z [36;1m  echo "Detection skipped: no agent outputs or patches to analyze"[0m
+2026-11-18T11:09:37.6771904Z [36;1mfi[0m
+2026-11-18T11:09:37.6819939Z shell: /usr/bin/bash -e {0}
+2026-11-18T11:09:37.6820230Z env:
+2026-11-18T11:09:37.6820445Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:09:37.6820733Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:09:37.6821013Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:09:37.6821925Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:09:37.6822809Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:09:37.6823074Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:09:37.6823325Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:09:37.6823613Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:09:37.6823929Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:09:37.6824206Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:09:37.6824509Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:09:37.6824889Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:09:37.6825445Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:09:37.6825771Z   OUTPUT_TYPES: create_pull_request
+2026-11-18T11:09:37.6826041Z   HAS_PATCH: true
+2026-11-18T11:09:37.6826266Z ##[endgroup]
+2026-11-18T11:09:37.6896037Z Detection will run: output_types=create_pull_request, has_patch=true
+2026-11-18T11:09:37.6926856Z ##[group]Run rm -f "${RUNNER_TEMP}/gh-aw/mcp-config/mcp-servers.json"
+2026-11-18T11:09:37.6927392Z [36;1mrm -f "${RUNNER_TEMP}/gh-aw/mcp-config/mcp-servers.json"[0m
+2026-11-18T11:09:37.6927799Z [36;1mrm -f "$HOME/.copilot/mcp-config.json"[0m
+2026-11-18T11:09:37.6928160Z [36;1mrm -f "$GITHUB_WORKSPACE/.gemini/settings.json"[0m
+2026-11-18T11:09:37.6970808Z shell: /usr/bin/bash -e {0}
+2026-11-18T11:09:37.6971082Z env:
+2026-11-18T11:09:37.6971308Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:09:37.6971591Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:09:37.6971874Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:09:37.6972758Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:09:37.6973634Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:09:37.6973903Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:09:37.6974180Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:09:37.6974470Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:09:37.6974786Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:09:37.6975254Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:09:37.6975584Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:09:37.6975959Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:09:37.6976289Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:09:37.6976749Z ##[endgroup]
+2026-11-18T11:09:37.7099775Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/prepare_threat_detection_files.sh"
+2026-11-18T11:09:37.7100369Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/prepare_threat_detection_files.sh"[0m
+2026-11-18T11:09:37.7142872Z shell: /usr/bin/bash -e {0}
+2026-11-18T11:09:37.7143132Z env:
+2026-11-18T11:09:37.7143351Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:09:37.7143633Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:09:37.7143906Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:09:37.7144834Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:09:37.7145982Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:09:37.7146255Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:09:37.7146512Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:09:37.7146794Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:09:37.7147150Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:09:37.7147404Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:09:37.7147708Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:09:37.7148086Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:09:37.7148411Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:09:37.7148692Z ##[endgroup]
+2026-11-18T11:09:37.7883637Z Prepared threat detection files:
+2026-11-18T11:09:37.7917834Z total 36
+2026-11-18T11:09:37.7918254Z drwxr-xr-x 3 runner runner 4096 Nov 18 11:09 .
+2026-11-18T11:09:37.7918823Z drwxr-xr-x 9 runner runner 4096 Nov 18 11:09 ..
+2026-11-18T11:09:37.7919237Z -rw-r--r-- 1 runner runner 2556 Nov 18 11:09 agent_output.json
+2026-11-18T11:09:37.7919669Z drwxr-xr-x 2 runner runner 4096 Nov 18 11:09 aw-prompts
+2026-11-18T11:09:37.7920248Z -rw-r--r-- 1 runner runner 1400 Nov 18 11:09 aw-suv4o-charge-line-data-prices-new-networks-2026-11-18.bundle
+2026-11-18T11:09:37.7921027Z -rw-r--r-- 1 runner runner 6323 Nov 18 11:09 aw-suv4o-charge-line-data-prices-new-networks-2026-11-18.patch
+2026-11-18T11:09:37.7921603Z -rw-r--r-- 1 runner runner 1659 Nov 18 11:09 aw_info.json
+2026-11-18T11:09:37.7921984Z -rw-r--r-- 1 runner runner   97 Nov 18 11:09 execution.json
+2026-11-18T11:09:37.7986661Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-18T11:09:37.7987088Z with:
+2026-11-18T11:09:37.7988282Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'setup_threat_detection.cjs'));
+await main();
+
+2026-11-18T11:09:37.7991753Z   github-token: ***
+2026-11-18T11:09:37.7991988Z   debug: false
+2026-11-18T11:09:37.7992231Z   user-agent: actions/github-script
+2026-11-18T11:09:37.7992516Z   result-encoding: json
+2026-11-18T11:09:37.7992766Z   retries: 0
+2026-11-18T11:09:37.7993012Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-18T11:09:37.7993322Z env:
+2026-11-18T11:09:37.7993529Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:09:37.7993806Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:09:37.7994101Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:09:37.7994968Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:09:37.7996153Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:09:37.7996418Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:09:37.7996669Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:09:37.7996988Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:09:37.7997304Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:09:37.7997560Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:09:37.7997856Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:09:37.7998429Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:09:37.7998753Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:09:37.7999120Z   WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-18T11:09:37.7999739Z   WORKFLOW_DESCRIPTION: Keeps charging networks and their typical prices current, and adds networks new to Australia.
+2026-11-18T11:09:37.8000282Z   HAS_PATCH: true
+2026-11-18T11:09:37.8000518Z   GH_AW_DETECTION_CONTINUE_ON_ERROR: true
+2026-11-18T11:09:37.8000830Z   GH_AW_DETECTION_SKIP_PROMPT_SUMMARY: true
+2026-11-18T11:09:37.8001118Z ##[endgroup]
+2026-11-18T11:09:37.8977904Z Removed framework system prompt block from /tmp/gh-aw/threat-detection/aw-prompts/prompt.txt
+2026-11-18T11:09:37.8979588Z Prompt file found: /tmp/gh-aw/threat-detection/aw-prompts/prompt.txt (8156 bytes)
+2026-11-18T11:09:37.8981147Z Agent output file found: /tmp/gh-aw/threat-detection/agent_output.json (2556 bytes)
+2026-11-18T11:09:37.8988106Z Skipping threat detection prompt step summary (external detector renders its own prompt)
+2026-11-18T11:09:37.8989493Z Threat detection setup completed
+2026-11-18T11:09:37.9104137Z ##[group]Run mkdir -p /tmp/gh-aw/threat-detection
+2026-11-18T11:09:37.9104564Z [36;1mmkdir -p /tmp/gh-aw/threat-detection[0m
+2026-11-18T11:09:37.9104956Z [36;1mtouch /tmp/gh-aw/threat-detection/detection.log[0m
+2026-11-18T11:09:37.9152616Z shell: /usr/bin/bash -e {0}
+2026-11-18T11:09:37.9152892Z env:
+2026-11-18T11:09:37.9153108Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:09:37.9153398Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:09:37.9153681Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:09:37.9154570Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:09:37.9155885Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:09:37.9156157Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:09:37.9156433Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:09:37.9156713Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:09:37.9157054Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:09:37.9157312Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:09:37.9157613Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:09:37.9157983Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:09:37.9158306Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:09:37.9158638Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-11-18T11:09:37.9158949Z ##[endgroup]
+2026-11-18T11:09:37.9359308Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/install_awf_binary.sh" v0.29.11 --rootless
+2026-11-18T11:09:37.9359992Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/install_awf_binary.sh" v0.29.11 --rootless[0m
+2026-11-18T11:09:37.9409301Z shell: /usr/bin/bash -e {0}
+2026-11-18T11:09:37.9409574Z env:
+2026-11-18T11:09:37.9409792Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:09:37.9410084Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:09:37.9410372Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:09:37.9411258Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:09:37.9412157Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:09:37.9412417Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:09:37.9412674Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:09:37.9412964Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:09:37.9413303Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:09:37.9413568Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:09:37.9413874Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:09:37.9414249Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:09:37.9414578Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:09:37.9414912Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-11-18T11:09:37.9417951Z   GH_TOKEN: ***
+2026-11-18T11:09:37.9418191Z   GH_HOST: github.com
+2026-11-18T11:09:37.9418427Z ##[endgroup]
+2026-11-18T11:09:37.9618557Z Installing awf with checksum verification (version: v0.29.11, os: Linux, arch: x86_64)
+2026-11-18T11:09:37.9862836Z Downloading checksums from 'https://github.com/github/gh-aw-firewall/releases/download/v0.29.11/checksums.txt'...
+2026-11-18T11:09:46.0232888Z Node.js >= 20 detected (v24.22.2), using lightweight bundle...
+2026-11-18T11:09:46.0234074Z Downloading bundle from 'https://github.com/github/gh-aw-firewall/releases/download/v0.29.11/awf-bundle.js'...
+2026-11-18T11:09:46.1475937Z Verifying SHA256 checksum for awf-bundle.js...
+2026-11-18T11:09:46.1573986Z ✓ Checksum verification passed for awf-bundle.js
+2026-11-18T11:09:49.2519327Z ✓ Installed awf bundle to /home/runner/.local/lib/awf/awf-bundle.js
+2026-11-18T11:09:49.7134575Z 0.29.11
+2026-11-18T11:09:49.7224899Z ✓ AWF installation complete
+2026-11-18T11:09:49.7348617Z ##[group]Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+2026-11-18T11:09:49.7349056Z with:
+2026-11-18T11:09:49.7349268Z   node-version: 24
+2026-11-18T11:09:49.7349515Z   package-manager-cache: false
+2026-11-18T11:09:49.7349783Z   check-latest: false
+2026-11-18T11:09:49.7352175Z   token: ***
+2026-11-18T11:09:49.7352384Z env:
+2026-11-18T11:09:49.7352593Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:09:49.7352876Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:09:49.7353150Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:09:49.7354023Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:09:49.7354898Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:09:49.7355391Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:09:49.7355646Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:09:49.7355966Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:09:49.7356288Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:09:49.7356550Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:09:49.7356850Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:09:49.7357222Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:09:49.7357550Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:09:49.7357882Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-11-18T11:09:49.7358222Z   GH_AW_RUNTIME_TMP_DIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:09:49.7358541Z   GH_AW_RUNTIME_TMP_ID: 2049:7781103:1001
+2026-11-18T11:09:49.7358830Z   TMPDIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:09:49.7359099Z ##[endgroup]
+2026-11-18T11:09:49.8663066Z Found in cache @ /opt/hostedtoolcache/node/24.22.2/x64
+2026-11-18T11:09:50.4389834Z ##[group]Environment details
+2026-11-18T11:09:51.9437977Z node: v24.22.2
+2026-11-18T11:09:51.9438444Z npm: 11.19.1
+2026-11-18T11:09:51.9438824Z yarn: 1.22.22
+2026-11-18T11:09:51.9439649Z ##[endgroup]
+2026-11-18T11:09:51.9566760Z ##[group]Run npm install -g @anthropic-ai/claude-code@2.1.317
+2026-11-18T11:09:51.9567283Z [36;1mnpm install -g @anthropic-ai/claude-code@2.1.317[0m
+2026-11-18T11:09:51.9654285Z shell: /usr/bin/bash -e {0}
+2026-11-18T11:09:51.9654569Z env:
+2026-11-18T11:09:51.9654790Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:09:51.9655331Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:09:51.9655637Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:09:51.9656546Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:09:51.9657443Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:09:51.9657703Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:09:51.9657956Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:09:51.9658241Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:09:51.9658562Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:09:51.9658852Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:09:51.9659424Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:09:51.9659811Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:09:51.9660139Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:09:51.9660480Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-11-18T11:09:51.9660833Z   GH_AW_RUNTIME_TMP_DIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:09:51.9661169Z   GH_AW_RUNTIME_TMP_ID: 2049:7781103:1001
+2026-11-18T11:09:51.9661474Z   TMPDIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:09:51.9661762Z   NPM_CONFIG_MIN_RELEASE_AGE: 3
+2026-11-18T11:09:51.9662022Z ##[endgroup]
+2026-11-18T11:09:56.6692586Z 
+2026-11-18T11:09:56.6699622Z added 2 packages in 5s
+2026-11-18T11:09:56.6705640Z npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+2026-11-18T11:09:56.6706665Z npm warn install-scripts   @anthropic-ai/claude-code@2.1.317 (postinstall: node install.cjs)
+2026-11-18T11:09:56.6707321Z npm warn install-scripts
+2026-11-18T11:09:56.6708778Z npm warn install-scripts Run `npm install -g --allow-scripts=@anthropic-ai/claude-code` to allow these scripts once, or `npm config set allow-scripts=@anthropic-ai/claude-code --location=user` to allow them for all global installs.
+2026-11-18T11:09:56.7302845Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/install_threat_detect_binary.sh" v0.5.3 --artifact-base-url https://github.com/github/gh-aw-threat-detection/releases/download --sha256-amd64 7cfab3bd02717968a0584ddd3790cff22550059e36d6f656c4f35e9d27851009 --sha256-arm64 6f355949af98e7b5527a958ac11431bd7867db45c0191b94c3a205c662181cc6
+2026-11-18T11:09:56.7305559Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/install_threat_detect_binary.sh" v0.5.3 --artifact-base-url https://github.com/github/gh-aw-threat-detection/releases/download --sha256-amd64 7cfab3bd02717968a0584ddd3790cff22550059e36d6f656c4f35e9d27851009 --sha256-arm64 6f355949af98e7b5527a958ac11431bd7867db45c0191b94c3a205c662181cc6[0m
+2026-11-18T11:09:56.7355556Z shell: /usr/bin/bash -e {0}
+2026-11-18T11:09:56.7355844Z env:
+2026-11-18T11:09:56.7356067Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:09:56.7356351Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:09:56.7356636Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:09:56.7357528Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:09:56.7358394Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:09:56.7358656Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:09:56.7358903Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:09:56.7359186Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:09:56.7359496Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:09:56.7359755Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:09:56.7360055Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:09:56.7360420Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:09:56.7360750Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:09:56.7361081Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-11-18T11:09:56.7361428Z   GH_AW_RUNTIME_TMP_DIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:09:56.7361753Z   GH_AW_RUNTIME_TMP_ID: 2049:7781103:1001
+2026-11-18T11:09:56.7362057Z   TMPDIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:09:56.7362328Z ##[endgroup]
+2026-11-18T11:09:56.7651642Z Installing threat-detect with compiler-pinned checksum verification (version: v0.5.3, os: Linux, arch: x86_64)
+2026-11-18T11:09:56.7811277Z Downloading binary from "https://github.com/github/gh-aw-threat-detection/releases/download/v0.5.3/threat-detect-linux-amd64"...
+2026-11-18T11:09:56.8465818Z Verifying SHA256 checksum for threat-detect-linux-amd64...
+2026-11-18T11:09:56.8529565Z ✓ Checksum verification passed for threat-detect-linux-amd64
+2026-11-18T11:09:56.8661799Z threat-detect v0.5.3
+2026-11-18T11:09:56.8667303Z ✓ threat-detect installation complete
+2026-11-18T11:09:56.8749306Z ##[group]Run mkdir -p "/tmp/gh-aw/threat-detection"
+2026-11-18T11:09:56.8749864Z [36;1mmkdir -p "/tmp/gh-aw/threat-detection"[0m
+2026-11-18T11:09:56.8750310Z [36;1mevidence_tmp="/tmp/gh-aw/threat-detection/execution.json.tmp"[0m
+2026-11-18T11:09:56.8751069Z [36;1mprintf '{"version":1,"component":"detection","run_id":%s,"run_attempt":%s,"state":"started"}\n' "$GITHUB_RUN_ID" "$GITHUB_RUN_ATTEMPT" > "$evidence_tmp"[0m
+2026-11-18T11:09:56.8751815Z [36;1mmv "$evidence_tmp" "/tmp/gh-aw/threat-detection/execution.json"[0m
+2026-11-18T11:09:56.8752272Z [36;1mexport GH_AW_AWF_EXECUTION_COMPONENT="detection"[0m
+2026-11-18T11:09:56.8752785Z [36;1mexport GH_AW_AWF_EXECUTION_EVIDENCE_FILE="/tmp/gh-aw/threat-detection/execution.json"[0m
+2026-11-18T11:09:56.8753260Z [36;1mset -o pipefail[0m
+2026-11-18T11:09:56.8753607Z [36;1mprintf '%s' "$(date +%s%3N)" > /tmp/gh-aw/agent_cli_start_ms.txt[0m
+2026-11-18T11:09:56.8754106Z [36;1m(umask 177 && touch /tmp/gh-aw/threat-detection/detection.log)[0m
+2026-11-18T11:09:56.8754554Z [36;1mGH_AW_MAX_AI_CREDITS="${GH_AW_MAX_AI_CREDITS:-400}"[0m
+2026-11-18T11:09:56.8754946Z [36;1mif [[ ! "$GH_AW_MAX_AI_CREDITS" =~ ^[0-9]+$ ]]; then[0m
+2026-11-18T11:09:56.8755612Z [36;1m  GH_AW_MAX_AI_CREDITS="400"[0m
+2026-11-18T11:09:56.8755888Z [36;1mfi[0m
+2026-11-18T11:09:56.8756086Z [36;1m[0m
+2026-11-18T11:09:56.8756478Z [36;1mif [[ "${GH_AW_ADMISSION_RESULT:-}" == "admitted" && -n "${GH_AW_ADMISSION_MAX_AI_CREDITS:-}" ]]; then[0m
+2026-11-18T11:09:56.8757176Z [36;1m  if [[ ! "$GH_AW_ADMISSION_MAX_AI_CREDITS" =~ ^[1-9][0-9]{0,9}$ ]] || (( GH_AW_ADMISSION_MAX_AI_CREDITS > 2147483647 )); then[0m
+2026-11-18T11:09:56.8757785Z [36;1m    echo "ERR_ADMISSION: Invalid runtime admission allowance." >&2[0m
+2026-11-18T11:09:56.8758161Z [36;1m    exit 1[0m
+2026-11-18T11:09:56.8758373Z [36;1m  fi[0m
+2026-11-18T11:09:56.8758655Z [36;1m  GH_AW_MAX_AI_CREDITS="$GH_AW_ADMISSION_MAX_AI_CREDITS"[0m
+2026-11-18T11:09:56.8759080Z [36;1m  echo "Admission allowance applied (value withheld)."[0m
+2026-11-18T11:09:56.8759423Z [36;1melse[0m
+2026-11-18T11:09:56.8759829Z [36;1m  echo "No component admission allowance; retaining existing budget policy (value withheld)."[0m
+2026-11-18T11:09:56.8760299Z [36;1mfi[0m
+2026-11-18T11:09:56.8760589Z [36;1munset GH_AW_ADMISSION_RESULT GH_AW_ADMISSION_MAX_AI_CREDITS[0m
+2026-11-18T11:09:56.8778604Z [36;1mprintf '%s\n' "{\"\$schema\":\"https://github.com/github/gh-aw-firewall/releases/download/v0.29.11/awf-config.schema.json\",\"apiProxy\":{\"enabled\":true,\"enableTokenSteering\":true,\"maxRuns\":500,\"maxAiCredits\":${GH_AW_MAX_AI_CREDITS},\"maxCacheMisses\":5,\"providers\":{\"anthropic\":{\"models\":{\"claude-sonnet-5-5\":{\"cost\":{\"cache_read\":\"1e-07\",\"cache_write\":\"2.5e-06\",\"input\":\"2e-06\",\"output\":\"1e-05\"}}}}},\"models\":{\"agent\":[\"sonnet-6x\",\"gpt-6\",\"gpt-5.4\",\"gpt-5.5\",\"gpt-5.6\",\"gpt-5.3\",\"gemini-pro\",\"any\"],\"antigravity\":[\"copilot/antigravity*\",\"google/antigravity*\",\"gemini/antigravity*\"],\"any\":[\"copilot/*\",\"anthropic/*\",\"openai/*\",\"google/*\",\"gemini/*\"],\"auto\":[\"copilot/auto\",\"large\"],\"claude\":[\"agent\"],\"codex\":[\"agent\"],\"coding\":[\"copilot/gpt-5*codex*\",\"openai/gpt-5*codex*\",\"gpt-5-codex\",\"kimi\"],\"computer-use\":[\"copilot/*computer-use*\",\"google/*computer-use*\",\"gemini/*computer-use*\",\"openai/*computer-use*\"],\"copilot\":[\"agent\"],\"deep-research\":[\"copilot/deep-research*\",\"copilot/o3-deep-research*\",\"copilot/o4-mini-deep-research*\",\"google/deep-research*\",\"gemini/deep-research*\",\"openai/o3-deep-research*\",\"openai/o4-mini-deep-research*\"],\"detection\":[\"small\",\"copilot/gpt-*-luna\",\"openai/gpt-*-luna\",\"small-agent\",\"agent\"],\"evals\":[\"copilot/gpt-6-luna-decisions\"],\"fable\":[\"copilot/*fable*\",\"anthropic/*fable*\"],\"gemini\":[\"agent\"],\"gemini-3-flash\":[\"copilot/gemini-3*flash*\",\"google/gemini-3*flash*\",\"gemini/gemini-3*flash*\"],\"gemini-3-pro\":[\"copilot/gemini-3*pro*\",\"google/gemini-3*pro*\",\"google/nano-banana*\",\"gemini/gemini-3*pro*\"],\"gemini-3.1-flash\":[\"copilot/gemini-3.1*flash*\",\"google/gemini-3.1*flash*\",\"gemini/gemini-3.1*flash*\"],\"gemini-3.1-pro\":[\"copilot/gemini-3.1*pro*\",\"google/gemini-3.1*pro*\",\"gemini/gemini-3.1*pro*\"],\"gemini-3.5-flash\":[\"copilot/gemini-3.5*flash*\",\"google/gemini-3.5*flash*\",\"gemini/gemini-3.5*flash*\"],\"gemini-3.6-flash\":[\"copilot/gemini-3.6*flash*\",\"google/gemini-3.6*flash*\",\"gemini/gemini-3.6*flash*\"],\"gemini-3.7-flash\":[\"copilot/gemini-3.7*flash*\",\"google/gemini-3.7*flash*\",\"gemini/gemini-3.7*flash*\"],\"gemini-3.8-flash\":[\"copilot/gemini-3.8*flash*\",\"google/gemini-3.8*flash*\",\"gemini/gemini-3.8*flash*\"],\"gemini-flash\":[\"copilot/gemini-*flash*\",\"google/gemini-*flash*\",\"gemini/gemini-*flash*\"],\"gemini-flash-lite\":[\"copilot/gemini-*flash*lite*\",\"google/gemini-*flash*lite*\",\"gemini/gemini-*flash*lite*\"],\"gemini-omni\":[\"copilot/gemini-omni*\",\"google/gemini-omni*\",\"gemini/gemini-omni*\"],\"gemini-pro\":[\"copilot/gemini-*pro*\",\"google/gemini-*pro*\",\"gemini/gemini-*pro*\"],\"gemma\":[\"copilot/gemma*\",\"google/gemma*\",\"gemini/gemma*\"],\"gpt-5\":[\"copilot/gpt-5*\",\"openai/gpt-5*\"],\"gpt-5-codex\":[\"copilot/gpt-5*codex*\",\"openai/gpt-5*codex*\"],\"gpt-5-mini\":[\"copilot/gpt-5*mini*\",\"openai/gpt-5*mini*\"],\"gpt-5-nano\":[\"copilot/gpt-5*nano*\",\"openai/gpt-5*nano*\"],\"gpt-5-pro\":[\"copilot/gpt-5*pro*\",\"openai/gpt-5*pro*\"],\"gpt-5.1\":[\"copilot/gpt-5.1*\",\"openai/gpt-5.1*\"],\"gpt-5.2\":[\"copilot/gpt-5.2*\",\"openai/gpt-5.2*\"],\"gpt-5.3\":[\"copilot/gpt-5.3*\",\"openai/gpt-5.3*\"],\"gpt-5.4\":[\"copilot/gpt-5.4*\",\"openai/gpt-5.4*\"],\"gpt-5.5\":[\"copilot/gpt-5.5*\",\"openai/gpt-5.5*\"],\"gpt-5.6\":[\"copilot/gpt-5.6*\",\"openai/gpt-5.6*\"],\"gpt-6\":[\"copilot/gpt-6*\",\"openai/gpt-6*\"],\"grok\":[\"copilot/*grok*\",\"openai/*grok*\"],\"haiku\":[\"copilot/*haiku*\",\"anthropic/*haiku*\"],\"image-generation\":[\"copilot/gpt-image*\",\"openai/gpt-image*\",\"openai/chatgpt-image*\",\"copilot/gemini-*image*\",\"google/gemini-*image*\",\"gemini/gemini-*image*\",\"google/imagen*\"],\"kimi\":[\"copilot/kimi*\",\"openai/kimi*\"],\"kiwi\":[\"copilot/kiwi*\",\"openai/kiwi*\"],\"large\":[\"sonnet\",\"gpt-6\",\"gpt-5-pro\",\"gpt-5\",\"gemini-pro\"],\"lyria\":[\"google/lyria*\",\"gemini/lyria*\",\"copilot/lyria*\"],\"mai-code\":[\"copilot/MAI-Code*\",\"copilot/mai-code*\",\"openai/MAI-Code*\"],\"mini\":[\"haiku\",\"gpt-5-mini\",\"gpt-5-nano\",\"gemini-flash-lite\"],\"nano-banana\":[\"copilot/nano-banana*\",\"google/nano-banana*\",\"gemini/nano-banana*\"],\"opus\":[\"copilot/*opus*\",\"anthropic/*opus*\"],\"opusplan\":[\"opus?effort=high\"],\"raptor-mini\":[\"copilot/raptor*\",\"openai/raptor*\"],\"reasoning\":[\"copilot/o1*\",\"copilot/o3*\",\"copilot/o4*\",\"openai/o1*\",\"openai/o3*\",\"openai/o4*\"],\"robotics\":[\"copilot/*robotics*\",\"google/*robotics*\",\"gemini/*robotics*\"],\"small\":[\"mini\"],\"small-agent\":[\"haiku\",\"gpt-5-mini\",\"gemini-flash\"],\"sonnet\":[\"copilot/*sonnet*\",\"anthropic/*sonnet*\"],\"sonnet-6x\":[\"copilot/*sonnet-4.5*\",\"copilot/*sonnet-4.6*\",\"copilot/*sonnet-5*\",\"copilot/*sonnet-4-5-*\",\"anthropic/*sonnet-4-5-*\",\"copilot/*sonnet-4-6*\",\"anthropic/*sonnet-4-6*\",\"anthropic/*sonnet-5*\"],\"summarization\":[\"haiku\",\"gpt-5-mini\",\"gemini-flash-lite\",\"mini\"],\"veo\":[\"google/veo*\",\"gemini/veo*\"],\"vision\":[\"copilot/gemini-*image*\",\"google/gemini-*image*\",\"gemini/gemini-*image*\",\"copilot/gemini-*flash*\",\"google/gemini-*flash*\",\"gemini/gemini-*flash*\"]}},\"container\":{\"imageTag\":\"0.29.11,squid=sha256:861739ecf924dd2db5e5fb652db2ad82aaafd1615623297ddabc8f41a36b2847,agent=sha256:8774a73c351395b41d2ad0af4ddb4689007c67de3cd08bd9f43bb8a0e300690e,agent-act=sha256:ab786b54e96f95204366fdf195f80758e14891ebb17afe9e2ddc8d98555ebb46,api-proxy=sha256:88d2d0e315a504d93fd4fb8847fd0f6b7f4469f41a6fc6047b3dc9654c56ab2c,cli-proxy=sha256:97782bc0d8ff7f80f19ae2fdc5e1668517aa732a6fa077e64b8d3919238496d2\",\"agentTimeout\":10},\"logging\":{\"proxyLogsDir\":\"/tmp/gh-aw/sandbox/firewall/logs\",\"auditDir\":\"/tmp/gh-aw/sandbox/firewall/audit\"}}" > "${RUNNER_TEMP}/gh-aw/awf-config.json"[0m
+2026-11-18T11:09:56.8796756Z [36;1mcp "${RUNNER_TEMP}/gh-aw/awf-config.json" /tmp/gh-aw/awf-config.json[0m
+2026-11-18T11:09:56.8797252Z [36;1mexport GH_AW_MODELS_JSON_PATH="/tmp/gh-aw/models.json"[0m
+2026-11-18T11:09:56.8797616Z [36;1mGH_AW_DOCKER_HOST=""[0m
+2026-11-18T11:09:56.8797911Z [36;1mif [[ "${DOCKER_HOST:-}" =~ ^tcp:// ]]; then[0m
+2026-11-18T11:09:56.8798245Z [36;1m  GH_AW_DOCKER_HOST="${DOCKER_HOST}"[0m
+2026-11-18T11:09:56.8798537Z [36;1mfi[0m
+2026-11-18T11:09:56.8798772Z [36;1mif [[ "${DOCKER_HOST:-}" =~ ^tcp:// ]]; then[0m
+2026-11-18T11:09:56.8800040Z [36;1m  _GH_AW_CHROOT_JSON=$(jq -c --arg src "${RUNNER_TEMP}/gh-aw" --arg user "$(id -un)" --argjson uid "$(id -u)" --argjson gid "$(id -g)" --arg home "${RUNNER_TEMP}/gh-aw/home" '.chroot={"binariesSourcePath":$src,"identity":{"user":$user,"uid":$uid,"gid":$gid,"home":$home}}' "${RUNNER_TEMP}/gh-aw/awf-config.json") || { echo "chroot config patch failed" >&2; exit 1; }[0m
+2026-11-18T11:09:56.8801385Z [36;1m  printf '%s\n' "$_GH_AW_CHROOT_JSON" > "${RUNNER_TEMP}/gh-aw/awf-config.json"[0m
+2026-11-18T11:09:56.8801889Z [36;1mfi[0m
+2026-11-18T11:09:56.8802228Z [36;1mGH_AW_TOOL_CACHE_MOUNT=""[0m
+2026-11-18T11:09:56.8802620Z [36;1mGH_AW_TOOL_CACHE="${RUNNER_TOOL_CACHE:?RUNNER_TOOL_CACHE must be set}"[0m
+2026-11-18T11:09:56.8803043Z [36;1mif [ -d "$GH_AW_TOOL_CACHE" ]; then[0m
+2026-11-18T11:09:56.8803380Z [36;1m  if [[ "$GH_AW_TOOL_CACHE" != /opt/* ]]; then[0m
+2026-11-18T11:09:56.8803780Z [36;1m    GH_AW_TOOL_CACHE_MOUNT="$GH_AW_TOOL_CACHE:$GH_AW_TOOL_CACHE:ro"[0m
+2026-11-18T11:09:56.8804150Z [36;1m  fi[0m
+2026-11-18T11:09:56.8804349Z [36;1mfi[0m
+2026-11-18T11:09:56.8804594Z [36;1m# shellcheck disable=SC1003,SC2016,SC2086[0m
+2026-11-18T11:09:56.8807408Z [36;1mawf --config "${RUNNER_TEMP}/gh-aw/awf-config.json" --container-workdir "${GITHUB_WORKSPACE}" --mount "${RUNNER_TEMP}/gh-aw:${RUNNER_TEMP}/gh-aw:ro" --mount "${RUNNER_TEMP}/gh-aw:/host${RUNNER_TEMP}/gh-aw:ro" ${GH_AW_TOOL_CACHE_MOUNT:+--mount "$GH_AW_TOOL_CACHE_MOUNT"} ${GH_AW_DOCKER_HOST:+--docker-host "$GH_AW_DOCKER_HOST"} --env-all --exclude-env ACTIONS_ID_TOKEN_REQUEST_TOKEN --exclude-env ACTIONS_ID_TOKEN_REQUEST_URL --exclude-env ANTHROPIC_API_KEY --exclude-env GH_AW_OTLP_ALL_HEADERS --exclude-env GH_AW_OTLP_ENDPOINTS --exclude-env OTEL_EXPORTER_OTLP_ENDPOINT --exclude-env OTEL_EXPORTER_OTLP_HEADERS --mount /tmp/gh-aw:/tmp/gh-aw:rw --mount /tmp/gh-aw/threat-detection:/tmp/gh-aw/threat-detection:rw --log-level info --skip-pull \[0m
+2026-11-18T11:09:56.8811793Z [36;1m  -- /bin/bash -c 'set +o histexpand; : "${RUNNER_TOOL_CACHE:?RUNNER_TOOL_CACHE must be set}"; GH_AW_TOOL_CACHE="$RUNNER_TOOL_CACHE"; GH_AW_TOOL_BINS="$(find "$GH_AW_TOOL_CACHE" -maxdepth 5 -type d -name bin 2>/dev/null | tr "\n" ":")"; GH_AW_TOOL_BINS="${GH_AW_TOOL_BINS%:}"; export PATH="$PATH${GH_AW_TOOL_BINS:+:}$GH_AW_TOOL_BINS"; [ -n "$GOROOT" ] && export PATH="$GOROOT/bin:$PATH" || true; [ -n "$ERLANG_HOME" ] && export PATH="$ERLANG_HOME/bin:$PATH" || true && threat-detect --engine claude --output /tmp/gh-aw/threat-detection/detection_result.json /tmp/gh-aw/threat-detection-inputs' 2>&1 | tee -a /tmp/gh-aw/threat-detection/detection.log[0m
+2026-11-18T11:09:56.8862246Z shell: /usr/bin/bash -e {0}
+2026-11-18T11:09:56.8862524Z env:
+2026-11-18T11:09:56.8862743Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:09:56.8863039Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:09:56.8863313Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:09:56.8864191Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:09:56.8865341Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:09:56.8865654Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:09:56.8865910Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:09:56.8866355Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:09:56.8866796Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:09:56.8867056Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:09:56.8867357Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:09:56.8867724Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:09:56.8868061Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:09:56.8868395Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-11-18T11:09:56.8868748Z   GH_AW_RUNTIME_TMP_DIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:09:56.8869064Z   GH_AW_RUNTIME_TMP_ID: 2049:7781103:1001
+2026-11-18T11:09:56.8869360Z   TMPDIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:09:56.8869789Z   ANTHROPIC_MODEL: claude-sonnet-5-5
+2026-11-18T11:09:56.8870174Z   AWF_AUTH_ANTHROPIC_FEDERATION_RULE_ID: fdrl_01AAZj8hBUDfZYVY44VtmV5s
+2026-11-18T11:09:56.8870668Z   AWF_AUTH_ANTHROPIC_ORGANIZATION_ID: c5dfa429-cd1d-409e-a19c-542241f5b589
+2026-11-18T11:09:56.8871158Z   AWF_AUTH_ANTHROPIC_SERVICE_ACCOUNT_ID: svac_01CCJhpMWxqLwBn3i8eGis2h
+2026-11-18T11:09:56.8871624Z   AWF_AUTH_ANTHROPIC_WORKSPACE_ID: wrkspc_01UoCd4X7FMqopkU6C446sC3
+2026-11-18T11:09:56.8871986Z   AWF_AUTH_PROVIDER: anthropic
+2026-11-18T11:09:56.8872246Z   AWF_AUTH_TYPE: github-oidc
+2026-11-18T11:09:56.8872635Z   BASH_DEFAULT_TIMEOUT_MS: 60000
+2026-11-18T11:09:56.8872899Z   BASH_MAX_TIMEOUT_MS: 60000
+2026-11-18T11:09:56.8873148Z   CLAUDE_CODE_DISABLE_FAST_MODE: 1
+2026-11-18T11:09:56.8873423Z   DISABLE_BUG_COMMAND: 1
+2026-11-18T11:09:56.8873668Z   DISABLE_ERROR_REPORTING: 1
+2026-11-18T11:09:56.8873919Z   DISABLE_TELEMETRY: 1
+2026-11-18T11:09:56.8874150Z   GH_AW_HARNESS_MAX_RETRIES: 0
+2026-11-18T11:09:56.8874414Z   GH_AW_LLM_PROVIDER: anthropic
+2026-11-18T11:09:56.8874668Z   GH_AW_MAX_AI_CREDITS: 400
+2026-11-18T11:09:56.8874906Z   GH_AW_MAX_TURNS: 
+2026-11-18T11:09:56.8875350Z   GH_AW_PHASE: detection
+2026-11-18T11:09:56.8875597Z   GH_AW_VERSION: v1.2.2
+2026-11-18T11:09:56.8875820Z   GITHUB_AW: true
+2026-11-18T11:09:56.8876101Z   GITHUB_STEP_SUMMARY: /tmp/gh-aw/agent-step-summary.md
+2026-11-18T11:09:56.8876561Z   GITHUB_WORKSPACE: /home/runner/work/charge-line-data/charge-line-data
+2026-11-18T11:09:56.8877034Z   GIT_AUTHOR_EMAIL: github-actions[bot]@users.noreply.github.com
+2026-11-18T11:09:56.8877414Z   GIT_AUTHOR_NAME: github-actions[bot]
+2026-11-18T11:09:56.8877781Z   GIT_COMMITTER_EMAIL: github-actions[bot]@users.noreply.github.com
+2026-11-18T11:09:56.8878170Z   GIT_COMMITTER_NAME: github-actions[bot]
+2026-11-18T11:09:56.8878454Z   MCP_TIMEOUT: 120000
+2026-11-18T11:09:56.8878692Z   MCP_TOOL_TIMEOUT: 60000
+2026-11-18T11:09:56.8878944Z   RUNNER_TEMP: /home/runner/work/_temp
+2026-11-18T11:09:56.8879312Z   TRACEPARENT: 00-4352f78a4c69b047f9be43b00f346f20-bec1c697002b6761-01
+2026-11-18T11:09:56.8879743Z   WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-18T11:09:56.8880340Z   WORKFLOW_DESCRIPTION: Keeps charging networks and their typical prices current, and adds networks new to Australia.
+2026-11-18T11:09:56.8880871Z   HAS_PATCH: true
+2026-11-18T11:09:56.8881112Z   GH_AW_DETECTION_CONTINUE_ON_ERROR: true
+2026-11-18T11:09:56.8881389Z ##[endgroup]
+2026-11-18T11:09:56.9058725Z No component admission allowance; retaining existing budget policy (value withheld).
+2026-11-18T11:09:57.3746522Z [INFO] Auto-detected DNS servers from /run/systemd/resolve/resolv.conf: 168.63.129.16
+2026-11-18T11:09:57.3779637Z [WARN] --mount provides filesystem visibility, not engine file scope. Grant the sandbox-visible input directory to the engine subprocess (e.g. Copilot --add-dir). Use --input-dir for a sandbox readability preflight. Detectors must fail closed on empty or unreadable inputs; AWF does not verify engine input access or verdicts.
+2026-11-18T11:09:57.3793333Z [INFO] Agent timeout set to 10 minutes
+2026-11-18T11:09:57.3797396Z [WARN] ⚠️  Using --env-all: All host environment variables will be passed to container
+2026-11-18T11:09:57.3798906Z [WARN]    This may expose sensitive credentials if logs or configs are shared
+2026-11-18T11:09:57.3804326Z [INFO] API proxy enabled: OpenAI=false, Anthropic=true (wif), Copilot=false, Gemini=false, Vertex=false
+2026-11-18T11:10:01.0144041Z [INFO] Allowed domains: 
+2026-11-18T11:10:01.0766830Z [INFO] Network-isolation mode: enforcing egress via Docker network topology (no host iptables, no sudo).
+2026-11-18T11:10:01.0767506Z [INFO] Generating configuration files...
+2026-11-18T11:10:01.1028650Z [INFO] API proxy sidecar enabled - API keys will be held securely in sidecar container
+2026-11-18T11:10:01.1030050Z [INFO] API proxy will route through Squid to respect domain whitelisting
+2026-11-18T11:10:01.4740169Z [INFO] Starting containers...
+2026-11-18T11:10:01.7189113Z  Network awf-nj0zkx_awf-ext Creating 
+2026-11-18T11:10:01.7486396Z  Network awf-nj0zkx_awf-ext Created 
+2026-11-18T11:10:01.7492419Z  Network awf-net Creating 
+2026-11-18T11:10:01.7684737Z  Network awf-net Created 
+2026-11-18T11:10:01.7690232Z  Container awf-squid Creating 
+2026-11-18T11:10:01.8068655Z  Container awf-squid Created 
+2026-11-18T11:10:01.8069775Z  Container awf-api-proxy Creating 
+2026-11-18T11:10:01.9221657Z  Container awf-api-proxy Created 
+2026-11-18T11:10:01.9222591Z  Container awf-agent Creating 
+2026-11-18T11:10:02.0675388Z  Container awf-agent Created 
+2026-11-18T11:10:02.1014485Z  Container awf-squid Starting 
+2026-11-18T11:10:02.2844541Z  Container awf-squid Started 
+2026-11-18T11:10:02.2845433Z  Container awf-squid Waiting 
+2026-11-18T11:10:07.7863904Z  Container awf-squid Healthy 
+2026-11-18T11:10:07.7864605Z  Container awf-api-proxy Starting 
+2026-11-18T11:10:07.9415763Z  Container awf-api-proxy Started 
+2026-11-18T11:10:07.9416444Z  Container awf-api-proxy Waiting 
+2026-11-18T11:10:07.9416957Z  Container awf-squid Waiting 
+2026-11-18T11:10:08.4434685Z  Container awf-squid Healthy 
+2026-11-18T11:10:18.9430699Z  Container awf-api-proxy Healthy 
+2026-11-18T11:10:18.9431441Z  Container awf-agent Starting 
+2026-11-18T11:10:19.1442368Z  Container awf-agent Started 
+2026-11-18T11:10:19.2487024Z [SUCCESS] Containers started successfully
+2026-11-18T11:10:19.2503486Z [INFO] Executing agent command...
+2026-11-18T11:10:19.2538095Z [INFO] Agent timeout: 10 minutes
+2026-11-18T11:10:19.4962872Z [entrypoint] Agentic Workflow Firewall - Agent Container
+2026-11-18T11:10:19.4963362Z [entrypoint] ==================================
+2026-11-18T11:10:20.0329080Z [entrypoint] Configuring DNS...
+2026-11-18T11:10:20.0495726Z [entrypoint] DNS configured with Docker embedded DNS (127.0.0.11) only
+2026-11-18T11:10:20.0500123Z [entrypoint] iptables-init skipped (proxy-based egress): skipping init container wait
+2026-11-18T11:10:20.0547395Z [health-check] API Proxy Pre-flight Check
+2026-11-18T11:10:20.0548832Z [health-check] ==========================================
+2026-11-18T11:10:20.0550505Z [health-check] Checking Anthropic API proxy configuration...
+2026-11-18T11:10:20.0552055Z [health-check] ✓ Anthropic credentials NOT in agent environment (correct)
+2026-11-18T11:10:20.0553496Z [health-check] ✓ ANTHROPIC_AUTH_TOKEN is placeholder value (correct)
+2026-11-18T11:10:20.0554994Z [health-check] Testing connectivity to Anthropic API proxy at http://172.30.0.30:10001...
+2026-11-18T11:10:20.1092131Z [health-check] ✓ Anthropic API proxy is reachable at http://172.30.0.30:10001
+2026-11-18T11:10:20.1094931Z [health-check] ==========================================
+2026-11-18T11:10:20.1096523Z [health-check] ✓ All API proxy health checks passed
+2026-11-18T11:10:20.1097392Z [health-check] ✓ Credential isolation verified
+2026-11-18T11:10:20.1098153Z [health-check] ✓ Connectivity established
+2026-11-18T11:10:20.1098862Z [health-check] ==========================================
+2026-11-18T11:10:20.1102668Z [entrypoint] Claude Code API key helper configured: /usr/local/bin/get-claude-key.sh
+2026-11-18T11:10:20.1104003Z [entrypoint] Creating /host/home/runner/.claude.json with apiKeyHelper...
+2026-11-18T11:10:20.1221526Z [entrypoint] ✓ Created /host/home/runner/.claude.json with apiKeyHelper: /usr/local/bin/get-claude-key.sh
+2026-11-18T11:10:20.1444681Z [entrypoint] Creating /host/home/runner/.claude/settings.json with apiKeyHelper...
+2026-11-18T11:10:20.1474244Z [entrypoint] ✓ Created /host/home/runner/.claude/settings.json with apiKeyHelper: /usr/local/bin/get-claude-key.sh
+2026-11-18T11:10:20.1476157Z [entrypoint] Pre-seeding JVM build tool proxy configuration (squid-proxy:3128)...
+2026-11-18T11:10:20.1704205Z [entrypoint] ✓ Created Maven proxy config (/host/home/runner/.m2/settings.xml)
+2026-11-18T11:10:20.1796819Z [entrypoint] ✓ Created Gradle proxy config (/host/home/runner/.gradle/gradle.properties)
+2026-11-18T11:10:20.1911846Z [entrypoint] ✓ Set JAVA_TOOL_OPTIONS with proxy and nonProxyHosts flags
+2026-11-18T11:10:20.1915767Z [entrypoint] Proxy configuration:
+2026-11-18T11:10:20.1916610Z [entrypoint]   HTTP_PROXY=http://172.30.0.10:3128
+2026-11-18T11:10:20.1917485Z [entrypoint]   HTTPS_PROXY=http://172.30.0.10:3128
+2026-11-18T11:10:20.1918264Z [entrypoint] Network information:
+2026-11-18T11:10:20.1964104Z [entrypoint]   IP address: 172.30.0.20 
+2026-11-18T11:10:20.1977730Z [entrypoint]   Hostname: 22507065233a
+2026-11-18T11:10:20.6869349Z [entrypoint] ==================================
+2026-11-18T11:10:20.6870498Z [entrypoint] Chroot mode enabled - dropping CAP_SYS_CHROOT and CAP_SYS_ADMIN
+2026-11-18T11:10:20.6940366Z [entrypoint] Switching to awfuser (UID: 1001, GID: 1001)
+2026-11-18T11:10:20.6943304Z [entrypoint] Executing command: /bin/bash -c /bin/bash -c 'set +o histexpand; : "${RUNNER_TOOL_CACHE:?RUNNER_TOOL_CACHE must be set}"; GH_AW_TOOL_CACHE="$RUNNER_TOOL_CACHE"; GH_AW_TOOL_BINS="$(find "$GH_AW_TOOL_CACHE" -maxdepth 5 -type d -name bin 2>/dev/null | tr "\n" ":")"; GH_AW_TOOL_BINS="${GH_AW_TOOL_BINS%:}"; export PATH="$PATH${GH_AW_TOOL_BINS:+:}$GH_AW_TOOL_BINS"; [ -n "$GOROOT" ] && export PATH="$GOROOT/bin:$PATH" || true; [ -n "$ERLANG_HOME" ] && export PATH="$ERLANG_HOME/bin:$PATH" || true && threat-detect --engine claude --output /tmp/gh-aw/threat-detection/detection_result.json /tmp/gh-aw/threat-detection-inputs'
+2026-11-18T11:10:20.6947254Z 
+2026-11-18T11:10:20.6947614Z [entrypoint] Chroot mode: running command inside host filesystem (/host)
+2026-11-18T11:10:20.7320603Z [entrypoint] Mounted procfs at /host/proc (nosuid,nodev,noexec,hidepid=2)
+2026-11-18T11:10:20.7421575Z [entrypoint] Bind-mounted container cgroup subtree at /host/sys/fs/cgroup (ro)
+2026-11-18T11:10:20.7688166Z [entrypoint] One-shot token library copied to chroot at /run/awf-lib/one-shot-token.so
+2026-11-18T11:10:22.9468874Z [entrypoint] Chromium/Playwright runtime libraries staged for chroot at /host/run/awf-lib/browser-libs
+2026-11-18T11:10:22.9679855Z [entrypoint] Claude key helper copied to chroot at /run/awf-lib/get-claude-key.sh
+2026-11-18T11:10:26.8105843Z [entrypoint] ✓ Updated apiKeyHelper path in /host/home/runner/.claude.json
+2026-11-18T11:10:26.8731567Z [entrypoint] ✓ Updated apiKeyHelper path in /host/home/runner/.claude/settings.json
+2026-11-18T11:10:32.6039245Z [entrypoint] Filtered host CA trust staged at /run/awf-lib/trust/ca-certificates.crt (host store unchanged)
+2026-11-18T11:10:32.6055670Z [entrypoint] DNS configuration created in chroot (/host/etc/resolv.conf)
+2026-11-18T11:10:32.6344032Z [entrypoint] Running as host user: runner (UID: 1001)
+2026-11-18T11:10:32.6344932Z [entrypoint] Chroot working directory: /home/runner/work/charge-line-data/charge-line-data
+2026-11-18T11:10:32.6373965Z [entrypoint] Using host PATH for chroot
+2026-11-18T11:10:32.6404781Z [entrypoint] Adding JAVA_HOME/bin to PATH: /usr/lib/jvm/temurin-25-jdk-amd64/bin
+2026-11-18T11:10:32.6437018Z [entrypoint] DNS configuration will be removed on exit
+2026-11-18T11:10:32.6474760Z [entrypoint] Transferred /host/tmp/gh-aw ownership to chroot user (1001:1001)
+2026-11-18T11:10:33.1168613Z [threat-detect] run start: version=v0.5.3 engine=claude model=claude-sonnet-5-5 retries=0 max_turns=50 engine_timeout=5m0s
+2026-11-18T11:10:33.1176271Z [threat-detect] artifacts loaded: dir=/tmp/gh-aw/threat-detection-inputs prompt_bytes=24781 agent_output_bytes=2556 patch_files=2 all_primary_inputs_missing=false
+2026-11-18T11:10:33.1177501Z [threat-detect] artifact inventory (7 entries):
+2026-11-18T11:10:33.1178620Z [threat-detect]   agent_output.json bytes=2556 kind=file consumed=true
+2026-11-18T11:10:33.1179782Z [threat-detect]   aw-prompts/prompt-import-tree.json bytes=25957 kind=file consumed=true
+2026-11-18T11:10:33.1181140Z [threat-detect]   aw-prompts/prompt-template.txt bytes=21450 kind=file consumed=true
+2026-11-18T11:10:33.1182095Z [threat-detect]   aw-prompts/prompt.txt bytes=24781 kind=file consumed=true
+2026-11-18T11:10:33.1182939Z [threat-detect]   aw-suv4o-charge-line-data-prices-new-networks-2026-11-18.bundle bytes=1400 kind=file consumed=true
+2026-11-18T11:10:33.1183938Z [threat-detect]   aw-suv4o-charge-line-data-prices-new-networks-2026-11-18.patch bytes=6323 kind=file consumed=true
+2026-11-18T11:10:33.1184680Z [threat-detect]   aw_info.json bytes=1659 kind=file consumed=true
+2026-11-18T11:10:33.1186472Z [threat-detect] result destinations: output=/tmp/gh-aw/threat-detection/detection_result.json full_output=/tmp/gh-aw/threat-detection/detection_result_full.json
+2026-11-18T11:10:33.1190051Z Prompt context: workflow_name="Keep charging networks and prices current" (defaulted=false) workflow_description="Keeps charging networks and their typical prices current, and adds networks new to Australia." (defaulted=false) custom_prompt_applied=false custom_prompt_source=none custom_prompt_bytes=0
+2026-11-18T11:10:33.1193559Z [threat-detect] prompt built: prompt_bytes=103694 framework_scaffolding_detected=true framework_scaffolding_host_removed=false framework_scaffolding_markers=<safe-output-tools>, <github-context>
+2026-11-18T11:10:33.1195658Z [threat-detect] eligibility: prompt_injection=true secret_leak=true malicious_patch=true
+2026-11-18T11:10:33.1196620Z [threat-detect] detection attempt 1 of 1
+2026-11-18T11:10:33.1197915Z [threat-detect] engine invoke: engine=claude model="claude-sonnet-5-5" command="node (/opt/hostedtoolcache/node/24.22.2/x64/bin/node)" args=16
+2026-11-18T11:10:33.1200329Z [threat-detect] engine argv: "/home/runner/work/_temp/gh-aw/actions/claude_harness.cjs" "claude" "--print" "--verbose" "--output-format" "stream-json" "--permission-mode" "acceptEdits" "--allowed-tools" "Bash,Write,Edit,Read,Read(/tmp/*),Read(/tmp/gh-aw/*)" "--model" "claude-sonnet-5-5" "--max-turns" "50" "--prompt-file" "<prompt-file>"
+2026-11-18T11:10:33.2437977Z [engine] [claude-harness] 2026-11-18T11:10:33.237Z starting: command=claude maxRetries=0 initialDelayMs=5000 backoffMultiplier=2 maxDelayMs=60000 nodeVersion=v24.22.2 platform=linux
+2026-11-18T11:10:33.2442475Z [engine] [claude-harness] 2026-11-18T11:10:33.243Z resolved --prompt-file: path=/tmp/gh-aw-runtime-MkFrR4/threat-detect-prompt-1107258873.txt size=103694B
+2026-11-18T11:10:33.2447717Z [engine] [claude-harness] 2026-11-18T11:10:33.244Z awf-reflect: fetching http://api-proxy:10000/reflect (timeout=60000ms)
+2026-11-18T11:10:33.3714916Z [engine] [claude-harness] 2026-11-18T11:10:33.370Z awf-reflect: saved 35457B to /tmp/gh-aw/agent/awf-reflect.json
+2026-11-18T11:10:33.3738101Z [engine] [claude-harness] 2026-11-18T11:10:33.373Z model resolution: engine=claude role=main configured=claude-sonnet-5-5 resolved=claude-sonnet-5-5 provider=anthropic status=exact
+2026-11-18T11:10:33.3743048Z [engine] [claude-harness] 2026-11-18T11:10:33.373Z awf-reflect: provider=anthropic mapped to endpoint provider=anthropic baseUrl=http://api-proxy:10001
+2026-11-18T11:10:33.3746037Z [engine] [claude-harness] 2026-11-18T11:10:33.373Z configured ANTHROPIC_BASE_URL from /reflect for provider=anthropic: http://api-proxy:10001
+2026-11-18T11:10:33.3760461Z [engine] 
+2026-11-18T11:10:33.3762178Z [engine] [gh-aw-harness-attempt] {"event":"start","attempt_id":"harness:1","attempt":1}
+2026-11-18T11:10:33.3778473Z [engine] [claude-harness] 2026-11-18T11:10:33.377Z attempt 1: spawning: claude --print --verbose --output-format stream-json --permission-mode acceptEdits --allowed-tools Bash,Write,Edit,Read,Read(/tmp/*),Read(/tmp/gh-aw/*) --model claude-sonnet-5-5 --max-turns 50
+2026-11-18T11:10:33.3839063Z [engine] [claude-harness] 2026-11-18T11:10:33.383Z attempt 1: process started (pid=1876)
+2026-11-18T11:10:33.6950286Z [entrypoint] Unsetting sensitive tokens from parent shell environment...
+2026-11-18T11:10:33.6951026Z [entrypoint] Unset ANTHROPIC_AUTH_TOKEN from /proc/1/environ
+2026-11-18T11:10:33.7758405Z [engine] {"type":"system","subtype":"init","cwd":"/home/runner/work/charge-line-data/charge-line-data","session_id":"b99d34d2-290b-431b-8a6b-5db97c42ad05","tools":["Task","Bash","CronCreate","CronDelete","CronList","DesignSync","Edit","EnterWorktree","ExitWorktree","ListAgents","Monitor","NotebookEdit","Read","ReportFindings","ScheduleWakeup","SendMessage","Skill","TaskStop","ToolSearch","WebFetch","WebSearch","Workflow","Write"],"mcp_servers":[],"model":"claude-sonnet-5-5","permissionMode":"acceptEdits","slash_commands":["deep-research","design","design-sync","dataviz","update-config","verify","debug","code-review","simplify","batch","fewer-permission-prompts","doctor","loop","claude-api","workflow-authoring","run","run-skill-generator","plugin-authoring","agents","auto-mode-setup","autocompact","clear","color","compact","config","output-style","context","effort","fast","focus","heapdump","init","mcp","model","__remote-workflow","workflow-launch-exec","reload-plugins","reload-skills","rename","security-review","usage","insights","recap","goal","design-consent","design-revoke","list-agents","team-onboarding"],"terminal_slash_commands":["doctor","color","focus","reload-plugins"],"apiKeySource":"apiKeyHelper","claude_code_version":"2.1.317","output_style":"default","agents":["claude","Explore","general-purpose","Plan","statusline-setup"],"skills":["deep-research","design","design-sync","dataviz","update-config","verify","debug","code-review","simplify","batch","fewer-permission-prompts","doctor","loop","claude-api","workflow-authoring","run","run-skill-generator","plugin-authoring"],"plugins":[{"name":"cc-plugin-agents-md","path":"builtin","source":"cc-plugin-agents-md@builtin"},{"name":"cc-plugin-privacy","path":"builtin","source":"cc-plugin-privacy@builtin"},{"name":"cc-plugin-plugin-authoring","path":"builtin","source":"cc-plugin-plugin-authoring@builtin"}],"capabilities":["interrupt_receipt_v1","interrupt_cancel_queued_v1","interrupt_send_now_v1","interrupt_requeue_taken_v1","msg_lifecycle_v1","request_marker_lists_v1","ask_user_question_unanswered_v1","lifecycle_wakeup_source_v1","sdk_mcp_tools_list_changed","sdk_mcp_manifests","mcp_read_resource_v1","mcp_tool_ui_meta_v1","ui_surface_v1","mcp_call_result_not_for_model_v1"],"analytics_disabled":true,"product_feedback_disabled":false,"uuid":"d9df0a33-32dd-49b1-8d6c-e5a7ac753e2e","memory_paths":{"auto":"/home/runner/.claude/projects/-home-runner-work-charge-line-data-charge-line-data/memory/"},"original_cwd":"/home/runner/work/charge-line-data/charge-line-data","additional_directories":[],"messaging_socket_path":"/tmp/cc-socks-1001/1876.sock","fast_mode_state":"off","fast_mode_disabled_reason":"disabled_by_env","per_turn_effort_active":true,"ultrathink_available":false,"ultrathink_typed_raises":false,"view_mode":"default"}
+2026-11-18T11:10:35.7714675Z [engine] {"type":"assistant","message":{"model":"claude-sonnet-5-5","id":"msg_011ChAHquF4V6oHG7cbuFCBj","type":"message","role":"assistant","content":[{"type":"tool_use","id":"toolu_017Q5YRT5Z4PW8VHFrEDV6vu","name":"Read","input":{"file_path":"/tmp/gh-aw/threat-detection-inputs/aw-suv4o-charge-line-data-prices-new-networks-2026-11-18.patch"},"caller":{"type":"direct"}}],"container":null,"stop_reason":null,"stop_sequence":null,"stop_details":null,"usage":{"input_tokens":2,"cache_creation_input_tokens":53633,"cache_read_input_tokens":0,"cache_creation":{"ephemeral_5m_input_tokens":53633,"ephemeral_1h_input_tokens":0},"output_tokens":16,"service_tier":"standard","inference_geo":"global","speed":"standard"},"diagnostics":null,"context_management":null},"parent_tool_use_id":null,"session_id":"b99d34d2-290b-431b-8a6b-5db97c42ad05","uuid":"4827442d-3aed-43b7-b35b-63de4c919b17","timestamp":"2026-11-18T11:10:35.767Z","request_id":"req_011ChAHqtrjtR3Q5Nv841jwD"}
+2026-11-18T11:10:35.7939462Z [engine] {"type":"user","message":{"role":"user","content":[{"tool_use_id":"toolu_017Q5YRT5Z4PW8VHFrEDV6vu","type":"tool_result","content":"1\tFrom 413217be16bfd3aead0b07ac1096713438775358 Mon Sep 17 00:00:00 2001\n2\tX-GH-AW-Base-Commit: 18eb3dfb3c2b60267d25e7db772574388cb706c0\n3\tFrom: \"github-actions[bot]\" <github-actions[bot]@users.noreply.github.com>\n4\tDate: Wed, 18 Nov 2026 11:09:02 +0000\n5\tSubject: [PATCH] Prices: add Exploren, WA EV Network, Electrona, WeVolt; widen\n6\t Chargefox match\n7\t\n8\tCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\n9\t---\n10\t networks.json | 10 +++++++---\n11\t 1 file changed, 7 insertions(+), 3 deletions(-)\n12\t\n13\tdiff --git a/networks.json b/networks.json\n14\tindex 0f31133..7da5974 100644\n15\t--- a/networks.json\n16\t+++ b/networks.json\n17\t@@ -1,15 +1,19 @@\n18\t {\n19\t   \"schemaVersion\": 1,\n20\t-  \"updated\": \"2026-11-15\",\n21\t+  \"updated\": \"2026-11-18\",\n22\t   \"currency\": \"AUD\",\n23\t   \"other\": {\"fastPerKWh\": 0.65, \"slowPerKWh\": 0.4, \"source\": \"Typical Australian prices for a fast charger and an AC post on a network Charge Line doesn't list (Charge Line's charging price research, 27 October 2026)\"},\n24\t   \"networks\": [\n25\t     {\"id\": \"teslaSupercharger\", \"name\": \"Tesla Supercharger\", \"match\": [\"tesla\"], \"typicalPerKWh\": 0.65, \"teslaPerKWh\": 0.55, \"basis\": \"estimate\", \"siteReading\": \"blocked\", \"source\": \"Tesla prices each site by demand, shown in the Tesla app; a Supercharging Membership lowers the price for other EVs. tesla.com refuses automated readers.\", \"sourceUrl\": \"https://www.tesla.com/en_au/support/charging/supercharging\", \"checked\": \"2026-10-27\"},\n26\t     {\"id\": \"evie\", \"name\": \"Evie\", \"match\": [\"evie\"], \"typicalPerKWh\": 0.69, \"basis\": \"estimate\", \"siteReading\": \"allowed\", \"source\": \"Evie: about $0.40 at a 50 kW highway site to $0.75 ultra-fast in Melbourne; an Open Charge Map listing checked September 2026 says $0.62 at night and $0.71 by day. The site's prices are in the Evie app only. robots.txt asks for 10 seconds between requests.\", \"sourceUrl\": \"https://evie.com.au/faq/how-much-does-it-cost-to-charge/\", \"checked\": \"2026-10-27\"},\n27\t-    {\"id\": \"chargefox\", \"name\": \"Chargefox\", \"match\": [\"chargefox\"], \"typicalPerKWh\": 0.6, \"basis\": \"published\", \"siteReading\": \"forbidden\", \"source\": \"Chargefox: site owners set the price; fast DC is 40–60c per kWh on average (Chargefox). Drivers report $0.60–0.74 at DC sites. Its terms forbid robots and scrapers.\", \"checked\": \"2026-10-27\"},\n28\t+    {\"id\": \"chargefox\", \"name\": \"Chargefox\", \"match\": [\"chargefox\", \"yurika\", \"queensland electric super highway\", \"raa\", \"electric highway tasmania\"], \"typicalPerKWh\": 0.6, \"basis\": \"published\", \"siteReading\": \"forbidden\", \"source\": \"Chargefox: site owners set the price; fast DC is 40–60c per kWh on average (Chargefox). Drivers report $0.60–0.74 at DC sites. Its terms forbid robots and scrapers.\", \"checked\": \"2026-10-27\"},\n29\t     {\"id\": \"ampolAmpCharge\", \"name\": \"Ampol AmpCharge\", \"match\": [\"ampcharge\", \"ampol\"], \"typicalPerKWh\": 0.69, \"basis\": \"estimate\", \"siteReading\": \"unchecked\", \"source\": \"Ampol: prices vary by location, shown in the Ampol app; Open Charge Map listings say $0.60–0.75.\", \"sourceUrl\": \"https://ampcharge.ampol.com.au/policies/ampolcard-with-ev-charging-terms-and-conditions\", \"checked\": \"2026-10-27\"},\n30\t     {\"id\": \"bpPulse\", \"name\": \"BP Pulse\", \"match\": [\"bp pulse\", \"bppulse\"], \"typicalPerKWh\": 0.65, \"basis\": \"estimate\", \"siteReading\": \"blocked\", \"source\": \"bp pulse: pricing may vary between locations, some with peak and off-peak prices (bp pulse FAQs). bp's site refuses automated readers.\", \"sourceUrl\": \"https://www.bp.com/en_au/australia/home/products-services/bppulse/faqs.html\", \"checked\": \"2026-10-27\"},\n31\t     {\"id\": \"nrma\", \"name\": \"NRMA\", \"match\": [\"nrma\"], \"typicalPerKWh\": 0.79, \"basis\": \"published\", \"siteReading\": \"allowed\", \"source\": \"NRMA: priced by location, $0.69–0.99 a kWh in the My NRMA app, members 5c less. Its public table of site prices may be read but not copied into an app without NRMA's permission.\", \"sourceUrl\": \"https://www.mynrma.com.au/electric-vehicles/charging\", \"checked\": \"2026-10-27\"},\n32\t-    {\"id\": \"jolt\", \"name\": \"Jolt\", \"match\": [\"jolt\"], \"typicalPerKWh\": 0.45, \"freeKWhPerDay\": 7, \"basis\": \"estimate\", \"siteReading\": \"forbidden\", \"source\": \"Jolt: 7 kWh free a day at fast chargers, then paid; Open Charge Map listings say $0.40–0.46 after the free 7 kWh. Its terms forbid scraping.\", \"sourceUrl\": \"https://jolt.com.au/fair-use-policy\", \"checked\": \"2026-10-27\"}\n33\t+    {\"id\": \"jolt\", \"name\": \"Jolt\", \"match\": [\"jolt\"], \"typicalPerKWh\": 0.45, \"freeKWhPerDay\": 7, \"basis\": \"estimate\", \"siteReading\": \"forbidden\", \"source\": \"Jolt: 7 kWh free a day at fast chargers, then paid; Open Charge Map listings say $0.40–0.46 after the free 7 kWh. Its terms forbid scraping.\", \"sourceUrl\": \"https://jolt.com.au/fair-use-policy\", \"checked\": \"2026-10-27\"},\n34\t+    {\"id\": \"exploren\", \"name\": \"Exploren\", \"match\": [\"exploren\", \"engie\"], \"typicalPerKWh\": null, \"basis\": \"none\", \"siteReading\": \"forbidden\", \"source\": \"Exploren (which took over Engie's DC chargers in 2025): site owners set prices, shown in the Exploren app; third-party trackers range from about $0.30 to $1.04 a kWh, so no typical price is stated. Its terms forbid automated reading.\", \"checked\": \"2026-11-18\"},\n35\t+    {\"id\": \"waEvNetwork\", \"name\": \"WA EV Network\", \"match\": [\"wa ev network\", \"wa ev highway\", \"horizon power\"], \"typicalPerKWh\": 0.6, \"basis\": \"published\", \"siteReading\": \"unchecked\", \"source\": \"Horizon Power's pricing page, as returned by search on 18 November 2026 (the page itself refused an automated fetch): DC fast chargers 0.60 a kWh (shown as '0.60c'), AC 0.35, unchanged for 2026/27; $1 a minute idle fee on DC after 10 minutes at full charge. Horizon Power's early network FAQs give $0.60 DC and $0.35 AC.\", \"sourceUrl\": \"https://www.horizonpower.com.au/utilities/pricing/\", \"checked\": \"2026-11-18\"},\n36\t+    {\"id\": \"electrona\", \"name\": \"Electrona\", \"match\": [\"electrona\"], \"typicalPerKWh\": null, \"basis\": \"none\", \"siteReading\": \"unchecked\", \"source\": \"Electrona Tasmania: pay by card reader at the charger, no app. PlugShare lists Bicheno DC at $0.65 a kWh, but that is one site, so no typical price is stated.\", \"checked\": \"2026-11-18\"},\n37\t+    {\"id\": \"wevolt\", \"name\": \"WeVolt\", \"match\": [\"wevolt\"], \"typicalPerKWh\": null, \"basis\": \"none\", \"siteReading\": \"unchecked\", \"source\": \"WeVolt: third-party trackers give differing ranges (35–73c a kWh), so no typical price is stated.\", \"checked\": \"2026-11-18\"}\n38\t   ]\n39\t }\n40\t-- \n41\t2.54.0\n42\t\n43\t"}]},"parent_tool_use_id":null,"session_id":"b99d34d2-290b-431b-8a6b-5db97c42ad05","uuid":"d45d2753-3f5c-4326-9412-91f473b67ed2","timestamp":"2026-11-18T11:10:35.786Z","tool_use_result":{"type":"text","file":{"filePath":"/tmp/gh-aw/threat-detection-inputs/aw-suv4o-charge-line-data-prices-new-networks-2026-11-18.patch","content":"From 413217be16bfd3aead0b07ac1096713438775358 Mon Sep 17 00:00:00 2001\nX-GH-AW-Base-Commit: 18eb3dfb3c2b60267d25e7db772574388cb706c0\nFrom: \"github-actions[bot]\" <github-actions[bot]@users.noreply.github.com>\nDate: Wed, 18 Nov 2026 11:09:02 +0000\nSubject: [PATCH] Prices: add Exploren, WA EV Network, Electrona, WeVolt; widen\n Chargefox match\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\n---\n networks.json | 10 +++++++---\n 1 file changed, 7 insertions(+), 3 deletions(-)\n\ndiff --git a/networks.json b/networks.json\nindex 0f31133..7da5974 100644\n--- a/networks.json\n+++ b/networks.json\n@@ -1,15 +1,19 @@\n {\n   \"schemaVersion\": 1,\n-  \"updated\": \"2026-11-15\",\n+  \"updated\": \"2026-11-18\
+2026-11-18T11:10:35.7992317Z [engine] ",\n   \"currency\": \"AUD\",\n   \"other\": {\"fastPerKWh\": 0.65, \"slowPerKWh\": 0.4, \"source\": \"Typical Australian prices for a fast charger and an AC post on a network Charge Line doesn't list (Charge Line's charging price research, 27 October 2026)\"},\n   \"networks\": [\n     {\"id\": \"teslaSupercharger\", \"name\": \"Tesla Supercharger\", \"match\": [\"tesla\"], \"typicalPerKWh\": 0.65, \"teslaPerKWh\": 0.55, \"basis\": \"estimate\", \"siteReading\": \"blocked\", \"source\": \"Tesla prices each site by demand, shown in the Tesla app; a Supercharging Membership lowers the price for other EVs. tesla.com refuses automated readers.\", \"sourceUrl\": \"https://www.tesla.com/en_au/support/charging/supercharging\", \"checked\": \"2026-10-27\"},\n     {\"id\": \"evie\", \"name\": \"Evie\", \"match\": [\"evie\"], \"typicalPerKWh\": 0.69, \"basis\": \"estimate\", \"siteReading\": \"allowed\", \"source\": \"Evie: about $0.40 at a 50 kW highway site to $0.75 ultra-fast in Melbourne; an Open Charge Map listing checked September 2026 says $0.62 at night and $0.71 by day. The site's prices are in the Evie app only. robots.txt asks for 10 seconds between requests.\", \"sourceUrl\": \"https://evie.com.au/faq/how-much-does-it-cost-to-charge/\", \"checked\": \"2026-10-27\"},\n-    {\"id\": \"chargefox\", \"name\": \"Chargefox\", \"match\": [\"chargefox\"], \"typicalPerKWh\": 0.6, \"basis\": \"published\", \"siteReading\": \"forbidden\", \"source\": \"Chargefox: site owners set the price; fast DC is 40–60c per kWh on average (Chargefox). Drivers report $0.60–0.74 at DC sites. Its terms forbid robots and scrapers.\", \"checked\": \"2026-10-27\"},\n+    {\"id\": \"chargefox\", \"name\": \"Chargefox\", \"match\": [\"chargefox\", \"yurika\", \"queensland electric super highway\", \"raa\", \"electric highway tasmania\"], \"typicalPerKWh\": 0.6, \"basis\": \"published\", \"siteReading\": \"forbidden\", \"source\": \"Chargefox: site owners set the price; fast DC is 40–60c per kWh on average (Chargefox). Drivers report $0.60–0.74 at DC sites. Its terms forbid robots and scrapers.\", \"checked\": \"2026-10-27\"},\n     {\"id\": \"ampolAmpCharge\", \"name\": \"Ampol AmpCharge\", \"match\": [\"ampcharge\", \"ampol\"], \"typicalPerKWh\": 0.69, \"basis\": \"estimate\", \"siteReading\": \"unchecked\", \"source\": \"Ampol: prices vary by location, shown in the Ampol app; Open Charge Map listings say $0.60–0.75.\", \"sourceUrl\": \"https://ampcharge.ampol.com.au/policies/ampolcard-with-ev-charging-terms-and-conditions\", \"checked\": \"2026-10-27\"},\n     {\"id\": \"bpPulse\", \"name\": \"BP Pulse\", \"match\": [\"bp pulse\", \"bppulse\"], \"typicalPerKWh\": 0.65, \"basis\": \"estimate\", \"siteReading\": \"blocked\", \"source\": \"bp pulse: pricing may vary between locations, some with peak and off-peak prices (bp pulse FAQs). bp's site refuses automated readers.\", \"sourceUrl\": \"https://www.bp.com/en_au/australia/home/products-services/bppulse/faqs.html\", \"checked\": \"2026-10-27\"},\n     {\"id\": \"nrma\", \"name\": \"NRMA\", \"match\": [\"nrma\"], \"typicalPerKWh\": 0.79, \"basis\": \"published\", \"siteReading\": \"allowed\", \"source\": \"NRMA: priced by location, $0.69–0.99 a kWh in the My NRMA app, members 5c less. Its public table of site prices may be read but not copied into an app without NRMA's permission.\", \"sourceUrl\": \"https://www.mynrma.com.au/electric-vehicles/charging\", \"checked\": \"2026-10-27\"},\n-    {\"id\": \"jolt\", \"name\": \"Jolt\", \"match\": [\"jolt\"], \"typicalPerKWh\": 0.45, \"freeKWhPerDay\": 7, \"basis\": \"estimate\", \"siteReading\": \"forbidden\", \"source\": \"Jolt: 7 kWh free a day at fast chargers, then paid; Open Charge Map listings say $0.40–0.46 after the free 7 kWh. Its terms forbid scraping.\", \"sourceUrl\": \"https://jolt.com.au/fair-use-policy\", \"checked\": \"2026-10-27\"}\n+    {\"id\": \"jolt\", \"name\": \"Jolt\", \"match\": [\"jolt\"], \"typicalPerKWh\": 0.45, \"freeKWhPerDay\": 7, \"basis\": \"estimate\", \"siteReading\": \"forbidden\", \"source\": \"Jolt: 7 kWh free a day at fast chargers, then paid; Open Charge Map listings say $0.40–0.46 after the free 7 kWh. Its terms forbid scraping.\", \"sourceUrl\": \"https://jolt.com.au/fair-use-policy\", \"checked\": \"2026-10-27\"},\n+    {\"id\": \"exploren\", \"name\": \"Exploren\", \"match\": [\"exploren\", \"engie\"], \"typicalPerKWh\": null, \"basis\": \"none\", \"siteReading\": \"forbidden\", \"source\": \"Exploren (which took over Engie's DC chargers in 2025): site owners set prices, shown in the Exploren app; third-party trackers range from about $0.30 to $1.04 a kWh, so no typical price is stated. Its terms forbid automated reading.\", \"checked\": \"2026-11-18\"},\n+    {\"id\": \"waEvNetwork\", \"name\": \"WA EV Network\", \"match\": [\"wa ev network\", \"wa ev highway\", \"horizon power\"], \"typicalPerKWh\": 0.6, \"basis\": \"published\", \"siteReading\": \"unchecked\", \"source\": \"Horizon Power's pricing page, as returned by search on 18 November 2026 (the page itself refused an automated fetch): DC fast chargers 0.60 a kWh (shown as '0.60c'), AC 0.35, unchanged for 2026/27; $1 a minute idle fee on DC after 10 minutes at full charge. Horizon Power's early network FAQs give $0.60 DC and $0.35 AC.\", \"sourceUrl\": \"https://www.horizonpower.com.au/utilities/pricing/\", \"checked\": \"2026-11-18\"},\n+    {\"id\": \"electrona\", \"name\": \"Electrona\", \"match\": [\"electrona\"], \"typicalPerKWh\": null, \"basis\": \"none\", \"siteReading\": \"unchecked\", \"source\": \"Electrona Tasmania: pay by card reader at the charger, no app. PlugShare lists Bicheno DC at $0.65 a kWh, but that is one site, so no typical price is stated.\", \"checked\": \"2026-11-18\"},\n+    {\"id\": \"wevolt\", \"name\": \"WeVolt\", \"match\": [\"wevolt\"], \"typicalPerKWh\": null, \"basis\": \"none\", \"siteReading\": \"unchecked\", \"source\": \"WeVolt: third-party trackers give differing ranges (35–73c a kWh), so no typical price is stated.\", \"checked\": \"2026-11-18\"}\n   ]\n }\n-- \n2.54.0\n\n","numLines":43,"startLine":1,"totalLines":43}},"tool_result_meta":[{"id":"toolu_017Q5YRT5Z4PW8VHFrEDV6vu","permission_decision":{"decision":"accept","source":"config","reason_type":"rule"}}]}
+2026-11-18T11:10:36.4597240Z [engine] {"type":"assistant","message":{"model":"claude-sonnet-5-5","id":"msg_011ChAHquF4V6oHG7cbuFCBj","type":"message","role":"assistant","content":[{"type":"tool_use","id":"toolu_01XZTmt7iKYecbwaSAmq3GNf","name":"Read","input":{"file_path":"/tmp/gh-aw/threat-detection-inputs/agent_output.json"},"caller":{"type":"direct"}}],"container":null,"stop_reason":null,"stop_sequence":null,"stop_details":null,"usage":{"input_tokens":2,"cache_creation_input_tokens":53633,"cache_read_input_tokens":0,"cache_creation":{"ephemeral_5m_input_tokens":53633,"ephemeral_1h_input_tokens":0},"output_tokens":16,"service_tier":"standard","inference_geo":"global","speed":"standard"},"diagnostics":null,"context_management":null},"parent_tool_use_id":null,"session_id":"b99d34d2-290b-431b-8a6b-5db97c42ad05","uuid":"12a47bf0-ddcd-4b3f-ad8f-548c6e030efd","timestamp":"2026-11-18T11:10:36.455Z","request_id":"req_011ChAHqtrjtR3Q5Nv841jwD"}
+2026-11-18T11:10:36.4757396Z [engine] {"type":"user","message":{"role":"user","content":[{"tool_use_id":"toolu_01XZTmt7iKYecbwaSAmq3GNf","type":"tool_result","content":"1\t{\"items\":[{\"type\":\"create_pull_request\",\"output_id\":\"so_wmlyz2SpQm-T\",\"body\":\"Adds four networks and folds four operators into existing ones. Existing typical prices were not changed: I found no evidence that any has moved.\\n\\n| Change | Old | New | Source and figure |\\n|---|---|---|---|\\n| New network `waEvNetwork` (matches \\\"wa ev network\\\", \\\"wa ev highway\\\", \\\"horizon power\\\") | n/a | typical 0.60, published | Horizon Power pricing page, as returned by search: DC \\\"0.60c\\\" (read as $0.60) and AC 0.35, unchanged for 2026/27. The page refused my fetch (403), so I could not read it directly. Its early FAQs also say $0.60 DC. https://www.horizonpower.com.au/utilities/pricing/ |\\n| New network `exploren` (matches \\\"exploren\\\", \\\"engie\\\"), siteReading `forbidden` | n/a | typical null | Search results from several sites agree Exploren took over Engie's DC network in 2025. Third-party trackers give $0.30–1.04 a kWh, so no typical price. |\\n| New network `electrona` | n/a | typical null | One PlugShare listing says Bicheno DC $0.65, which is one site only. |\\n| New network `wevolt` | n/a | typical null | Trackers give differing ranges (35–73c). |\\n| Chargefox `match` gains \\\"yurika\\\", \\\"queensland electric super highway\\\" | n/a | n/a | yurika.com.au and a QESH summary say charging is through the Chargefox app. |\\n| Chargefox `match` gains \\\"raa\\\" | n/a | n/a | RAA's own site (raa.com.au/motor/motoring-services/ev-charging-stations): charge and pay in the Chargefox app. |\\n| Chargefox `match` gains \\\"electric highway tasmania\\\" | n/a | n/a | Search results say EHT uses Chargefox for billing. |\\n\\nChargefox's own typical price (0.60) was left as it is.\\n\\n**Not sure about**\\n- \\\"raa\\\" is a short substring and could match an unrelated site name. Worth a glance when the app's matching is checked.\\n- \\\"Charging the Regions\\\" (25 fast sites) looks like a council programme whose sites run through Chargefox or Evie, depending on the site. I left it undecided in memory.\\n- Woolworths is recorded as a site owner only.\\n- The Electric Highway Tasmania and Yurika/Chargefox links rest on search summaries rather than a page I could open, because the Yurika and RAA pages I tried by guessed URL returned 404.\\n- No network's `checked` date is more than six months old, so there is no issue to raise about stale prices.\\n\\n🤖 Generated with [Claude Code]((claude.com/redacted)\",\"branch\":\"prices/new-networks-2026-11-18\",\"title\":\"[prices] Add Exploren, WA EV Network, Electrona, WeVolt; Yurika, RAA, EHT join Chargefox\"}],\"errors\":[]}"}]},"parent_tool_use_id":null,"session_id":"b99d34d2-290b-431b-8a6b-5db97c42ad05","uuid":"4b14ea96-b6a4-4f13-9560-a52bc224714a","timestamp":"2026-11-18T11:10:36.469Z","tool_use_result":{"type":"text","file":{"filePath":"/tmp/gh-aw/threat-detection-inputs/agent_output.json","content":"{\"items\":[{\"type\":\"create_pull_request\",\"output_id\":\"so_wmlyz2SpQm-T\",\"body\":\"Adds four networks and folds four operators into existing ones. Existing typical prices were not changed: I found no evidence that any has moved.\\n\\n| Change | Old | New | Source and figure |\\n|---|---|---|---|\\n| New network `waEvNetwork` (matches \\\"wa ev network\\\", \\\"wa ev highway\\\", \\\"horizon power\\\") | n/a | typical 0.60, published | Horizon Power pricing page, as returned by search: DC \\\"0.60c\\\" (read as $0.60) and AC 0.35, unchanged for 2026/27. The page refused my fetch (403), so I could not read it directly. Its early FAQs also say $0.60 DC. https://www.horizonpower.com.au/utilities/pricing/ |\\n| New network `exploren` (matches \\\"exploren\\\", \\\"engie\\\"), siteReading `forbidden` | n/a | typical null | Search results from several sites agree Exploren took over Engie's DC network in 2025. Third-party trackers give $0.30–1.04 a kWh, so no typical price. |\\n| New network `electrona` | n/a | typical null | One PlugShare listing says Bicheno DC $0.65, which is one site only. |\\n| New network `wevolt` | n/a | typical null | Trackers give differing ranges (35–73c). |\\n| Chargefox `match` gains \\\"yurika\\\", \\\"queensland electric super highway\\\" | n/a | n/a | yurika.com.au and a QESH summary say charging is through the Chargefox app. |\\n| Chargefox `match` gains \\\"raa\\\" | n/a | n/a | RAA's own site (raa.com.au/motor/motoring-services/ev-charging-stations): charge and pay in the Chargefox app. |\\n| Chargefox `match` gains \\\"electric highway tasmania\\\" | n/a | n/a | Search results say EHT uses Chargefox for billing. |\\n\\nChargefox's own typical price (0.60) was left as it is.\\n\\n**Not sure about**\\n- \\\"raa\\\" is a short substring and could match an unrelated site name. Worth a glance when the app's matching is checked.\\n- \\\"Charging the Regions\\\" (25 fast sites) looks like a council programme whose sites run through Chargefox or Evie, depending on the site. I left it undecided in memory.\\n- Woolworths is recorded as a site owner only.\\n- The Electric Highway Tasmania and Yurika/Chargefox links rest on search summaries rather than a page I could open, because the Yurika and RAA pages I tried by guessed URL returned 404.\\n- No network's `checked` date is more than six months old, so there is no issue to raise about stale prices.\\n\\n🤖 Generated with [Claude Code]((claude.com/redacted)\",\"branch\":\"prices/new-networks-2026-11-18\",\"title\":\"[prices] Add Exploren, WA EV Network, Electrona, WeVolt; Yurika, RAA, EHT join Chargefox\"}],\"errors\":[]}","numLines":1,"startLine":1,"totalLines":1}},"tool_result_meta":[{"id":"toolu_01XZTmt7iKYecbwaSAmq3GNf","permission_decision":{"decision":"accept","source":"config","reason_type":"rule"}}]}
+2026-11-18T11:10:37.5501351Z [engine] {"type":"assistant","message":{"model":"claude-sonnet-5-5","id":"msg_011ChAHr6NHJrXE1tWtxdRMQ","type":"message","role":"assistant","content":[{"type":"text","text":"Benign data edit."}],"container":null,"stop_reason":null,"stop_sequence":null,"stop_details":null,"usage":{"input_tokens":2,"cache_creation_input_tokens":4278,"cache_read_input_tokens":53633,"cache_creation":{"ephemeral_5m_input_tokens":4278,"ephemeral_1h_input_tokens":0},"output_tokens":28,"service_tier":"standard","inference_geo":"global","speed":"standard"},"diagnostics":null,"context_management":null},"parent_tool_use_id":null,"session_id":"b99d34d2-290b-431b-8a6b-5db97c42ad05","uuid":"58b86417-8ae7-441f-a56a-c999b92b200b","timestamp":"2026-11-18T11:10:37.547Z","request_id":"req_011ChAHr679oq1YrxKSH4wy8"}
+2026-11-18T11:10:37.7915553Z [engine] {"type":"assistant","message":{"model":"claude-sonnet-5-5","id":"msg_011ChAHr6NHJrXE1tWtxdRMQ","type":"message","role":"assistant","content":[{"type":"tool_use","id":"toolu_014BcC7jxnvSk59cz793K7PV","name":"Bash","input":{"command":"threat_detection_result --prompt-injection false --secret-leak false --malicious-patch false"},"caller":{"type":"direct"}}],"container":null,"stop_reason":null,"stop_sequence":null,"stop_details":null,"usage":{"input_tokens":2,"cache_creation_input_tokens":4278,"cache_read_input_tokens":53633,"cache_creation":{"ephemeral_5m_input_tokens":4278,"ephemeral_1h_input_tokens":0},"output_tokens":28,"service_tier":"standard","inference_geo":"global","speed":"standard"},"diagnostics":null,"context_management":null},"parent_tool_use_id":null,"session_id":"b99d34d2-290b-431b-8a6b-5db97c42ad05","uuid":"7699d0a2-1aba-4f35-90f2-da58890de98a","timestamp":"2026-11-18T11:10:37.785Z","request_id":"req_011ChAHr679oq1YrxKSH4wy8"}
+2026-11-18T11:10:37.8290641Z [engine] {"type":"user","message":{"role":"user","content":[{"tool_use_id":"toolu_014BcC7jxnvSk59cz793K7PV","type":"tool_result","content":"THREAT_DETECTION_RESULT_RECORDED: analysis complete; stop now and produce no further output.","is_error":false}]},"parent_tool_use_id":null,"session_id":"b99d34d2-290b-431b-8a6b-5db97c42ad05","uuid":"86f6e738-cf53-4642-9ac1-d7381d94d3dd","timestamp":"2026-11-18T11:10:37.826Z","tool_use_result":{"stdout":"THREAT_DETECTION_RESULT_RECORDED: analysis complete; stop now and produce no further output.","stderr":"","interrupted":false,"isImage":false,"noOutputExpected":false},"tool_result_meta":[{"id":"toolu_014BcC7jxnvSk59cz793K7PV","permission_decision":{"decision":"accept","source":"config","reason_type":"rule"}}]}
+2026-11-18T11:10:37.8777293Z [threat-detect] attempt 1 outcome=recorded
+2026-11-18T11:10:37.8778996Z [threat-detect] full result written: path=/tmp/gh-aw/threat-detection/detection_result_full.json reasons=0 warnings=0
+2026-11-18T11:10:37.8780482Z THREAT_DETECTION_STATUS: reason=result_recorded exit=0
+2026-11-18T11:10:37.8828232Z [entrypoint] Relaxed /host/tmp/gh-aw group permissions for host-side post-processing
+2026-11-18T11:10:38.2489616Z [INFO] Stopping containers...
+2026-11-18T11:10:38.4132880Z  Container awf-agent Stopping 
+2026-11-18T11:10:38.4137412Z  Container awf-agent Stopped 
+2026-11-18T11:10:38.4138335Z  Container awf-agent Removing 
+2026-11-18T11:10:38.4435841Z  Container awf-agent Removed 
+2026-11-18T11:10:38.4436776Z  Container awf-api-proxy Stopping 
+2026-11-18T11:10:38.5228973Z  Container awf-api-proxy Stopped 
+2026-11-18T11:10:38.5241056Z  Container awf-api-proxy Removing 
+2026-11-18T11:10:38.5311189Z  Container awf-api-proxy Removed 
+2026-11-18T11:10:38.5311946Z  Container awf-squid Stopping 
+2026-11-18T11:10:39.6607045Z  Container awf-squid Stopped 
+2026-11-18T11:10:39.6607728Z  Container awf-squid Removing 
+2026-11-18T11:10:39.6684380Z  Container awf-squid Removed 
+2026-11-18T11:10:39.6690072Z  Network awf-net Removing 
+2026-11-18T11:10:39.6690843Z  Network awf-nj0zkx_awf-ext Removing 
+2026-11-18T11:10:39.7216385Z  Network awf-nj0zkx_awf-ext Removed 
+2026-11-18T11:10:39.7459107Z  Network awf-net Removed 
+2026-11-18T11:10:39.8507637Z [SUCCESS] Containers stopped successfully
+2026-11-18T11:10:39.8518079Z [INFO] API proxy logs available at: /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs
+2026-11-18T11:10:39.8519750Z [INFO] Token usage log available at: /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T11:10:39.8575906Z [INFO] CLI proxy logs available at: /tmp/gh-aw/sandbox/firewall/logs/cli-proxy-logs
+2026-11-18T11:10:39.8671527Z [INFO] Squid logs available at: /tmp/gh-aw/sandbox/firewall/logs
+2026-11-18T11:10:39.8720222Z [INFO] Audit artifacts available at: /tmp/gh-aw/sandbox/firewall/audit
+2026-11-18T11:10:40.2397631Z [SUCCESS] Command completed successfully
+2026-11-18T11:10:40.2398830Z Process exiting with code: 0
+2026-11-18T11:10:40.2551336Z ##[group]Run mkdir -p /tmp/gh-aw/threat-detection/sandbox/firewall
+2026-11-18T11:10:40.2551859Z [36;1mmkdir -p /tmp/gh-aw/threat-detection/sandbox/firewall[0m
+2026-11-18T11:10:40.2552802Z [36;1mif [ -d /tmp/gh-aw/sandbox/firewall/logs ]; then mkdir -p /tmp/gh-aw/threat-detection/sandbox/firewall/logs && cp -r /tmp/gh-aw/sandbox/firewall/logs/. /tmp/gh-aw/threat-detection/sandbox/firewall/logs/; fi[0m
+2026-11-18T11:10:40.2554253Z [36;1mif [ -d /tmp/gh-aw/sandbox/firewall/audit ]; then mkdir -p /tmp/gh-aw/threat-detection/sandbox/firewall/audit && cp -r /tmp/gh-aw/sandbox/firewall/audit/. /tmp/gh-aw/threat-detection/sandbox/firewall/audit/; fi[0m
+2026-11-18T11:10:40.2603186Z shell: /usr/bin/bash -e {0}
+2026-11-18T11:10:40.2603461Z env:
+2026-11-18T11:10:40.2603678Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:10:40.2603965Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:10:40.2604245Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:10:40.2605418Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:10:40.2606316Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:10:40.2606586Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:10:40.2606834Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:10:40.2607122Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:10:40.2607440Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:10:40.2607697Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:10:40.2607991Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:10:40.2608364Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:10:40.2608688Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:10:40.2609018Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-11-18T11:10:40.2609370Z   GH_AW_RUNTIME_TMP_DIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:10:40.2609695Z   GH_AW_RUNTIME_TMP_ID: 2049:7781103:1001
+2026-11-18T11:10:40.2609995Z   TMPDIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:10:40.2610424Z   AWF_TOKEN_USAGE_LOG: /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T11:10:40.2610885Z ##[endgroup]
+2026-11-18T11:10:40.2852244Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-18T11:10:40.2852680Z with:
+2026-11-18T11:10:40.2854490Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'redact_secrets.cjs'));
+const { persistDetectionMasks } = require(path.join(actionsDir, 'detection_mask_state.cjs'));
+await main({ additionalDirectories: ["/tmp/gh-aw/threat-detection/sandbox/firewall"], persistDetectionMasks });
+
+2026-11-18T11:10:40.2859609Z   github-token: ***
+2026-11-18T11:10:40.2859877Z   debug: false
+2026-11-18T11:10:40.2860121Z   user-agent: actions/github-script
+2026-11-18T11:10:40.2860408Z   result-encoding: json
+2026-11-18T11:10:40.2860643Z   retries: 0
+2026-11-18T11:10:40.2860920Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-18T11:10:40.2861227Z env:
+2026-11-18T11:10:40.2861441Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:10:40.2861734Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:10:40.2862021Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:10:40.2862894Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:10:40.2863764Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:10:40.2864031Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:10:40.2864285Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:10:40.2864574Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:10:40.2864887Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:10:40.2865449Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:10:40.2865763Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:10:40.2866205Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:10:40.2880711Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:10:40.2881340Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-11-18T11:10:40.2881766Z   GH_AW_RUNTIME_TMP_DIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:10:40.2882117Z   GH_AW_RUNTIME_TMP_ID: 2049:7781103:1001
+2026-11-18T11:10:40.2882414Z   TMPDIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:10:40.2882865Z   AWF_TOKEN_USAGE_LOG: /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T11:10:40.2883418Z   GH_AW_SECRET_NAMES: GH_AW_DEFAULT_OTLP_ENDPOINT,GH_AW_DEFAULT_OTLP_HEADERS
+2026-11-18T11:10:40.2883827Z   SECRET_GH_AW_DEFAULT_OTLP_ENDPOINT: 
+2026-11-18T11:10:40.2884114Z   SECRET_GH_AW_DEFAULT_OTLP_HEADERS: 
+2026-11-18T11:10:40.2884385Z ##[endgroup]
+2026-11-18T11:10:40.5348028Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-18T11:10:40.5348722Z with:
+2026-11-18T11:10:40.5350767Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'parse_token_usage.cjs'));
+await main();
+
+2026-11-18T11:10:40.5357355Z   github-token: ***
+2026-11-18T11:10:40.5357761Z   debug: false
+2026-11-18T11:10:40.5358147Z   user-agent: actions/github-script
+2026-11-18T11:10:40.5358641Z   result-encoding: json
+2026-11-18T11:10:40.5359035Z   retries: 0
+2026-11-18T11:10:40.5359458Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-18T11:10:40.5359974Z env:
+2026-11-18T11:10:40.5360334Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:10:40.5360788Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:10:40.5361279Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:10:40.5362758Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:10:40.5364281Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:10:40.5364721Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:10:40.5365321Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:10:40.5366046Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:10:40.5366582Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:10:40.5367022Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:10:40.5367541Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:10:40.5368157Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:10:40.5368723Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:10:40.5369295Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-11-18T11:10:40.5369911Z   GH_AW_RUNTIME_TMP_DIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:10:40.5370482Z   GH_AW_RUNTIME_TMP_ID: 2049:7781103:1001
+2026-11-18T11:10:40.5370998Z   TMPDIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:10:40.5371737Z   AWF_TOKEN_USAGE_LOG: /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T11:10:40.5372631Z   GH_AW_TOKEN_USAGE_SUMMARY_TITLE: Threat Detection Token Usage
+2026-11-18T11:10:40.5373231Z   GH_AW_PHASE: detection
+2026-11-18T11:10:40.5373813Z   GH_AW_AGENT_USAGE_PATH: /tmp/gh-aw/threat-detection/detection_usage.json
+2026-11-18T11:10:40.5374695Z   GH_AW_AGENT_USAGE_JSONL_PATH: /tmp/gh-aw/threat-detection/detection_usage.jsonl
+2026-11-18T11:10:40.5375640Z   GH_AW_WRITE_EMPTY_USAGE: true
+2026-11-18T11:10:40.5376074Z ##[endgroup]
+2026-11-18T11:10:40.6842930Z Parsing token usage from 1 file(s): /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl (1232 bytes)
+2026-11-18T11:10:40.7179285Z Threat Detection Token Usage
+2026-11-18T11:10:40.7179766Z 
+2026-11-18T11:10:40.7180911Z # | Alias | Input | Output | Cache Read | Cache Write | ΔAI Credits | AI Credits | Duration 
+2026-11-18T11:10:40.7181719Z 
+2026-11-18T11:10:40.7182222Z  1 | sonnet55 | 2 | 171 | 0 | 53,633 | 13.57965 | 13.57965 | 2.6s 
+2026-11-18T11:10:40.7183139Z  2 | sonnet55 | 2 | 84 | 53,633 | 4,278 | 1.69023 | 15.26988 | 1.3s 
+2026-11-18T11:10:40.7183822Z  Total |  | 4 | 255 | 53,633 | 57,911 |  | 15.26988 | 3.9s 
+2026-11-18T11:10:40.7184199Z 
+2026-11-18T11:10:40.7185926Z Legend: `Alias` shows the model shorthand used in the table. `ΔAI Credits` is the per-request cost, and `AI Credits` is the running total mirrored from AWF fields for reporting.
+2026-11-18T11:10:40.7187256Z Token usage summary appended to step summary
+2026-11-18T11:10:40.7200203Z Primary model: claude-sonnet-5-5
+2026-11-18T11:10:40.7201094Z AI Credits: 15.26988
+2026-11-18T11:10:40.7202227Z Ambient context: 5365
+2026-11-18T11:10:40.7392662Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-18T11:10:40.7393098Z with:
+2026-11-18T11:10:40.7394910Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'redact_secrets.cjs'));
+const { persistDetectionMasks } = require(path.join(actionsDir, 'detection_mask_state.cjs'));
+await main({ additionalDirectories: ["/tmp/gh-aw/threat-detection/sandbox/firewall"], persistDetectionMasks });
+
+2026-11-18T11:10:40.7399324Z   github-token: ***
+2026-11-18T11:10:40.7399555Z   debug: false
+2026-11-18T11:10:40.7399788Z   user-agent: actions/github-script
+2026-11-18T11:10:40.7400069Z   result-encoding: json
+2026-11-18T11:10:40.7400301Z   retries: 0
+2026-11-18T11:10:40.7400571Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-18T11:10:40.7400875Z env:
+2026-11-18T11:10:40.7401089Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:10:40.7401359Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:10:40.7401922Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:10:40.7403710Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:10:40.7405447Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:10:40.7405896Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:10:40.7406319Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:10:40.7407041Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:10:40.7407567Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:10:40.7408000Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:10:40.7408499Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:10:40.7409148Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:10:40.7409722Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:10:40.7410295Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-11-18T11:10:40.7410869Z   GH_AW_RUNTIME_TMP_DIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:10:40.7411425Z   GH_AW_RUNTIME_TMP_ID: 2049:7781103:1001
+2026-11-18T11:10:40.7411932Z   TMPDIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:10:40.7412686Z   AWF_TOKEN_USAGE_LOG: /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T11:10:40.7413488Z   GH_AW_PRIMARY_MODEL: claude-sonnet-5-5
+2026-11-18T11:10:40.7413973Z   GH_AW_AIC: 15.26988
+2026-11-18T11:10:40.7414383Z   GH_AW_AMBIENT_CONTEXT: 5365
+2026-11-18T11:10:40.7415188Z   GH_AW_SECRET_NAMES: GH_AW_DEFAULT_OTLP_ENDPOINT,GH_AW_DEFAULT_OTLP_HEADERS
+2026-11-18T11:10:40.7415912Z   SECRET_GH_AW_DEFAULT_OTLP_ENDPOINT: 
+2026-11-18T11:10:40.7416402Z   SECRET_GH_AW_DEFAULT_OTLP_HEADERS: 
+2026-11-18T11:10:40.7416836Z ##[endgroup]
+2026-11-18T11:10:40.9870165Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-18T11:10:40.9870822Z with:
+2026-11-18T11:10:40.9872013Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'render_detection_log.cjs'));
+await main();
+
+2026-11-18T11:10:40.9875682Z   github-token: ***
+2026-11-18T11:10:40.9875934Z   debug: false
+2026-11-18T11:10:40.9876167Z   user-agent: actions/github-script
+2026-11-18T11:10:40.9876458Z   result-encoding: json
+2026-11-18T11:10:40.9876853Z   retries: 0
+2026-11-18T11:10:40.9877106Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-18T11:10:40.9877417Z env:
+2026-11-18T11:10:40.9877627Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:10:40.9877894Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:10:40.9878183Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:10:40.9879039Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:10:40.9879904Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:10:40.9880158Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:10:40.9880412Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:10:40.9880697Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:10:40.9881004Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:10:40.9881258Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:10:40.9881554Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:10:40.9881934Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:10:40.9882251Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:10:40.9882585Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-11-18T11:10:40.9882929Z   GH_AW_RUNTIME_TMP_DIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:10:40.9883249Z   GH_AW_RUNTIME_TMP_ID: 2049:7781103:1001
+2026-11-18T11:10:40.9883536Z   TMPDIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:10:40.9883962Z   AWF_TOKEN_USAGE_LOG: /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T11:10:40.9884422Z   GH_AW_PRIMARY_MODEL: claude-sonnet-5-5
+2026-11-18T11:10:40.9884715Z   GH_AW_AIC: 15.26988
+2026-11-18T11:10:40.9884943Z   GH_AW_AMBIENT_CONTEXT: 5365
+2026-11-18T11:10:40.9885390Z ##[endgroup]
+2026-11-18T11:10:41.1014438Z ##[group]Detection Log
+2026-11-18T11:10:41.1022979Z ::stop-commands::***
+2026-11-18T11:10:41.1024089Z [INFO] Auto-detected DNS servers from /run/systemd/resolve/resolv.conf: 168.63.129.16
+2026-11-18T11:10:41.1027870Z [WARN] --mount provides filesystem visibility, not engine file scope. Grant the sandbox-visible input directory to the engine subprocess (e.g. Copilot --add-dir). Use --input-dir for a sandbox readability preflight. Detectors must fail closed on empty or unreadable inputs; AWF does not verify engine input access or verdicts.
+2026-11-18T11:10:41.1030286Z [INFO] Agent timeout set to 10 minutes
+2026-11-18T11:10:41.1031621Z [WARN] ⚠️  Using --env-all: All host environment variables will be passed to container
+2026-11-18T11:10:41.1032846Z [WARN]    This may expose sensitive credentials if logs or configs are shared
+2026-11-18T11:10:41.1034208Z [INFO] API proxy enabled: OpenAI=false, Anthropic=true (wif), Copilot=false, Gemini=false, Vertex=false
+2026-11-18T11:10:41.1035420Z [INFO] Allowed domains: 
+2026-11-18T11:10:41.1036541Z [INFO] Network-isolation mode: enforcing egress via Docker network topology (no host iptables, no sudo).
+2026-11-18T11:10:41.1037608Z [INFO] Generating configuration files...
+2026-11-18T11:10:41.1038671Z [INFO] API proxy sidecar enabled - API keys will be held securely in sidecar container
+2026-11-18T11:10:41.1039809Z [INFO] API proxy will route through Squid to respect domain whitelisting
+2026-11-18T11:10:41.1040489Z [INFO] Starting containers...
+2026-11-18T11:10:41.1041320Z  Network awf-nj0zkx_awf-ext Creating 
+2026-11-18T11:10:41.1041866Z  Network awf-nj0zkx_awf-ext Created 
+2026-11-18T11:10:41.1042407Z  Network awf-net Creating 
+2026-11-18T11:10:41.1042849Z  Network awf-net Created 
+2026-11-18T11:10:41.1043332Z  Container awf-squid Creating 
+2026-11-18T11:10:41.1043799Z  Container awf-squid Created 
+2026-11-18T11:10:41.1044306Z  Container awf-api-proxy Creating 
+2026-11-18T11:10:41.1044936Z  Container awf-api-proxy Created 
+2026-11-18T11:10:41.1045808Z  Container awf-agent Creating 
+2026-11-18T11:10:41.1046359Z  Container awf-agent Created 
+2026-11-18T11:10:41.1046933Z  Container awf-squid Starting 
+2026-11-18T11:10:41.1047902Z  Container awf-squid Started 
+2026-11-18T11:10:41.1048630Z  Container awf-squid Waiting 
+2026-11-18T11:10:41.1049397Z  Container awf-squid Healthy 
+2026-11-18T11:10:41.1070698Z  Container awf-api-proxy Starting 
+2026-11-18T11:10:41.1071249Z  Container awf-api-proxy Started 
+2026-11-18T11:10:41.1071624Z  Container awf-api-proxy Waiting 
+2026-11-18T11:10:41.1071955Z  Container awf-squid Waiting 
+2026-11-18T11:10:41.1072245Z  Container awf-squid Healthy 
+2026-11-18T11:10:41.1072551Z  Container awf-api-proxy Healthy 
+2026-11-18T11:10:41.1072853Z  Container awf-agent Starting 
+2026-11-18T11:10:41.1073139Z  Container awf-agent Started 
+2026-11-18T11:10:41.1073498Z [SUCCESS] Containers started successfully
+2026-11-18T11:10:41.1073854Z [INFO] Executing agent command...
+2026-11-18T11:10:41.1074181Z [INFO] Agent timeout: 10 minutes
+2026-11-18T11:10:41.1074585Z [entrypoint] Agentic Workflow Firewall - Agent Container
+2026-11-18T11:10:41.1075010Z [entrypoint] ==================================
+2026-11-18T11:10:41.1076573Z [entrypoint] Configuring DNS...
+2026-11-18T11:10:41.1077243Z [entrypoint] DNS configured with Docker embedded DNS (127.0.0.11) only
+2026-11-18T11:10:41.1077931Z [entrypoint] iptables-init skipped (proxy-based egress): skipping init container wait
+2026-11-18T11:10:41.1078481Z [health-check] API Proxy Pre-flight Check
+2026-11-18T11:10:41.1078914Z [health-check] ==========================================
+2026-11-18T11:10:41.1079393Z [health-check] Checking Anthropic API proxy configuration...
+2026-11-18T11:10:41.1080130Z [health-check] ✓ Anthropic credentials NOT in agent environment (correct)
+2026-11-18T11:10:41.1080786Z [health-check] ✓ ANTHROPIC_AUTH_TOKEN is placeholder value (correct)
+2026-11-18T11:10:41.1081449Z [health-check] Testing connectivity to Anthropic API proxy at http://172.30.0.30:10001...
+2026-11-18T11:10:41.1082238Z [health-check] ✓ Anthropic API proxy is reachable at http://172.30.0.30:10001
+2026-11-18T11:10:41.1082771Z [health-check] ==========================================
+2026-11-18T11:10:41.1083247Z [health-check] ✓ All API proxy health checks passed
+2026-11-18T11:10:41.1083946Z [health-check] ✓ Credential isolation verified
+2026-11-18T11:10:41.1084373Z [health-check] ✓ Connectivity established
+2026-11-18T11:10:41.1084769Z [health-check] ==========================================
+2026-11-18T11:10:41.1086165Z [entrypoint] Claude Code API key helper configured: /usr/local/bin/get-claude-key.sh
+2026-11-18T11:10:41.1087070Z [entrypoint] Creating /host/home/runner/.claude.json with apiKeyHelper...
+2026-11-18T11:10:41.1087954Z [entrypoint] ✓ Created /host/home/runner/.claude.json with apiKeyHelper: /usr/local/bin/get-claude-key.sh
+2026-11-18T11:10:41.1088719Z [entrypoint] Creating /host/home/runner/.claude/settings.json with apiKeyHelper...
+2026-11-18T11:10:41.1089608Z [entrypoint] ✓ Created /host/home/runner/.claude/settings.json with apiKeyHelper: /usr/local/bin/get-claude-key.sh
+2026-11-18T11:10:41.1090394Z [entrypoint] Pre-seeding JVM build tool proxy configuration (squid-proxy:3128)...
+2026-11-18T11:10:41.1091114Z [entrypoint] ✓ Created Maven proxy config (/host/home/runner/.m2/settings.xml)
+2026-11-18T11:10:41.1091843Z [entrypoint] ✓ Created Gradle proxy config (/host/home/runner/.gradle/gradle.properties)
+2026-11-18T11:10:41.1092526Z [entrypoint] ✓ Set JAVA_TOOL_OPTIONS with proxy and nonProxyHosts flags
+2026-11-18T11:10:41.1093210Z [entrypoint] Proxy configuration:
+2026-11-18T11:10:41.1093626Z [entrypoint]   HTTP_PROXY=http://172.30.0.10:3128
+2026-11-18T11:10:41.1094061Z [entrypoint]   HTTPS_PROXY=http://172.30.0.10:3128
+2026-11-18T11:10:41.1094456Z [entrypoint] Network information:
+2026-11-18T11:10:41.1094801Z [entrypoint]   IP address: 172.30.0.20 
+2026-11-18T11:10:41.1095538Z [entrypoint]   Hostname: 22507065233a
+2026-11-18T11:10:41.1095924Z [entrypoint] ==================================
+2026-11-18T11:10:41.1096446Z [entrypoint] Chroot mode enabled - dropping CAP_SYS_CHROOT and CAP_SYS_ADMIN
+2026-11-18T11:10:41.1096987Z [entrypoint] Switching to awfuser (UID: 1001, GID: 1001)
+2026-11-18T11:10:41.1099772Z [entrypoint] Executing command: /bin/bash -c /bin/bash -c 'set +o histexpand; : "${RUNNER_TOOL_CACHE:?RUNNER_TOOL_CACHE must be set}"; GH_AW_TOOL_CACHE="$RUNNER_TOOL_CACHE"; GH_AW_TOOL_BINS="$(find "$GH_AW_TOOL_CACHE" -maxdepth 5 -type d -name bin 2>/dev/null | tr "\n" ":")"; GH_AW_TOOL_BINS="${GH_AW_TOOL_BINS%:}"; export PATH="$PATH${GH_AW_TOOL_BINS:+:}$GH_AW_TOOL_BINS"; [ -n "$GOROOT" ] && export PATH="$GOROOT/bin:$PATH" || true; [ -n "$ERLANG_HOME" ] && export PATH="$ERLANG_HOME/bin:$PATH" || true && threat-detect --engine claude --output /tmp/gh-aw/threat-detection/detection_result.json /tmp/gh-aw/threat-detection-inputs'
+2026-11-18T11:10:41.1101782Z 
+2026-11-18T11:10:41.1102078Z [entrypoint] Chroot mode: running command inside host filesystem (/host)
+2026-11-18T11:10:41.1102684Z [entrypoint] Mounted procfs at /host/proc (nosuid,nodev,noexec,hidepid=2)
+2026-11-18T11:10:41.1103741Z [entrypoint] Bind-mounted container cgroup subtree at /host/sys/fs/cgroup (ro)
+2026-11-18T11:10:41.1104948Z [entrypoint] One-shot token library copied to chroot at /run/awf-lib/one-shot-token.so
+2026-11-18T11:10:41.1107390Z [entrypoint] Chromium/Playwright runtime libraries staged for chroot at /host/run/awf-lib/browser-libs
+2026-11-18T11:10:41.1108698Z [entrypoint] Claude key helper copied to chroot at /run/awf-lib/get-claude-key.sh
+2026-11-18T11:10:41.1109924Z [entrypoint] ✓ Updated apiKeyHelper path in /host/home/runner/.claude.json
+2026-11-18T11:10:41.1111149Z [entrypoint] ✓ Updated apiKeyHelper path in /host/home/runner/.claude/settings.json
+2026-11-18T11:10:41.1112514Z [entrypoint] Filtered host CA trust staged at /run/awf-lib/trust/ca-certificates.crt (host store unchanged)
+2026-11-18T11:10:41.1113758Z [entrypoint] DNS configuration created in chroot (/host/etc/resolv.conf)
+2026-11-18T11:10:41.1114648Z [entrypoint] Running as host user: runner (UID: 1001)
+2026-11-18T11:10:41.1115865Z [entrypoint] Chroot working directory: /home/runner/work/charge-line-data/charge-line-data
+2026-11-18T11:10:41.1116805Z [entrypoint] Using host PATH for chroot
+2026-11-18T11:10:41.1117933Z [entrypoint] Adding JAVA_HOME/bin to PATH: /usr/lib/jvm/temurin-25-jdk-amd64/bin
+2026-11-18T11:10:41.1118870Z [entrypoint] DNS configuration will be removed on exit
+2026-11-18T11:10:41.1119849Z [entrypoint] Transferred /host/tmp/gh-aw ownership to chroot user (1001:1001)
+2026-11-18T11:10:41.1121327Z [threat-detect] run start: version=v0.5.3 engine=claude model=claude-sonnet-5-5 retries=0 max_turns=50 engine_timeout=5m0s
+2026-11-18T11:10:41.1123404Z [threat-detect] artifacts loaded: dir=/tmp/gh-aw/threat-detection-inputs prompt_bytes=24781 agent_output_bytes=2556 patch_files=2 all_primary_inputs_missing=false
+2026-11-18T11:10:41.1124740Z [threat-detect] artifact inventory (7 entries):
+2026-11-18T11:10:41.1125809Z [threat-detect]   agent_output.json bytes=2556 kind=file consumed=true
+2026-11-18T11:10:41.1126895Z [threat-detect]   aw-prompts/prompt-import-tree.json bytes=25957 kind=file consumed=true
+2026-11-18T11:10:41.1128067Z [threat-detect]   aw-prompts/prompt-template.txt bytes=21450 kind=file consumed=true
+2026-11-18T11:10:41.1129253Z [threat-detect]   aw-prompts/prompt.txt bytes=24781 kind=file consumed=true
+2026-11-18T11:10:41.1130743Z [threat-detect]   aw-suv4o-charge-line-data-prices-new-networks-2026-11-18.bundle bytes=1400 kind=file consumed=true
+2026-11-18T11:10:41.1132682Z [threat-detect]   aw-suv4o-charge-line-data-prices-new-networks-2026-11-18.patch bytes=6323 kind=file consumed=true
+2026-11-18T11:10:41.1133898Z [threat-detect]   aw_info.json bytes=1659 kind=file consumed=true
+2026-11-18T11:10:41.1135809Z [threat-detect] result destinations: output=/tmp/gh-aw/threat-detection/detection_result.json full_output=/tmp/gh-aw/threat-detection/detection_result_full.json
+2026-11-18T11:10:41.1139334Z Prompt context: workflow_name="Keep charging networks and prices current" (defaulted=false) workflow_description="Keeps charging networks and their typical prices current, and adds networks new to Australia." (defaulted=false) custom_prompt_applied=false custom_prompt_source=none custom_prompt_bytes=0
+2026-11-18T11:10:41.1142149Z [threat-detect] prompt built: prompt_bytes=103694 framework_scaffolding_detected=true framework_scaffolding_host_removed=false framework_scaffolding_markers=<safe-output-tools>, <github-context>
+2026-11-18T11:10:41.1143277Z [threat-detect] eligibility: prompt_injection=true secret_leak=true malicious_patch=true
+2026-11-18T11:10:41.1143819Z [threat-detect] detection attempt 1 of 1
+2026-11-18T11:10:41.1144621Z [threat-detect] engine invoke: engine=claude model="claude-sonnet-5-5" command="node (/opt/hostedtoolcache/node/24.22.2/x64/bin/node)" args=16
+2026-11-18T11:10:41.1147572Z [threat-detect] engine argv: "/home/runner/work/_temp/gh-aw/actions/claude_harness.cjs" "claude" "--print" "--verbose" "--output-format" "stream-json" "--permission-mode" "acceptEdits" "--allowed-tools" "Bash,Write,Edit,Read,Read(/tmp/*),Read(/tmp/gh-aw/*)" "--model" "claude-sonnet-5-5" "--max-turns" "50" "--prompt-file" "<prompt-file>"
+2026-11-18T11:10:41.1149535Z [engine] [claude-harness] 2026-11-18T11:10:33.237Z starting: command=claude maxRetries=0 initialDelayMs=5000 backoffMultiplier=2 maxDelayMs=60000 nodeVersion=v24.22.2 platform=linux
+2026-11-18T11:10:41.1150868Z [engine] [claude-harness] 2026-11-18T11:10:33.243Z resolved --prompt-file: path=/tmp/gh-aw-runtime-MkFrR4/threat-detect-prompt-1107258873.txt size=103694B
+2026-11-18T11:10:41.1151960Z [engine] [claude-harness] 2026-11-18T11:10:33.244Z awf-reflect: fetching http://api-proxy:10000/reflect (timeout=60000ms)
+2026-11-18T11:10:41.1152875Z [engine] [claude-harness] 2026-11-18T11:10:33.370Z awf-reflect: saved 35457B to /tmp/gh-aw/agent/awf-reflect.json
+2026-11-18T11:10:41.1154063Z [engine] [claude-harness] 2026-11-18T11:10:33.373Z model resolution: engine=claude role=main configured=claude-sonnet-5-5 resolved=claude-sonnet-5-5 provider=anthropic status=exact
+2026-11-18T11:10:41.1155813Z [engine] [claude-harness] 2026-11-18T11:10:33.373Z awf-reflect: provider=anthropic mapped to endpoint provider=anthropic baseUrl=http://api-proxy:10001
+2026-11-18T11:10:41.1157432Z [engine] [claude-harness] 2026-11-18T11:10:33.373Z configured ANTHROPIC_BASE_URL from /reflect for provider=anthropic: http://api-proxy:10001
+2026-11-18T11:10:41.1158060Z [engine] 
+2026-11-18T11:10:41.1158543Z [engine] [gh-aw-harness-attempt] {"event":"start","attempt_id":"harness:1","attempt":1}
+2026-11-18T11:10:41.1160031Z [engine] [claude-harness] 2026-11-18T11:10:33.377Z attempt 1: spawning: claude --print --verbose --output-format stream-json --permission-mode acceptEdits --allowed-tools Bash,Write,Edit,Read,Read(/tmp/*),Read(/tmp/gh-aw/*) --model claude-sonnet-5-5 --max-turns 50
+2026-11-18T11:10:41.1161313Z [engine] [claude-harness] 2026-11-18T11:10:33.383Z attempt 1: process started (pid=1876)
+2026-11-18T11:10:41.1161963Z [entrypoint] Unsetting sensitive tokens from parent shell environment...
+2026-11-18T11:10:41.1162516Z [entrypoint] Unset ANTHROPIC_AUTH_TOKEN from /proc/1/environ
+2026-11-18T11:10:41.1175722Z [engine] {"type":"system","subtype":"init","cwd":"/home/runner/work/charge-line-data/charge-line-data","session_id":"b99d34d2-290b-431b-8a6b-5db97c42ad05","tools":["Task","Bash","CronCreate","CronDelete","CronList","DesignSync","Edit","EnterWorktree","ExitWorktree","ListAgents","Monitor","NotebookEdit","Read","ReportFindings","ScheduleWakeup","SendMessage","Skill","TaskStop","ToolSearch","WebFetch","WebSearch","Workflow","Write"],"mcp_servers":[],"model":"claude-sonnet-5-5","permissionMode":"acceptEdits","slash_commands":["deep-research","design","design-sync","dataviz","update-config","verify","debug","code-review","simplify","batch","fewer-permission-prompts","doctor","loop","claude-api","workflow-authoring","run","run-skill-generator","plugin-authoring","agents","auto-mode-setup","autocompact","clear","color","compact","config","output-style","context","effort","fast","focus","heapdump","init","mcp","model","__remote-workflow","workflow-launch-exec","reload-plugins","reload-skills","rename","security-review","usage","insights","recap","goal","design-consent","design-revoke","list-agents","team-onboarding"],"terminal_slash_commands":["doctor","color","focus","reload-plugins"],"apiKeySource":"apiKeyHelper","claude_code_version":"2.1.317","output_style":"default","agents":["claude","Explore","general-purpose","Plan","statusline-setup"],"skills":["deep-research","design","design-sync","dataviz","update-config","verify","debug","code-review","simplify","batch","fewer-permission-prompts","doctor","loop","claude-api","workflow-authoring","run","run-skill-generator","plugin-authoring"],"plugins":[{"name":"cc-plugin-agents-md","path":"builtin","source":"cc-plugin-agents-md@builtin"},{"name":"cc-plugin-privacy","path":"builtin","source":"cc-plugin-privacy@builtin"},{"name":"cc-plugin-plugin-authoring","path":"builtin","source":"cc-plugin-plugin-authoring@builtin"}],"capabilities":["interrupt_receipt_v1","interrupt_cancel_queued_v1","interrupt_send_now_v1","interrupt_requeue_taken_v1","msg_lifecycle_v1","request_marker_lists_v1","ask_user_question_unanswered_v1","lifecycle_wakeup_source_v1","sdk_mcp_tools_list_changed","sdk_mcp_manifests","mcp_read_resource_v1","mcp_tool_ui_meta_v1","ui_surface_v1","mcp_call_result_not_for_model_v1"],"analytics_disabled":true,"product_feedback_disabled":false,"uuid":"d9df0a33-32dd-49b1-8d6c-e5a7ac753e2e","memory_paths":{"auto":"/home/runner/.claude/projects/-home-runner-work-charge-line-data-charge-line-data/memory/"},"original_cwd":"/home/runner/work/charge-line-data/charge-line-data","additional_directories":[],"messaging_socket_path":"/tmp/cc-socks-1001/1876.sock","fast_mode_state":"off","fast_mode_disabled_reason":"disabled_by_env","per_turn_effort_active":true,"ultrathink_available":false,"ultrathink_typed_raises":false,"view_mode":"default"}
+2026-11-18T11:10:41.1189579Z [engine] {"type":"assistant","message":{"model":"claude-sonnet-5-5","id":"msg_011ChAHquF4V6oHG7cbuFCBj","type":"message","role":"assistant","content":[{"type":"tool_use","id":"toolu_017Q5YRT5Z4PW8VHFrEDV6vu","name":"Read","input":{"file_path":"/tmp/gh-aw/threat-detection-inputs/aw-suv4o-charge-line-data-prices-new-networks-2026-11-18.patch"},"caller":{"type":"direct"}}],"container":null,"stop_reason":null,"stop_sequence":null,"stop_details":null,"usage":{"input_tokens":2,"cache_creation_input_tokens":53633,"cache_read_input_tokens":0,"cache_creation":{"ephemeral_5m_input_tokens":53633,"ephemeral_1h_input_tokens":0},"output_tokens":16,"service_tier":"standard","inference_geo":"global","speed":"standard"},"diagnostics":null,"context_management":null},"parent_tool_use_id":null,"session_id":"b99d34d2-290b-431b-8a6b-5db97c42ad05","uuid":"4827442d-3aed-43b7-b35b-63de4c919b17","timestamp":"2026-11-18T11:10:35.767Z","request_id":"req_011ChAHqtrjtR3Q5Nv841jwD"}
+2026-11-18T11:10:41.1237733Z [engine] {"type":"user","message":{"role":"user","content":[{"tool_use_id":"toolu_017Q5YRT5Z4PW8VHFrEDV6vu","type":"tool_result","content":"1\tFrom 413217be16bfd3aead0b07ac1096713438775358 Mon Sep 17 00:00:00 2001\n2\tX-GH-AW-Base-Commit: 18eb3dfb3c2b60267d25e7db772574388cb706c0\n3\tFrom: \"github-actions[bot]\" <github-actions[bot]@users.noreply.github.com>\n4\tDate: Wed, 18 Nov 2026 11:09:02 +0000\n5\tSubject: [PATCH] Prices: add Exploren, WA EV Network, Electrona, WeVolt; widen\n6\t Chargefox match\n7\t\n8\tCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\n9\t---\n10\t networks.json | 10 +++++++---\n11\t 1 file changed, 7 insertions(+), 3 deletions(-)\n12\t\n13\tdiff --git a/networks.json b/networks.json\n14\tindex 0f31133..7da5974 100644\n15\t--- a/networks.json\n16\t+++ b/networks.json\n17\t@@ -1,15 +1,19 @@\n18\t {\n19\t   \"schemaVersion\": 1,\n20\t-  \"updated\": \"2026-11-15\",\n21\t+  \"updated\": \"2026-11-18\",\n22\t   \"currency\": \"AUD\",\n23\t   \"other\": {\"fastPerKWh\": 0.65, \"slowPerKWh\": 0.4, \"source\": \"Typical Australian prices for a fast charger and an AC post on a network Charge Line doesn't list (Charge Line's charging price research, 27 October 2026)\"},\n24\t   \"networks\": [\n25\t     {\"id\": \"teslaSupercharger\", \"name\": \"Tesla Supercharger\", \"match\": [\"tesla\"], \"typicalPerKWh\": 0.65, \"teslaPerKWh\": 0.55, \"basis\": \"estimate\", \"siteReading\": \"blocked\", \"source\": \"Tesla prices each site by demand, shown in the Tesla app; a Supercharging Membership lowers the price for other EVs. tesla.com refuses automated readers.\", \"sourceUrl\": \"https://www.tesla.com/en_au/support/charging/supercharging\", \"checked\": \"2026-10-27\"},\n26\t     {\"id\": \"evie\", \"name\": \"Evie\", \"match\": [\"evie\"], \"typicalPerKWh\": 0.69, \"basis\": \"estimate\", \"siteReading\": \"allowed\", \"source\": \"Evie: about $0.40 at a 50 kW highway site to $0.75 ultra-fast in Melbourne; an Open Charge Map listing checked September 2026 says $0.62 at night and $0.71 by day. The site's prices are in the Evie app only. robots.txt asks for 10 seconds between requests.\", \"sourceUrl\": \"https://evie.com.au/faq/how-much-does-it-cost-to-charge/\", \"checked\": \"2026-10-27\"},\n27\t-    {\"id\": \"chargefox\", \"name\": \"Chargefox\", \"match\": [\"chargefox\"], \"typicalPerKWh\": 0.6, \"basis\": \"published\", \"siteReading\": \"forbidden\", \"source\": \"Chargefox: site owners set the price; fast DC is 40–60c per kWh on average (Chargefox). Drivers report $0.60–0.74 at DC sites. Its terms forbid robots and scrapers.\", \"checked\": \"2026-10-27\"},\n28\t+    {\"id\": \"chargefox\", \"name\": \"Chargefox\", \"match\": [\"chargefox\", \"yurika\", \"queensland electric super highway\", \"raa\", \"electric highway tasmania\"], \"typicalPerKWh\": 0.6, \"basis\": \"published\", \"siteReading\": \"forbidden\", \"source\": \"Chargefox: site owners set the price; fast DC is 40–60c per kWh on average (Chargefox). Drivers report $0.60–0.74 at DC sites. Its terms forbid robots and scrapers.\", \"checked\": \"2026-10-27\"},\n29\t     {\"id\": \"ampolAmpCharge\", \"name\": \"Ampol AmpCharge\", \"match\": [\"ampcharge\", \"ampol\"], \"typicalPerKWh\": 0.69, \"basis\": \"estimate\", \"siteReading\": \"unchecked\", \"source\": \"Ampol: prices vary by location, shown in the Ampol app; Open Charge Map listings say $0.60–0.75.\", \"sourceUrl\": \"https://ampcharge.ampol.com.au/policies/ampolcard-with-ev-charging-terms-and-conditions\", \"checked\": \"2026-10-27\"},\n30\t     {\"id\": \"bpPulse\", \"name\": \"BP Pulse\", \"match\": [\"bp pulse\", \"bppulse\"], \"typicalPerKWh\": 0.65, \"basis\": \"estimate\", \"siteReading\": \"blocked\", \"source\": \"bp pulse: pricing may vary between locations, some with peak and off-peak prices (bp pulse FAQs). bp's site refuses automated readers.\", \"sourceUrl\": \"https://www.bp.com/en_au/australia/home/products-services/bppulse/faqs.html\", \"checked\": \"2026-10-27\"},\n31\t     {\"id\": \"nrma\", \"name\": \"NRMA\", \"match\": [\"nrma\"], \"typicalPerKWh\": 0.79, \"basis\": \"published\", \"siteReading\": \"allowed\", \"source\": \"NRMA: priced by location, $0.69–0.99 a kWh in the My NRMA app, members 5c less. Its public table of site prices may be read but not copied into an app without NRMA's permission.\", \"sourceUrl\": \"https://www.mynrma.com.au/electric-vehicles/charging\", \"checked\": \"2026-10-27\"},\n32\t-    {\"id\": \"jolt\", \"name\": \"Jolt\", \"match\": [\"jolt\"], \"typicalPerKWh\": 0.45, \"freeKWhPerDay\": 7, \"basis\": \"estimate\", \"siteReading\": \"forbidden\", \"source\": \"Jolt: 7 kWh free a day at fast chargers, then paid; Open Charge Map listings say $0.40–0.46 after the free 7 kWh. Its terms forbid scraping.\", \"sourceUrl\": \"https://jolt.com.au/fair-use-policy\", \"checked\": \"2026-10-27\"}\n33\t+    {\"id\": \"jolt\", \"name\": \"Jolt\", \"match\": [\"jolt\"], \"typicalPerKWh\": 0.45, \"freeKWhPerDay\": 7, \"basis\": \"estimate\", \"siteReading\": \"forbidden\", \"source\": \"Jolt: 7 kWh free a day at fast chargers, then paid; Open Charge Map listings say $0.40–0.46 after the free 7 kWh. Its terms forbid scraping.\", \"sourceUrl\": \"https://jolt.com.au/fair-use-policy\", \"checked\": \"2026-10-27\"},\n34\t+    {\"id\": \"exploren\", \"name\": \"Exploren\", \"match\": [\"exploren\", \"engie\"], \"typicalPerKWh\": null, \"basis\": \"none\", \"siteReading\": \"forbidden\", \"source\": \"Exploren (which took over Engie's DC chargers in 2025): site owners set prices, shown in the Exploren app; third-party trackers range from about $0.30 to $1.04 a kWh, so no typical price is stated. Its terms forbid automated reading.\", \"checked\": \"2026-11-18\"},\n35\t+    {\"id\": \"waEvNetwork\", \"name\": \"WA EV Network\", \"match\": [\"wa ev network\", \"wa ev highway\", \"horizon power\"], \"typicalPerKWh\": 0.6, \"basis\": \"published\", \"siteReading\": \"unchecked\", \"source\": \"Horizon Power's pricing page, as returned by search on 18 November 2026 (the page itself refused an automated fetch): DC fast chargers 0.60 a kWh (shown as '0.60c'), AC 0.35, unchanged for 2026/27; $1 a minute idle fee on DC after 10 minutes at full charge. Horizon Power's early network FAQs give $0.60 DC and $0.35 AC.\", \"sourceUrl\": \"https://www.horizonpower.com.au/utilities/pricing/\", \"checked\": \"2026-11-18\"},\n36\t+    {\"id\": \"electrona\", \"name\": \"Electrona\", \"match\": [\"electrona\"], \"typicalPerKWh\": null, \"basis\": \"none\", \"siteReading\": \"unchecked\", \"source\": \"Electrona Tasmania: pay by card reader at the charger, no app. PlugShare lists Bicheno DC at $0.65 a kWh, but that is one site, so no typical price is stated.\", \"checked\": \"2026-11-18\"},\n37\t+    {\"id\": \"wevolt\", \"name\": \"WeVolt\", \"match\": [\"wevolt\"], \"typicalPerKWh\": null, \"basis\": \"none\", \"siteReading\": \"unchecked\", \"source\": \"WeVolt: third-party trackers give differing ranges (35–73c a kWh), so no typical price is stated.\", \"checked\": \"2026-11-18\"}\n38\t   ]\n39\t }\n40\t-- \n41\t2.54.0\n42\t\n43\t"}]},"parent_tool_use_id":null,"session_id":"b99d34d2-290b-431b-8a6b-5db97c42ad05","uuid":"d45d2753-3f5c-4326-9412-91f473b67ed2","timestamp":"2026-11-18T11:10:35.786Z","tool_use_result":{"type":"text","file":{"filePath":"/tmp/gh-aw/threat-detection-inputs/aw-suv4o-charge-line-data-prices-new-networks-2026-11-18.patch","content":"From 413217be16bfd3aead0b07ac1096713438775358 Mon Sep 17 00:00:00 2001\nX-GH-AW-Base-Commit: 18eb3dfb3c2b60267d25e7db772574388cb706c0\nFrom: \"github-actions[bot]\" <github-actions[bot]@users.noreply.github.com>\nDate: Wed, 18 Nov 2026 11:09:02 +0000\nSubject: [PATCH] Prices: add Exploren, WA EV Network, Electrona, WeVolt; widen\n Chargefox match\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\n---\n networks.json | 10 +++++++---\n 1 file changed, 7 insertions(+), 3 deletions(-)\n\ndiff --git a/networks.json b/networks.json\nindex 0f31133..7da5974 100644\n--- a/networks.json\n+++ b/networks.json\n@@ -1,15 +1,19 @@\n {\n   \"schemaVersion\": 1,\n-  \"updated\": \"2026-11-15\",\n+  \"updated\": \"2026-11-18\
+2026-11-18T11:10:41.1308456Z [engine] ",\n   \"currency\": \"AUD\",\n   \"other\": {\"fastPerKWh\": 0.65, \"slowPerKWh\": 0.4, \"source\": \"Typical Australian prices for a fast charger and an AC post on a network Charge Line doesn't list (Charge Line's charging price research, 27 October 2026)\"},\n   \"networks\": [\n     {\"id\": \"teslaSupercharger\", \"name\": \"Tesla Supercharger\", \"match\": [\"tesla\"], \"typicalPerKWh\": 0.65, \"teslaPerKWh\": 0.55, \"basis\": \"estimate\", \"siteReading\": \"blocked\", \"source\": \"Tesla prices each site by demand, shown in the Tesla app; a Supercharging Membership lowers the price for other EVs. tesla.com refuses automated readers.\", \"sourceUrl\": \"https://www.tesla.com/en_au/support/charging/supercharging\", \"checked\": \"2026-10-27\"},\n     {\"id\": \"evie\", \"name\": \"Evie\", \"match\": [\"evie\"], \"typicalPerKWh\": 0.69, \"basis\": \"estimate\", \"siteReading\": \"allowed\", \"source\": \"Evie: about $0.40 at a 50 kW highway site to $0.75 ultra-fast in Melbourne; an Open Charge Map listing checked September 2026 says $0.62 at night and $0.71 by day. The site's prices are in the Evie app only. robots.txt asks for 10 seconds between requests.\", \"sourceUrl\": \"https://evie.com.au/faq/how-much-does-it-cost-to-charge/\", \"checked\": \"2026-10-27\"},\n-    {\"id\": \"chargefox\", \"name\": \"Chargefox\", \"match\": [\"chargefox\"], \"typicalPerKWh\": 0.6, \"basis\": \"published\", \"siteReading\": \"forbidden\", \"source\": \"Chargefox: site owners set the price; fast DC is 40–60c per kWh on average (Chargefox). Drivers report $0.60–0.74 at DC sites. Its terms forbid robots and scrapers.\", \"checked\": \"2026-10-27\"},\n+    {\"id\": \"chargefox\", \"name\": \"Chargefox\", \"match\": [\"chargefox\", \"yurika\", \"queensland electric super highway\", \"raa\", \"electric highway tasmania\"], \"typicalPerKWh\": 0.6, \"basis\": \"published\", \"siteReading\": \"forbidden\", \"source\": \"Chargefox: site owners set the price; fast DC is 40–60c per kWh on average (Chargefox). Drivers report $0.60–0.74 at DC sites. Its terms forbid robots and scrapers.\", \"checked\": \"2026-10-27\"},\n     {\"id\": \"ampolAmpCharge\", \"name\": \"Ampol AmpCharge\", \"match\": [\"ampcharge\", \"ampol\"], \"typicalPerKWh\": 0.69, \"basis\": \"estimate\", \"siteReading\": \"unchecked\", \"source\": \"Ampol: prices vary by location, shown in the Ampol app; Open Charge Map listings say $0.60–0.75.\", \"sourceUrl\": \"https://ampcharge.ampol.com.au/policies/ampolcard-with-ev-charging-terms-and-conditions\", \"checked\": \"2026-10-27\"},\n     {\"id\": \"bpPulse\", \"name\": \"BP Pulse\", \"match\": [\"bp pulse\", \"bppulse\"], \"typicalPerKWh\": 0.65, \"basis\": \"estimate\", \"siteReading\": \"blocked\", \"source\": \"bp pulse: pricing may vary between locations, some with peak and off-peak prices (bp pulse FAQs). bp's site refuses automated readers.\", \"sourceUrl\": \"https://www.bp.com/en_au/australia/home/products-services/bppulse/faqs.html\", \"checked\": \"2026-10-27\"},\n     {\"id\": \"nrma\", \"name\": \"NRMA\", \"match\": [\"nrma\"], \"typicalPerKWh\": 0.79, \"basis\": \"published\", \"siteReading\": \"allowed\", \"source\": \"NRMA: priced by location, $0.69–0.99 a kWh in the My NRMA app, members 5c less. Its public table of site prices may be read but not copied into an app without NRMA's permission.\", \"sourceUrl\": \"https://www.mynrma.com.au/electric-vehicles/charging\", \"checked\": \"2026-10-27\"},\n-    {\"id\": \"jolt\", \"name\": \"Jolt\", \"match\": [\"jolt\"], \"typicalPerKWh\": 0.45, \"freeKWhPerDay\": 7, \"basis\": \"estimate\", \"siteReading\": \"forbidden\", \"source\": \"Jolt: 7 kWh free a day at fast chargers, then paid; Open Charge Map listings say $0.40–0.46 after the free 7 kWh. Its terms forbid scraping.\", \"sourceUrl\": \"https://jolt.com.au/fair-use-policy\", \"checked\": \"2026-10-27\"}\n+    {\"id\": \"jolt\", \"name\": \"Jolt\", \"match\": [\"jolt\"], \"typicalPerKWh\": 0.45, \"freeKWhPerDay\": 7, \"basis\": \"estimate\", \"siteReading\": \"forbidden\", \"source\": \"Jolt: 7 kWh free a day at fast chargers, then paid; Open Charge Map listings say $0.40–0.46 after the free 7 kWh. Its terms forbid scraping.\", \"sourceUrl\": \"https://jolt.com.au/fair-use-policy\", \"checked\": \"2026-10-27\"},\n+    {\"id\": \"exploren\", \"name\": \"Exploren\", \"match\": [\"exploren\", \"engie\"], \"typicalPerKWh\": null, \"basis\": \"none\", \"siteReading\": \"forbidden\", \"source\": \"Exploren (which took over Engie's DC chargers in 2025): site owners set prices, shown in the Exploren app; third-party trackers range from about $0.30 to $1.04 a kWh, so no typical price is stated. Its terms forbid automated reading.\", \"checked\": \"2026-11-18\"},\n+    {\"id\": \"waEvNetwork\", \"name\": \"WA EV Network\", \"match\": [\"wa ev network\", \"wa ev highway\", \"horizon power\"], \"typicalPerKWh\": 0.6, \"basis\": \"published\", \"siteReading\": \"unchecked\", \"source\": \"Horizon Power's pricing page, as returned by search on 18 November 2026 (the page itself refused an automated fetch): DC fast chargers 0.60 a kWh (shown as '0.60c'), AC 0.35, unchanged for 2026/27; $1 a minute idle fee on DC after 10 minutes at full charge. Horizon Power's early network FAQs give $0.60 DC and $0.35 AC.\", \"sourceUrl\": \"https://www.horizonpower.com.au/utilities/pricing/\", \"checked\": \"2026-11-18\"},\n+    {\"id\": \"electrona\", \"name\": \"Electrona\", \"match\": [\"electrona\"], \"typicalPerKWh\": null, \"basis\": \"none\", \"siteReading\": \"unchecked\", \"source\": \"Electrona Tasmania: pay by card reader at the charger, no app. PlugShare lists Bicheno DC at $0.65 a kWh, but that is one site, so no typical price is stated.\", \"checked\": \"2026-11-18\"},\n+    {\"id\": \"wevolt\", \"name\": \"WeVolt\", \"match\": [\"wevolt\"], \"typicalPerKWh\": null, \"basis\": \"none\", \"siteReading\": \"unchecked\", \"source\": \"WeVolt: third-party trackers give differing ranges (35–73c a kWh), so no typical price is stated.\", \"checked\": \"2026-11-18\"}\n   ]\n }\n-- \n2.54.0\n\n","numLines":43,"startLine":1,"totalLines":43}},"tool_result_meta":[{"id":"toolu_017Q5YRT5Z4PW8VHFrEDV6vu","permission_decision":{"decision":"accept","source":"config","reason_type":"rule"}}]}
+2026-11-18T11:10:41.1335480Z [engine] {"type":"assistant","message":{"model":"claude-sonnet-5-5","id":"msg_011ChAHquF4V6oHG7cbuFCBj","type":"message","role":"assistant","content":[{"type":"tool_use","id":"toolu_01XZTmt7iKYecbwaSAmq3GNf","name":"Read","input":{"file_path":"/tmp/gh-aw/threat-detection-inputs/agent_output.json"},"caller":{"type":"direct"}}],"container":null,"stop_reason":null,"stop_sequence":null,"stop_details":null,"usage":{"input_tokens":2,"cache_creation_input_tokens":53633,"cache_read_input_tokens":0,"cache_creation":{"ephemeral_5m_input_tokens":53633,"ephemeral_1h_input_tokens":0},"output_tokens":16,"service_tier":"standard","inference_geo":"global","speed":"standard"},"diagnostics":null,"context_management":null},"parent_tool_use_id":null,"session_id":"b99d34d2-290b-431b-8a6b-5db97c42ad05","uuid":"12a47bf0-ddcd-4b3f-ad8f-548c6e030efd","timestamp":"2026-11-18T11:10:36.455Z","request_id":"req_011ChAHqtrjtR3Q5Nv841jwD"}
+2026-11-18T11:10:41.1384957Z [engine] {"type":"user","message":{"role":"user","content":[{"tool_use_id":"toolu_01XZTmt7iKYecbwaSAmq3GNf","type":"tool_result","content":"1\t{\"items\":[{\"type\":\"create_pull_request\",\"output_id\":\"so_wmlyz2SpQm-T\",\"body\":\"Adds four networks and folds four operators into existing ones. Existing typical prices were not changed: I found no evidence that any has moved.\\n\\n| Change | Old | New | Source and figure |\\n|---|---|---|---|\\n| New network `waEvNetwork` (matches \\\"wa ev network\\\", \\\"wa ev highway\\\", \\\"horizon power\\\") | n/a | typical 0.60, published | Horizon Power pricing page, as returned by search: DC \\\"0.60c\\\" (read as $0.60) and AC 0.35, unchanged for 2026/27. The page refused my fetch (403), so I could not read it directly. Its early FAQs also say $0.60 DC. https://www.horizonpower.com.au/utilities/pricing/ |\\n| New network `exploren` (matches \\\"exploren\\\", \\\"engie\\\"), siteReading `forbidden` | n/a | typical null | Search results from several sites agree Exploren took over Engie's DC network in 2025. Third-party trackers give $0.30–1.04 a kWh, so no typical price. |\\n| New network `electrona` | n/a | typical null | One PlugShare listing says Bicheno DC $0.65, which is one site only. |\\n| New network `wevolt` | n/a | typical null | Trackers give differing ranges (35–73c). |\\n| Chargefox `match` gains \\\"yurika\\\", \\\"queensland electric super highway\\\" | n/a | n/a | yurika.com.au and a QESH summary say charging is through the Chargefox app. |\\n| Chargefox `match` gains \\\"raa\\\" | n/a | n/a | RAA's own site (raa.com.au/motor/motoring-services/ev-charging-stations): charge and pay in the Chargefox app. |\\n| Chargefox `match` gains \\\"electric highway tasmania\\\" | n/a | n/a | Search results say EHT uses Chargefox for billing. |\\n\\nChargefox's own typical price (0.60) was left as it is.\\n\\n**Not sure about**\\n- \\\"raa\\\" is a short substring and could match an unrelated site name. Worth a glance when the app's matching is checked.\\n- \\\"Charging the Regions\\\" (25 fast sites) looks like a council programme whose sites run through Chargefox or Evie, depending on the site. I left it undecided in memory.\\n- Woolworths is recorded as a site owner only.\\n- The Electric Highway Tasmania and Yurika/Chargefox links rest on search summaries rather than a page I could open, because the Yurika and RAA pages I tried by guessed URL returned 404.\\n- No network's `checked` date is more than six months old, so there is no issue to raise about stale prices.\\n\\n🤖 Generated with [Claude Code]((claude.com/redacted)\",\"branch\":\"prices/new-networks-2026-11-18\",\"title\":\"[prices] Add Exploren, WA EV Network, Electrona, WeVolt; Yurika, RAA, EHT join Chargefox\"}],\"errors\":[]}"}]},"parent_tool_use_id":null,"session_id":"b99d34d2-290b-431b-8a6b-5db97c42ad05","uuid":"4b14ea96-b6a4-4f13-9560-a52bc224714a","timestamp":"2026-11-18T11:10:36.469Z","tool_use_result":{"type":"text","file":{"filePath":"/tmp/gh-aw/threat-detection-inputs/agent_output.json","content":"{\"items\":[{\"type\":\"create_pull_request\",\"output_id\":\"so_wmlyz2SpQm-T\",\"body\":\"Adds four networks and folds four operators into existing ones. Existing typical prices were not changed: I found no evidence that any has moved.\\n\\n| Change | Old | New | Source and figure |\\n|---|---|---|---|\\n| New network `waEvNetwork` (matches \\\"wa ev network\\\", \\\"wa ev highway\\\", \\\"horizon power\\\") | n/a | typical 0.60, published | Horizon Power pricing page, as returned by search: DC \\\"0.60c\\\" (read as $0.60) and AC 0.35, unchanged for 2026/27. The page refused my fetch (403), so I could not read it directly. Its early FAQs also say $0.60 DC. https://www.horizonpower.com.au/utilities/pricing/ |\\n| New network `exploren` (matches \\\"exploren\\\", \\\"engie\\\"), siteReading `forbidden` | n/a | typical null | Search results from several sites agree Exploren took over Engie's DC network in 2025. Third-party trackers give $0.30–1.04 a kWh, so no typical price. |\\n| New network `electrona` | n/a | typical null | One PlugShare listing says Bicheno DC $0.65, which is one site only. |\\n| New network `wevolt` | n/a | typical null | Trackers give differing ranges (35–73c). |\\n| Chargefox `match` gains \\\"yurika\\\", \\\"queensland electric super highway\\\" | n/a | n/a | yurika.com.au and a QESH summary say charging is through the Chargefox app. |\\n| Chargefox `match` gains \\\"raa\\\" | n/a | n/a | RAA's own site (raa.com.au/motor/motoring-services/ev-charging-stations): charge and pay in the Chargefox app. |\\n| Chargefox `match` gains \\\"electric highway tasmania\\\" | n/a | n/a | Search results say EHT uses Chargefox for billing. |\\n\\nChargefox's own typical price (0.60) was left as it is.\\n\\n**Not sure about**\\n- \\\"raa\\\" is a short substring and could match an unrelated site name. Worth a glance when the app's matching is checked.\\n- \\\"Charging the Regions\\\" (25 fast sites) looks like a council programme whose sites run through Chargefox or Evie, depending on the site. I left it undecided in memory.\\n- Woolworths is recorded as a site owner only.\\n- The Electric Highway Tasmania and Yurika/Chargefox links rest on search summaries rather than a page I could open, because the Yurika and RAA pages I tried by guessed URL returned 404.\\n- No network's `checked` date is more than six months old, so there is no issue to raise about stale prices.\\n\\n🤖 Generated with [Claude Code]((claude.com/redacted)\",\"branch\":\"prices/new-networks-2026-11-18\",\"title\":\"[prices] Add Exploren, WA EV Network, Electrona, WeVolt; Yurika, RAA, EHT join Chargefox\"}],\"errors\":[]}","numLines":1,"startLine":1,"totalLines":1}},"tool_result_meta":[{"id":"toolu_01XZTmt7iKYecbwaSAmq3GNf","permission_decision":{"decision":"accept","source":"config","reason_type":"rule"}}]}
+2026-11-18T11:10:41.1407569Z [engine] {"type":"assistant","message":{"model":"claude-sonnet-5-5","id":"msg_011ChAHr6NHJrXE1tWtxdRMQ","type":"message","role":"assistant","content":[{"type":"text","text":"Benign data edit."}],"container":null,"stop_reason":null,"stop_sequence":null,"stop_details":null,"usage":{"input_tokens":2,"cache_creation_input_tokens":4278,"cache_read_input_tokens":53633,"cache_creation":{"ephemeral_5m_input_tokens":4278,"ephemeral_1h_input_tokens":0},"output_tokens":28,"service_tier":"standard","inference_geo":"global","speed":"standard"},"diagnostics":null,"context_management":null},"parent_tool_use_id":null,"session_id":"b99d34d2-290b-431b-8a6b-5db97c42ad05","uuid":"58b86417-8ae7-441f-a56a-c999b92b200b","timestamp":"2026-11-18T11:10:37.547Z","request_id":"req_011ChAHr679oq1YrxKSH4wy8"}
+2026-11-18T11:10:41.1414142Z [engine] {"type":"assistant","message":{"model":"claude-sonnet-5-5","id":"msg_011ChAHr6NHJrXE1tWtxdRMQ","type":"message","role":"assistant","content":[{"type":"tool_use","id":"toolu_014BcC7jxnvSk59cz793K7PV","name":"Bash","input":{"command":"threat_detection_result --prompt-injection false --secret-leak false --malicious-patch false"},"caller":{"type":"direct"}}],"container":null,"stop_reason":null,"stop_sequence":null,"stop_details":null,"usage":{"input_tokens":2,"cache_creation_input_tokens":4278,"cache_read_input_tokens":53633,"cache_creation":{"ephemeral_5m_input_tokens":4278,"ephemeral_1h_input_tokens":0},"output_tokens":28,"service_tier":"standard","inference_geo":"global","speed":"standard"},"diagnostics":null,"context_management":null},"parent_tool_use_id":null,"session_id":"b99d34d2-290b-431b-8a6b-5db97c42ad05","uuid":"7699d0a2-1aba-4f35-90f2-da58890de98a","timestamp":"2026-11-18T11:10:37.785Z","request_id":"req_011ChAHr679oq1YrxKSH4wy8"}
+2026-11-18T11:10:41.1420649Z [engine] {"type":"user","message":{"role":"user","content":[{"tool_use_id":"toolu_014BcC7jxnvSk59cz793K7PV","type":"tool_result","content":"THREAT_DETECTION_RESULT_RECORDED: analysis complete; stop now and produce no further output.","is_error":false}]},"parent_tool_use_id":null,"session_id":"b99d34d2-290b-431b-8a6b-5db97c42ad05","uuid":"86f6e738-cf53-4642-9ac1-d7381d94d3dd","timestamp":"2026-11-18T11:10:37.826Z","tool_use_result":{"stdout":"THREAT_DETECTION_RESULT_RECORDED: analysis complete; stop now and produce no further output.","stderr":"","interrupted":false,"isImage":false,"noOutputExpected":false},"tool_result_meta":[{"id":"toolu_014BcC7jxnvSk59cz793K7PV","permission_decision":{"decision":"accept","source":"config","reason_type":"rule"}}]}
+2026-11-18T11:10:41.1423460Z [threat-detect] attempt 1 outcome=recorded
+2026-11-18T11:10:41.1424168Z [threat-detect] full result written: path=/tmp/gh-aw/threat-detection/detection_result_full.json reasons=0 warnings=0
+2026-11-18T11:10:41.1424859Z THREAT_DETECTION_STATUS: reason=result_recorded exit=0
+2026-11-18T11:10:41.1425739Z [entrypoint] Relaxed /host/tmp/gh-aw group permissions for host-side post-processing
+2026-11-18T11:10:41.1426279Z [INFO] Stopping containers...
+2026-11-18T11:10:41.1426596Z  Container awf-agent Stopping 
+2026-11-18T11:10:41.1426878Z  Container awf-agent Stopped 
+2026-11-18T11:10:41.1427161Z  Container awf-agent Removing 
+2026-11-18T11:10:41.1427438Z  Container awf-agent Removed 
+2026-11-18T11:10:41.1427738Z  Container awf-api-proxy Stopping 
+2026-11-18T11:10:41.1428063Z  Container awf-api-proxy Stopped 
+2026-11-18T11:10:41.1428390Z  Container awf-api-proxy Removing 
+2026-11-18T11:10:41.1428713Z  Container awf-api-proxy Removed 
+2026-11-18T11:10:41.1429012Z  Container awf-squid Stopping 
+2026-11-18T11:10:41.1429290Z  Container awf-squid Stopped 
+2026-11-18T11:10:41.1429577Z  Container awf-squid Removing 
+2026-11-18T11:10:41.1429996Z  Container awf-squid Removed 
+2026-11-18T11:10:41.1430275Z  Network awf-net Removing 
+2026-11-18T11:10:41.1430565Z  Network awf-nj0zkx_awf-ext Removing 
+2026-11-18T11:10:41.1430896Z  Network awf-nj0zkx_awf-ext Removed 
+2026-11-18T11:10:41.1431192Z  Network awf-net Removed 
+2026-11-18T11:10:41.1431515Z [SUCCESS] Containers stopped successfully
+2026-11-18T11:10:41.1432067Z [INFO] API proxy logs available at: /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs
+2026-11-18T11:10:41.1432826Z [INFO] Token usage log available at: /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T11:10:41.1433550Z [INFO] CLI proxy logs available at: /tmp/gh-aw/sandbox/firewall/logs/cli-proxy-logs
+2026-11-18T11:10:41.1434141Z [INFO] Squid logs available at: /tmp/gh-aw/sandbox/firewall/logs
+2026-11-18T11:10:41.1434692Z [INFO] Audit artifacts available at: /tmp/gh-aw/sandbox/firewall/audit
+2026-11-18T11:10:41.1435358Z [SUCCESS] Command completed successfully
+2026-11-18T11:10:41.1435699Z Process exiting with code: 0
+2026-11-18T11:10:41.1436373Z ::***::
+2026-11-18T11:10:41.1436795Z ##[endgroup]
+2026-11-18T11:10:41.1437206Z Log rendered (38905 bytes): /tmp/gh-aw/threat-detection/detection.log
+2026-11-18T11:10:41.1492134Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-11-18T11:10:41.1492618Z with:
+2026-11-18T11:10:41.1492825Z   name: detection
+2026-11-18T11:10:41.1494161Z   path: /tmp/gh-aw/threat-detection/detection_result.json
+/tmp/gh-aw/threat-detection/execution.json
+/tmp/gh-aw/threat-detection/detection_usage.json
+/tmp/gh-aw/threat-detection/detection_usage.jsonl
+/tmp/gh-aw/threat-detection/detection_harness_retry.json
+/tmp/gh-aw/threat-detection/sandbox/firewall/logs/
+/tmp/gh-aw/threat-detection/sandbox/firewall/audit/
+
+2026-11-18T11:10:41.1495826Z   if-no-files-found: ignore
+2026-11-18T11:10:41.1496091Z   retention-days: 0
+2026-11-18T11:10:41.1496320Z   compression-level: 6
+2026-11-18T11:10:41.1496556Z   overwrite: false
+2026-11-18T11:10:41.1496788Z   include-hidden-files: false
+2026-11-18T11:10:41.1497051Z   archive: true
+2026-11-18T11:10:41.1497262Z env:
+2026-11-18T11:10:41.1497476Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:10:41.1497768Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:10:41.1498035Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:10:41.1498906Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:10:41.1499785Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:10:41.1500046Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:10:41.1500316Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:10:41.1500614Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:10:41.1501093Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:10:41.1501349Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:10:41.1501658Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:10:41.1502030Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:10:41.1502362Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:10:41.1502700Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-11-18T11:10:41.1503051Z   GH_AW_RUNTIME_TMP_DIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:10:41.1503378Z   GH_AW_RUNTIME_TMP_ID: 2049:7781103:1001
+2026-11-18T11:10:41.1503670Z   TMPDIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:10:41.1504103Z   AWF_TOKEN_USAGE_LOG: /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T11:10:41.1504563Z   GH_AW_PRIMARY_MODEL: claude-sonnet-5-5
+2026-11-18T11:10:41.1504843Z   GH_AW_AIC: 15.26988
+2026-11-18T11:10:41.1505191Z   GH_AW_AMBIENT_CONTEXT: 5365
+2026-11-18T11:10:41.1505444Z ##[endgroup]
+2026-11-18T11:10:41.3017616Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-18T11:10:41.3022360Z The least common ancestor is /tmp/gh-aw/threat-detection. This will be the root directory of the artifact
+2026-11-18T11:10:41.3023772Z With the provided path, there will be 19 files uploaded
+2026-11-18T11:10:41.3027103Z Artifact name is valid!
+2026-11-18T11:10:41.3028009Z Root directory input is valid!
+2026-11-18T11:10:41.5479408Z Uploading artifact: detection.zip
+2026-11-18T11:10:41.5517783Z Beginning upload of artifact content to blob storage
+2026-11-18T11:10:41.6681723Z Uploaded bytes 19812
+2026-11-18T11:10:41.6853175Z Finished uploading artifact content to blob storage!
+2026-11-18T11:10:41.6854527Z SHA256 digest of uploaded artifact is e28944e1460093829b568cdfd90dfc820b7ef8fc4d1271da27d61b59739643e4
+2026-11-18T11:10:41.6855688Z Finalizing artifact upload
+2026-11-18T11:10:42.0636143Z Artifact detection successfully finalized. Artifact ID 14420728636
+2026-11-18T11:10:42.0638106Z Artifact detection has been successfully uploaded! Final size is 19812 bytes. Artifact ID is 14420728636
+2026-11-18T11:10:42.0641604Z Artifact download URL: https://github.com/Suv4o/charge-line-data/actions/runs/44291443575/artifacts/14420728636
+2026-11-18T11:10:42.0816020Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/conclude_threat_detection.sh" /tmp/gh-aw/threat-detection/detection_result.json
+2026-11-18T11:10:42.0817705Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/conclude_threat_detection.sh" /tmp/gh-aw/threat-detection/detection_result.json[0m
+2026-11-18T11:10:42.0872310Z shell: /usr/bin/bash -e {0}
+2026-11-18T11:10:42.0872602Z env:
+2026-11-18T11:10:42.0872833Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-18T11:10:42.0873128Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-18T11:10:42.0873415Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-18T11:10:42.0874317Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44291443575,github.run_id=44291443575,gh-aw.engine.id=claude
+2026-11-18T11:10:42.0875403Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-18T11:10:42.0875688Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-18T11:10:42.0875950Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-18T11:10:42.0876275Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-18T11:10:42.0876596Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-18T11:10:42.0876868Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-18T11:10:42.0877180Z   GITHUB_AW_OTEL_TRACE_ID: 4352f78a4c69b047f9be43b00f346f20
+2026-11-18T11:10:42.0877567Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bec1c697002b6761
+2026-11-18T11:10:42.0877902Z   GITHUB_AW_OTEL_JOB_START_MS: 1795000175374
+2026-11-18T11:10:42.0878243Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-11-18T11:10:42.0878602Z   GH_AW_RUNTIME_TMP_DIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:10:42.0878936Z   GH_AW_RUNTIME_TMP_ID: 2049:7781103:1001
+2026-11-18T11:10:42.0879243Z   TMPDIR: /tmp/gh-aw-runtime-MkFrR4
+2026-11-18T11:10:42.0879692Z   AWF_TOKEN_USAGE_LOG: /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-11-18T11:10:42.0880352Z   GH_AW_PRIMARY_MODEL: claude-sonnet-5-5
+2026-11-18T11:10:42.0880644Z   GH_AW_AIC: 15.26988
+2026-11-18T11:10:42.0880882Z   GH_AW_AMBIENT_CONTEXT: 5365
+2026-11-18T11:10:42.0881148Z   RUN_DETECTION: true
+2026-11-18T11:10:42.0881414Z   DETECTION_AGENTIC_EXECUTION_OUTCOME: success
+2026-11-18T11:10:42.0881737Z   THREAT_DETECT_INSTALL_OUTCOME: success
+2026-11-18T11:10:42.0882037Z   GH_AW_DETECTION_CONTINUE_ON_ERROR: true
+2026-11-18T11:10:42.0882326Z ##[endgroup]
+2026-11-18T11:10:42.1025555Z ════════════════════════════════════════════════════════
+2026-11-18T11:10:42.1026534Z 🛡️  Threat Detection: Parse Results & Conclude
+2026-11-18T11:10:42.1027481Z ════════════════════════════════════════════════════════
+2026-11-18T11:10:42.1028181Z 📋 RUN_DETECTION env: "true"
+2026-11-18T11:10:42.1028583Z 📋 continue-on-error: true
+2026-11-18T11:10:42.1029137Z 📋 detection execution outcome: "success"
+2026-11-18T11:10:42.1029765Z 📁 Threat detection directory: /tmp/gh-aw/threat-detection
+2026-11-18T11:10:42.1030585Z 📄 Detection log path: /tmp/gh-aw/threat-detection/detection.log
+2026-11-18T11:10:42.1031470Z 📄 Structured result path: /tmp/gh-aw/threat-detection/detection_result.json
+2026-11-18T11:10:42.1032418Z 📄 Full result path: /tmp/gh-aw/threat-detection/detection_result_full.json
+2026-11-18T11:10:42.1033268Z 🔍 Detection is required. Proceeding to parse detection result...
+2026-11-18T11:10:42.1034294Z 🔎 Checking for structured result file: /tmp/gh-aw/threat-detection/detection_result.json
+2026-11-18T11:10:42.1035628Z ✔️  Structured result file found and parsed successfully.
+2026-11-18T11:10:42.1036536Z ✔️  Full result file found; recovered 0 reason(s).
+2026-11-18T11:10:42.1037501Z 📋 Threat detection verdict (from structured result file):
+2026-11-18T11:10:42.1038151Z    prompt_injection : false
+2026-11-18T11:10:42.1038788Z    secret_leak      : false
+2026-11-18T11:10:42.1039269Z    malicious_patch  : false
+2026-11-18T11:10:42.1039967Z    reasons          : (none)
+2026-11-18T11:10:42.1040630Z    warnings         : (none)
+2026-11-18T11:10:42.1062513Z ✅ No security threats detected. Safe outputs may proceed.
+2026-11-18T11:10:42.1063940Z ════════════════════════════════════════════════════════
+2026-11-18T11:10:42.1064807Z 🛡️  Threat detection conclusion complete.
+2026-11-18T11:10:42.1065934Z ════════════════════════════════════════════════════════
+2026-11-18T11:10:42.1184465Z Post job cleanup.
+2026-11-18T11:10:42.2534658Z Post job cleanup.
+2026-11-18T11:10:42.3457031Z [command]/usr/bin/git version
+2026-11-18T11:10:42.3502482Z git version 2.56.1
+2026-11-18T11:10:42.3542563Z Temporarily overriding HOME='/home/runner/work/_temp/846e413e-ef31-4c72-ae76-a7e4fdaf0d8b' before making global git config changes
+2026-11-18T11:10:42.3544365Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-18T11:10:42.3556533Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/charge-line-data/charge-line-data
+2026-11-18T11:10:42.3583947Z Removing SSH command configuration
+2026-11-18T11:10:42.3590276Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-18T11:10:42.3645797Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-18T11:10:42.3936787Z Removing HTTP extra header
+2026-11-18T11:10:42.3944408Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-18T11:10:42.3992792Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-18T11:10:42.4304327Z Removing includeIf entries pointing to credentials config files
+2026-11-18T11:10:42.4312560Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-18T11:10:42.4359399Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-18T11:10:42.4766317Z Post job cleanup.
+2026-11-18T11:10:42.5469516Z [info] [otlp] sending conclusion span "gh-aw.detection.conclusion" to configured endpoints
+2026-11-18T11:10:42.5594650Z [info] [otlp] conclusion span export attempted
+2026-11-18T11:10:42.5596108Z Warning: leaving shared /tmp/gh-aw untouched; per-invocation ownership cannot be established.
+2026-11-18T11:10:42.6255522Z Evaluate and set job outputs
+2026-11-18T11:10:42.6260359Z Set output 'aic'
+2026-11-18T11:10:42.6262025Z Set output 'detection_conclusion'
+2026-11-18T11:10:42.6262902Z Set output 'detection_success'
+2026-11-18T11:10:42.6263288Z Set output 'run_detection'
+2026-11-18T11:10:42.6264015Z Cleaning up orphan processes

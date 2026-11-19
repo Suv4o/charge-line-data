@@ -1,0 +1,343 @@
+{
+  "schema": "usage-activity-summary/v1",
+  "memory_saves": [
+    {
+      "memoryId": "prices",
+      "jobResult": "success",
+      "outcome": "success",
+      "status": "saved",
+      "branch": "memory/prices",
+      "commit": "4cf217d50f7e9b6c12f5398014606096fd35e7b5"
+    }
+  ],
+  "firewall": {
+    "total_requests": 81,
+    "allowed_requests": 81,
+    "blocked_requests": 0,
+    "allowed_domains": [
+      "api.anthropic.com:443",
+      "api.github.com:443",
+      "costtocharge.com.au",
+      "costtocharge.com.au:443",
+      "evie.com.au",
+      "evie.com.au:443",
+      "run-actions-2-azure-eastus.actions.githubusercontent.com:443",
+      "wevolt.com.au",
+      "wevolt.com.au:443",
+      "www.cvga.org.au",
+      "www.cvga.org.au:443",
+      "www.horizonpower.com.au",
+      "www.horizonpower.com.au:443",
+      "www.mynrma.com.au",
+      "www.mynrma.com.au:443",
+      "www.yurika.com.au",
+      "www.yurika.com.au:443"
+    ],
+    "blocked_domains": [],
+    "requests_by_domain": {
+      "run-actions-2-azure-eastus.actions.githubusercontent.com:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "api.github.com:443": {
+        "allowed": 14,
+        "blocked": 0
+      },
+      "api.anthropic.com:443": {
+        "allowed": 49,
+        "blocked": 0
+      },
+      "www.yurika.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.yurika.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cvga.org.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cvga.org.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.horizonpower.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.horizonpower.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "costtocharge.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "costtocharge.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "wevolt.com.au:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "wevolt.com.au": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "evie.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "evie.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.mynrma.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.mynrma.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      }
+    }
+  },
+  "gateway": {
+    "total_calls": 2,
+    "failed_calls": 0,
+    "total_input_size": 4141,
+    "total_output_size": 0,
+    "avg_input_size": 2071,
+    "avg_output_size": 0,
+    "max_input_size": 4119,
+    "max_output_size": 0,
+    "total_duration_ms": 0,
+    "max_duration_ms": 0,
+    "tool_calls": [
+      {
+        "tool_call_id": "call-1",
+        "timestamp": "2026-11-19T11:47:32.034Z",
+        "server_name": "safeoutputs",
+        "tool_name": "push_repo_memory",
+        "request_size": 22,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-2",
+        "timestamp": "2026-11-19T11:47:46.640Z",
+        "server_name": "safeoutputs",
+        "tool_name": "create_pull_request",
+        "request_size": 4119,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      }
+    ],
+    "servers": [
+      {
+        "server_name": "safeoutputs",
+        "request_count": 2,
+        "tool_call_count": 2,
+        "failed_calls": 0,
+        "total_input_size": 4141,
+        "total_output_size": 0,
+        "max_input_size": 4119,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "avg_input_size": 2071,
+        "avg_output_size": 0,
+        "avg_duration_ms": 0
+      }
+    ],
+    "tools": [
+      {
+        "server_name": "safeoutputs",
+        "tool_name": "create_pull_request",
+        "call_count": 1,
+        "failed_calls": 0,
+        "total_input_size": 4119,
+        "total_output_size": 0,
+        "max_input_size": 4119,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "max_duration_ms": 0,
+        "avg_input_size": 4119,
+        "avg_output_size": 0,
+        "avg_duration_ms": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "tool_name": "push_repo_memory",
+        "call_count": 1,
+        "failed_calls": 0,
+        "total_input_size": 22,
+        "total_output_size": 0,
+        "max_input_size": 22,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "max_duration_ms": 0,
+        "avg_input_size": 22,
+        "avg_output_size": 0,
+        "avg_duration_ms": 0
+      }
+    ]
+  },
+  "safe_outputs": {
+    "total_items": 1,
+    "items_by_type": {
+      "create_pull_request": 1
+    },
+    "items": [
+      {
+        "type": "create_pull_request",
+        "status": "success",
+        "url": "https://github.com/Suv4o/charge-line-data/pull/16",
+        "number": 16,
+        "repo": "Suv4o/charge-line-data",
+        "provider": "github",
+        "id": 5394314397,
+        "target": {
+          "provider": "github",
+          "repository": "Suv4o/charge-line-data",
+          "number": 16
+        },
+        "temporaryId": "aw_LuQvYiAV",
+        "metadata": {
+          "node_id": "PR_kwDOVxmBF88AAAABQYa0nQ"
+        },
+        "timestamp": "2026-11-19T11:49:52.121Z"
+      }
+    ]
+  },
+  "ledger": {
+    "transactions_added": 0
+  },
+  "working_set": {
+    "measurement_state": "measured",
+    "cumulative_input_tokens": 187377,
+    "peak_input_tokens": 19153,
+    "rebuild_excess_tokens": 168224,
+    "invocations": 38,
+    "rebuild_factor": 9.783167127865086
+  },
+  "friction": {
+    "measurement_state": "measured",
+    "canonical_unit": "aic",
+    "sources": [
+      "agent_token_usage",
+      "firewall",
+      "mcp_gateway"
+    ],
+    "total_events": 0,
+    "total_occurrences": 0,
+    "counted_occurrences": 0,
+    "suppressed_occurrences": 0,
+    "linked_invocations": 0,
+    "unattributed_occurrences": 0,
+    "cost": {
+      "aic": 0,
+      "tokens": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0,
+        "reasoning": 0,
+        "total": 0
+      },
+      "turns": 0,
+      "tool_calls": 0,
+      "latency_ms": 0
+    },
+    "total_run_aic": 179.10959999999997,
+    "friction_ratio": 0,
+    "dimension_states": {
+      "aic": "measured",
+      "tokens": "measured",
+      "turns": "measured",
+      "tool_calls": "measured",
+      "latency_ms": "measured"
+    },
+    "uncertainty": {
+      "aic": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "sample_size": 38,
+        "basis": "AI credits of errored invocations (measured), of linked follow-up invocations (causal), or the mean healthy-invocation cost (statistical)",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0
+      },
+      "tokens": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "sample_size": 38,
+        "basis": "token classes of the attributed invocations",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0
+      },
+      "turns": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "sample_size": 0,
+        "basis": "one additional turn per errored or retried model invocation",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0
+      },
+      "tool_calls": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "sample_size": 0,
+        "basis": "counted friction occurrences that consumed a tool call",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0
+      },
+      "latency_ms": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "sample_size": 0,
+        "basis": "wall-clock duration recorded on the failing tool call or invocation",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0
+      }
+    },
+    "drivers": [],
+    "groups": [],
+    "events": [],
+    "unmeasured_drivers": [
+      {
+        "driver": "agent_api_error",
+        "reason": "no_occurrences"
+      },
+      {
+        "driver": "firewall_block",
+        "reason": "no_occurrences"
+      },
+      {
+        "driver": "integrity_filter",
+        "reason": "no_occurrences"
+      },
+      {
+        "driver": "mcp_tool_error",
+        "reason": "no_occurrences"
+      },
+      {
+        "driver": "session_tool_failure",
+        "reason": "source_unavailable:agent_session"
+      }
+    ]
+  }
+}

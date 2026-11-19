@@ -1,0 +1,69 @@
+﻿2026-11-19T11:50:33.5519181Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-11-19T11:50:33.5519648Z with:
+2026-11-19T11:50:33.5520143Z   name: usage
+2026-11-19T11:50:33.5532133Z   path: /tmp/gh-aw/usage/aw_session.jsonl
+/tmp/gh-aw/usage/aw_info.json
+/tmp/gh-aw/usage/aw-info.jsonl
+/tmp/gh-aw/usage/agent_usage.json
+/tmp/gh-aw/usage/agent_usage.jsonl
+/tmp/gh-aw/usage/detection_usage.jsonl
+/tmp/gh-aw/usage/evals.jsonl
+/tmp/gh-aw/usage/graders/grader_manifest.json
+/tmp/gh-aw/usage/graders/grader_results.json
+/tmp/gh-aw/usage/github_rate_limits.jsonl
+/tmp/gh-aw/usage/agent/token_usage.jsonl
+/tmp/gh-aw/usage/agent/model-routing.jsonl
+/tmp/gh-aw/usage/agent/execution.json
+/tmp/gh-aw/usage/agent/harness_retry.json
+/tmp/gh-aw/usage/agent/durable-session.jsonl
+/tmp/gh-aw/usage/detection/token_usage.jsonl
+/tmp/gh-aw/usage/detection/execution.json
+/tmp/gh-aw/usage/detection/harness_retry.json
+/tmp/gh-aw/usage/detection/detection_result.json
+/tmp/gh-aw/usage/evals/token_usage.jsonl
+/tmp/gh-aw/usage/evals/execution.json
+/tmp/gh-aw/usage/evals/evals_status.json
+/tmp/gh-aw/usage/experiment/state.jsonl
+/tmp/gh-aw/usage/experiment/state.json
+/tmp/gh-aw/usage/experiment/assignments.json
+/tmp/gh-aw/usage/activity/summary.json
+
+2026-11-19T11:50:33.5532779Z   if-no-files-found: ignore
+2026-11-19T11:50:33.5533193Z   retention-days: 0
+2026-11-19T11:50:33.5533614Z   compression-level: 6
+2026-11-19T11:50:33.5534007Z   overwrite: false
+2026-11-19T11:50:33.5534440Z   include-hidden-files: false
+2026-11-19T11:50:33.5534833Z   archive: true
+2026-11-19T11:50:33.5535210Z env:
+2026-11-19T11:50:33.5535655Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:50:33.5536088Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:50:33.5536529Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-19T11:50:33.5539092Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517227475,github.run_id=44517227475,gh-aw.engine.id=claude
+2026-11-19T11:50:33.5539711Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:50:33.5540142Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:50:33.5540571Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:50:33.5541067Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:50:33.5541496Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:50:33.5543438Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","push_repo_memory":"push_repo_memory","safe_outputs":"safe_outputs"}
+2026-11-19T11:50:33.5545312Z   GH_AW_JOB_RESULTS: {"activation":{"result":"success"},"agent":{"result":"success"},"detection":{"result":"success"},"push_repo_memory":{"result":"success"},"safe_outputs":{"result":"success"}}
+2026-11-19T11:50:33.5546726Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"push_repo_memory":true,"safe_outputs":true}
+2026-11-19T11:50:33.5548750Z   GH_AW_MEMORY_SAVE_RESULTS: {"prices":{"branch":"memory/prices","commit":"4cf217d50f7e9b6c12f5398014606096fd35e7b5","jobResult":"success","outcome":"success","status":"saved"}}
+2026-11-19T11:50:33.5549193Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:50:33.5549797Z   GITHUB_AW_OTEL_TRACE_ID: 85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:50:33.5550292Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 88da37a05dcb802c
+2026-11-19T11:50:33.5550760Z   GITHUB_AW_OTEL_JOB_START_MS: 1795089026892
+2026-11-19T11:50:33.5551150Z ##[endgroup]
+2026-11-19T11:50:34.5822257Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-19T11:50:34.5840344Z The least common ancestor is /tmp/gh-aw/usage. This will be the root directory of the artifact
+2026-11-19T11:50:34.5842251Z With the provided path, there will be 13 files uploaded
+2026-11-19T11:50:34.5844162Z Artifact name is valid!
+2026-11-19T11:50:34.5845191Z Root directory input is valid!
+2026-11-19T11:50:34.5854683Z Uploading artifact: usage.zip
+2026-11-19T11:50:34.5856540Z Beginning upload of artifact content to blob storage
+2026-11-19T11:50:34.5859203Z Uploaded bytes 66021
+2026-11-19T11:50:34.5860675Z Finished uploading artifact content to blob storage!
+2026-11-19T11:50:34.5862689Z SHA256 digest of uploaded artifact is dda892cf60090c49b0c06de3a57f7c926d1ee01109a3aa4c4e58f04a015ccb78
+2026-11-19T11:50:34.5864600Z Finalizing artifact upload
+2026-11-19T11:50:34.7454053Z Artifact usage successfully finalized. Artifact ID 14525984528
+2026-11-19T11:50:34.7456175Z Artifact usage has been successfully uploaded! Final size is 66021 bytes. Artifact ID is 14525984528
+2026-11-19T11:50:34.7459231Z Artifact download URL: https://github.com/Suv4o/charge-line-data/actions/runs/44517227475/artifacts/14525984528

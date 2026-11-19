@@ -1,0 +1,98 @@
+[
+  {
+    "operator": "Yurika",
+    "fastSites": 49,
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "decision": "roaming",
+    "notes": "Runs Queensland Electric Super Highway; Yurika's own QESH page says use the Chargefox app. 'yurika' added to chargefox match."
+  },
+  {
+    "operator": "Exploren",
+    "fastSites": 33,
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "decision": "added",
+    "notes": "Added as network exploren, siteReading forbidden, price null (only site-by-site figures 0.35-0.70 from third parties built on Exploren's own finder)."
+  },
+  {
+    "operator": "Charging the Regions",
+    "fastSites": 25,
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "decision": "roaming",
+    "notes": "CVGA program; cvga.org.au says Evie operates the chargers. Added to evie match. Wellington Shire says some of its sites use Chargefox."
+  },
+  {
+    "operator": "RAA",
+    "fastSites": 13,
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "decision": "roaming",
+    "notes": "RAA Charge runs on the Chargefox app (raa.com.au, The Driven 2023). 'raa' added to chargefox match. Search snippets give member DC prices 75c/66c metro, 76c/68c country (not verified from RAA page)."
+  },
+  {
+    "operator": "Electric Highway Tasmania",
+    "fastSites": 6,
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "decision": "roaming",
+    "notes": "PlugShare listings and forum posts agree: Chargefox app/card, some credit card. Added to chargefox match."
+  },
+  {
+    "operator": "Queensland Electric Super Highway",
+    "fastSites": 6,
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "decision": "roaming",
+    "notes": "Chargefox app (Yurika page). Added to chargefox match."
+  },
+  {
+    "operator": "Engie",
+    "fastSites": 5,
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "decision": "alias",
+    "notes": "EVSE bought ENGIE's ANZ network April 2025, rebranded to Exploren (The Driven). 'engie' added to exploren match."
+  },
+  {
+    "operator": "Woolworths",
+    "fastSites": 4,
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "decision": "roaming",
+    "notes": "Woolworths' own chargers on the Chargefox app (The Driven, May 2025). Added to chargefox match. Some Woolworths-named sites may be other networks."
+  },
+  {
+    "operator": "WA EV Network (AU)",
+    "fastSites": 4,
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "decision": "roaming",
+    "notes": "Synergy/Horizon Power; Chargefox app or credit card. Horizon Power 2026/27 fees reported as AC 0.35, DC 0.60 per kWh (horizonpower.com.au/utilities/pricing returned 403; figure from search snippet). Added 'wa ev network' to chargefox match."
+  },
+  {
+    "operator": "WeVolt (AU)",
+    "fastSites": 4,
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "decision": "added",
+    "notes": "Added as network wevolt, price null. robots.txt blocks ClaudeBot/AI training crawlers, allows answer agents; terms (/terms) not checked, so siteReading unchecked."
+  },
+  {
+    "operator": "Electrona",
+    "fastSites": 4,
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "decision": "roaming",
+    "notes": "Tasmanian site owner; chargers take credit card or Wevolt app (electrona.au). Added to wevolt match."
+  },
+  {
+    "operator": "EV Highway (Horizon Power)",
+    "fastSites": 3,
+    "firstSeen": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "decision": "roaming",
+    "notes": "Part of WA EV Network; Chargefox app. 'horizon power' added to chargefox match."
+  }
+]

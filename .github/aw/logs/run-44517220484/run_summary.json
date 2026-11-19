@@ -1,0 +1,2811 @@
+{
+  "cli_version": "v1.2.2",
+  "run_id": 44517220484,
+  "processed_at": "2026-11-19T22:58:05.68752+11:00",
+  "run": {
+    "databaseId": 44517220484,
+    "number": 9,
+    "url": "https://github.com/Suv4o/charge-line-data/actions/runs/44517220484",
+    "status": "completed",
+    "conclusion": "success",
+    "workflowName": "Keep the EV catalogue current",
+    "workflowPath": ".github/workflows/catalogue.lock.yml",
+    "createdAt": "2026-11-19T11:42:32Z",
+    "startedAt": "2026-11-19T11:42:32Z",
+    "updatedAt": "2026-11-19T11:56:35Z",
+    "event": "workflow_dispatch",
+    "headBranch": "main",
+    "headSha": "5c02988e404353ec4ce1a012f048a04af7b8a5e0",
+    "displayTitle": "Keep the EV catalogue current",
+    "attempt": 1,
+    "repository": "Suv4o/charge-line-data",
+    "actor": "Suv4o",
+    "Duration": 843000000000,
+    "ActionMinutes": 0,
+    "TokenUsage": 4012688,
+    "Turns": 90,
+    "TurnsAvailable": false,
+    "ErrorCount": 0,
+    "WarningCount": 0,
+    "MissingToolCount": 0,
+    "MissingDataCount": 0,
+    "NoopCount": 0,
+    "safe_items_count": 2,
+    "AvgTimeBetweenTurns": 0,
+    "LogsPath": "/Users/Suv4o/Development/Personal-Projects/charge-line/data/.github/aw/logs/run-44517220484",
+    "DownloadDuration": 0,
+    "DownloadSizeBytes": 0
+  },
+  "metrics": {
+    "TokenUsage": 4012688,
+    "EstimatedCost": 3.251968799999998,
+    "Turns": 90,
+    "ToolCalls": [
+      {
+        "Name": "Edit",
+        "CallCount": 7,
+        "MaxInputSize": 285,
+        "MaxOutputSize": 26,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "Grep",
+        "CallCount": 2,
+        "MaxInputSize": 51,
+        "MaxOutputSize": 3374,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "Read",
+        "CallCount": 5,
+        "MaxInputSize": 35,
+        "MaxOutputSize": 1227,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "ToolSearch",
+        "CallCount": 1,
+        "MaxInputSize": 45,
+        "MaxOutputSize": 96,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "WebFetch",
+        "CallCount": 34,
+        "MaxInputSize": 109,
+        "MaxOutputSize": 561,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "WebSearch",
+        "CallCount": 8,
+        "MaxInputSize": 22,
+        "MaxOutputSize": 1057,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "Write",
+        "CallCount": 2,
+        "MaxInputSize": 1173,
+        "MaxOutputSize": 37,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_git add vehicles.jso...",
+        "CallCount": 1,
+        "MaxInputSize": 8,
+        "MaxOutputSize": 7,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_git checkout -b cata...",
+        "CallCount": 1,
+        "MaxInputSize": 14,
+        "MaxOutputSize": 13,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_git commit -m \"Add D...",
+        "CallCount": 1,
+        "MaxInputSize": 40,
+        "MaxOutputSize": 37,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_git status --short",
+        "CallCount": 1,
+        "MaxInputSize": 8,
+        "MaxOutputSize": 6,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_grep -A 12 -E '\u003ctitl...",
+        "CallCount": 1,
+        "MaxInputSize": 66,
+        "MaxOutputSize": 3148,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_grep -c \"\" .playwrig...",
+        "CallCount": 1,
+        "MaxInputSize": 19,
+        "MaxOutputSize": 0,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_grep -n -A1 -o '\"id\"...",
+        "CallCount": 1,
+        "MaxInputSize": 18,
+        "MaxOutputSize": 7,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_grep -n -i -E \"row|c...",
+        "CallCount": 1,
+        "MaxInputSize": 22,
+        "MaxOutputSize": 7,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_grep -n -m3 '\"checke...",
+        "CallCount": 1,
+        "MaxInputSize": 13,
+        "MaxOutputSize": 7,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_grep -n -o -E '\"id\":...",
+        "CallCount": 1,
+        "MaxInputSize": 25,
+        "MaxOutputSize": 226,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_grep -o '\u003ctitle\u003e[^\u003c]...",
+        "CallCount": 1,
+        "MaxInputSize": 64,
+        "MaxOutputSize": 1835,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_jq '.properties.vehi...",
+        "CallCount": 3,
+        "MaxInputSize": 45,
+        "MaxOutputSize": 255,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_jq '.vehicles[] | se...",
+        "CallCount": 1,
+        "MaxInputSize": 29,
+        "MaxOutputSize": 215,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_jq -c '.vehicles[] |...",
+        "CallCount": 3,
+        "MaxInputSize": 54,
+        "MaxOutputSize": 589,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_jq -r '.updated, (.v...",
+        "CallCount": 1,
+        "MaxInputSize": 26,
+        "MaxOutputSize": 79,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_ls -la /tmp/gh-aw/re...",
+        "CallCount": 1,
+        "MaxInputSize": 20,
+        "MaxOutputSize": 145,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_node scripts/format....",
+        "CallCount": 1,
+        "MaxInputSize": 9,
+        "MaxOutputSize": 7,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_node scripts/validat...",
+        "CallCount": 1,
+        "MaxInputSize": 15,
+        "MaxOutputSize": 30,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_playwright-cli click...",
+        "CallCount": 1,
+        "MaxInputSize": 13,
+        "MaxOutputSize": 110,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_playwright-cli close",
+        "CallCount": 1,
+        "MaxInputSize": 8,
+        "MaxOutputSize": 6,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_playwright-cli open ...",
+        "CallCount": 1,
+        "MaxInputSize": 30,
+        "MaxOutputSize": 129,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "bash_wc -l .playwright-cl...",
+        "CallCount": 1,
+        "MaxInputSize": 17,
+        "MaxOutputSize": 13,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "safeoutputs_create_issue",
+        "CallCount": 1,
+        "MaxInputSize": 447,
+        "MaxOutputSize": 21,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "safeoutputs_create_pull_request",
+        "CallCount": 1,
+        "MaxInputSize": 1327,
+        "MaxOutputSize": 80,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "safeoutputs_noop",
+        "CallCount": 1,
+        "MaxInputSize": 142,
+        "MaxOutputSize": 21,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      },
+      {
+        "Name": "safeoutputs_push_repo_memory",
+        "CallCount": 1,
+        "MaxInputSize": 6,
+        "MaxOutputSize": 100,
+        "MaxDuration": 0,
+        "OutputSample": ""
+      }
+    ],
+    "ToolSequences": [
+      [
+        "bash_ls -la /tmp/gh-aw/re...",
+        "bash_jq -r '.updated, (.v...",
+        "Read",
+        "bash_jq -c '.vehicles[] |...",
+        "bash_jq '.vehicles[] | se...",
+        "bash_grep -o '\u003ctitle\u003e[^\u003c]...",
+        "bash_grep -A 12 -E '\u003ctitl...",
+        "ToolSearch",
+        "WebFetch",
+        "WebFetch",
+        "WebSearch",
+        "WebSearch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "bash_jq '.properties.vehi...",
+        "WebSearch",
+        "WebSearch",
+        "WebSearch",
+        "WebSearch",
+        "bash_jq -c '.vehicles[] |...",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebSearch",
+        "WebFetch",
+        "WebSearch",
+        "bash_jq -c '.vehicles[] |...",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "WebFetch",
+        "bash_playwright-cli open ...",
+        "bash_grep -n -i -E \"row|c...",
+        "bash_wc -l .playwright-cl...",
+        "Read",
+        "bash_playwright-cli click...",
+        "bash_grep -c \"\" .playwrig...",
+        "bash_playwright-cli close",
+        "WebFetch",
+        "Grep",
+        "Grep",
+        "bash_grep -n -o -E '\"id\":...",
+        "bash_jq '.properties.vehi...",
+        "bash_grep -n -m3 '\"checke...",
+        "bash_jq '.properties.vehi...",
+        "Read",
+        "Edit",
+        "Edit",
+        "Read",
+        "Edit",
+        "Edit",
+        "bash_grep -n -A1 -o '\"id\"...",
+        "Read",
+        "Edit",
+        "Edit",
+        "Edit",
+        "bash_node scripts/format....",
+        "bash_node scripts/validat...",
+        "Write",
+        "Write",
+        "safeoutputs_push_repo_memory",
+        "bash_git checkout -b cata...",
+        "bash_git add vehicles.jso...",
+        "bash_git commit -m \"Add D...",
+        "bash_git status --short",
+        "safeoutputs_create_pull_request",
+        "safeoutputs_create_issue",
+        "safeoutputs_noop"
+      ]
+    ],
+    "AvgTimeBetweenTurns": 0,
+    "MaxTimeBetweenTurns": 0,
+    "MedianTimeBetweenTurns": 0,
+    "StdDevTimeBetweenTurns": 0
+  },
+  "task_domain": {
+    "name": "code_fix",
+    "label": "Code Fix",
+    "reason": "The workflow appears oriented toward code changes or pull request review."
+  },
+  "behavior_fingerprint": {
+    "execution_style": "exploratory",
+    "tool_breadth": "broad",
+    "actuation_style": "selective_write",
+    "resource_profile": "heavy",
+    "dispatch_mode": "standalone",
+    "agentic_fraction": 0.03333333333333333
+  },
+  "agentic_assessments": [
+    {
+      "kind": "resource_heavy_for_domain",
+      "severity": "high",
+      "summary": "This Code Fix run consumed a heavy execution profile for its task shape.",
+      "evidence": "turns=90 tool_types=33 duration=14m3s write_actions=4",
+      "recommendation": "Compare this run to similar successful runs and trim unnecessary turns, tools, or write actions."
+    },
+    {
+      "kind": "partially_reducible",
+      "severity": "medium",
+      "summary": "About 96% of this run's turns appear to be data-gathering that could move to deterministic steps.",
+      "evidence": "agentic_fraction=0.03 turns=90",
+      "recommendation": "Move data-fetching work to frontmatter steps: (pre-agent) writing to /tmp/gh-aw/agent/ or post-steps: (post-agent) to reduce inference cost. See the DeterministicOps guide."
+    }
+  ],
+  "access_analysis": null,
+  "firewall_analysis": {
+    "allowed_domains": [
+      "api.anthropic.com:443",
+      "api.github.com:443",
+      "bydautomotive.com.au",
+      "bydautomotive.com.au:443",
+      "content-autofill.googleapis.com:443",
+      "content.powerapps.com:443",
+      "mg.com.au",
+      "mg.com.au:443",
+      "mgmotor.com.au",
+      "mgmotor.com.au:443",
+      "run-actions-3-azure-eastus.actions.githubusercontent.com:443",
+      "shop.xpeng.com.au",
+      "shop.xpeng.com.au:443",
+      "thedriven.io",
+      "thedriven.io:443",
+      "update.googleapis.com:443",
+      "us-mobile.events.data.microsoft.com:443",
+      "www.abarth.com.au",
+      "www.abarth.com.au:443",
+      "www.alfaromeo.com.au",
+      "www.alfaromeo.com.au:443",
+      "www.audi.com.au",
+      "www.audi.com.au:443",
+      "www.bmw.com.au",
+      "www.bmw.com.au:443",
+      "www.byd.com",
+      "www.byd.com:443",
+      "www.bydautomotive.com.au",
+      "www.bydautomotive.com.au:443",
+      "www.cadillacanz.com",
+      "www.cadillacanz.com:443",
+      "www.chery.com.au",
+      "www.chery.com.au:443",
+      "www.cheryaustralia.com.au",
+      "www.cheryaustralia.com.au:443",
+      "www.cupra.com.au",
+      "www.cupra.com.au:443",
+      "www.cupra.com:443",
+      "www.deepal.com.au",
+      "www.deepal.com.au:443",
+      "www.denza.com.au",
+      "www.denza.com.au:443",
+      "www.fiat.com.au",
+      "www.fiat.com.au:443",
+      "www.ford.com.au",
+      "www.ford.com.au:443",
+      "www.gacmotor.com.au",
+      "www.gacmotor.com.au:443",
+      "www.goauto.com.au",
+      "www.goauto.com.au:443",
+      "www.googletagmanager.com:443",
+      "www.gstatic.com:443",
+      "www.leapmotor.com.au",
+      "www.leapmotor.com.au:443",
+      "www.leapmotor.net.au",
+      "www.leapmotor.net.au:443",
+      "www.leapmotor.net:443",
+      "www.mg.com.au",
+      "www.mg.com.au:443",
+      "www.mgmotor.com.au",
+      "www.mgmotor.com.au:443",
+      "www.mitsubishi-motors.com.au",
+      "www.mitsubishi-motors.com.au:443",
+      "www.rover.infrastructure.gov.au",
+      "www.rover.infrastructure.gov.au:443",
+      "www.xpeng.com",
+      "www.xpeng.com.au",
+      "www.xpeng.com.au:443",
+      "www.xpeng.com:443"
+    ],
+    "total_requests": 201,
+    "allowed_requests": 199,
+    "blocked_requests": 2,
+    "requests_by_domain": {
+      "(unknown)": {
+        "allowed": 0,
+        "blocked": 2
+      },
+      "api.anthropic.com:443": {
+        "allowed": 79,
+        "blocked": 0
+      },
+      "api.github.com:443": {
+        "allowed": 7,
+        "blocked": 0
+      },
+      "bydautomotive.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "bydautomotive.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "content-autofill.googleapis.com:443": {
+        "allowed": 6,
+        "blocked": 0
+      },
+      "content.powerapps.com:443": {
+        "allowed": 19,
+        "blocked": 0
+      },
+      "mg.com.au": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "mg.com.au:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "mgmotor.com.au": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "mgmotor.com.au:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "run-actions-3-azure-eastus.actions.githubusercontent.com:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "shop.xpeng.com.au": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "shop.xpeng.com.au:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "thedriven.io": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "thedriven.io:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "update.googleapis.com:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "us-mobile.events.data.microsoft.com:443": {
+        "allowed": 3,
+        "blocked": 0
+      },
+      "www.abarth.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.abarth.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.alfaromeo.com.au": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.alfaromeo.com.au:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.audi.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.audi.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.bmw.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.bmw.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.byd.com": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.byd.com:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.bydautomotive.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.bydautomotive.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cadillacanz.com": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cadillacanz.com:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.chery.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.chery.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cheryaustralia.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cheryaustralia.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cupra.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cupra.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.cupra.com:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.deepal.com.au": {
+        "allowed": 4,
+        "blocked": 0
+      },
+      "www.deepal.com.au:443": {
+        "allowed": 4,
+        "blocked": 0
+      },
+      "www.denza.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.denza.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.fiat.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.fiat.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.ford.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.ford.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.gacmotor.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.gacmotor.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.goauto.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.goauto.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.googletagmanager.com:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.gstatic.com:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.leapmotor.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.leapmotor.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.leapmotor.net.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.leapmotor.net.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.leapmotor.net:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.mg.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.mg.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.mgmotor.com.au": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.mgmotor.com.au:443": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.mitsubishi-motors.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.mitsubishi-motors.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.rover.infrastructure.gov.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.rover.infrastructure.gov.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.xpeng.com": {
+        "allowed": 2,
+        "blocked": 0
+      },
+      "www.xpeng.com.au": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.xpeng.com.au:443": {
+        "allowed": 1,
+        "blocked": 0
+      },
+      "www.xpeng.com:443": {
+        "allowed": 2,
+        "blocked": 0
+      }
+    }
+  },
+  "redacted_domains_analysis": null,
+  "missing_tools": null,
+  "missing_data": null,
+  "noops": [
+    {
+      "message": "Run complete. PR proposed: adds the Deepal E07 (RWD and AWD Performance), Mitsubishi ASX VR-e LS (new make), MG U9 EV and Xpeng X9 (FWD and AWD); validate.mjs passes. Issue opened: the Chery E5 (renamed Omoda E5) DC figure (80 vs 130 kW), plus the Leapmotor B05 left as a candidate. Memory saved: BYD, Alfa Romeo and Deepal re-checked. Still to do: re-check Abarth, Audi, BMW, Cadillac, Cupra, Denza, Fiat, Ford and GAC (their sites blocked automated fetches), and check ROVER (table didn't render), BITRE (download timed out) and the Green Vehicle Guide.",
+      "timestamp": "",
+      "workflow_name": "Keep the EV catalogue current",
+      "run_id": 44517220484
+    }
+  ],
+  "mcp_failures": null,
+  "mcp_tool_usage": {
+    "summary": [
+      {
+        "server_name": "safeoutputs",
+        "tool_name": "create_issue",
+        "call_count": 1,
+        "total_input_size": 1790,
+        "total_output_size": 0,
+        "avg_input_size": 1790,
+        "max_input_size": 1790,
+        "max_output_size": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "tool_name": "create_pull_request",
+        "call_count": 1,
+        "total_input_size": 5310,
+        "total_output_size": 0,
+        "avg_input_size": 5310,
+        "max_input_size": 5310,
+        "max_output_size": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "tool_name": "noop",
+        "call_count": 1,
+        "total_input_size": 569,
+        "total_output_size": 0,
+        "avg_input_size": 569,
+        "max_input_size": 569,
+        "max_output_size": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "tool_name": "push_repo_memory",
+        "call_count": 1,
+        "total_input_size": 25,
+        "total_output_size": 0,
+        "avg_input_size": 25,
+        "max_input_size": 25,
+        "max_output_size": 0
+      }
+    ],
+    "tool_calls": [
+      {
+        "timestamp": "2026-11-19T11:52:43.380Z",
+        "server_name": "safeoutputs",
+        "tool_name": "push_repo_memory",
+        "input_size": 0,
+        "output_size": 0,
+        "status": "unknown"
+      },
+      {
+        "timestamp": "2026-11-19T11:53:07.036Z",
+        "server_name": "safeoutputs",
+        "tool_name": "create_pull_request",
+        "input_size": 0,
+        "output_size": 0,
+        "status": "unknown"
+      },
+      {
+        "timestamp": "2026-11-19T11:53:15.156Z",
+        "server_name": "safeoutputs",
+        "tool_name": "create_issue",
+        "input_size": 0,
+        "output_size": 0,
+        "status": "unknown"
+      },
+      {
+        "timestamp": "2026-11-19T11:53:18.696Z",
+        "server_name": "safeoutputs",
+        "tool_name": "noop",
+        "input_size": 0,
+        "output_size": 0,
+        "status": "unknown"
+      }
+    ],
+    "servers": [
+      {
+        "server_name": "safeoutputs",
+        "tool_call_count": 4,
+        "request_count": 4,
+        "total_input_size": 7694,
+        "total_output_size": 0,
+        "avg_input_size": 1924,
+        "max_input_size": 5310,
+        "avg_duration": "0ns"
+      }
+    ]
+  },
+  "token_usage_summary": {
+    "total_input_tokens": 245137,
+    "total_output_tokens": 46125,
+    "total_cache_read_tokens": 3888504,
+    "total_cache_write_tokens": 98244,
+    "total_requests": 75,
+    "total_duration_ms": 436432,
+    "total_response_bytes": 538470,
+    "cache_efficiency": 0,
+    "total_aic": 317.19688,
+    "ambient_context": {
+      "input_tokens": 2,
+      "cached_tokens": 14356
+    },
+    "by_model": {
+      "claude-opus-5-5": {
+        "provider": "anthropic",
+        "input_tokens": 245137,
+        "output_tokens": 46125,
+        "cache_read_tokens": 3888504,
+        "cache_write_tokens": 98244,
+        "requests": 75,
+        "duration_ms": 436432,
+        "response_bytes": 538470,
+        "aic": 317.19688
+      }
+    }
+  },
+  "working_set": {
+    "measurement_state": "measured",
+    "rebuild_factor": 11.610713778240894,
+    "cumulative_input_tokens": 245137,
+    "peak_input_tokens": 21113,
+    "rebuild_excess_tokens": 224024,
+    "invocations": 75
+  },
+  "ledger": {
+    "transactions_added": 0
+  },
+  "friction": {
+    "measurement_state": "measured",
+    "canonical_unit": "aic",
+    "sources": [
+      "agent_token_usage",
+      "firewall",
+      "mcp_gateway"
+    ],
+    "total_events": 0,
+    "total_occurrences": 0,
+    "counted_occurrences": 0,
+    "suppressed_occurrences": 0,
+    "cost": {
+      "aic": 0,
+      "tokens": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0,
+        "reasoning": 0,
+        "total": 0
+      },
+      "turns": 0,
+      "tool_calls": 0,
+      "latency_ms": 0
+    },
+    "total_run_aic": 317.19688,
+    "friction_ratio": 0,
+    "dimension_states": {
+      "aic": "measured",
+      "latency_ms": "measured",
+      "tokens": "measured",
+      "tool_calls": "measured",
+      "turns": "measured"
+    },
+    "uncertainty": {
+      "aic": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0,
+        "sample_size": 75,
+        "basis": "AI credits of errored invocations (measured), of linked follow-up invocations (causal), or the mean healthy-invocation cost (statistical)"
+      },
+      "latency_ms": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0,
+        "basis": "wall-clock duration recorded on the failing tool call or invocation"
+      },
+      "tokens": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0,
+        "sample_size": 75,
+        "basis": "token classes of the attributed invocations"
+      },
+      "tool_calls": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0,
+        "basis": "counted friction occurrences that consumed a tool call"
+      },
+      "turns": {
+        "state": "measured",
+        "method": "direct_record",
+        "confidence": "high",
+        "relative_error": 0,
+        "lower_bound": 0,
+        "upper_bound": 0,
+        "basis": "one additional turn per errored or retried model invocation"
+      }
+    },
+    "unmeasured_drivers": [
+      {
+        "driver": "agent_api_error",
+        "reason": "no_occurrences"
+      },
+      {
+        "driver": "firewall_block",
+        "reason": "no_occurrences"
+      },
+      {
+        "driver": "integrity_filter",
+        "reason": "no_occurrences"
+      },
+      {
+        "driver": "mcp_tool_error",
+        "reason": "no_occurrences"
+      },
+      {
+        "driver": "session_tool_failure",
+        "reason": "source_unavailable:agent_session"
+      }
+    ]
+  },
+  "github_rate_limit_usage": {
+    "total_requests_made": 5,
+    "core_consumed": 4,
+    "core_consumed_source": "response_headers_delta",
+    "core_remaining": 4965,
+    "core_limit": 5000,
+    "resources": [
+      {
+        "resource": "core",
+        "requests_made": 5,
+        "quota_consumed": 4,
+        "final_remaining": 4965,
+        "limit": 5000
+      }
+    ]
+  },
+  "job_details": [
+    {
+      "id": 135536262798,
+      "run_id": 44517220484,
+      "run_url": "https://api.github.com/repos/Suv4o/charge-line-data/actions/runs/44517220484",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVxmBF88AAAAfjpc-jg",
+      "head_sha": "5c02988e404353ec4ce1a012f048a04af7b8a5e0",
+      "url": "https://api.github.com/repos/Suv4o/charge-line-data/actions/jobs/135536262798",
+      "html_url": "https://github.com/Suv4o/charge-line-data/actions/runs/44517220484/job/135536262798",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-19T11:42:34Z",
+      "started_at": "2026-11-19T11:42:37Z",
+      "completed_at": "2026-11-19T11:42:54Z",
+      "name": "activation",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-19T11:42:38Z",
+          "completed_at": "2026-11-19T11:42:40Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-19T11:42:40Z",
+          "completed_at": "2026-11-19T11:42:44Z"
+        },
+        {
+          "name": "Mask OTLP telemetry headers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-19T11:42:44Z",
+          "completed_at": "2026-11-19T11:42:44Z"
+        },
+        {
+          "name": "Generate agentic run info",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-19T11:42:44Z",
+          "completed_at": "2026-11-19T11:42:44Z"
+        },
+        {
+          "name": "Restore daily AIC scan observations",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-19T11:42:44Z",
+          "completed_at": "2026-11-19T11:42:45Z"
+        },
+        {
+          "name": "Check daily workflow token guardrail",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-19T11:42:45Z",
+          "completed_at": "2026-11-19T11:42:45Z"
+        },
+        {
+          "name": "Publish daily AIC scan observations",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-19T11:42:45Z",
+          "completed_at": "2026-11-19T11:42:45Z"
+        },
+        {
+          "name": "Check for OAuth tokens",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-19T11:42:45Z",
+          "completed_at": "2026-11-19T11:42:45Z"
+        },
+        {
+          "name": "Checkout .github and .agents folders",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-19T11:42:45Z",
+          "completed_at": "2026-11-19T11:42:47Z"
+        },
+        {
+          "name": "Save agent config folders for base branch restoration",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-19T11:42:47Z",
+          "completed_at": "2026-11-19T11:42:47Z"
+        },
+        {
+          "name": "Check workflow lock file",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-19T11:42:47Z",
+          "completed_at": "2026-11-19T11:42:48Z"
+        },
+        {
+          "name": "Check compile-agentic version",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-19T11:42:48Z",
+          "completed_at": "2026-11-19T11:42:49Z"
+        },
+        {
+          "name": "Log runtime features",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 13,
+          "started_at": "2026-11-19T11:42:49Z",
+          "completed_at": "2026-11-19T11:42:49Z"
+        },
+        {
+          "name": "Create prompt with built-in context",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-11-19T11:42:49Z",
+          "completed_at": "2026-11-19T11:42:49Z"
+        },
+        {
+          "name": "Interpolate variables and render templates",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-11-19T11:42:49Z",
+          "completed_at": "2026-11-19T11:42:49Z"
+        },
+        {
+          "name": "Substitute placeholders",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-11-19T11:42:49Z",
+          "completed_at": "2026-11-19T11:42:49Z"
+        },
+        {
+          "name": "Validate prompt placeholders",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-19T11:42:49Z",
+          "completed_at": "2026-11-19T11:42:49Z"
+        },
+        {
+          "name": "Print prompt",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-19T11:42:49Z",
+          "completed_at": "2026-11-19T11:42:50Z"
+        },
+        {
+          "name": "Inventory installed skills",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-19T11:42:50Z",
+          "completed_at": "2026-11-19T11:42:50Z"
+        },
+        {
+          "name": "Upload info artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-11-19T11:42:50Z",
+          "completed_at": "2026-11-19T11:42:51Z"
+        },
+        {
+          "name": "Stage prompt files for artifact upload",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-11-19T11:42:51Z",
+          "completed_at": "2026-11-19T11:42:51Z"
+        },
+        {
+          "name": "Upload activation artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22,
+          "started_at": "2026-11-19T11:42:51Z",
+          "completed_at": "2026-11-19T11:42:52Z"
+        },
+        {
+          "name": "Post Checkout .github and .agents folders",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 43,
+          "started_at": "2026-11-19T11:42:52Z",
+          "completed_at": "2026-11-19T11:42:52Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 44,
+          "started_at": "2026-11-19T11:42:52Z",
+          "completed_at": "2026-11-19T11:42:52Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 45,
+          "started_at": "2026-11-19T11:42:52Z",
+          "completed_at": "2026-11-19T11:42:52Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/Suv4o/charge-line-data/check-runs/135536262798",
+      "labels": [
+        "ubuntu-slim"
+      ],
+      "runner_id": 1000001128,
+      "runner_name": "GitHub Actions 1000001128",
+      "runner_group_name": "GitHub Actions",
+      "workflow_name": "Keep the EV catalogue current",
+      "head_branch": "main",
+      "Duration": 17000000000
+    },
+    {
+      "id": 135536432533,
+      "run_id": 44517220484,
+      "run_url": "https://api.github.com/repos/Suv4o/charge-line-data/actions/runs/44517220484",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVxmBF88AAAAfjpnVlQ",
+      "head_sha": "5c02988e404353ec4ce1a012f048a04af7b8a5e0",
+      "url": "https://api.github.com/repos/Suv4o/charge-line-data/actions/jobs/135536432533",
+      "html_url": "https://github.com/Suv4o/charge-line-data/actions/runs/44517220484/job/135536432533",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-19T11:42:54Z",
+      "started_at": "2026-11-19T11:42:57Z",
+      "completed_at": "2026-11-19T11:53:46Z",
+      "name": "agent",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-19T11:42:58Z",
+          "completed_at": "2026-11-19T11:43:00Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-19T11:43:00Z",
+          "completed_at": "2026-11-19T11:43:04Z"
+        },
+        {
+          "name": "Set runtime paths",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-19T11:43:04Z",
+          "completed_at": "2026-11-19T11:43:04Z"
+        },
+        {
+          "name": "Mask OTLP telemetry headers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-19T11:43:04Z",
+          "completed_at": "2026-11-19T11:43:04Z"
+        },
+        {
+          "name": "Check OTLP telemetry configuration",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-19T11:43:04Z",
+          "completed_at": "2026-11-19T11:43:04Z"
+        },
+        {
+          "name": "Checkout repository (gh-aw default)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-19T11:43:04Z",
+          "completed_at": "2026-11-19T11:43:05Z"
+        },
+        {
+          "name": "Initialize agent execution evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-19T11:43:05Z",
+          "completed_at": "2026-11-19T11:43:05Z"
+        },
+        {
+          "name": "Create gh-aw temp directory",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-19T11:43:05Z",
+          "completed_at": "2026-11-19T11:43:05Z"
+        },
+        {
+          "name": "Configure gh CLI for GitHub Enterprise",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-19T11:43:05Z",
+          "completed_at": "2026-11-19T11:43:05Z"
+        },
+        {
+          "name": "Download activation artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-19T11:43:05Z",
+          "completed_at": "2026-11-19T11:43:06Z"
+        },
+        {
+          "name": "Clone repo-memory branch (catalogue)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-19T11:43:06Z",
+          "completed_at": "2026-11-19T11:43:07Z"
+        },
+        {
+          "name": "Download the agent's reading (The Driven's feed, BITRE's register entries)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-19T11:43:07Z",
+          "completed_at": "2026-11-19T11:44:31Z"
+        },
+        {
+          "name": "Configure Git credentials",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-19T11:44:31Z",
+          "completed_at": "2026-11-19T11:44:31Z"
+        },
+        {
+          "name": "Checkout PR branch",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-11-19T11:44:31Z",
+          "completed_at": "2026-11-19T11:44:31Z"
+        },
+        {
+          "name": "Setup Node.js",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-11-19T11:44:31Z",
+          "completed_at": "2026-11-19T11:44:31Z"
+        },
+        {
+          "name": "Install AWF binary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-11-19T11:44:31Z",
+          "completed_at": "2026-11-19T11:44:44Z"
+        },
+        {
+          "name": "Install Claude Code CLI",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-19T11:44:44Z",
+          "completed_at": "2026-11-19T11:44:47Z"
+        },
+        {
+          "name": "Install Playwright CLI",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-19T11:44:47Z",
+          "completed_at": "2026-11-19T11:44:48Z"
+        },
+        {
+          "name": "Install Playwright browsers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-19T11:44:48Z",
+          "completed_at": "2026-11-19T11:45:01Z"
+        },
+        {
+          "name": "Install Playwright CLI skills",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-11-19T11:45:01Z",
+          "completed_at": "2026-11-19T11:45:01Z"
+        },
+        {
+          "name": "Determine automatic lockdown mode for GitHub MCP Server",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-11-19T11:45:01Z",
+          "completed_at": "2026-11-19T11:45:02Z"
+        },
+        {
+          "name": "Restore agent config folders from base branch",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 22,
+          "started_at": "2026-11-19T11:45:02Z",
+          "completed_at": "2026-11-19T11:45:02Z"
+        },
+        {
+          "name": "Restore inline sub-agents from activation artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23,
+          "started_at": "2026-11-19T11:45:02Z",
+          "completed_at": "2026-11-19T11:45:02Z"
+        },
+        {
+          "name": "Restore inline skills from activation artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 24,
+          "started_at": "2026-11-19T11:45:02Z",
+          "completed_at": "2026-11-19T11:45:02Z"
+        },
+        {
+          "name": "Download container images",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 25,
+          "started_at": "2026-11-19T11:45:02Z",
+          "completed_at": "2026-11-19T11:45:16Z"
+        },
+        {
+          "name": "Prepare Safe Outputs Directories",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 26,
+          "started_at": "2026-11-19T11:45:16Z",
+          "completed_at": "2026-11-19T11:45:16Z"
+        },
+        {
+          "name": "Generate Safe Outputs Config",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 27,
+          "started_at": "2026-11-19T11:45:16Z",
+          "completed_at": "2026-11-19T11:45:16Z"
+        },
+        {
+          "name": "Generate Safe Outputs Tools",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 28,
+          "started_at": "2026-11-19T11:45:16Z",
+          "completed_at": "2026-11-19T11:45:16Z"
+        },
+        {
+          "name": "Start MCP Gateway",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 29,
+          "started_at": "2026-11-19T11:45:16Z",
+          "completed_at": "2026-11-19T11:45:33Z"
+        },
+        {
+          "name": "Mount MCP servers as CLIs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30,
+          "started_at": "2026-11-19T11:45:33Z",
+          "completed_at": "2026-11-19T11:45:33Z"
+        },
+        {
+          "name": "Clean credentials",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31,
+          "started_at": "2026-11-19T11:45:33Z",
+          "completed_at": "2026-11-19T11:45:33Z"
+        },
+        {
+          "name": "Audit pre-agent workspace",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32,
+          "started_at": "2026-11-19T11:45:33Z",
+          "completed_at": "2026-11-19T11:45:33Z"
+        },
+        {
+          "name": "Log GitHub rate limits at agent start",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33,
+          "started_at": "2026-11-19T11:45:33Z",
+          "completed_at": "2026-11-19T11:45:33Z"
+        },
+        {
+          "name": "Execute Claude Code CLI",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 34,
+          "started_at": "2026-11-19T11:45:33Z",
+          "completed_at": "2026-11-19T11:53:31Z"
+        },
+        {
+          "name": "Log GitHub rate limits at agent end",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 35,
+          "started_at": "2026-11-19T11:53:31Z",
+          "completed_at": "2026-11-19T11:53:31Z"
+        },
+        {
+          "name": "Detect agent errors",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 36,
+          "started_at": "2026-11-19T11:53:31Z",
+          "completed_at": "2026-11-19T11:53:31Z"
+        },
+        {
+          "name": "Configure Git credentials",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 37,
+          "started_at": "2026-11-19T11:53:31Z",
+          "completed_at": "2026-11-19T11:53:32Z"
+        },
+        {
+          "name": "Stop MCP Gateway",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 38,
+          "started_at": "2026-11-19T11:53:32Z",
+          "completed_at": "2026-11-19T11:53:33Z"
+        },
+        {
+          "name": "Redact secrets in logs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 39,
+          "started_at": "2026-11-19T11:53:33Z",
+          "completed_at": "2026-11-19T11:53:33Z"
+        },
+        {
+          "name": "Validate recovery envelopes before upload",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 40,
+          "started_at": "2026-11-19T11:53:33Z",
+          "completed_at": "2026-11-19T11:53:33Z"
+        },
+        {
+          "name": "Append agent step summary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 41,
+          "started_at": "2026-11-19T11:53:33Z",
+          "completed_at": "2026-11-19T11:53:33Z"
+        },
+        {
+          "name": "Copy Safe Outputs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 42,
+          "started_at": "2026-11-19T11:53:33Z",
+          "completed_at": "2026-11-19T11:53:33Z"
+        },
+        {
+          "name": "Ingest agent output",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 43,
+          "started_at": "2026-11-19T11:53:33Z",
+          "completed_at": "2026-11-19T11:53:33Z"
+        },
+        {
+          "name": "Parse agent logs for step summary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 44,
+          "started_at": "2026-11-19T11:53:33Z",
+          "completed_at": "2026-11-19T11:53:34Z"
+        },
+        {
+          "name": "Parse MCP Gateway logs for step summary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 45,
+          "started_at": "2026-11-19T11:53:34Z",
+          "completed_at": "2026-11-19T11:53:34Z"
+        },
+        {
+          "name": "Print firewall logs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 46,
+          "started_at": "2026-11-19T11:53:34Z",
+          "completed_at": "2026-11-19T11:53:34Z"
+        },
+        {
+          "name": "Parse token usage for step summary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 47,
+          "started_at": "2026-11-19T11:53:34Z",
+          "completed_at": "2026-11-19T11:53:35Z"
+        },
+        {
+          "name": "Print AWF reflect summary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 48,
+          "started_at": "2026-11-19T11:53:35Z",
+          "completed_at": "2026-11-19T11:53:35Z"
+        },
+        {
+          "name": "Generate observability summary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 49,
+          "started_at": "2026-11-19T11:53:35Z",
+          "completed_at": "2026-11-19T11:53:35Z"
+        },
+        {
+          "name": "Write agent output placeholder if missing",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 50,
+          "started_at": "2026-11-19T11:53:35Z",
+          "completed_at": "2026-11-19T11:53:35Z"
+        },
+        {
+          "name": "Sanitize repo-memory filenames (catalogue)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 51,
+          "started_at": "2026-11-19T11:53:35Z",
+          "completed_at": "2026-11-19T11:53:35Z"
+        },
+        {
+          "name": "Filter repo-memory files (catalogue)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 52,
+          "started_at": "2026-11-19T11:53:35Z",
+          "completed_at": "2026-11-19T11:53:35Z"
+        },
+        {
+          "name": "Validate recovery envelopes before upload",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 53,
+          "started_at": "2026-11-19T11:53:35Z",
+          "completed_at": "2026-11-19T11:53:35Z"
+        },
+        {
+          "name": "Upload repo-memory artifact (catalogue)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 54,
+          "started_at": "2026-11-19T11:53:35Z",
+          "completed_at": "2026-11-19T11:53:36Z"
+        },
+        {
+          "name": "Validate recovery envelopes before upload",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 55,
+          "started_at": "2026-11-19T11:53:36Z",
+          "completed_at": "2026-11-19T11:53:36Z"
+        },
+        {
+          "name": "Upload agent output fallback artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 56,
+          "started_at": "2026-11-19T11:53:36Z",
+          "completed_at": "2026-11-19T11:53:38Z"
+        },
+        {
+          "name": "Upload agent artifacts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 57,
+          "started_at": "2026-11-19T11:53:38Z",
+          "completed_at": "2026-11-19T11:53:39Z"
+        },
+        {
+          "name": "Post Setup Node.js",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 112,
+          "started_at": "2026-11-19T11:53:39Z",
+          "completed_at": "2026-11-19T11:53:39Z"
+        },
+        {
+          "name": "Post Checkout repository (gh-aw default)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 113,
+          "started_at": "2026-11-19T11:53:39Z",
+          "completed_at": "2026-11-19T11:53:40Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 114,
+          "started_at": "2026-11-19T11:53:40Z",
+          "completed_at": "2026-11-19T11:53:40Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 115,
+          "started_at": "2026-11-19T11:53:40Z",
+          "completed_at": "2026-11-19T11:53:40Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/Suv4o/charge-line-data/check-runs/135536432533",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000001130,
+      "runner_name": "GitHub Actions 1000001130",
+      "runner_group_name": "GitHub Actions",
+      "workflow_name": "Keep the EV catalogue current",
+      "head_branch": "main",
+      "Duration": 649000000000
+    },
+    {
+      "id": 135541979737,
+      "run_id": 44517220484,
+      "run_url": "https://api.github.com/repos/Suv4o/charge-line-data/actions/runs/44517220484",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVxmBF88AAAAfju56WQ",
+      "head_sha": "5c02988e404353ec4ce1a012f048a04af7b8a5e0",
+      "url": "https://api.github.com/repos/Suv4o/charge-line-data/actions/jobs/135541979737",
+      "html_url": "https://github.com/Suv4o/charge-line-data/actions/runs/44517220484/job/135541979737",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-19T11:53:46Z",
+      "started_at": "2026-11-19T11:53:48Z",
+      "completed_at": "2026-11-19T11:55:20Z",
+      "name": "detection",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-19T11:53:49Z",
+          "completed_at": "2026-11-19T11:53:51Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-19T11:53:51Z",
+          "completed_at": "2026-11-19T11:53:57Z"
+        },
+        {
+          "name": "Download activation artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-19T11:53:57Z",
+          "completed_at": "2026-11-19T11:53:59Z"
+        },
+        {
+          "name": "Download agent output artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-19T11:53:59Z",
+          "completed_at": "2026-11-19T11:54:00Z"
+        },
+        {
+          "name": "Setup agent output environment variable",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-19T11:54:00Z",
+          "completed_at": "2026-11-19T11:54:00Z"
+        },
+        {
+          "name": "Clear agent token usage",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-19T11:54:00Z",
+          "completed_at": "2026-11-19T11:54:00Z"
+        },
+        {
+          "name": "Checkout repository for patch context",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-19T11:54:00Z",
+          "completed_at": "2026-11-19T11:54:01Z"
+        },
+        {
+          "name": "Initialize detection execution evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-19T11:54:01Z",
+          "completed_at": "2026-11-19T11:54:01Z"
+        },
+        {
+          "name": "Clear inherited Copilot session state",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-19T11:54:01Z",
+          "completed_at": "2026-11-19T11:54:01Z"
+        },
+        {
+          "name": "Clean stale firewall files from agent artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-19T11:54:01Z",
+          "completed_at": "2026-11-19T11:54:01Z"
+        },
+        {
+          "name": "Download container images",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-19T11:54:01Z",
+          "completed_at": "2026-11-19T11:54:10Z"
+        },
+        {
+          "name": "Check if detection needed",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-19T11:54:10Z",
+          "completed_at": "2026-11-19T11:54:10Z"
+        },
+        {
+          "name": "Clear MCP Config for detection",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-19T11:54:10Z",
+          "completed_at": "2026-11-19T11:54:10Z"
+        },
+        {
+          "name": "Prepare threat detection files",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-11-19T11:54:10Z",
+          "completed_at": "2026-11-19T11:54:10Z"
+        },
+        {
+          "name": "Setup threat detection",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-11-19T11:54:10Z",
+          "completed_at": "2026-11-19T11:54:11Z"
+        },
+        {
+          "name": "Ensure threat-detection directory and log",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-11-19T11:54:11Z",
+          "completed_at": "2026-11-19T11:54:11Z"
+        },
+        {
+          "name": "Install AWF binary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-19T11:54:11Z",
+          "completed_at": "2026-11-19T11:54:23Z"
+        },
+        {
+          "name": "Setup Node.js",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-19T11:54:23Z",
+          "completed_at": "2026-11-19T11:54:26Z"
+        },
+        {
+          "name": "Install Claude Code CLI",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-19T11:54:26Z",
+          "completed_at": "2026-11-19T11:54:31Z"
+        },
+        {
+          "name": "Install threat-detect binary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-11-19T11:54:31Z",
+          "completed_at": "2026-11-19T11:54:31Z"
+        },
+        {
+          "name": "Execute threat detection with AWF",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-11-19T11:54:31Z",
+          "completed_at": "2026-11-19T11:55:12Z"
+        },
+        {
+          "name": "Copy detection firewall logs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22,
+          "started_at": "2026-11-19T11:55:12Z",
+          "completed_at": "2026-11-19T11:55:12Z"
+        },
+        {
+          "name": "Redact secrets in detection logs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23,
+          "started_at": "2026-11-19T11:55:12Z",
+          "completed_at": "2026-11-19T11:55:13Z"
+        },
+        {
+          "name": "Parse threat detection token usage for step summary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 24,
+          "started_at": "2026-11-19T11:55:13Z",
+          "completed_at": "2026-11-19T11:55:13Z"
+        },
+        {
+          "name": "Redact secrets in detection artifacts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 25,
+          "started_at": "2026-11-19T11:55:13Z",
+          "completed_at": "2026-11-19T11:55:14Z"
+        },
+        {
+          "name": "Render detection log",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 26,
+          "started_at": "2026-11-19T11:55:14Z",
+          "completed_at": "2026-11-19T11:55:14Z"
+        },
+        {
+          "name": "Upload threat detection artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 27,
+          "started_at": "2026-11-19T11:55:14Z",
+          "completed_at": "2026-11-19T11:55:16Z"
+        },
+        {
+          "name": "Conclude threat detection",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 28,
+          "started_at": "2026-11-19T11:55:16Z",
+          "completed_at": "2026-11-19T11:55:16Z"
+        },
+        {
+          "name": "Upload skipped detection execution evidence",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 29,
+          "started_at": "2026-11-19T11:55:16Z",
+          "completed_at": "2026-11-19T11:55:16Z"
+        },
+        {
+          "name": "Post Setup Node.js",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 56,
+          "started_at": "2026-11-19T11:55:16Z",
+          "completed_at": "2026-11-19T11:55:16Z"
+        },
+        {
+          "name": "Post Checkout repository for patch context",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 57,
+          "started_at": "2026-11-19T11:55:16Z",
+          "completed_at": "2026-11-19T11:55:16Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 58,
+          "started_at": "2026-11-19T11:55:16Z",
+          "completed_at": "2026-11-19T11:55:16Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 59,
+          "started_at": "2026-11-19T11:55:16Z",
+          "completed_at": "2026-11-19T11:55:16Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/Suv4o/charge-line-data/check-runs/135541979737",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000001137,
+      "runner_name": "GitHub Actions 1000001137",
+      "runner_group_name": "GitHub Actions",
+      "workflow_name": "Keep the EV catalogue current",
+      "head_branch": "main",
+      "Duration": 92000000000
+    },
+    {
+      "id": 135542802506,
+      "run_id": 44517220484,
+      "run_url": "https://api.github.com/repos/Suv4o/charge-line-data/actions/runs/44517220484",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVxmBF88AAAAfjvsISg",
+      "head_sha": "5c02988e404353ec4ce1a012f048a04af7b8a5e0",
+      "url": "https://api.github.com/repos/Suv4o/charge-line-data/actions/jobs/135542802506",
+      "html_url": "https://github.com/Suv4o/charge-line-data/actions/runs/44517220484/job/135542802506",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-19T11:55:20Z",
+      "started_at": "2026-11-19T11:55:22Z",
+      "completed_at": "2026-11-19T11:55:44Z",
+      "name": "safe_outputs",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-19T11:55:23Z",
+          "completed_at": "2026-11-19T11:55:25Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-19T11:55:25Z",
+          "completed_at": "2026-11-19T11:55:29Z"
+        },
+        {
+          "name": "Mask OTLP telemetry headers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-19T11:55:29Z",
+          "completed_at": "2026-11-19T11:55:29Z"
+        },
+        {
+          "name": "Download agent output artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-19T11:55:29Z",
+          "completed_at": "2026-11-19T11:55:30Z"
+        },
+        {
+          "name": "Setup agent output environment variable",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-19T11:55:30Z",
+          "completed_at": "2026-11-19T11:55:30Z"
+        },
+        {
+          "name": "Download patch artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-19T11:55:30Z",
+          "completed_at": "2026-11-19T11:55:31Z"
+        },
+        {
+          "name": "Checkout repository (gh-aw default)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-19T11:55:31Z",
+          "completed_at": "2026-11-19T11:55:32Z"
+        },
+        {
+          "name": "Configure Git credentials",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-19T11:55:32Z",
+          "completed_at": "2026-11-19T11:55:32Z"
+        },
+        {
+          "name": "Configure GH_HOST for enterprise compatibility",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-19T11:55:32Z",
+          "completed_at": "2026-11-19T11:55:32Z"
+        },
+        {
+          "name": "Process Safe Outputs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-19T11:55:32Z",
+          "completed_at": "2026-11-19T11:55:41Z"
+        },
+        {
+          "name": "Upload Safe Outputs Items",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-19T11:55:41Z",
+          "completed_at": "2026-11-19T11:55:42Z"
+        },
+        {
+          "name": "Post Checkout repository (gh-aw default)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-11-19T11:55:42Z",
+          "completed_at": "2026-11-19T11:55:42Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22,
+          "started_at": "2026-11-19T11:55:42Z",
+          "completed_at": "2026-11-19T11:55:42Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23,
+          "started_at": "2026-11-19T11:55:42Z",
+          "completed_at": "2026-11-19T11:55:42Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/Suv4o/charge-line-data/check-runs/135542802506",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000001138,
+      "runner_name": "GitHub Actions 1000001138",
+      "runner_group_name": "GitHub Actions",
+      "workflow_name": "Keep the EV catalogue current",
+      "head_branch": "main",
+      "Duration": 22000000000
+    },
+    {
+      "id": 135543012038,
+      "run_id": 44517220484,
+      "run_url": "https://api.github.com/repos/Suv4o/charge-line-data/actions/runs/44517220484",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVxmBF88AAAAfjv46xg",
+      "head_sha": "5c02988e404353ec4ce1a012f048a04af7b8a5e0",
+      "url": "https://api.github.com/repos/Suv4o/charge-line-data/actions/jobs/135543012038",
+      "html_url": "https://github.com/Suv4o/charge-line-data/actions/runs/44517220484/job/135543012038",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-19T11:55:44Z",
+      "started_at": "2026-11-19T11:55:48Z",
+      "completed_at": "2026-11-19T11:56:04Z",
+      "name": "push_repo_memory",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-19T11:55:49Z",
+          "completed_at": "2026-11-19T11:55:52Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-19T11:55:52Z",
+          "completed_at": "2026-11-19T11:55:57Z"
+        },
+        {
+          "name": "Checkout repository",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-19T11:55:57Z",
+          "completed_at": "2026-11-19T11:55:58Z"
+        },
+        {
+          "name": "Configure Git credentials",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-19T11:55:58Z",
+          "completed_at": "2026-11-19T11:55:58Z"
+        },
+        {
+          "name": "Download safe-output temporary ID map",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-19T11:55:58Z",
+          "completed_at": "2026-11-19T11:55:59Z"
+        },
+        {
+          "name": "Download repo-memory artifact (catalogue)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-19T11:55:59Z",
+          "completed_at": "2026-11-19T11:56:00Z"
+        },
+        {
+          "name": "Push repo-memory changes (catalogue)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-19T11:56:00Z",
+          "completed_at": "2026-11-19T11:56:02Z"
+        },
+        {
+          "name": "Post Checkout repository",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-19T11:56:02Z",
+          "completed_at": "2026-11-19T11:56:03Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-11-19T11:56:03Z",
+          "completed_at": "2026-11-19T11:56:03Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-11-19T11:56:03Z",
+          "completed_at": "2026-11-19T11:56:03Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/Suv4o/charge-line-data/check-runs/135543012038",
+      "labels": [
+        "ubuntu-slim"
+      ],
+      "runner_id": 1000001139,
+      "runner_name": "GitHub Actions 1000001139",
+      "runner_group_name": "GitHub Actions",
+      "workflow_name": "Keep the EV catalogue current",
+      "head_branch": "main",
+      "Duration": 16000000000
+    },
+    {
+      "id": 135543191929,
+      "run_id": 44517220484,
+      "run_url": "https://api.github.com/repos/Suv4o/charge-line-data/actions/runs/44517220484",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVxmBF88AAAAfjwD5eQ",
+      "head_sha": "5c02988e404353ec4ce1a012f048a04af7b8a5e0",
+      "url": "https://api.github.com/repos/Suv4o/charge-line-data/actions/jobs/135543191929",
+      "html_url": "https://github.com/Suv4o/charge-line-data/actions/runs/44517220484/job/135543191929",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-19T11:56:05Z",
+      "started_at": "2026-11-19T11:56:08Z",
+      "completed_at": "2026-11-19T11:56:34Z",
+      "name": "conclusion",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-19T11:56:10Z",
+          "completed_at": "2026-11-19T11:56:13Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-19T11:56:13Z",
+          "completed_at": "2026-11-19T11:56:21Z"
+        },
+        {
+          "name": "Download agent output artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-19T11:56:21Z",
+          "completed_at": "2026-11-19T11:56:22Z"
+        },
+        {
+          "name": "Setup agent output environment variable",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-19T11:56:22Z",
+          "completed_at": "2026-11-19T11:56:22Z"
+        },
+        {
+          "name": "Download workflow metadata",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-19T11:56:22Z",
+          "completed_at": "2026-11-19T11:56:23Z"
+        },
+        {
+          "name": "Warn if threat detection produced no verdict",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 6,
+          "started_at": "2026-11-19T11:56:23Z",
+          "completed_at": "2026-11-19T11:56:23Z"
+        },
+        {
+          "name": "Download detection artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-19T11:56:23Z",
+          "completed_at": "2026-11-19T11:56:24Z"
+        },
+        {
+          "name": "Download Safe Outputs Items Manifest",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-19T11:56:24Z",
+          "completed_at": "2026-11-19T11:56:25Z"
+        },
+        {
+          "name": "Process no-op messages",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-19T11:56:25Z",
+          "completed_at": "2026-11-19T11:56:25Z"
+        },
+        {
+          "name": "Log detection run",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-19T11:56:25Z",
+          "completed_at": "2026-11-19T11:56:26Z"
+        },
+        {
+          "name": "Record missing tool",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-19T11:56:26Z",
+          "completed_at": "2026-11-19T11:56:26Z"
+        },
+        {
+          "name": "Record incomplete",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-19T11:56:26Z",
+          "completed_at": "2026-11-19T11:56:26Z"
+        },
+        {
+          "name": "Handle agent failure",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-19T11:56:26Z",
+          "completed_at": "2026-11-19T11:56:26Z"
+        },
+        {
+          "name": "Report failed jobs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-11-19T11:56:26Z",
+          "completed_at": "2026-11-19T11:56:28Z"
+        },
+        {
+          "name": "Collect usage artifact files",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-11-19T11:56:28Z",
+          "completed_at": "2026-11-19T11:56:28Z"
+        },
+        {
+          "name": "Generate usage activity summary and unified session",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-11-19T11:56:28Z",
+          "completed_at": "2026-11-19T11:56:31Z"
+        },
+        {
+          "name": "Upload usage artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-19T11:56:31Z",
+          "completed_at": "2026-11-19T11:56:32Z"
+        },
+        {
+          "name": "Wait before retrying usage artifact upload",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 18,
+          "started_at": "2026-11-19T11:56:32Z",
+          "completed_at": "2026-11-19T11:56:32Z"
+        },
+        {
+          "name": "Retry upload usage artifact",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 19,
+          "started_at": "2026-11-19T11:56:32Z",
+          "completed_at": "2026-11-19T11:56:32Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 38,
+          "started_at": "2026-11-19T11:56:32Z",
+          "completed_at": "2026-11-19T11:56:33Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 39,
+          "started_at": "2026-11-19T11:56:33Z",
+          "completed_at": "2026-11-19T11:56:33Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/Suv4o/charge-line-data/check-runs/135543191929",
+      "labels": [
+        "ubuntu-slim"
+      ],
+      "runner_id": 1000001141,
+      "runner_name": "GitHub Actions 1000001141",
+      "runner_group_name": "GitHub Actions",
+      "workflow_name": "Keep the EV catalogue current",
+      "head_branch": "main",
+      "Duration": 26000000000
+    }
+  ],
+  "policy_analysis": {
+    "policy_summary": "11 rules, SSL Bump disabled, DLP disabled",
+    "rule_hits": [],
+    "total_requests": 0,
+    "allowed_count": 0,
+    "denied_count": 0,
+    "unique_domains": 0
+  },
+  "artifacts_list": [
+    ".downloaded-artifacts/all",
+    "agent/harness_retry.json",
+    "agent/model-resolution.json",
+    "agent-errors.jsonl",
+    "agent-session.jsonl",
+    "agent-stdio.log",
+    "agent_execution.json",
+    "agent_execution_exit_code.txt",
+    "agent_output.json",
+    "agent_usage.json",
+    "aw-prompts/prompt-import-tree.json",
+    "aw-prompts/prompt-literal-values.json",
+    "aw-prompts/prompt-template.txt",
+    "aw-prompts/prompt.txt",
+    "aw-prompts/system.txt",
+    "aw-prompts/user.txt",
+    "aw-suv4o-charge-line-data-catalogue-2026-11-19-new-evs.bundle",
+    "aw-suv4o-charge-line-data-catalogue-2026-11-19-new-evs.patch",
+    "aw_info.json",
+    "awf-config.json",
+    "base/snapshot.tar",
+    "claude-debug.log",
+    "detection/detection_harness_retry.json",
+    "detection/detection_result.json",
+    "detection/detection_usage.json",
+    "detection/execution.json",
+    "detection/sandbox/firewall/audit/awf-resolved-config.json",
+    "detection/sandbox/firewall/audit/docker-compose.redacted.yml",
+    "detection/sandbox/firewall/audit/image-manifest.json",
+    "detection/sandbox/firewall/audit/policy-manifest.json",
+    "detection/sandbox/firewall/audit/sensitive-paths.json",
+    "detection/sandbox/firewall/audit/squid.conf",
+    "detection/sandbox/firewall/logs/access.log",
+    "detection/sandbox/firewall/logs/api-proxy-logs/agent-runtime/started-at-ms",
+    "detection/sandbox/firewall/logs/api-proxy-logs/harness-observation.json",
+    "detection/sandbox/firewall/logs/api-proxy-logs/models.json",
+    "detection/sandbox/firewall/logs/api-proxy-logs/otel.jsonl",
+    "detection/sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl",
+    "detection/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl",
+    "detection/sandbox/firewall/logs/audit.jsonl",
+    "detection/sandbox/firewall/logs/cache.log",
+    "github_rate_limits.jsonl",
+    "mcp-logs/configuration.jsonl",
+    "mcp-logs/gateway.md",
+    "mcp-logs/github.log",
+    "mcp-logs/mcp-gateway.log",
+    "mcp-logs/observed-url-domains.json",
+    "mcp-logs/rpc-messages.jsonl",
+    "mcp-logs/safeoutputs.log",
+    "mcp-logs/tools.json",
+    "models.json",
+    "otel.jsonl",
+    "pre-agent-audit.txt",
+    "repo-memory-catalogue/candidates.json",
+    "repo-memory-catalogue/checked-makes.json",
+    "safe-output-items.jsonl",
+    "safe-output-outcomes.jsonl",
+    "safeoutputs.jsonl",
+    "sandbox/firewall/audit/awf-resolved-config.json",
+    "sandbox/firewall/audit/docker-compose.redacted.yml",
+    "sandbox/firewall/audit/image-manifest.json",
+    "sandbox/firewall/audit/policy-manifest.json",
+    "sandbox/firewall/audit/sensitive-paths.json",
+    "sandbox/firewall/audit/squid.conf",
+    "sandbox/firewall/awf-reflect.json",
+    "sandbox/firewall/logs/access.log",
+    "sandbox/firewall/logs/api-proxy-logs/agent-runtime/started-at-ms",
+    "sandbox/firewall/logs/api-proxy-logs/harness-observation.json",
+    "sandbox/firewall/logs/api-proxy-logs/models.json",
+    "sandbox/firewall/logs/api-proxy-logs/otel.jsonl",
+    "sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl",
+    "sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl",
+    "sandbox/firewall/logs/audit.jsonl",
+    "sandbox/firewall/logs/cache.log",
+    "skill_inventory.json",
+    "temporary-id-map.json",
+    "usage/activity/summary.json",
+    "usage/agent/execution.json",
+    "usage/agent/harness_retry.json",
+    "usage/agent/token_usage.jsonl",
+    "usage/agent_usage.json",
+    "usage/aw_info.json",
+    "usage/aw_session.jsonl",
+    "usage/detection/execution.json",
+    "usage/detection/harness_retry.json",
+    "usage/detection/token_usage.jsonl",
+    "usage/github_rate_limits.jsonl",
+    "usage/graders/grader_manifest.json",
+    "usage/graders/grader_results.json",
+    "workflow-logs/.complete",
+    "workflow-logs/0_conclusion.txt",
+    "workflow-logs/1_push_repo_memory.txt",
+    "workflow-logs/2_safe_outputs.txt",
+    "workflow-logs/3_detection.txt",
+    "workflow-logs/4_agent.txt",
+    "workflow-logs/5_activation.txt",
+    "workflow-logs/activation/10_Save agent config folders for base branch restoration.txt",
+    "workflow-logs/activation/11_Check workflow lock file.txt",
+    "workflow-logs/activation/12_Check compile-agentic version.txt",
+    "workflow-logs/activation/14_Create prompt with built-in context.txt",
+    "workflow-logs/activation/15_Interpolate variables and render templates.txt",
+    "workflow-logs/activation/16_Substitute placeholders.txt",
+    "workflow-logs/activation/17_Validate prompt placeholders.txt",
+    "workflow-logs/activation/18_Print prompt.txt",
+    "workflow-logs/activation/19_Inventory installed skills.txt",
+    "workflow-logs/activation/1_Set up job.txt",
+    "workflow-logs/activation/20_Upload info artifact.txt",
+    "workflow-logs/activation/21_Stage prompt files for artifact upload.txt",
+    "workflow-logs/activation/22_Upload activation artifact.txt",
+    "workflow-logs/activation/2_Setup Scripts.txt",
+    "workflow-logs/activation/3_Mask OTLP telemetry headers.txt",
+    "workflow-logs/activation/43_Post Checkout .github and .agents folders.txt",
+    "workflow-logs/activation/44_Post Setup Scripts.txt",
+    "workflow-logs/activation/45_Complete job.txt",
+    "workflow-logs/activation/4_Generate agentic run info.txt",
+    "workflow-logs/activation/5_Restore daily AIC scan observations.txt",
+    "workflow-logs/activation/6_Check daily workflow token guardrail.txt",
+    "workflow-logs/activation/7_Publish daily AIC scan observations.txt",
+    "workflow-logs/activation/8_Check for OAuth tokens.txt",
+    "workflow-logs/activation/9_Checkout .github and .agents folders.txt",
+    "workflow-logs/activation/system.txt",
+    "workflow-logs/agent/10_Download activation artifact.txt",
+    "workflow-logs/agent/112_Post Setup Node.js.txt",
+    "workflow-logs/agent/113_Post Checkout repository (gh-aw default).txt",
+    "workflow-logs/agent/114_Post Setup Scripts.txt",
+    "workflow-logs/agent/115_Complete job.txt",
+    "workflow-logs/agent/11_Clone repo-memory branch (catalogue).txt",
+    "workflow-logs/agent/12_Download the agent's reading (The Driven's feed, BITRE's register entries).txt",
+    "workflow-logs/agent/13_Configure Git credentials.txt",
+    "workflow-logs/agent/14_Checkout PR branch.txt",
+    "workflow-logs/agent/15_Setup Node.js.txt",
+    "workflow-logs/agent/16_Install AWF binary.txt",
+    "workflow-logs/agent/17_Install Claude Code CLI.txt",
+    "workflow-logs/agent/18_Install Playwright CLI.txt",
+    "workflow-logs/agent/19_Install Playwright browsers.txt",
+    "workflow-logs/agent/1_Set up job.txt",
+    "workflow-logs/agent/20_Install Playwright CLI skills.txt",
+    "workflow-logs/agent/21_Determine automatic lockdown mode for GitHub MCP Server.txt",
+    "workflow-logs/agent/23_Restore inline sub-agents from activation artifact.txt",
+    "workflow-logs/agent/24_Restore inline skills from activation artifact.txt",
+    "workflow-logs/agent/25_Download container images.txt",
+    "workflow-logs/agent/26_Prepare Safe Outputs Directories.txt",
+    "workflow-logs/agent/27_Generate Safe Outputs Config.txt",
+    "workflow-logs/agent/28_Generate Safe Outputs Tools.txt",
+    "workflow-logs/agent/29_Start MCP Gateway.txt",
+    "workflow-logs/agent/2_Setup Scripts.txt",
+    "workflow-logs/agent/30_Mount MCP servers as CLIs.txt",
+    "workflow-logs/agent/31_Clean credentials.txt",
+    "workflow-logs/agent/32_Audit pre-agent workspace.txt",
+    "workflow-logs/agent/33_Log GitHub rate limits at agent start.txt",
+    "workflow-logs/agent/34_Execute Claude Code CLI.txt",
+    "workflow-logs/agent/35_Log GitHub rate limits at agent end.txt",
+    "workflow-logs/agent/36_Detect agent errors.txt",
+    "workflow-logs/agent/37_Configure Git credentials.txt",
+    "workflow-logs/agent/38_Stop MCP Gateway.txt",
+    "workflow-logs/agent/39_Redact secrets in logs.txt",
+    "workflow-logs/agent/3_Set runtime paths.txt",
+    "workflow-logs/agent/40_Validate recovery envelopes before upload.txt",
+    "workflow-logs/agent/41_Append agent step summary.txt",
+    "workflow-logs/agent/42_Copy Safe Outputs.txt",
+    "workflow-logs/agent/43_Ingest agent output.txt",
+    "workflow-logs/agent/44_Parse agent logs for step summary.txt",
+    "workflow-logs/agent/45_Parse MCP Gateway logs for step summary.txt",
+    "workflow-logs/agent/46_Print firewall logs.txt",
+    "workflow-logs/agent/47_Parse token usage for step summary.txt",
+    "workflow-logs/agent/48_Print AWF reflect summary.txt",
+    "workflow-logs/agent/49_Generate observability summary.txt",
+    "workflow-logs/agent/4_Mask OTLP telemetry headers.txt",
+    "workflow-logs/agent/50_Write agent output placeholder if missing.txt",
+    "workflow-logs/agent/51_Sanitize repo-memory filenames (catalogue).txt",
+    "workflow-logs/agent/52_Filter repo-memory files (catalogue).txt",
+    "workflow-logs/agent/53_Validate recovery envelopes before upload.txt",
+    "workflow-logs/agent/54_Upload repo-memory artifact (catalogue).txt",
+    "workflow-logs/agent/55_Validate recovery envelopes before upload.txt",
+    "workflow-logs/agent/56_Upload agent output fallback artifact.txt",
+    "workflow-logs/agent/57_Upload agent artifacts.txt",
+    "workflow-logs/agent/5_Check OTLP telemetry configuration.txt",
+    "workflow-logs/agent/6_Checkout repository (gh-aw default).txt",
+    "workflow-logs/agent/7_Initialize agent execution evidence.txt",
+    "workflow-logs/agent/8_Create gh-aw temp directory.txt",
+    "workflow-logs/agent/9_Configure gh CLI for GitHub Enterprise.txt",
+    "workflow-logs/agent/system.txt",
+    "workflow-logs/conclusion/10_Log detection run.txt",
+    "workflow-logs/conclusion/11_Record missing tool.txt",
+    "workflow-logs/conclusion/12_Record incomplete.txt",
+    "workflow-logs/conclusion/13_Handle agent failure.txt",
+    "workflow-logs/conclusion/14_Report failed jobs.txt",
+    "workflow-logs/conclusion/15_Collect usage artifact files.txt",
+    "workflow-logs/conclusion/16_Generate usage activity summary and unified session.txt",
+    "workflow-logs/conclusion/17_Upload usage artifact.txt",
+    "workflow-logs/conclusion/1_Set up job.txt",
+    "workflow-logs/conclusion/2_Setup Scripts.txt",
+    "workflow-logs/conclusion/38_Post Setup Scripts.txt",
+    "workflow-logs/conclusion/39_Complete job.txt",
+    "workflow-logs/conclusion/3_Download agent output artifact.txt",
+    "workflow-logs/conclusion/4_Setup agent output environment variable.txt",
+    "workflow-logs/conclusion/5_Download workflow metadata.txt",
+    "workflow-logs/conclusion/7_Download detection artifact.txt",
+    "workflow-logs/conclusion/8_Download Safe Outputs Items Manifest.txt",
+    "workflow-logs/conclusion/9_Process no-op messages.txt",
+    "workflow-logs/conclusion/system.txt",
+    "workflow-logs/detection/10_Clean stale firewall files from agent artifact.txt",
+    "workflow-logs/detection/11_Download container images.txt",
+    "workflow-logs/detection/12_Check if detection needed.txt",
+    "workflow-logs/detection/13_Clear MCP Config for detection.txt",
+    "workflow-logs/detection/14_Prepare threat detection files.txt",
+    "workflow-logs/detection/15_Setup threat detection.txt",
+    "workflow-logs/detection/16_Ensure threat-detection directory and log.txt",
+    "workflow-logs/detection/17_Install AWF binary.txt",
+    "workflow-logs/detection/18_Setup Node.js.txt",
+    "workflow-logs/detection/19_Install Claude Code CLI.txt",
+    "workflow-logs/detection/1_Set up job.txt",
+    "workflow-logs/detection/20_Install threat-detect binary.txt",
+    "workflow-logs/detection/21_Execute threat detection with AWF.txt",
+    "workflow-logs/detection/22_Copy detection firewall logs.txt",
+    "workflow-logs/detection/23_Redact secrets in detection logs.txt",
+    "workflow-logs/detection/24_Parse threat detection token usage for step summary.txt",
+    "workflow-logs/detection/25_Redact secrets in detection artifacts.txt",
+    "workflow-logs/detection/26_Render detection log.txt",
+    "workflow-logs/detection/27_Upload threat detection artifact.txt",
+    "workflow-logs/detection/28_Conclude threat detection.txt",
+    "workflow-logs/detection/2_Setup Scripts.txt",
+    "workflow-logs/detection/3_Download activation artifact.txt",
+    "workflow-logs/detection/4_Download agent output artifact.txt",
+    "workflow-logs/detection/56_Post Setup Node.js.txt",
+    "workflow-logs/detection/57_Post Checkout repository for patch context.txt",
+    "workflow-logs/detection/58_Post Setup Scripts.txt",
+    "workflow-logs/detection/59_Complete job.txt",
+    "workflow-logs/detection/5_Setup agent output environment variable.txt",
+    "workflow-logs/detection/6_Clear agent token usage.txt",
+    "workflow-logs/detection/7_Checkout repository for patch context.txt",
+    "workflow-logs/detection/8_Initialize detection execution evidence.txt",
+    "workflow-logs/detection/9_Clear inherited Copilot session state.txt",
+    "workflow-logs/detection/system.txt",
+    "workflow-logs/push_repo_memory/13_Post Checkout repository.txt",
+    "workflow-logs/push_repo_memory/14_Post Setup Scripts.txt",
+    "workflow-logs/push_repo_memory/15_Complete job.txt",
+    "workflow-logs/push_repo_memory/1_Set up job.txt",
+    "workflow-logs/push_repo_memory/2_Setup Scripts.txt",
+    "workflow-logs/push_repo_memory/3_Checkout repository.txt",
+    "workflow-logs/push_repo_memory/4_Configure Git credentials.txt",
+    "workflow-logs/push_repo_memory/5_Download safe-output temporary ID map.txt",
+    "workflow-logs/push_repo_memory/6_Download repo-memory artifact (catalogue).txt",
+    "workflow-logs/push_repo_memory/7_Push repo-memory changes (catalogue).txt",
+    "workflow-logs/push_repo_memory/system.txt",
+    "workflow-logs/safe_outputs/10_Process Safe Outputs.txt",
+    "workflow-logs/safe_outputs/11_Upload Safe Outputs Items.txt",
+    "workflow-logs/safe_outputs/1_Set up job.txt",
+    "workflow-logs/safe_outputs/21_Post Checkout repository (gh-aw default).txt",
+    "workflow-logs/safe_outputs/22_Post Setup Scripts.txt",
+    "workflow-logs/safe_outputs/23_Complete job.txt",
+    "workflow-logs/safe_outputs/2_Setup Scripts.txt",
+    "workflow-logs/safe_outputs/3_Mask OTLP telemetry headers.txt",
+    "workflow-logs/safe_outputs/4_Download agent output artifact.txt",
+    "workflow-logs/safe_outputs/5_Setup agent output environment variable.txt",
+    "workflow-logs/safe_outputs/6_Download patch artifact.txt",
+    "workflow-logs/safe_outputs/7_Checkout repository (gh-aw default).txt",
+    "workflow-logs/safe_outputs/8_Configure Git credentials.txt",
+    "workflow-logs/safe_outputs/9_Configure GH_HOST for enterprise compatibility.txt",
+    "workflow-logs/safe_outputs/system.txt"
+  ]
+}

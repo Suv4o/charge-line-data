@@ -1,0 +1,6 @@
+﻿2026-11-19T11:56:03.1980286Z Evaluate and set job outputs
+2026-11-19T11:56:03.2009467Z Set output 'save_branch_catalogue'
+2026-11-19T11:56:03.2013378Z Set output 'save_commit_catalogue'
+2026-11-19T11:56:03.2015394Z Set output 'save_outcome_catalogue'
+2026-11-19T11:56:03.2017066Z Set output 'save_status_catalogue'
+2026-11-19T11:56:03.2019180Z Cleaning up orphan processes

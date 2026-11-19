@@ -1,0 +1,49 @@
+﻿2026-11-19T11:50:30.0915206Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-11-19T11:50:30.0916045Z with:
+2026-11-19T11:50:30.0920467Z   github-token: ***
+2026-11-19T11:50:30.0922575Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'handle_noop_message.cjs'));
+await main();
+
+2026-11-19T11:50:30.0924740Z   debug: false
+2026-11-19T11:50:30.0925256Z   user-agent: actions/github-script
+2026-11-19T11:50:30.0925864Z   result-encoding: json
+2026-11-19T11:50:30.0926382Z   retries: 0
+2026-11-19T11:50:30.0926940Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-11-19T11:50:30.0927631Z env:
+2026-11-19T11:50:30.0928326Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-11-19T11:50:30.0928931Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+2026-11-19T11:50:30.0929524Z   OTEL_SERVICE_NAME: gh-aw.prices
+2026-11-19T11:50:30.0931161Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Keep%20charging%20networks%20and%20prices%20current,gh-aw.repository=Suv4o/charge-line-data,gh-aw.run.id=44517227475,github.run_id=44517227475,gh-aw.engine.id=claude
+2026-11-19T11:50:30.0932749Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-11-19T11:50:30.0933347Z   GH_AW_OTLP_LOGS_ENABLED: 
+2026-11-19T11:50:30.0933907Z   GH_AW_OTLP_LOGS_MAX_BYTES: 
+2026-11-19T11:50:30.0934514Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-11-19T11:50:30.0935181Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-11-19T11:50:30.0936522Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","push_repo_memory":"push_repo_memory","safe_outputs":"safe_outputs"}
+2026-11-19T11:50:30.0938820Z   GH_AW_JOB_RESULTS: {"activation":{"result":"success"},"agent":{"result":"success"},"detection":{"result":"success"},"push_repo_memory":{"result":"success"},"safe_outputs":{"result":"success"}}
+2026-11-19T11:50:30.0940683Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"push_repo_memory":true,"safe_outputs":true}
+2026-11-19T11:50:30.0942539Z   GH_AW_MEMORY_SAVE_RESULTS: {"prices":{"branch":"memory/prices","commit":"4cf217d50f7e9b6c12f5398014606096fd35e7b5","jobResult":"success","outcome":"success","status":"saved"}}
+2026-11-19T11:50:30.0943875Z   GH_AW_RUNTIME_FEATURES: 
+2026-11-19T11:50:30.0944526Z   GITHUB_AW_OTEL_TRACE_ID: 85d1b9283f9d7efc1df09c197368e590
+2026-11-19T11:50:30.0945273Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 88da37a05dcb802c
+2026-11-19T11:50:30.0945958Z   GITHUB_AW_OTEL_JOB_START_MS: 1795089026892
+2026-11-19T11:50:30.0946645Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-11-19T11:50:30.0947303Z   GH_AW_NOOP_MAX: 2
+2026-11-19T11:50:30.0947942Z   GH_AW_WORKFLOW_NAME: Keep charging networks and prices current
+2026-11-19T11:50:30.0949216Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Suv4o/charge-line-data/blob/main/.github/workflows/prices.md
+2026-11-19T11:50:30.0950222Z   GH_AW_ENGINE_ID: claude
+2026-11-19T11:50:30.0950791Z   GH_AW_ENGINE_MODEL: claude-opus-5-5
+2026-11-19T11:50:30.0951618Z   GH_AW_RUN_URL: https://github.com/Suv4o/charge-line-data/actions/runs/44517227475
+2026-11-19T11:50:30.0952457Z   GH_AW_AGENT_CONCLUSION: success
+2026-11-19T11:50:30.0953059Z   GH_AW_NOOP_REPORT_AS_ISSUE: false
+2026-11-19T11:50:30.0953637Z   GH_AW_AIC: 179.1096
+2026-11-19T11:50:30.0954171Z   GH_AW_THREAT_DETECTION_AIC: 31.01328
+2026-11-19T11:50:30.0954776Z   GH_AW_AMBIENT_CONTEXT: 2712
+2026-11-19T11:50:30.0955341Z   GH_AW_WORKFLOW_ID: prices
+2026-11-19T11:50:30.0955881Z ##[endgroup]
+2026-11-19T11:50:30.2561100Z Agent output content length: 4198
+2026-11-19T11:50:30.2561809Z No noop items found in agent output
