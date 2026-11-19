@@ -85,7 +85,6 @@ network:
     blocked: [carexpert.com.au, carsguide.com.au, chasingcars.com.au, whichcar.com.au, drive.com.au, ancap.com.au, evcentral.com.au, ev-database.org, tesla.com, bp.com, chargefox.com, jolt.com.au, joltcharge.com, exploren.com.au]
     max-uses: 30
 safe-outputs:
-  staged: true                      # preview: proposals appear in the run summary, nothing is written
   create-pull-request:
     title-prefix: "[prices] "
     labels: [agent, prices]
