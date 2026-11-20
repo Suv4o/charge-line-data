@@ -1,4 +1,0 @@
-{"ts":1795089307275,"event":"TRACK_START","rid":"ebe22d32-4829-44c3-b839-97ea1f3409e6","provider":"anthropic","path":"/v1/messages?beta=true","streaming":true,"ct":"text/event-stream; charset=utf-8","ce":"gzip","status":200}
-{"ts":1795089308231,"event":"TRACK_END","rid":"ebe22d32-4829-44c3-b839-97ea1f3409e6","result":"ok","streaming":true,"model":"claude-opus-5-5","input":2,"output":164,"cache_read":0}
-{"ts":1795089309319,"event":"TRACK_START","rid":"b19ef6e5-0d2d-470c-8998-e775f3605f41","provider":"anthropic","path":"/v1/messages?beta=true","streaming":true,"ct":"text/event-stream; charset=utf-8","ce":"gzip","status":200}
-{"ts":1795089310424,"event":"TRACK_END","rid":"b19ef6e5-0d2d-470c-8998-e775f3605f41","result":"ok","streaming":true,"model":"claude-opus-5-5","input":2,"output":145,"cache_read":57409}
